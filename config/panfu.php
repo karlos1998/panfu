@@ -7,7 +7,7 @@ return [
     ],
 
     'homepage' => [
-        'players_online' => 23,
+        'players_online' => 25,
     ],
 
     'game_client' => [

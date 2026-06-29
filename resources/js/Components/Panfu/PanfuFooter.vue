@@ -10,17 +10,29 @@ defineProps<{
 <template>
     <footer class="panfu-footer">
         <div class="panfu-footer__inner">
-            <p>{{ footer.copyright }}</p>
+            <div class="panfu-footer__copy">
+                <p>{{ footer.copyright }}</p>
+                <p>{{ footer.disclaimer }}</p>
+            </div>
 
-            <nav class="panfu-footer__links" aria-label="Stopka">
-                <Link
-                    v-for="link in footer.links"
-                    :key="link.label"
-                    :href="link.href"
-                    class="panfu-footer__link"
-                >
-                    {{ link.label }}
-                </Link>
+            <nav class="panfu-footer__links" aria-label="Footer">
+                <div>
+                    <template v-for="(link, index) in footer.links" :key="link.label">
+                        <Link :href="link.href" class="panfu-footer__link">
+                            {{ link.label }}
+                        </Link>
+                        <span v-if="index < footer.links.length - 1"> | </span>
+                    </template>
+                </div>
+
+                <div>
+                    <template v-for="(link, index) in footer.legalLinks" :key="link.label">
+                        <Link :href="link.href" class="panfu-footer__link">
+                            {{ link.label }}
+                        </Link>
+                        <span v-if="index < footer.legalLinks.length - 1"> | </span>
+                    </template>
+                </div>
             </nav>
         </div>
     </footer>

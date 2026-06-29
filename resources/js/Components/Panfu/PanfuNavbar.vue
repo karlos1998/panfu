@@ -15,13 +15,27 @@ const visibleItems = computed(() => {
     const isAuthenticated = Boolean(page.props.auth.user);
 
     return props.items.filter((item) => {
-        if (isAuthenticated && ['Rejestracja', 'Zaloguj się'].includes(item.label)) {
+        if (isAuthenticated && ['Registration', 'Login'].includes(item.label)) {
             return false;
         }
 
         return true;
     });
 });
+
+const accountItems = computed<NavigationItem[]>(() => [
+    { label: 'Account Settings', href: '/profile' },
+    { label: 'Logout', href: '/logout', method: 'post' },
+]);
+
+const socialItems = [
+    { label: 'Facebook', href: 'https://www.facebook.com/Panfu.me/', icon: 'facebook' },
+    { label: 'Instagram', href: 'https://www.instagram.com/teampanfu/', icon: 'instagram' },
+    { label: 'Twitter', href: 'https://x.com/teampanfu', icon: 'x-twitter' },
+    { label: 'YouTube', href: 'https://www.youtube.com/@teampanfu', icon: 'youtube' },
+    { label: 'TikTok', href: 'https://www.tiktok.com/@teampanfu', icon: 'tiktok' },
+    { label: 'Discord', href: 'https://discord.gg/6sRx62m6RK', icon: 'discord' },
+];
 </script>
 
 <template>
@@ -43,33 +57,98 @@ const visibleItems = computed(() => {
                 <span />
             </button>
 
-            <nav
+            <div
                 :class="[
                     'panfu-navbar__links',
                     menuOpen ? 'panfu-navbar__links--open' : '',
                 ]"
-                aria-label="Główna nawigacja"
+                aria-label="Main navigation"
             >
-                <Link
-                    v-for="item in visibleItems"
-                    :key="item.label"
-                    :href="item.href"
-                    :class="[
-                        'panfu-navbar__link',
-                        item.variant ? `panfu-navbar__link--${item.variant}` : '',
-                    ]"
-                >
-                    {{ item.label }}
-                </Link>
+                <nav class="panfu-navbar__primary" aria-label="Primary">
+                    <div
+                        v-for="item in visibleItems"
+                        :key="item.label"
+                        :class="[
+                            'panfu-navbar__item',
+                            item.children?.length ? 'panfu-navbar__item--dropdown' : '',
+                        ]"
+                    >
+                        <Link
+                            :href="item.href"
+                            :class="[
+                                'panfu-navbar__link',
+                                item.active ? 'panfu-navbar__link--active' : '',
+                                item.children?.length ? 'panfu-navbar__link--dropdown' : '',
+                            ]"
+                        >
+                            {{ item.label }}
+                        </Link>
 
-                <Link
-                    v-if="$page.props.auth.user"
-                    class="panfu-navbar__link panfu-navbar__link--primary"
-                    href="/play"
-                >
-                    Graj
-                </Link>
-            </nav>
+                        <div v-if="item.children?.length" class="panfu-navbar__dropdown">
+                            <Link
+                                v-for="child in item.children"
+                                :key="child.label"
+                                :href="child.href"
+                                :class="[
+                                    'panfu-navbar__dropdown-link',
+                                    child.active ? 'panfu-navbar__dropdown-link--active' : '',
+                                ]"
+                            >
+                                {{ child.label }}
+                            </Link>
+                        </div>
+                    </div>
+
+                    <Link
+                        v-if="$page.props.auth.user"
+                        class="panfu-navbar__link"
+                        href="/play"
+                    >
+                        Play
+                    </Link>
+
+                    <div
+                        v-if="$page.props.auth.user"
+                        class="panfu-navbar__item panfu-navbar__item--dropdown"
+                    >
+                        <Link class="panfu-navbar__link panfu-navbar__link--dropdown" href="/profile">
+                            My Account
+                        </Link>
+
+                        <div class="panfu-navbar__dropdown">
+                            <Link
+                                v-for="item in accountItems"
+                                :key="item.label"
+                                :href="item.href"
+                                :method="item.method ?? 'get'"
+                                :as="item.method === 'post' ? 'button' : 'a'"
+                                class="panfu-navbar__dropdown-link"
+                            >
+                                {{ item.label }}
+                            </Link>
+                        </div>
+                    </div>
+                </nav>
+
+                <hr class="panfu-navbar__separator" />
+
+                <nav class="panfu-navbar__social" aria-label="Social links">
+                    <a
+                        v-for="item in socialItems"
+                        :key="item.label"
+                        class="panfu-navbar__social-link"
+                        :href="item.href"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span
+                            :class="['panfu-fa panfu-fa--brand', `panfu-fa--${item.icon}`]"
+                            aria-hidden="true"
+                        />
+                        <small>{{ item.label }}</small>
+                    </a>
+                </nav>
+            </div>
         </div>
     </header>
 </template>

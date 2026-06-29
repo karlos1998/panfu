@@ -22,9 +22,14 @@ class LandingPageService
         );
 
         $page['hero']['cta'] = $this->withHref($page['hero']['cta']);
+        $page['about']['button'] = $this->withHref($page['about']['button']);
         $page['footer']['links'] = array_map(
             fn (array $item): array => $this->withHref($item),
             $page['footer']['links'],
+        );
+        $page['footer']['legalLinks'] = array_map(
+            fn (array $item): array => $this->withHref($item),
+            $page['footer']['legalLinks'],
         );
         $page['assets'] = $this->assetUrls($page['assets']);
 
@@ -53,6 +58,13 @@ class LandingPageService
     {
         if (isset($item['route']) && Route::has($item['route'])) {
             $item['href'] = route($item['route'], absolute: false);
+        }
+
+        if (isset($item['children']) && is_array($item['children'])) {
+            $item['children'] = array_map(
+                fn (array $child): array => $this->withHref($child),
+                $item['children'],
+            );
         }
 
         unset($item['route']);

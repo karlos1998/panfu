@@ -1,18 +1,30 @@
 <script setup lang="ts">
 import type { HeroContent } from '@/types/panfu';
-import { Link } from '@inertiajs/vue3';
+import { Link, usePage } from '@inertiajs/vue3';
+import { computed } from 'vue';
 
-defineProps<{
+const props = defineProps<{
     hero: HeroContent;
 }>();
+
+const page = usePage();
+
+const cta = computed(() => {
+    if (page.props.auth.user) {
+        return {
+            href: '/play',
+            label: 'Play now!',
+        };
+    }
+
+    return props.hero.cta;
+});
 </script>
 
 <template>
-    <section class="home-board" aria-label="Panfu">
+    <section class="home-board board" aria-label="Panfu">
         <h1 class="home-board__title">
-            W tej chwili gra
-            <strong>{{ hero.playersOnline }}</strong>
-            pand!
+            There are {{ hero.playersOnline }} pandas playing now!
         </h1>
 
         <ul class="home-board__list">
@@ -26,8 +38,8 @@ defineProps<{
             </li>
         </ul>
 
-        <Link class="home-board__button" :href="hero.cta.href">
-            {{ hero.cta.label }}
+        <Link class="home-board__button" :href="cta.href">
+            {{ cta.label }}
         </Link>
     </section>
 </template>

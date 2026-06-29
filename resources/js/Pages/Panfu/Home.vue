@@ -10,7 +10,8 @@ import type {
     NewsContent,
     PanfuAssets,
 } from '@/types/panfu';
-import { Link } from '@inertiajs/vue3';
+import { Link, usePage } from '@inertiajs/vue3';
+import { computed } from 'vue';
 
 defineProps<{
     meta: MetaContent;
@@ -21,6 +22,9 @@ defineProps<{
     footer: FooterContent;
     assets: PanfuAssets;
 }>();
+
+const page = usePage();
+const heroHref = computed(() => (page.props.auth.user ? '/play' : '/register'));
 </script>
 
 <template>
@@ -31,50 +35,70 @@ defineProps<{
         :footer="footer"
         main-class="panfu-main--trees"
     >
-        <section class="panfu-home-hero">
-            <div class="panfu-home-hero__media" aria-hidden="true">
-                <video
-                    :poster="assets.grasslands"
-                    :src="assets.heroVideo"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                />
+        <section class="panfu-home">
+            <div class="panfu-home__hero-row">
+                <Link class="panfu-home__video-link" :href="heroHref" aria-label="Panfu">
+                    <video width="540" height="333" autoplay muted loop playsinline>
+                        <source :src="assets.heroVideo" type="video/webm" />
+                    </video>
+                </Link>
+
+                <HomeBoard :hero="hero" />
             </div>
 
-            <HomeBoard :hero="hero" />
-        </section>
+            <div class="panfu-home__cards">
+                <article id="blog" class="panfu-card">
+                    <header class="panfu-card__header">
+                        <span class="panfu-fa panfu-fa--newspaper" aria-hidden="true" />
+                        {{ news.eyebrow }}
+                    </header>
 
-        <section id="blog" class="panfu-section panfu-section--news">
-            <div class="panfu-section__inner panfu-news">
-                <article class="panfu-news__article">
-                    <p class="panfu-eyebrow">{{ news.eyebrow }}</p>
-                    <h2>{{ news.title }}</h2>
-                    <p>{{ news.excerpt }}</p>
-                    <Link class="panfu-button panfu-button--green" :href="news.button.href">
-                        {{ news.button.label }}
-                    </Link>
+                    <div class="panfu-card__body">
+                        <Link class="panfu-card__article-link" :href="news.button.href">
+                            <h2 class="panfu-card__title">{{ news.title }}</h2>
+                            <p class="panfu-card__text">{{ news.excerpt }}</p>
+                        </Link>
+                    </div>
+
+                    <footer class="panfu-card__footer">
+                        <Link class="panfu-outline-button" :href="news.button.href">
+                            {{ news.button.label }}
+                        </Link>
+                    </footer>
                 </article>
 
-                <figure class="panfu-news__image">
-                    <img :src="assets.grasslands" alt="Panfu" />
-                </figure>
-            </div>
-        </section>
+                <article class="panfu-card">
+                    <header class="panfu-card__header">
+                        <span class="panfu-fa panfu-fa--question" aria-hidden="true" />
+                        {{ about.title }}
+                    </header>
 
-        <section class="panfu-section panfu-section--about">
-            <div class="panfu-section__inner panfu-about">
-                <div class="panfu-about__copy">
-                    <h2>{{ about.title }}</h2>
-                    <p>{{ about.intro }}</p>
-                </div>
+                    <div class="panfu-card__body">
+                        <ul class="panfu-check-list">
+                            <li
+                                v-for="(point, index) in about.points"
+                                :key="point"
+                                :class="{ 'panfu-check-list__item--last': index === about.points.length - 1 }"
+                            >
+                                {{ point }}
+                            </li>
+                        </ul>
+                    </div>
 
-                <ul class="panfu-about__list">
-                    <li v-for="point in about.points" :key="point">
-                        {{ point }}
-                    </li>
-                </ul>
+                    <footer class="panfu-card__footer">
+                        <Link class="panfu-outline-button" :href="about.button.href">
+                            {{ about.button.label }}
+                        </Link>
+                    </footer>
+                </article>
+
+                <article class="panfu-card panfu-card--discord" aria-label="Discord">
+                    <iframe
+                        class="panfu-discord-widget"
+                        title="Discord"
+                        src="https://discord.com/widget?id=423866952394473474&theme=light"
+                    />
+                </article>
             </div>
         </section>
     </PanfuLayout>

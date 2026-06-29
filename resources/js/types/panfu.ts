@@ -2,6 +2,9 @@ export interface NavigationItem {
     label: string;
     href: string;
     variant?: 'primary' | 'secondary';
+    active?: boolean;
+    children?: NavigationItem[];
+    method?: 'get' | 'post';
 }
 
 export interface PanfuAssets {
@@ -34,11 +37,14 @@ export interface AboutContent {
     title: string;
     intro: string;
     points: string[];
+    button: NavigationItem;
 }
 
 export interface FooterContent {
     copyright: string;
+    disclaimer: string;
     links: NavigationItem[];
+    legalLinks: NavigationItem[];
 }
 
 export interface MetaContent {

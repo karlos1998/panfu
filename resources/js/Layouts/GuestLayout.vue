@@ -5,20 +5,26 @@ import { Link } from '@inertiajs/vue3';
 
 const meta: MetaContent = {
     title: 'Panfu',
-    description: 'Zaloguj się lub dołącz do lokalnego świata Panfu.',
+    description: 'Log in or join the local Panfu world.',
 };
 
 const navigation: NavigationItem[] = [
-    { label: 'Strona główna', href: '/' },
-    { label: 'Rejestracja', href: '/register', variant: 'primary' },
-    { label: 'Zaloguj się', href: '/login', variant: 'secondary' },
+    { label: 'Home', href: '/', active: true },
+    { label: 'Registration', href: '/register' },
+    { label: 'Login', href: '/login' },
 ];
 
 const footer: FooterContent = {
-    copyright: 'Panfu local preservation project',
+    copyright: '© 2016-2026 Panfu.me. All rights reserved.',
+    disclaimer: 'Panfu.me is not affiliated with or endorsed by Goodbeans GmbH.',
     links: [
-        { label: 'Strona główna', href: '/' },
-        { label: 'Gra', href: '/play' },
+        { label: 'Panfu Team', href: '#' },
+        { label: 'Status', href: '#' },
+    ],
+    legalLinks: [
+        { label: 'Imprint', href: '#' },
+        { label: 'Privacy Policy', href: '#' },
+        { label: 'Terms of Service', href: '#' },
     ],
 };
 </script>
