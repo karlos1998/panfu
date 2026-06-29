@@ -11,11 +11,11 @@ class InformationServerProxyTest extends TestCase
     public function test_information_server_proxy_forwards_amf_payloads(): void
     {
         config([
-            'panfu.game_client.legacy_information_server' => 'http://legacy.test/InformationServer/',
+            'panfu.game_client.information_server_upstream' => 'http://information-server.test/',
         ]);
 
         Http::fake([
-            'legacy.test/InformationServer/gateway/amf' => Http::response('amf-response', 200, [
+            'information-server.test/gateway/amf' => Http::response('amf-response', 200, [
                 'Content-Type' => 'application/x-amf',
             ]),
         ]);
@@ -31,15 +31,15 @@ class InformationServerProxyTest extends TestCase
             ->assertOk()
             ->assertContent('amf-response');
 
-        Http::assertSent(fn (ClientRequest $request): bool => $request->url() === 'http://legacy.test/InformationServer/gateway/amf'
+        Http::assertSent(fn (ClientRequest $request): bool => $request->url() === 'http://information-server.test/gateway/amf'
             && $request->body() === 'amf-payload'
             && $request->method() === 'POST');
     }
 
-    public function test_information_server_proxy_preserves_legacy_session_cookies(): void
+    public function test_information_server_proxy_preserves_session_cookies(): void
     {
         config([
-            'panfu.game_client.legacy_information_server' => 'http://legacy.test/InformationServer/',
+            'panfu.game_client.information_server_upstream' => 'http://information-server.test/',
         ]);
 
         $requests = [];
@@ -49,7 +49,7 @@ class InformationServerProxyTest extends TestCase
 
             return Http::response('amf-response', 200, array_filter([
                 'Content-Type' => 'application/x-amf',
-                'Set-Cookie' => count($requests) === 1 ? 'PHPSESSID=legacy-session; path=/' : null,
+                'Set-Cookie' => count($requests) === 1 ? 'PHPSESSID=panfu-session; path=/' : null,
             ]));
         });
 
@@ -71,7 +71,7 @@ class InformationServerProxyTest extends TestCase
 
         $this->assertCount(2, $requests);
         $this->assertStringContainsString(
-            'PHPSESSID=legacy-session',
+            'PHPSESSID=panfu-session',
             implode('; ', $requests[1]->header('Cookie')),
         );
     }

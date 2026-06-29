@@ -2,7 +2,7 @@
 
 namespace App\Domain\Panfu\Services;
 
-use App\Domain\Panfu\Repositories\LegacyPlayerRepository;
+use App\Domain\Panfu\Repositories\PlayerRepository;
 use App\Domain\Panfu\Repositories\ShopRepository;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Throwable;
@@ -11,7 +11,7 @@ class ShopService
 {
     public function __construct(
         private readonly ShopRepository $shops,
-        private readonly LegacyPlayerRepository $legacyPlayers,
+        private readonly PlayerRepository $players,
     ) {}
 
     /**
@@ -31,12 +31,12 @@ class ShopService
     {
         $fallback = (int) config('panfu.shop.default_coins', 1000);
 
-        if ($user === null || ! config('panfu.game_client.sync_legacy_player')) {
+        if ($user === null) {
             return $fallback;
         }
 
         try {
-            return $this->legacyPlayers->coinsFor($user) ?? $fallback;
+            return $this->players->coinsFor($user) ?? $fallback;
         } catch (Throwable) {
             return $fallback;
         }

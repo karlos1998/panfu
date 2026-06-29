@@ -41,7 +41,7 @@ class PlayPageTest extends TestCase
                 ->etc());
     }
 
-    public function test_dashboard_route_keeps_legacy_auth_redirects_working(): void
+    public function test_dashboard_route_redirects_to_play(): void
     {
         $user = User::factory()->create();
 

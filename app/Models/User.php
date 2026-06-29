@@ -27,6 +27,16 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'birthday' => 'date',
+            'coins' => 'integer',
+            'current_gameserver' => 'integer',
+            'goldpanda' => 'integer',
+            'last_login' => 'date',
+            'sex' => 'boolean',
+            'sheriff' => 'boolean',
+            'social_level' => 'integer',
+            'social_score' => 'integer',
+            'tour_finished' => 'boolean',
         ];
     }
 }

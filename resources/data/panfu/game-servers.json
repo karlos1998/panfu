@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "url": "127.0.0.1",
+    "name": "Panfu Local",
+    "port": 9595,
+    "goldpanda": 1,
+    "secret_key": "local-development-secret",
+    "player_count": 0
+  }
+]

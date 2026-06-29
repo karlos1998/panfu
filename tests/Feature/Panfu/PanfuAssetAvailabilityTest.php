@@ -4,7 +4,7 @@ namespace Tests\Feature\Panfu;
 
 use Tests\TestCase;
 
-class OpenPanfuAssetAvailabilityTest extends TestCase
+class PanfuAssetAvailabilityTest extends TestCase
 {
     public function test_catalogue_xmls_and_pages_are_available(): void
     {

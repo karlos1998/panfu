@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Http;
 
 class HttpInformationServerGateway implements InformationServerGateway
 {
-    private const LEGACY_COOKIE_SESSION_KEY = 'panfu.legacy_information_server.cookies';
+    private const COOKIE_SESSION_KEY = 'panfu.information_server.cookies';
 
     public function forward(Request $request, string $path): ClientResponse
     {
@@ -42,7 +42,7 @@ class HttpInformationServerGateway implements InformationServerGateway
 
     private function url(string $path): string
     {
-        $baseUrl = rtrim((string) config('panfu.game_client.legacy_information_server'), '/');
+        $baseUrl = rtrim((string) config('panfu.game_client.information_server_upstream'), '/');
 
         return $baseUrl.'/'.ltrim($path, '/');
     }
@@ -64,7 +64,7 @@ class HttpInformationServerGateway implements InformationServerGateway
      */
     private function cookies(Request $request): array
     {
-        $cookies = $request->session()->get(self::LEGACY_COOKIE_SESSION_KEY, []);
+        $cookies = $request->session()->get(self::COOKIE_SESSION_KEY, []);
 
         return is_array($cookies) ? $cookies : [];
     }
@@ -93,6 +93,6 @@ class HttpInformationServerGateway implements InformationServerGateway
             }
         }
 
-        $request->session()->put(self::LEGACY_COOKIE_SESSION_KEY, $cookies);
+        $request->session()->put(self::COOKIE_SESSION_KEY, $cookies);
     }
 }

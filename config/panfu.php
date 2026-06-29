@@ -22,13 +22,26 @@ return [
         'tick_seconds' => env('PANFU_LEVEL_TICK_SECONDS', 600),
     ],
 
+    'player' => [
+        'starter_inventory' => [
+            ['item_id' => 1001, 'active' => true],
+            ['item_id' => 100, 'active' => true],
+            ['item_id' => 103199, 'active' => false],
+        ],
+    ],
+
+    'game_server' => [
+        'host' => env('PANFU_GAME_SERVER_HOST', '127.0.0.1'),
+        'port' => env('PANFU_GAME_SERVER_PORT', 9595),
+        'secret_key' => env('PANFU_GAME_SERVER_SECRET_KEY', 'local-development-secret'),
+    ],
+
     'game_client' => [
         'ruffle_script' => env('PANFU_RUFFLE_SCRIPT', '/vendor/ruffle/ruffle.js'),
         'swf_url' => env('PANFU_SWF_URL', '/vendor/openpanfu/Panfu.swf'),
         'base_url' => env('PANFU_FLASH_BASE_URL', '/vendor/openpanfu/'),
         'information_server' => env('PANFU_INFORMATION_SERVER', '/InformationServer/'),
-        'legacy_information_server' => env('PANFU_LEGACY_INFORMATION_SERVER', 'http://host.docker.internal:8000/InformationServer/'),
-        'sync_legacy_player' => env('PANFU_SYNC_LEGACY_PLAYER', false),
+        'information_server_upstream' => env('PANFU_INFORMATION_SERVER_UPSTREAM', 'http://information-server/'),
         'language_id' => env('PANFU_LANGUAGE_ID', 'EN'),
         'mode' => env('PANFU_MODE', 'dev'),
         'server_name' => env('PANFU_SERVER_NAME', 'Local Panfu'),

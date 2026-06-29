@@ -3,7 +3,7 @@
 namespace App\Domain\Panfu\Services;
 
 use App\Domain\Panfu\Repositories\FlashClientRepository;
-use App\Domain\Panfu\Repositories\LegacyPlayerRepository;
+use App\Domain\Panfu\Repositories\PlayerRepository;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\Session;
 
@@ -11,7 +11,7 @@ class FlashClientService
 {
     public function __construct(
         private readonly FlashClientRepository $clients,
-        private readonly LegacyPlayerRepository $legacyPlayers,
+        private readonly PlayerRepository $players,
     ) {}
 
     /**
@@ -47,9 +47,7 @@ class FlashClientService
         $flashvars['user'] = (string) ($name ?: $user->getAuthIdentifier());
         $flashvars['sessionKey'] = $sessionKey;
 
-        if (config('panfu.game_client.sync_legacy_player')) {
-            $this->legacyPlayers->sync($user, $sessionKey);
-        }
+        $this->players->syncForFlashSession($user, $sessionKey);
 
         return $flashvars;
     }

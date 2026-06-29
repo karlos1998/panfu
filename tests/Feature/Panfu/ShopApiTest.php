@@ -18,17 +18,16 @@ class ShopApiTest extends TestCase
     public function test_authenticated_users_can_load_local_shop_catalogue(): void
     {
         config([
-            'panfu.game_client.sync_legacy_player' => false,
             'panfu.shop.default_coins' => 1000,
         ]);
 
-        $user = User::factory()->create();
+        $user = User::factory()->create(['coins' => 2465]);
 
         $this
             ->actingAs($user)
             ->getJson('/api/shop')
             ->assertOk()
-            ->assertJsonPath('coins', 1000)
+            ->assertJsonPath('coins', 2465)
             ->assertJsonStructure([
                 'coins',
                 'items' => [
