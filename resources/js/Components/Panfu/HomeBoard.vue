@@ -13,7 +13,7 @@ const cta = computed(() => {
     if (page.props.auth.user) {
         return {
             href: '/play',
-            label: 'Play now!',
+            label: 'Graj teraz!',
         };
     }
 
@@ -24,7 +24,7 @@ const cta = computed(() => {
 <template>
     <section class="home-board board" aria-label="Panfu">
         <h1 class="home-board__title">
-            There are {{ hero.playersOnline }} pandas playing now!
+            W tej chwili gra {{ hero.playersOnline }} pand!
         </h1>
 
         <ul class="home-board__list">

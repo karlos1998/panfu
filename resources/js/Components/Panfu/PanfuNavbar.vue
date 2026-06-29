@@ -15,7 +15,7 @@ const visibleItems = computed(() => {
     const isAuthenticated = Boolean(page.props.auth.user);
 
     return props.items.filter((item) => {
-        if (isAuthenticated && ['Registration', 'Login'].includes(item.label)) {
+        if (isAuthenticated && ['Registration', 'Login', 'Rejestracja', 'Zaloguj się'].includes(item.label)) {
             return false;
         }
 
@@ -24,8 +24,8 @@ const visibleItems = computed(() => {
 });
 
 const accountItems = computed<NavigationItem[]>(() => [
-    { label: 'Account Settings', href: '/profile' },
-    { label: 'Logout', href: '/logout', method: 'post' },
+    { label: 'Ustawienia konta', href: '/profile' },
+    { label: 'Wyloguj się', href: '/logout', method: 'post' },
 ]);
 
 const socialItems = [
@@ -104,7 +104,7 @@ const socialItems = [
                         class="panfu-navbar__link"
                         href="/play"
                     >
-                        Play
+                        Graj
                     </Link>
 
                     <div
@@ -112,7 +112,7 @@ const socialItems = [
                         class="panfu-navbar__item panfu-navbar__item--dropdown"
                     >
                         <Link class="panfu-navbar__link panfu-navbar__link--dropdown" href="/profile">
-                            My Account
+                            Moje konto
                         </Link>
 
                         <div class="panfu-navbar__dropdown">

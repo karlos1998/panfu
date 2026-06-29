@@ -1,24 +1,49 @@
 <script setup lang="ts">
 import PanfuLayout from '@/Layouts/PanfuLayout.vue';
 import type { FooterContent, MetaContent, NavigationItem } from '@/types/panfu';
-import { Link } from '@inertiajs/vue3';
+import { computed } from 'vue';
 
-const meta: MetaContent = {
-    title: 'Panfu',
-    description: 'Log in or join the local Panfu world.',
-};
+const props = withDefaults(
+    defineProps<{
+        active?: 'home' | 'register' | 'login';
+        title?: string;
+        description?: string;
+    }>(),
+    {
+        active: 'home',
+        title: 'Panfu.me',
+        description: 'Dołącz do lokalnego świata Panfu.',
+    },
+);
 
-const navigation: NavigationItem[] = [
-    { label: 'Home', href: '/', active: true },
-    { label: 'Registration', href: '/register' },
-    { label: 'Login', href: '/login' },
-];
+const meta = computed<MetaContent>(() => ({
+    title: props.title,
+    description: props.description,
+}));
+
+const navigation = computed<NavigationItem[]>(() => [
+    { label: 'Strona główna', href: '/', active: props.active === 'home' },
+    { label: 'Blog', href: '#blog' },
+    {
+        label: 'Język',
+        href: '#',
+        children: [
+            { label: 'Deutsch', href: '#' },
+            { label: 'English', href: '#' },
+            { label: 'Polski', href: '#', active: true },
+        ],
+    },
+    { label: 'Rejestracja', href: '/register', active: props.active === 'register' },
+    { label: 'Zaloguj się', href: '/login', active: props.active === 'login' },
+]);
 
 const footer: FooterContent = {
-    copyright: '© 2016-2026 Panfu.me. All rights reserved.',
-    disclaimer: 'Panfu.me is not affiliated with or endorsed by Goodbeans GmbH.',
+    copyright: '© 2016-2026 Panfu.me. Wszystkie prawa zastrzeżone.',
+    disclaimer: 'Panfu.me nie jest powiązane ani wspierane przez Goodbeans GmbH.',
     links: [
-        { label: 'Panfu Team', href: '#' },
+        { label: 'Preferencje plików cookie', href: '#' },
+        { label: 'Zespół Panfu', href: '#' },
+        { label: 'Oloko', href: '#' },
         { label: 'Status', href: '#' },
     ],
     legalLinks: [
@@ -35,19 +60,10 @@ const footer: FooterContent = {
         logo="/vendor/panfu-me/assets/panfu-logo-BkIF66dU.svg"
         :navigation="navigation"
         :footer="footer"
-        main-class="panfu-main--auth"
+        main-class="panfu-main--trees"
     >
-        <section class="panfu-auth">
-            <Link class="panfu-auth__logo" href="/">
-                <img
-                    src="/vendor/panfu-me/assets/panfu-logo-BkIF66dU.svg"
-                    alt="Panfu"
-                />
-            </Link>
-
-            <div class="panfu-auth__panel">
-                <slot />
-            </div>
+        <section class="panfu-auth-page">
+            <slot />
         </section>
     </PanfuLayout>
 </template>
