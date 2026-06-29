@@ -12,6 +12,7 @@ class OpenPanfuAssetAvailabilityTest extends TestCase
             'ClothesCatalogue.xml' => 'clothes',
             'FurnitureCatalogue.xml' => 'furniture',
             'BollyFurnitureCatalogue.xml' => 'bollyFurniture',
+            'HouseupgradeCatalogue.xml' => 'houseupgrade',
         ];
 
         foreach ($catalogues as $catalogue => $assetFolder) {

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<catalogue type="catalogue" check="87b0382a2b0a7495e4c80c775fdc6d2d">
+  <page id="-8" comment="firstPage">
+    <img pageNr="-8" x="0" y="1" filename="0.png" page="first" date="Jul 1 2008"/>
+  </page>
+  <page id="-7" comment="normalPage">
+    <img pageNr="-7" x="50" y="20" filename="37.png" page="normal" date="Apr 1 2014"/>
+    <img pageNr="-7" x="340" y="20" filename="38.png" page="normal" date="Apr 1 2014"/>
+    <itemButton page="-7" id="102337" x="520" y="280" width="89" height="53" check="bd6319047125ec10be1317aa16bd83f8"/>
+  </page>
+  <page id="-6" comment="normalPage">
+    <img pageNr="-6" x="50" y="20" filename="35.png" page="normal" date="Mar 4 2014"/>
+    <img pageNr="-6" x="340" y="20" filename="36.png" page="normal" date="Mar 4 2014"/>
+    <itemButton page="-6" id="102305" x="520" y="280" width="91" height="52" check="bc78b94c73547efcf3c62deabba23075"/>
+  </page>
+  <page id="-5" comment="normalPage">
+    <img pageNr="-5" x="50" y="20" filename="33.png" page="normal" date="Feb 4 2014"/>
+    <img pageNr="-5" x="340" y="20" filename="34.png" page="normal" date="Feb 4 2014"/>
+    <itemButton page="-5" id="102366" x="520" y="280" width="89" height="52" check="1a2bee5402f1aab086209cb9637718b4"/>
+  </page>
+  <page id="-4" comment="normalPage">
+    <img pageNr="-4" x="50" y="20" filename="31.png" page="normal" date="Jan 7 2014"/>
+    <img pageNr="-4" x="340" y="20" filename="32.png" page="normal" date="Jan 7 2014"/>
+    <itemButton page="-4" id="100623" x="520" y="280" width="84" height="49" check="3c097e298223aac55bbc6e35ca505ad0"/>
+  </page>
+  <page id="-3" comment="normalPage">
+    <img pageNr="-3" x="50" y="20" filename="29.png" page="normal" date="Jun 12 2012"/>
+    <img pageNr="-3" x="340" y="20" filename="30.png" page="normal" date="Jun 12 2012"/>
+    <itemButton page="-3" id="102147" x="520" y="280" width="70" height="44" check="0f2698a72b6387f620131604c2acee14"/>
+  </page>
+  <page id="-2" comment="normalPage">
+    <img pageNr="-2" x="50" y="20" filename="27.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="-2" x="340" y="20" filename="28.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="-2" id="103897" x="520" y="280" width="70" height="52" check="51c59de70272b018c31b8023aa19d76c"/>
+  </page>
+  <page id="-1" comment="normalPage">
+    <img pageNr="-1" x="50" y="20" filename="23.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="-1" x="340" y="20" filename="24.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="-1" id="100936" x="520" y="280" width="70" height="52" check="777017951f3a37e8cb977694c3337d8c"/>
+  </page>
+  <page id="0" comment="normalPage">
+    <img pageNr="0" x="50" y="20" filename="25.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="0" x="340" y="20" filename="26.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="0" id="100937" x="520" y="280" width="70" height="64" check="341adf993abd7564156ef10edf004f61"/>
+  </page>
+  <page id="1" comment="normalPage">
+    <img pageNr="1" x="50" y="20" filename="17.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="1" x="340" y="20" filename="18.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="1" id="100394" x="520" y="280" width="70" height="265" check="d0f04b93ee79a05829205cd4dd49e686"/>
+  </page>
+  <page id="2" comment="normalPage">
+    <img pageNr="2" x="50" y="20" filename="1.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="2" x="340" y="20" filename="2.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="2" id="101" x="520" y="280" width="70" height="51" check="1c9e0d2aa308854608dc2fad32eb6bb9"/>
+  </page>
+  <page id="3" comment="normalPage">
+    <img pageNr="3" x="50" y="20" filename="3.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="3" x="340" y="20" filename="4.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="3" id="102" x="520" y="280" width="70" height="54" check="09e610cc0edf2c6492c33e399a3c6afa"/>
+  </page>
+  <page id="4" comment="normalPage">
+    <img pageNr="4" x="50" y="20" filename="5.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="4" x="340" y="20" filename="6.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="4" id="103" x="520" y="280" width="70" height="50" check="ea8e8d7849d4bd284e722065844b5198"/>
+  </page>
+  <page id="5" comment="normalPage">
+    <img pageNr="5" x="50" y="20" filename="7.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="5" x="340" y="20" filename="8.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="5" id="104" x="520" y="280" width="70" height="52" check="ec8dae463751f88e297dd98ca0113642"/>
+  </page>
+  <page id="6" comment="normalPage">
+    <img pageNr="6" x="50" y="20" filename="9.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="6" x="340" y="20" filename="10.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="6" id="105" x="520" y="280" width="70" height="50" check="13749f7d9369bb89fca5d1e7427189dd"/>
+  </page>
+  <page id="7" comment="normalPage">
+    <img pageNr="7" x="50" y="20" filename="11.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="7" x="340" y="20" filename="12.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="7" id="106" x="520" y="280" width="70" height="56" check="83ed2ff3ad7f6d8f8b43198926fec68d"/>
+  </page>
+  <page id="8" comment="normalPage">
+    <img pageNr="8" x="50" y="20" filename="13.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="8" x="340" y="20" filename="14.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="8" id="107" x="520" y="280" width="70" height="54" check="ed66503100ae721d18e15d0f3ee4015a"/>
+  </page>
+  <page id="9" comment="normalPage">
+    <img pageNr="9" x="50" y="20" filename="15.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="9" x="340" y="20" filename="16.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="9" id="108" x="520" y="280" width="70" height="56" check="4e4d2fe7fa960ce9f1c131840099d710"/>
+  </page>
+  <page id="12" comment="lastPage">
+    <img pageNr="12" x="8" y="0" filename="19.png" page="last" date="Jul 1 2008"/>
+    <textfield page="12" x="65" y="70" width="225" height="100" bold="true" color="green"><![CDATA[CATALOGUES_CLOTHES_BACK_1]]></textfield>
+    <textfield page="12" x="65" y="90" width="225" height="200" bold="false"><![CDATA[CATALOGUES_CLOTHES_BACK_2]]></textfield>
+    <textfield page="12" x="65" y="200" width="225" height="100" bold="true" color="green"><![CDATA[CATALOGUES_CLOTHES_BACK_3]]></textfield>
+    <textfield page="12" x="65" y="220" width="225" height="200" bold="false"><![CDATA[CATALOGUES_CLOTHES_BACK_4]]></textfield>
+  </page>
+</catalogue>
