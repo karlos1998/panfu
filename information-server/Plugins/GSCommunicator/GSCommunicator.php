@@ -18,15 +18,22 @@
     public static function communicate()
     {
         $servers = Panfu::getGameServers();
-        if(isset($servers[0])) {
-            $key = Panfu::getGameServerKey($servers[0]->id);
-            $command = "900;$key";
-            foreach (func_get_args() as $param) {
-                $command .= ";$param";
-            }
-            $command .= "|";
+        if(!isset($servers[0])) {
+            Console::log("Unable to communicate with the gameserver: no servers are configured.");
+            return;
         }
-        $connection = fsockopen("tcp://" . $servers[0]->url . "", $servers[0]->port, $error, $errorStr);
+
+        $key = Panfu::getGameServerKey($servers[0]->id);
+        $command = "900;$key";
+        foreach (func_get_args() as $param) {
+            $command .= ";$param";
+        }
+        $command .= "|";
+
+        $host = getenv('PANFU_GAME_SERVER_INTERNAL_HOST') ?: $servers[0]->url;
+        $port = getenv('PANFU_GAME_SERVER_INTERNAL_PORT') ?: $servers[0]->port;
+
+        $connection = fsockopen("tcp://" . $host . "", (int) $port, $error, $errorStr);
 
         // Connection failed somehow.
         if(!$connection) {

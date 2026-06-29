@@ -34,6 +34,7 @@ return [
         'host' => env('PANFU_GAME_SERVER_HOST', '127.0.0.1'),
         'port' => env('PANFU_GAME_SERVER_PORT', 9595),
         'secret_key' => env('PANFU_GAME_SERVER_SECRET_KEY', 'local-development-secret'),
+        'socket_proxy_url' => env('PANFU_GAME_SOCKET_PROXY_URL', 'ws://localhost:19596'),
     ],
 
     'game_client' => [

@@ -59,6 +59,7 @@ export interface FlashClient {
     baseUrl: string;
     informationServerUrl: string;
     serverName: string;
+    socketProxyUrl: string;
     flashvars: Record<string, string>;
     flashvarsQuery: string;
 }

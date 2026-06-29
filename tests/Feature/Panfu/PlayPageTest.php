@@ -33,6 +33,7 @@ class PlayPageTest extends TestCase
                 ->where('client.swfUrl', '/vendor/openpanfu/Panfu.swf')
                 ->where('client.baseUrl', '/vendor/openpanfu/')
                 ->where('client.informationServerUrl', '/InformationServer/')
+                ->where('client.socketProxyUrl', 'ws://localhost:19596')
                 ->where('client.flashvars.iServer', '/InformationServer/')
                 ->where('client.flashvars.langId', 'EN')
                 ->where('client.flashvars.mode', 'dev')

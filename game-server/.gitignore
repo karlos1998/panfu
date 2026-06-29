@@ -1,0 +1,15 @@
+# IDE
+.idea
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings
+
+# Maven
+dependency-reduced-pom.xml
+target
+
+# Plugins
+plugins/

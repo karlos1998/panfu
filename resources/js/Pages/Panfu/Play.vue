@@ -262,8 +262,8 @@ const configureRuffle = () => {
         showSwfDownload: false,
         splashScreen: false,
         socketProxy: [
-            { host: '127.0.0.1', port: 9595, proxyUrl: 'ws://localhost:9596' },
-            { host: 'localhost', port: 9595, proxyUrl: 'ws://localhost:9596' },
+            { host: '127.0.0.1', port: 9595, proxyUrl: props.client.socketProxyUrl },
+            { host: 'localhost', port: 9595, proxyUrl: props.client.socketProxyUrl },
         ],
         unmuteOverlay: 'hidden',
         upgradeToHttps: false,

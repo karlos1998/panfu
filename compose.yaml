@@ -24,6 +24,8 @@ services:
         depends_on:
             - mysql
             - information-server
+            - gameserver
+            - socket-proxy
             - redis
             - mailpit
             - selenium
@@ -37,12 +39,44 @@ services:
             DB_DATABASE: '${DB_DATABASE}'
             DB_USERNAME: '${DB_USERNAME}'
             DB_PASSWORD: '${DB_PASSWORD}'
+            PANFU_GAME_SERVER_INTERNAL_HOST: '${PANFU_GAME_SERVER_INTERNAL_HOST:-gameserver}'
+            PANFU_GAME_SERVER_INTERNAL_PORT: '${PANFU_GAME_SERVER_INTERNAL_PORT:-9595}'
         volumes:
             - './information-server:/var/www/html'
         networks:
             - sail
         depends_on:
             - mysql
+    gameserver:
+        build:
+            context: '.'
+            dockerfile: docker/gameserver/Dockerfile
+        environment:
+            DB_HOST: mysql
+            DB_PORT: 3306
+            DB_DATABASE: '${DB_DATABASE}'
+            DB_USERNAME: '${DB_USERNAME}'
+            DB_PASSWORD: '${DB_PASSWORD}'
+        networks:
+            - sail
+        depends_on:
+            - mysql
+    socket-proxy:
+        image: 'node:20-alpine'
+        command: ['node', '/tools/socket-proxy.mjs']
+        environment:
+            TCP_HOST: gameserver
+            TCP_PORT: 9595
+            WS_HOST: 0.0.0.0
+            WS_PORT: 9596
+        ports:
+            - '${FORWARD_GAME_SOCKET_PROXY_PORT:-19596}:9596'
+        volumes:
+            - './tools:/tools:ro'
+        networks:
+            - sail
+        depends_on:
+            - gameserver
     mysql:
         image: 'mysql:8.4'
         ports:
