@@ -3,6 +3,12 @@ export interface User {
     name: string;
     email: string;
     email_verified_at?: string;
+    coins?: number | null;
+    goldpanda?: number;
+    last_login?: string | null;
+    sex?: boolean;
+    social_level?: number;
+    social_score?: number | null;
 }
 
 export type PageProps<

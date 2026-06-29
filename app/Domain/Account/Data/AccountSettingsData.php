@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Domain\Auth\Data;
+namespace App\Domain\Account\Data;
 
-readonly class RegisterUserData
+readonly class AccountSettingsData
 {
     public function __construct(
         public string $name,
         public string $email,
-        public string $password,
         public bool $sex,
+        public ?string $password,
     ) {}
 }

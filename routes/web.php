@@ -22,7 +22,9 @@ Route::match(['get', 'post'], '/InformationServer/{path?}', InformationServerPro
     ->name('panfu.information-server');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::redirect('/profile', '/account/settings')->name('profile.edit');
+    Route::get('/account/settings', [ProfileController::class, 'edit'])->name('account.settings');
+    Route::patch('/account/settings', [ProfileController::class, 'update'])->name('account.settings.update');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });

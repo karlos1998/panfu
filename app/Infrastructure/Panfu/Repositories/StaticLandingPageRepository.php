@@ -15,7 +15,7 @@ class StaticLandingPageRepository implements LandingPageRepository
             ],
             'navigation' => [
                 ['label' => 'Strona główna', 'route' => 'home', 'active' => true],
-                ['label' => 'Blog', 'href' => '#blog'],
+                ['label' => 'Blog', 'href' => '/#blog'],
                 [
                     'label' => 'Język',
                     'href' => '#',

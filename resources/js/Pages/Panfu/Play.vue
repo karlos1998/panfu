@@ -37,7 +37,16 @@ const meta: MetaContent = {
 
 const navigation: NavigationItem[] = [
     { label: 'Strona główna', href: '/' },
-    { label: 'Profil', href: '/profile' },
+    { label: 'Blog', href: '/#blog' },
+    {
+        label: 'Język',
+        href: '#',
+        children: [
+            { label: 'Deutsch', href: '#' },
+            { label: 'English', href: '#' },
+            { label: 'Polski', href: '#', active: true },
+        ],
+    },
 ];
 
 const categoryLabels: Record<string, string> = {

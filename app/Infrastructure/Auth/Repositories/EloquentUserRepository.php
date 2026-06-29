@@ -16,6 +16,7 @@ class EloquentUserRepository implements UserRepository
             'name' => $data->name,
             'email' => $data->email,
             'password' => Hash::make($data->password),
+            'sex' => $data->sex,
         ]);
     }
 }

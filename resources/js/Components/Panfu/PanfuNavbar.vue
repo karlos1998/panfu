@@ -10,6 +10,7 @@ const props = defineProps<{
 
 const page = usePage();
 const menuOpen = ref(false);
+const openDropdown = ref<string | null>(null);
 
 const visibleItems = computed(() => {
     const isAuthenticated = Boolean(page.props.auth.user);
@@ -24,9 +25,32 @@ const visibleItems = computed(() => {
 });
 
 const accountItems = computed<NavigationItem[]>(() => [
-    { label: 'Ustawienia konta', href: '/profile' },
+    { label: 'Ustawienia konta', href: '/account/settings' },
     { label: 'Wyloguj się', href: '/logout', method: 'post' },
 ]);
+
+const accountName = computed(() => page.props.auth.user?.name ?? '');
+
+const isCurrent = (href: string) => {
+    if (href === '#') {
+        return false;
+    }
+
+    if (href === '/') {
+        return page.url === '/';
+    }
+
+    return page.url === href || page.url.startsWith(`${href}/`);
+};
+
+const toggleDropdown = (key: string) => {
+    openDropdown.value = openDropdown.value === key ? null : key;
+};
+
+const closeMenus = () => {
+    openDropdown.value = null;
+    menuOpen.value = false;
+};
 
 const socialItems = [
     { label: 'Facebook', href: 'https://www.facebook.com/Panfu.me/', icon: 'facebook' },
@@ -74,17 +98,39 @@ const socialItems = [
                         ]"
                     >
                         <Link
+                            v-if="!item.children?.length"
                             :href="item.href"
                             :class="[
                                 'panfu-navbar__link',
-                                item.active ? 'panfu-navbar__link--active' : '',
-                                item.children?.length ? 'panfu-navbar__link--dropdown' : '',
+                                item.active || isCurrent(item.href) ? 'panfu-navbar__link--active' : '',
                             ]"
+                            @click="closeMenus"
                         >
                             {{ item.label }}
                         </Link>
 
-                        <div v-if="item.children?.length" class="panfu-navbar__dropdown">
+                        <button
+                            v-else
+                            :class="[
+                                'panfu-navbar__link',
+                                'panfu-navbar__button',
+                                'panfu-navbar__link--dropdown',
+                                item.active ? 'panfu-navbar__link--active' : '',
+                            ]"
+                            type="button"
+                            :aria-expanded="openDropdown === item.label"
+                            @click="toggleDropdown(item.label)"
+                        >
+                            {{ item.label }}
+                        </button>
+
+                        <div
+                            v-if="item.children?.length"
+                            :class="[
+                                'panfu-navbar__dropdown',
+                                openDropdown === item.label ? 'panfu-navbar__dropdown--open' : '',
+                            ]"
+                        >
                             <Link
                                 v-for="child in item.children"
                                 :key="child.label"
@@ -93,6 +139,7 @@ const socialItems = [
                                     'panfu-navbar__dropdown-link',
                                     child.active ? 'panfu-navbar__dropdown-link--active' : '',
                                 ]"
+                                @click="closeMenus"
                             >
                                 {{ child.label }}
                             </Link>
@@ -103,6 +150,8 @@ const socialItems = [
                         v-if="$page.props.auth.user"
                         class="panfu-navbar__link"
                         href="/play"
+                        :class="{ 'panfu-navbar__link--active': isCurrent('/play') }"
+                        @click="closeMenus"
                     >
                         Graj
                     </Link>
@@ -111,11 +160,29 @@ const socialItems = [
                         v-if="$page.props.auth.user"
                         class="panfu-navbar__item panfu-navbar__item--dropdown"
                     >
-                        <Link class="panfu-navbar__link panfu-navbar__link--dropdown" href="/profile">
+                        <button
+                            :class="[
+                                'panfu-navbar__link',
+                                'panfu-navbar__button',
+                                'panfu-navbar__link--dropdown',
+                                isCurrent('/account/settings') ? 'panfu-navbar__link--active' : '',
+                            ]"
+                            type="button"
+                            :aria-expanded="openDropdown === 'account'"
+                            @click="toggleDropdown('account')"
+                        >
                             Moje konto
-                        </Link>
+                        </button>
 
-                        <div class="panfu-navbar__dropdown">
+                        <div
+                            :class="[
+                                'panfu-navbar__dropdown',
+                                openDropdown === 'account' ? 'panfu-navbar__dropdown--open' : '',
+                            ]"
+                        >
+                            <span class="panfu-navbar__dropdown-header">
+                                Witaj, {{ accountName }}!
+                            </span>
                             <Link
                                 v-for="item in accountItems"
                                 :key="item.label"
@@ -123,6 +190,7 @@ const socialItems = [
                                 :method="item.method ?? 'get'"
                                 :as="item.method === 'post' ? 'button' : 'a'"
                                 class="panfu-navbar__dropdown-link"
+                                @click="closeMenus"
                             >
                                 {{ item.label }}
                             </Link>

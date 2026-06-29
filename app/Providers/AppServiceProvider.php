@@ -2,12 +2,14 @@
 
 namespace App\Providers;
 
+use App\Domain\Account\Repositories\AccountRepository;
 use App\Domain\Auth\Repositories\UserRepository;
 use App\Domain\Panfu\Gateways\InformationServerGateway;
 use App\Domain\Panfu\Repositories\FlashClientRepository;
 use App\Domain\Panfu\Repositories\LandingPageRepository;
 use App\Domain\Panfu\Repositories\PlayerRepository;
 use App\Domain\Panfu\Repositories\ShopRepository;
+use App\Infrastructure\Account\Repositories\EloquentAccountRepository;
 use App\Infrastructure\Auth\Repositories\EloquentUserRepository;
 use App\Infrastructure\Panfu\Gateways\HttpInformationServerGateway;
 use App\Infrastructure\Panfu\Repositories\DatabasePlayerRepository;
@@ -30,6 +32,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(PlayerRepository::class, DatabasePlayerRepository::class);
         $this->app->bind(ShopRepository::class, JsonShopRepository::class);
         $this->app->bind(UserRepository::class, EloquentUserRepository::class);
+        $this->app->bind(AccountRepository::class, EloquentAccountRepository::class);
     }
 
     /**

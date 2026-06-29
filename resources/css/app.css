@@ -441,7 +441,7 @@ body {
     min-height: 360px;
     display: grid;
     place-items: center;
-    background: #1f95ca;
+    background: #9ac94d;
     border: 10px solid #ffffff;
     border-top: 0;
     border-radius: 0 0 8px 8px;
@@ -455,6 +455,7 @@ body {
     width: 100%;
     height: 100%;
     display: block;
+    background: #9ac94d;
 }
 
 .panfu-shop-backdrop {
@@ -916,6 +917,7 @@ body {
 }
 
 .panfu-navbar__link,
+.panfu-navbar__button,
 .panfu-navbar__social-link {
     min-height: 38px;
     display: inline-flex;
@@ -935,11 +937,18 @@ body {
 }
 
 .panfu-navbar__link:hover,
+.panfu-navbar__button:hover,
 .panfu-navbar__social-link:hover,
 .panfu-navbar__link--active {
     color: rgba(255, 255, 255, 0.75);
     filter: none;
     transform: none;
+}
+
+.panfu-navbar__button {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
 }
 
 .panfu-navbar__link--dropdown::after {
@@ -954,7 +963,7 @@ body {
 
 .panfu-navbar__dropdown {
     position: absolute;
-    top: calc(100% + 6px);
+    top: 100%;
     left: 50%;
     z-index: 20;
     min-width: 160px;
@@ -966,6 +975,11 @@ body {
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
     transform: translateX(-50%);
+}
+
+.panfu-navbar__item--dropdown {
+    padding-bottom: 8px;
+    margin-bottom: -8px;
 }
 
 .panfu-navbar__dropdown::before,
@@ -992,8 +1006,19 @@ body {
 }
 
 .panfu-navbar__item:hover .panfu-navbar__dropdown,
-.panfu-navbar__item:focus-within .panfu-navbar__dropdown {
+.panfu-navbar__item:focus-within .panfu-navbar__dropdown,
+.panfu-navbar__dropdown--open {
     display: block;
+}
+
+.panfu-navbar__dropdown-header {
+    display: block;
+    padding: 4px 16px;
+    color: #6c757d;
+    font-size: 12.6px;
+    font-weight: 700;
+    line-height: 1.5;
+    white-space: nowrap;
 }
 
 .panfu-navbar__dropdown-link {
@@ -1031,6 +1056,16 @@ body {
         url("/vendor/panfu-me/assets/bg-trees-C3W6vnYt.png"),
         url("/vendor/panfu-me/assets/background-C_gQ2x6Z.png");
     background-position: top;
+    background-repeat: no-repeat, repeat-x;
+}
+
+.panfu-main--play {
+    min-height: 325px;
+    background-color: #a9d21d;
+    background-image:
+        url("/vendor/panfu-me/assets/bg-trees-C3W6vnYt.png"),
+        url("/vendor/panfu-me/assets/background-C_gQ2x6Z.png");
+    background-position: top center;
     background-repeat: no-repeat, repeat-x;
 }
 
@@ -1276,6 +1311,137 @@ body {
 .panfu-footer__link {
     color: inherit;
     font-weight: 700;
+}
+
+.panfu-account {
+    box-sizing: border-box;
+    width: min(720px, calc(100% - 24px));
+    margin: 0 auto;
+    padding: 27px 0 47px;
+}
+
+.panfu-account-card {
+    margin-bottom: 16px;
+    overflow: hidden;
+    color: #212529;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 8px;
+}
+
+.panfu-account-card__header {
+    padding: 8px 16px;
+    font-size: 14.4px;
+    font-weight: 700;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.panfu-account-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 16px;
+    row-gap: 24px;
+    padding: 16px;
+}
+
+.panfu-account-form__actions {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.panfu-account__status {
+    color: #198754;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.panfu-account-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 36px;
+    row-gap: 0;
+    margin: 0;
+    padding: 8px 16px 16px;
+}
+
+.panfu-account-stats div {
+    min-width: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.panfu-account-stats dt {
+    min-width: 0;
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.panfu-account-stats dd {
+    min-width: 72px;
+    margin: 0;
+    color: #212529;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.panfu-account-card__body {
+    padding: 16px;
+}
+
+.panfu-account-card__body p {
+    margin: 0 0 12px;
+    color: #6c757d;
+    font-size: 14.4px;
+    line-height: 1.5;
+}
+
+.panfu-account-card--discord {
+    border-color: #5865f2;
+}
+
+.panfu-account-card--danger {
+    border-color: #dc3545;
+}
+
+.panfu-account-button {
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    color: #ffffff;
+    font-size: 14.4px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.panfu-account-button--discord {
+    background: #5865f2;
+    border-color: #5865f2;
+}
+
+.panfu-account-button--danger {
+    background: #dc3545;
+    border-color: #dc3545;
+}
+
+.panfu-account-delete {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
 }
 
 .panfu-auth-page {
@@ -1533,6 +1699,7 @@ body {
     }
 
     .panfu-navbar__link,
+    .panfu-navbar__button,
     .panfu-navbar__social-link {
         width: 100%;
         justify-content: flex-start;
@@ -1600,6 +1767,12 @@ body {
     .panfu-auth-card--login,
     .panfu-auth-card--register {
         width: 100%;
+    }
+
+    .panfu-account-form,
+    .panfu-account-stats,
+    .panfu-account-delete {
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .panfu-footer__inner {

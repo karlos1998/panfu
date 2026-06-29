@@ -23,7 +23,7 @@ const meta = computed<MetaContent>(() => ({
 
 const navigation = computed<NavigationItem[]>(() => [
     { label: 'Strona główna', href: '/', active: props.active === 'home' },
-    { label: 'Blog', href: '#blog' },
+    { label: 'Blog', href: '/#blog' },
     {
         label: 'Język',
         href: '#',

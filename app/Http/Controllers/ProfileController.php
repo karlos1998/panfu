@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Domain\Account\Services\AccountSettingsService;
 use App\Http\Requests\ProfileUpdateRequest;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Http\RedirectResponse;
@@ -13,12 +14,15 @@ use Inertia\Response;
 
 class ProfileController extends Controller
 {
+    public function __construct(private readonly AccountSettingsService $accountSettings) {}
+
     /**
      * Display the user's profile form.
      */
     public function edit(Request $request): Response
     {
-        return Inertia::render('Profile/Edit', [
+        return Inertia::render('Panfu/AccountSettings', [
+            'account' => $this->accountSettings->settingsFor($request->user()),
             'mustVerifyEmail' => $request->user() instanceof MustVerifyEmail,
             'status' => session('status'),
         ]);
@@ -29,15 +33,10 @@ class ProfileController extends Controller
      */
     public function update(ProfileUpdateRequest $request): RedirectResponse
     {
-        $request->user()->fill($request->validated());
+        $this->accountSettings->update($request->user(), $request->toData());
 
-        if ($request->user()->isDirty('email')) {
-            $request->user()->email_verified_at = null;
-        }
-
-        $request->user()->save();
-
-        return Redirect::route('profile.edit');
+        return Redirect::route('account.settings')
+            ->with('status', 'Ustawienia konta zostały zapisane.');
     }
 
     /**
