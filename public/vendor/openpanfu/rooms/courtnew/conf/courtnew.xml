@@ -1,0 +1,150 @@
+
+<config check="6b3cc600a3c762fd97d9eed4a6056e7f">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="badRobot" start="Aug 10 2025" finish="Aug 11 2025" check="f53991fc2fbad29"/>
+    <date id="badRobot2" start="Aug 16 2025" finish="Aug 17 2025" check="33f38630181af69"/>
+    <date id="christmas" start="Dec 1 2024" finish="Dec 26 2025" check="ab252f8d0e4f4d4"/>
+    <date id="christmasWithoutSanta" start="Dec 1 2025" finish="Dec 24 2025" check="5976813c603a1b9"/>
+    <date id="christmasSanta" start="Dec 24 2025" finish="Dec 27 2025" check="f3ccbd5fe63c762"/>
+    <date id="christmasAdvent" start="Dec 1 2025" finish="Dec 24 2025" check="05472258558f6ab"/>
+    <date id="christmasWeek1" start="Nov 30 2025" finish="Dec 7 2025" check="fb8fc158a6e1b2f"/>
+    <date id="christmasWeek2" start="Dec 7 2025" finish="Dec 14 2025" check="ec2cb5bce95399a"/>
+    <date id="christmasWeek3" start="Dec 14 2025" finish="Dec 21 2025" check="6d07e76d1bde20a"/>
+    <date id="christmasWeek4" start="Dec 21 2025" finish="Dec 23 2025" check="17c0c7686683ee5"/>
+    <date id="christmasWeek5" start="Dec 24 2025" finish="Dec 26 2025" check="607f5284e372634"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="christmas_1" volume="0.4" path="audio/christmas_1.mp3" loops="-1" backgroundmusic="1" date="christmasAdvent"/>
+    <sound id="christmas_2" volume="0.4" path="audio/christmas_2.mp3" loops="-1" backgroundmusic="1" date="christmasWeek5"/>
+    <sound id="robotBGM" volume="0.4" path="audio/robotBGM1.mp3" loops="-1" backgroundmusic="1" date="badRobot"/>
+    <sound id="robotBGM2" volume="0.4" path="audio/robotBGM.mp3" loops="-1" backgroundmusic="1" date="badRobot2"/>
+    <sound id="missingElla" volume="0.4" path="audio/party.mp3" loops="-1" backgroundmusic="1" gamestate="137,0,280-290"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="wb" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,280-290"/>
+        </checks>
+      </element>
+      <element id="confetti" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,280-290"/>
+        </checks>
+      </element>
+      <element id="balloons" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,280-290"/>
+        </checks>
+      </element>
+      <element id="djPool" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,280-290"/>
+        </checks>
+      </element>
+      <element id="djPoolTable" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,280-290"/>
+        </checks>
+      </element>
+      <element id="bounceEM" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,280-290"/>
+        </checks>
+      </element>
+      <element id="sand" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,125-290"/>
+          <button value="1" gamestate="137,0,135-160"/>
+          <button value="1" gamestate="137,0,200-215"/>
+          <frame value=":state1" gamestate="137,0,130-140"/>
+          <frame value=":state2" gamestate="137,0,145"/>
+          <frame value=":state3" gamestate="137,0,150"/>
+          <frame value=":state4" gamestate="137,0,155"/>
+          <frame value=":state5" gamestate="137,0,160"/>
+          <frame value=":state6" gamestate="137,0,165-500"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="missingElla.sandClicked" type="missingElla"/>
+      </element>
+      <element id="bouncer_penguins" button="1" visible="0"/>
+      <element id="spring" button="0" visible="0"/>
+      <element id="sledge" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="143,0,0-30" date="christmas"/>
+          <visible value="1" gamestate="143,0,50-55" date="christmas"/>
+          <visible value="1" gamestate="143,0,100-110" date="christmasSanta"/>
+          <button value="1" gamestate="143,0,10-30" date="christmas"/>
+          <button value="1" gamestate="143,0,50-55" date="christmas"/>
+          <button value="1" gamestate="143,0,100-110" date="christmasSanta"/>
+          <frame value=":idle" gamestate="143,0,0-999" date="christmasWithoutSanta"/>
+          <frame value=":santa" gamestate="143,0,0-999" date="christmasSanta"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="christmas.sledgeClicked" type="christmas"/>
+      </element>
+      <element id="christmasTree" button="0" visible="0">
+        <checks>
+          <visible value="1" date="christmas"/>
+          <frame value=":state1" date="christmasWeek1"/>
+          <frame value=":state2" date="christmasWeek2"/>
+          <frame value=":state3" date="christmasWeek3"/>
+          <frame value=":state4" date="christmasWeek4"/>
+          <frame value=":state4" date="christmasWeek5"/>
+          <frame value=":state5" date="christmasWeek5"/>
+        </checks>
+      </element>
+      <element id="elve" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="143,0,0-15" gamestate2="143,1,0" date="christmas"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="ELVE_COURT"/>
+        </message>
+        <message value="christmas.talkedToElf" type="christmas"/>
+      </element>
+      <element id="robot" button="0" visible="0">
+        <checks>
+          <visible value="1" date="badRobot" gamestate="124,0,50"/>
+          <visible value="1" date="badRobot2" gamestate="124,0,125"/>
+        </checks>
+      </element>
+      <element id="christmastree" button="0" visible="0"/>
+      <element id="door1" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door1"/>
+        </message>
+      </element>
+      <element id="door2" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door2"/>
+        </message>
+      </element>
+      <element id="city_runner_game" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="10"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips>
+      <tooltip id="city_runner_game" type="game" name="GAME_NAME_10"/>
+      <tooltip id="door1" type="door" target="18" angle="-45"/>
+      <tooltip id="door2" type="door" target="15" angle="-135"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="13" type="room" x="740" y="400" rad="90" angle="15"/>
+      <hotspot target="17" type="room" x="45" y="270" rad="30" angle="210"/>
+      <hotspot id="door1" target="18" type="room" x="660" y="255" rad="30"/>
+      <hotspot id="door2" target="15" type="room" x="272" y="185" rad="40"/>
+    </hotspots>
+  </module>
+</config>

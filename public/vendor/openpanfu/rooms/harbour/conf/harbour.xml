@@ -1,0 +1,157 @@
+<config check="036e7261b71236346204487f2bd5173c">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+    <asset id="roomOLD" path="assets/roomOLD.swf"/>
+  </assets>
+  <dates>
+    <date id="christmas" start="Nov 16 2025" finish="Feb 4 2026" check="3642cb0dca8790e"/>
+    <date id="cinema" start="Dec 2 2025" finish="Jan 3 2026" check="a4f5e8e1f3b6e2e"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="fishsong" volume="0.4" path="audio/FISH_THEME.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <items>
+      <item id="ponyyard_horseshoe" itemID="100442" key="GOT_NEW_ITEM"/>
+    </items>
+    <elements>
+      <element id="missingEllaPoster" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,15-285"/>
+          <button value="1" gamestate="137,4,0"/>
+          <frame value=":empty" gamestate="137,4,0"/>
+          <frame value=":full" gamestate="137,4,1"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="missingElla.PosterTagged4" type="missingElla"/>
+      </element>
+      <element type="bdayDoor1" button="1" visible="0"/>
+      <element type="bdayDoor2" button="1" visible="0"/>
+      <element id="telescope" button="0" visible="1">
+        <checks>
+          <button value="1" date="backSchool3" gamestate="121,0,205"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="backToSchool.TelescopeClicked"/>
+      </element>
+      <element id="cinemaEntrance" button="1" visible="0">
+        <checks>
+          <visible value="1" date="cinema"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="movieTheater.enterTheater" type="movieTheater"/>
+      </element>
+      <element id="pandaberg" button="1" visible="0">
+        <checks>
+          <visible value="1" date="cinema"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="movieTheaterQuest.talkToPandaberg" type="*"/>
+      </element>
+      <element id="cinemaSign" button="0" visible="0">
+        <checks>
+          <visible value="1" date="cinema"/>
+        </checks>
+      </element>
+      <element id="crowbar" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,4"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1" stopWalk="1"/>
+        <message value="theLostLover.pickupCrowbar" type="theLostLover"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":xmas" date="christmas"/>
+        </checks>
+      </element>
+      <element id="cookieCrumbles" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="28,0,37"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="callQuest.cookieCrumblesClicked" type="mysteriousCall"/>
+      </element>
+      <element id="door1" button="1" visible="1">
+        <button type="overClick" over="3" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door1"/>
+        </message>
+      </element>
+      <element id="bundles" button="1" visible="0"/>
+      <element id="balloons" button="1" visible="1">
+        <button type="full" click="1" over="21" out="0"/>
+        <message value="askJoinGame" type="client">
+          <game value="20"/>
+        </message>
+      </element>
+      <element id="speedyboat" button="1" visible="1">
+        <button type="click" click="1"/>
+        <checks>
+          <message value="donothing"/>
+          <message value="message" gamestate="2,0,150-999"/>
+        </checks>
+        <message value="handleAnimation">
+          <path value="elements/boatMapUnder/boatMap"/>
+          <com value="play"/>
+          <frame value="10"/>
+        </message>
+        <message value="mySonIsAPirate.BoatClicked" type="mysonisapirate"/>
+        <donothing value="talkToNPC" type="mysonisapirate">
+          <id value="BOAT"/>
+        </donothing>
+      </element>
+      <element id="bollyKids" button="1" visible="1">
+        <button type="overClick" click="1" over="2" out="1" name="BOLLY_CATALOGUE"/>
+        <message value="showCatalogue">
+          <name value="Bolly01Catalogue"/>
+        </message>
+      </element>
+      <element id="npcFisherman" button="1" visible="1">
+        <checks>
+          <visible value="0" requestHasOneActiveItem="104152"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="tilldeath.fisherman" type="tillDeath"/>
+        <message value="talkToNPC" type="client">
+          <id value="HORST_HARBOUR"/>
+        </message>
+      </element>
+      <element id="lostLoverPassTorchDay" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" date="lostTesting" gamestate="15,0,14"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="lostLoverQuest.passFisherTorchDay" type="theLostLover"/>
+      </element>
+      <element id="rapidoSnake" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="34"/>
+        </message>
+      </element>
+      <element id="boat" frame="ani:bollies"/>
+    </elements>
+    <actions>
+      <action id="travelFinished">
+        <blockScreen block="0"/>
+        <joinRoom room="37"/>
+      </action>
+    </actions>
+    <tooltips>
+      <tooltip id="rapidoSnake" type="game" name="GAME_NAME_34"/>
+      <tooltip id="balloons" type="game" name="GAME_NAME_20"/>
+      <tooltip id="door1" type="door" target="41" angle="-135"/>
+      <tooltip id="cinemaEntrance" type="door" target="65" angle="-45"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="19" type="room" x="-20" y="333" rad="73" angle="170"/>
+      <hotspot id="door1" target="41" type="room" x="301" y="146" rad="40" disableWithItem="104152"/>
+    </hotspots>
+    <properties>
+      <specialWalk value="6"/>
+    </properties>
+  </module>
+</config>

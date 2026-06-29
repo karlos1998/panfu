@@ -1,0 +1,128 @@
+<config check="d190744bd85a0107b908c4dc4bead145">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":light1" gamestate="15,0,25"/>
+        </checks>
+        <checks>
+          <frame value=":light2" gamestate="15,0,26"/>
+        </checks>
+        <checks>
+          <frame value=":light3" gamestate="15,0,27"/>
+        </checks>
+        <checks>
+          <frame value=":light4" gamestate="15,0,28"/>
+        </checks>
+        <checks>
+          <frame value=":light5" gamestate="15,0,29"/>
+        </checks>
+        <checks>
+          <frame value=":light6" gamestate="15,0,30-999"/>
+        </checks>
+      </element>
+      <element id="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element id="light1" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,25-999"/>
+        </checks>
+      </element>
+      <element id="light2" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,26-999"/>
+        </checks>
+      </element>
+      <element id="light3" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,27-999"/>
+        </checks>
+      </element>
+      <element id="light4" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,28-999"/>
+        </checks>
+      </element>
+      <element id="light5" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,29-999"/>
+        </checks>
+      </element>
+      <element id="light6" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,30-999"/>
+        </checks>
+      </element>
+      <element id="mixedLight1" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,26-999"/>
+        </checks>
+      </element>
+      <element id="mixedLight2" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,28-999"/>
+        </checks>
+      </element>
+      <element id="mixedLight3" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,30-999"/>
+        </checks>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="46" angle="-135"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="48" type="room" x="697" y="415" rad="150" angle="10"/>
+      <hotspot id="door" target="46" type="room" x="167" y="167" rad="30"/>
+      <hotspot target="teleportBack" type="action" x="511" y="239" rad="40" on="1"/>
+      <hotspot target="teleportBack" type="action" x="441" y="277" rad="40" on="1"/>
+      <hotspot target="teleportBack" type="action" x="372" y="316" rad="40" on="1"/>
+      <hotspot target="teleportBack" type="action" x="178" y="277" rad="40" on="1"/>
+      <hotspot target="teleportBack" type="action" x="366" y="249" rad="40" on="1"/>
+      <hotspot target="teleportBack" type="action" x="166" y="220" rad="40" on="1"/>
+      <hotspot target="teleportBack" type="action" x="366" y="197" rad="40" on="1"/>
+      <hotspot target="teleportBack" type="action" x="308" y="179" rad="40" on="1"/>
+      <hotspot target="onLight1" type="action" x="291" y="366" rad="40" on="1"/>
+      <hotspot target="onLight2" type="action" x="233" y="320" rad="40" on="1"/>
+      <hotspot target="onLight3" type="action" x="299" y="276" rad="40" on="1"/>
+      <hotspot target="onLight4" type="action" x="240" y="247" rad="40" on="1"/>
+      <hotspot target="onLight5" type="action" x="306" y="225" rad="40" on="1"/>
+      <hotspot target="onLight6" type="action" x="250" y="200" rad="40" on="1"/>
+    </hotspots>
+    <actions>
+      <action id="teleportBack">
+        <colorRoomTeleportBack/>
+      </action>
+      <action id="onLight1">
+        <onLight1/>
+      </action>
+      <action id="onLight2">
+        <onLight2/>
+      </action>
+      <action id="onLight3">
+        <onLight3/>
+      </action>
+      <action id="onLight4">
+        <onLight4/>
+      </action>
+      <action id="onLight5">
+        <onLight5/>
+      </action>
+      <action id="onLight6">
+        <onLight6/>
+      </action>
+    </actions>
+  </module>
+</config>

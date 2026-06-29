@@ -1,0 +1,118 @@
+<config check="e1b1a3a44eef3f620b76877be5b77ac1">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="halloweenQuestDay3" start="Oct 29 2009" finish="Oct 31 2009" check="cbb4b1c1585d6d7"/>
+    <date id="halloweenQuestRest" start="Oct 31 2009" finish="Nov 2 2009" check="99367096098bc04"/>
+    <date id="halloween2013" start="Oct 26 2013" finish="Nov 3 2013" check="6ddb5f8d118544a"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="pumpkin" button="1" visible="0">
+        <checks>
+          <visible value="1" date="halloween2013"/>
+        </checks>
+        <button type="overClick" over="2" click="2"/>
+      </element>
+      <element id="rod" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="25,0,2"/>
+        </checks>
+        <button type="overClick" click="2" out="2" over="3"/>
+        <message value="bigFootQuest.getItem1" type="bigFootQuest"/>
+      </element>
+      <element id="track15" button="1" visible="0">
+        <checks>
+          <button value="0" gamestate="17,15,1"/>
+          <visible value="1" gamestate="17,0,5"/>
+          <visible value="1" gamestate="17,15,1"/>
+          <frame value=":highlight" gamestate="17,15,1"/>
+        </checks>
+        <button type="overClick" click="2" out="2" over="3"/>
+        <message value="bigBootQuest.track15" type="bigBootQuest"/>
+      </element>
+      <element id="boot" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="17,0,6"/>
+          <message value="message2"/>
+          <message value="message1" state="isPremium"/>
+        </checks>
+        <button type="overClick" click="1" out="1" over="2"/>
+        <message1 value="bigBootQuest.clickBootPremium" type="bigBootQuest"/>
+        <message2 value="bigBootQuest.clickBoot" type="bigBootQuest"/>
+      </element>
+      <element id="pumpkin3" button="1" visible="0" frame=":normal">
+        <checks>
+          <visible value="1" date="halloweenQuestDay3" gamestate="12,0,1-6"/>
+          <visible value="1" date="halloweenQuestRest" gamestate="12,3,1"/>
+          <button value="0" gamestate="12,3,1"/>
+          <frame value=":light" gamestate="12,3,1"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="halloweenQuest.pumpkin3" type="halloweenQuest"/>
+      </element>
+      <element id="clownCostume" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="12,0,5"/>
+        </checks>
+        <button type="overClick" click="1" over="2" out="1"/>
+        <message value="halloweenQuest.getReward" type="halloweenQuest"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":halloween" date="halloweenQuestDay3"/>
+        </checks>
+      </element>
+      <element id="key" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="9,0,8"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="woobyQuest.getItem2" type="woobyQuest"/>
+      </element>
+      <element id="table" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+      </element>
+      <element id="door" button="1" visible="1">
+        <button type="loop"/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element id="fourboom1" button="1" visible="1">
+        <button type="full" click="1" over="3" out="2"/>
+        <message value="askJoinGame" type="client">
+          <game value="25"/>
+        </message>
+      </element>
+      <element id="fourboom2" button="1" visible="1">
+        <button type="full" click="1" over="3" out="2"/>
+        <message value="askJoinGame" type="client">
+          <game value="25"/>
+        </message>
+      </element>
+      <element id="fourboom3" button="1" visible="1">
+        <button type="full" click="1" over="3" out="2"/>
+        <message value="askJoinGame" type="client">
+          <game value="25"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="fourboom1" type="gameMulti" name="GAME_NAME_25"/>
+      <tooltip id="fourboom2" type="gameMulti" name="GAME_NAME_25"/>
+      <tooltip id="fourboom3" type="gameMulti" name="GAME_NAME_25"/>
+      <tooltip id="door" type="door" target="21" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="21" type="room" x="411" y="193" rad="31"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

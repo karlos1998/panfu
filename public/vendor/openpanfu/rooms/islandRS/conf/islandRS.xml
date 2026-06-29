@@ -1,0 +1,158 @@
+<config check="5a713b644d13c82f86f803a603ee5843">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/background2.mp3" loops="-1" backgroundmusic="0"/>
+    <sound id="pirateParty" volume="0.4" path="audio/pirateParty.mp3" loops="-1" backgroundmusic="1" date="pirateVacation" gamestate="138,0,235"/>
+  </sounds>
+  <dates>
+    <date id="pirateparty" start="Jun 17 2009" finish="Jul 31 2009" check="0c4b591b4de7748"/>
+    <date id="pirateVacation" start="Jul 31 2013" finish="Aug 28 2013" check="71eba8c17f78ce5"/>
+    <date id="afterPirateVacation" start="Aug 28 2013" finish="Aug 28 2099" check="bd451e3267603b2"/>
+    <date id="pirateVacation" start="Aug 21 2013" finish="Aug 28 2013" check="0594ba9e07c67fa"/>
+    <date id="pirateVacation2" start="Jul 31 2013" finish="Aug 21 2013" check="446cacc3e5608eb"/>
+  </dates>
+  <module>
+    <waterBombReactions>
+      <zone idTarget="npcWilliam" reaction="williamWaterBombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="shipZone" reaction="shipWaterBombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+    </waterBombReactions>
+    <elements>
+      <element id="sleep" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="138,0,57"/>
+        </checks>
+      </element>
+      <element id="darkCloud3" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="138,0,25" date="pirateVacation2"/>
+          <visible value="1" gamestate="138,0,110" date="pirateVacation2"/>
+        </checks>
+      </element>
+      <element id="darkCloud4" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="138,0,30-105" date="pirateVacation2"/>
+        </checks>
+      </element>
+      <element id="pp_table1" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="pp_table2" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="pp_confeti1" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="pp_confeti2" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="pp_decoration" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":pirateparty" date="pirateparty"/>
+        </checks>
+      </element>
+      <element id="crabMother" button="1" visible="1">
+        <button type="click" over="2" out="1" click="1"/>
+        <message value="crabMother" sendClickTarget="true">
+          <name value="crabMother"/>
+        </message>
+      </element>
+      <element id="cocoNutMother" button="1" visible="1">
+        <button type="click" over="2" out="1" click="1"/>
+        <message value="cocoNutMother" sendClickTarget="true">
+          <name value="cocoNutMother"/>
+        </message>
+      </element>
+      <element id="cocoMC10" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC10" sendClickTarget="true">
+          <name value="cocoMC10"/>
+        </message>
+      </element>
+      <element id="cocoMC11" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC11" sendClickTarget="true">
+          <name value="cocoMC11"/>
+        </message>
+      </element>
+      <element id="cocoMC12" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC12" sendClickTarget="true">
+          <name value="cocoMC12"/>
+        </message>
+      </element>
+      <element id="cocoMC13" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC13" sendClickTarget="true">
+          <name value="cocoMC13"/>
+        </message>
+      </element>
+      <element id="cocoMC14" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC14" sendClickTarget="true">
+          <name value="cocoMC14"/>
+        </message>
+      </element>
+      <element id="npcWilliam" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180-250"/>
+          <visible value="1" date="pirateparty"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1" stopWalk="0"/>
+        <message value="talkToNPC" type="mysonisapirate">
+          <id value="npcWilliam"/>
+        </message>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="37" type="room" x="0" y="225" rad="60" angle="-175"/>
+      <hotspot target="73" type="action" x="480" y="175" rad="30" angle="-145">
+        <checks>
+          <type value="action" date="pirateVacation"/>
+          <target value="shiproomCheck" date="pirateVacation"/>
+          <target value="allowEntryShiproom" date="afterPirateVacation"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="allowEntryShiproom">
+        <joinRoom room="73"/>
+      </action>
+      <action id="shiproomCheck">
+        <shiproomCheck/>
+      </action>
+    </actions>
+    <properties/>
+  </module>
+</config>

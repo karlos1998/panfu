@@ -1,0 +1,192 @@
+<config check="fde502df134b3c32cca34f7cee9fbbbb">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="newYearsEve" start="Dec 29 2021" finish="Jan 3 2022" check="723eefb23c51c8c"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements hasshareditems="1">
+      <element id="mazeGamePC" button="1" visible="1" notWalkable="true">
+        <button type="full" click="2" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="50"/>
+        </message>
+      </element>
+      <element id="kamaria" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1"/>
+        <message value="leadPouringQuest.talkToKamaria"/>
+      </element>
+      <element id="mcChairKamari" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+      </element>
+      <element id="candle" button="0" visible="0" notWalkable="true">
+        <checks>
+          <button value="1" gamestate="59,0,11" date="newYearsEve"/>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1"/>
+        <message value="leadPouringQuest.candleClick"/>
+      </element>
+      <element type="door1" button="1" visible="1">
+        <button type="loop"/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door1"/>
+        </message>
+      </element>
+      <element type="door2" button="1" visible="1">
+        <button type="loop"/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door2"/>
+        </message>
+      </element>
+      <element type="door3" button="1" visible="1">
+        <button type="loop"/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door3"/>
+        </message>
+      </element>
+      <element id="pillow_0" button="1" visible="0">
+        <checks>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+        <button type="overClickMsg" over="3" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="pillow_"/>
+          <itemID value="0"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="pillow_"/>
+          <itemID value="0"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="0"/>
+        </message>
+      </element>
+      <element id="pillow_1" button="1" visible="0">
+        <checks>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+        <button type="overClickMsg" over="3" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="pillow_"/>
+          <itemID value="1"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="pillow_"/>
+          <itemID value="1"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="1"/>
+        </message>
+      </element>
+      <element id="pillow_2" button="1" visible="0">
+        <checks>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+        <button type="overClickMsg" over="3" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="pillow_"/>
+          <itemID value="2"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="pillow_"/>
+          <itemID value="2"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="2"/>
+        </message>
+      </element>
+      <element id="pillow_3" button="1" visible="0">
+        <checks>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+        <button type="overClickMsg" over="3" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="pillow_"/>
+          <itemID value="3"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="pillow_"/>
+          <itemID value="3"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="3"/>
+        </message>
+      </element>
+      <element id="pillow_4" button="1" visible="0">
+        <checks>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+        <button type="overClickMsg" over="3" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="pillow_"/>
+          <itemID value="4"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="pillow_"/>
+          <itemID value="4"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="4"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":mazeGameQuest" gamestate="50,0,0-40"/>
+        </checks>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="mazeGamePC" type="game" name="GAME_NAME_50"/>
+      <tooltip id="door1" type="door" target="26" angle="-135"/>
+      <tooltip id="door2" type="door" target="29" angle="-90"/>
+      <tooltip id="door3" type="door" target="42" angle="-45"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door2" target="29" type="room" x="406" y="201" rad="30"/>
+      <hotspot target="12" type="room" x="734" y="432" rad="55" angle="15"/>
+      <hotspot id="door1" target="26" type="room" x="80" y="262" rad="30"/>
+      <hotspot id="door3" target="42" type="room" x="681" y="274" rad="50" disableWithItem="104152"/>
+      <hotspot type="action" target="sit_chair_0" x="482" y="355" rad="45" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_1" x="475" y="292" rad="45" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_2" x="362" y="300" rad="45" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_3" x="427" y="405" rad="45" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_4" x="357" y="413" rad="45" stop="1" into="0"/>
+    </hotspots>
+    <actions>
+      <action id="denyEntryOfLaboratory">
+        <showBlockEntranceExplanation levelNeeded="3"/>
+      </action>
+      <action id="enterLaboratory">
+        <joinRoom room="26"/>
+      </action>
+      <action id="sit_chair_0">
+        <requestInteractSharedItem initial="pillow_" itemID="0" x="482" y="360" direction="left" zsortposition="422"/>
+      </action>
+      <action id="sit_chair_1">
+        <requestInteractSharedItem initial="pillow_" itemID="1" x="475" y="292" direction="left_down" zsortposition="422"/>
+      </action>
+      <action id="sit_chair_2">
+        <requestInteractSharedItem initial="pillow_" itemID="2" x="362" y="300" direction="left_down" zsortposition="422"/>
+      </action>
+      <action id="sit_chair_3">
+        <requestInteractSharedItem initial="pillow_" itemID="3" x="427" y="405" direction="left_up" zsortposition="422"/>
+      </action>
+      <action id="sit_chair_4">
+        <requestInteractSharedItem initial="pillow_" itemID="4" x="357" y="413" direction="left_up" zsortposition="422"/>
+      </action>
+    </actions>
+  </module>
+</config>

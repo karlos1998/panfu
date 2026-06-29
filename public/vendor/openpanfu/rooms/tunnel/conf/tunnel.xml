@@ -1,0 +1,39 @@
+<config check="6ac9f5fc7a6b18b9ad76d77b1c2893d2">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="bridge" frame=":default">
+        <checks>
+          <frame value=":open" gamestate="15,0,22-999"/>
+        </checks>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":open" gamestate="15,0,22-999"/>
+        </checks>
+      </element>
+      <element id="spitzBtn" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="2" stopWalk="1"/>
+        <message value="lostLoverQuest.spitzButtonClicked" type="theLostLover"/>
+      </element>
+      <element id="squareBtn" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="2" stopWalk="1"/>
+        <message value="lostLoverQuest.squareButtonClicked" type="theLostLover"/>
+      </element>
+      <element id="roundBtn" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="2" stopWalk="1"/>
+        <message value="lostLoverQuest.roundButtonClicked" type="theLostLover"/>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="45" type="room" x="330" y="460" rad="85" angle="90"/>
+      <hotspot target="47" type="room" x="53" y="134" rad="85" angle="190"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

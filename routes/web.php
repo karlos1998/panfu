@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Panfu\HomeController;
+use App\Http\Controllers\Panfu\InformationServerProxyController;
 use App\Http\Controllers\Panfu\PlayController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -12,6 +13,10 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/play', PlayController::class)->middleware(['auth', 'verified'])->name('play');
+
+Route::match(['get', 'post'], '/InformationServer/{path?}', InformationServerProxyController::class)
+    ->where('path', '.*')
+    ->name('panfu.information-server');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

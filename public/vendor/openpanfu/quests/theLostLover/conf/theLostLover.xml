@@ -1,0 +1,388 @@
+<config check="e0432b026cd30374380d9f3adb46a370">
+  <snippets path="quests/theLostLover/conf/snippets/lostlover_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="decisionPopUp" path="assets/DecisionPopUp.swf"/>
+    <asset id="finalScreenMoney" path="assets/FinalScreenMoney.swf"/>
+    <asset id="finalScreenMarry" path="assets/FinalScreenMarry.swf"/>
+  </assets>
+  <sounds>
+    <sound id="lostLoverSpeaker" path="audio/$$lang$$/$$key$$.mp3" lowerVolume="1"/>
+    <sound id="mummyGroul" volume="0.7" path="audio/pa_mummy.mp3" loops="-1"/>
+    <sound id="bucker" volume="0.7" path="audio/pa_bucker.mp3" loops="1"/>
+    <sound id="torch" volume="1" path="audio/pa_torch.mp3" loops="1"/>
+    <sound id="stone" volume="0.7" path="audio/pa_stone_button.mp3" loops="1"/>
+    <sound id="gearCorrect" volume="0.7" path="audio/pa_gear_correct.mp3" loops="1"/>
+    <sound id="wrongColors" volume="0.7" path="audio/pa_wrong_colors.mp3" loops="1"/>
+    <sound id="rightColor" volume="0.7" path="audio/pa_right_color.mp3" loops="1"/>
+    <sound id="doorWooden" volume="0.7" path="audio/pa_door_wooden.mp3" loops="1"/>
+    <sound id="burnDiamond" volume="1" path="audio/pa_ice_diamond_burns.mp3" loops="1"/>
+    <sound id="curseGone" volume="1" path="audio/pa_curse_gone.mp3" loops="1"/>
+    <sound id="bite" volume="1" path="audio/pa_bite.mp3" loops="1"/>
+    <sound id="till" volume="1" path="audio/pa_till.mp3" loops="1"/>
+  </sounds>
+  <module category="15">
+    <questType type="adventure" questNameInLogBook="NAME_QUEST_15"/>
+    <npcs>
+      <npc id="WILLIAM_PIRATEBAR" room="41">
+        <speechBubble x="92" y="280" w="450" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,0">
+            <statement key="PANDABEARD_SPEECH_01" parse="name" value="myUserName" sound="lostLoverSpeaker">
+              <action id="changeQuestState" state="15,1,1"/>
+              <action id="changeQuestState" state="15,0,1"/>
+            </statement>
+            <statement key="PANDABEARD_SPEECH_02" sound="lostLoverSpeaker"/>
+            <statement key="PANDABEARD_SPEECH_03" sound="lostLoverSpeaker"/>
+            <statement key="PANDABEARD_SPEECH_04" sound="lostLoverSpeaker"/>
+            <statement key="PANDABEARD_SPEECH_05" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,2">
+            <statement key="PANDABEARD_SPEECH_06" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,3">
+            <statement key="PANDABEARD_SPEECH_07" sound="lostLoverSpeaker">
+              <action id="removeFeather" itemID="101266"/>
+            </statement>
+            <statement key="PANDABEARD_SPEECH_08" sound="lostLoverSpeaker"/>
+            <statement key="PANDABEARD_SPEECH_09" sound="lostLoverSpeaker"/>
+            <statement key="PANDABEARD_SPEECH_10" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,4">
+            <statement key="PANDABEARD_SPEECH_11" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,5">
+            <statement key="PANDABEARD_SPEECH_12" sound="lostLoverSpeaker">
+              <action id="openBarBasementDoor" itemID="101275"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="15,0,6-7">
+            <statement key="PANDABEARD_SPEECH_13" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,8-20">
+            <statement key="PANDABEARD_SPEECH_14" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,21-57">
+            <statement key="PANDABEARD_SPEECH_15" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,58-62">
+            <statement key="PANDABEARD_SPEECH_16" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,63">
+            <statement key="PANDABEARD_SPEECH_17" sound="lostLoverSpeaker"/>
+            <statement key="PANDABEARD_SPEECH_18" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,75-99">
+            <statement key="PANDABEARD_SPEECH_END_REPEAT" sound="lostLoverSpeaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="KAMARIA_TOWER" ignoreAsset="1">
+        <speechBubble x="252" y="210" w="450" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,1-3">
+            <statement key="KAMARIA_SPEECH_01" parse="name" value="myUserName" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,4-5">
+            <statement key="KAMARIA_SPEECH_02" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,6-11">
+            <statement key="KAMARIA_SPEECH_03" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,12-20">
+            <statement key="KAMARIA_SPEECH_04" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_05" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,51">
+            <statement key="KAMARIA_SPEECH_07" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_08" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_09" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_10" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,52">
+            <statement key="KAMARIA_SPEECH_11" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,53">
+            <statement key="KAMARIA_SPEECH_12" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,54">
+            <statement key="KAMARIA_SPEECH_12" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,54" daypasstest="15,0,1,+">
+            <statement key="KAMARIA_SPEECH_13" sound="lostLoverSpeaker">
+              <action id="lostLoverQuest.giveLavaGlove"/>
+              <action id="changeQuestState" state="15,1,7"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_14" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,55">
+            <statement key="KAMARIA_SPEECH_14" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,56">
+            <statement key="KAMARIA_SPEECH_15" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_16" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,57">
+            <statement key="KAMARIA_SPEECH_17" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,57" daypasstest="15,0,1,+">
+            <statement key="KAMARIA_SPEECH_18" sound="lostLoverSpeaker">
+              <action id="changeQuestState" state="15,1,8"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_19" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_20" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_21" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_22" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_23" sound="lostLoverSpeaker">
+              <action id="lostLoverQuest.giveDiamondBack"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="15,0,58-59">
+            <statement key="KAMARIA_SPEECH_24" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,60">
+            <statement key="KAMARIA_SPEECH_25" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_26" parse="name" value="myUserName" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_27" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_28" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_29" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,61-74">
+            <statement key="KAMARIA_SPEECH_28" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,75">
+            <statement key="KAMARIA_SPEECH_30" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_37" sound="lostLoverSpeaker">
+              <action id="changeQuestState" state="15,0,80"/>
+              <action id="changeQuestState" state="15,1,12"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_38" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_39" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_40" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,81">
+            <statement key="KAMARIA_SPEECH_41" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,82">
+            <statement key="KAMARIA_SPEECH_43" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_44" sound="lostLoverSpeaker"/>
+            <statement key="KAMARIA_SPEECH_45" sound="lostLoverSpeaker">
+              <action id="changeQuestState" state="15,1,13"/>
+            </statement>
+            <statement>
+              <action id="lostLoverQuest.giveIceCrownAndSuit"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="15,0,83">
+            <statement key="KAMARIA_SPEECH_45_A" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,84">
+            <statement key="KAMARIA_SPEECH_46" sound="lostLoverSpeaker" parse="name" value="myUserName">
+              <action id="changeQuestState" state="15,1,14"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="KAMARIA2" room="46" name="Kamaria" assetname="kamaria">
+        <speechBubble x="330" y="150" w="350" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,84">
+            <statement key="KAMARIA_SPEECH_46" sound="lostLoverSpeaker" parse="name" value="myUserName">
+              <action id="changeQuestState" state="15,1,14"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="farid" room="46" name="Farid" assetname="farid">
+        <speechBubble x="260" y="130" w="450" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,59">
+            <statement key="FARID_SPEECH_01" sound="lostLoverSpeaker"/>
+            <statement key="FARID_SPEECH_02" sound="lostLoverSpeaker"/>
+            <statement key="FARID_SPEECH_03" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,60">
+            <statement key="FARID_SPEECH_03" sound="lostLoverSpeaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="farid2" room="46" name="Farid">
+        <speechBubble x="360" y="130" w="350" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,84">
+            <statement key="FARID_SPEECH_04" parse="name" value="myUserName" sound="lostLoverSpeaker"/>
+            <statement key="FARID_SPEECH_05" parse="name" value="myUserName" sound="lostLoverSpeaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="faridTower" room="20" name="Farid" assetname="farid">
+        <speechBubble x="220" y="275" w="450" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,60-83">
+            <statement key="FARID_SPEECH_04" parse="name" value="myUserName" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,90-99">
+            <statement key="FARID_SPEECH_04" parse="name" value="myUserName" sound="lostLoverSpeaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="mummyOK" room="44" name="The Mummy" assetname="mummyOK">
+        <speechBubble x="272" y="230" w="350" offX="1" offY="1" pointX="40" pointY="-25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,6">
+            <statement key="MUMMY_SPEECH_01" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_02" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_03" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_04" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_05" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_06" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_07" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,7-8">
+            <statement key="MUMMY_SPEECH_08" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,9">
+            <statement key="MUMMY_SPEECH_09" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_10" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,10">
+            <statement key="MUMMY_SPEECH_10" sound="lostLoverSpeaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="GONZO_KIOSK" room="5">
+        <speechBubble x="252" y="150" w="350" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,7">
+            <statement key="KIOSKBOY_SPEECH_01" sound="lostLoverSpeaker"/>
+            <statement key="KIOSKBOY_SPEECH_02" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,8" daypasstest="15,0,0">
+            <statement key="KIOSKBOY_SPEECH_03" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,8" daypasstest="15,0,1,+">
+            <statement key="KIOSKBOY_SPEECH_04" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,9">
+            <statement key="KIOSKBOY_SPEECH_05" sound="lostLoverSpeaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="MUMMY_BASEMENT" room="44">
+        <speechBubble x="272" y="230" w="350" offX="1" offY="1" pointX="40" pointY="-25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,11">
+            <statement key="MUMMY_SPEECH_11" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_12" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_13" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_14" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_15" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_16" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_17" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_18" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_19" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_20" sound="lostLoverSpeaker"/>
+            <statement key="MUMMY_SPEECH_22" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,12-18">
+            <statement key="MUMMY_SPEECH_23" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,19-22">
+            <statement key="MUMMY_SPEECH_24" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,100">
+            <statement key="MUMMY_SPEECH_30" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,51-58">
+            <statement key="MUMMY_SPEECH_25" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,59-75">
+            <statement key="MUMMY_SPEECH_26" sound="lostLoverSpeaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="BOOKWORM_LABORATORY">
+        <speechBubble x="700" y="300" w="300" offX="-1" offY="-1" pointX="-90" pointY="20"/>
+        <behaviours>
+          <behaviour gamestate="15,0,13" doesNotHaveOneItem="101277">
+            <statement key="MAGIC_ICEDIAMOND_BOOKWORM_BEFORE_KNIFE" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,13-99" hasItems="101277">
+            <statement key="MAGIC_ICEDIAMOND_BOOKWORM_AFTER_KNIFE" sound="lostLoverSpeaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="HORST_HARBOUR">
+        <speechBubble x="252" y="140" w="350" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,12">
+            <statement key="FISHERMAN_SPEECH_01" sound="lostLoverSpeaker"/>
+            <statement key="FISHERMAN_SPEECH_02" sound="lostLoverSpeaker"/>
+            <statement key="FISHERMAN_SPEECH_03" sound="lostLoverSpeaker"/>
+            <statement key="FISHERMAN_SPEECH_04" sound="lostLoverSpeaker"/>
+            <statement key="FISHERMAN_SPEECH_05" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,13" doesNotHaveOneItem="101277">
+            <statement key="FISHERMAN_SPEECH_08" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,13" doesNotHaveOneItem="101278">
+            <statement key="FISHERMAN_SPEECH_07" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,13" doesNotHaveOneItem="101277,101278">
+            <statement key="FISHERMAN_SPEECH_06" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,13" hasItems="101277,101278">
+            <statement key="FISHERMAN_SPEECH_09" sound="lostLoverSpeaker">
+              <action id="lostLoverQuest.fishermanTakesKnifeAndWood"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="15,0,14" daypasstest="15,0,0,0">
+            <statement key="FISHERMAN_SPEECH_09" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,14" daypasstest="15,0,1,+">
+            <statement key="FISHERMAN_SPEECH_10" sound="lostLoverSpeaker">
+              <action id="lostLoverQuest.fishermanGivesTorch"/>
+              <action id="changeQuestState" state="15,1,3"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="15,0,19-99">
+            <statement key="FISHERMAN_SPEECH_END_REPEAT" sound="lostLoverSpeaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="parrot" room="45" name="parrot">
+        <speechBubble x="562" y="340" w="170" offX="1" offY="-1" pointX="85" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="15,0,20-21">
+            <statement key="PARROT_SPEECH_01" sound="lostLoverSpeaker"/>
+            <action id="changeQuestState" state="15,0,21"/>
+          </behaviour>
+          <behaviour gamestate="15,0,51-57">
+            <statement key="PARROT_SPEECH_03" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,58-61">
+            <statement key="PARROT_SPEECH_04" sound="lostLoverSpeaker"/>
+          </behaviour>
+          <behaviour gamestate="15,0,62">
+            <statement key="PARROT_SPEECH_05" sound="lostLoverSpeaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <items>
+      <item id="feather" itemID="101266" name="Piece of Bandages with Blue Feather"/>
+      <item id="crowbar" itemID="101275" name="Crowbar"/>
+      <item id="pinkBandage" itemID="101276" name="Paper Roll"/>
+      <item id="swissknife" itemID="101277" name="Swiss Knife"/>
+      <item id="wood" itemID="101278" name="Wood"/>
+      <item id="torch" itemID="101279" name="Torch"/>
+      <item id="iceCrown" itemID="101306" name="Magic Ice Crown"/>
+      <item id="iceSuit" itemID="101307" name="Magic Ice Suit"/>
+      <item id="lavaPlant" itemID="101308" name="Lava Plant"/>
+      <item id="diamond" itemID="101309" name="Magic Ice Diamond"/>
+      <item id="lavaGlove" itemID="101310" name="Lava Glove"/>
+      <item id="cookie" itemID="101311" name="Chocolate Cookie"/>
+      <item id="parrot" itemID="101328" name="Beardy"/>
+    </items>
+  </module>
+</config>

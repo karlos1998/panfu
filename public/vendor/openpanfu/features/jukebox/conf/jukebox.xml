@@ -1,0 +1,88 @@
+<config check="88957180873e2ed00c090614c64dd128">
+  <assets>
+    <asset id="jukeboxAsset" path="assets/jukebox.swf"/>
+  </assets>
+  <sounds>
+    <sound id="machine" volume="0.4" path="audio/machine.mp3"/>
+
+    <!-- Group 1: Panfu Music -->
+    <sound id="song_birdy" name="Birdy on Stage" path="audio/birdy_onstage_withsilence.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_bollyhop" name="Bolly Hop" path="audio/Bolly_Hop.mp3" loops="-1" nodownload="1" group="1"/>
+    <sound id="song_cpj" name="Chaman Pand Jam" path="audio/Chaman_Pand_Jam.mp3" loops="-1" nodownload="1" group="1"/>
+    <sound id="song_comebacktome" name="Come back to me" path="audio/Come_back_to_me.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_goingthrough" name="Going Through" path="audio/GoingThroughAcoustic.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_sunshinegirl" name="Sunshine Girl" path="audio/HaveaSunshineGirl.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_thedoor" name="The Door" path="audio/TheDoorAcoustic.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_up" name="Up" path="audio/UpAcoustic.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_fireworks" name="Fireworks by Eva" path="audio/fireworks.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_forevermore" name="Forever More" path="audio/Forever_more.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_hero" name="Hero" path="audio/Hero.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_hiphop" name="Hip Hop" path="audio/Panfu_HipHop.mp3" loops="-1" nodownload="1" group="1"/>
+    <sound id="song_letsplay" name="Let's Play" path="audio/Lets_Play.mp3" loops="-1" nodownload="1" group="1"/>
+    <sound id="song_b4_planet" name="All Around The Planet" path="audio/All_Around_The_Planet.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_b4_nl" name="No Limit" path="audio/No_Limit.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_circus" name="Panfu Circus" path="audio/Panfu_Circus.mp3" loops="1" nodownload="1" group="1"/>
+    <sound id="song_party" name="Panfu Party" path="audio/Panfu_Party.mp3" loops="-1" nodownload="1" group="1"/>
+    <sound id="song_surf" name="Panfu Surf" path="audio/Panfu_Surf.mp3" loops="-1" nodownload="1" group="1"/>
+    <sound id="song_hawaii" name="Hawaii" path="audio/hawaii.mp3" loops="-1" nodownload="1" group="1"/>
+    <sound id="song_theme" name="Panfu Theme" path="audio/Panfu_Theme.mp3" loops="-1" nodownload="1" group="1"/>
+    <sound id="song_triphop" name="Panfu Triphop" path="audio/Panfu_TripHop.mp3" loops="-1" nodownload="1" group="1"/>
+    <sound id="song_partydrums" name="Party Drums" path="audio/partydrums.mp3" loops="-1" nodownload="1" group="1"/>
+    <sound id="song_shoppinglist" name="Shopping List" path="audio/Shopping_List.mp3" loops="-1" nodownload="1" group="1"/>
+
+    <!-- Group 2: Panfu Room Backgrounds -->
+    <sound id="song_beach" name="Beach" path="audio/Beach.mp3" loops="-1" nodownload="1" group="2"/>
+    <sound id="song_castle" name="Castle" path="audio/Castle.mp3" loops="-1" nodownload="1" group="2"/>
+    <sound id="song_giftshop" name="Gift Shop" path="audio/Gift_Shop.mp3" loops="-1" nodownload="1" group="2"/>
+    <sound id="song_icediamond" name="Ice Diamond" path="audio/Ice_Diamond.mp3" loops="-1" nodownload="1" group="2"/>
+    <sound id="song_knighthall" name="Knighthall" path="audio/Knighthall.mp3" loops="-1" nodownload="1" group="2"/>
+    <sound id="song_library" name="Library" path="audio/Library.mp3" loops="-1" nodownload="1" group="2"/>
+    <sound id="song_pandahill" name="Pandahill" path="audio/Pandahill.mp3" loops="-1" nodownload="1" group="2"/>
+    <sound id="song_sanfranpanfu" name="San Franpanfu" path="audio/San_Franpanfu.mp3" loops="-1" nodownload="1" group="2"/>
+    <sound id="song_tower" name="Tower" path="audio/Tower.mp3" loops="-1" nodownload="1" group="2"/>
+    <sound id="song_town" name="Town" path="audio/Town.mp3" loops="-1" nodownload="1" group="2"/>
+    <sound id="song_treehole" name="Treehole" path="audio/Treehole.mp3" loops="-1" nodownload="1" group="2"/>
+
+    <!-- Group 3: Oloko Room Backgrounds -->
+    <sound id="song_wisetree" name="Oloko - Wise Tree" path="audio/oloko/OLO_01_wise_tree.mp3" loops="-1" nodownload="1" group="5"/>
+    <sound id="song_oloko" name="Oloko - Turtle" path="audio/oloko/OLO_02_oloko.mp3" loops="-1" nodownload="1" group="5"/>
+    <sound id="song_farmland" name="Oloko - Farm Land" path="audio/oloko/OLO_03_farm_land.mp3" loops="-1" nodownload="1" group="5"/>
+    <sound id="song_sugarpeak" name="Oloko - Sugar Peak" path="audio/oloko/OLO_04_sugar_peak.mp3" loops="-1" nodownload="1" group="5"/>
+    <sound id="song_rabbitstyle" name="Oloko - Rabbit Style" path="audio/oloko/OLO_05_rabbit_style.mp3" loops="-1" nodownload="1" group="5"/>
+    <sound id="song_dogstyle" name="Oloko - Dog Style" path="audio/oloko/OLO_06_dog_style.mp3" loops="-1" nodownload="1" group="5"/>
+    <sound id="song_horsestyle" name="Oloko - Horse Style" path="audio/oloko/OLO_07_horse_style_corrected.mp3" loops="-1" nodownload="1" group="5"/>
+    <sound id="song_catstyle" name="Oloko - Cat Style" path="audio/oloko/OLO_08_cat_style.mp3" loops="-1" nodownload="1" group="5"/>
+
+    <!-- Group 4: Music -->
+    <sound id="song_fortnite" name="Fortnite OST" path="audio/music/Fortnite_OST.mp3" loops="1" nodownload="1" group="4"/>
+    <sound id="song_minecraft" name="Minecraft Theme" path="audio/music/Minecraft_Theme.mp3" loops="1" nodownload="1" group="4"/>
+    <sound id="song_genshin" name="Genshin Impact Theme" path="audio/music/Genshin_Impact_Main_Theme.mp3" loops="1" nodownload="1" group="4"/>
+
+    <!-- Group 5: Memes -->
+    <sound id="song_skeletonmeme" name="Berserk Skeleton Meme" path="audio/music/Smoke.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_nevergonna" name="Never Gonna Give You Up" path="audio/music/Rick_Astley_-_Never_Gonna_Give_You_Up.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_fun" name="Fun Song" path="audio/music/Spongebob_ft._Plankton_-_Fun_Song.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_jellyfishjam" name="Jellyfish Jam" path="audio/music/Jellyfish_Jam.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_sweetvictory" name="Sweet Victory" path="audio/music/Sweet_Victory.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_nyancat" name="Nyan Cat!" path="audio/music/Nyan_Cat.mp3" loops="-1" nodownload="1" group="5"/>
+    <sound id="song_chipichapa" name="Chipi Chapa" path="audio/music/Chipi_Chapa.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_astronomia" name="Astronomia" path="audio/music/Astronomia.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_shootingstars" name="Shooting Stars" path="audio/music/Shooting_Stars.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_crabrave" name="Crab Rave" path="audio/music/Crab_Rave.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_thefox" name="What Does The Fox Say?" path="audio/music/The_Fox.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_ugotthat" name="U Got That" path="audio/music/U_Got_That.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_ultimate" name="Ultimate" path="audio/music/Ultimate.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_blue" name="Blue" path="audio/music/Blue.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_takeonme" name="Take On Me" path="audio/music/Take_On_Me.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_livininthesunlight" name="Livin' in the Sunlight" path="audio/music/Livin_in_the_Sunlight.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_run" name="Run" path="audio/music/Run.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_sandstorm" name="Sandstorm" path="audio/music/Sandstorm.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_7thelement" name="7th Element" path="audio/music/7th_Element.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_krustykrab" name="Krusty Krab" path="audio/music/Krusty_Krab.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_dota" name="DotA" path="audio/music/DotA.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_moontheme" name="The Moon Theme" path="audio/music/Moon_Theme.mp3" loops="1" nodownload="1" group="5"/>
+    <sound id="song_evilmorty" name="Evil Morty" path="audio/music/Evil_Morty.mp3" loops="-1" nodownload="1" group="5"/>
+    <sound id="song_midnight" name="MIDNIGHT" path="audio/music/MIDNIGHT.mp3" loops="-1" nodownload="1" group="5"/>
+    <sound id="song_oiia" name="OIIA OIIA" path="audio/music/OIIA_OIIA.mp3" loops="-1" nodownload="1" group="5"/>
+  </sounds>
+</config>

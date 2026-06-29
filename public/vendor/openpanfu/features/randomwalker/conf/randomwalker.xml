@@ -1,0 +1,19 @@
+<config check="508648201e052cc6388a338342fdbeb7">
+  <assets>
+    <asset id="pony" path="assets/pony.swf"/>
+    <asset id="wooby" path="assets/wooby.swf"/>
+    <asset id="woobySpottet" path="assets/woobySpottet.swf"/>
+  </assets>
+  <module>
+    <elements>
+      <element id="wooby" number="1" room="19" time="3000" speed="80"/>
+      <element id="woobySpottet" number="1" room="19" time="3000" speed="80"/>
+      <element id="wooby" number="1" room="14" time="3000" speed="80"/>
+      <element id="woobySpottet" number="1" room="14" time="3000" speed="80"/>
+      <element id="wooby" number="1" room="12" time="3000" speed="80"/>
+      <element id="woobySpottet" number="1" room="12" time="3000" speed="80"/>
+      <element id="pony" number="1" room="31" time="6000" speed="60"/>
+    </elements>
+    <sounds/>
+  </module>
+</config>

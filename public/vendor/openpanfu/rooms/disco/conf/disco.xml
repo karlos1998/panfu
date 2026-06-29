@@ -1,0 +1,195 @@
+<config check="415dc56915972fd83df61c79f584b7f4">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="turntable_visible_2" start="Jan 26 2009" finish="Oct 25 2010" check="c1e9c36fb61d044"/>
+    <date id="turntable_visible_3" start="Oct 26 2009" finish="Jan 1 2012" check="f91e02f6637ce36"/>
+    <date id="pompomParty" start="Nov 15 2009" finish="Nov 16 2009" check="fc02bc75bc82e8f"/>
+    <date id="eclipse" start="Sep 29 2009" finish="Oct 13 2009" check="645da1799e435a5"/>
+    <date id="eclipseTesting" start="Sep 29 2009" finish="Oct 6 2009" check="c343609ba087fcb"/>
+    <date id="hospitalQuest" start="Feb 24 2010" finish="Mar 8 2010" check="29d5b7e85e6128a"/>
+    <date id="soapOpera" start="Apr 20 2012" finish="Apr 23 2012" check="ea0bf73f87f581d"/>
+    <date id="summerQuest" start="Aug 2 2010" finish="Aug 3  2010" check="c653e9dc808cfc5"/>
+    <date id="newCourt" start="Sep 9 2010" finish="Sep 18 2010" check="e57d73abc723931"/>
+    <date id="napasapaQuest" start="Sep 28 2011" finish="Nov 8 2011" check="06ac98ee81475f1"/>
+    <date id="napasapaReturns2" start="Jan 25 2012" finish="Feb 12 2012" check="9e0fb0378aa1f21"/>
+    <date id="sickIris" start="May 1 2013" finish="May 8 2013" check="d0aa2b0a057c5a5"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="scratch_0" volume="1" path="audio/scratch/scratch1.mp3" loops="3"/>
+    <sound id="scratch_1" volume="1" path="audio/scratch/scratch2.mp3" loops="3"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="stoned_lounge" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,290-291" date="summerQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertLounge" type="summerQuest"/>
+      </element>
+      <element id="bubbleGround" visible="0">
+        <checks>
+          <visible value="1" gamestate="114,0,0-10" isLang="DE" date="soapOpera"/>
+        </checks>
+      </element>
+      <element id="bubbles1" visible="0">
+        <checks>
+          <visible value="1" gamestate="114,0,0-10" isLang="DE" date="soapOpera"/>
+        </checks>
+      </element>
+      <element id="bubbles2" visible="0">
+        <checks>
+          <visible value="1" gamestate="114,0,0-10" isLang="DE" date="soapOpera"/>
+        </checks>
+      </element>
+      <element id="bartender" button="0" visible="1" notWalkable="true">
+        <checks>
+          <button value="1" gamestate="134,0,205-270" date="sickIris"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="BARKEEPER_DISCO"/>
+        </message>
+      </element>
+      <element id="CarusoNPC" button="1" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="pompomQuest.talkToCaruso" type="pompomQuest"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":pompom" date="pompomParty"/>
+          <frame value=":summerQuest" date="summerQuest"/>
+        </checks>
+      </element>
+      <element id="pompom1" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+      </element>
+      <element id="pompom2" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+      </element>
+      <element id="pompom3" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+      </element>
+      <element id="pompom4" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+      </element>
+      <element id="pompom5" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+      </element>
+      <element id="pompom6" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+      </element>
+      <element id="pompom7" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+      </element>
+      <element id="pompom8" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+      </element>
+      <element id="pompom9" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+      </element>
+      <element id="pompom10" visible="0">
+        <checks>
+          <visible value="1" date="pompomParty" gamestate="8,0,31"/>
+        </checks>
+      </element>
+      <element id="devReset" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eclipseTesting" mode="dev"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="eclipseQuest.reset" type="eclipseQuest"/>
+      </element>
+      <element id="devTest" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eclipseTesting" mode="dev"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="eclipseQuest.test" type="eclipseQuest"/>
+      </element>
+      <element id="devGetItem1" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eclipseTesting" mode="dev" gamestate="10,0,2"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="eclipseQuest.getItem1" type="eclipseQuest"/>
+      </element>
+      <element id="devGetItem2" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eclipseTesting" mode="dev" gamestate="10,0,4"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="eclipseQuest.getItem2" type="eclipseQuest"/>
+      </element>
+      <element id="devGetItem3" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eclipseTesting" mode="dev" gamestate="10,0,6"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="eclipseQuest.getItem3" type="eclipseQuest"/>
+      </element>
+      <element type="door" id="" button="1" visible="1">
+        <button type="over" over="2" out="1"/>
+      </element>
+      <element id="arcadeBollyGames" button="1" visible="1">
+        <button type="full" click="1" over="3" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="13"/>
+        </message>
+      </element>
+      <element id="pandi" button="1" visible="1">
+        <checks>
+          <visible value="0" requestHasOneActiveItem="104152"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1" stopWalk="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="DJ_DISCO"/>
+        </message>
+      </element>
+      <element id="turntables" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <checks>
+          <message value="message"/>
+          <message value="gold" user="isPremium"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="showUpsellPopup"/>
+        <gold value="initJukeBox"/>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="arcadeBollyGames" type="game" name="GAME_NAME_13"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="59" type="room" x="752" y="287" rad="45" angle="-20">
+        <checks>
+          <target value="14" date="newCourt"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+  </module>
+</config>

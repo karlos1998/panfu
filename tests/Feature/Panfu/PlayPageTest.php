@@ -29,9 +29,12 @@ class PlayPageTest extends TestCase
                 ->where('client.ruffleScript', '/vendor/ruffle/ruffle.js')
                 ->where('client.swfUrl', '/vendor/openpanfu/Panfu.swf')
                 ->where('client.baseUrl', '/vendor/openpanfu/')
-                ->where('client.flashvars.infoServer', '/gateway/amf/')
-                ->where('client.flashvars.mode', 'local')
-                ->missing('client.flashvars.sessionKey')
+                ->where('client.informationServerUrl', '/InformationServer/')
+                ->where('client.flashvars.iServer', '/InformationServer/')
+                ->where('client.flashvars.langId', 'EN')
+                ->where('client.flashvars.mode', 'dev')
+                ->where('client.flashvars.user', $user->name)
+                ->has('client.flashvars.sessionKey')
                 ->etc());
     }
 

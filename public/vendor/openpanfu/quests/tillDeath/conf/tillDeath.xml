@@ -1,0 +1,932 @@
+<config>
+	<snippets path='quests/tillDeath/conf/snippets/text_quest_panfuoffspring_$$lang$$.xml' _REPLACE_='1' />
+	
+	<dates>
+	</dates>
+	
+	<sounds>
+	
+		<!-- melody -->
+		<sound id="tone1"  volume="1" path="audio/melody/tone1.mp3" loops="1" />
+		<sound id="tone2"  volume="1" path="audio/melody/tone2.mp3" loops="1" />
+		<sound id="tone3"  volume="1" path="audio/melody/tone3.mp3" loops="1" />
+		<sound id="melody"  volume="1" path="audio/melody/melody.mp3" loops="1" />
+		<sound id="de_narrator_end"  volume="1" path="audio/de/narrator/narrator_11.mp3" loops="1" />
+		<sound id="en_narrator_end"  volume="1" path="audio/en/narrator/narrator_11.mp3" loops="1" />
+		
+		
+		<sound id="DE_NARRATOR_01"  volume="1" path="audio/de/narrator/narrator_1.mp3" loops="1" lowerVolume="1"/>
+		<sound id="DE_NARRATOR_02"  volume="1" path="audio/de/narrator/narrator_2.mp3" loops="1" lowerVolume="1"/>
+		<sound id="DE_NARRATOR_03"  volume="1" path="audio/de/narrator/narrator_3.mp3" loops="1" lowerVolume="1"/>
+		<sound id="DE_NARRATOR_07"  volume="1" path="audio/de/narrator/narrator_7.mp3" loops="1" lowerVolume="1"/>
+		<sound id="DE_NARRATOR_08"  volume="1" path="audio/de/narrator/narrator_8.mp3" loops="1" lowerVolume="1" />
+		<sound id="DE_NARRATOR_10"  volume="1" path="audio/de/narrator/narrator_10.mp3" loops="1" lowerVolume="1"/>
+		<sound id="DE_NARRATOR_15"  volume="1" path="audio/de/narrator/narrator_15.mp3" loops="1" lowerVolume="1"/>
+		
+		<sound id="NARRATOR_01"  volume="1" path="audio/en/narrator/narrator_1.mp3" loops="1" lowerVolume="1"/>
+		<sound id="NARRATOR_02"  volume="1" path="audio/en/narrator/narrator_2.mp3" loops="1" lowerVolume="1"/>
+		<sound id="NARRATOR_03"  volume="1" path="audio/en/narrator/narrator_3.mp3" loops="1" lowerVolume="1"/>
+		<sound id="NARRATOR_07"  volume="1" path="audio/en/narrator/narrator_7.mp3" loops="1" lowerVolume="1"/>
+		<sound id="NARRATOR_08"  volume="1" path="audio/en/narrator/narrator_8.mp3" loops="1" lowerVolume="1"/>
+		<sound id="NARRATOR_10"  volume="1" path="audio/en/narrator/narrator_10.mp3" loops="1" lowerVolume="1"/>
+		<sound id="NARRATOR_15"  volume="1" path="audio/en/narrator/narrator_15.mp3" loops="1" lowerVolume="1"/>
+		
+		
+		<sound id="en_castaway_1"  volume="1" path="audio/en/castaway/castaway_1.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_castaway_2"  volume="1" path="audio/en/castaway/castaway_2.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_castaway_3"  volume="1" path="audio/en/castaway/castaway_3.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_castaway_4"  volume="1" path="audio/en/castaway/castaway_4.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_castaway_5"  volume="1" path="audio/en/castaway/castaway_5.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_castaway_6"  volume="1" path="audio/en/castaway/castaway_6.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_castaway_7"  volume="1" path="audio/en/castaway/castaway_7.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_castaway_8"  volume="1" path="audio/en/castaway/castaway_8.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_castaway_9"  volume="1" path="audio/en/castaway/castaway_9.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_castaway_10"  volume="1" path="audio/en/castaway/castaway_10.mp3" loops="1" lowerVolume="1" />
+		
+		<sound id="en_kamaria_1"  volume="1" path="audio/en/kamaria/kamaria_1.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_2"  volume="1" path="audio/en/kamaria/kamaria_2.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_3"  volume="1" path="audio/en/kamaria/kamaria_3.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_4"  volume="1" path="audio/en/kamaria/kamaria_4.mp3" loops="1" lowerVolume="1" />
+		
+		<sound id="en_kamaria_5"  volume="1" path="audio/en/kamaria/kamaria_5.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_6"  volume="1" path="audio/en/kamaria/kamaria_6.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_7"  volume="1" path="audio/en/kamaria/kamaria_7.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_7_2"  volume="1" path="audio/en/kamaria/kamaria_8.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_8"  volume="1" path="audio/en/kamaria/kamaria_9.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_8_2"  volume="1" path="audio/en/kamaria/kamaria_10.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_9"  volume="1" path="audio/en/kamaria/kamaria_11.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_9_2"  volume="1" path="audio/en/kamaria/kamaria_12.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_10"  volume="1" path="audio/en/kamaria/kamaria_13.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_11"  volume="1" path="audio/en/kamaria/kamaria_14.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_12"  volume="1" path="audio/en/kamaria/kamaria_15.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_13"  volume="1" path="audio/en/kamaria/kamaria_16.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_14"  volume="1" path="audio/en/kamaria/kamaria_17.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_15"  volume="1" path="audio/en/kamaria/kamaria_18.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_16"  volume="1" path="audio/en/kamaria/kamaria_19.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_17"  volume="1" path="audio/en/kamaria/kamaria_20.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_18"  volume="1" path="audio/en/kamaria/kamaria_21.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_19"  volume="1" path="audio/en/kamaria/kamaria_22.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_19_2"  volume="1" path="audio/en/kamaria/kamaria_23.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_20"  volume="1" path="audio/en/kamaria/kamaria_24.mp3" loops="1" lowerVolume="1" />
+		
+		<sound id="en_kamaria_21"  volume="1" path="audio/en/kamaria/kamaria_25.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_22"  volume="1" path="audio/en/kamaria/kamaria_26.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_23"  volume="1" path="audio/en/kamaria/kamaria_27.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_24"  volume="1" path="audio/en/kamaria/kamaria_28.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_25"  volume="1" path="audio/en/kamaria/kamaria_29.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_26"  volume="1" path="audio/en/kamaria/kamaria_30.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_27"  volume="1" path="audio/en/kamaria/kamaria_31.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_28"  volume="1" path="audio/en/kamaria/kamaria_32.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_kamaria_29"  volume="1" path="audio/en/kamaria/kamaria_33.mp3" loops="1" lowerVolume="1" />
+
+		<sound id="en_fisherman_1"  volume="1" path="audio/en/fisherman/fisherman_1.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_2"  volume="1" path="audio/en/fisherman/fisherman_2.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_3"  volume="1" path="audio/en/fisherman/fisherman_3.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_4"  volume="1" path="audio/en/fisherman/fisherman_4.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_5"  volume="1" path="audio/en/fisherman/fisherman_5.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_6"  volume="1" path="audio/en/fisherman/fisherman_6.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_7"  volume="1" path="audio/en/fisherman/fisherman_7.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_8"  volume="1" path="audio/en/fisherman/fisherman_8.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_9"  volume="1" path="audio/en/fisherman/fisherman_9.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_10"  volume="1" path="audio/en/fisherman/fisherman_10.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_11"  volume="1" path="audio/en/fisherman/fisherman_11.mp3" loops="1" lowerVolume="1" />
+		<sound id="en_fisherman_12"  volume="1" path="audio/en/fisherman/fisherman_12.mp3" loops="1" lowerVolume="1" />
+
+		<sound id="en_ghostcow_1"  volume="1" path="audio/en/cow/COWGHOST_1.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_2"  volume="1" path="audio/en/cow/COWGHOST_2.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_3"  volume="1" path="audio/en/cow/COWGHOST_3.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_4"  volume="1" path="audio/en/cow/COWGHOST_4.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_5"  volume="1" path="audio/en/cow/COWGHOST_5.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_6"  volume="1" path="audio/en/cow/COWGHOST_6.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_7"  volume="1" path="audio/en/cow/COWGHOST_7.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_8"  volume="1" path="audio/en/cow/COWGHOST_8.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_9"  volume="1" path="audio/en/cow/COWGHOST_9.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_10"  volume="1" path="audio/en/cow/COWGHOST_10.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_11"  volume="1" path="audio/en/cow/COWGHOST_11.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_12"  volume="1" path="audio/en/cow/COWGHOST_12.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_13"  volume="1" path="audio/en/cow/COWGHOST_13.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_14"  volume="1" path="audio/en/cow/COWGHOST_14.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_15"  volume="1" path="audio/en/cow/COWGHOST_15.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_16"  volume="1" path="audio/en/cow/COWGHOST_16.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_17"  volume="1" path="audio/en/cow/COWGHOST_17.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_18"  volume="1" path="audio/en/cow/COWGHOST_18.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_19"  volume="1" path="audio/en/cow/COWGHOST_19.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_20"  volume="1" path="audio/en/cow/COWGHOST_20.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_21"  volume="1" path="audio/en/cow/COWGHOST_21.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_22"  volume="1" path="audio/en/cow/COWGHOST_22.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_23"  volume="1" path="audio/en/cow/COWGHOST_23.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_24"  volume="1" path="audio/en/cow/COWGHOST_24.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_25"  volume="1" path="audio/en/cow/COWGHOST_25.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_ghostcow_26"  volume="1" path="audio/en/cow/COWGHOST_26.mp3"  loops="1" lowerVolume="1" />
+		
+		<sound id="en_amalura_1"  volume="1" path="audio/en/amalura/amalura_1.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_amalura_2"  volume="1" path="audio/en/amalura/amalura_2.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_amalura_3"  volume="1" path="audio/en/amalura/amalura_3.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_amalura_4"  volume="1" path="audio/en/amalura/amalura_4.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_amalura_5"  volume="1" path="audio/en/amalura/amalura_5.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_amalura_6"  volume="1" path="audio/en/amalura/amalura_6.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_amalura_7"  volume="1" path="audio/en/amalura/amalura_7.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_amalura_8"  volume="1" path="audio/en/amalura/amalura_8.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_amalura_9"  volume="1" path="audio/en/amalura/amalura_9.mp3"  loops="1" lowerVolume="1" />
+		<sound id="en_amalura_10"  volume="1" path="audio/en/amalura/amalura_10.mp3"  loops="1" lowerVolume="1" />
+		
+		<sound id="de_amalura_1"  volume="1" path="audio/de/amalura/amalura_01.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_amalura_2"  volume="1" path="audio/de/amalura/amalura_02.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_amalura_3"  volume="1" path="audio/de/amalura/amalura_03.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_amalura_4"  volume="1" path="audio/de/amalura/amalura_04.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_amalura_5"  volume="1" path="audio/de/amalura/amalura_05.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_amalura_6"  volume="1" path="audio/de/amalura/amalura_06.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_amalura_7"  volume="1" path="audio/de/amalura/amalura_07.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_amalura_8"  volume="1" path="audio/de/amalura/amalura_08.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_amalura_9"  volume="1" path="audio/de/amalura/amalura_09.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_amalura_10"  volume="1" path="audio/de/amalura/amalura_10.mp3"  loops="1" lowerVolume="1" />
+
+		<sound id="de_castaway_1"  volume="1" path="audio/de/castaway/castaway_1.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_castaway_2"  volume="1" path="audio/de/castaway/castaway_2.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_castaway_3"  volume="1" path="audio/de/castaway/castaway_3.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_castaway_4"  volume="1" path="audio/de/castaway/castaway_4.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_castaway_5"  volume="1" path="audio/de/castaway/castaway_5.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_castaway_6"  volume="1" path="audio/de/castaway/castaway_6.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_castaway_7"  volume="1" path="audio/de/castaway/castaway_7.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_castaway_8"  volume="1" path="audio/de/castaway/castaway_8.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_castaway_9"  volume="1" path="audio/de/castaway/castaway_9.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_castaway_10"  volume="1" path="audio/de/castaway/castaway_10.mp3" loops="1" lowerVolume="1" />
+		
+		<sound id="de_kamaria_1"  volume="1" path="audio/de/kamaria/kamaria_1.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_2"  volume="1" path="audio/de/kamaria/kamaria_2.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_3"  volume="1" path="audio/de/kamaria/kamaria_3.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_4"  volume="1" path="audio/de/kamaria/kamaria_4.mp3" loops="1" lowerVolume="1" />
+		
+		<sound id="de_kamaria_5"  volume="1" path="audio/de/kamaria/kamaria_5.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_6"  volume="1" path="audio/de/kamaria/kamaria_6.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_7"  volume="1" path="audio/de/kamaria/kamaria_7.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_7_2"  volume="1" path="audio/de/kamaria/kamaria_8.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_8"  volume="1" path="audio/de/kamaria/kamaria_9.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_8_2"  volume="1" path="audio/de/kamaria/kamaria_10.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_9"  volume="1" path="audio/de/kamaria/kamaria_11.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_9_2"  volume="1" path="audio/de/kamaria/kamaria_12.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_10"  volume="1" path="audio/de/kamaria/kamaria_13.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_11"  volume="1" path="audio/de/kamaria/kamaria_14.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_12"  volume="1" path="audio/de/kamaria/kamaria_15.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_13"  volume="1" path="audio/de/kamaria/kamaria_16.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_14"  volume="1" path="audio/de/kamaria/kamaria_17.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_15"  volume="1" path="audio/de/kamaria/kamaria_18.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_16"  volume="1" path="audio/de/kamaria/kamaria_19.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_17"  volume="1" path="audio/de/kamaria/kamaria_20.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_18"  volume="1" path="audio/de/kamaria/kamaria_21.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_19"  volume="1" path="audio/de/kamaria/kamaria_22.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_19_2"  volume="1" path="audio/de/kamaria/kamaria_23.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_20"  volume="1" path="audio/de/kamaria/kamaria_24.mp3" loops="1" lowerVolume="1" />
+		
+		<sound id="de_kamaria_21"  volume="1" path="audio/de/kamaria/kamaria_25.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_22"  volume="1" path="audio/de/kamaria/kamaria_26.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_23"  volume="1" path="audio/de/kamaria/kamaria_27.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_24"  volume="1" path="audio/de/kamaria/kamaria_28.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_25"  volume="1" path="audio/de/kamaria/kamaria_29.mp3" loops="1" lowerVolume="1" />
+		
+		<sound id="de_kamaria_26"  volume="1" path="audio/de/kamaria/kamaria_30.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_27"  volume="1" path="audio/de/kamaria/kamaria_31.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_28"  volume="1" path="audio/de/kamaria/kamaria_32.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_29"  volume="1" path="audio/de/kamaria/kamaria_33.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_30"  volume="1" path="audio/de/kamaria/kamaria_34.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_31"  volume="1" path="audio/de/kamaria/kamaria_35.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_32"  volume="1" path="audio/de/kamaria/kamaria_36.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_33"  volume="1" path="audio/de/kamaria/kamaria_37.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_34"  volume="1" path="audio/de/kamaria/kamaria_38.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_kamaria_35"  volume="1" path="audio/de/kamaria/kamaria_39.mp3" loops="1" lowerVolume="1" />
+
+		<sound id="de_fisherman_1"  volume="1" path="audio/de/fisherman/fisherman_1.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_2"  volume="1" path="audio/de/fisherman/fisherman_2.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_3"  volume="1" path="audio/de/fisherman/fisherman_3.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_4"  volume="1" path="audio/de/fisherman/fisherman_4.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_5"  volume="1" path="audio/de/fisherman/fisherman_5.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_6"  volume="1" path="audio/de/fisherman/fisherman_6.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_7"  volume="1" path="audio/de/fisherman/fisherman_7.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_8"  volume="1" path="audio/de/fisherman/fisherman_8.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_9"  volume="1" path="audio/de/fisherman/fisherman_9.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_10"  volume="1" path="audio/de/fisherman/fisherman_10.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_11"  volume="1" path="audio/de/fisherman/fisherman_11.mp3" loops="1" lowerVolume="1" />
+		<sound id="de_fisherman_12"  volume="1" path="audio/de/fisherman/fisherman_12.mp3" loops="1" lowerVolume="1" />
+		
+		<sound id="de_ghostcow_1"  volume="1" path="audio/de/ghostcow/COWGHOST_1.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_2"  volume="1" path="audio/de/ghostcow/COWGHOST_2.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_3"  volume="1" path="audio/de/ghostcow/COWGHOST_3.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_4"  volume="1" path="audio/de/ghostcow/COWGHOST_4.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_5"  volume="1" path="audio/de/ghostcow/COWGHOST_5.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_6"  volume="1" path="audio/de/ghostcow/COWGHOST_6.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_7"  volume="1" path="audio/de/ghostcow/COWGHOST_7.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_8"  volume="1" path="audio/de/ghostcow/COWGHOST_8.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_9"  volume="1" path="audio/de/ghostcow/COWGHOST_9.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_10"  volume="1" path="audio/de/ghostcow/COWGHOST_10.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_11"  volume="1" path="audio/de/ghostcow/COWGHOST_11.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_12"  volume="1" path="audio/de/ghostcow/COWGHOST_12.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_13"  volume="1" path="audio/de/ghostcow/COWGHOST_13.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_14"  volume="1" path="audio/de/ghostcow/COWGHOST_14.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_15"  volume="1" path="audio/de/ghostcow/COWGHOST_15.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_16"  volume="1" path="audio/de/ghostcow/COWGHOST_16.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_17"  volume="1" path="audio/de/ghostcow/COWGHOST_17.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_18"  volume="1" path="audio/de/ghostcow/COWGHOST_18.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_19"  volume="1" path="audio/de/ghostcow/COWGHOST_19.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_20"  volume="1" path="audio/de/ghostcow/COWGHOST_20.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_21"  volume="1" path="audio/de/ghostcow/COWGHOST_21.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_22"  volume="1" path="audio/de/ghostcow/COWGHOST_22.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_23"  volume="1" path="audio/de/ghostcow/COWGHOST_23.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_24"  volume="1" path="audio/de/ghostcow/COWGHOST_24.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_25"  volume="1" path="audio/de/ghostcow/COWGHOST_25.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_26"  volume="1" path="audio/de/ghostcow/COWGHOST_26.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_27"  volume="1" path="audio/de/ghostcow/COWGHOST_27.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_28"  volume="1" path="audio/de/ghostcow/COWGHOST_28.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_29"  volume="1" path="audio/de/ghostcow/COWGHOST_29.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_30"  volume="1" path="audio/de/ghostcow/COWGHOST_30.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_31"  volume="1" path="audio/de/ghostcow/COWGHOST_31.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_32"  volume="1" path="audio/de/ghostcow/COWGHOST_32.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_33"  volume="1" path="audio/de/ghostcow/COWGHOST_33.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_34"  volume="1" path="audio/de/ghostcow/COWGHOST_34.mp3"  loops="1" lowerVolume="1" />
+		<sound id="de_ghostcow_35"  volume="1" path="audio/de/ghostcow/COWGHOST_35.mp3"  loops="1" lowerVolume="1" />
+		
+	</sounds>	
+	
+	<module statement_timeout="60" category="0">
+		<questType type="adventure" questNameInLogBook="NAME_QUEST_01"/>
+
+		<tracker>
+			<track state="0,2,1" message="Quest_01_AmalurasLoveQuest_01_CASTAWAY_01" />
+			<track state="0,2,2" message="Quest_01_AmalurasLoveQuest_02_CASTAWAY_06" />		
+			<track state="0,2,3" message="Quest_01_AmalurasLoveQuest_03_KAMARIA_05" />		
+			<track state="0,2,4" message="Quest_01_AmalurasLoveQuest_04_Area-Waterfall" />		
+			<track state="0,2,5" message="Quest_01_AmalurasLoveQuest_05_COWGHOST_05" />		
+			<track state="0,2,6" message="Quest_01_AmalurasLoveQuest_06_COWGHOST_32" />		
+			<track state="0,2,7" message="Quest_01_AmalurasLoveQuest_07_AMALURA_01" />
+			<track state="0,2,8" message="Quest_01_AmalurasLoveQuest_09_NARRATOR_11" />
+		</tracker>
+		<bouncingObjects>
+			<bouncingObject assetname="npcCastaway" room="19" isBetweenDates="26 Jun 2012,18 Jul 2012"/>
+			<bouncingObject assetname="get_green_herb" room="34" isBetweenDates="26 Jun 2012,18 Jul 2012"/>
+			<bouncingObject assetname="stone_3" room="3" isBetweenDates="26 Jun 2012,18 Jul 2012"/>
+			<bouncingObject assetname="oldbook" room="2" isBetweenDates="26 Jun 2012,18 Jul 2012"/>
+			<bouncingObject assetname="stone_2" room="26" isBetweenDates="26 Jun 2012,18 Jul 2012"/>
+		</bouncingObjects>
+		<npcs>
+			<npc id="npcCastaway">
+				<speechBubble x="625" y="185" w="200" offX="0" offY="1" pointX="20" pointY="-30" />
+				
+				<behaviours>
+					<!-- other languages  -->
+					
+					
+					<behaviour gamestate="0,0,1-3">
+						<statement key="CASTAWAY_01" sound='en_castaway_1' >
+							<action id='changeQuestState' state='0,2,1' />
+						</statement>
+						<statement key="CASTAWAY_02" sound='en_castaway_2' />
+						<statement key="CASTAWAY_02A" sound='en_castaway_2A' />
+					</behaviour>
+					
+					<behaviour gamestate="0,0,4-6" >
+						<statement key="CASTAWAY_03" sound='en_castaway_3' />							
+						<statement key="CASTAWAY_07" sound='en_castaway_7'  />
+						<statement key="CASTAWAY_08" sound='en_castaway_8'  />
+						<statement key="CASTAWAY_09" sound='en_castaway_9'  />
+						<statement key="CASTAWAY_10" sound='en_castaway_10' />
+					</behaviour>
+					<!--
+					<behaviour gamestate="0,0,4-6" daypasstest="0,0,1" >
+						<statement key="CASTAWAY_16" sound='en_castaway_16' />
+					</behaviour>
+					
+					<behaviour gamestate="0,0,4-6" daypasstest="0,0,2,+" >
+					-->
+					
+					<behaviour gamestate="0,0,7" >
+						<statement key="CASTAWAY_06" sound='en_castaway_6' parse='name' value='myUserName' />
+						<statement key="CASTAWAY_07" sound='en_castaway_7'  />
+						<statement key="CASTAWAY_08" sound='en_castaway_8'  />
+						<statement key="CASTAWAY_09" sound='en_castaway_9'  />
+						<statement key="CASTAWAY_10" sound='en_castaway_10' />
+					</behaviour>
+					<behaviour gamestate="0,0,8" >						
+						<statement key="CASTAWAY_10A" sound='en_castaway_10A' />
+					</behaviour>
+				
+					<behaviour gamestate="0,0,9-12" >
+						<statement key="CASTAWAY_06" sound='en_castaway_6' parse='name' value='myUserName' />
+						<statement key="CASTAWAY_07" sound='en_castaway_7'  />
+						<statement key="CASTAWAY_08" sound='en_castaway_8'  />
+						<statement key="CASTAWAY_09" sound='en_castaway_9'  />
+						<statement key="CASTAWAY_10" sound='en_castaway_10'  />
+					</behaviour>		
+					
+					<behaviour gamestate="0,0,32" >
+						<statement key="CASTAWAY_12"  sound='en_castaway_12' />
+					</behaviour>		
+
+					<behaviour >
+						<statement key="CASTAWAY_13"  sound='en_castaway_13' />
+					</behaviour>		
+					
+					<!-- german -->
+					<behaviour isLang="DE" gamestate="0,0,1-3">
+						<statement key="CASTAWAY_01" sound='de_castaway_1' >
+							<action id='changeQuestState' state='0,2,1' />
+						</statement>
+						<statement key="CASTAWAY_02" sound='de_castaway_2' />
+						<statement key="CASTAWAY_02A" sound='de_castaway_2A' />
+					</behaviour>
+					
+					<behaviour isLang="DE" gamestate="0,0,4-6" >
+						<statement key="CASTAWAY_03" sound='de_castaway_3' />						
+						<statement key="CASTAWAY_07" sound='de_castaway_7'  />
+						<statement key="CASTAWAY_08" sound='de_castaway_8'  />
+						<statement key="CASTAWAY_09" sound='de_castaway_9'  />
+						<statement key="CASTAWAY_10" sound='de_castaway_10'  />
+					</behaviour>
+					<!--
+					<behaviour isLang="DE" gamestate="0,0,4-6" daypasstest="0,0,1" >
+						<statement key="CASTAWAY_16" sound='de_castaway_16' />
+					</behaviour>
+					<behaviour isLang="DE" gamestate="0,0,4-6" daypasstest="0,0,2,+" >
+					-->
+					
+					<behaviour isLang="DE" gamestate="0,0,7" >
+						<statement key="CASTAWAY_06" sound='de_castaway_6'  parse='name' value='myUserName' />
+						<statement key="CASTAWAY_07" sound='de_castaway_7'  />
+						<statement key="CASTAWAY_08" sound='de_castaway_8'  />
+						<statement key="CASTAWAY_09" sound='de_castaway_9'  />
+						<statement key="CASTAWAY_10" sound='de_castaway_10'  />
+					</behaviour>
+					<behaviour isLang="DE" gamestate="0,0,8" >						
+						<statement key="CASTAWAY_10A" sound='de_castaway_10A'  />
+					</behaviour>
+				
+					<behaviour isLang="DE" gamestate="0,0,9-12" >
+						<statement key="CASTAWAY_06" sound='de_castaway_6' parse='name' value='myUserName' />
+						<statement key="CASTAWAY_07" sound='de_castaway_7'  />
+						<statement key="CASTAWAY_08" sound='de_castaway_8'  />
+						<statement key="CASTAWAY_09" sound='de_castaway_9'  />
+						<statement key="CASTAWAY_10" sound='de_castaway_10'  />
+					</behaviour>		
+					
+					<behaviour  isLang="DE"  gamestate="0,0,32" >
+						<statement key="CASTAWAY_12"  sound='de_castaway_12' />
+					</behaviour>		
+
+					<!-- behaviour gamestate="2,0,11-200">
+						<statement key="QUEST_HINT_01" />
+					</behaviour>					
+					<behaviour gamestate="4,0,11-79">
+						<statement key="QUEST_HINT_01" />
+					</behaviour>
+					
+					<behaviour gamestate="9,0,1-99">
+						<statement key="QUEST_HINT_01" />
+					</behaviour>					
+					
+					<behaviour gamestate="15,0,1-99">
+						<statement key="QUEST_HINT_01" />
+					</behaviour>
+					<behaviour gamestate="25,0,1-34">
+						<statement key="QUEST_HINT_01" />
+					</behaviour>
+					<behaviour gamestate="28,0,1-99">
+						<statement key="QUEST_HINT_01" />
+					</behaviour>
+					<behaviour gamestate="30,0,1-99">
+						<statement key="QUEST_HINT_01" />
+					</behaviour -->
+					<behaviour isAnotherQuestStarted="0">
+						<statement key="QUEST_HINT_01" />
+					</behaviour>
+				</behaviours>
+			</npc>
+			<npc id="KAMARIA_TOWER">
+				<speechBubble x="325" y="205" w="200" offX="0" offY="-1" pointX="-20" pointY="30" />
+				
+				<behaviours>
+					<!-- other languages -->
+					<behaviour gamestate="0,0,2-3" >
+						<statement key="KAMARIA_01" parse='name' value='myUserName' sound='en_kamaria_1' />
+						<statement key="KAMARIA_02"  sound='en_kamaria_2' />
+						<statement key="KAMARIA_03"  sound='en_kamaria_3' />
+						<statement key="KAMARIA_04"  sound='en_kamaria_4' >
+							<action id='changeQuestState' state='0,0,3' />
+						</statement>
+					</behaviour>
+					<behaviour gamestate="0,0,4" >						
+						<statement key="KAMARIA_02A"  sound='en_kamaria_2A' />						
+					</behaviour>
+					<behaviour gamestate="0,0,5-13" >
+						<statement key="KAMARIA_36"  sound='en_kamaria_36' repeat="true" />
+					</behaviour>
+					<behaviour gamestate="0,0,14-15" >
+						<statement key="KAMARIA_05"  parse='name' value='myUserName'  sound='en_kamaria_5'  >
+							<action id='changeQuestState' state='0,2,3' />
+						</statement>
+						<statement key="KAMARIA_06"  sound='en_kamaria_6' />
+						<statement key="KAMARIA_07"  sound='en_kamaria_7' />
+						<statement key="KAMARIA_07_2"  sound='en_kamaria_7_2' />
+						<statement key="KAMARIA_08"  sound='en_kamaria_8' />
+						<statement key="KAMARIA_08_2"  sound='en_kamaria_8_2' />
+						<statement key="KAMARIA_09"  sound='en_kamaria_9' />
+						<statement key="KAMARIA_09_2"  sound='en_kamaria_9_2' />
+						<statement key="KAMARIA_10"  sound='en_kamaria_10' />
+						<statement key="KAMARIA_11"  sound='en_kamaria_11' />
+						<statement key="KAMARIA_12"  sound='en_kamaria_12' />
+						<statement key="KAMARIA_13"  sound='en_kamaria_13' />
+						<statement key="KAMARIA_14"  sound='en_kamaria_14' />
+						<statement key="KAMARIA_15"  sound='en_kamaria_15' />
+						<statement key="KAMARIA_16"  sound='en_kamaria_16' />
+						<statement key="KAMARIA_17"  sound='en_kamaria_17' />
+						<statement key="KAMARIA_18"  sound='en_kamaria_18' />
+						<statement key="KAMARIA_24" sound='en_kamaria_24'/>
+						<statement key="KAMARIA_25" sound='en_kamaria_25'>
+							<action id='changeQuestState' state='0,0,15' />
+						</statement>
+					</behaviour>
+					<!--
+					<behaviour gamestate="0,0,14-15" daypasstest="0,0,1" >
+						<statement key="KAMARIA_34" parse='name' value='myUserName'  sound='en_kamaria_34'/>
+					</behaviour>
+					<behaviour gamestate="0,0,14-15" daypasstest="0,0,2" >
+						<statement key="KAMARIA_35" parse='name' value='myUserName'  sound='en_kamaria_35'/>
+					</behaviour>					
+					<behaviour gamestate="0,0,14-15" daypasstest="0,0,3" >
+					-->
+								
+					<behaviour gamestate="0,0,17-18" >
+						<!--statement key="KAMARIA_21" parse='name' value='myUserName'  sound='en_kamaria_21'/>
+						<statement key="KAMARIA_22" sound='en_kamaria_22'/>
+						<statement key="KAMARIA_23" sound='en_kamaria_23'/-->
+						<statement key="KAMARIA_24" sound='en_kamaria_24'/>
+						<statement key="KAMARIA_25" sound='en_kamaria_25'/>
+					</behaviour>	
+					<behaviour gamestate="0,0,19"  >
+						<statement key="KAMARIA_25A" parse='name' value='myUserName' sound='en_kamaria_25A' />
+					</behaviour>	
+					<behaviour gamestate="0,0,20"  >
+						<statement key="KAMARIA_27" parse='name' value='myUserName' sound='en_kamaria_27' />
+					</behaviour>	
+					<!--behaviour gamestate="0,0,21-31"  >
+						<statement key="KAMARIA_28" parse='name' value='myUserName' sound='en_kamaria_28' />
+						<statement key="KAMARIA_29" sound='en_kamaria_29' />
+					</behaviour-->	
+					<!--
+					<behaviour gamestate="0,0,32"  >
+						<statement key="KAMARIA_37" parse='name' value='myUserName'  />
+					</behaviour>
+					-->
+					<!-- german -->
+					<behaviour isLang="DE" gamestate="0,0,2-3" >
+						<statement key="KAMARIA_01" parse='name' value='myUserName' sound='de_kamaria_1' />
+						<statement key="KAMARIA_02"  sound='de_kamaria_2' />
+						<statement key="KAMARIA_03"  sound='de_kamaria_3' />
+						<statement key="KAMARIA_04"  sound='de_kamaria_4' >
+							<action id='changeQuestState' state='0,0,3' />
+						</statement>
+					</behaviour>
+					<behaviour isLang="DE" gamestate="0,0,4" >						
+						<statement key="KAMARIA_02A"  sound='de_kamaria_2A' />
+					</behaviour>
+					<behaviour  isLang="DE" gamestate="0,0,5-13" >
+						<statement key="KAMARIA_36"  sound='de_kamaria_36' />
+					</behaviour>
+					<behaviour  isLang="DE" gamestate="0,0,14-15" >
+						<statement key="KAMARIA_05"  parse='name' value='myUserName'  sound='de_kamaria_5'  >
+							<action id='changeQuestState' state='0,2,3' />
+						</statement>
+						<statement key="KAMARIA_06"  sound='de_kamaria_6' />
+						<statement key="KAMARIA_07"  sound='de_kamaria_7' />
+						<statement key="KAMARIA_07_2"  sound='de_kamaria_7_2' />
+						<statement key="KAMARIA_08"  sound='de_kamaria_8' />
+						<statement key="KAMARIA_08_2"  sound='de_kamaria_8_2' />
+						<statement key="KAMARIA_09"  sound='de_kamaria_9' />
+						<statement key="KAMARIA_09_2"  sound='de_kamaria_9_2' />
+						<statement key="KAMARIA_10"  sound='de_kamaria_10' />
+						<statement key="KAMARIA_11"  sound='de_kamaria_11' />
+						<statement key="KAMARIA_12"  sound='de_kamaria_12' />
+						<statement key="KAMARIA_13"  sound='de_kamaria_13' />
+						<statement key="KAMARIA_14"  sound='de_kamaria_14' />
+						<statement key="KAMARIA_15"  sound='de_kamaria_15' />
+						<statement key="KAMARIA_16"  sound='de_kamaria_16' />
+						<statement key="KAMARIA_17"  sound='de_kamaria_17' />
+						<statement key="KAMARIA_18"  sound='de_kamaria_18' />
+						<statement key="KAMARIA_24" sound='de_kamaria_24'/>
+						<statement key="KAMARIA_25" sound='de_kamaria_25'>
+							<action id='changeQuestState' state='0,0,15' />
+						</statement>
+					</behaviour>
+					<!--
+					<behaviour  isLang="DE" gamestate="0,0,14-15" daypasstest="0,0,1" >
+						<statement key="KAMARIA_34" parse='name' value='myUserName'  sound='de_kamaria_34'/>
+					</behaviour>
+					<behaviour  isLang="DE" gamestate="0,0,14-15" daypasstest="0,0,2" >
+						<statement key="KAMARIA_35" parse='name' value='myUserName'  sound='de_kamaria_35'/>
+					</behaviour>					
+					<behaviour  isLang="DE" gamestate="0,0,14-15" daypasstest="0,0,3" >
+					-->								
+					<behaviour  isLang="DE" gamestate="0,0,17-18" >
+						<!--statement key="KAMARIA_21" parse='name' value='myUserName'  sound='de_kamaria_21'/>
+						<statement key="KAMARIA_22" sound='de_kamaria_22'/>
+						<statement key="KAMARIA_23" sound='de_kamaria_23'/-->
+						<statement key="KAMARIA_24" sound='de_kamaria_24'/>
+						<statement key="KAMARIA_25" sound='de_kamaria_25'/>
+					</behaviour>	
+					<behaviour isLang="DE"  gamestate="0,0,19"  >
+						<statement key="KAMARIA_25A" parse='name' value='myUserName' sound='de_kamaria_25A' />
+					</behaviour>	
+					<behaviour isLang="DE" gamestate="0,0,20"  >
+						<statement key="KAMARIA_27" parse='name' value='myUserName' sound='de_kamaria_27' />
+					</behaviour>	
+					<!--behaviour isLang="DE" gamestate="0,0,21-31"  >
+						<statement key="KAMARIA_28" parse='name' value='myUserName' sound='de_kamaria_28' />
+						<statement key="KAMARIA_29" sound='de_kamaria_29' />
+					</behaviour-->	
+					<!--
+					<behaviour isLang="DE" gamestate="0,0,32"  >
+						<statement key="KAMARIA_37" parse='name' value='myUserName'  />
+					</behaviour>
+					-->
+				</behaviours>
+			</npc>
+			<npc id="HORST_HARBOUR" room="24" name="Horst Hering" assetname="npcFisherman" ignoreAsset="1">
+				<speechBubble x="325" y="205" w="200" offX="1" offY="0" pointX="-20" pointY="-30" />
+				
+				<behaviours>
+					<!-- other languages -->
+					<behaviour gamestate="0,0,8-9" >
+						<statement key="FISHERMAN_01"  sound='en_fisherman_1'   parse='name' value='myUserName' />
+						<statement key="FISHERMAN_01A"  sound='en_fisherman_1A'  />
+					</behaviour>
+					<behaviour gamestate="0,0,10-11" >
+						<statement key="FISHERMAN_02"  sound='en_fisherman_2'   parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_03"  sound='en_fisherman_3'   parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_03A"  sound='en_fisherman_3A'   parse='name' value='myUserName'/>
+					</behaviour>
+					<behaviour gamestate="0,0,12-13" >
+						<statement key="FISHERMAN_04"  sound='en_fisherman_4'   parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_05"  sound='en_fisherman_5'   parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_06"  sound='en_fisherman_6'   parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_07"  sound='en_fisherman_7'   parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_08"  sound='en_fisherman_8'    parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_09"  sound='en_fisherman_9'   parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_10"  sound='en_fisherman_10'   parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_11"  sound='en_fisherman_11'   parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_12"  sound='en_fisherman_12'   parse='name' value='myUserName'/>
+					</behaviour>
+					<behaviour gamestate="0,0,14" >						
+						<statement key="FISHERMAN_03B"  sound='en_fisherman_3B'  />
+					</behaviour>
+					
+					<!-- german -->
+					<behaviour isLang="DE" gamestate="0,0,8-9" >
+						<statement key="FISHERMAN_01"  sound='de_fisherman_1'  parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_01A"  sound='de_fisherman_1A'  />
+					</behaviour>
+					<behaviour  isLang="DE" gamestate="0,0,10-11" >
+						<statement key="FISHERMAN_02"  sound='de_fisherman_2'  parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_03"  sound='de_fisherman_3'  parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_03A"  sound='de_fisherman_3A'  parse='name' value='myUserName'/>
+					</behaviour>
+					<behaviour  isLang="DE" gamestate="0,0,12-13" >
+						<statement key="FISHERMAN_04"  sound='de_fisherman_4'  parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_05"  sound='de_fisherman_5'  parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_06"  sound='de_fisherman_6'  parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_07"  sound='de_fisherman_7'  parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_08"  sound='de_fisherman_8'  parse='name' value='myUserName' />
+						<statement key="FISHERMAN_09"  sound='de_fisherman_9'  parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_10"  sound='de_fisherman_10'  parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_11"  sound='de_fisherman_11'  parse='name' value='myUserName'/>
+						<statement key="FISHERMAN_12"  sound='de_fisherman_12'  parse='name' value='myUserName'/>
+					</behaviour>
+					<behaviour isLang="DE" gamestate="0,0,14" >						
+						<statement key="FISHERMAN_03B"  sound='de_fisherman_3B'  />
+					</behaviour>
+				</behaviours>
+			</npc>
+			
+			<npc id="npcCowghost">
+				<speechBubble x="495" y="205" w="200" offX="0" offY="-1" pointX="-20" pointY="30" />
+				
+				<behaviours>
+					<!-- other languages -->
+					<behaviour gamestate="0,0,20-22" >
+						<statement key="COWGHOST_01"  sound='en_ghostcow_1' />
+						<statement key="COWGHOST_02"  sound='en_ghostcow_2'/>
+						<statement key="COWGHOST_03"  sound='en_ghostcow_3'/>
+						<statement key="COWGHOST_06" sound='en_ghostcow_6' />
+						<statement key="COWGHOST_07" sound='en_ghostcow_7' />
+						<statement key="COWGHOST_08" sound='en_ghostcow_8' />
+						<statement key="COWGHOST_09" sound='en_ghostcow_9' />
+						<statement key="COWGHOST_10" sound='en_ghostcow_10' />
+						<statement key="COWGHOST_11" sound='en_ghostcow_11'  />
+						<statement key="COWGHOST_12" sound='en_ghostcow_12' />
+						<statement key="COWGHOST_13" sound='en_ghostcow_13' >
+							<action id='changeQuestState' state='0,0,23' />
+						</statement>
+					</behaviour>	
+					
+					<!--
+					<behaviour gamestate="0,0,22" daypasstest="0,0,1">
+						<statement key="COWGHOST_31" sound='en_ghostcow_31' />
+					</behaviour>						
+					<behaviour gamestate="0,0,22" daypasstest="0,0,2,+">
+					-->
+					
+					<behaviour gamestate="0,0,23" >
+						<statement key="COWGHOST_16"  sound='en_ghostcow_16'/>
+						<statement key="COWGHOST_17B" sound='en_ghostcow_17B'>
+							<action id='trackAction' name='TillDeath' msg='4 / Talked with Cowghost (mixing drink now), wait another day' />
+						</statement>
+					</behaviour>	
+					<behaviour gamestate="0,0,23" hasItems="100490,100491,100492">
+						<statement key="COWGHOST_16"  sound='en_ghostcow_16'/>
+						<statement key="COWGHOST_17B" sound='en_ghostcow_17B' >
+							<action id='trackAction' name='TillDeath' msg='4 / Talked with Cowghost (mixing drink now), wait another day' />
+						</statement>
+					</behaviour>
+					<behaviour gamestate="0,0,23" >
+						<statement key="COWGHOST_05" sound='en_ghostcow_5' />							
+						<statement key="COWGHOST_06" sound='en_ghostcow_6' />
+						<statement key="COWGHOST_07" sound='en_ghostcow_7' />
+						<statement key="COWGHOST_08" sound='en_ghostcow_8' />
+						<statement key="COWGHOST_09" sound='en_ghostcow_9' />
+						<statement key="COWGHOST_10" sound='en_ghostcow_10' />
+						<statement key="COWGHOST_11" sound='en_ghostcow_11'  />
+						<statement key="COWGHOST_12" sound='en_ghostcow_12' />
+						<statement key="COWGHOST_13" sound='en_ghostcow_13' />
+					</behaviour>
+					
+					<behaviour gamestate="0,0,23"  doesNotHaveItems="100492,100491,100490">
+						<statement key="COWGHOST_05" sound='en_ghostcow_5'  />
+						<statement key="COWGHOST_06" sound='en_ghostcow_6' />
+						<statement key="COWGHOST_07" sound='en_ghostcow_7' />
+						<statement key="COWGHOST_08" sound='en_ghostcow_8' />
+						<statement key="COWGHOST_09" sound='en_ghostcow_9' />
+						<statement key="COWGHOST_10" sound='en_ghostcow_10' />
+						<statement key="COWGHOST_11" sound='en_ghostcow_11'  />
+						<statement key="COWGHOST_12" sound='en_ghostcow_12' />
+						<statement key="COWGHOST_13" sound='en_ghostcow_13' />
+					</behaviour>
+					
+					<behaviour   gamestate="0,0,23" doesNotHaveItems="100491" hasItems="100492,100490">
+						<statement key="COWGHOST_35" sound='en_ghostcow_35'/>
+					</behaviour>
+					<behaviour  gamestate="0,0,23" doesNotHaveItems="100491,100490" hasItems="100492">
+						<statement key="COWGHOST_35" sound='en_ghostcow_35'/>
+					</behaviour>
+					<behaviour gamestate="0,0,23" doesNotHaveItems="100491,100492" hasItems="100490">
+						<statement key="COWGHOST_35" sound='en_ghostcow_35'/>
+					</behaviour>
+					
+					<behaviour   gamestate="0,0,23" doesNotHaveItems="100492" hasItems="100490,100491">
+						<statement key="COWGHOST_15" sound='en_ghostcow_15'/>
+					</behaviour>
+					<behaviour  gamestate="0,0,23" doesNotHaveItems="100492,100490" hasItems="100491">
+						<statement key="COWGHOST_15" sound='en_ghostcow_15'/>
+					</behaviour>
+					
+					<behaviour   gamestate="0,0,23" doesNotHaveItems="100490" hasItems="100491,100492">
+						<statement key="COWGHOST_14" sound='en_ghostcow_14' />
+					</behaviour>
+					
+				
+					<behaviour gamestate="0,0,27" >
+						<statement key="COWGHOST_16" sound='en_ghostcow_16' />
+						<statement key="COWGHOST_32" sound='en_ghostcow_32' />
+						<statement key="COWGHOST_33" sound='en_ghostcow_33'/>
+						<statement>
+							<action id="getStone1" />
+						</statement>
+					</behaviour>					
+					<!--
+					<behaviour gamestate="0,0,27" daypasstest="0,0,1" >
+						<statement key="COWGHOST_31" sound='en_ghostcow_31' />
+					</behaviour>					
+					<behaviour gamestate="0,0,27" daypasstest="0,0,2,+" >
+					-->						
+				
+					<behaviour gamestate="0,0,28" >
+						<statement key="COWGHOST_18" sound='en_ghostcow_18'/>
+						<statement key="COWGHOST_19" sound='en_ghostcow_19'/>
+					</behaviour>	
+
+					<behaviour gamestate="0,0,29-30" >
+						<statement key="COWGHOST_20" sound='en_ghostcow_20'/>
+						<statement key="COWGHOST_21" sound='en_ghostcow_21'/>
+					</behaviour>	
+					<behaviour gamestate="0,0,29-30" hasItems="100495">
+						<statement key="COWGHOST_22" sound='en_ghostcow_22'/>
+					</behaviour>						
+					<behaviour gamestate="0,0,31" >
+						<statement key="COWGHOST_34" sound='en_ghostcow_34'/>
+					</behaviour>					
+					<behaviour gamestate="0,0,31" >
+						<statement key="COWGHOST_34" sound='en_ghostcow_34' />
+					</behaviour>	
+
+
+					<!-- german -->
+					<behaviour isLang="DE" gamestate="0,0,20-22" >
+						<statement key="COWGHOST_01"  sound='de_ghostcow_1' />
+						<statement key="COWGHOST_02"  sound='de_ghostcow_2'/>
+						<statement key="COWGHOST_03"  sound='de_ghostcow_3'/>
+						<statement key="COWGHOST_06" sound='de_ghostcow_6' />
+						<statement key="COWGHOST_07" sound='de_ghostcow_7' />
+						<statement key="COWGHOST_08" sound='de_ghostcow_8' />
+						<statement key="COWGHOST_09" sound='de_ghostcow_9' />
+						<statement key="COWGHOST_10" sound='de_ghostcow_10' />
+						<statement key="COWGHOST_11" sound='de_ghostcow_11'  />
+						<statement key="COWGHOST_12" sound='de_ghostcow_12' />
+						<statement key="COWGHOST_13" sound='de_ghostcow_13' >
+							<action id='changeQuestState' state='0,0,23' />
+						</statement>
+					</behaviour>	
+					
+					<!--
+					<behaviour isLang="DE" gamestate="0,0,22" daypasstest="0,0,1">
+						<statement key="COWGHOST_31" sound='de_ghostcow_31'/>
+					</behaviour>						
+					<behaviour isLang="DE"  gamestate="0,0,22" daypasstest="0,0,2,+">
+					-->					
+					
+					<behaviour isLang="DE"  gamestate="0,0,23" >
+						<statement key="COWGHOST_16" sound='de_ghostcow_16'/>
+						<statement key="COWGHOST_17B" sound='de_ghostcow_17B'>
+							<action id='trackAction' name='TillDeath' msg='4 / Talked with Cowghost (mixing drink now), wait another day' />
+						</statement>
+					</behaviour>	
+					<behaviour isLang="DE"  gamestate="0,0,23" >
+						<statement key="COWGHOST_05" sound='de_ghostcow_5'  />
+						<statement key="COWGHOST_06" sound='de_ghostcow_6' />
+						<statement key="COWGHOST_07" sound='de_ghostcow_7' />
+						<statement key="COWGHOST_08" sound='de_ghostcow_8' />
+						<statement key="COWGHOST_09" sound='de_ghostcow_9' />
+						<statement key="COWGHOST_10" sound='de_ghostcow_10' />
+						<statement key="COWGHOST_11" sound='de_ghostcow_11'  />
+						<statement key="COWGHOST_12" sound='de_ghostcow_12' />
+						<statement key="COWGHOST_13" sound='de_ghostcow_13' />
+					</behaviour>
+							
+					
+					<behaviour isLang="DE" gamestate="0,0,23" doesNotHaveItems="100492,100491,100490">
+						<statement key="COWGHOST_05" sound='de_ghostcow_5'  />
+						<statement key="COWGHOST_06" sound='de_ghostcow_6' />
+						<statement key="COWGHOST_07" sound='de_ghostcow_7' />
+						<statement key="COWGHOST_08" sound='de_ghostcow_8' />
+						<statement key="COWGHOST_09" sound='de_ghostcow_9' />
+						<statement key="COWGHOST_10" sound='de_ghostcow_10' />
+						<statement key="COWGHOST_11" sound='de_ghostcow_11'  />
+						<statement key="COWGHOST_12" sound='de_ghostcow_12' />
+						<statement key="COWGHOST_13" sound='de_ghostcow_13' />
+					</behaviour>
+
+					<behaviour isLang="DE"  gamestate="0,0,23" doesNotHaveItems="100491" hasItems="100492,100490">
+						<statement key="COWGHOST_35" sound='de_ghostcow_35'/>
+					</behaviour>
+					<behaviour isLang="DE"  gamestate="0,0,23" doesNotHaveItems="100491,100490" hasItems="100492">
+						<statement key="COWGHOST_35" sound='de_ghostcow_35'/>
+					</behaviour>
+					<behaviour isLang="DE"  gamestate="0,0,23" doesNotHaveItems="100491,100492" hasItems="100490">
+						<statement key="COWGHOST_35" sound='de_ghostcow_35'/>
+					</behaviour>
+					
+					<behaviour isLang="DE"  gamestate="0,0,23" doesNotHaveItems="100492" hasItems="100490,100491">
+						<statement key="COWGHOST_15" sound='de_ghostcow_15'/>
+					</behaviour>
+					<behaviour isLang="DE"  gamestate="0,0,23" doesNotHaveItems="100492,100490" hasItems="100491">
+						<statement key="COWGHOST_15" sound='de_ghostcow_15'/>
+					</behaviour>
+					
+					<behaviour isLang="DE"  gamestate="0,0,23" doesNotHaveItems="100490" hasItems="100491,100492">
+						<statement key="COWGHOST_14" sound='de_ghostcow_14' />
+					</behaviour>
+					
+					
+					<behaviour isLang="DE"  gamestate="0,0,27" >
+						<statement key="COWGHOST_16" sound='de_ghostcow_16' />
+						<statement key="COWGHOST_32" sound='de_ghostcow_32' />							
+						<statement key="COWGHOST_33" sound='de_ghostcow_33' />
+						<statement>
+							<action id="getStone1" />
+						</statement>
+					</behaviour>				
+					<!--					
+					<behaviour isLang="DE"  gamestate="0,0,27" daypasstest="0,0,1" >
+						<statement key="COWGHOST_31" sound='de_ghostcow_31' />
+					</behaviour>					
+					<behaviour isLang="DE"  gamestate="0,0,27" daypasstest="0,0,2,+" >
+					-->
+					
+					<behaviour isLang="DE"  gamestate="0,0,28" >
+						<statement key="COWGHOST_18" sound='de_ghostcow_18'/>
+						<statement key="COWGHOST_19" sound='de_ghostcow_19'/>
+					</behaviour>	
+
+					<behaviour isLang="DE"  gamestate="0,0,29-30" >
+						<statement key="COWGHOST_20" sound='de_ghostcow_20'/>
+						<statement key="COWGHOST_21" sound='de_ghostcow_21'/>
+					</behaviour>	
+					<behaviour isLang="DE" gamestate="0,0,29-30" hasItems="100495">
+						<statement key="COWGHOST_22" sound='de_ghostcow_22'/>
+					</behaviour>						
+					<behaviour isLang="DE" gamestate="0,0,31" >
+						<statement key="COWGHOST_34" sound='de_ghostcow_34'/>
+					</behaviour>					
+					<behaviour  isLang="DE" gamestate="0,0,31" >
+						<statement key="COWGHOST_34" sound='de_ghostcow_34' />
+					</behaviour>	
+				</behaviours>
+			</npc>
+			
+			 <npc id="GONZO_KIOSK" room="5">
+				<speechBubble x="252" y="150" w="350" offX="1" offY="-1" pointX="40" pointY="25"/>
+					<behaviours>
+						<behaviour gamestate="0,0,9" >							
+							<statement key="GONZO_01"  sound='en_gonzo_01' />
+						</behaviour>
+						<behaviour isLang="DE" gamestate="0,0,9" >							
+							<statement key="GONZO_01"  sound='de_gonzo_01' />
+						</behaviour>
+					</behaviours>
+			</npc>
+			
+			<npc id="npcAmalura">
+				<speechBubble x="320" y="150" w="250" offX="0" offY="-1" pointX="-20" pointY="30" />
+				
+				<behaviours>
+					<behaviour gamestate="0,0,31" >
+						<statement key="AMALURA_01"  sound='en_amalura_1' >
+							<action id='changeQuestState' state='0,2,7' />
+						</statement>
+						<statement key="AMALURA_02"  sound='en_amalura_2' />
+						<statement key="AMALURA_03"  sound='en_amalura_3' />
+						<statement key="AMALURA_04"  sound='en_amalura_4' />
+						<statement key="AMALURA_05"  sound='en_amalura_5' />
+						<statement key="AMALURA_06"  sound='en_amalura_6' />
+						<statement key="AMALURA_07"  sound='en_amalura_7' />
+					</behaviour>
+					
+					<behaviour isLang="DE" gamestate="0,0,31" >
+						<statement key="AMALURA_01"  sound='de_amalura_1' >
+							<action id='changeQuestState' state='0,2,7' />
+						</statement>
+						<statement key="AMALURA_02"  sound='de_amalura_2' />
+						<statement key="AMALURA_03"  sound='de_amalura_3' />
+						<statement key="AMALURA_04"  sound='de_amalura_4' />
+						<statement key="AMALURA_05"  sound='de_amalura_5' />
+						<statement key="AMALURA_06"  sound='de_amalura_6' />
+						<statement key="AMALURA_07"  sound='de_amalura_7' />
+					</behaviour>
+				</behaviours>
+			</npc>
+		</npcs>	
+		
+		<items>
+			<item id="tilldeath_herb"  		itemID="100496" key="GOT_NEW_ITEM"/>
+			<item id="tilldeath_coffee"  	itemID="100488" key="GOT_NEW_ITEM"/>
+			<item id="tilldeath_fishingrod" itemID="100489" key="GOT_NEW_ITEM"/>
+			<item id="tilldeath_snow"  		itemID="100490" key="GOT_NEW_ITEM"/>
+			<item id="tilldeath_sunmilk"  	itemID="100491" key="GOT_NEW_ITEM"/>
+			<item id="tilldeath_sugar"  	itemID="100492" key="GOT_NEW_ITEM"/>
+			
+			<item id="tilldeath_stone_1"  	itemID="100493" />
+			<item id="tilldeath_stone_2"  	itemID="100494" />
+			<item id="tilldeath_stone_3"  	itemID="100495" />
+
+			<item id="savior_pin"  			itemID="100552" />
+			<item id="savior_cape"  		itemID="100553" />
+
+			<item id="remove_herb">
+				<remove itemID="100496" />
+			</item>
+
+			<item id="remove_stone_1">
+				<remove itemID="100493" />
+			</item>
+
+			<item id="remove_stone_2">
+				<remove itemID="100494" />
+			</item>
+			
+			<item id="remove_stone_3">
+				<remove itemID="100495" />
+			</item>
+			
+			<item id="remove_fisherman_coffee">
+				<remove itemID="100488" />
+			</item>
+
+			<item id="remove_fisherman_fishingrod">
+				<remove itemID="100489" />
+			</item>
+
+			<item id="remove_cow_items">
+				<remove itemID="100490" />
+				<remove itemID="100491" />
+				<remove itemID="100492" />
+			</item>
+			
+		</items>
+
+	</module>
+	
+</config>

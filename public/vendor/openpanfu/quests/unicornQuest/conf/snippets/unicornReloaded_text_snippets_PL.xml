@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<snippets date="08.12.2014 15:30:18">
+  <CW34_HENRY_01><![CDATA[Hi there, $$name$$! Is there something wrong?]]></CW34_HENRY_01>
+  <CW34_HENRY_02><![CDATA[What do you mean, Mister Horsey gave you a mouthful? You asked him about the unicorn, correct? See, Horsey tried to ride the unicorn a few years back.]]></CW34_HENRY_02>
+  <CW34_HENRY_03><![CDATA[But it kept throwing him off. The unicorn doesn't trust any grown up Panda. Ever since then, Horsey has been a bit bitter.]]></CW34_HENRY_03>
+  <CW34_HENRY_04><![CDATA[Anyway, you're young enough! If you manage to gain the trust of the unicorn, I will give you a saddle that you can use to ride the unicorn.]]></CW34_HENRY_04>
+  <CW34_HENRY_05><![CDATA[The unicorn is hiding in the Eerie Forest. The way to get there is secret. Go to the Volcano, look through the telescope and click on the light to your bottom left that is shining from the Forest.]]></CW34_HENRY_05>
+  <CW34_HENRY_06><![CDATA[The unicorn won't let you ride on it? I was afraid of that...it is not all that easy to gain its trust. ]]></CW34_HENRY_06>
+  <CW34_HENRY_07><![CDATA[It has a very fine nose. You should surround yourself with herbal fragrance. That should help. ]]></CW34_HENRY_07>
+  <CW34_HENRY_08><![CDATA[Go to Kamaria. She has a lotion made from herbs. If you put it on yourself, you'll smell of the forest and grass.]]></CW34_HENRY_08>
+  <CW34_HENRY_09><![CDATA[Well done! You can go near the unicorn now, but before you can ride it, it has to trust you even further.]]></CW34_HENRY_09>
+  <CW34_HENRY_10><![CDATA[It could use some petting.]]></CW34_HENRY_10>
+  <CW34_HENRY_11><![CDATA[I have a very Soft Velvet Glove here. If you stroke the unicorn with it, it will surely let you ride on it soon. ]]></CW34_HENRY_11>
+  <CW34_HENRY_12><![CDATA[Go to the Eerie Forest and stroke the unicorn with the glove. ]]></CW34_HENRY_12>
+  <CW34_HENRY_13><![CDATA[Great, you're on the right track!]]></CW34_HENRY_13>
+  <CW34_HENRY_14><![CDATA[I will prep your unicorn saddle for you. I made it for Mister Horsey back when he wanted to tame the unicorn. But now you shall have it. Come back to me tomorrow. ]]></CW34_HENRY_14>
+  <CW34_HENRY_15><![CDATA[You are ready now, young rider! Go to the Eerie Forest and saddle the unicorn. Keeping my fingers crossed for you!]]></CW34_HENRY_15>
+  <CW34_HENRY_16><![CDATA[Okay, you are ready now, young rider!]]></CW34_HENRY_16>
+  <CW34_HENRY_17><![CDATA[Go to the Eerie Forest and saddle the unicorn. Keeping my fingers crossed for you! There's nothing more I can do. And remember: you have to treat the unicorn with love!]]></CW34_HENRY_17>
+  <CW34_HENRY_18><![CDATA[Here is your saddle! Best of luck to you!]]></CW34_HENRY_18>
+  <CW34_HENRY_19><![CDATA[I knew you would make it! You are a very talented unicorn whisperer, little Panda!]]></CW34_HENRY_19>
+  <CW34_HORSEY_01><![CDATA[Hi there, $$name$$.]]></CW34_HORSEY_01>
+  <CW34_HORSEY_02><![CDATA[What's that? UNICORNS!?! Don't be silly!]]></CW34_HORSEY_02>
+  <CW34_HORSEY_03><![CDATA[You sound just like old Henry! He keeps talking about unicorns, too! Go and annoy him with this nonsense! He's next door, at the Stables.]]></CW34_HORSEY_03>
+  <CW34_HORSEY_04><![CDATA[Unicorns...Such nonsense...]]></CW34_HORSEY_04>
+  <CW34_HORSEY_05><![CDATA[Well done, little Panda! You really did it. I seem to have underestimated you. ]]></CW34_HORSEY_05>
+  <CW34_HORSEY_06><![CDATA[I'm sorry I was rude to you. ]]></CW34_HORSEY_06>
+  <CW34_HORSEY_EDGECASE_01><![CDATA[Whaaa...You have already ridden the unicorn?! Many years ago, I tried that too, but the unicorn kept bucking me off!]]></CW34_HORSEY_EDGECASE_01>
+  <CW34_HORSEY_EDGECASE_02><![CDATA[Incredible! I take my hat off to you, little Panda!]]></CW34_HORSEY_EDGECASE_02>
+  <CW34_HORSEY_EDGECASE_03><![CDATA[Take this gift as a token of my approval. This is the Golden Unicorn Crown. Only the most experienced unicorn riders may wear it and you really deserve it!]]></CW34_HORSEY_EDGECASE_03>
+  <CW34_HORSEY_EDGECASE_04><![CDATA[Wear this crown with your head held high.]]></CW34_HORSEY_EDGECASE_04>
+  <CW34_KAMARIA_01><![CDATA[Hello fluffy Panda! What brings you to me?]]></CW34_KAMARIA_01>
+  <CW34_KAMARIA_02><![CDATA[Herbal lotion? Ah...I assume this has something to do with the unicorn?]]></CW34_KAMARIA_02>
+  <CW34_KAMARIA_03><![CDATA[Go ahead, take the lotion. But remember: the unicorn is a proud animal. You will need a lot of patience to gain its trust.]]></CW34_KAMARIA_03>
+  <CW34_KAMARIA_04><![CDATA[Spread some herbal lotion on yourself.]]></CW34_KAMARIA_04>
+  <CW34_KAMARIA_05><![CDATA[Very good. Now you smell of the forest and grass. Go to the Eerie Forest. Let's see if the unicorn will allow you to touch it. ]]></CW34_KAMARIA_05>
+  <CW34_KAMARIA_06><![CDATA[Good luck, $$name$$.]]></CW34_KAMARIA_06>
+  <CW34_POPUP_UNICORN_01><![CDATA[The unicorn is shy and won't let you come any nearer...better keep your distance and don't scare it off. Go back to the Stables and ask Henry for advice. ]]></CW34_POPUP_UNICORN_01>
+  <CW34_POPUP_UNICORN_01B><![CDATA[The unicorn is shy and won't let you come any nearer...better keep your distance and don't scare it off. Go to the Barn at the Pony Yard and ask the horse trainer Mister Horsey for advice. ]]></CW34_POPUP_UNICORN_01B>
+  <CW34_POPUP_UNICORN_02><![CDATA[The unicorn is a bit more trusting, but it won't let you touch it yet. Go back to the Stables and ask Henry for advice. ]]></CW34_POPUP_UNICORN_02>
+  <CW34_POPUP_UNICORN_03><![CDATA[The unicorn only lets velvety hands stroke it. Put on the "Soft Velvet Gloves" and then click on the unicorn again.]]></CW34_POPUP_UNICORN_03>
+  <CW34_POPUP_UNICORN_04><![CDATA[The unicorn likes being stroked by you. But it's still a bit wary. Henry is sure to have some advice. Go to the Stables and talk to Henry.]]></CW34_POPUP_UNICORN_04>
+  <CW34_POPUP_UNICORN_05><![CDATA[You have almost tamed the unicorn. It only needs a bit of love now. Show your affection for the unicorn with a heart smiley.]]></CW34_POPUP_UNICORN_05>
+  <CW34_POPUP_UNICORN_06><![CDATA[Congratulations! You managed to gain the trust of the unicorn! If you are not a Gold Panda, you will be able to use the saddle for 5 days.]]></CW34_POPUP_UNICORN_06>
+</snippets>

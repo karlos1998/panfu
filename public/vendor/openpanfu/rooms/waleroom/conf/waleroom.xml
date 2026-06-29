@@ -1,0 +1,40 @@
+<config check="0248cd893ff3ec4ab2a0f2f905131107">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="freeBillyParty" start="May 16 2012" finish="May 23 2012" check="25cf7709043f7e3"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/partyBackground.mp3" loops="-1" backgroundmusic="0"/>
+  </sounds>
+  <module>
+    <waterBombReactions>
+      <zone idTarget="gurgel" reaction="gurgelWaterbombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+    </waterBombReactions>
+    <elements>
+      <element id="bubbleTea1" button="1" visible="0">
+        <checks>
+          <visible value="1" date="freeBillyParty"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="freeBilly.ClickedBubbleTea" type="freeBilly"/>
+      </element>
+      <element id="bubbleTea2" button="1" visible="0">
+        <checks>
+          <visible value="1" date="freeBillyParty"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="freeBilly.ClickedBubbleTea" type="freeBilly"/>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips/>
+    <hotspots>
+      <hotspot target="39" type="room" x="100" y="390" rad="30" angle="-225"/>
+      <hotspot target="39" type="room" x="670" y="390" rad="30" angle="45"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

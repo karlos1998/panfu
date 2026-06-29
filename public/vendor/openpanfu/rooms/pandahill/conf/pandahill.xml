@@ -1,0 +1,64 @@
+<config check="c647d597f70a7147f46bd1ec951b498d">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.3" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="tilldeath" start="Apr 12 2009" finish="Apr 19 2099" check="a768447cbf04044"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="teeth_1" button="0" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,31"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1"/>
+        <message value="tilldeath.skullteeth" type="tillDeath">
+          <note value="1"/>
+        </message>
+      </element>
+      <element id="teeth_2" button="0" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,31"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1"/>
+        <message value="tilldeath.skullteeth" type="tillDeath">
+          <note value="2"/>
+        </message>
+      </element>
+      <element id="teeth_3" button="0" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,31"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1"/>
+        <message value="tilldeath.skullteeth" type="tillDeath">
+          <note value="3"/>
+        </message>
+      </element>
+      <element id="npcAmalura" button="0" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,31"/>
+          <visible value="0" gamestate="0,0,32"/>
+          <visible value="0" gamestate="0,0,0-30"/>
+        </checks>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="34" type="room" x="315" y="460" rad="70" angle="90"/>
+    </hotspots>
+    <actions>
+      <action id="amalurajoshuadone">
+        <StateConsts.setstate categoryID="0" stateID="0" value="32"/>
+        <StateManager.setState categoryID="0" stateID="0" value="32"/>
+        <showPopup text="NARRATOR_11" type="alert" delay="0"/>
+      </action>
+      <action id="pictureisdisplayed">
+        <handleAnimation path="elements/teeth_1" com="stop" frame="5"/>
+        <handleAnimation path="elements/teeth_2" com="stop" frame="5"/>
+        <handleAnimation path="elements/teeth_3" com="stop" frame="5"/>
+      </action>
+    </actions>
+  </module>
+</config>

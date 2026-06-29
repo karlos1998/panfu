@@ -1,0 +1,390 @@
+<config check="2042a904554b6a4ae1192ff55b341a2a">
+  <snippets path="quests/transitionQuest/conf/snippets/transition_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets/>
+  <sounds>
+    <sound id="speaker" volume="1" path="audio/$$lang$$/$$key$$.mp3"/>
+    <sound id="eating" volume="2" path="audio/eating.mp3"/>
+    <sound id="eartquake" volume="1" path="audio/eartquake.mp3"/>
+    <sound id="thunder" volume="1" path="audio/thunder.mp3"/>
+  </sounds>
+  <tracker/>
+  <module statement_timeout="60" category="62">
+    <npcs>
+      <npc id="troy" room="4" name="Troy">
+        <speechBubble x="40" y="190" w="250" offX="1" offY="-1" pointX="10" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="62,0,0">
+            <statement key="TROY_TRANSITION_01" sound="speaker">
+              <action id="track" key="2011CW02Transition_01_Troy_Talk"/>
+            </statement>
+            <statement key="TROY_TRANSITION_02" sound="speaker"/>
+            <statement key="TROY_TRANSITION_03" sound="speaker"/>
+            <statement key="TROY_TRANSITION_04" sound="speaker"/>
+            <statement key="TROY_TRANSITION_05" sound="speaker"/>
+            <statement key="TROY_TRANSITION_06" sound="speaker"/>
+            <statement key="TROY_TRANSITION_07" sound="speaker"/>
+            <statement key="TROY_TRANSITION_08" sound="speaker">
+              <action id="changeQuestState" state="62,0,1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,1">
+            <statement key="TROY_TRANSITION_08" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,2">
+            <statement key="TROY_TRANSITION_09" sound="speaker"/>
+            <statement key="TROY_TRANSITION_10" sound="speaker"/>
+            <statement key="TROY_TRANSITION_11" sound="speaker"/>
+            <statement key="TROY_TRANSITION_12" sound="speaker"/>
+            <statement key="TROY_TRANSITION_13" sound="speaker"/>
+            <statement key="TROY_TRANSITION_14" sound="speaker">
+              <action id="changeRandomState" from="3" till="5"/>
+              <action id="track" key="2011CW02Transition_02_Troy_Talk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,3">
+            <statement key="TROY_TRANSITION_15" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,4">
+            <statement key="TROY_TRANSITION_16" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,5">
+            <statement key="TROY_TRANSITION_17" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,10">
+            <statement key="TROY_TRANSITION_01" sound="speaker"/>
+            <statement key="TROY_TRANSITION_18" sound="speaker"/>
+            <statement key="TROY_TRANSITION_19" sound="speaker"/>
+            <statement key="TROY_TRANSITION_20" sound="speaker"/>
+            <statement key="TROY_TRANSITION_21" sound="speaker"/>
+            <statement key="TROY_TRANSITION_22" sound="speaker"/>
+            <statement key="TROY_TRANSITION_24" sound="speaker"/>
+            <statement key="TROY_TRANSITION_25" sound="speaker"/>
+            <statement key="TROY_TRANSITION_26" sound="speaker"/>
+            <statement key="TROY_TRANSITION_27" sound="speaker"/>
+            <statement key="TROY_TRANSITION_28" sound="speaker"/>
+            <statement key="TROY_TRANSITION_29" sound="speaker"/>
+            <statement key="">
+              <action id="givePancake"/>
+              <action id="changeQuestState" state="62,0,11"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,11">
+            <statement key="TROY_TRANSITION_30" sound="speaker"/>
+            <statement key="TROY_TRANSITION_31" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,12">
+            <statement key="TROY_TRANSITION_32" sound="speaker"/>
+            <statement key="TROY_TRANSITION_33" sound="speaker">
+              <action id="track" key="2011CW02Transition_03_Troy_Talk"/>
+            </statement>
+            <statement key="TROY_TRANSITION_23" sound="speaker">
+              <action id="changeRandomState" from="13" till="18"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,13">
+            <statement key="TROY_TRANSITION_34" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,14">
+            <statement key="TROY_TRANSITION_35" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,15">
+            <statement key="TROY_TRANSITION_36" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,16">
+            <statement key="TROY_TRANSITION_15" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,17">
+            <statement key="TROY_TRANSITION_16" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,18">
+            <statement key="TROY_TRANSITION_17" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,28-100">
+            <statement key="TROY_TRANSITION_36" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="troy" room="8" name="Troy">
+        <speechBubble x="420" y="55" w="150" offX="-1" offY="1" pointX="25" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="62,0,19">
+            <statement key="TROY_TRANSITION_37" sound="speaker">
+              <action id="track" key="2011CW04Transition_02_Troy_Talk"/>
+            </statement>
+            <statement key="TROY_TRANSITION_38" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="TROY_TRANSITION_39" sound="speaker"/>
+            <statement key="TROY_TRANSITION_40" sound="speaker"/>
+            <statement key="TROY_TRANSITION_42" sound="speaker"/>
+            <statement key="TROY_TRANSITION_43" sound="speaker"/>
+            <statement key="TROY_TRANSITION_44" sound="speaker"/>
+            <statement key="TROY_TRANSITION_45" sound="speaker"/>
+            <statement key="TROY_TRANSITION_46" sound="speaker"/>
+            <statement key="TROY_TRANSITION_47" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="troy" room="13" name="Troy">
+        <speechBubble x="180" y="260" w="250" offX="1" offY="-1" pointX="10" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="62,0,20">
+            <statement key="TROY_TRANSITION_48" sound="speaker"/>
+            <statement key="TROY_TRANSITION_49" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="TROY_TRANSITION_50" sound="speaker"/>
+            <statement key="TROY_TRANSITION_51" sound="speaker"/>
+            <statement key="TROY_TRANSITION_52" sound="speaker"/>
+            <statement key="TROY_TRANSITION_53" sound="speaker"/>
+            <statement key="TROY_TRANSITION_54" sound="speaker"/>
+            <statement key="TROY_TRANSITION_55" sound="speaker"/>
+            <statement key="TROY_TRANSITION_56" sound="speaker"/>
+            <statement key="TROY_TRANSITION_57" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="troy" room="59" name="Troy">
+        <speechBubble x="390" y="100" w="250" offX="1" offY="-1" pointX="10" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="62,0,21">
+            <statement key="TROY_TRANSITION_58" sound="speaker"/>
+            <statement key="TROY_TRANSITION_59" sound="speaker">
+              <action id="track" key="2011CW04Transition_03_Troy_Talk"/>
+            </statement>
+            <statement key="TROY_TRANSITION_60" sound="speaker"/>
+            <statement key="TROY_TRANSITION_61" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="TROY_TRANSITION_62" sound="speaker"/>
+            <statement key="TROY_TRANSITION_63" sound="speaker"/>
+            <statement key="TROY_TRANSITION_64" sound="speaker"/>
+            <statement key="TROY_TRANSITION_65" sound="speaker"/>
+            <statement key="TROY_TRANSITION_66" sound="speaker"/>
+            <statement key="TROY_TRANSITION_67" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="TROY_TRANSITION_68" sound="speaker"/>
+            <statement key="TROY_TRANSITION_69" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="troy" room="17" name="Troy">
+        <speechBubble x="430" y="125" w="250" offX="1" offY="-1" pointX="10" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="62,0,22">
+            <statement key="TROY_TRANSITION_70" sound="speaker"/>
+            <statement key="TROY_TRANSITION_71" sound="speaker"/>
+            <statement key="TROY_TRANSITION_72" sound="speaker"/>
+            <statement key="TROY_TRANSITION_73" sound="speaker"/>
+            <statement key="TROY_TRANSITION_74" sound="speaker"/>
+            <statement key="TROY_TRANSITION_75" sound="speaker"/>
+            <statement key="TROY_TRANSITION_67" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="TROY_TRANSITION_68" sound="speaker"/>
+            <statement key="TROY_TRANSITION_69" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="troy" room="60" name="Troy">
+        <speechBubble x="160" y="270" w="250" offX="1" offY="-1" pointX="10" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="62,0,23">
+            <statement key="TROY_TRANSITION_76" sound="speaker">
+              <action id="track" key="2011CW04Transition_04_Troy_Talk"/>
+            </statement>
+            <statement key="TROY_TRANSITION_77" sound="speaker"/>
+            <statement key="TROY_TRANSITION_78" sound="speaker"/>
+            <statement key="TROY_TRANSITION_79" sound="speaker"/>
+            <statement key="TROY_TRANSITION_80" sound="speaker"/>
+            <statement key="TROY_TRANSITION_81" sound="speaker"/>
+            <statement key="TROY_TRANSITION_82" sound="speaker"/>
+            <statement key="TROY_TRANSITION_83" sound="speaker">
+              <action id="changeQuestState" state="62,0,24"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,24">
+            <statement key="TROY_TRANSITION_84" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,25">
+            <statement key="TROY_TRANSITION_85" sound="speaker"/>
+            <statement key="TROY_TRANSITION_86A" sound="speaker"/>
+            <statement key="">
+              <action id="giveReward"/>
+              <action id="changeQuestState" state="62,0,27"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,26">
+            <statement key="TROY_TRANSITION_85" sound="speaker"/>
+            <statement key="TROY_TRANSITION_86B" sound="speaker"/>
+            <statement key="">
+              <action id="giveReward"/>
+              <action id="changeQuestState" state="62,0,27"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="loudspeaker" room="1" name="Loudspeaker">
+        <speechBubble x="280" y="120" w="250" offX="1" offY="-1" pointX="-10" pointY="-70"/>
+        <behaviours>
+          <behaviour gamestate="62,0,22-34">
+            <statement key="LOUDSPEAKER_TRANSITION" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="loudspeaker" room="3" name="Loudspeaker">
+        <speechBubble x="250" y="280" w="250" offX="1" offY="-1" pointX="-20" pointY="10"/>
+        <behaviours>
+          <behaviour gamestate="62,0,22-34">
+            <statement key="LOUDSPEAKER_TRANSITION" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="loudspeaker" room="18" name="Loudspeaker">
+        <speechBubble x="570" y="135" w="250" offX="-1" offY="-1" pointX="10" pointY="10"/>
+        <behaviours>
+          <behaviour gamestate="62,0,22-34">
+            <statement key="LOUDSPEAKER_TRANSITION" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="loudspeaker" room="43" name="Loudspeaker">
+        <speechBubble x="130" y="90" w="250" offX="1" offY="1" pointX="-10" pointY="-10"/>
+        <behaviours>
+          <behaviour gamestate="62,0,22-34">
+            <statement key="LOUDSPEAKER_TRANSITION" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="loudspeaker" room="27" name="Loudspeaker">
+        <speechBubble x="700" y="190" w="250" offX="-1" offY="1" pointX="10" pointY="-10"/>
+        <behaviours>
+          <behaviour gamestate="62,0,22-34">
+            <statement key="LOUDSPEAKER_TRANSITION" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="loudspeaker" room="28" name="Loudspeaker">
+        <speechBubble x="165" y="110" w="250" offX="1" offY="1" pointX="-10" pointY="-10"/>
+        <behaviours>
+          <behaviour gamestate="62,0,22-34">
+            <statement key="LOUDSPEAKER_TRANSITION" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="kamaria" room="17" name="Kamaria">
+        <speechBubble x="430" y="135" w="250" offX="-1" offY="-1" pointX="-20" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="62,0,29">
+            <statement key="KAMARIA_TRANSITION_01" parse="name" value="myUserName" sound="speaker">
+              <action id="track" key="2011CW05Transition_01_Kamaria_Talk"/>
+            </statement>
+            <statement key="KAMARIA_TRANSITION_02" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_03" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_05" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_06" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_07" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_08" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_09" sound="speaker">
+              <action id="changeQuestState" state="62,0,30"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,30">
+            <statement key="KAMARIA_TRANSITION_07" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_08" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_09" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,31">
+            <statement key="KAMARIA_TRANSITION_10" sound="speaker">
+              <action id="track" key="2011CW05Transition_02_Kamaria_Talk"/>
+            </statement>
+            <statement key="KAMARIA_TRANSITION_11" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_12" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_13" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_14" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_15" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_16" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_17" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_18" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_19" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_20" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_21" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_22" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_23" sound="speaker">
+              <action id="changeQuestState" state="62,0,32"/>
+              <action id="allowTornado"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,32">
+            <statement key="KAMARIA_TRANSITION_25" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_24" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_26" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_21" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_22" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_23" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,33-34">
+            <statement key="KAMARIA_TRANSITION_27" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_28" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_29" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_30" sound="speaker">
+              <action id="track" key="2011CW05Transition_03_Kamaria_Talk"/>
+            </statement>
+            <statement key="KAMARIA_TRANSITION_31" sound="speaker">
+              <action id="changeQuestState" state="62,0,34"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,35">
+            <statement key="KAMARIA_TRANSITION_28" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_29" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_30" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_31" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,36">
+            <statement key="KAMARIA_TRANSITION_32" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_33" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_34" sound="speaker">
+              <action id="changeQuestState" state="62,0,37"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,37">
+            <statement key="KAMARIA_TRANSITION_34" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,38">
+            <statement key="KAMARIA_TRANSITION_35" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_36" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_37" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_38" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_39" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_40" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_41" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_42" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_43" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_44" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_45" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_46" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_47" sound="speaker">
+              <action id="changeQuestState" state="62,0,39"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="62,0,39">
+            <statement key="KAMARIA_TRANSITION_47" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="62,0,40">
+            <statement key="KAMARIA_TRANSITION_48" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_49" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_50" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_51" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_52" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_53" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_54" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_55" sound="speaker"/>
+            <statement key="KAMARIA_TRANSITION_56" sound="speaker">
+              <action id="giveMedal"/>
+            </statement>
+            <statement key="">
+              <action id="changeQuestState" state="62,0,100"/>
+              <action id="reset"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <items>
+      <item id="PANCAKE_ITEM" itemID="103013" name="Pancake"/>
+      <item id="PANCAKE_REWARD" itemID="103019" name="Pancakes"/>
+      <item id="REWARD_MEDAL" itemID="103081" name="Medal"/>
+    </items>
+  </module>
+</config>

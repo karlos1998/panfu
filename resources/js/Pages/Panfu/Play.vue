@@ -29,13 +29,28 @@ onMounted(() => {
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
         ...(window.RufflePlayer.config || {}),
+        allowNetworking: 'all',
+        allowScriptAccess: true,
         autoplay: 'on',
         base: props.client.baseUrl,
         credentialAllowList: [window.location.origin],
         logLevel: 'warn',
+        openUrlMode: 'deny',
         publicPath: '/vendor/ruffle/',
         showSwfDownload: false,
+        socketProxy: [
+            { host: '127.0.0.1', port: 9595, proxyUrl: 'ws://localhost:9596' },
+            { host: 'localhost', port: 9595, proxyUrl: 'ws://localhost:9596' },
+        ],
         unmuteOverlay: 'hidden',
+        upgradeToHttps: false,
+        urlRewriteRules: [
+            [/^http:\/\/amf\.old\.panfu\.test\/?$/, props.client.informationServerUrl],
+            [
+                /^http:\/\/amf\.old\.panfu\.test\/(.+)$/,
+                `${props.client.informationServerUrl}$1`,
+            ],
+        ],
     };
 
     if (!document.querySelector(`script[src="${props.client.ruffleScript}"]`)) {
@@ -71,7 +86,8 @@ onMounted(() => {
                     <param name="movie" :value="client.swfUrl" />
                     <param name="base" :value="client.baseUrl" />
                     <param name="quality" value="high" />
-                    <param name="allowScriptAccess" value="sameDomain" />
+                    <param name="allowNetworking" value="all" />
+                    <param name="allowScriptAccess" value="always" />
                     <param name="allowFullScreen" value="true" />
                     <param name="flashvars" :value="client.flashvarsQuery" />
                 </object>

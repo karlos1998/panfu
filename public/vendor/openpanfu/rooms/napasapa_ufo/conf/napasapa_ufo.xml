@@ -1,0 +1,101 @@
+<config check="488480c7d8847955eff504507ec8dfb3">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="napasapaFreeze" start="Jan 11 2012" finish="Feb 13 2012" check="9da8edd1a2f5d2f"/>
+    <date id="sickIris" start="Apr 24 2013" finish="May 1 2013" check="3ee11d321bd09eb"/>
+    <date id="sickIris1" start="Apr 24 2013" finish="Apr 26 2013" check="031abe8119a4d8d"/>
+    <date id="sickIris2" start="Apr 26 2013" finish="Apr 28 2013" check="0c7c7a2c652ff53"/>
+    <date id="sickIris3" start="Apr 28 2013" finish="Apr 30 2013" check="a68714c04d798ee"/>
+    <date id="sickIris4" start="Apr 30 2013" finish="May 1 2013" check="b29319dee7563e0"/>
+    <date id="sickIrisWeek3" start="May 1 2013" finish="May 8 2013" check="05ba32c72733ded"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/partyBackground.mp3" loops="-1" backgroundmusic="0"/>
+    <sound id="sickIris" volume="0.4" path="audio/partyBackground.mp3" backgroundmusic="1" loops="-1" date="sickIrisWeek3" gamestate="134,0,275-999"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="globalEye" button="0" visible="1">
+        <checks>
+          <button value="1" gamestate="134,0,160"/>
+          <frame value=":sick" gamestate="134,0,0-160" date="sickIris"/>
+          <frame value=":well1" gamestate="134,0,165-999" date="sickIris2"/>
+          <frame value=":well2" gamestate="134,0,165-999" date="sickIris3"/>
+          <frame value=":well3" gamestate="134,0,165-999" date="sickIris4"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="talkToNPC" type="client">
+          <id value="SPACESHIP_EYE"/>
+        </message>
+      </element>
+      <element id="napasapaFreeze" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,100-999"/>
+          <frame value=":idle"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="talkToNPC" type="client">
+          <id value="NAPASAPA_UFO"/>
+        </message>
+      </element>
+      <element id="deco1" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,275-999" date="sickIrisWeek3"/>
+        </checks>
+      </element>
+      <element id="deco2" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,275-999" date="sickIrisWeek3"/>
+        </checks>
+      </element>
+      <element id="table1" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,275-999" date="sickIrisWeek3"/>
+        </checks>
+      </element>
+      <element id="table2" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,275-999" date="sickIrisWeek3"/>
+        </checks>
+      </element>
+      <element id="lemonTable" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,275-999" date="sickIrisWeek3"/>
+          <button value="1" gamestate="134,0,280" date="sickIrisWeek3"/>
+          <frame value=":lemon" gamestate="134,0,285-999" date="sickIrisWeek3"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="sickIris.lemonTableClicked" type="sickIris"/>
+      </element>
+      <element id="parents" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="101,0,160-999" date="napasapaFreeze"/>
+        </checks>
+      </element>
+      <element type="hotarea" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="portOut"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="hotarea" type="door" target="152" angle="-120"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="portOut" type="action" x="195" y="392" rad="63">
+        <checks>
+          <target value="portOut"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="portOut">
+        <message value="napasapa.portRandom"/>
+      </action>
+    </actions>
+  </module>
+</config>

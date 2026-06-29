@@ -1,0 +1,67 @@
+<config check="decc0ea493da9fc36168844e6acd4276">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.2" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="schalter" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="138,0,230"/>
+        </checks>
+        <button type="click" click="2" stopWalk="1"/>
+        <message value="schalterClicked" type="pirateVacation"/>
+      </element>
+      <element id="mummyOK" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,6-10"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2" stopWalk="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="mummyOK"/>
+        </message>
+      </element>
+      <element id="mummyPink" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,11-999"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2" stopWalk="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="MUMMY_BASEMENT"/>
+        </message>
+      </element>
+      <element type="fakerope" button="1" visible="1">
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="fakerope"/>
+        </message>
+      </element>
+      <element type="fakerope2" button="1" visible="1">
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="fakerope"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="fakerope" type="door" target="41" angle="-90"/>
+      <tooltip id="fakerope2" type="door" target="41" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="fakerope" target="41" type="room" x="130" y="306" rad="50" user="1"/>
+      <hotspot target="45" type="action" x="385" y="183" rad="50" on="1" angle="-90">
+        <checks>
+          <target value="allowEntryConfusingStairs" gamestate="15,0,12-999"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="allowEntryConfusingStairs">
+        <joinRoom room="45"/>
+      </action>
+    </actions>
+  </module>
+</config>

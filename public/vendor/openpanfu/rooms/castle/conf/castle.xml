@@ -1,0 +1,44 @@
+<config check="bfcce105a407021991785725510db260">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="door" button="1" visible="1">
+        <button type="over" over="2" out="1"/>
+      </element>
+      <element id="castaway" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="12"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips>
+      <tooltip id="castaway" type="game" name="GAME_NAME_12"/>
+      <tooltip id="bdayDoor" type="door" target="13" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="11" type="room" x="0" y="454" rad="85" angle="175"/>
+      <hotspot target="8" type="room" x="720" y="446" rad="80" angle="5"/>
+      <hotspot target="59" type="action" x="398" y="314" rad="55" angle="-90">
+        <checks>
+          <target value="allowEntryCastle"/>
+        </checks>
+      </hotspot>
+      <hotspot game="castaway" name="GAME_NAME_12"/>
+    </hotspots>
+    <actions>
+      <action id="allowEntryCastle">
+        <message value="checkCanEnterCastle" type="client"/>
+      </action>
+    </actions>
+    <properties>
+      <specialWalk value="6"/>
+    </properties>
+  </module>
+</config>

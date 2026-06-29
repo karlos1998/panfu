@@ -1,0 +1,349 @@
+<config check="f66b8022e64976c5a0734b6d71789433">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="schoolUniform_0" start="Sep 11 2008" finish="Oct 4 2008" check="1e5dd36a4eb7da0"/>
+    <date id="jinxedPirate_1" start="Oct 13 2008" check="b0734e6b608f6c6"/>
+    <date id="tilldeath" start="Apr 2 2009" finish="Apr 9 2099" check="8958e15acf03951"/>
+    <date id="mysonisapirate" start="May 2 2009" finish="May 24 2009" check="568791da63d752d"/>
+    <date id="eclipse" start="Sep 29 2009" finish="Oct 13 2009" check="9bc04ab3e58ce66"/>
+    <date id="halloweenQuestDay1" start="Oct 27 2009" finish="Oct 31 2009" check="7918b913d63116f"/>
+    <date id="halloweenQuestRest" start="Oct 31 2009" finish="Nov 2 2009" check="faf8f812c941218"/>
+    <date id="lostTesting" start="Nov 11 2009" finish="Nov 26 2009" check="3f4dd6377fad312"/>
+    <date id="pompomQuestDay5" start="Jan 9 2010" finish="Jan 10 2010" check="31c3db10d675e9f"/>
+    <date id="bigFootQuestTesting" start="Jan 30 2010" finish="Feb 18 2010" check="c4f728c8f449592"/>
+    <date id="summerQuest" start="Aug 28 2010" finish="Aug 29 2010" check="ee9ab28750fd1df"/>
+    <date id="whosThatBoy2" start="Mar 16 2011" finish="Mar 23 2011" check="5ff32651ecc9450"/>
+    <date id="bookwormbugs" start="May 4 2011" finish="May 11 2011" check="c872dd66877a799"/>
+    <date id="treeMonster" start="Oct 9 2013" finish="Oct 23 2013" check="dfa884f0a8a7d75"/>
+    <date id="treeMonster2" start="Oct 16 2013" finish="Oct 23 2013" check="94262a7286c473d"/>
+    <date id="treeMonster3" start="Oct 9 2013" finish="Oct 16 2013" check="827d44a78bb166e"/>
+    <date id="halloween2013" start="Oct 26 2013" finish="Nov 3 2013" check="5c24bd46ba747ae"/>
+    <date id="winterAttack" start="Jan 8 2014" finish="Jan 15 2014" check="f757230611225d5"/>
+    <date id="winterAttackFull" start="Jan 9 2014" finish="Feb 5 2014" check="68e457b3de2b420"/>
+    <date id="winterAttack10" start="Jan 8 2014" finish="Jan 12 2014" check="ebaaeec39cd2c44"/>
+    <date id="winterAttack12e" start="Jan 9 2014" finish="Jan 15 2014" check="ddabb6b9b071aa1"/>
+    <date id="winterAttack12" start="Jan 9 2014" finish="Jan 10 2014" check="9fa3ac7311aac29"/>
+    <date id="winterAttack13" start="Jan 10 2014" finish="Jan 11 2014" check="bb4192c5dd55b67"/>
+    <date id="winterAttack14" start="Jan 11 2014" finish="Jan 12 2014" check="35ea62c5b8a364f"/>
+    <date id="winterAttack15e" start="Jan 12 2014" finish="Jan 22 2014" check="0569d690702781f"/>
+    <date id="winterAttack2" start="Jan 15 2014" finish="Jan 22 2014" check="72eadffe5225f37"/>
+    <date id="winterAttack1u2" start="Jan 11 2014" finish="Jan 22 2014" check="d4dc49a29061737"/>
+    <date id="winterAttack1u2b" start="Jan 9 2014" finish="Jan 22 2014" check="0b3526db277452c"/>
+    <date id="mouseQuest" start="Apr 10 2013" finish="Apr 17 2013" check="9cfaff481bd1b37"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/backgroundTree.mp3" loops="-1" backgroundmusic="1" date="winterAttackFull" gamestate="129,0,15-149"/>
+    <sound id="kamariaSound" volume="0.4" path="audio/mystery_fortune_sound.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <waterBombReactions>
+      <zone idTarget="npcKamaria" reaction="kamariaWaterBombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+    </waterBombReactions>
+    <elements>
+      <element id="bottle" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="133,0,45" date="mouseQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="mouse.BottleClicked" type="mouse"/>
+      </element>
+      <element id="npcKamaria2" button="1" visible="0">
+        <checks>
+          <visible value="1" date="winterAttack10" gamestate="129,0,15-999"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="tilldeath.kamaria" type="tillDeath"/>
+        <message value="woobyQuest.talkToKamaria" type="woobyQuest"/>
+        <message value="talkToNPC" type="client">
+          <id value="KAMARIA_TOWER"/>
+        </message>
+        <message value="unicornQuest.kamariaClicked" type="unicornQuest"/>
+      </element>
+      <element id="iceRoom" button="0" visible="0">
+        <checks>
+          <visible value="1" date="winterAttack1u2b" gamestate="129,0,15-999"/>
+          <frame value=":state1" date="winterAttack12" gamestate="129,0,15-999"/>
+          <frame value=":state2" date="winterAttack13" gamestate="129,0,15-999"/>
+          <frame value=":state3" date="winterAttack1u2" gamestate="129,0,15-999"/>
+        </checks>
+      </element>
+      <element id="iceSeat1" button="0" visible="0">
+        <checks>
+          <visible value="1" date="winterAttack1u2" gamestate="129,0,15-55"/>
+          <button value="1" date="winterAttack15e" gamestate="129,0,15-999"/>
+          <frame value=":state1" date="winterAttack2" gamestate="129,0,40"/>
+          <frame value=":state2" date="winterAttack2" gamestate="129,0,45"/>
+          <frame value=":state3" date="winterAttack2" gamestate="129,0,50"/>
+          <frame value=":state4" date="winterAttack2" gamestate="129,0,55"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="tilldeath.kamaria" type="tillDeath"/>
+        <message value="woobyQuest.talkToKamaria" type="woobyQuest"/>
+        <message value="unicornQuest.kamariaClicked" type="unicornQuest"/>
+        <message value="winterAttack.iceKamariaClicked" type="winterAttack"/>
+      </element>
+      <element id="blanket" button="0" visible="0">
+        <checks>
+          <visible value="1" date="winterAttack2" gamestate="129,0,80-85"/>
+        </checks>
+      </element>
+      <element id="iceSeat2" button="0" visible="0">
+        <checks>
+          <visible value="1" date="winterAttack1u2" gamestate="129,0,15-999"/>
+        </checks>
+      </element>
+      <element id="iceTable1" button="0" visible="0">
+        <checks>
+          <visible value="1" date="winterAttack1u2" gamestate="129,0,15-999"/>
+        </checks>
+      </element>
+      <element id="mcTable" button="0" visible="1">
+        <checks>
+          <visible value="0" date="winterAttack1u2" gamestate="129,0,15-999"/>
+        </checks>
+      </element>
+      <element id="mcSmallTable" button="0" visible="1">
+        <checks>
+          <visible value="0" date="winterAttack1u2" gamestate="129,0,15-999"/>
+        </checks>
+      </element>
+      <element id="mcStoel" button="0" visible="1">
+        <checks>
+          <visible value="0" date="winterAttack1u2" gamestate="129,0,15-999"/>
+        </checks>
+      </element>
+      <element id="iceTable2" button="0" visible="0">
+        <checks>
+          <visible value="1" date="winterAttack1u2" gamestate="129,0,15-999"/>
+        </checks>
+      </element>
+      <element id="pumpkin" button="1" visible="0">
+        <checks>
+          <visible value="1" date="halloween2013"/>
+        </checks>
+        <button type="overClick" over="2" click="2"/>
+      </element>
+      <element id="mirrorGhost" visible="0" button="0">
+        <checks>
+          <button value="1" date="winterAttack1u2" gamestate="129,0,15-999"/>
+          <visible value="1" date="winterAttack1u2" gamestate="129,0,15-999"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="talkToNPC" type="client">
+          <id value="MIRROR_GHOST"/>
+        </message>
+      </element>
+      <element id="mirror" visible="1" button="0">
+        <checks>
+          <button value="1" date="winterAttack15e" gamestate="129,0,15-75"/>
+          <button value="1" date="winterAttack15e" gamestate="129,0,90-999"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="winterAttack.GhostClicked" type="winterAttack"/>
+      </element>
+      <element id="treeRoot" visible="0" button="0">
+        <checks>
+          <visible value="1" date="treeMonster" gamestate="117,0,140-225"/>
+          <button value="1" date="treeMonster2" gamestate="117,0,205-225"/>
+          <frame value=":state2" date="treeMonster2" gamestate="117,0,210"/>
+          <frame value=":state3" date="treeMonster2" gamestate="117,0,215"/>
+          <frame value=":state4" date="treeMonster2" gamestate="117,0,220"/>
+          <frame value=":state5" date="treeMonster2" gamestate="117,0,225"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="treeMonster.rootClicked" type="treeMonster"/>
+      </element>
+      <element id="blackHeart" visible="0">
+        <checks>
+          <visible value="1" date="treeMonster3" gamestate="117,0,145-160"/>
+        </checks>
+      </element>
+      <element id="redHeart" visible="0">
+        <checks>
+          <visible value="1" date="treeMonster3" gamestate="117,0,165"/>
+        </checks>
+      </element>
+      <element id="herbLotion" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="95,0,40-45"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="unicornQuest.onLotionClick" type="unicornQuest"/>
+      </element>
+      <element id="botMajor" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="79,0,40-45" date="bookwormbugs"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="bookwormBugs.botMajorClicked" type="bookwormBugs"/>
+      </element>
+      <element id="unknownPanda" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="70,0,20-90" date="whosThatBoy2"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="whosThatBoy2.talkToUnknown2" type="whosThatBoy2"/>
+      </element>
+      <element id="stoned_glass" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,580-581" date="summerQuest" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertGlass" type="summerQuest"/>
+      </element>
+      <element id="pompom" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="pompomQuestDay5" gamestate="8,0,33" doesNotHaveOneItem="101505"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="pompomQuest.getItem40" type="pompomQuest"/>
+      </element>
+      <element id="devTeleport" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" date="lostTesting"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="lostLoverQuest.teleportToTemple" type="theLostLover"/>
+      </element>
+      <element id="devSetState" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" date="lostTesting"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="lostLoverQuest.setState50" type="theLostLover"/>
+      </element>
+      <element id="devGetItem" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" date="lostTesting" gamestate="15,0,52"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="lostLoverQuest.getLavaPlant" type="theLostLover"/>
+      </element>
+      <element id="devGetItem2" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" date="lostTesting" gamestate="15,0,61"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="lostLoverQuest.getCookieAndTeleport" type="theLostLover"/>
+      </element>
+      <element id="devPassDay" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" date="lostTesting" gamestate="15,0,54"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="lostLoverQuest.passKamariaDay" type="theLostLover"/>
+      </element>
+      <element id="devPassDay2" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" date="lostTesting" gamestate="15,0,57"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="lostLoverQuest.passKamariaDay2" type="theLostLover"/>
+      </element>
+      <element id="devPassDayNewPets" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" gamestate="30,0,26"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="devToState28SkipDay" type="newPetsQuest"/>
+      </element>
+      <element id="colorant" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eclipse" gamestate="10,0,6"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="eclipseQuest.getItem3" type="eclipseQuest"/>
+      </element>
+      <element id="ghost" button="1" visible="0">
+        <button type="overClick" over="2" out="1" click="2" stopWalk="1"/>
+        <message value="woobyQuest.talkToKamaria" type="woobyQuest"/>
+      </element>
+      <element id="chest" visible="0" frame=":closed">
+        <checks>
+          <visible value="1" gamestate="9,0,4-16"/>
+          <frame value=":opened" gamestate="9,0,11-14"/>
+          <frame value=":awake" gamestate="9,0,15-16"/>
+          <visible value="0" requestHasOneActiveItem="104152"/>
+        </checks>
+      </element>
+      <element id="mixture" visible="0">
+        <checks>
+          <visible value="1" gamestate="9,0,4-9"/>
+        </checks>
+      </element>
+      <element id="reset" visible="0"/>
+      <element id="test" visible="0"/>
+      <element id="item2" visible="0"/>
+      <element id="item3" visible="0"/>
+      <element id="item4" visible="0"/>
+      <element type="caruso" button="1" visible="1">
+        <button type="full" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="caruso">
+          <id value="caruso"/>
+        </message>
+      </element>
+      <element id="npcKamaria" button="1" visible="1">
+        <checks>
+          <visible value="0" requestHasOneActiveItem="104152"/>
+          <visible value="0" gamestate="140,0,17-50"/>
+          <visible value="0" date="winterAttack" gamestate="129,0,15-999"/>
+          <button value="0" date="winterAttack2" gamestate="129,0,15-40"/>
+          <button value="0" date="winterAttack2" gamestate="129,0,80-85"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="tilldeath.kamaria" type="tillDeath"/>
+        <message value="woobyQuest.talkToKamaria" type="woobyQuest"/>
+        <message value="talkToNPC" type="client">
+          <id value="KAMARIA_TOWER"/>
+        </message>
+        <message value="unicornQuest.kamariaClicked" type="unicornQuest"/>
+        <message value="winterAttack.TalkedToKamaria" type="winterAttack"/>
+      </element>
+      <element id="farid" visible="0" button="1">
+        <checks>
+          <visible value="1" gamestate="15,0,60-83"/>
+          <visible value="1" gamestate="15,0,90-100"/>
+          <visible value="0" gamestate="15,0,83" daypasstest="15,0,1,+"/>
+          <visible value="0" requestHasOneActiveItem="104152"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="talkToNPC" type="theLostLover">
+          <id value="faridTower"/>
+        </message>
+      </element>
+      <element id="crystalball" button="1" visible="1">
+        <button type="overClick" click="1"/>
+        <message value="bitterCurse.CrystalBallClicked" type="bitterCurse"/>
+        <message value="callFortuneCookie"/>
+      </element>
+      <element id="chair_0" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="0"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="0"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="0"/>
+        </message>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="17" type="room" x="27" y="411" rad="65" angle="170"/>
+      <hotspot type="action" target="sit_chair_0" x="480" y="287" rad="33" stop="1" into="0"/>
+    </hotspots>
+    <actions>
+      <action id="sit_chair_0">
+        <requestInteractSharedItem initial="chair_" itemID="0" x="480" y="287" direction="left_down" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+    </actions>
+  </module>
+</config>

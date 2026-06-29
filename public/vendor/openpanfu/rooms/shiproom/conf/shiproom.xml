@@ -1,0 +1,30 @@
+<config check="d11e3f3fcc4ac5b8e0795ffd84daa880">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/background2.mp3" loops="-1" backgroundmusic="0"/>
+  </sounds>
+  <dates>
+    <date id="pirateVacation" start="Aug 6 2013" finish="Aug 28 2013" check="e725f51c03cae53"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="nuvio" button="1" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="NUVIO_SHIPROOM"/>
+        </message>
+        <message value="pirateVacation.clickedNuvio" type="pirateVacation"/>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <hotspots>
+      <hotspot target="38" type="room" x="390" y="418" rad="50" angle="90"/>
+    </hotspots>
+  </module>
+</config>

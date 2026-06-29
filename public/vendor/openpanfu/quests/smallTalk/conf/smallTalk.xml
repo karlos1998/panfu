@@ -1,0 +1,125 @@
+<config check="74362d1c39e23a1990a0390b7fed7719">
+  <snippets path="quests/smallTalk/conf/snippets/smalltalk_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <module statement_timeout="60" category="83">
+    <questType type="smallTalk" questNameInLogBook=""/>
+    <npcs>
+      <npc id="chronicler" room="2" name="Hamelot" assetname="chronicler" bouncing="1">
+        <speechBubble x="206" y="270" w="350" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours/>
+      </npc>
+      <npc id="LIFEGUARD_POOL" room="3" name="Willi" assetname="lifeGuard" bouncing="0">
+        <speechBubble x="540" y="120" w="250" offX="0" offY="-1" pointX="0" pointY="30"/>
+        <behaviours/>
+      </npc>
+      <npc id="GONZO_KIOSK" room="5" name="Gonzo" assetname="kioskBoy" bouncing="1">
+        <speechBubble x="252" y="150" w="350" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours/>
+      </npc>
+      <npc id="KAMARIA_TOWER" room="20" name="Kamaria" assetname="npcKamaria" bouncing="1">
+        <speechBubble x="370" y="195" w="250" offX="-1" offY="-1" pointX="-100" pointY="25"/>
+        <behaviours/>
+      </npc>
+      <npc id="BRUNO_CHEZ" room="30" name="Bruno" assetname="bruno" bouncing="1">
+        <speechBubble x="500" y="130" w="200" offX="-1" offY="-1" pointX="-20" pointY="20"/>
+        <behaviours/>
+      </npc>
+      <npc id="LENNY_BEACH" room="36" name="Lenny" assetname="surfer" bouncing="1">
+        <speechBubble x="325" y="215" w="250" offX="0" offY="-1" pointX="-10" pointY="15"/>
+        <behaviours/>
+      </npc>
+      <npc id="BOOKWORM_LABORATORY" room="26" name="Prof. Bookworm" assetname="Bookworm" bouncing="1">
+        <speechBubble x="700" y="300" w="300" offX="-1" offY="-1" pointX="-90" pointY="20"/>
+        <behaviours/>
+      </npc>
+      <npc id="LILI_BEAUTYSALON" room="23" name="Lili" assetname="lili" bouncing="1">
+        <speechBubble x="640" y="205" w="250" offX="-1" offY="-1" pointX="-100" pointY="25"/>
+        <behaviours/>
+      </npc>
+      <npc id="PAUL_PAULSROOM" room="60" name="Paul the Kid" assetname="paul" bouncing="1">
+        <speechBubble x="380" y="230" w="180" offX="1" offY="-1" pointX="20" pointY="25"/>
+        <behaviours/>
+      </npc>
+      <npc id="WILLIAM_PIRATEBAR" room="41" name="William" assetname="william" bouncing="1">
+        <speechBubble x="92" y="280" w="450" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours/>
+      </npc>
+      <npc id="CLOWN_LAKE" room="39" name="Curley" assetname="clownNPC" bouncing="1">
+        <speechBubble x="153" y="110" w="400" offX="1" offY="0" pointX="-20" pointY="30"/>
+        <behaviours/>
+      </npc>
+      <npc id="MUMMY_BASEMENT" room="44" name="The Mummy" assetname="mummyPink" bouncing="1">
+        <speechBubble x="272" y="230" w="350" offX="1" offY="1" pointX="40" pointY="-25"/>
+        <behaviours/>
+      </npc>
+      <npc id="PANDALAGELO_BALLROOM" room="16" name="Pandalangelo" assetname="painter" bouncing="1">
+        <speechBubble x="230" y="150" w="250" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours/>
+      </npc>
+      <npc id="HORST_HARBOUR" room="24" name="Horst Hering" assetname="npcFisherman" bouncing="1">
+        <speechBubble x="305" y="215" w="200" offX="1" offY="0" pointX="-20" pointY="-30"/>
+        <behaviours/>
+      </npc>
+      <npc id="PENNY" room="36" name="Penny" assetname="penny" bouncing="1">
+        <speechBubble x="380" y="200" w="250" offX="1" offY="-1" pointX="20" pointY="20"/>
+        <behaviours/>
+      </npc>
+      <npc id="TRAINER" room="40" name="Mr. Horsey" assetname="ridder">
+        <speechBubble x="460" y="196" w="200" offX="-1" offY="0" pointX="20" pointY="30"/>
+        <behaviours/>
+      </npc>
+      <npc id="SADDLER" room="32" name="Henry" assetname="chairMaker">
+        <speechBubble x="520" y="196" w="200" offX="-1" offY="-1" pointX="20" pointY="-30"/>
+        <behaviours/>
+      </npc>
+      <npc id="INFOPANEL_LAKE" room="39">
+        <speechBubble x="539" y="168" w="150" offX="-1" offY="0" pointX="20" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="83,18,0">
+            <statement key="HELP_SIGN_01" parse="name" value="myUserName"/>
+            <statement key="HELP_SIGN_02" parse="name" value="myUserName"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="INFOPANEL_FOREST" room="34">
+        <speechBubble x="500" y="200" w="200" offX="1" offY="0" pointX="-20" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="83,19,0">
+            <statement key="UNICORN_HINT_02" parse="name" value="myUserName"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="INFOPANEL_RACETRACK" room="43">
+        <speechBubble x="695" y="300" w="300" offX="-1" offY="-1" pointX="20" pointY="-30"/>
+        <behaviours>
+          <behaviour gamestate="83,20,0">
+            <statement key="HINT_RACINGTRACK_01" parse="name" value="myUserName"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="INFOPANEL_BOOSTERCAVE" room="42">
+        <speechBubble x="270" y="230" w="200" offX="1" offY="1" pointX="20" pointY="-20"/>
+        <behaviours>
+          <behaviour gamestate="83,21,0">
+            <statement key="HELP_SIGN_LEVELBOOSTER_01"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="DJ_DISCO" room="18" name="DJ Pandi" assetname="pandi">
+        <speechBubble x="465" y="115" w="400" offX="-1" offY="-1" pointX="-100" pointY="25"/>
+        <behaviours/>
+      </npc>
+      <npc id="FRED" room="36" name="Fred" assetname="octopus">
+        <speechBubble x="525" y="215" w="250" offX="-1" offY="-1" pointX="20" pointY="-30"/>
+        <behaviours/>
+      </npc>
+      <npc id="GRAVE_BALLROOM" room="16">
+        <speechBubble x="445" y="145" w="250" offX="1" offY="1" pointX="20" pointY="-20"/>
+        <behaviours>
+          <behaviour gamestate="83,22,0">
+            <statement key="BALLROOM_GRAVE_SPEECH_01" parse="name" value="myUserName"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+  </module>
+</config>

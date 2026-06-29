@@ -1,0 +1,6 @@
+<config check="900a29e11fb0eeb15735140f31118e58">
+  <assets>
+    <asset id="gameBox" path="assets/gamebox.swf"/>
+  </assets>
+  <module/>
+</config>

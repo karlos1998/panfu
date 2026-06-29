@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<snippets date="08.12.2014 15:30:14">
+  <BOAT_01><![CDATA[You can only ride the boat once you've played the pirate quest. Go to the beach and talk to the octopus.]]></BOAT_01>
+  <FISCHERMANN_SPEECH_01><![CDATA[Hello $$name$$! So, you want to know if I know William Pandabeard, the pirate?]]></FISCHERMANN_SPEECH_01>
+  <FISCHERMANN_SPEECH_02><![CDATA[Of course I know him! Who doesn't know the Terror of the Seas? I've heard that a few years ago he moved to an island not far from here to live in peace. You can use my motorboat here in the harbour to get there. Unfortunately I lost the key somewhere on the volcano.]]></FISCHERMANN_SPEECH_02>
+  <FISCHERMANN_SPEECH_03><![CDATA[Go to the volcano and look for the key.]]></FISCHERMANN_SPEECH_03>
+  <FISCHERMANN_SPEECH_04><![CDATA[Hello! Good job on finding that key! Come back tomorrow and I'll tell you how to proceed.]]></FISCHERMANN_SPEECH_04>
+  <FISCHERMANN_SPEECH_05><![CDATA[Hi there! Now, where were we? Oh yes, you found the key. Now you'll need petrol for the motorboat. You'll have to find a petrol container.]]></FISCHERMANN_SPEECH_05>
+  <FISCHERMANN_SPEECH_06><![CDATA[I think I saw a petrol container at the pony stables or at the kiosk. Look there and then come back and talk to me.]]></FISCHERMANN_SPEECH_06>
+  <FISCHERMANN_SPEECH_07><![CDATA[Hello! Great job - you've found both the key and the petrol. Now you'll be able to use the boat two days from now. Come back then.]]></FISCHERMANN_SPEECH_07>
+  <FISCHERMANN_SPEECH_08><![CDATA[Hello! Great job - you've found both the key and the petrol. You'll be able to use the boat in one day. Come back then.]]></FISCHERMANN_SPEECH_08>
+  <FISCHERMANN_SPEECH_09><![CDATA[Hi there, you can use the boat now. Click on the motorboat here in the harbour.]]></FISCHERMANN_SPEECH_09>
+  <FRED_SPEECH_01><![CDATA[Argh! Who are you? A little Panda - but not the one I expected! I want my treasure back! NOW!]]></FRED_SPEECH_01>
+  <FRED_SPEECH_02><![CDATA[I will turn the whole land of Panfu black with ink if I don't get back the treasure that was stolen from me.]]></FRED_SPEECH_02>
+  <FRED_SPEECH_03><![CDATA[Ask Kamaria. She's in the castle. She's also partly responsible for it.]]></FRED_SPEECH_03>
+  <FRED_SPEECH_04><![CDATA[You don't believe me? Go to Kamaria in the castle and talk to her.]]></FRED_SPEECH_04>
+  <FRED_SPEECH_05><![CDATA[Go to the castle and talk to Kamaria.]]></FRED_SPEECH_05>
+  <FRED_SPEECH_06><![CDATA[You're back? You want to know if I'm Fred? Yeah, that's me. I'll explain to you what happened here.]]></FRED_SPEECH_06>
+  <FRED_SPEECH_07><![CDATA[I accompanied Kamaria's son in the search for treasure and his father. We were good friends. He recently went missing and took all of our treasure with him. I couldn't believe it. And to think, he was my best friend!]]></FRED_SPEECH_07>
+  <FRED_SPEECH_08><![CDATA[I know that he's hiding somewhere in the eerie forest. You get there by looking straight at the volcano through the telescope. Go and tell him that I want my treasure back or else I'll drench all of Panfu in black ink!]]></FRED_SPEECH_08>
+  <FRED_SPEECH_09><![CDATA[Go to Kamaria's son and tell him that I want my treasure back. I know that he's hiding somewhere in the eerie forest. You get there by looking straight at the volcano through the telescope.]]></FRED_SPEECH_09>
+  <FRED_SPEECH_10><![CDATA[I want my treasure or else I'll turn all of Panfu black with my ink!]]></FRED_SPEECH_10>
+  <FRED_SPEECH_11><![CDATA[What do you want? Really? You say that Kamaria's son didn't steal the treasure? Instead it was an evil pirate?]]></FRED_SPEECH_11>
+  <FRED_SPEECH_12><![CDATA[I don't believe you! I wan't my treasure or else I will cover Panfu with black ink. Go talk to Kamaria's son and tell him to kindly come pay me a visit.]]></FRED_SPEECH_12>
+  <FRED_SPEECH_13><![CDATA[I want my treasure or else I'll cover Panfu with black ink!]]></FRED_SPEECH_13>
+  <KAMARIAS_SON_SPEECH_01><![CDATA[Hi! ...who are you?]]></KAMARIAS_SON_SPEECH_01>
+  <KAMARIAS_SON_SPEECH_02><![CDATA[Oh, hello $$name$$! I'm Kamaria's son. Really - trust me. I'm hiding here from Fred the Octopus. But I didn't steal his treasure - you have to believe me. I am so hungry. Could you bring me a plate of chicken from the restaurant?]]></KAMARIAS_SON_SPEECH_02>
+  <KAMARIAS_SON_SPEECH_03><![CDATA[Thank you! I'll eat and rest. Come back in a day, once I've built up my strength.]]></KAMARIAS_SON_SPEECH_03>
+  <KAMARIAS_SON_SPEECH_04><![CDATA[Hello, it's you again! You've got to help me. I wasn't the one who stole the treasure. Really, you have to believe me. I'll tell you what happened.]]></KAMARIAS_SON_SPEECH_04>
+  <KAMARIAS_SON_SPEECH_05><![CDATA[Fred and I spent years searching for treasure and my father. We found lots of treasure, but not my father. Then one day I met the pirate William Pandabeard. He's an old pirate and I could tell at once that he was not to be trusted. We spent a whole night drinking orange soda with each other. When I fell asleep, he took the treasure and told Fred that I was the one who stole it. That's why I fled. Go to Fred and tell him that it wasn't I who stole the treasure.
+]]></KAMARIAS_SON_SPEECH_05>
+  <KAMARIAS_SON_SPEECH_06><![CDATA[Talk to Fred and convince him that I didn't steal the treasure.]]></KAMARIAS_SON_SPEECH_06>
+  <KAMARIAS_SON_SPEECH_07><![CDATA[Hello, there you are again. Fred doesn't believe you and says I should come to him? That's not a very good idea!]]></KAMARIAS_SON_SPEECH_07>
+  <KAMARIAS_SON_SPEECH_08><![CDATA[Come with me, we'll go to my mother, Kamaria. You go on ahead. I'll catch up with you.]]></KAMARIAS_SON_SPEECH_08>
+  <KAMARIA_SPEECH_01><![CDATA[Hello $$name$$! Nice to see you again. You're looking good!]]></KAMARIA_SPEECH_01>
+  <KAMARIA_SPEECH_02><![CDATA[What are you trying to tell me? A giant octopus who wants to dye all of Panfu black with his ink is on the beach?! Well that's just terrible!]]></KAMARIA_SPEECH_02>
+  <KAMARIA_SPEECH_03><![CDATA[What? The octopus told you that I'm responsible that his treasure was stolen? That can't be true. Let me think if I know an octopus...no...maybe...Friedrich?...No, that's not it....]]></KAMARIA_SPEECH_03>
+  <KAMARIA_SPEECH_04><![CDATA[Ahhh, wait a second, I used to know an octopus, but that was long ago. Let me tell you about it.]]></KAMARIA_SPEECH_04>
+  <KAMARIA_SPEECH_05><![CDATA[A long, long time ago, when I was a much younger Panda, I traveled around and lived in harmony with Mother Nature. One evening, while I was watching the sunset on the beach, I met an adventurer. We talked the entire night and fell in love with each other. He was and will ever remain my one true love. We were very in love and had a wonderful time, although it couldn't last forever. One day he left, never to return. I was hurt and couldn't understand what had happened. He was gone, but not entirely. I was pregnant and had a baby. I've never told anyone this before. But yes, I have a son. Where is he? That I don't know. He would constantly ask me about his father when he was younger, and one day he decided to go out with his best friend Fred and travel the seas in search of treasure and his father. This friend of his was an octopus. This has to be the Fred whom you speak of.]]></KAMARIA_SPEECH_05>
+  <KAMARIA_SPEECH_05A><![CDATA[A long, long time ago, when I was a much younger Panda, I traveled around and lived in harmony with Mother Nature. One evening, while I was watching the sunset on the beach, I met an adventurer. We talked the entire night and fell in love with each other. ]]></KAMARIA_SPEECH_05A>
+  <KAMARIA_SPEECH_05B><![CDATA[He was and will ever remain my one true love. We were very in love and had a wonderful time, although it couldn't last forever. One day he left, never to return. I was hurt and couldn't understand what had happened. He was gone, but not entirely. I was pregnant and had a baby. I've never told anyone this before. But yes, I have a son.]]></KAMARIA_SPEECH_05B>
+  <KAMARIA_SPEECH_05C><![CDATA[Where is he? That I don't know. He would constantly ask me about his father when he was younger, and one day he decided to go out with his best friend Fred and travel the seas in search of treasure and his father. This friend of his was an octopus. This has to be the Fred whom you speak of.]]></KAMARIA_SPEECH_05C>
+  <KAMARIA_SPEECH_06><![CDATA[Go back to the beach and ask the octopus whether he's Fred.]]></KAMARIA_SPEECH_06>
+  <KAMARIA_SPEECH_07><![CDATA[Go back to the beach and ask the octopus whether he's Fred.]]></KAMARIA_SPEECH_07>
+  <KAMARIA_SPEECH_08><![CDATA[Hello $$name$$! So, the octopus is Fred? Interesting. And you said my son is in Panfu? You have to find him!]]></KAMARIA_SPEECH_08>
+  <KAMARIA_SPEECH_09><![CDATA[Hello, you have to speak with Fred the Octopus.]]></KAMARIA_SPEECH_09>
+  <KAMARIA_SPEECH_10><![CDATA[Hello, go to my son and bring him to me.]]></KAMARIA_SPEECH_10>
+  <KAMARIA_SPEECH_11><![CDATA[Hello $$name$$! Thank you for helping my son! He stopped by and I was so happy to see him again. I've hidden him in the castle for his own safety.]]></KAMARIA_SPEECH_11>
+  <KAMARIA_SPEECH_12><![CDATA[We must find the pirate William Pandabeard. If he's really stolen the treasure, only he knows where it's at. We've got to get that treasure back and get it to Fred. Otherwise he'll turn all of Panfu black.]]></KAMARIA_SPEECH_12>
+  <KAMARIA_SPEECH_13><![CDATA[Go to the fisherman in the harbour. He always has good advice and most likely has an idea.]]></KAMARIA_SPEECH_13>
+  <NARRATOR_SPEECH_01><![CDATA[You've put together a plate with chicken]]></NARRATOR_SPEECH_01>
+  <NARRATOR_SPEECH_02><![CDATA[You need a key and petrol.]]></NARRATOR_SPEECH_02>
+  <NARRATOR_SPEECH_03><![CDATA[You've found a petrol container.]]></NARRATOR_SPEECH_03>
+  <NARRATOR_SPEECH_04><![CDATA[Stolen Treasure]]></NARRATOR_SPEECH_04>
+  <NARRATOR_SPEECH_05><![CDATA[Clue to Kamaria's lost love]]></NARRATOR_SPEECH_05>
+  <NARRATOR_SPEECH_06><![CDATA[You've done it and found the treasure! You did well. Fred the Octopus will no longer torment Panfu and will disappear with the treasure. Sadly, Kamaria is heartbroken that you didn't choose the clue to help her find her lost love. Her son went back in search of his father, but that is another story. Perhaps you should have listened to your heart and made Kamaria happy. Take a look in your inventory. You've received a prize.]]></NARRATOR_SPEECH_06>
+  <NARRATOR_SPEECH_07><![CDATA[You've done it and you also listened to your heart. You've done very well. Kamaria is very happy that she received a clue to help her find her lost love. Fred the Octopus is so pleased that he's decided to search for the father along with the son. Everyone is happy! You've weathered out this adventure quite well. Look in your inventoy. You've received a prize.]]></NARRATOR_SPEECH_07>
+  <PIRATE_WILLIAM_SPEECH_01><![CDATA[Argh! Hello little Panda! Welcome to my island! So, you want the treasure that I stole? Well, I would like to play a game with you. I'll gladly play any game for my life! Ha ha!]]></PIRATE_WILLIAM_SPEECH_01>
+  <PIRATE_WILLIAM_SPEECH_02><![CDATA[You'll receive the treasure only when you've solved all the puzzles on my island. But only then! Ha ha ha!]]></PIRATE_WILLIAM_SPEECH_02>
+  <PIRATE_WILLIAM_SPEECH_03><![CDATA[First you must come to the island. To do that you have to jump from stone to stone. You have to spell a certain word that has to do with me. Have fun! Ha Ha Ha!]]></PIRATE_WILLIAM_SPEECH_03>
+  <PIRATE_WILLIAM_SPEECH_04><![CDATA[I'm impressed, little Panda! You have solved the first puzzle and have reached the island. But that was only the first step!]]></PIRATE_WILLIAM_SPEECH_04>
+  <PIRATE_WILLIAM_SPEECH_05><![CDATA[Now you must tell me how many coconuts are located on the island. Click on all of the coconuts that you find. Then the game will continue.]]></PIRATE_WILLIAM_SPEECH_05>
+  <PIRATE_WILLIAM_SPEECH_06><![CDATA[That's right, little Panda. I'm impressed.]]></PIRATE_WILLIAM_SPEECH_06>
+  <PIRATE_WILLIAM_SPEECH_07><![CDATA[You have yet to click on all of the coconuts on the island. Keep searching, little Panda! You certainly haven't seen them all yet!]]></PIRATE_WILLIAM_SPEECH_07>
+  <PIRATE_WILLIAM_SPEECH_08><![CDATA[I'm impressed, little Panda! You have solved two puzzles! But you aren't done yet.]]></PIRATE_WILLIAM_SPEECH_08>
+  <PIRATE_WILLIAM_SPEECH_09><![CDATA[Now you must tell me how many crabs are located on this island. Click on all the crabs you can find here.]]></PIRATE_WILLIAM_SPEECH_09>
+  <PIRATE_WILLIAM_SPEECH_10><![CDATA[That's right, little Panda. I'm impressed.]]></PIRATE_WILLIAM_SPEECH_10>
+  <PIRATE_WILLIAM_SPEECH_11><![CDATA[You have yet to click on all of the crabs on the island! Keep searching, little Panda!]]></PIRATE_WILLIAM_SPEECH_11>
+  <PIRATE_WILLIAM_SPEECH_12><![CDATA[Wow! You've really done it. So it goes. Now you have a choice. You can either have the stolen treasure to take back to Fred OR I'll give you a clue about Kamaria's lost love. But you can only choose one! It's your choice! I'll tell you again - the treasure or the clue. It's your choice, little Panda!]]></PIRATE_WILLIAM_SPEECH_12>
+  <PIRATE_WILLIAM_SPEECH_13><![CDATA[Ahhh, you've chosen the treasure! But I'm not sure this will bring you happiness...Ha Ha Ha!]]></PIRATE_WILLIAM_SPEECH_13>
+  <PIRATE_WILLIAM_SPEECH_14><![CDATA[Ahhh, you've chosen the clue to Kamaria's lost love. You're a Panda with a lot of heart...and I'm still rich! Ha Ha Ha!]]></PIRATE_WILLIAM_SPEECH_14>
+  <PIRATE_WILLIAM_SPEECH_15><![CDATA[Go back to Panfu, little Panda. You can come back anytime by using the motorboat in the harbour. I'm disappearing from this place, but I'm sure we'll see each other again.]]></PIRATE_WILLIAM_SPEECH_15>
+  <QUEST_HINT_01><![CDATA[Hello! You have to finish the quest you are playing right now before you can play my adventure. Come back then.]]></QUEST_HINT_01>
+  <QUEST_HINT_02><![CDATA[Hello! You have to finish the quest with Joshua and Amalura before you can play my adventure.]]></QUEST_HINT_02>
+  <QUEST_HINT_03><![CDATA[Hello! You have to finish the quest you are playing right now before you can play my quest. Take a look in your quest book, located up and to the right.]]></QUEST_HINT_03>
+</snippets>

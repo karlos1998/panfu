@@ -1,0 +1,203 @@
+<config check="2f0e85427a00c07d232576d50c69b940">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="horsequest" start="Jun 20 2009" finish="Apr 19 2099" check="105324ab0fcb5dd"/>
+    <date id="pyjama" start="Aug 27 2009" finish="Sep 2 2009" check="6f85e8a8a9e7764"/>
+    <date id="pompomQuestDay3" start="Jan 7 2010" finish="Jan 8 2010" check="358c6d4cab00cf2"/>
+    <date id="petsHomeQuest" start="Mar 16 2010" finish="Mar 21 2010" check="7926e446d4e06ae"/>
+    <date id="easternDay4" start="Apr 2 2010" finish="Apr 6 2010" check="09bb5937cb6dfe0"/>
+    <date id="summerQuest" start="Jul 11 2010" finish="Jul 12 2010" check="0697df5a04bd6f9"/>
+    <date id="summerQuest2" start="Aug 7 2010" finish="Aug 8 2010" check="5df1ef475819d53"/>
+    <date id="summerQuest3" start="Aug 31 2010" finish="Sep 1 2010" check="c7627d958603522"/>
+    <date id="spyQuest" start="Apr 27 2011" finish="May 4 2011" check="2c36bdfc0536f3c"/>
+    <date id="eastern2013" start="Mar 28 2013" finish="Mar 29 2013" check="29778a48ad65e7b"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <items/>
+    <elements>
+      <element id="easterEgg" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eastern2013" gamestate="131,0,45"/>
+        </checks>
+        <button type="click" click="1" stopWalk="1"/>
+        <message value="eastern2013.EggClicked" type="eastern2013"/>
+      </element>
+      <element id="caruso" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="89,0,330-350"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="bitterTideQuest.talkToCaruso" type="bitterTideQuest"/>
+      </element>
+      <element id="sewer" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="133,0,20"/>
+        </checks>
+      </element>
+      <element id="tracks" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="78,0,10-90"/>
+        </checks>
+      </element>
+      <element id="openedDrainage" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="78,0,10-90"/>
+          <button value="1" gamestate="78,0,10-20"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="spyQuest.drainageClicked" type="spyQuest"/>
+      </element>
+      <element id="stoned_sink" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,50-51" date="summerQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertSink" type="summerQuest"/>
+      </element>
+      <element id="stoned_matrace" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,360-361" date="summerQuest2" requestHasOneActiveItem="102410"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertMatrace" type="summerQuest"/>
+      </element>
+      <element id="stoned_something" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,610-611" date="summerQuest3" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertSomething" type="summerQuest"/>
+      </element>
+      <element id="glitter1" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" doesNotHaveOneItem="101845" date="easternDay4" gamestate="32,0,0-20"/>
+        </checks>
+        <checks>
+          <button value="1" doesNotHaveOneItem="101845"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="easternQuest.getEgg1" type="easternQuest"/>
+      </element>
+      <element id="wholeEgg" visible="1"/>
+      <element id="foldingrule" button="0" visible="0">
+        <checks>
+          <visible value="1" date="petsHomeQuest" gamestate="29,0,10-50" doesNotHaveOneItem="101765"/>
+        </checks>
+        <checks>
+          <button value="1" date="petsHomeQuest" gamestate="29,0,10-50" doesNotHaveOneItem="101765"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="petsHomeQuest.giveItem5" type="petsHomeQuest"/>
+      </element>
+      <element id="lock" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="25,0,14-35"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="bigFootQuest.lockClick" type="bigFootQuest"/>
+      </element>
+      <element id="pompom" button="1" visible="0">
+        <checks>
+          <visible value="1" date="pompomQuestDay3" gamestate="8,0,33" doesNotHaveOneItem="101500"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="pompomQuest.getItem35" type="pompomQuest"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":pompom" date="pompomQuestDay3"/>
+          <frame value=":petshome" date="petsHomeQuest"/>
+          <frame value=":summerQuest" date="summerQuest"/>
+          <frame value=":spyQuest" date="spyQuest"/>
+        </checks>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":backToSchool" date="backToSchool"/>
+          <frame value=":pompom" date="pompomQuestDay1"/>
+          <frame value=":eastern" date="easternDay4"/>
+        </checks>
+      </element>
+      <element id="schoolGirlSet" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="backToSchool" doesNotHaveOneItem="101020" gamestate="7,1,4-5"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="backToSchoolQuest.getItem2" type="backToSchoolQuest"/>
+      </element>
+      <element type="ani" button="1" visible="1">
+        <button type="over" over="2" out="1"/>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element id="swimmingSuit" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" hasItems="100555,100556" doesNotHaveOneItem="100554,100557" daypasstest="1,1,1,+"/>
+        </checks>
+        <button type="click" click="1" clickOnce="true"/>
+        <message value="collectItem" type="swimmingQuest">
+          <item value="swimmingObject3"/>
+        </message>
+        <message value="clickSwimmingQuestObject" type="swimmingQuest"/>
+        <message value="StateConsts.setstate">
+          <categoryID value="1"/>
+          <stateID value="2"/>
+          <value value="1"/>
+        </message>
+        <message value="StateManager.setState">
+          <categoryID value="1"/>
+          <stateID value="2"/>
+          <value value="1"/>
+        </message>
+      </element>
+      <element id="saddle_2" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" hasItems="100681" doesNotHaveOneItem="100680" gamestate="3,0,40"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="collectItem" type="horse">
+          <item value="saddle_2"/>
+        </message>
+      </element>
+      <element id="seeping_hat" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="pyjama" doesNotHaveOneItem="100741"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="pyjamaParty.hat" type="pyjamaParty"/>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="3" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="3" type="room" x="360" y="222" rad="30"/>
+      <hotspot id="sewer" target="51" type="action" x="358" y="308" rad="30" angle="90">
+        <checks>
+          <type value="action" gamestate="133,0,20-25"/>
+          <target value="tunnelroomCheck"/>
+          <target value="allowEntryTunnel" gamestate="133,0,20-25"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="donothing"/>
+      <action id="tunnelroomCheck">
+        <tunnelroomCheck/>
+      </action>
+      <action id="allowEntryTunnel">
+        <joinRoom room="51"/>
+      </action>
+    </actions>
+  </module>
+</config>

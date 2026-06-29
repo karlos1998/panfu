@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<snippets date="03.06.2020 05:39:32">
+  <DECISION_DESCRIPTION><![CDATA[So, my dear Panda, what is your decision?]]></DECISION_DESCRIPTION>
+  <DECISION_LOVE><![CDATA[to destroy the diamond]]></DECISION_LOVE>
+  <DECISION_MONEY><![CDATA[Money (defunct)]]></DECISION_MONEY>
+  <FARID_SPEECH_01><![CDATA[Kamaria?! Where is Kamaria?!]]></FARID_SPEECH_01>
+  <FARID_SPEECH_02><![CDATA[I was frozen for years. The only thing that kept me going was the hope that I would one day see my great love again. Only through this thought was I able to keep warm blood pumping through my veins despite the icy cold.]]></FARID_SPEECH_02>
+  <FARID_SPEECH_03><![CDATA[Let's go see Kamaria and give her the great news! You go ahead. I'll catch up.]]></FARID_SPEECH_03>
+  <FARID_SPEECH_04><![CDATA[Thank you, $$name$$! You saved my life! I will always be indebted to you.]]></FARID_SPEECH_04>
+  <FARID_SPEECH_05><![CDATA[Enjoy this wonderful day with us. I wouldn't be here without you!]]></FARID_SPEECH_05>
+  <FISHERMAN_SPEECH_01><![CDATA[Hello, little Panda! What brings you to me?]]></FISHERMAN_SPEECH_01>
+  <FISHERMAN_SPEECH_02><![CDATA[What? You're building a porch?]]></FISHERMAN_SPEECH_02>
+  <FISHERMAN_SPEECH_03><![CDATA[Oh, you need a torch! I can whip up anything with just a bit of string and a paper clip!]]></FISHERMAN_SPEECH_03>
+  <FISHERMAN_SPEECH_04><![CDATA[Well...this looks to be a tough job. I'll also need some wood and a Swiss army knife.]]></FISHERMAN_SPEECH_04>
+  <FISHERMAN_SPEECH_05><![CDATA[Go look for wood and a Swiss army knife and then come see me again. Then I can make you your torch.]]></FISHERMAN_SPEECH_05>
+  <FISHERMAN_SPEECH_06><![CDATA[Go and get some wood from the Eerie Forest. You can reach it via the Telescope at the Volcano. I will also need a pocket knife. There's one in the lab at the Jungle Cave.
+]]></FISHERMAN_SPEECH_06>
+  <FISHERMAN_SPEECH_07><![CDATA[Great, you've got the Swiss army knife. Now I need wood. I know of a couple of dead branches in the forest. Get me some wood and I'll make you your torch.]]></FISHERMAN_SPEECH_07>
+  <FISHERMAN_SPEECH_08><![CDATA[Great, you've found some wood. Now I just need a Swiss army knife. I'm sure someone in Panfu has a pocket knife. Maybe someone who tinkers around with things? Think hard and I'll wait for you here.]]></FISHERMAN_SPEECH_08>
+  <FISHERMAN_SPEECH_09><![CDATA[Good job! With this pocket knife I'll be able to make a very nice torch out of the wood. I'll need a bit of time, however. Come back tomorrow. I should be through by then.]]></FISHERMAN_SPEECH_09>
+  <FISHERMAN_SPEECH_10><![CDATA[Ah, there you are. Here is your porch. I mean torch! It will brighten your way no matter where you go. See you later, little Panda!]]></FISHERMAN_SPEECH_10>
+  <FISHERMAN_SPEECH_END_REPEAT><![CDATA[I hope I was able to help out!]]></FISHERMAN_SPEECH_END_REPEAT>
+  <ICE_DIAMOND_LOCATION_LOCKED><![CDATA[The mummy won't let you pass!]]></ICE_DIAMOND_LOCATION_LOCKED>
+  <KAMARIA_SPEECH_01><![CDATA[Greetings, $$name$$! Have you already spoken with William Pandabeard? He urgently needs your help. His parrot is missing! Go see him in the pirate bar.]]></KAMARIA_SPEECH_01>
+  <KAMARIA_SPEECH_02><![CDATA[You want to break open the door at the pirate bar? This door has been locked a very long time, but I do remember that underneath the bar is a cellar. You'll need a crowbar to get that door open.]]></KAMARIA_SPEECH_02>
+  <KAMARIA_SPEECH_03><![CDATA[What was that? A mummy in the cellar? Well now you have to go investigate!]]></KAMARIA_SPEECH_03>
+  <KAMARIA_SPEECH_04><![CDATA[WHAT?! The mummy saw Farid? Oh, my love!]]></KAMARIA_SPEECH_04>
+  <KAMARIA_SPEECH_05><![CDATA[Please find Farid! Bring my love back to me and I will reward you greatly!]]></KAMARIA_SPEECH_05>
+  <KAMARIA_SPEECH_06><![CDATA[You need a torch? Ask the fisherman in the harbor. I'm sure he can make you one.]]></KAMARIA_SPEECH_06>
+  <KAMARIA_SPEECH_07><![CDATA[What was that? Farid has been frozen into ice? At least that means he's still alive!]]></KAMARIA_SPEECH_07>
+  <KAMARIA_SPEECH_08><![CDATA[That must mean he's under the curse of the ice diamond. We have to thaw him out again and break the curse!]]></KAMARIA_SPEECH_08>
+  <KAMARIA_SPEECH_09><![CDATA[I'll brew up a spell, but I'll need the ice diamond in order to make it successful. Please bring me the ice diamond. But be careful! You won't be able to touch it with your bare hands unless you too want to be turned to ice.]]></KAMARIA_SPEECH_09>
+  <KAMARIA_SPEECH_10><![CDATA[I'll make special gloves so that you can pick up the ice diamond. The secret ingredient is pollen from the lava plant. Please find me lava plant pollen. But be careful not to burn your little paws!]]></KAMARIA_SPEECH_10>
+  <KAMARIA_SPEECH_11><![CDATA[Please bring me a lava plant. I need the pollen to make your gloves so that you can touch the ice diamond.]]></KAMARIA_SPEECH_11>
+  <KAMARIA_SPEECH_12><![CDATA[Fantastic! I'll be able to make your gloves now with the pollen from this lava plant. Then you'll be able to touch the ice diamond. Come back tomorrow - I'll have them done by then.]]></KAMARIA_SPEECH_12>
+  <KAMARIA_SPEECH_13><![CDATA[Here are your gloves! You'll find them in your inventory. Be sure to put them on before you touch the ice diamond.]]></KAMARIA_SPEECH_13>
+  <KAMARIA_SPEECH_14><![CDATA[Now bring me the ice diamond so that I can create a spell to break the curse. Please hurry!]]></KAMARIA_SPEECH_14>
+  <KAMARIA_SPEECH_15><![CDATA[You've brought me the ice diamond! Thank you so much! I'll get right to work to break this curse. I'll need the whole night to do it, however. Come back tomorrow. Hopefully I'm done by then.]]></KAMARIA_SPEECH_15>
+  <KAMARIA_SPEECH_16><![CDATA[My heart was broken when Farid suddenly disappeared. This is the only chance for me to get my only love back! See you tomorrow!]]></KAMARIA_SPEECH_16>
+  <KAMARIA_SPEECH_17><![CDATA[I'll need the night to work to break the curse. Come back tomorrow, okay?]]></KAMARIA_SPEECH_17>
+  <KAMARIA_SPEECH_18><![CDATA[I did it! I stayed up the entire night researching in my book of spells. But I came up with a spell! I know it will work!]]></KAMARIA_SPEECH_18>
+  <KAMARIA_SPEECH_19><![CDATA[Now pay attention. It's all in your hands now. If you succeed I will have my love back. If not...I can't even think about it.]]></KAMARIA_SPEECH_19>
+  <KAMARIA_SPEECH_20><![CDATA[I have a spell that will fight against the curse of the ice diamond. It will only begin to work, however, when it is spoken by the one who first beheld the effects of the curse.]]></KAMARIA_SPEECH_20>
+  <KAMARIA_SPEECH_21><![CDATA[You're the one that first saw Farid. You must go to him with the ice diamond and speak the spell. If I would do it, it wouldn't work and Farid would never thaw back to his normal self. I can't tell it to you directly, but I'll give you a hint.]]></KAMARIA_SPEECH_21>
+  <KAMARIA_SPEECH_22><![CDATA[It has to do with my feelings for Farid. Type the right word into the chat box. If you are correct, the curse will be broken and my Farid will be free!]]></KAMARIA_SPEECH_22>
+  <KAMARIA_SPEECH_23><![CDATA[Here is the magic ice diamond. Go to Farid and try my spell. I'm crossing my fingers for you!]]></KAMARIA_SPEECH_23>
+  <KAMARIA_SPEECH_24><![CDATA[Type the secret word into the chat box. If you're right, the curse will be broken and Farid will be mine again! I'll give you a hint: It has to do with my feelings and Farid.]]></KAMARIA_SPEECH_24>
+  <KAMARIA_SPEECH_25><![CDATA[I can't believe my eyes! Farid! My love!]]></KAMARIA_SPEECH_25>
+  <KAMARIA_SPEECH_26><![CDATA[Thank you, $$name$$! You have brought my love back to me! I will be eternally thankful to you. I have one more request. Bring Pandabeard and his parrot here. Otherwise he'll shut the pirate bar for good and no one will be able to get to the temple!]]></KAMARIA_SPEECH_26>
+  <KAMARIA_SPEECH_27><![CDATA[I know how you can lure the parrot - a chocolate cookie! The last time I visited Pandabeard, I noticed his little parrot chowing down on chocolate cookies. He was crazy about them!]]></KAMARIA_SPEECH_27>
+  <KAMARIA_SPEECH_28><![CDATA[Go find a chocolate cookie and feed the parrot. He'll trust you and let you catch him. You can find the cookies at the Ice Cream Parlour in the City.]]></KAMARIA_SPEECH_28>
+  <KAMARIA_SPEECH_29><![CDATA[The last time I had ice cream, there were some bits of cookie in it...]]></KAMARIA_SPEECH_29>
+  <KAMARIA_SPEECH_30><![CDATA[There you are again. You've proven yourself to be quite brave, my dear Panda.]]></KAMARIA_SPEECH_30>
+  <KAMARIA_SPEECH_31><![CDATA[This diamond has already caused too mischief. It must be melted in red-hot lava.]]></KAMARIA_SPEECH_31>
+  <KAMARIA_SPEECH_32><![CDATA[You have two options, my dear Panda: you can either destroy the ice diamond or you can sell it to the mummy. If you destroy it, you can be sure that no other Panda will suffer the same fate as my Farid.]]></KAMARIA_SPEECH_32>
+  <KAMARIA_SPEECH_33><![CDATA[If you sell it to the mummy, there will always be the danger that another Panda will be frozen forever.]]></KAMARIA_SPEECH_33>
+  <KAMARIA_SPEECH_34><![CDATA[If you melt the diamond in hot lava, you will destroy it and the dangers that come with it. But you will not get the money. So, my dear Panda, what is your decision?]]></KAMARIA_SPEECH_34>
+  <KAMARIA_SPEECH_35><![CDATA[You've decided to take the money? I see. Go see the mummy and sell your diamond. ]]></KAMARIA_SPEECH_35>
+  <KAMARIA_SPEECH_36><![CDATA[What a relief! You've banished greed from your soul and made the right decision! Well done, my dear Panda! Please, I would like for you to be a special guest at my wedding. You heard right!]]></KAMARIA_SPEECH_36>
+  <KAMARIA_SPEECH_37><![CDATA[Farid asked for my hand with a ring from the bubble gum machine! Isn't that romantic? We are going to be married tomorrow in the temple. We don't want to waste any time!]]></KAMARIA_SPEECH_37>
+  <KAMARIA_SPEECH_38><![CDATA[Come to the temple tomorrow and celebrate the day with us! But that's not all...]]></KAMARIA_SPEECH_38>
+  <KAMARIA_SPEECH_39><![CDATA[As a thank-you for helping us, I have a magical ice costume for you. I made myself with my magical ways. In order to get the costume, you first have to destroy the ice diamond.]]></KAMARIA_SPEECH_39>
+  <KAMARIA_SPEECH_40><![CDATA[Throw the diamond into the hot lava. It will melt and be of no more trouble to us. Come back to me once you've destroyed it.]]></KAMARIA_SPEECH_40>
+  <KAMARIA_SPEECH_41><![CDATA[Destroy the diamond by throwing it in the lava on the volcano. Come back to me when you've completed your task.]]></KAMARIA_SPEECH_41>
+  <KAMARIA_SPEECH_42><![CDATA[Destroy the diamond by throwing it in the lava on the volcano. Come back to me when you've completed your task.]]></KAMARIA_SPEECH_42>
+  <KAMARIA_SPEECH_43><![CDATA[You are truly a Panda hero! You've shown great heart. As a thank-you, here is a magical ice costume that I made myself. There's a bit of magic to this costume - it will protect you from any frost.]]></KAMARIA_SPEECH_43>
+  <KAMARIA_SPEECH_44><![CDATA[No Panda will be able to turn you into an ice cube while you are wearing it. In fact, the opposite will happen: the ice costume will reflect their attempt and change them into a cube of ice! Try it on!]]></KAMARIA_SPEECH_44>
+  <KAMARIA_SPEECH_45><![CDATA[Don't forget about our wedding tomorrow! You will be our special guest. It'll take place in the temple. See you soon!]]></KAMARIA_SPEECH_45>
+  <KAMARIA_SPEECH_45_A><![CDATA[Please come to the Temple, we are expecting you for our wedding.]]></KAMARIA_SPEECH_45_A>
+  <KAMARIA_SPEECH_46><![CDATA[How lovely that you made it to our wedding! Have funny and party hard!]]></KAMARIA_SPEECH_46>
+  <KIOSKBOY_SPEECH_01><![CDATA[Hey, what can I do for you?]]></KIOSKBOY_SPEECH_01>
+  <KIOSKBOY_SPEECH_02><![CDATA[Bandages? Ummm...no we don't have those. And we're all out of toilet paper. I'll get a new shipment tomorrow morning. Come back then, okay?]]></KIOSKBOY_SPEECH_02>
+  <KIOSKBOY_SPEECH_03><![CDATA[Hey, the shipment never came in! Uh...no toilet paper...this is going to be a problem. Come back tomorrow. Hopefully we get some then!]]></KIOSKBOY_SPEECH_03>
+  <KIOSKBOY_SPEECH_04><![CDATA[Hey, you're in luck! We just got in the shipment! Hope you don't mind that they only delivered toilet paper covered in little pink hearts. Take a roll, why don't ya!]]></KIOSKBOY_SPEECH_04>
+  <KIOSKBOY_SPEECH_05><![CDATA[Have a good day and rock on!]]></KIOSKBOY_SPEECH_05>
+  <MAGIC_ICEDIAMOND_BOOKWORM_AFTER_KNIFE><![CDATA[I hope I was able to help out!]]></MAGIC_ICEDIAMOND_BOOKWORM_AFTER_KNIFE>
+  <MAGIC_ICEDIAMOND_BOOKWORM_BEFORE_KNIFE><![CDATA[Pocket knife? Of course, over there, on the table. I don't usually use that thing much, anyway.]]></MAGIC_ICEDIAMOND_BOOKWORM_BEFORE_KNIFE>
+  <MUMMY_SPEECH_01><![CDATA[Stop, mortal Panda! Don't come any closer!]]></MUMMY_SPEECH_01>
+  <MUMMY_SPEECH_02><![CDATA[Heed my warning or face disaster! Or would you like the blood in your veins to be frozen to ice? It happened to one Panda, but that was long ago.]]></MUMMY_SPEECH_02>
+  <MUMMY_SPEECH_03><![CDATA[Since them I guard this place and let no one through. It's boring, I admit. Nothing really happens. Lately I've been sneaking out at night. But don't tell anyone!]]></MUMMY_SPEECH_03>
+  <MUMMY_SPEECH_04><![CDATA[I went to the pirate bar recently and saw the head pirate sleeping on the counter. Only his parrot was making noise in its cage. I didn't want that loud bird to wake him up, so I opened its cage to let it fly elsewhere.]]></MUMMY_SPEECH_04>
+  <MUMMY_SPEECH_05><![CDATA[The parrot followed me to the scary forest and then flew through a crack down into the cave. I guess he was also bored. And no wonder! You can't sit in a cage all day with nothing to do!]]></MUMMY_SPEECH_05>
+  <MUMMY_SPEECH_06><![CDATA[You're looking for the bird, you say? Last time I saw him he was in that room behind me. You really want that bird, don't you? Okay, I'll make an exception and let you through. But on one condition!]]></MUMMY_SPEECH_06>
+  <MUMMY_SPEECH_07><![CDATA[My bandages are kinda old and ratty and keep falling off. Get me some new ones. If you happen to find it, toilet paper would work too. I just need something to keep all of my insides...well...inside! Come back to me when you've found some.]]></MUMMY_SPEECH_07>
+  <MUMMY_SPEECH_08><![CDATA[My bandages are old and ratty and keep falling off. I will let you through when you've found new ones for me. Bring me some sturdy toilet paper. Gonzo at the Kiosk by the Swimming Pool should have some. ]]></MUMMY_SPEECH_08>
+  <MUMMY_SPEECH_09><![CDATA[Excellent! Finally some new clothes. Thanks!]]></MUMMY_SPEECH_09>
+  <MUMMY_SPEECH_10><![CDATA[Don't think I'm going to get dressed in front of you! Believe me, you don't want to see a naked, mummified Panda. Go outside and then come back. It'll take me a minute to get wrapped up nice and cozy.]]></MUMMY_SPEECH_10>
+  <MUMMY_SPEECH_11><![CDATA[Look at me! A mummy with pink hearts! I can't let anyone see this! Are you making fun of me?]]></MUMMY_SPEECH_11>
+  <MUMMY_SPEECH_12><![CDATA[How am I supposed to scare anyone now? You've made a joke out of me, mortal Panda!]]></MUMMY_SPEECH_12>
+  <MUMMY_SPEECH_13><![CDATA[Oh well, no one sees me anyway. I guess the main thing is that I have new clothes.]]></MUMMY_SPEECH_13>
+  <MUMMY_SPEECH_14><![CDATA[Okay, I'll let you through, but I must warn you! When you enter the cave, you'll find yourself in great danger! One Panda already found out the hard way. I'll tell you his tragic story.]]></MUMMY_SPEECH_14>
+  <MUMMY_SPEECH_15><![CDATA[Long ago, there lived a Panda named Farid. He spent his life searching for a crytal-clear ice diamond, supposedly the most beautiful in all the world.]]></MUMMY_SPEECH_15>
+  <MUMMY_SPEECH_16><![CDATA[He wanted to make an engagement ring from this diamond for his lady love. What was her name?]]></MUMMY_SPEECH_16>
+  <MUMMY_SPEECH_17><![CDATA[Kamaria, that's it! The two were completely in love with each other. The couple soon found out that Kamaria was with child and Farid set out to marry her - except he couldn't find a jewel good enough for his beloved.]]></MUMMY_SPEECH_17>
+  <MUMMY_SPEECH_18><![CDATA[That's why he went in search for the ice diamond. He stood before me, exactly where you are now and I told him about the horrible curse of the diamond. But he wouldn't listen.]]></MUMMY_SPEECH_18>
+  <MUMMY_SPEECH_19><![CDATA[His love story moved me to tears, so I let him through. No one saw him ever again. I imagine he turned into ice, which the curse of the diamond promises to each and every Panda who touches it.]]></MUMMY_SPEECH_19>
+  <MUMMY_SPEECH_20><![CDATA[Be careful, mortal Panda! You don't want to suffer the same fate! Touch it only once and you will be turned into an ice sculpture. Perhaps you can find a way to lift the curse.]]></MUMMY_SPEECH_20>
+  <MUMMY_SPEECH_21><![CDATA[If you are successful lifting the curse and securing the diamond, I will give you 20,000 Panda coins in exchange for it. You'll be a rich Panda and I'll no longer have to be the guardian of the diamond.]]></MUMMY_SPEECH_21>
+  <MUMMY_SPEECH_22><![CDATA[But we'll see to that later. First you need to get the diamond. It's completely dark down there. You'll have to find the right staircase and that'll be nearly impossible without a light. A torch that you could put in a mount would be best. Good luck, mortal Panda!]]></MUMMY_SPEECH_22>
+  <MUMMY_SPEECH_23><![CDATA[Hey, you need a torch to be able to see. You'll have to stick it in a mount. Horst Hering at the Harbour can make a torch for you!]]></MUMMY_SPEECH_23>
+  <MUMMY_SPEECH_24><![CDATA[Don't get lost, mortal Panda. Not all the paths will lead to your goal!]]></MUMMY_SPEECH_24>
+  <MUMMY_SPEECH_25><![CDATA[Dress warmly, mortal Panda! You could face the same fate as Farid and a couple curious Pompoms!]]></MUMMY_SPEECH_25>
+  <MUMMY_SPEECH_26><![CDATA[You've done it! You managed to break the curse of the ice diamond! Great job! Come back later to me. Then I'll make you an offer you can't refuse. You'll be rich...if you accept my deal.]]></MUMMY_SPEECH_26>
+  <MUMMY_SPEECH_27><![CDATA[Greetings, mortal Panda. Good to see you once again. I see you've brought something for me...]]></MUMMY_SPEECH_27>
+  <MUMMY_SPEECH_28><![CDATA[the ice diamond! Fantastic! It's just what a mummy needs. Now I can turn my rotting mummy body to ice and preserve myself for all eternity! I'll live forever!]]></MUMMY_SPEECH_28>
+  <MUMMY_SPEECH_29><![CDATA[Of course, you will receive what you deserve. I will give you 20,000 Panda coins. Enjoy your new found wealth!]]></MUMMY_SPEECH_29>
+  <MUMMY_SPEECH_30><![CDATA[Live well, mortal Panda!]]></MUMMY_SPEECH_30>
+  <PANDABEARD_SPEECH_01><![CDATA[Argh, hello $$name$$. Mighty fine to see you! See this cage? Notice anything? It's empty! My poor little parrot, Beardy, has flown the coop! Or maybe even kidnapped. What if a bear ate him?! I can't even think about it.]]></PANDABEARD_SPEECH_01>
+  <PANDABEARD_SPEECH_02><![CDATA[Beardy has never been gone for this long before. He's accompanied me on all of my adventures on the high seas. He fell out of his nest as a little baby bird and I hand-fed and raised him up to be a proper parrot. And now he's gone! My only real friend!]]></PANDABEARD_SPEECH_02>
+  <PANDABEARD_SPEECH_03><![CDATA[Please, I'm begging you, help me! Find Beardy and bring him back. I'll perish in loneliness without him! As a lonely pirate I would be forced to go out again on the high seas, leaving Panfu and closing the pirate bar forever.]]></PANDABEARD_SPEECH_03>
+  <PANDABEARD_SPEECH_04><![CDATA[Without my Beardy I'll never be able to throw a joyful fest in that bar again.]]></PANDABEARD_SPEECH_04>
+  <PANDABEARD_SPEECH_05><![CDATA[Please go and look for Beardy. Perhaps he flew off to a branch somewhere? This big eye will help you find him. Come back to me when you've found a clue. I'll wait for you here.]]></PANDABEARD_SPEECH_05>
+  <PANDABEARD_SPEECH_06><![CDATA[Oh no! No Beardy? Please go and check out the Eerie Forest. You can reach it via the Telescope at the Volcano. Come back when you've found something. 
+
+]]></PANDABEARD_SPEECH_06>
+  <PANDABEARD_SPEECH_07><![CDATA[What do you have there? Show it here. A blue feather! And a piece of an old bandage? I recognize this bandage...let me think...]]></PANDABEARD_SPEECH_07>
+  <PANDABEARD_SPEECH_08><![CDATA[Back when I was renovating this place before the pirate bar opened, I saw a similar bandage. It was on the floor, right next to the hole.]]></PANDABEARD_SPEECH_08>
+  <PANDABEARD_SPEECH_09><![CDATA[Sometimes I hear creepy noises coming from down there in the evening, when no one is here. I get the creeps just thinking about it!]]></PANDABEARD_SPEECH_09>
+  <PANDABEARD_SPEECH_10><![CDATA[Do you think there's something down there? Maybe even Beardy? We've got to get in that hole! Unfortunately, I don't have the key. We'll need a crowbar. Go out and get one at the Harbour, there should be one by the boxes.]]></PANDABEARD_SPEECH_10>
+  <PANDABEARD_SPEECH_11><![CDATA[There you are again. But where is the crowbar? We won't be able to get into the hole with just our bare hands. Go look for a crowbar and then come back.]]></PANDABEARD_SPEECH_11>
+  <PANDABEARD_SPEECH_12><![CDATA[Great! That has to work! Let's break open this door!]]></PANDABEARD_SPEECH_12>
+  <PANDABEARD_SPEECH_13><![CDATA[Whatdaya know! There is a room. Go down and look for my parrot. I would go down myself, but what with all these funny noises, I'll get nightmares for sure!]]></PANDABEARD_SPEECH_13>
+  <PANDABEARD_SPEECH_14><![CDATA[Please bring my Beardy back to me!]]></PANDABEARD_SPEECH_14>
+  <PANDABEARD_SPEECH_15><![CDATA[You've seen Beardy! Wonderful! Catch him and bring him back to me!]]></PANDABEARD_SPEECH_15>
+  <PANDABEARD_SPEECH_16><![CDATA[My poor Beardy is surely starving. You'll be able to catch him be luring him with some food. Please bring him back!]]></PANDABEARD_SPEECH_16>
+  <PANDABEARD_SPEECH_17><![CDATA[Finally! He's been found! You're my hero! Thank you so much!]]></PANDABEARD_SPEECH_17>
+  <PANDABEARD_SPEECH_18><![CDATA[I feel like celebrating in the pirate bar! I've already heard some Pandas whispering about an upcoming party. Kamaria will surely know more about it. Go see her and ask her about the great news.]]></PANDABEARD_SPEECH_18>
+  <PANDABEARD_SPEECH_END_REPEAT><![CDATA[Thanks so much! Finally, I have my beautiful bird back. ]]></PANDABEARD_SPEECH_END_REPEAT>
+  <PARROT_SPEECH_01><![CDATA[Rrrrrrrrrround, pointy, square and rrrrrrrround and square!]]></PARROT_SPEECH_01>
+  <PARROT_SPEECH_02><![CDATA[Blue and yellow make grrrrrrrrrrrreen!]]></PARROT_SPEECH_02>
+  <PARROT_SPEECH_03><![CDATA[Pandabeard!]]></PARROT_SPEECH_03>
+  <PARROT_SPEECH_04><![CDATA[Pandabeard! Hungry!]]></PARROT_SPEECH_04>
+  <PARROT_SPEECH_05><![CDATA[Yummy cookie!]]></PARROT_SPEECH_05>
+  <POPUP_INFO_VOLCANO><![CDATA[The magic ice diamond is destroyed! You are a good-hearted Panda!]]></POPUP_INFO_VOLCANO>
+  <QUEST_HINT_01><![CDATA[Hello! You have to finish the quest you are playing right now before you can play my adventure. Come back then.]]></QUEST_HINT_01>
+  <SYSTEM_INFO_02><![CDATA[You've received an item: $$name$$]]></SYSTEM_INFO_02>
+  <SYSTEM_INFO_03><![CDATA[You've received two items: $$name$$ and $$name2$$]]></SYSTEM_INFO_03>
+</snippets>

@@ -1,0 +1,80 @@
+<config check="c856b01852c8aa00161909f5ca47250d">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="eastern2013" start="Mar 24 2013" finish="Mar 25 2013" check="0b3b960ddaa78f0"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="easterEgg" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eastern2013" gamestate="131,0,25"/>
+        </checks>
+        <button type="click" click="1" stopWalk="1"/>
+        <message value="eastern2013.EggClicked" type="eastern2013"/>
+      </element>
+      <element id="npcElouise" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,0,78-99"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToLouiseOutPlane" type="newPetsQuest"/>
+      </element>
+      <element id="engine" button="0" visible="1">
+        <checks>
+          <button value="1" gamestate="30,0,80"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="engineClicked" type="newPetsQuest"/>
+      </element>
+      <element id="engineLight" button="0" visible="1" frame=":off">
+        <checks>
+          <frame value=":on" gamestate="30,0,82-99"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="30,0,86"/>
+        </checks>
+        <button type="overClick" over="20" out="11" click="11"/>
+        <message value="engineLightClicked" type="newPetsQuest"/>
+      </element>
+      <element id="planeDoor" type="door" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,0,0-85"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="planeDoorSpot"/>
+        </message>
+      </element>
+      <element id="doorWithBonez" type="door" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,0,86-99"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="planeDoorSpot"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="planeDoor" type="door" target="57" angle="-45"/>
+      <tooltip id="doorWithBonez" type="door" target="57" angle="-45"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="checkEnterPlaneNewPetsQuest" id="planeDoorSpot" type="action" x="417" y="247" rad="40" on="1"/>
+    </hotspots>
+    <actions>
+      <action id="checkEnterPlaneNewPetsQuest">
+        <checkEnterPlaneNewPetsQuest/>
+      </action>
+    </actions>
+    <properties>
+      <specialWalk value="6"/>
+    </properties>
+  </module>
+</config>

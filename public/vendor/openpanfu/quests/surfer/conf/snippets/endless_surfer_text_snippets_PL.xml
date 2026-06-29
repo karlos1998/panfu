@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<snippets date="08.12.2014 15:30:06">
+  <FISHERMAN_SPEECH_01><![CDATA[Speak up, landlubber!]]></FISHERMAN_SPEECH_01>
+  <FISHERMAN_SPEECH_02><![CDATA[A message in a bottle? Penny? I don't know what you're talking about. Lately I've been fishing out a lot of bottles from my fishing net. Can you imagine? All that hard work, my mouth watering at the thought of tasty fish and all I get are a few bottles! It's just not right. I dropped them off at the supermarket and got a bit of change for the lot. But I think I still have one somewhere...let me check. ]]></FISHERMAN_SPEECH_02>
+  <FISHERMAN_SPEECH_03><![CDATA[Here ya go. Penny can have the bottle. Take it to her so she can read the letter. ]]></FISHERMAN_SPEECH_03>
+  <GAME_ICON_MESSAGE><![CDATA[You can play the game once you've helped out Lenny. He's the guy sitting here on the beach.]]></GAME_ICON_MESSAGE>
+  <LENNY_SPEECH_01><![CDATA[Hands off, buddy! That's my surfboard! By the way, my name is Lenny. I'm from Palifornia. Maybe you've already heard of me. I happen to be the radest surf champion this side of the sea. Who are you?]]></LENNY_SPEECH_01>
+  <LENNY_SPEECH_02><![CDATA[Whoa, dude, what? You want my surfboard? Only if you do me a favor. I've been looking for my friend Penny. You know her? She's totally boss and pretty, too. We were friends when we were little and spent the days building sand castles on the beach. Then one day she totally disappeared. They couldn't even find a flip-flop, man. ]]></LENNY_SPEECH_02>
+  <LENNY_SPEECH_03><![CDATA[I've been looking for her for forever. Recently, a new buddy of mine, Carl Caruso, said she lived in Panfu. Find her and bring her here and then I'll give you my gnarly board. Caruso mentioned that she loves to read. Is there any sort of house at Panfu with lots of books?]]></LENNY_SPEECH_03>
+  <LENNY_SPEECH_04><![CDATA[Letters? What letters? I never got a letter from Penny! Believe me, I would have hung ten all day to celebrate. Can you tell her that? Maybe then she'll want to hang out again with me? Go back to the library and ask her, will ya?]]></LENNY_SPEECH_04>
+  <LENNY_SPEECH_05><![CDATA[Hey yo! I see you've found Penny! Totally tubular! What's that? For me?]]></LENNY_SPEECH_05>
+  <LENNY_SPEECH_06><![CDATA[I knew Penny hadn't forgotten me! You are totally bodacious, dude. Here's my surfboard! I won't be needing it anytime soon. I'll be sitting around the campfire with Penny.]]></LENNY_SPEECH_06>
+  <LENNY_SPEECH_BESIDE_TALK><![CDATA[I never got any letter from Penny!]]></LENNY_SPEECH_BESIDE_TALK>
+  <LENNY_SPEECH_END_REPEAT><![CDATA[Thanks a lot, bro! Thanks to you I got my girl back.]]></LENNY_SPEECH_END_REPEAT>
+  <LOVE_LETTER_01><![CDATA[Dear Lenny,
+Why haven't you answered my letters? Did something happen to you? Are you mad at me? I know that I just disappeared that one day without saying a word. I'm very sorry that I hurt you. I like you a lot and would love to see you again.
+This will be the last letter I'll write to you.
+Yours,
+Penny]]></LOVE_LETTER_01>
+  <PENNY_SPEECH_01><![CDATA[What?! No way! I never want to see Lenny again. I wrote him letters for years and never got one back. I couldn't care less about him! Go back and tell him what I think!]]></PENNY_SPEECH_01>
+  <PENNY_SPEECH_02><![CDATA[What did you say? He never got any of the letters? That can't be - I sent them all myself, all rolled up in a bottle. Go to the harbor and ask the fisherman. I'm sure he saw me do it.]]></PENNY_SPEECH_02>
+  <PENNY_SPEECH_03><![CDATA[Oh no! The bottles containing my letters were caught in a fishing net? Well, I guess I'll talk to Lenny. We have to show him the messages in the bottles so that I can prove to him that I really did write! Go tell him. I'll come in a bit.]]></PENNY_SPEECH_03>
+  <PENNY_SPEECH_04><![CDATA[Thanks so much for helping us! Now I finally know that Lenny truly loves me. My heart melts every time he plays his guitar.]]></PENNY_SPEECH_04>
+  <PENNY_SPEECH_END_REPEAT><![CDATA[What a silly misunderstanding. Luckily, things turned out okay in the end!]]></PENNY_SPEECH_END_REPEAT>
+  <QUEST_HINT_01><![CDATA[Hello! You have to finish the quest you are playing right now before you can play my adventure. Come back then.]]></QUEST_HINT_01>
+</snippets>

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<snippets date="08.12.2014 15:30:14">
+  <ELLA_SPIES_02><![CDATA[Good that you're here, $$player$$.]]></ELLA_SPIES_02>
+  <ELLA_SPIES_07><![CDATA[I'm sure she has a good reason for it...]]></ELLA_SPIES_07>
+  <ELLA_SPIES_11><![CDATA[Not a very good idea, Max...]]></ELLA_SPIES_11>
+  <ELLA_SPIES_15><![CDATA[Lili can't be serious?!]]></ELLA_SPIES_15>
+  <ELLA_SPIES_18><![CDATA[Oh, Professor Bookworm also has his paws in this?]]></ELLA_SPIES_18>
+  <ELLA_SPIES_20><![CDATA[Wake up, Ella, this must just be a bad dream...]]></ELLA_SPIES_20>
+  <ELLA_SPIES_23><![CDATA[You can't be serious?!]]></ELLA_SPIES_23>
+  <ELLA_SPIES_26><![CDATA[That's not a good idea!!]]></ELLA_SPIES_26>
+  <ELLA_SPIES_30><![CDATA[That can't go well, I must think of a back-up plan...]]></ELLA_SPIES_30>
+  <ELLA_SPIES_80><![CDATA[Hold on tight, both of you!]]></ELLA_SPIES_80>
+  <ELLA_SPIES_83><![CDATA[I'm sure you would have, Max, I'm sure...]]></ELLA_SPIES_83>
+  <ELLA_SPIES_LASSO><![CDATA[Come on now!]]></ELLA_SPIES_LASSO>
+  <MAX_SPIES_01><![CDATA[You won't believe it, $$player$$!]]></MAX_SPIES_01>
+  <MAX_SPIES_03><![CDATA[Have a look yourself! You'll see it better through the telescope.]]></MAX_SPIES_03>
+  <MAX_SPIES_04><![CDATA[It shows the front side of the castle of Bitterland directly. I don't like what you can see there at all.]]></MAX_SPIES_04>
+  <MAX_SPIES_05><![CDATA[Nasty looking guards and Pandas working like slaves - that's not right! We must look into this more closely.]]></MAX_SPIES_05>
+  <MAX_SPIES_05A><![CDATA[And Kamaria doesn't like to talk about it.]]></MAX_SPIES_05A>
+  <MAX_SPIES_06><![CDATA[I don't understand it, usually she stands by us in these situations! There's something not right about this...]]></MAX_SPIES_06>
+  <MAX_SPIES_08><![CDATA[If Kamaria can't help us, we need to take the matter into our own hands! Otherwise bad things will happen!]]></MAX_SPIES_08>
+  <MAX_SPIES_09><![CDATA[Evron and his henchmen mean trouble! We almost lost Paul the kid to him already and who knows what he's up to next!]]></MAX_SPIES_09>
+  <MAX_SPIES_09A><![CDATA[We need to find out what's going on, $$name$$! We must get a disguise!]]></MAX_SPIES_09A>
+  <MAX_SPIES_10><![CDATA[Yeah! We'll wear disguises and snoop around a bit.]]></MAX_SPIES_10>
+  <MAX_SPIES_10A><![CDATA[Max and $$name$$, the super spies! ]]></MAX_SPIES_10A>
+  <MAX_SPIES_12><![CDATA[As super spies, we'll need a disguise!]]></MAX_SPIES_12>
+  <MAX_SPIES_13><![CDATA[Luckily Lili always has some costumes ready.]]></MAX_SPIES_13>
+  <MAX_SPIES_14><![CDATA[The Sniff and Snoop Collection 3000! The hottest thing in spy fashion.]]></MAX_SPIES_14>
+  <MAX_SPIES_14A><![CDATA[In this disguise, the guards will never recognise us!]]></MAX_SPIES_14A>
+  <MAX_SPIES_16><![CDATA[And it gets better!]]></MAX_SPIES_16>
+  <MAX_SPIES_16A><![CDATA[No professional super spy goes on a mission without his camera!]]></MAX_SPIES_16A>
+  <MAX_SPIES_17><![CDATA[Here you go, $$name$$. With friendly greetings from Professor Bookworm.]]></MAX_SPIES_17>
+  <MAX_SPIES_19><![CDATA[And that's not all!]]></MAX_SPIES_19>
+  <MAX_SPIES_19A><![CDATA[The camera's not the only thing that the Professor has prepared for us.]]></MAX_SPIES_19A>
+  <MAX_SPIES_21><![CDATA[Et voilà!]]></MAX_SPIES_21>
+  <MAX_SPIES_22><![CDATA[Let me present to you: Bookworm's bombastic boat! Made for holidays, class excursions and spy missions!]]></MAX_SPIES_22>
+  <MAX_SPIES_24><![CDATA[Hop in, $$name$$!]]></MAX_SPIES_24>
+  <MAX_SPIES_25><![CDATA[The Professor assured me that we only need to use the lever in the prop airliner.]]></MAX_SPIES_25>
+  <MAX_SPIES_25A><![CDATA[The rest is taken care of by the fireflies inside the boat. Crazy, eh?]]></MAX_SPIES_25A>
+  <MAX_SPIES_25B><![CDATA[$$name$$, start the firefly engine!]]></MAX_SPIES_25B>
+  <MAX_SPIES_27><![CDATA[Yes, $$name$$, keep going! We're taking off! We're really taking off! ]]></MAX_SPIES_27>
+  <MAX_SPIES_28><![CDATA[Take care, Ella! Eyes open, super spies!]]></MAX_SPIES_28>
+  <MAX_SPIES_29><![CDATA[Next stop, Bitterland!]]></MAX_SPIES_29>
+  <MAX_SPIES_31><![CDATA[Keep going, $$name$$, keep going!]]></MAX_SPIES_31>
+  <MAX_SPIES_32><![CDATA[Be careful, $$name$$! The balloon knots are loosening! We don't want to land yet!]]></MAX_SPIES_32>
+  <MAX_SPIES_33><![CDATA[Woah, that was close, but we made it. Good job!]]></MAX_SPIES_33>
+  <MAX_SPIES_34><![CDATA[Wooooaaah, look out, $$name$$! The sail is out of control, grab it!]]></MAX_SPIES_34>
+  <MAX_SPIES_35><![CDATA[Ha! Nice work. It would be silly if a sail had outsmarted us, eh?]]></MAX_SPIES_35>
+  <MAX_SPIES_36><![CDATA[Now I'm sure nothing can happen to us anymore.]]></MAX_SPIES_36>
+  <MAX_SPIES_37><![CDATA[Oh, there's one of those tiny fireflies... It looks cute...]]></MAX_SPIES_37>
+  <MAX_SPIES_38><![CDATA[...]]></MAX_SPIES_38>
+  <MAX_SPIES_39><![CDATA[The Boat is on fire!!! The boat is on fire, $$name$$!!]]></MAX_SPIES_39>
+  <MAX_SPIES_40><![CDATA[Wow, $$name$$! That was really close! I don't think I should trust these little fireflies anymore.]]></MAX_SPIES_40>
+  <MAX_SPIES_41><![CDATA[But now we've reached our goal! We still need to land.]]></MAX_SPIES_41>
+  <MAX_SPIES_42><![CDATA[That's easy! The Professor has given us his invention, the "SILD".]]></MAX_SPIES_42>
+  <MAX_SPIES_43><![CDATA[It's the "Super Intelligent Landing Device". "Can be used in all circumstances"... "The higher the better"... Well, it's exciting to see what it's like.]]></MAX_SPIES_43>
+  <MAX_SPIES_44><![CDATA[It's right next to you, $$name$$. Just unwrap it.]]></MAX_SPIES_44>
+  <MAX_SPIES_45><![CDATA[A needle?! Is that really the professor's "Super Intelligent Landing Device"?! Yikes...]]></MAX_SPIES_45>
+  <MAX_SPIES_46><![CDATA[Well then we'll just prick each balloon separately, so it will bring us to the ground slowly.]]></MAX_SPIES_46>
+  <MAX_SPIES_47><![CDATA[After you, $$name$$.]]></MAX_SPIES_47>
+  <MAX_SPIES_48><![CDATA[Help! Help! Am I dead? I see a light at the end of the tunnel!]]></MAX_SPIES_48>
+  <MAX_SPIES_49><![CDATA[Mummy...?]]></MAX_SPIES_49>
+  <MAX_SPIES_49A><![CDATA[...Grandma...?]]></MAX_SPIES_49A>
+  <MAX_SPIES_50><![CDATA[...Ella...?]]></MAX_SPIES_50>
+  <MAX_SPIES_51><![CDATA[...$$name$$! Oh, it was just a small tumble. It's nothing.]]></MAX_SPIES_51>
+  <MAX_SPIES_52><![CDATA[Do you see that?! These Pandas are forced to work! They look really weak and sad, and they're full of...]]></MAX_SPIES_52>
+  <MAX_SPIES_52A><![CDATA[...flour?]]></MAX_SPIES_52A>
+  <MAX_SPIES_53><![CDATA[And the others seem quite grim. They must be the supervisors. They are in for a surprise!]]></MAX_SPIES_53>
+  <MAX_SPIES_54><![CDATA[Woah, that must've hurt! Maybe we should think of a plan first.]]></MAX_SPIES_54>
+  <MAX_SPIES_55><![CDATA[Let's see... These guards only let workers through. We don't exactly look like weary workers.]]></MAX_SPIES_55>
+  <MAX_SPIES_56><![CDATA[I can't think when I'm standing, it's better to sit down.]]></MAX_SPIES_56>
+  <MAX_SPIES_57><![CDATA[Ouch! Ouch, ouch, ouch!]]></MAX_SPIES_57>
+  <MAX_SPIES_58><![CDATA[Hmm, "can be used in all circumstances", eh? Ouch. Well, maybe we could use the needle somehow?]]></MAX_SPIES_58>
+  <MAX_SPIES_59><![CDATA[Oh, what are you thinking of using the flour for? Should we...]]></MAX_SPIES_59>
+  <MAX_SPIES_60><![CDATA[You're a genius $$name$$! But don't forget to disguise me too.]]></MAX_SPIES_60>
+  <MAX_SPIES_61><![CDATA[So far so good! But we still don't look like those poor worker Pandas. Something's missing.]]></MAX_SPIES_61>
+  <MAX_SPIES_62><![CDATA[Quick hands, $$name$$. Please give me a sack too.]]></MAX_SPIES_62>
+  <MAX_SPIES_63><![CDATA[We're unrecognisable, $$name$$! We'll most definitely fool the guards now!]]></MAX_SPIES_63>
+  <MAX_SPIES_64><![CDATA[...]]></MAX_SPIES_64>
+  <MAX_SPIES_65><![CDATA[You go first, $$name$$. I'll be right behind you.]]></MAX_SPIES_65>
+  <MAX_SPIES_66><![CDATA[Brrr! It's creepy here! But we didn't come all this way to turn back now.]]></MAX_SPIES_66>
+  <MAX_SPIES_67><![CDATA[It looks like we won't be getting any further from here though... unless...]]></MAX_SPIES_67>
+  <MAX_SPIES_68><![CDATA[...]]></MAX_SPIES_68>
+  <MAX_SPIES_69><![CDATA[The camera!]]></MAX_SPIES_69>
+  <MAX_SPIES_70><![CDATA[This is the plan...]]></MAX_SPIES_70>
+  <MAX_SPIES_71><![CDATA[Sneak past the guards and put the sack on the pile. Be as invisible as you can.]]></MAX_SPIES_71>
+  <MAX_SPIES_72><![CDATA[I'll distract the guards while you take a photo from inside the castle. Before they know what hit them we'll be long gone.]]></MAX_SPIES_72>
+  <MAX_SPIES_73><![CDATA[It's a piece of cake, $$name$$.]]></MAX_SPIES_73>
+  <MAX_SPIES_74><![CDATA[$$name$$, NOW!]]></MAX_SPIES_74>
+  <MAX_SPIES_75><![CDATA[We're surrounded, $$name$$.]]></MAX_SPIES_75>
+  <MAX_SPIES_76><![CDATA[I'm afraid this is the end.]]></MAX_SPIES_76>
+  <MAX_SPIES_77><![CDATA[It's an honour to spend my last moments with you, $$name$$.]]></MAX_SPIES_77>
+  <MAX_SPIES_78><![CDATA[I wish I could still see Ella one more time...]]></MAX_SPIES_78>
+  <MAX_SPIES_79><![CDATA[...just one more time...]]></MAX_SPIES_79>
+  <MAX_SPIES_81><![CDATA[Wow, that was really close!]]></MAX_SPIES_81>
+  <MAX_SPIES_82><![CDATA[But we could've made it by ourselves! We would've showed them who's boss!]]></MAX_SPIES_82>
+  <MAX_SPIES_CAMERA><![CDATA[Grab the camera, $$name$$.]]></MAX_SPIES_CAMERA>
+  <MAX_SPIES_COSTUME><![CDATA[Grab the costume, $$name$$.]]></MAX_SPIES_COSTUME>
+  <MAX_SPIES_NONWALK01><![CDATA[Behind the bushes the guards can't see us! We need to find a safe way past them!]]></MAX_SPIES_NONWALK01>
+  <MAX_SPIES_NONWALK02><![CDATA[Lay the sack on the pile with the others, $$name$$.]]></MAX_SPIES_NONWALK02>
+  <POPUP_SPIES_QUIT_NO><![CDATA[Continue Quest]]></POPUP_SPIES_QUIT_NO>
+  <POPUP_SPIES_QUIT_YES><![CDATA[Leave Quest]]></POPUP_SPIES_QUIT_YES>
+  <SPIES_JOURNAL_PROGRESS_03><![CDATA[The secret lies behind the gate! There's just no way past the guards... Maybe Max has an idea?
+
+You disguised yourself as workers and fooled the guards on the road. You're now in front of the castle entrance.]]></SPIES_JOURNAL_PROGRESS_03>
+  <SPIES_JOURNAL_PROGRESS_04><![CDATA[We made it! Bravely you snapped a photo of the suspicious events inside the castle. But what can we see in it? Meet Max and study the photo more carefully together.
+
+While Max cleverly distracted the guards, you were able to sneak into the castle and take a photo of an extraordinary machine. Despite all of your efforts, your cover was blown. In the last moment, thanks to Ella, we were able to flee.]]></SPIES_JOURNAL_PROGRESS_04>
+  <SPIES_JOURNAL_SUMMARY><![CDATA[Something strange is going on. You must go to Bitterland, and find out what Evron and his henchmen are up to. Talk to Max.]]></SPIES_JOURNAL_SUMMARY>
+  <SPIES_JOURNAL_TITLE><![CDATA[Spies in Bitterland]]></SPIES_JOURNAL_TITLE>
+</snippets>

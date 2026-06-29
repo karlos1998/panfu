@@ -1,0 +1,104 @@
+<config check="ad89a62ebd1b74b13e5fc4904dca09a6">
+  <snippets path="features/whatsHot/conf/snippets/common/hotbutton_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="achievementAsset" path="assets/achievementAsset.swf"/>
+    <asset id="chroniclerAsset" path="assets/chroniclerAsset.swf"/>
+    <asset id="christmas1Asset" path="assets/christmas1Asset.swf"/>
+    <asset id="christmas2Asset" path="assets/christmas2Asset.swf"/>
+    <asset id="christmas3Asset" path="assets/christmas3Asset.swf"/>
+    <asset id="dolphinAsset" path="assets/dolphinAsset.swf"/>
+    <asset id="fishingGameAsset" path="assets/fishingGameAsset.swf"/>
+    <asset id="furnitureCatalogAsset" path="assets/furnitureCatalogAsset.swf"/>
+    <asset id="hotButton" path="assets/hotButton.swf"/>
+    <asset id="levelBoosterAsset" path="assets/levelBoosterAsset.swf"/>
+    <asset id="mazeGameAsset" path="assets/mazeGameAsset.swf"/>
+    <asset id="newItemAsset" path="assets/clothesCatalogAsset.swf"/>
+    <asset id="newYearsAsset" path="assets/newYearsAsset.swf"/>
+    <asset id="petCatalogAsset" path="assets/petCatalogAsset.swf"/>
+    <asset id="rareItemAsset" path="assets/rareItemAsset.swf"/>
+  </assets>
+  <sounds>
+    <sound id="endSound" volume="1" path="audio/content_finished.mp3" loops="0"/>
+    <sound id="startGuide" volume="1" path="audio/guiding_path_activated.mp3" loops="0"/>
+    <sound id="clickButton" volume="1" path="audio/hotbutton_clicked.mp3" loops="0"/>
+    <sound id="overButton" volume="1" path="audio/Pop_out.mp3" loops="0"/>
+  </sounds>
+  <module>
+    <states>
+      <!-- High Priority-->
+      <state id="ChroniclerQuest" priority="1" clip="chroniclerAsset" type="quest" speechHeader="HEADLINE_CHRONICLER" speech="HOT_BUTTON_CHRONICLER" button="BUTTON_GUIDE_ME" hideNotification="talkToNPC" hideParam="chronicler" endNotification="endChroniclerQuest" trackID="7" trackName="chroniclerQuest">
+        <checks>
+          <check value="1" gamestate="73,2,1"/>
+        </checks>
+        <path roomID="-1" type="map" roomDest="4" assetType="arrow"/>
+        <path roomID="4" type="room" roomDest="1" assetType="arrow"/>
+        <path roomID="1" type="room" roomDest="2" assetType="arrow" angle="140" yOffset="-80" xOffset="40"/>
+        <path roomID="2" type="roomElement" roomElement="chronicler" assetType="arrow" angle="" yOffset="-30" xOffset="-10"/>
+      </state>
+      <state id="Christmas1" priority="1" gamestate="143,1,0" dateStart="Dec 1 2025" dateEnd="Dec 24 2025" clip="christmas1Asset" stateID="141" type="onceADay" speechHeader="HEADLINE_CHRISTMAS" speech="HOT_BUTTON_CHRISTMAS_01" endNotification="2013Christmas1Finished" hideNotification="2013ChristmasTalkedToElf" hideParam="elve" button="GCT_GUIDE_ME" trackID="10" trackName="CHRISTMAS2013_HOTBUTTON1">
+        <checks>
+          <check value="1" gamestate="143,1,1-999"/>
+        </checks>
+        <path roomID="-1" type="map" roomDest="13" assetType="arrow"/>
+        <path roomID="13" type="room" roomDest="59" assetType="arrow"/>
+        <path roomID="59" type="roomElement" roomElement="elve" assetType="arrow" angle="90" yOffset="-90" xOffset="0"/>
+      </state>
+      <state id="Christmas2" priority="1" gamestate="143,1,1-22" dayPassed="143,1,1,+" dateStart="Dec 2 2025" dateEnd="Dec 24 2025" clip="christmas2Asset" stateID="142" type="onceADay" speechHeader="HEADLINE_CHRISTMAS" speech="HOT_BUTTON_CHRISTMAS_02" endNotification="2013Christmas2Finished" hideNotification="2013ChristmasSledgeClicked" hideParam="sledge" button="GCT_GUIDE_ME" trackID="10" trackName="CHRISTMAS2013_HOTBUTTON2">
+        <path roomID="-1" type="map" roomDest="13" assetType="arrow"/>
+        <path roomID="13" type="room" roomDest="59" assetType="arrow"/>
+        <path roomID="59" type="roomElement" roomElement="sledge" assetType="arrow" angle="90" yOffset="-90" xOffset="0"/>
+      </state>
+      <state id="Christmas3" priority="1" dateStart="Dec 24 2025" dateEnd="Dec 27 2025" clip="christmas3Asset" stateID="143" type="quest" speechHeader="HEADLINE_CHRISTMAS" speech="HOT_BUTTON_CHRISTMAS_03" endNotification="2013Christmas3Finished" hideNotification="2013ChristmasSledgeClicked" hideParam="sledge" button="GCT_GUIDE_ME" trackID="10" trackName="CHRISTMAS2013_HOTBUTTON3">
+        <checks>
+          <check value="1" gamestate="143,0,115-999"/>
+        </checks>
+        <path roomID="-1" type="map" roomDest="13" assetType="arrow"/>
+        <path roomID="13" type="room" roomDest="59" assetType="arrow"/>
+        <path roomID="59" type="roomElement" roomElement="sledge" assetType="arrow" angle="90" yOffset="-90" xOffset="0"/>
+      </state>
+      <state id="DolphinQuiz" priority="1" dateStart="Feb 10 2026" dateEnd="Mar 1 2026" clip="dolphinAsset" type="onceADay" speechHeader="HEADLINE_DOLPHIN" speech="HOT_BUTTON_DOLPHIN" button="BUTTON_GUIDE_ME" trackName="dolphinQuiz">
+        <path roomID="-1" type="map" roomDest="19" assetType="arrow"/>
+      </state>
+
+      <!-- Medium Priority -->
+      <state id="rareItemMachine" priority="2" stateID="7" type="rareItemMachine" clip="rareItemAsset" speechHeader="HEADLINE_RAREITEM" speech="HOT_BUTTON_RAREITEM" button="BUTTON_GUIDE_ME" hideNotification="clickOnRareItemMachine" endNotification="itemAddedInInventory" trackID="1" trackName="rareItem">
+        <path roomID="-1" type="map" roomDest="12" assetType="arrow"/>
+        <path roomID="12" type="room" roomDest="21" assetType="arrow"/>
+        <path roomID="21" type="position" x="250" y="230" assetType="arrow" angle="" yOffset="-100" xOffset=""/>
+      </state>
+      <state id="LevelBooster" priority="2" stateID="6" clip="levelBoosterAsset" type="onceADay" speechHeader="HEADLINE_LEVELBOOSTER" speech="HOT_BUTTON_LEVELBOOSTER" button="BUTTON_GUIDE_ME" hideNotification="onLevelBoost" endNotification="levelboost" trackID="2" trackName="levelBoost">
+        <path roomID="-1" type="map" roomDest="12" assetType="arrow"/>
+        <path roomID="12" type="room" roomDest="21" assetType="arrow"/>
+        <path roomID="21" type="room" roomDest="42" assetType="arrow"/>
+        <path roomID="42" type="position" x="280" y="310" assetType="arrow" angle="" yOffset="-100" xOffset=""/>
+      </state>
+      <!-- Low Priority -->
+      <state id="ClothesCatalog" priority="3" stateID="1" clip="newItemAsset" type="clothesCatalog" speechHeader="HEADLINE_CLOTHES" speech="HOT_BUTTON_CLOTHES" button="BUTTON_GUIDE_ME" hideNotification="openClothesCatalog" endNotification="closeClothesCatalog" trackID="4" trackName="clothesCatalog">
+        <path roomID="-1" type="map" roomDest="4" assetType="arrow"/>
+        <path roomID="4" type="room" roomDest="6" assetType="arrow"/>
+        <path roomID="6" type="roomElement" roomElement="clothes" assetType="arrow" angle="180" yOffset="40" xOffset="80"/>
+      </state>
+      <state id="FurnitureCatalog" priority="3" stateID="2" clip="furnitureCatalogAsset" type="furnitureCatalog" speechHeader="HEADLINE_FURNITURE" speech="HOT_BUTTON_FURNITURE" button="BUTTON_GUIDE_ME" hideNotification="openFurnitureCatalog" endNotification="closeFurnituresCatalog" trackID="3" trackName="furnitureCatalog">
+        <path roomID="-1" type="position" x="542" y="450" angle="90" assetType="arrow"/>
+        <path roomID="0" type="position" x="720" y="380" angle="" assetType="arrow"/>
+      </state>
+      <state id="PetCatalog" priority="3" stateID="3" clip="petCatalogAsset" type="petCatalog" speechHeader="HEADLINE_POKOPETS" speech="HOT_BUTTON_POKOPETS" button="BUTTON_GUIDE_ME" hideNotification="openPokopetCatalog" endNotification="closePokopetCatalog" trackID="8" trackName="pokopetCatalog">
+        <path roomID="-1" type="map" roomDest="55" assetType="arrow"/>
+        <path roomID="55" type="room" roomDest="58" assetType="arrow"/>
+        <path roomID="58" type="roomElement" roomElement="pokopetCatalogue" assetType="arrow" angle="90" yOffset="-30" xOffset=""/>
+      </state>
+      <state id="fishGame" priority="3" stateID="4" clip="fishingGameAsset" type="minigame" speechHeader="HEADLINE_MINIGAME_FISH" speech="HOT_BUTTON_MINIGAME_FISH" button="BUTTON_GUIDE_ME" hideNotification="AppConsts.minigameStarted" hideParam="5" endNotification="AppConsts.minigameFinished" endParam="5" trackID="6" trackName="minigame">
+        <path roomID="-1" type="map" roomDest="12" assetType="arrow"/>
+        <path roomID="12" type="roomElement" roomElement="fishing" assetType="arrow" angle="180" yOffset="-5" xOffset="30"/>
+      </state>
+      <state id="mazeGame" priority="3" stateID="5" clip="mazeGameAsset" type="minigame" speechHeader="HEADLINE_MINIGAME_MAZE" speech="HOT_BUTTON_MINIGAME_LABYRINTH" button="BUTTON_GUIDE_ME" hideNotification="AppConsts.minigameStarted" hideParam="50" endNotification="AppConsts.minigameFinished" endParam="50" trackID="6" trackName="minigame">
+        <path roomID="-1" type="map" roomDest="12" assetType="arrow"/>
+        <path roomID="12" type="room" roomDest="21" assetType="arrow"/>
+        <path roomID="21" type="roomElement" roomElement="mazeGamePC" assetType="arrow" angle="180" yOffset="-40" xOffset="20"/>
+      </state>
+      <state id="achievements" priority="3" stateID="7" clip="achievementAsset" type="showOnce" speechHeader="HEADLINE_ACHIEVEMENT" speech="HOT_BUTTON_ACHIEVEMENT" button="BUTTON_OPEN_PROFILE" endNotification="achievementsOpened" trackID="10" trackName="achievements">
+        <path/>
+      </state>
+    </states>
+  </module>
+</config>

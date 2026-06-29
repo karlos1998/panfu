@@ -1,0 +1,73 @@
+<config check="197d60f05114154ec3d15715322152e4">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="transition1" start="Jan 22 2011" finish="Feb 5 2011" check="8f1260f2072acb2"/>
+    <date id="transition2" start="Jan 30 2011" finish="Feb 2 2011" check="02e159b6ac9892f"/>
+    <date id="springAndSing" start="Mar 23 2011" finish="Mar 29 2011" check="28b84a19cad45a8"/>
+    <date id="kidsParty" start="May 31 2011" finish="Jun 2 2011" check="1c3578c38588f99"/>
+    <date id="disney" start="Nov 9 2011" finish="Nov 16 2011" check="8e7f9090fcfc317"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="kidsParty" volume="0.4" path="audio/kidsparty.mp3" backgroundmusic="1" loops="-1" date="kidsParty"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <waterBombReactions>
+      <zone idTarget="paul" reaction="transitionQuest.coldShower" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+    </waterBombReactions>
+    <elements>
+      <element id="muffinTable" button="0" visible="0">
+        <checks>
+          <visible value="1" date="disney"/>
+          <button value="1" date="disney" gamestate="102,0,127-999" requestHasOneActiveItem="103610,103611"/>
+        </checks>
+        <button type="full" over="1" out="1" click="1" toolTip="ROLLOVER_MUFFIN"/>
+        <message value="disney.Muffinclicked" type="disneyUniverse"/>
+      </element>
+      <element type="paul" button="1" visible="1">
+        <checks>
+          <frame value=":rabbit" gamestate="102,0,100-105" date="disney"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="talkToNPC" type="client">
+          <id value="PAUL_PAULSROOM"/>
+        </message>
+        <message value="speakToPaul" type="*">
+          <id value="paul"/>
+        </message>
+        <message value="speakToPaul" type="*">
+          <id value="paul"/>
+        </message>
+      </element>
+      <element type="kidsParty" button="0" visible="0">
+        <checks>
+          <visible value="1" date="kidsParty"/>
+        </checks>
+      </element>
+      <element type="letterE" visible="0">
+        <checks>
+          <visible value="1" gamestate="73,0,600-700"/>
+        </checks>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks/>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="17" angle="-30"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="17" type="room" x="700" y="260" rad="30"/>
+    </hotspots>
+    <properties/>
+  </module>
+</config>

@@ -1,0 +1,27 @@
+<config check="f8b7372af1d4b68d067ae58af4820c71">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates/>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <items/>
+    <elements>
+      <element id="lorax" button="1" visible="1">        
+        <button type="click" click="1"/>
+        <message value="talkedToLoraxHB" type="loraxQuest"/>
+        <message value="talkToNPC" type="client">
+          <id value="LORAX_WORLD"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips/>
+    <hotspots>
+      <!--hotspot target="53" type="room" x="88" y="67" rad="20"/-->
+    </hotspots>
+    <actions/>
+  </module>
+</config>

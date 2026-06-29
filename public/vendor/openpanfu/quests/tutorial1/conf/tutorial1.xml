@@ -1,0 +1,205 @@
+<config check="8d8bb9a864ed4ecf6081e1b56ca6b3a4">
+  <snippets path="quests/tutorial1/conf/snippets/introTour_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="manny" path="assets/manny.swf"/>
+    <asset id="circle" path="assets/circle.swf"/>
+    <asset id="doubleClick" path="assets/cursor.swf"/>
+    <asset id="enter" path="assets/enter.swf"/>
+  </assets>
+  <sounds>
+    <sound id="working" volume="0.2" path="audio/working.mp3" loops="-1"/>
+    <sound id="falling" volume="1" path="audio/falling.mp3"/>
+    <sound id="bounce" volume="1" path="audio/bounce.mp3"/>
+    <sound id="map" volume="1" path="audio/map.mp3"/>
+  </sounds>
+  <module statement_timeout="60" category="72">
+    <actionsNPC>
+      <actionNPC actionID="createMax" typeActionNPC="createNPC" npcID="-10" name="Max" clothes="100432,100433,100434" positionX="410" positionY="294" direction="6" onEndMovement="wait" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="maxTurnUser" npcID="-10" typeActionNPC="rotateNPC" positionX="410" positionY="295" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="maxTurnManny" npcID="-10" typeActionNPC="rotateNPC" positionX="409" positionY="293" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="maxTurnUser2" npcID="-10" typeActionNPC="rotateNPC" positionX="410" positionY="295" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="maxTurnUser3" npcID="-10" typeActionNPC="rotateNPC" positionX="411" positionY="294" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="walkToInitPos" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="385" positionY="-100" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="wait" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="385" positionY="100" time="1000" onEndMovement="fallDown" notificationOnFinished="tutorial1.playFallSound"/>
+      <actionNPC actionID="fallDown" npcID="-1" typeActionNPC="moveNPC" movementType="jump" positionX="385" positionY="300" time="1300" onEndMovement="jumpToSpawn" notificationOnFinished="playBounce"/>
+      <actionNPC actionID="jumpToSpawn" npcID="-1" typeActionNPC="moveNPC" movementType="jump" positionX="585" positionY="300" time="1100" onEndMovement="turnToLeft" notificationOnFinished=""/>
+      <actionNPC actionID="turnToLeft" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="584" positionY="300" time="1" onEndMovement="" notificationOnFinished="tutorial1.winkDone"/>
+      <actionNPC actionID="createMaxTown" typeActionNPC="createNPC" npcID="-100" name="Max" clothes="100432,100433,100434" positionX="700" positionY="390" direction="3" onEndMovement="" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="createEllaTown" typeActionNPC="createNPC" npcID="-110" name="Ella" clothes="100429,100430,100431" positionX="465" positionY="285" direction="5" onEndMovement="ellaSit" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="ellaSit" npcID="-110" typeActionNPC="actionNPC" movementType="sit" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="ellaStandup" npcID="-110" typeActionNPC="actionNPC" movementType="idle" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="ellaTurnMax" npcID="-110" typeActionNPC="rotateNPC" positionX="700" positionY="390" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="maxTurnElla" npcID="-100" typeActionNPC="rotateNPC" positionX="465" positionY="285" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC1" typeActionNPC="createNPC" npcID="-120" name="Notus" clothes="103184,103185,103186,103187" positionX="435" positionY="400" direction="3" onEndMovement="" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC2" typeActionNPC="createNPC" npcID="-130" name="Osgar" clothes="103272,103273,103274,103275" positionX="380" positionY="375" direction="7" onEndMovement="" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC3" typeActionNPC="createNPC" npcID="-140" name="Mujo" clothes="103170,103171,103172,103173" positionX="220" positionY="395" direction="1" onEndMovement="" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC4" typeActionNPC="createNPC" npcID="-150" name="Norbert" clothes="103115,103116,103117,103118" positionX="275" positionY="370" direction="5" onEndMovement="" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC5" typeActionNPC="createNPC" npcID="-160" name="Kokoro" clothes="102994,102995,102996,102997" positionX="210" positionY="290" direction="7" onEndMovement="" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC6" typeActionNPC="createNPC" npcID="-180" name="Paxton" clothes="102548,102549,102550,102551" positionX="280" positionY="305" direction="3" onEndMovement="" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC1Wave" npcID="-120" typeActionNPC="actionNPC" movementType="wave" onEndMovement="createCrowdNPC2Wave" time="800" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC2Wave" npcID="-130" typeActionNPC="actionNPC" movementType="wave" onEndMovement="createCrowdNPC3Wave" time="600" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC3Wave" npcID="-140" typeActionNPC="actionNPC" movementType="wave" onEndMovement="createCrowdNPC4Wave" time="750" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC4Wave" npcID="-150" typeActionNPC="actionNPC" movementType="wave" onEndMovement="createCrowdNPC5Wave" time="900" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC5Wave" npcID="-160" typeActionNPC="actionNPC" movementType="wave" onEndMovement="createCrowdNPC6Wave" time="700" notificationOnFinished=""/>
+      <actionNPC actionID="createCrowdNPC6Wave" npcID="-180" typeActionNPC="actionNPC" movementType="wave" onEndMovement="" time="850" notificationOnFinished="tutorial1.npcWaveDone"/>
+    </actionsNPC>
+    <npcs>
+      <npc id="-10" room="0" name="" typeNPC="avatarNPC">
+        <initActions>
+          <initAction actionID="createMax">
+            <check gamestate="72,0,1-160"/>
+          </initAction>
+        </initActions>
+        <behaviours>
+          <behaviour gamestate="72,0,3">
+            <statement key="INTRO_MAX_01">
+              <action id="playNPCAnimation" actionID="maxTurnUser3"/>
+              <action id="spawnBubbleArrow"/>
+            </statement>
+            <statement key="INTRO_MAX_02">
+              <action id="despawnBubbleArrow"/>
+              <action id="playNPCAnimation" actionID="maxTurnManny"/>
+            </statement>
+            <statement key="INTRO_MAX_03" arrow="0">
+              <action id="playNPCAnimation" actionID="maxTurnUser3"/>
+              <action id="resetBubbles"/>
+              <action id="changeQuestState" state="72,0,8"/>
+              <action id="spawnCircle1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="72,0,10">
+            <statement key="INTRO_MAX_04" arrow="0">
+              <action id="resetBubbles"/>
+              <action id="changeQuestState" state="72,0,15"/>
+              <action id="spawnCircle2"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="72,0,20">
+            <statement key="INTRO_MAX_05">
+              <action id="playNPCAnimation" actionID="maxTurnUser2"/>
+            </statement>
+            <statement key="INTRO_MAX_06"/>
+            <statement key="INTRO_MAX_07" arrow="0">
+              <action id="resetBubbles"/>
+              <action id="changeQuestState" state="72,0,25"/>
+              <action id="spawnMap"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="-100" room="4" name="" typeNPC="avatarNPC">
+        <initActions>
+          <initAction actionID="createMaxTown">
+            <check gamestate="72,0,1-160"/>
+          </initAction>
+          <initAction actionID="createEllaTown">
+            <check gamestate="72,0,1-160"/>
+          </initAction>
+          <initAction actionID="createCrowdNPC1">
+            <check gamestate="72,0,1-160"/>
+          </initAction>
+          <initAction actionID="createCrowdNPC2">
+            <check gamestate="72,0,1-160"/>
+          </initAction>
+          <initAction actionID="createCrowdNPC3">
+            <check gamestate="72,0,1-160"/>
+          </initAction>
+          <initAction actionID="createCrowdNPC4">
+            <check gamestate="72,0,1-160"/>
+          </initAction>
+          <initAction actionID="createCrowdNPC5">
+            <check gamestate="72,0,1-160"/>
+          </initAction>
+          <initAction actionID="createCrowdNPC6">
+            <check gamestate="72,0,1-160"/>
+          </initAction>
+        </initActions>
+        <speechBubble flipVertical="true" offsetY="-10" offsetX="10"/>
+        <behaviours>
+          <behaviour gamestate="72,0,30">
+            <statement key="INTRO_MAX_08"/>
+            <statement key="INTRO_MAX_09" arrow="0">
+              <action id="resetBubbles"/>
+              <action id="changeQuestState" state="72,0,35"/>
+              <action id="spawnActionArrow"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="72,0,60">
+            <statement key="INTRO_MAX_10" parse="name" value="myUserName"/>
+            <statement>
+              <action id="resetBubbles"/>
+              <action id="changeQuestState" state="72,0,65"/>
+              <action id="playNPCAnimation" actionID="createCrowdNPC1Wave"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="72,0,70">
+            <statement key="INTRO_MAX_11" arrow="0">
+              <action id="resetBubbles"/>
+              <action id="markChat"/>
+              <action id="changeQuestState" state="72,0,75"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="72,0,80">
+            <statement key="INTRO_MAX_12" arrow="0">
+              <action id="resetBubbles"/>
+              <action id="unmarkChat"/>
+              <action id="changeQuestState" state="72,0,85"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="72,0,90">
+            <statement key="INTRO_MAX_13">
+              <action id="unmarkChat"/>
+            </statement>
+            <statement>
+              <action id="resetBubbles"/>
+              <action id="changeQuestState" state="72,0,95"/>
+              <action id="playNPCAnimation" actionID="createCrowdNPC1Wave"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="72,0,100">
+            <statement key="INTRO_MAX_14"/>
+            <statement>
+              <action id="changeQuestState" state="72,0,105"/>
+              <action id="finishQuest"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="-110" room="4" name="" typeNPC="avatarNPC">
+        <behaviours>
+          <behaviour gamestate="72,0,40">
+            <statement key="INTRO_ELLA_01">
+              <action id="playNPCAnimation" actionID="ellaTurnMax"/>
+              <action id="playNPCAnimation" actionID="ellaStandup"/>
+            </statement>
+            <statement>
+              <action id="changeQuestState" state="72,0,45"/>
+              <action id="talkCrowd"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="72,0,50">
+            <statement key="INTRO_ELLA_02"/>
+            <statement>
+              <action id="changeQuestState" state="72,0,55"/>
+              <action id="throwSlime"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="-120" room="4" name="" typeNPC="avatarNPC">
+        <behaviours>
+          <behaviour gamestate="72,0,45">
+            <statement key="INTRO_CROWDNPC_01"/>
+            <statement>
+              <action id="changeQuestState" state="72,0,50"/>
+              <action id="talkElla"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <items>
+      <item id="TREEHOUSE" itemID="103199" name="Treehouse"/>
+    </items>
+  </module>
+</config>

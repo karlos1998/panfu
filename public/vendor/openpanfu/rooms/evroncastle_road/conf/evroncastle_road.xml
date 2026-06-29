@@ -1,0 +1,81 @@
+<config check="0e46d9fe8ea37b0aad1b588a0fd2a500">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <cursors>
+      <cursor asset="needle" x="505" y="321" xRad="240" yRad="135" outasset="needle_blocked" gamestate="67,0,2020"/>
+    </cursors>
+    <elements>
+      <element id="kamaria" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="140,0,17"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="KAMARIA_ROAD"/>
+        </message>
+      </element>
+      <element id="minigame" button="0" visible="0">
+        <checks>
+          <visible value="0" gamestate="67,0,4999"/>
+          <visible value="0" gamestate="67,0,0"/>
+        </checks>
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="52"/>
+        </message>
+      </element>
+      <element id="boat1" button="1" visible="1" notWalkable="true">
+        <checks>
+          <visible value="0" gamestate="67,0,2001-4999"/>
+          <visible value="0" gamestate="67,0,0"/>
+        </checks>
+        <button type="click" over="1" out="1" click="1"/>
+        <message value="letsGoThere.crashedBoatClicked" type="letsGoThere"/>
+      </element>
+      <element id="boat2" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="67,0,2001-3999"/>
+        </checks>
+        <button type="click" over="1" out="1" click="1"/>
+        <message value="letsGoThere.crashedBoatClicked" type="letsGoThere"/>
+      </element>
+      <element id="walkarea">
+        <checks>
+          <frame value=":full" gamestate="67,0,0"/>
+          <frame value=":full" gamestate="67,0,3999-4999"/>
+        </checks>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="minigame" type="game" name="GAME_NAME_52"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="61" type="action" x="474" y="228" rad="55" angle="-90">
+        <checks>
+          <type value="action" gamestate="67,0,0-4999"/>
+          <target value="allowEntryCastle" gamestate="67,0,2999"/>
+        </checks>
+      </hotspot>
+      <hotspot target="78" type="action" x="750" y="360" rad="55" angle="-20">
+        <checks>
+          <type value="action" gamestate="67,0,0"/>
+          <type value="action" gamestate="67,0,4999"/>
+          <target value="allowEntryForest" gamestate="140,0,20-1000"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="allowEntryCastle">
+        <joinRoom room="61"/>
+      </action>
+      <action id="allowEntryForest">
+        <joinRoom room="78"/>
+      </action>
+    </actions>
+  </module>
+</config>

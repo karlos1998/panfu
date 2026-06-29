@@ -1,0 +1,30 @@
+<config check="dda2932a609e5909f3afffb35748032f">
+  <assets>
+    <asset id="rareItemMachine" path="assets/rareItemMachine.swf"/>
+    <asset id="outOfOrder" path="assets/outOfOrder.swf"/>
+  </assets>
+  <sounds>
+    <sound id="giveItem" path="audio/rareItemMachineGiveItem.mp3"/>
+    <sound id="denyItem" path="audio/rareItemMachineDenyItem.mp3"/>
+  </sounds>
+  <module category="-1">
+    <rareItemMachines>
+      <rareItemMachine idAsset="rareItemMachine" room="21" x="295" y="281" panelX="260" panelY="281">
+        <rareItems>
+          <rareItem item="itemDayJun3" itemDay="Jun 3 2026"/>
+          <rareItem item="itemDayJun12" itemDay="Jun 12 2026"/>
+          <rareItem item="itemDayJun20" itemDay="Jun 20 2026"/>
+          <rareItem item="itemDayJun22" itemDay="Jun 22 2026"/>
+          <rareItem item="itemDayJul1" itemDay="Jul 1 2026"/>
+        </rareItems>
+      </rareItemMachine>
+    </rareItemMachines>
+    <items>
+      <item id="itemDayJun3" itemID="103952" check="fcf6afdaf438a831a278970cce46a7fc"/>
+      <item id="itemDayJun12" itemID="102400" check="71f3d99c862d8e3d3f29a51403fbfef4"/>
+      <item id="itemDayJun20" itemID="103351" check="fc1eed2d1443a1b47b4ddef09e45271f"/>
+      <item id="itemDayJun22" itemID="103716" check="e07b357422e691c4b7c796244a1acd4f"/>
+      <item id="itemDayJul1" itemID="104392" check="97d137e9f2f1cf4bc8cc3ea4fbf04a43"/>
+    </items>
+  </module>
+</config>

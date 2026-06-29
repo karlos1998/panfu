@@ -1,0 +1,174 @@
+<config check="6893f0384c378df656da139e57142886">
+  <snippets path="features/messageBoard/conf/snippets/messageboard_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="messageBoardAssets" path="assets/MessageBoardAssets.swf"/>
+    <asset id="newMessagePopup" path="assets/NewMessagePopup.swf"/>
+    <asset id="newPartyMessagePopup" path="assets/NewPartyMessagePopup.swf"/>
+    <asset id="answerMessagePopup" path="assets/AnswerMessagePopup.swf"/>
+    <asset id="inboardMsg" path="assets/inboardMSG.swf"/>
+    <asset id="iconsMessage" path="assets/IconsMessage.swf"/>
+    <asset id="newMessageNormalField" path="assets/newMessageNormalField.swf"/>
+    <asset id="newMessageNormalFieldEvent" path="assets/newMessageNormalFieldEvent.swf"/>
+    <asset id="newMessageFriendField" path="assets/newMessageFriendField.swf"/>
+    <asset id="newMessageTypeField" path="assets/newMessageTypeField.swf"/>
+    <asset id="inboardStickerBorder" path="assets/inboardStickerBorder.swf"/>
+    <asset id="sendStickerPopup" path="assets/SendStickerPopup.swf"/>
+    <asset id="inPopupStickerBorder" path="assets/inPopupStickerBorder.swf"/>
+    <asset id="stickerCactus" path="assets/stickers/sticker_cactus.swf"/>
+    <asset id="stickerCrownKing" path="assets/stickers/sticker_crownKing.swf"/>
+    <asset id="stickerCrownQueen" path="assets/stickers/sticker_crownQueen.swf"/>
+    <asset id="stickerCupcake" path="assets/stickers/sticker_cupcake.swf"/>
+    <asset id="stickerDiamond" path="assets/stickers/sticker_diamond.swf"/>
+    <asset id="stickerDuckyduck" path="assets/stickers/sticker_duckyduck.swf"/>
+    <asset id="stickerFish" path="assets/stickers/sticker_fish.swf"/>
+    <asset id="stickerFlagPanfu" path="assets/stickers/sticker_flagPanfu.swf"/>
+    <asset id="stickerFlagPirate" path="assets/stickers/sticker_flagPirate.swf"/>
+    <asset id="stickerFormulaUno" path="assets/stickers/sticker_formulaUno.swf"/>
+    <asset id="stickerFountain" path="assets/stickers/sticker_fountain.swf"/>
+    <asset id="stickerHamster" path="assets/stickers/sticker_hamster.swf"/>
+    <asset id="stickerHandshake" path="assets/stickers/sticker_handshake.swf"/>
+    <asset id="stickerPandaCouple" path="assets/stickers/sticker_pandaCouple.swf"/>
+    <asset id="stickerPartyHat" path="assets/stickers/sticker_partyHat.swf"/>
+    <asset id="stickerPonyDeluxe" path="assets/stickers/sticker_ponyDeluxe.swf"/>
+    <asset id="stickerPonyNorm" path="assets/stickers/sticker_ponyNorm.swf"/>
+    <asset id="stickerRings" path="assets/stickers/sticker_rings.swf"/>
+    <asset id="stickerRobot" path="assets/stickers/sticker_robot.swf"/>
+    <asset id="stickerRose" path="assets/stickers/sticker_rose.swf"/>
+    <asset id="stickerStarThumb" path="assets/stickers/sticker_starThumb.swf"/>
+    <asset id="stickerSunflower" path="assets/stickers/sticker_sunflower.swf"/>
+    <asset id="stickerTreasureChest" path="assets/stickers/sticker_treasureChest.swf"/>
+    <asset id="stickerWooby" path="assets/stickers/sticker_wooby.swf"/>
+    <asset id="stickerGreenBalloon" path="assets/stickers/sticker_greenBalloon.swf"/>
+    <asset id="stickerRainbow" path="assets/stickers/sticker_rainbow.swf"/>
+    <asset id="stickerHeartMail" path="assets/stickers/sticker_heartMail.swf"/>
+    <asset id="stickerSmilingPanda" path="assets/stickers/sticker_smilingPanda.swf"/>
+    <asset id="stickerSun" path="assets/stickers/sticker_sun.swf"/>
+    <asset id="stickerBirthdayCake" path="assets/stickers/sticker_birthdayCake.swf"/>
+    <asset id="stickerCloud" path="assets/stickers/sticker_cloud.swf"/>
+  </assets>
+  <sounds>
+    <sound id="msgDelete" volume="0.5" path="audio/MSG_DELETE.mp3"/>
+    <sound id="msgError" volume="0.5" path="audio/MSG_ERROR.mp3"/>
+    <sound id="msgNewMail" volume="0.5" path="audio/MSG_NEWMAIL.mp3"/>
+    <sound id="msgSent" volume="0.5" path="audio/MSG_SENT.mp3"/>
+  </sounds>
+  <module>
+    <typesMessage>
+      <typeMessage typeID="3" assetID="assetTreeHouse" snippetTypeID="TREEHOUSE_TYPE" snippetIDInboard="TREEHOUSE_DESCR_INBOARD" snippetIDAnswer="TREEHOUSE_DESCR_ANSWER" snippetIDNewMsg="TREEHOUSE_DESCR_NEWMSG" trackSendID="007_003_001_MESSAGE_TREEHOUSE_SEND" trackAnswerID="007_003_002_MESSAGE_TREEHOUSE_REPLY"/>
+      <typeMessage typeID="2" assetID="assetClothe" snippetTypeID="CLOTHES_TYPE" snippetIDInboard="CLOTHE_DESCR_INBOARD" snippetIDAnswer="CLOTHE_DESCR_ANSWER" snippetIDNewMsg="CLOTHE_DESCR_NEWMSG" trackSendID="007_002_001_MESSAGE_CLOTH_SEND" trackAnswerID="007_002_002_MESSAGE_CLOTH_REPLY"/>
+      <typeMessage typeID="5" assetID="assetLove" snippetTypeID="LOVE_TYPE" snippetIDInboard="LOVE_DESCR_INBOARD" snippetIDAnswer="LOVE_DESCR_ANSWER" snippetIDNewMsg="LOVE_DESCR_NEWMSG" trackSendID="007_005_001_MESSAGE_LOVE_SEND" trackAnswerID="007_005_002_MESSAGE_LOVE_REPLY"/>
+      <typeMessage typeID="6" assetID="assetChat" snippetTypeID="CHAT_TIME_TYPE" snippetIDInboard="CHAT_TIME_DESCR_INBOARD" snippetIDAnswer="CHAT_TIME_DESCR_ANSWER" snippetIDNewMsg="CHAT_TIME_DESCR_NEWMSG" trackSendID="007_006_001_MESSAGE_CHATTIME_SEND " trackAnswerID="007_006_002_MESSAGE_CHATTIME_REPLY"/>
+      <typeMessage typeID="7" assetID="assetVisitHouse" snippetTypeID="VISIT_HOUSE_TYPE" snippetIDInboard="VISIT_HOUSE_DESCR_INBOARD" snippetIDAnswer="VISIT_HOUSE_DESCR_ANSWER" snippetIDNewMsg="VISIT_HOUSE_DESCR_NEWMSG" trackSendID="Message_VisitHouse" trackAnswerID="Message_Reply_VisitHouse"/>
+      <typeMessage typeID="8" assetID="assetCool" snippetTypeID="COOL_PANDA_TYPE" snippetIDInboard="COOL_PANDA_DESCR_INBOARD" snippetIDAnswer="COOL_PANDA_DESCR_ANSWER" snippetIDNewMsg="COOL_PANDA_DESCR_NEWMSG" trackSendID="Message_Cool" trackAnswerID="Message_Reply_Cool"/>
+      <typeMessage typeID="9" assetID="assetLock" snippetTypeID="LOCKED_TYPE" snippetIDInboard="LOCKED_DESCR_INBOARD" snippetIDAnswer="LOCKED_DESCR_ANSWER" snippetIDNewMsg="LOCKED_DESCR_NEWMSG" trackSendID="Message_Lock" trackAnswerID="Message_Reply_Lock"/>
+      <typeMessage typeID="4" assetID="assetParty" snippetTypeID="PARTY_TYPE" snippetIDInboard="EVENT_DESCR_INBOARD" snippetIDAnswer="EVENT_REPLY" snippetIDNewMsg="PARTY_DESCR_NEWMSG" trackSendID="007_004_001_MESSAGE_PARTY_SEND" trackAnswerID="007_004_002_MESSAGE_PARTY_REPLY">
+        <params>
+          <param idParam="partyType">
+            <value valID="1" snippetID="EVENT_TYPE_MEETING"/>
+            <value valID="2" snippetID="EVENT_TYPE_WEDDING"/>
+            <value valID="3" snippetID="EVENT_TYPE_DATE"/>
+            <value valID="4" snippetID="EVENT_TYPE_BIRTHDAY"/>
+            <value valID="5" snippetID="EVENT_TYPE_PARTY"/>
+            <value valID="6" snippetID="EVENT_TYPE_ADVENTURE"/>
+          </param>
+          <param idParam="server">
+            <value valID="1" snippetID="CURRENT_SERVER"/>
+          </param>
+          <param idParam="hour">
+            <value valID="1" snippetID="H12AM"/>
+            <value valID="2" snippetID="H1AM"/>
+            <value valID="3" snippetID="H2AM"/>
+            <value valID="4" snippetID="H3AM"/>
+            <value valID="5" snippetID="H4AM"/>
+            <value valID="6" snippetID="H5AM"/>
+            <value valID="7" snippetID="H6AM"/>
+            <value valID="8" snippetID="H7AM"/>
+            <value valID="9" snippetID="H8AM"/>
+            <value valID="10" snippetID="H9AM"/>
+            <value valID="11" snippetID="H10AM"/>
+            <value valID="12" snippetID="H11AM"/>
+            <value valID="13" snippetID="H12PM"/>
+            <value valID="14" snippetID="H1PM"/>
+            <value valID="15" snippetID="H2PM"/>
+            <value valID="16" snippetID="H3PM"/>
+            <value valID="17" snippetID="H4PM"/>
+            <value valID="18" snippetID="H5PM"/>
+            <value valID="19" snippetID="H6PM"/>
+            <value valID="20" snippetID="H7PM"/>
+            <value valID="21" snippetID="H8PM"/>
+            <value valID="22" snippetID="H9PM"/>
+            <value valID="23" snippetID="H10PM"/>
+            <value valID="24" snippetID="H11PM"/>
+          </param>
+          <param idParam="location">
+            <value valID="1" snippetID="EVENT_LOCATION_OWNTREEHOUSE"/>
+            <value valID="2" snippetID="EVENT_LOCATION_SANFRANPANFU"/>
+            <value valID="3" snippetID="EVENT_LOCATION_POOL"/>
+            <value valID="4" snippetID="EVENT_LOCATION_JUNGLE"/>
+            <value valID="5" snippetID="EVENT_LOCATION_AIRPLANE"/>
+            <value valID="6" snippetID="EVENT_LOCATION_VOLCANO"/>
+            <value valID="7" snippetID="EVENT_LOCATION_BEACH"/>
+            <value valID="8" snippetID="EVENT_LOCATION_CARRIBEAN_BEACH"/>
+            <value valID="9" snippetID="EVENT_LOCATION_POKOPETS"/>
+            <value valID="10" snippetID="EVENT_LOCATION_SPORTFIELD"/>
+            <value valID="11" snippetID="EVENT_LOCATION_PONYHOF"/>
+            <value valID="12" snippetID="EVENT_LOCATION_RACETRACKING"/>
+            <value valID="13" snippetID="EVENT_LOCATION_HARBOUR"/>
+            <value valID="14" snippetID="EVENT_LOCATION_CASTLE"/>
+          </param>
+          <param idParam="date"/>
+        </params>
+      </typeMessage>
+    </typesMessage>
+    <npcs>
+      <npc npcId="-1" nameNPC="dummyNPC" assetID="dummyNPC"/>
+      <npc npcId="1" nameNPC="Lili" displayedName="Lili" assetID="assetLilly">
+        <msg msgID="1" snippetID="LILI_CRAZY_OUTFITS_MESSAGE" module="crazyOutfitQuest"/>
+      </npc>
+      <npc npcId="2" nameNPC="Max" displayedName="Max" assetID="assetMax">
+        <msg msgID="2" snippetID="HOT_BUTTON_CW26_2011" module="whatsHot"/>
+      </npc>
+      <npc npcId="3" nameNPC="JAYPEA" displayedName="Jay Pea"/>
+      <npc npcId="4" nameNPC="WILLIAM" displayedName="William Pandabeard"/>
+      <npc npcId="5" nameNPC="BOOKWORM" displayedName="Bookworm"/>
+      <npc npcId="6" nameNPC="TRAINER" displayedName="Mr. Horsey"/>
+      <npc npcId="7" nameNPC="FEELGOOD" displayedName="Dr. Feeldgood"/>
+      <npc npcId="8" nameNPC="CARUSO" displayedName="Carl Caruso"/>
+      <npc npcId="9" nameNPC="PENNY" displayedName="Penny"/>
+      <npc npcId="10" nameNPC="PAUL" displayedName="Paul"/>
+    </npcs>
+    <stickers>
+      <sticker stickerID="1" snippetName="STICKER_TYPE_HUGGINGPANDAS" snippetDescr="stickerDescr14" assetID="stickerPandaCouple"/>
+      <sticker stickerID="2" snippetName="STICKER_TYPE_GREENBALLOON" snippetDescr="stickerDescr24" assetID="stickerGreenBalloon"/>
+      <sticker stickerID="3" snippetName="STICKER_TYPE_THUMBSUP" snippetDescr="stickerDescr21" assetID="stickerStarThumb"/>
+      <sticker stickerID="4" snippetName="STICKER_TYPE_HANDSHAKE" snippetDescr="stickerDescr13" assetID="stickerHandshake"/>
+      <sticker stickerID="5" snippetName="STICKER_TYPE_CACTUS" snippetDescr="stickerDescr1" assetID="stickerCactus"/>
+      <sticker stickerID="6" snippetName="STICKER_TYPE_RAINBOW" snippetDescr="stickerDescr24" assetID="stickerRainbow"/>
+      <sticker stickerID="7" snippetName="STICKER_TYPE_HEARTMAIL" snippetDescr="stickerDescr24" assetID="stickerHeartMail"/>
+      <sticker stickerID="8" snippetName="STICKER_TYPE_PARTYHAT" snippetDescr="stickerDescr15" assetID="stickerPartyHat"/>
+      <sticker stickerID="9" snippetName="STICKER_TYPE_SMILINGPANDA" snippetDescr="stickerDescr24" assetID="stickerSmilingPanda"/>
+      <sticker stickerID="10" snippetName="STICKER_TYPE_SUNFLOWER" snippetDescr="stickerDescr22" assetID="stickerSunflower"/>
+      <sticker stickerID="11" snippetName="STICKER_TYPE_CUPCAKE" snippetDescr="stickerDescr4" assetID="stickerCupcake"/>
+      <sticker stickerID="12" snippetName="STICKER_TYPE_SUN" snippetDescr="stickerDescr24" assetID="stickerSun"/>
+      <sticker stickerID="13" snippetName="STICKER_TYPE_GOLDFISH" snippetDescr="stickerDescr7" assetID="stickerFish"/>
+      <sticker stickerID="14" snippetName="STICKER_TYPE_WOOBIEHAT" snippetDescr="stickerDescr24" assetID="stickerWooby"/>
+      <sticker stickerID="15" snippetName="STICKER_TYPE_BIRTHDAYCAKE" snippetDescr="stickerDescr24" assetID="stickerBirthdayCake"/>
+      <sticker stickerID="16" snippetName="STICKER_TYPE_PIRATEFLAG" snippetDescr="stickerDescr9" assetID="stickerFlagPirate"/>
+      <sticker stickerID="17" snippetName="STICKER_TYPE_REDROSE" snippetDescr="stickerDescr20" assetID="stickerRose"/>
+      <sticker stickerID="18" snippetName="STICKER_TYPE_PINATA" snippetDescr="stickerDescr16" assetID="stickerPonyDeluxe"/>
+      <sticker stickerID="19" snippetName="STICKER_TYPE_ROBBIE" snippetDescr="stickerDescr19" assetID="stickerRobot"/>
+      <sticker stickerID="20" snippetName="STICKER_TYPE_RUBBERDUCK" snippetDescr="stickerDescr6" assetID="stickerDuckyduck"/>
+      <sticker stickerID="21" snippetName="STICKER_TYPE_CLOUD_LIGHTNING" snippetDescr="stickerDescr24" assetID="stickerCloud"/>
+      <sticker stickerID="22" snippetName="STICKER_TYPE_HAMSTER" snippetDescr="stickerDescr12" assetID="stickerHamster"/>
+      <sticker stickerID="23" snippetName="STICKER_TYPE_FOUNTAIN" snippetDescr="stickerDescr11" assetID="stickerFountain"/>
+      <sticker stickerID="24" snippetName="STICKER_TYPE_BABYHORSE" snippetDescr="stickerDescr17" assetID="stickerPonyNorm"/>
+      <sticker stickerID="25" snippetName="STICKER_TYPE_RACECAR" snippetDescr="stickerDescr10" assetID="stickerFormulaUno"/>
+      <sticker stickerID="26" snippetName="STICKER_TYPE_DIAMOND" snippetDescr="stickerDescr5" assetID="stickerDiamond"/>
+      <sticker stickerID="27" snippetName="STICKER_TYPE_WEDDINGRINGS" snippetDescr="stickerDescr18" assetID="stickerRings"/>
+      <sticker stickerID="28" snippetName="STICKER_TYPE_TIARA" snippetDescr="stickerDescr3" assetID="stickerCrownQueen"/>
+      <sticker stickerID="29" snippetName="STICKER_TYPE_CROWN" snippetDescr="stickerDescr2" assetID="stickerCrownKing"/>
+      <sticker stickerID="30" snippetName="STICKER_TYPE_PANFUFLAG" snippetDescr="stickerDescr8" assetID="stickerFlagPanfu"/>
+      <sticker stickerID="31" snippetName="STICKER_TYPE_TREASURECHEST" snippetDescr="stickerDescr23" assetID="stickerTreasureChest"/>
+    </stickers>
+  </module>
+</config>

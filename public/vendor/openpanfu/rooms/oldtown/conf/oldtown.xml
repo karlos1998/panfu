@@ -1,0 +1,94 @@
+
+<config check="d61783a61611f4d7f3a796e5ba5064a0">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+    <asset id="pillar" path="assets/pillar.swf"/>
+  </assets>
+  <sounds>
+  <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element type="door1" button="1" visible="1">
+        <checks>
+          <button value="0" gamestate="72,0,1-160"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door1"/>
+        </message>
+      </element>
+      <element type="door2" button="1" visible="1">
+        <checks>
+          <button value="0" gamestate="72,0,1-160"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door2"/>
+        </message>
+      </element>
+      <element type="door3" button="1" visible="1">
+        <checks>
+          <button value="0" gamestate="72,0,1-160"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door3"/>
+        </message>
+      </element>
+      <element id="pillar" button="0" visible="1">
+        <button type="overClick" over="2" out="1" click="1" name="PANFU_NEWS"/>
+        <message value="pillar">
+          <name value="pillar"/>
+        </message>
+      </element>
+      <element id="cookieCrumbles" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="28,0,43"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="callQuest.cookieCrumblesClicked" type="mysteriousCall"/>
+      </element>
+      <element id="walkarea" frame=":premium">
+        <checks>
+          <frame value=":default" user="isNormal"/>
+        </checks>
+      </element>
+    </elements>
+    <actions/>
+    <pillar>
+      <notice>
+        <texts text_0="PILLAR_TEXT_3" text_1="PILLAR_TEXT_2" text_2="PILLAR_TEXT_1" text_3="PILLAR_TEXT_4"/>
+        <lifetimetexts text_0="LFT_PIN_WALL_HEAD" text_1="LFT_PIN_WALL_TEXT"/>
+      </notice>
+    </pillar>
+    <tooltips>
+      <tooltip id="fourboom" type="gameMulti" name="GAME_NAME_25"/>
+      <tooltip id="door1" type="door" target="1" angle="-120"/>
+      <tooltip id="door2" type="door" target="6" angle="-110"/>
+      <tooltip id="door3" type="door" target="7" angle="-45"/>
+      <tooltip id="bundles" type="catalog" name="BUNDLE_CATALOGUE"/>
+      <tooltip id="pillar" type="news" name="PANFU_NEWS"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="12" type="room" x="10" y="357" rad="35" user="1" angle="155" disableWithItem="104152"/>
+      <hotspot id="door1" target="1" type="room" x="230" y="300" rad="30" user="1" disableWithItem="104152"/>
+      <hotspot id="door2" target="6" type="room" x="380" y="210" rad="30" user="1" disableWithItem="104152"/>
+      <hotspot id="door3" target="7" type="room" x="550" y="235" rad="30" user="1" disableWithItem="104152"/>
+      <hotspot target="8" type="room" x="750" y="425" rad="45" user="1" angle="35" disableWithItem="104152"/>
+      <hotspot type="action" target="sit_chair_0" x="242" y="332" rad="33" stop="1" into="0" disableWithItem="104152"/>
+      <hotspot type="action" target="sit_chair_1" x="420" y="349" rad="33" stop="1" into="0" disableWithItem="104152"/>
+      <hotspot type="action" target="sit_chair_2" x="454" y="360" rad="33" stop="1" into="0" disableWithItem="104152"/>
+      <hotspot id="door1" target="1" type="room" x="165" y="271" rad="30" user="1" disableWithoutItem="104152"/>
+      <hotspot id="door2" target="6" type="room" x="305" y="243" rad="30" user="1" disableWithoutItem="104152"/>
+      <hotspot id="door3" target="7" type="room" x="577" y="312" rad="30" user="1" disableWithoutItem="104152"/>
+	    <hotspot target="22" type="room" x="475" y="178" rad="30" user="1" angle="-140" disableWithoutItem="104152"/>
+      <hotspot id="door1" target="1" type="room" x="230" y="300" rad="30" user="1" disableWithoutItem="2004"/>
+      <hotspot id="door2" target="6" type="room" x="380" y="210" rad="30" user="1" disableWithoutItem="2004"/>
+      <hotspot id="door3" target="7" type="room" x="550" y="235" rad="30" user="1" disableWithoutItem="2004"/>
+    </hotspots>
+    <properties>
+      <specialWalk value="6"/>
+    </properties>
+  </module>
+</config>

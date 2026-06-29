@@ -1,0 +1,6 @@
+assets/effects/Confetti.swf
+assets/effects/Loser.swf
+assets/specials/UltimateObstacleBluedragon.swf
+assets/specials/UltimateObstaclePingoo.swf
+audio/navi/explosionTransformation.mp3
+audio/navi/fogTransformation.mp3

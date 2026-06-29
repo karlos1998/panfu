@@ -1,0 +1,143 @@
+<config check="0ae97f21dffc78591f68f475ed1cce27">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="horseJumping" volume="1" path="audio/horseJumping.mp3"/>
+    <sound id="horseEating" volume="1" path="audio/horseEating.mp3"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="halloweenQuestDay4" start="Oct 30 2009" finish="Oct 31 2009" check="26d8273bc85cab3"/>
+    <date id="halloweenQuestRest" start="Oct 31 2009" finish="Nov 2 2009" check="9350421e0420dba"/>
+    <date id="hospitalQuest" start="Feb 24 2010" finish="Mar 8 2010" check="7227046bca2bc47"/>
+    <date id="petsHomeQuest" start="Mar 16 2010" finish="Mar 21 2010" check="96e1f18c9bbb7c5"/>
+    <date id="summerQuest" start="Aug 5 2010" finish="Aug 6 2010" check="c4eb81a72de4e48"/>
+    <date id="summerQuest2" start="Aug 19 2010" finish="Aug 20 2010" check="47695831274e6be"/>
+    <date id="easternDay4" start="Apr 23 2011" finish="Apr 24 2011" check="826cc55faf33d37"/>
+    <date id="napasapaFreeze" start="Jan 18 2012" finish="Jan 25 2012" check="0225ab0aa2e2898"/>
+    <date id="bringSpring2" start="Mar 7 2012" finish="Mar 28 2012" check="7016b9effc43b4a"/>
+    <date id="halloween2013" start="Oct 26 2013" finish="Nov 3 2013" check="425d3a22519747f"/>
+    <date id="eastern2013" start="Mar 25 2013" finish="Mar 26 2013" check="96d27159f7dc037"/>
+  </dates>
+  <module>
+    <waterBombReactions>
+      <zone idTarget="pony" reaction="ponyWaterBombReaction"/>
+    </waterBombReactions>
+    <elements>
+      <element id="easterEgg" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eastern2013" gamestate="131,0,30"/>
+        </checks>
+        <button type="click" click="1" stopWalk="1"/>
+        <message value="eastern2013.EggClicked" type="eastern2013"/>
+      </element>
+      <element id="pumpkin" button="1" visible="0">
+        <checks>
+          <visible value="1" date="halloween2013"/>
+        </checks>
+        <button type="overClick" over="2" click="2"/>
+      </element>
+      <element id="woodPile" button="1" visible="0">
+        <checks>
+          <visible value="1" date="bringSpring2" gamestate="110,0,95"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="bringSpring.getWood" type="bringSpring"/>
+      </element>
+      <element id="flour" button="0" visible="0">
+        <checks>
+          <visible value="1" date="napasapaFreeze" gamestate="108,0,160-162"/>
+          <button value="1" date="napasapaFreeze" gamestate="108,0,162"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="napasapa.getFlour" type="napasapaReturns"/>
+      </element>
+      <element id="chicken4" button="1" visible="0">
+        <checks>
+          <visible value="1" date="easternDay4" gamestate="77,1,1-9999"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="eastern2011.clickChicken4" type="eastern2011"/>
+      </element>
+      <element id="stoned_kayak" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,340-341" date="summerQuest" requestHasOneActiveItem="102410"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertKayak" type="summerQuest"/>
+      </element>
+      <element id="stoned_lantern" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,490-491" date="summerQuest2" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertLantern" type="summerQuest"/>
+      </element>
+      <element id="slidegauge" button="0" visible="0">
+        <checks>
+          <visible value="1" date="petsHomeQuest" gamestate="29,0,10-50" doesNotHaveOneItem="101767"/>
+        </checks>
+        <checks>
+          <button value="1" date="petsHomeQuest" gamestate="29,0,10-50" doesNotHaveOneItem="101767"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="petsHomeQuest.giveItem7" type="petsHomeQuest"/>
+      </element>
+      <element id="redApple" visible="1">
+        <checks>
+          <button value="1" gamestate="27,0,5"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="hospitalQuest.getItem1"/>
+      </element>
+      <element id="greenApple" visible="1">
+        <checks>
+          <button value="1" gamestate="27,0,10" doesNotHaveOneItem="101728"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="hospitalQuest.getItem2"/>
+      </element>
+      <element id="pumpkin5" button="1" visible="0" frame=":normal">
+        <checks>
+          <visible value="1" date="halloweenQuestDay4" gamestate="12,0,1-6"/>
+          <visible value="1" date="halloweenQuestRest" gamestate="12,5,1"/>
+          <button value="0" gamestate="12,5,1"/>
+          <frame value=":light" gamestate="12,5,1"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="halloweenQuest.pumpkin5" type="halloweenQuest"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":halloween" date="halloweenQuestDay4"/>
+          <frame value=":petshome" date="petsHomeQuest"/>
+          <frame value=":summerQuest" date="summerQuest"/>
+        </checks>
+      </element>
+      <element id="waterSpoon" button="1" visible="1">
+        <button type="downUp" frameReaction="eat" soundReaction="horseEating" dropTarget="pony" drag="true"/>
+      </element>
+      <element id="apple" button="1" visible="1">
+        <button type="downUp" frameReaction="eat" soundReaction="horseEating" dropTarget="pony" drag="true"/>
+      </element>
+      <element id="carrot" button="1" visible="1">
+        <button type="downUp" frameReaction="eat" soundReaction="horseEating" dropTarget="pony" drag="true"/>
+      </element>
+      <element id="pony" button="1" visible="1" notWalkable="true">
+        <button type="click" click="1"/>
+        <message value="clickOnHorse" type="*"/>
+      </element>
+      <element id="ridder" button="1" visible="1">
+        <button type="overClick" over="15" out="1" click="1" stopWalk="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="TRAINER"/>
+        </message>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="31" type="room" x="105" y="279" rad="45" angle="-180"/>
+    </hotspots>
+  </module>
+</config>

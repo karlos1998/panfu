@@ -1,0 +1,16 @@
+<config check="7721b7433b163c99c6353651bbe11578">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+    <asset id="room2" path="assets/room2.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/background2.mp3" loops="-1" backgroundmusic="0"/>
+  </sounds>
+  <module>
+    <elements>
+      <element/>
+    </elements>
+    <hotspots/>
+  </module>
+</config>

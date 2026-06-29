@@ -1,0 +1,190 @@
+<config check="2af89c7fbb5888bc9c991b12a65ebbf5">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="xray" path="audio/xray.mp3"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="hospitalQuest" start="Feb 24 2010" finish="Mar 8 2010" check="c04be0b6991f552"/>
+    <date id="sickJayPea" start="Apr 25 2012" finish="May 1 2012" check="cbb2be9d69396f7"/>
+    <date id="sickJayPea2" start="Apr 25 2012" finish="May 2 2012" check="b10e6714e85dab2"/>
+    <date id="summerQuest" start="Jul 18 2010" finish="Jul 19 2010" check="c68ddcb4be94642"/>
+    <date id="summerQuest2" start="Aug 3 2010" finish="Aug 4 2010" check="6e8a261be7bde93"/>
+    <date id="sickPokopet" start="Feb 16 2011" finish="Feb 23 2011" check="087c3a139f4d5bc"/>
+    <date id="stickerQuest" start="Aug 6 2011" finish="Aug 7 2011" check="42a0135d8cf6156"/>
+    <date id="easter" start="Apr 4 2012" finish="Apr 11 2012" check="a001483472fc255"/>
+    <date id="uncleRisotto" start="Oct 17 2012" finish="Nov 14 2012" check="466d3bf17ed02e1"/>
+    <date id="uncleRisotto1" start="Oct 17 2012" finish="Oct 24 2012" check="5d7345d0832cf99"/>
+    <date id="uncleRisotto2" start="Oct 24 2012" finish="Oct 31 2012" check="f420a17f9c36c04"/>
+    <date id="eastern2013" start="Mar 26 2013" finish="Mar 27 2013" check="48ebbed3a846c8e"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="easterEgg" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eastern2013" gamestate="131,0,35"/>
+        </checks>
+        <button type="click" click="1" stopWalk="1"/>
+        <message value="eastern2013.EggClicked" type="eastern2013"/>
+      </element>
+      <element id="chicken" button="0" visible="0">
+        <checks>
+          <visible value="1" date="easter" gamestate="111,4,1"/>
+          <button value="1" date="easter" gamestate="111,4,1"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="easter.ChickenClicked" type="easter"/>
+      </element>
+      <element id="feelgood" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="uncleRisotto" gamestate="123,0,0-999"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="FEELGOOD_HOSPITAL"/>
+        </message>
+      </element>
+      <element id="soque" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="66,0,0-99"/>
+          <button value="1" gamestate="66,0,5-99"/>
+        </checks>
+        <message value="sickPokopet.clickOnPokopet" type="sickPokopet"/>
+        <button type="click" click="99"/>
+      </element>
+      <element id="stoned_bed" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,120-121" date="summerQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertBed" type="summerQuest"/>
+      </element>
+      <element id="stoned_shelf" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,320-321" date="summerQuest2" requestHasOneActiveItem="102410"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertShelf" type="summerQuest"/>
+      </element>
+      <element id="risotto" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="uncleRisotto" gamestate="123,0,0-29"/>
+          <visible value="0" date="uncleRisotto2"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="talkToNPC" type="client">
+          <id value="RISOTTO_HOSPITAL"/>
+        </message>
+      </element>
+      <element id="risotto2" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="uncleRisotto" gamestate="123,0,30-999"/>
+          <visible value="1" date="uncleRisotto2"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="talkToNPC" type="client">
+          <id value="RISOTTO2_HOSPITAL"/>
+        </message>
+      </element>
+      <element id="letter" button="1" visible="0">
+        <checks>
+          <visible value="1" date="sickJayPea" gamestate="115,0,21-22"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="sickJayPea.letterClicked" type="sickJayPea"/>
+      </element>
+      <element id="poster" button="1" visible="0">
+        <checks>
+          <visible value="1" date="sickJayPea" gamestate="115,0,22"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="sickJayPea.posterClicked" type="sickJayPea"/>
+      </element>
+      <element id="poster_text" button="1" visible="0">
+        <checks>
+          <visible value="1" date="sickJayPea" gamestate="115,0,22"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="sickJayPea.posterClicked" type="sickJayPea"/>
+      </element>
+      <element type="xDisplay" button="1" visible="1">
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="XRAY"/>
+        </message>
+      </element>
+      <element type="display" button="1" visible="1">
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="XRAY"/>
+        </message>
+      </element>
+      <element type="heartBeat" button="1" visible="1">
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="HeartBeat"/>
+        </message>
+        <message value="backToSchool.heartBeatClicked" type="backToSchool"/>
+      </element>
+      <element id="yoyo2" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="hospitalQuest" gamestate="27,0,45"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="3"/>
+        <message value="hospitalQuest.talkToYoyo2" type="hospitalQuest"/>
+      </element>
+      <element id="glow" button="0" notWalkable="true"/>
+      <element id="chair_0" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="0"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="0"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="0"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":summerQuest" date="summerQuest"/>
+          <frame value=":summerQuest2" date="summerQuest2"/>
+          <frame value=":sickPokopet" date="sickPokopet"/>
+        </checks>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot type="action" target="sit_chair_0" x="590" y="290" rad="33" stop="1" into="0"/>
+      <hotspot target="19" type="room" x="400" y="150" rad="45" angle="270"/>
+      <hotspot id="XRAY" type="action" x="515" y="175" rad="30">
+        <checks>
+          <target value="startXray"/>
+        </checks>
+      </hotspot>
+      <hotspot id="HeartBeat" type="action" x="200" y="240" rad="20">
+        <checks>
+          <target value="startBeat"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="sit_chair_0">
+        <requestInteractSharedItem initial="chair_" itemID="0" x="590" y="290" direction="left_down" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+      <action id="startXray">
+        <message value="hospital.playAnimation"/>
+        <message value="backToSchool.XRayUsed"/>
+      </action>
+      <action id="startBeat">
+        <message value="hospital.playHeartBeat"/>
+      </action>
+    </actions>
+  </module>
+</config>

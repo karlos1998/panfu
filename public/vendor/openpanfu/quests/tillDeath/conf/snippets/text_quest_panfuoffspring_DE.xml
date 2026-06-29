@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<snippets date="08.12.2014 15:30:14">
+  <AMALURA_01><![CDATA[At last I am free after all these years.]]></AMALURA_01>
+  <AMALURA_02><![CDATA[Where is my beloved Joshua? You must lead me to him.]]></AMALURA_02>
+  <AMALURA_03><![CDATA[I have to explain everything to him. I never wanted to leave him.]]></AMALURA_03>
+  <AMALURA_04><![CDATA[Panager kidnapped me and locked me up here.]]></AMALURA_04>
+  <AMALURA_05><![CDATA[But where is Joshua?]]></AMALURA_05>
+  <AMALURA_06><![CDATA[Unfortunately, I do not know where he is. I only have this riddle.]]></AMALURA_06>
+  <AMALURA_07><![CDATA["Where YOU are afraid, HE is at home. The road leads through his big mouth, then into his dome!". ]]></AMALURA_07>
+  <AMALURA_08><![CDATA[We must find Joshua!]]></AMALURA_08>
+  <AMALURA_09><![CDATA[This must be the place. But where is my love? I have only one last clue as to where he could be: one-two-three-two-three-one]]></AMALURA_09>
+  <AMALURA_10><![CDATA[Joshua! Finally! I love you!]]></AMALURA_10>
+  <AMALURA_FORG_LOVE_01><![CDATA[Unbelievable! We are in the Great Hall! Thank you, $$name$$, for bringing us here. You have a very big heart!]]></AMALURA_FORG_LOVE_01>
+  <AMALURA_FORG_LOVE_02><![CDATA[Now we can finally celebrate our wedding! I never would have dreamed...]]></AMALURA_FORG_LOVE_02>
+  <AMALURA_FORG_LOVE_03><![CDATA[Be our guest of honour, $$name$$! Starting Wednesday, we will celebrate our wedding here. We will be here for an entire week!]]></AMALURA_FORG_LOVE_03>
+  <AMALURA_FORG_LOVE_04><![CDATA[Come and join our celebration!]]></AMALURA_FORG_LOVE_04>
+  <AMALURA_FORG_LOVE_05><![CDATA[Ah, Kamaria has something for you. Go to her and get your reward.]]></AMALURA_FORG_LOVE_05>
+  <AMALURA_FORG_LOVE_06><![CDATA[How nice of you to come to our wedding, $$name$$! ]]></AMALURA_FORG_LOVE_06>
+  <AMALURA_FORG_LOVE_07><![CDATA[Join in our happiness, put on your dancing shoes and throw some confetti!]]></AMALURA_FORG_LOVE_07>
+  <BOUNCER_FORGLOVE_01><![CDATA[Hold up, little Panda. Not so fast!]]></BOUNCER_FORGLOVE_01>
+  <BOUNCER_FORGLOVE_02><![CDATA[Only invited Pandas who know the keyword can attend the wedding. ]]></BOUNCER_FORGLOVE_02>
+  <BOUNCER_FORGLOVE_03><![CDATA[The keyword is either the name of the bride or the name of the groom. Type it into the chat box and I will let you in. ]]></BOUNCER_FORGLOVE_03>
+  <BOUNCER_FORGLOVE_04><![CDATA[Exactly! Obviously you know the keyword. Now you're only missing the appropriate outfit. ]]></BOUNCER_FORGLOVE_04>
+  <BOUNCER_FORGLOVE_05><![CDATA[There's a dress code for the wedding, you know. All guests are supposed to come dressed as princesses or knights.]]></BOUNCER_FORGLOVE_05>
+  <BOUNCER_FORGLOVE_06><![CDATA[You are not dressed appropriately. What do we do now?]]></BOUNCER_FORGLOVE_06>
+  <BOUNCER_FORGLOVE_07><![CDATA[Ah, you know what? I'm feeling generous today. I will just lend you the appropriate headdress. But you can only wear it for one week.]]></BOUNCER_FORGLOVE_07>
+  <BOUNCER_FORGLOVE_08><![CDATA[There are great costumes available from the catalogue. You'll at least need the appropriate headdress.]]></BOUNCER_FORGLOVE_08>
+  <BOUNCER_FORGLOVE_09><![CDATA[Hold up, little Panda - not so fast! There's a dress code for the wedding. Put on either a Knight Helmet or Princess Hat.]]></BOUNCER_FORGLOVE_09>
+  <CASTAWAY_01><![CDATA[The big panda head...so alone...love...three pandas...heartache...hmmmpf...Kamaria...and all the stars... ]]></CASTAWAY_01>
+  <CASTAWAY_02><![CDATA[...Oh my head...storm...need your help...]]></CASTAWAY_02>
+  <CASTAWAY_02A><![CDATA[Maybe Kamaria knows what to do...]]></CASTAWAY_02A>
+  <CASTAWAY_03><![CDATA[...Ahh...now I feel much better!]]></CASTAWAY_03>
+  <CASTAWAY_04><![CDATA[...I'm still very tired and must rest. At the moment I still can not remember anything...]]></CASTAWAY_04>
+  <CASTAWAY_05><![CDATA[Come back to me the day after tomorrow...then we can talk.]]></CASTAWAY_05>
+  <CASTAWAY_05B><![CDATA[Come again tomorrow...then we can chat...]]></CASTAWAY_05B>
+  <CASTAWAY_06><![CDATA[Hey, you're back. I feel much better and I have remembered something.]]></CASTAWAY_06>
+  <CASTAWAY_07><![CDATA["... I have discovered that an evil curse lies in Panfu which could threaten the whole island..."]]></CASTAWAY_07>
+  <CASTAWAY_08><![CDATA[On my search, I found myself on an enormous, stone panda-head, but I do not remember where it was anymore...]]></CASTAWAY_08>
+  <CASTAWAY_09><![CDATA["...I know only that I started to research it in the library...]]></CASTAWAY_09>
+  <CASTAWAY_10><![CDATA[Go to the library, perhaps you'll find a hint there...
+
+]]></CASTAWAY_10>
+  <CASTAWAY_10A><![CDATA[You found an old map? Examine it closely and you'll know where to go.]]></CASTAWAY_10A>
+  <CASTAWAY_11><![CDATA[Go see the fisherman who's sitting on the bench at the harbor. He needs something.]]></CASTAWAY_11>
+  <CASTAWAY_12><![CDATA[...you really did it! You saved Panfu! You should be proud of yourself!]]></CASTAWAY_12>
+  <CASTAWAY_13><![CDATA[...unfortunately I have nothing to say to you at the moment...]]></CASTAWAY_13>
+  <CASTAWAY_14><![CDATA[Come back in three days, when I'm feeling better]]></CASTAWAY_14>
+  <CASTAWAY_15><![CDATA[Come back in two days, when I'm feeling better]]></CASTAWAY_15>
+  <CASTAWAY_16><![CDATA[Come back tomorrow, when I'm feeling better]]></CASTAWAY_16>
+  <COWGHOST_01><![CDATA[You dare to stand on my rug, mortal Panda? Are you not ashamed?]]></COWGHOST_01>
+  <COWGHOST_02><![CDATA[I'm Panager, once a proud panda, until I was transformed into a cow.]]></COWGHOST_02>
+  <COWGHOST_03><![CDATA[Panda, do you not know never to disturb the dead?]]></COWGHOST_03>
+  <COWGHOST_04><![CDATA[Let me rest and come back in two days when I've slept enough.
+
+]]></COWGHOST_04>
+  <COWGHOST_04B><![CDATA[Please, let me rest for now. Come back in a day, when I've regained my strength. ]]></COWGHOST_04B>
+  <COWGHOST_05><![CDATA[You dare to disturb me again? Fool!]]></COWGHOST_05>
+  <COWGHOST_06><![CDATA[You want three magical stones from me?]]></COWGHOST_06>
+  <COWGHOST_07><![CDATA[Yes, I know where they are.]]></COWGHOST_07>
+  <COWGHOST_08><![CDATA[I will help you only if you free me from my curse.]]></COWGHOST_08>
+  <COWGHOST_09><![CDATA[I am fed up with being a cow-ghost!]]></COWGHOST_09>
+  <COWGHOST_10><![CDATA[I've heard of a magic potion that will rid me of this curse.]]></COWGHOST_10>
+  <COWGHOST_11><![CDATA[But I first need three objects.]]></COWGHOST_11>
+  <COWGHOST_12><![CDATA[Bring me sun-lotion, sugar and volcano snow.]]></COWGHOST_12>
+  <COWGHOST_13><![CDATA[I will try to brew a potion.]]></COWGHOST_13>
+  <COWGHOST_14><![CDATA[I need more volcano snow. Go!]]></COWGHOST_14>
+  <COWGHOST_15><![CDATA[I need more sugar. Seek some out!]]></COWGHOST_15>
+  <COWGHOST_16><![CDATA[Wow, you've really done it. Impressive! I will try to brew the potion.]]></COWGHOST_16>
+  <COWGHOST_17><![CDATA[Come back to me the day after tomorrow.]]></COWGHOST_17>
+  <COWGHOST_17B><![CDATA[Come back to see me tomorrow]]></COWGHOST_17B>
+  <COWGHOST_18><![CDATA[But you have to guess for yourself where the second stone is. Solve this riddle and you may find the second stone:]]></COWGHOST_18>
+  <COWGHOST_19><![CDATA["I'm in the dark with shiny friends. I always listen to music." ]]></COWGHOST_19>
+  <COWGHOST_20><![CDATA[I see you have found the second magic-stone. You have done well, Panda!]]></COWGHOST_20>
+  <COWGHOST_21><![CDATA[Now all you need is the third magic-stone. It is hidden at the pool area.]]></COWGHOST_21>
+  <COWGHOST_22><![CDATA[You must place all three stones behind the waterfall]]></COWGHOST_22>
+  <COWGHOST_29><![CDATA[Come visit me again in three days]]></COWGHOST_29>
+  <COWGHOST_30><![CDATA[Come visit me again in two days]]></COWGHOST_30>
+  <COWGHOST_31><![CDATA[Come visit me again in one day]]></COWGHOST_31>
+  <COWGHOST_32><![CDATA[Shucks. It didn't work. I'm still a cow. How could I think that the spell could be broken so easily?]]></COWGHOST_32>
+  <COWGHOST_33><![CDATA[But I still want to help you anyway. Maybe then I'll be released. Here, I'll give you the first rock.]]></COWGHOST_33>
+  <COWGHOST_34><![CDATA[Bring Amalura to Joshua. To get there, you'll have to travel through the eerie forest]]></COWGHOST_34>
+  <COWGHOST_35><![CDATA[Bring me some sun-lotion]]></COWGHOST_35>
+  <FISHERMAN_01><![CDATA[Hello! Phew I'm tired. You have to bring me a strong coffee before we can talk.]]></FISHERMAN_01>
+  <FISHERMAN_01A><![CDATA[Gonzo makes fresh coffee every day.]]></FISHERMAN_01A>
+  <FISHERMAN_02><![CDATA[Ah! That feels good! Now I'm up. All that sitting around makes you tired. ]]></FISHERMAN_02>
+  <FISHERMAN_03><![CDATA[I have a problem. I lost my fishing rod. Before I can give you any further help, you must bring me a new fishing rod. 
+
+]]></FISHERMAN_03>
+  <FISHERMAN_03A><![CDATA[I'm sure there will be some at the City. ]]></FISHERMAN_03A>
+  <FISHERMAN_03B><![CDATA[The stone Panda bust is a present for Kamaria? Well, maybe you should go and talk to her then.]]></FISHERMAN_03B>
+  <FISHERMAN_04><![CDATA[Ah! Thank you! This fishing rod is just right!]]></FISHERMAN_04>
+  <FISHERMAN_05><![CDATA[I'm guessing you want to know what happened to the castaway on the beach, right?]]></FISHERMAN_05>
+  <FISHERMAN_06><![CDATA[Well, I know him. He was a crewman on my ship.]]></FISHERMAN_06>
+  <FISHERMAN_07><![CDATA[Suddenly, he started to talk about crazy and strange things!]]></FISHERMAN_07>
+  <FISHERMAN_08><![CDATA[Something about two pandas that are in love and must be brought back together again otherwise a great misfortune will happen in Panfu!]]></FISHERMAN_08>
+  <FISHERMAN_09><![CDATA[He needs to find an enormous, stone Panda-head.]]></FISHERMAN_09>
+  <FISHERMAN_10><![CDATA[And then there was a huge storm and he was washed overboard!]]></FISHERMAN_10>
+  <FISHERMAN_11><![CDATA[Maybe this story has something to do with the stone-statue in the library.]]></FISHERMAN_11>
+  <FISHERMAN_12><![CDATA[Go investigate in the library.
+
+]]></FISHERMAN_12>
+  <FISHERMAN_13><![CDATA[Come back in three days]]></FISHERMAN_13>
+  <FISHERMAN_14><![CDATA[Come back in two days]]></FISHERMAN_14>
+  <FISHERMAN_15><![CDATA[Come back tomorrow]]></FISHERMAN_15>
+  <GONZO_01><![CDATA[You want coffee? No problem! There's a full cup on the counter.]]></GONZO_01>
+  <KAMARIA_01><![CDATA[Hello $$name$$!]]></KAMARIA_01>
+  <KAMARIA_02><![CDATA[I have found a herb that helps confused minds.]]></KAMARIA_02>
+  <KAMARIA_02A><![CDATA[Super, you found the herb. Go to the castaway and give it to him, please.]]></KAMARIA_02A>
+  <KAMARIA_03><![CDATA[You can find it too if you solve this riddle:]]></KAMARIA_03>
+  <KAMARIA_04><![CDATA[Look very carefully for a plant that is green. High up on the stone in the distance it is seen.]]></KAMARIA_04>
+  <KAMARIA_05><![CDATA[Hello again$$name$$! Interesting. Do you want to know about the stone statue in the library?]]></KAMARIA_05>
+  <KAMARIA_06><![CDATA[It is a story of great love and despair. Heartbreaking if you ask me.]]></KAMARIA_06>
+  <KAMARIA_07><![CDATA[The stone statue is a replica of a very old Panda, who no longer lives.]]></KAMARIA_07>
+  <KAMARIA_07_2><![CDATA[His name was Joshua.]]></KAMARIA_07_2>
+  <KAMARIA_08><![CDATA[I used to know him when I was a little, baby Panda.]]></KAMARIA_08>
+  <KAMARIA_08_2><![CDATA[He would visit my parents very often.]]></KAMARIA_08_2>
+  <KAMARIA_09><![CDATA[He gave me the stone-statue as a gift. I donated it to the Panda library.]]></KAMARIA_09>
+  <KAMARIA_09_2><![CDATA[He was very much in love with a Lady Panda.]]></KAMARIA_09_2>
+  <KAMARIA_10><![CDATA[Her name was Amalura.]]></KAMARIA_10>
+  <KAMARIA_11><![CDATA[Both Pandas were very happy together and very in love until the day when she simply disappeared and never came back!]]></KAMARIA_11>
+  <KAMARIA_12><![CDATA[Joshua looked for her for weeks, months and years. But he never found her.]]></KAMARIA_12>
+  <KAMARIA_13><![CDATA[Poor panda Joshua...]]></KAMARIA_13>
+  <KAMARIA_14><![CDATA[Joshua was sad and lonely for the rest of his life. Many years later he died of a broken heart. He had lost his one true love.]]></KAMARIA_14>
+  <KAMARIA_15><![CDATA[To this day nobody knows what happened to Amalura and why she disappeared.]]></KAMARIA_15>
+  <KAMARIA_16><![CDATA[Shortly before his death, Joshua proclaimed a curse on Panfu because he was sad and bitter...]]></KAMARIA_16>
+  <KAMARIA_17><![CDATA["Never again should a Panda on Panfu fall in love..."]]></KAMARIA_17>
+  <KAMARIA_18><![CDATA[Every broken-hearted tear he shed flowed into the sea. He cried so much that soon Panfu was surrounded by water and will soon vanish into the sea!]]></KAMARIA_18>
+  <KAMARIA_19><![CDATA[Panfu has only a few weeks left!]]></KAMARIA_19>
+  <KAMARIA_19_2><![CDATA[It is your task to save Panfu!]]></KAMARIA_19_2>
+  <KAMARIA_20><![CDATA[Phew! Now I am tired. Come back in three days, then I will tell you how you can save the island.]]></KAMARIA_20>
+  <KAMARIA_20B><![CDATA[Phew, I suddenly got very sleepy. Come back in a day and then I'll tell you how to do it.]]></KAMARIA_20B>
+  <KAMARIA_21><![CDATA[Hello! $$name$$, there you are again.]]></KAMARIA_21>
+  <KAMARIA_22><![CDATA[So, where were we? Right, Panfu is sinking into the sea and only YOU can save it.]]></KAMARIA_22>
+  <KAMARIA_23><![CDATA[I do not know exactly how you can do this, but I have a tip for you.]]></KAMARIA_23>
+  <KAMARIA_24><![CDATA[A legend says that you can only save Panfu by bringing Amalura and Joshua back together again. Both are now seen as ghosts in Panfu. Where exactly? That I do not know.]]></KAMARIA_24>
+  <KAMARIA_25><![CDATA[Look closely at the stone statue in the library again. Perhaps there is a note inside....
+
+]]></KAMARIA_25>
+  <KAMARIA_25A><![CDATA[Ah, you are supposed to go where the water falls. That sounds like a waterfall.]]></KAMARIA_25A>
+  <KAMARIA_26><![CDATA[Oh, hello $$name$$! You have received a riddle? "Where the water falls, I am at home. Go behind, look and roam." 
+That can only be the waterfall in the jungle! Go there.]]></KAMARIA_26>
+  <KAMARIA_27><![CDATA[Well, hello $$name$$! You want to know where the cow is? Well, perhaps the rug in the castle has something to do with it.]]></KAMARIA_27>
+  <KAMARIA_28><![CDATA[Fantastic! You have found the cow and hence Amalura! But be careful. The cow has been haunting the castle for quite some time and spreading unhappiness.]]></KAMARIA_28>
+  <KAMARIA_29><![CDATA[It wouldn't surprise me if this has something to do with Amalura. You must free her immediately! Talk to the cow.]]></KAMARIA_29>
+  <KAMARIA_30><![CDATA[Hello $$name$$, so nice to see you again! Sorry, but right now I am busy.]]></KAMARIA_30>
+  <KAMARIA_31><![CDATA[Come back in five days, then I will tell you more. ]]></KAMARIA_31>
+  <KAMARIA_32><![CDATA[Come back in four days, then I will tell you more. ]]></KAMARIA_32>
+  <KAMARIA_33><![CDATA[Come back in three days, then I will tell you more. ]]></KAMARIA_33>
+  <KAMARIA_34><![CDATA[Come back in two days, then I will tell you more. ]]></KAMARIA_34>
+  <KAMARIA_35><![CDATA[Come back in one day, then I will tell you more. ]]></KAMARIA_35>
+  <KAMARIA_36><![CDATA[Super! You helped the panda with the herbs on the beach. Keep it up!]]></KAMARIA_36>
+  <KAMARIA_37><![CDATA[You should be proud! You saved Panfu! You're a pretty special Panda]]></KAMARIA_37>
+  <KAMARIA_FORGLOVE_01><![CDATA[Hi there, $$name$$! ]]></KAMARIA_FORGLOVE_01>
+  <KAMARIA_FORGLOVE_02><![CDATA[You do know the tragic love story of Joshua and Amalura, don't you?]]></KAMARIA_FORGLOVE_02>
+  <KAMARIA_FORGLOVE_02A><![CDATA[You don't??? A tragic love story, let me tell you!]]></KAMARIA_FORGLOVE_02A>
+  <KAMARIA_FORGLOVE_02B><![CDATA[You can start the quest in your Quest Book. You will find out everything from there. ]]></KAMARIA_FORGLOVE_02B>
+  <KAMARIA_FORGLOVE_02C><![CDATA[Look for "Amalura's Love Story"]]></KAMARIA_FORGLOVE_02C>
+  <KAMARIA_FORGLOVE_03><![CDATA[It was all a long time ago...I think enough time has passed to heal all wounds.]]></KAMARIA_FORGLOVE_03>
+  <KAMARIA_FORGLOVE_04><![CDATA[We will be safe to open a window to the past now.]]></KAMARIA_FORGLOVE_04>
+  <KAMARIA_FORGLOVE_05><![CDATA[There is a room in this Castle that no Panda has entered since Joshua's death. ]]></KAMARIA_FORGLOVE_05>
+  <KAMARIA_FORGLOVE_06><![CDATA[It is the Great Hall. Amalura's and Joshua's wedding was supposed to take place there. But that never came to pass...ever since then, the room has been empty and locked.]]></KAMARIA_FORGLOVE_06>
+  <KAMARIA_FORGLOVE_07><![CDATA[Let us fill this room with life and happiness once again!]]></KAMARIA_FORGLOVE_07>
+  <KAMARIA_FORGLOVE_08><![CDATA[The Great Hall is behind the Foyer. The key to the big door should be hidden under the cow hide that is lying on the floor. ]]></KAMARIA_FORGLOVE_08>
+  <KAMARIA_FORGLOVE_09><![CDATA[Use the key to open the door and enter the secret Great Hall.]]></KAMARIA_FORGLOVE_09>
+  <KAMARIA_FORGLOVE_10><![CDATA[You want to know when Amalura left to go to her own wedding? Well, she left her Tree House at exactly 13:35, that is what it says in the Missing Panda file. ]]></KAMARIA_FORGLOVE_10>
+  <KAMARIA_FORGLOVE_11><![CDATA[But as we know, she never arrived at the church...]]></KAMARIA_FORGLOVE_11>
+  <KAMARIA_FORGLOVE_12><![CDATA[This quest will be in your Quest Book for a limited amount of time only. ]]></KAMARIA_FORGLOVE_12>
+  <KAMARIA_FORGLOVE_13><![CDATA[Once you have finished it, I will tell you more. ]]></KAMARIA_FORGLOVE_13>
+  <KAMARIA_FORGLOVE_14><![CDATA[Well, now you know the story of Amalura and Joshua. It's all a long time ago. Long enough to reopen the Great Hall, where they planned on getting married.]]></KAMARIA_FORGLOVE_14>
+  <KAMARIA_FORGLOVE_15><![CDATA[Come back on Wednesday, then I will tell you where the key to the Great Hall is hidden. ]]></KAMARIA_FORGLOVE_15>
+  <KAMARIA_FORGLOVE_16><![CDATA[Would you like to see Amalura and Joshua again? I know how to get back their ghosts!]]></KAMARIA_FORGLOVE_16>
+  <KAMARIA_FORGLOVE_17><![CDATA[With love!]]></KAMARIA_FORGLOVE_17>
+  <KAMARIA_FORGLOVE_18><![CDATA[If love lives on past death, then it is most certainly capable of bringing back the two ghostly lovebirds!]]></KAMARIA_FORGLOVE_18>
+  <KAMARIA_FORGLOVE_19><![CDATA[Let us get back Joshua and Amalura, so that they can finally get married! A wedding in the Great Hall, just like they had always wanted!]]></KAMARIA_FORGLOVE_19>
+  <KAMARIA_FORGLOVE_20><![CDATA[Spread some love with the rainbow hearts. With each heart that you give to another Panda, the concentration of love in the air will increase. ]]></KAMARIA_FORGLOVE_20>
+  <KAMARIA_FORGLOVE_21><![CDATA[Once the concentration of love has reached its peak, Joshua and Amalura will come back and you will get a reward!]]></KAMARIA_FORGLOVE_21>
+  <KAMARIA_FORGLOVE_22><![CDATA[Another thing: the two ghosts will appear directly in the Great Hall - the big door in the Castle Foyer.]]></KAMARIA_FORGLOVE_22>
+  <KAMARIA_FORGLOVE_23><![CDATA[Well done, little Panda! Here is your reward.]]></KAMARIA_FORGLOVE_23>
+  <KAMARIA_FORGLOVE_24><![CDATA[Do not forget to come to Amalura's and Joshua's wedding starting next Wednesday! They would love for you to come!]]></KAMARIA_FORGLOVE_24>
+  <NARRATOR_01><![CDATA["Where the water falls, I am at home. Go behind, look and roam " ]]></NARRATOR_01>
+  <NARRATOR_02><![CDATA[Here rests the soul of Amalura. She was kidnapped and captured here. Do you want to free her? You must find 3 stones and bring them back.]]></NARRATOR_02>
+  <NARRATOR_03><![CDATA[Talk to the cow if you wish to find the three stones. You will find it at the Castle.]]></NARRATOR_03>
+  <NARRATOR_04><![CDATA[You got a little sun-lotion. Now go search in the volcano snow.]]></NARRATOR_04>
+  <NARRATOR_05><![CDATA[You got a little volcano snow. Search now for some sugar.]]></NARRATOR_05>
+  <NARRATOR_06><![CDATA[You got a little sugar. Go now to the cow-ghost.]]></NARRATOR_06>
+  <NARRATOR_07><![CDATA[You have just received the stone of love.]]></NARRATOR_07>
+  <NARRATOR_08><![CDATA[You have just received the stone of jealousy. Now go back to the cow-ghost to find the last stone.]]></NARRATOR_08>
+  <NARRATOR_09><![CDATA[Go back to the cow-ghost to get the last stone.]]></NARRATOR_09>
+  <NARRATOR_10><![CDATA[Go now to the waterfall and place all three stones behind it, if you haven't already]]></NARRATOR_10>
+  <NARRATOR_11><![CDATA[Finally, after so long, Amalura and Joshua are reunited. Perhaps you will see the two lovers on the volcano watching the sunset. You have really helped them. But not only Joshua and Amalura. You have rescued Panfu from an evil curse! We are very proud of you that you have solved these difficult tasks. However, we don't know what ever happened to the cow-ghost. We'll have to wait and see. You must go and celebrate your success with all your Panda friends - You are a truly wonderful Panda!]]></NARRATOR_11>
+  <NARRATOR_12><![CDATA[Of course, we have a gift for you. Have a look in your profile.]]></NARRATOR_12>
+  <NARRATOR_13><![CDATA[We have a lovely gift for you. Have a look in your profile and in your tree house.]]></NARRATOR_13>
+  <NARRATOR_14><![CDATA[You've received the stone of sadness. Go to the waterfall and place all three stones behind it if you haven't already]]></NARRATOR_14>
+  <NARRATOR_15><![CDATA[There is an engraving under the statue. It says: "To my good friend Kamaria"]]></NARRATOR_15>
+  <PANAGER_FORGLOVE_01><![CDATA[STOP!]]></PANAGER_FORGLOVE_01>
+  <PANAGER_FORGLOVE_02><![CDATA[What are you doing here?]]></PANAGER_FORGLOVE_02>
+  <PANAGER_FORGLOVE_03><![CDATA[The key to the Great Hall? Hahahahahaha...don't make me laugh! You won't get it just like that. ]]></PANAGER_FORGLOVE_03>
+  <PANAGER_FORGLOVE_04><![CDATA[Only the one who manages to solve a tricky riddle will get the key.]]></PANAGER_FORGLOVE_04>
+  <PANAGER_FORGLOVE_05><![CDATA[The riddle is in the clock. Ha, you'll never figure it out!]]></PANAGER_FORGLOVE_05>
+  <PANAGER_FORGLOVE_06><![CDATA[Tricky, that riddle, isn't it? Ha! As long as no one has solved the riddle, this door is staying locked!]]></PANAGER_FORGLOVE_06>
+  <PANAGER_FORGLOVE_07><![CDATA[What? How? Incredible! You solved the riddle and found the key!?! You can now open the door to the Great Hall. ]]></PANAGER_FORGLOVE_07>
+  <PANAGER_FORGLOVE_08><![CDATA[But watch out! That room is cursed! A wedding was supposed to take place there, but the bride never showed up. ]]></PANAGER_FORGLOVE_08>
+  <PANAGER_FORGLOVE_09><![CDATA[Why not?]]></PANAGER_FORGLOVE_09>
+  <PANAGER_FORGLOVE_10><![CDATA[Because I abducted her, ha ha ha!]]></PANAGER_FORGLOVE_10>
+  <QUEST_HINT_01><![CDATA[Hello! You have to finish the quest you are playing right now before you can play my adventure. Come back then.]]></QUEST_HINT_01>
+  <RIDDLE_FORGLOVE_CLOCK><![CDATA[Amalura and Joshua want to get married at 14:00. Joshua is waiting for Amalura at the church, where Amalura is supposed to meet him. At 13:45, Amalura has managed to make it there half way. If she continues to walk at the same speed, she will be there 5 minutes before the ceremony. 
+
+When did Amalura leave? Move the big hand of the clock. ]]></RIDDLE_FORGLOVE_CLOCK>
+  <WARNING_FINISH_QUEST_TILL_DEATH><![CDATA[You have $number_of_days$ days left to finish the Amalura's Love Story quest.]]></WARNING_FINISH_QUEST_TILL_DEATH>
+</snippets>

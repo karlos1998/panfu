@@ -1,0 +1,113 @@
+<config check="dfbf43a345c01c81b7b2b68d218bee0b">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="tilldeath" start="Apr 2 2009" finish="Apr 19 2009" check="492be4fb7231463"/>
+    <date id="pompomQuest19" start="Sep 19 2009" finish="Sep 20 2009" check="bb4b990f874d3f0"/>
+    <date id="summerQuest" start="Aug 15 2010" finish="Aug 16 2010" check="8d47f15afe5b1c2"/>
+    <date id="summerQuest2" start="Aug 18 2010" finish="Aug 19 2010" check="ede102aa3f8364f"/>
+    <date id="backToSchool" start="Aug 22 2012" finish="Sep 19 2012" check="463f76aafbcab9a"/>
+  </dates>
+  <module>
+    <elements>
+      <element type="bdayDoor" button="1" visible="0"/>
+      <element id="saxophone" button="1" visible="1">
+        <checks>
+          <visible value="1" gamestate="121,0,40" date="backToSchool"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="backToSchool.saxophoneClicked" type="backToSchool"/>
+      </element>
+      <element id="giftBox" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="44,2,10"/>
+        </checks>
+        <button type="click" click="3"/>
+        <message value="giftshopGiftClicked" type="welcomeTour"/>
+      </element>
+      <element id="circle" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="44,1,20"/>
+        </checks>
+      </element>
+      <element id="townArrow" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="44,2,12"/>
+        </checks>
+      </element>
+      <element id="stoned_guitars" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,440-441" date="summerQuest" requestHasOneActiveItem="102410"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertGuitars" type="summerQuest"/>
+      </element>
+      <element id="stoned_lighter" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,480-481" date="summerQuest2" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertLighter" type="summerQuest"/>
+      </element>
+      <element id="pompom10" button="1" visible="0">
+        <checks>
+          <visible value="1" date="pompomQuest19" gamestate="8,0,1-2" doesNotHaveOneItem="101047"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="pompomQuest.getItem10" type="pompomQuest"/>
+      </element>
+      <element id="parking" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="44"/>
+        </message>
+      </element>
+      <element type="door1" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door1"/>
+        </message>
+      </element>
+      <element type="door" button="0" visible="1"/>
+      <element type="shoppinglist" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="23"/>
+        </message>
+      </element>
+      <element id="clothes" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="showCatalogue">
+          <name value="Clothes01Catalogue"/>
+        </message>
+      </element>
+      <element id="panfuShop" button="1" visible="0"/>
+      <element id="get_rod" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="0,0,11"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="tilldeath.fishingrod" type="tillDeath" gamestate="0,0,11"/>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="shoppinglist" type="game" name="GAME_NAME_23"/>
+      <tooltip id="parking" type="game" name="GAME_NAME_44"/>
+      <tooltip id="door1" type="door" target="4" angle="-90"/>
+      <tooltip id="clothes" type="catalog" name="CLOTHES_CATALOGUE"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door1" target="4" type="room" x="532" y="188" rad="30"/>
+    </hotspots>
+    <actions>
+      <action id="timeTravelCheck">
+        <timeTravelCheck/>
+      </action>
+    </actions>
+  </module>
+</config>

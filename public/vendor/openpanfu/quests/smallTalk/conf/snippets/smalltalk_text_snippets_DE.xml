@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<snippets date="02.06.2025 22:18:38">
+  <BALLROOM_GRAVE_SPEECH_01><![CDATA[Hello $$name$$! We wish you a spooky Halloween!]]></BALLROOM_GRAVE_SPEECH_01>
+  <BALLROOM_GRAVE_SPEECH_02><![CDATA[Psst... I heard that if there are more than 10 pandas in the ballroom, they all turn into bats!]]></BALLROOM_GRAVE_SPEECH_02>
+  <HELP_SIGN_01><![CDATA[Click and hold on the swimming tire next to the clown to pump it up, but don't click too long or it'll explode!]]></HELP_SIGN_01>
+  <HELP_SIGN_02><![CDATA[Every time you come to the lake, you have to get a new swimming tire.]]></HELP_SIGN_02>
+  <HELP_SIGN_LEVELBOOSTER_01><![CDATA[This is the magical level booster! This machine automatically advances your Panda to the next level on a random day. You never know which day it will be, so make sure you stop by every day!]]></HELP_SIGN_LEVELBOOSTER_01>
+  <HINT_RACINGTRACK_01><![CDATA[Click on one of the cars to drive it around Panfu. Bring the car back here when you're done with it. Sorry, but only Gold Pandas are allowed to drive.]]></HINT_RACINGTRACK_01>
+  <LFT_BIRD><![CDATA[Get the golden hat! Click on the billboard!]]></LFT_BIRD>
+  <PANDIMC_INTROSPEECH_01><![CDATA[Aye, $$name$$! Nice to meet you. If you have a music request, click on the mixer.]]></PANDIMC_INTROSPEECH_01>
+  <TROY_DEFAULTSPEECH_01><![CDATA[If you want a pancake, just click on the pancake in the pan. You can do that, I believe in you!]]></TROY_DEFAULTSPEECH_01>
+  <TROY_DEFAULTSPEECH_02><![CDATA[Once you get a pancake, you will not get another one for an hour. I also need a break.]]></TROY_DEFAULTSPEECH_02>
+  <TROY_INTROSPEECH_01><![CDATA[Excellent, $$name$$. They call me Troy and I provide Panfu with delicious pancakes. Paul the Kid is my best customer, but maybe you will be able to take his place?]]></TROY_INTROSPEECH_01>
+  <UNICORN_HINT_02><![CDATA[You can only ride the unicorn with a special saddle. Ask the horse trainer Horsey for it. You will find Horsey at the Stables. ]]></UNICORN_HINT_02>
+</snippets>

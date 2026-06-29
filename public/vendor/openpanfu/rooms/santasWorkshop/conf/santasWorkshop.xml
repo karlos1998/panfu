@@ -1,0 +1,36 @@
+<config check="f1623ad571f3d825d48940ff899fabd4">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="elve" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="143,0,15-45"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="ELVE_WORKSHOP"/>
+        </message>
+      </element>
+      <element id="christmasWorkshop" button="0" visible="1">
+        <checks>
+          <button value="1" gamestate="143,0,20-25"/>
+        </checks>
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="56"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="christmasWorkshop" type="game" name="GAME_NAME_56"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="80" type="room" x="350" y="430" rad="40" angle="90"/>
+    </hotspots>
+  </module>
+</config>

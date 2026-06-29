@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<snippets date="08.12.2014 15:30:12">
+  <POOL_UPDATE_LIFEGUARD_01><![CDATA[Hi $$name$$! Great to see you! If you'd like to get a cool new swimsuit, you have to find the three different parts.]]></POOL_UPDATE_LIFEGUARD_01>
+  <POOL_UPDATE_LIFEGUARD_02><![CDATA[You need swimming goggles, armbands, and a bathing suit. These are hidden somewhere in Panfu.]]></POOL_UPDATE_LIFEGUARD_02>
+  <POOL_UPDATE_LIFEGUARD_03><![CDATA[Bring all the pieces to me and I'll give you the finished swimming suit.]]></POOL_UPDATE_LIFEGUARD_03>
+  <POOL_UPDATE_LIFEGUARD_04><![CDATA[You can find the swimming goggles today. You'll be able to find a different piece tomorrow.]]></POOL_UPDATE_LIFEGUARD_04>
+  <POOL_UPDATE_LIFEGUARD_05><![CDATA[Today you can find the swimming goggles and the armbands. You'll be able to find the next piece tomorrow.]]></POOL_UPDATE_LIFEGUARD_05>
+  <POOL_UPDATE_LIFEGUARD_06><![CDATA[Today you can find the swimming goggles, the armbands, and the swimming suit.]]></POOL_UPDATE_LIFEGUARD_06>
+  <POOL_UPDATE_LIFEGUARD_07><![CDATA[Great! You've found all of the parts. Now you'll get your complete swimsuit, which you can wear in the pool.]]></POOL_UPDATE_LIFEGUARD_07>
+  <POOL_UPDATE_MESSAGE_01><![CDATA[You've received an item. Go to the lifeguard at the swimming pool.]]></POOL_UPDATE_MESSAGE_01>
+  <POOL_UPDATE_MESSAGE_02><![CDATA[You've received a swimsuit!]]></POOL_UPDATE_MESSAGE_02>
+  <POOL_UPDATE_WAIT_TOMORROW><![CDATA[Come visit me again in one day]]></POOL_UPDATE_WAIT_TOMORROW>
+</snippets>

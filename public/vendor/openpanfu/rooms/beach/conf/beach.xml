@@ -1,0 +1,132 @@
+<config check="9143f22e239728747957282d4fba67c2">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="badRobot" start="Aug 8 2021" finish="Aug 9 2021" check="2d1224ad3b64649"/>
+    <date id="badRobot2" start="Aug 12 2021" finish="Aug 13 2021" check="fff5c846881acbf"/>
+    <date id="saferInternetDay" start="Feb 10 2026" finish="Mar 1 2026" check="d1c5e7a0b4c3e5f"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="1" path="audio/background.mp3" loops="-1"/>
+    <sound id="robotBGM" volume="0.4" path="audio/robotBGM1.mp3" loops="-1" backgroundmusic="1" date="badRobot"/>
+    <sound id="robotBGM2" volume="0.4" path="audio/robotBGM.mp3" loops="-1" backgroundmusic="1" date="badRobot2"/>
+  </sounds>
+  <module>
+    <items>
+      <item id="wetSuit" itemID="100200" name="Diving Suit"/>
+    </items>
+    <elements>
+      <element id="robot" button="0" visible="0">
+        <checks>
+          <visible value="1" date="badRobot" gamestate="124,0,40"/>
+          <visible value="1" date="badRobot2" gamestate="124,0,105"/>
+        </checks>
+      </element>
+      <element id="oscar" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="saferInternetDay"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="dolphinQuiz.talkToOscar" type="dolphinQuiz"/>
+      </element>
+      <element id="starPlant" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="30,0,18"/>
+        </checks>
+        <button type="full" click="1" over="2" out="1" toolTip="101807"/>
+        <message value="newPetsQuest.starPlantClicked" type="newPetsQuest"/>
+      </element>
+      <element id="hospital" button="0" visible="1">
+        <button type="click" click="1"/>
+      </element>
+      <element id="walkarea" frame=":default"/>
+      <element id="npcCastaway" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,0-31"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="tilldeath.castaway" type="tillDeath"/>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="over" over="2" out="1"/>
+      </element>
+      <element id="balloon" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="15"/>
+        </message>
+      </element>
+      <element id="constructorGame" button="1" visible="0"/>
+      <element id="telescope" button="1" visible="0">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="showExternalMovie" type="movieplayer">
+          <asset value="underwater"/>
+          <filters value="peephole"/>
+        </message>
+      </element>
+      <element id="pier" button="1" visible="0">
+        <checks>
+          <visible value="1" requestHasOneItem="100200"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="pier"/>
+        </message>
+        <message value="beach.giveDivingSuit"/>
+      </element>
+      <element id="pierNoSuit" button="1" visible="0">
+        <checks>
+          <visible value="1" doesNotHaveOneItem="100200"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="beach.giveDivingSuit"/>
+      </element>
+      <element id="jumpIn" button="0" visible="1"/>
+    </elements>
+    <tooltips>
+      <tooltip id="balloon" type="game" name="GAME_NAME_15"/>
+      <tooltip id="constructorGame" type="game" name="GAME_NAME_43"/>
+      <tooltip id="pier" type="door" target="27" angle="30"/>
+      <tooltip id="pierNoSuit" type="door" target="27" angle="30"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="24" type="room" x="396" y="87" rad="45" angle="-50"/>
+      <hotspot target="12" type="room" x="236" y="151" rad="45" angle="-135"/>
+      <hotspot target="3" type="room" x="11" y="288" rad="45" angle="170"/>
+      <hotspot id="pier" type="action" x="391" y="299" rad="30" on="1">
+        <checks>
+          <target value="enterSeaWorld"/>
+        </checks>
+      </hotspot>
+      <hotspot target="54" type="room" x="80" y="220" rad="45" angle="270" disableWithItem="104152"/>
+    </hotspots>
+    <actions>
+      <action id="putOnWetsuit">
+        <showPopup text="INACTIVE_ITEM_FOR_ROOM" type="alert"/>
+      </action>
+      <action id="enterSeaWorld">
+        <handleAnimation path="elements/jumpInAni" com="play" frame="3"/>
+        <stopAvatar/>
+        <showAvatar vis="0"/>
+        <blockScreen block="1"/>
+      </action>
+      <action id="leaveSeaWorld">
+        <handleAnimation path="elements/wadeOutAni" com="play" frame="3"/>
+        <showAvatar vis="0"/>
+        <blockScreen block="1"/>
+      </action>
+      <action id="jumpInAniFinished">
+        <blockScreen block="0"/>
+        <joinRoom room="27"/>
+      </action>
+      <action id="wadeOutAniFinished">
+        <blockScreen block="0"/>
+        <showAvatar vis="1"/>
+      </action>
+      <action id="diveIn">
+        <playSound id="splash"/>
+      </action>
+    </actions>
+  </module>
+</config>

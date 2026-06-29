@@ -1,0 +1,296 @@
+<config check="b44cc2aa2582e687be71a06635a768d2">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.2" path="audio/background.mp3" loops="-1"/>
+    <sound id="laughPirate" volume="1" path="audio/laughPirate.mp3"/>
+    <sound id="laughSkull" volume="1" path="audio/laughSkull.mp3"/>
+    <sound id="fun" volume="1" path="audio/fun.mp3"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="lostTesting" start="Nov 11 2009" finish="Nov 26 2009" check="ab1a35dbadcb04d"/>
+    <date id="petsHomeQuest" start="Mar 16 2010" finish="Mar 21 2010" check="96395eb591ba12a"/>
+    <date id="summerQuest1" start="Jul 15 2010" finish="Jul 16 2010" check="9b86632e1418439"/>
+    <date id="summerQuest2" start="Jul 20 2010" finish="Aug 2 2010" check="251c0671acc7efa"/>
+    <date id="summerQuest3" start="Jul 25 2010" finish="Jul 26 2010" check="511c529fc8b10f2"/>
+    <date id="summerQuest4" start="Aug 23 2010" finish="Aug 24 2010" check="2284a7aea2c7421"/>
+    <date id="bringSpring2" start="Mar 7 2012" finish="Mar 28 2012" check="249bd7e42acf49d"/>
+    <date id="treeMonster" start="Jun 12 2012" finish="Jun 27 2012" check="35f0e427248d365"/>
+  </dates>
+  <module>
+    <waterBombReactions>
+      <zone idTarget="skull" reaction="skullWaterBombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="pistol" reaction="pistolWaterBombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="map" reaction="mapWaterBombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="william" reaction="williamWaterBombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+    </waterBombReactions>
+    <elements hasshareditems="1">
+      <element id="manny" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="110,0,90-120" date="bringSpring2"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="bringSpringTalkedToMannyHB" type="bringSpring"/>
+        <message value="talkToNPC" type="client">
+          <id value="MANNY_BAR"/>
+        </message>
+      </element>
+      <element id="stoned_barrel" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,90-91" date="summerQuest1"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertBarrel" type="summerQuest"/>
+      </element>
+      <element id="hammerSQ" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,143-145" date="summerQuest2" doesNotHaveOneItem="102293"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.getHammer" type="summerQuest"/>
+      </element>
+      <element id="stoned_window" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,210-211" date="summerQuest3"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertWindow" type="summerQuest"/>
+      </element>
+      <element id="stoned_candle" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,530-531" date="summerQuest4" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertCandle" type="summerQuest"/>
+      </element>
+      <element id="doorHarbour" type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="doorHarbour"/>
+        </message>
+      </element>
+      <element id="cup1" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup1"/>
+        </message>
+      </element>
+      <element id="cup2" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup2"/>
+        </message>
+      </element>
+      <element id="cup3" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup3"/>
+        </message>
+      </element>
+      <element id="cup4" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup4"/>
+        </message>
+      </element>
+      <element id="cup5" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup5"/>
+        </message>
+      </element>
+      <element id="cup6" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup6"/>
+        </message>
+      </element>
+      <element id="cup7" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup7"/>
+        </message>
+      </element>
+      <element id="cup8" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup8"/>
+        </message>
+      </element>
+      <element id="cup9" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup9"/>
+        </message>
+      </element>
+      <element id="cup10" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup10"/>
+        </message>
+      </element>
+      <element id="cup11" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup11"/>
+        </message>
+      </element>
+      <element id="cup12" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickCup" type="*">
+          <id value="cup12"/>
+        </message>
+      </element>
+      <element id="bottle1" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="clickBottle" type="*">
+          <id value="bottle1"/>
+        </message>
+      </element>
+      <element id="sit0" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="sit"/>
+          <itemID value="0"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="sit"/>
+          <itemID value="0"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="0"/>
+        </message>
+      </element>
+      <element id="sit1" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="sit"/>
+          <itemID value="1"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="sit"/>
+          <itemID value="1"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="1"/>
+        </message>
+      </element>
+      <element id="sit2" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="sit"/>
+          <itemID value="2"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="sit"/>
+          <itemID value="2"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="2"/>
+        </message>
+      </element>
+      <element id="sit3" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="sit"/>
+          <itemID value="3"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="sit"/>
+          <itemID value="3"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="3"/>
+        </message>
+      </element>
+      <element id="william" button="1" visible="1">
+        <checks>
+          <visible value="0" gamestate="2,0,20-239"/>
+          <visible value="1" gamestate="73,0,800"/>
+          <visible value="1" gamestate="9,0,5-9"/>
+          <visible value="1" gamestate="15,0,1-5"/>
+          <visible value="1" gamestate="15,0,63-74"/>
+          <visible value="1" gamestate="124,0,175"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2" stopWalk="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="WILLIAM_PIRATEBAR"/>
+        </message>
+      </element>
+      <element id="hammer" button="0" visible="0">
+        <checks>
+          <visible value="1" date="petsHomeQuest" gamestate="29,0,10-50" doesNotHaveOneItem="101768"/>
+        </checks>
+        <checks>
+          <button value="1" date="petsHomeQuest" gamestate="29,0,10-50" doesNotHaveOneItem="101768"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="petsHomeQuest.giveItem8" type="petsHomeQuest"/>
+      </element>
+      <element id="parrot" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,75-999"/>
+        </checks>
+      </element>
+      <element id="door2" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,6-999"/>
+          <visible value="1" gamestate="138,0,230"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door2"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":petshome" date="petsHomeQuest"/>
+          <frame value=":summerQuest1" date="summerQuest1"/>
+          <frame value=":summerQuest2" date="summerQuest2"/>
+          <frame value=":summerQuest3" date="summerQuest3"/>
+        </checks>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="doorHarbour" type="door" target="24" angle="1"/>
+      <tooltip id="door2" type="door" target="44" angle="90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="doorHarbour" target="24" type="room" x="685" y="298" rad="40"/>
+      <hotspot type="action" target="hs_sit0" x="708" y="411" rad="45" stop="1" into="0"/>
+      <hotspot type="action" target="hs_sit1" x="467" y="236" rad="45" stop="1" into="0"/>
+      <hotspot type="action" target="hs_sit2" x="320" y="415" rad="35" stop="1" into="0"/>
+      <hotspot type="action" target="hs_sit3" x="623" y="247" rad="45" stop="1" into="0"/>
+      <hotspot id="door2" target="44" type="action" x="370" y="317" rad="40" on="1">
+        <checks>
+          <target value="allowEntryBarBasement" gamestate="15,0,6-999"/>
+          <target value="allowEntryBarBasement" gamestate="138,0,230"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="allowEntryBarBasement">
+        <joinRoom room="44"/>
+        <message value="lostLoverQuest.enterBasement" type="theLostLover"/>
+      </action>
+      <action id="hs_sit0">
+        <requestInteractSharedItem initial="sit" itemID="0" x="705" y="403" direction="left_down" zsortposition="500"/>
+        <updateMoodValue action="sitDown_icecreamparlor"/>
+      </action>
+      <action id="hs_sit1">
+        <requestInteractSharedItem initial="sit" itemID="1" x="459" y="230" direction="right_up" zsortposition="500"/>
+        <updateMoodValue action="sitDown_icecreamparlor"/>
+      </action>
+      <action id="hs_sit2">
+        <requestInteractSharedItem initial="sit" itemID="2" x="317" y="399" direction="left_down" zsortposition="500"/>
+        <updateMoodValue action="sitDown_icecreamparlor"/>
+      </action>
+      <action id="hs_sit3">
+        <requestInteractSharedItem initial="sit" itemID="3" x="616" y="245" direction="left_down" zsortposition="500"/>
+        <updateMoodValue action="sitDown_icecreamparlor"/>
+      </action>
+    </actions>
+  </module>
+</config>

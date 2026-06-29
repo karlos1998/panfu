@@ -1,0 +1,49 @@
+<config check="0d678426ce5e15c44d8e35e68faf12c3">
+  <snippets base="conf/snippets/"/>
+  <assets>
+    <asset id="profileAsset" path="assets/profileAssets.swf"/>
+  </assets>
+  <module>
+    <colors myBackground="#D9EFD7" otherBackground="#D5EDE6"/>
+    <fieldMaxChars small="25" large="100"/>
+    <profile_pages>
+      <page id="avatarPage" premium="false">
+        <element id="Avatar2D"/>
+      </page>
+      <page id="generalData" premium="false">
+        <element id="coins" premium="false" fieldX="55" fieldY="15" fieldWidth="150" fieldHeight="22"/>
+        <element id="gender" premium="false" fieldX="55" fieldY="45" fieldWidth="60" fieldHeight="22"/>
+        <element id="age" premium="false" fieldX="148" fieldY="45" fieldWidth="30" fieldHeight="22"/>
+        <element id="birthday" premium="false" fieldX="55" fieldY="76" fieldWidth="110" fieldHeight="22"/>
+        <element id="zodiac" premium="false" fieldX="152" fieldY="76" fieldWidth="60" fieldHeight="22"/>
+        <element id="daysTillBirthday" premium="false" fieldX="55" fieldY="103" fieldWidth="160" fieldHeight="22"/>
+        <element id="buddies" premium="false" fieldX="55" fieldY="135" fieldWidth="150" fieldHeight="22"/>
+        <element id="bestFriend" premium="false" iconX="5" iconY="5" fieldX="55" fieldY="168" fieldWidth="150" fieldHeight="22"/>
+        <element id="daysOnPanfu" premium="false" iconX="5" iconY="5" fieldX="55" fieldY="196" fieldWidth="150" fieldHeight="22"/>
+      </page>
+      <page id="personalData1" premium="false">
+        <element id="favouriteBook" premium="false" fieldX="32" fieldY="15" fieldWidth="170" fieldHeight="22" maxChars="small"/>
+        <element id="favouriteMovie" premium="false" fieldX="32" fieldY="45" fieldWidth="170" fieldHeight="22" maxChars="small"/>
+        <element id="favouriteColor" premium="false" fieldX="32" fieldY="75" fieldWidth="170" fieldHeight="22" maxChars="small"/>
+        <element id="favouriteHobby" premium="true" fieldX="32" fieldY="105" fieldWidth="170" fieldHeight="22" maxChars="small"/>
+        <element id="favouriteSong" premium="false" fieldX="32" fieldY="135" fieldWidth="170" fieldHeight="22" maxChars="small"/>
+        <element id="favouriteSingerBand" premium="false" fieldX="32" fieldY="165" fieldWidth="170" fieldHeight="22" maxChars="small"/>
+        <element id="favouriteSubject" premium="false" fieldX="32" fieldY="195" fieldWidth="170" fieldHeight="22" maxChars="small"/>
+      </page>
+      <page id="personalData2" premium="false">
+        <element id="favouriteSport" premium="false" fieldX="51" fieldY="15" fieldWidth="170" fieldHeight="22" maxChars="small"/>
+        <element id="favouriteAnimal" premium="false" fieldX="51" fieldY="45" fieldWidth="170" fieldHeight="22" maxChars="small"/>
+        <element id="relationshipStatus" premium="true" fieldX="51" fieldY="75" fieldWidth="170" fieldHeight="22" maxChars="small"/>
+        <element id="myMotto" premium="false" fieldX="30" fieldY="141" fieldWidth="180" fieldHeight="85" maxChars="small"/>
+      </page>
+      <page id="personalData3" premium="false">
+        <element id="bestCharacteristic" premium="true" fieldX="22" fieldY="45" fieldWidth="175" fieldHeight="52" maxChars="large"/>
+        <element id="worstCharacteristic" premium="true" fieldX="22" fieldY="135" fieldWidth="175" fieldHeight="85" maxChars="large"/>
+      </page>
+      <page id="personalData4" premium="false">
+        <element id="likeMost" premium="false" fieldX="35" fieldY="45" fieldWidth="175" fieldHeight="52" maxChars="large"/>
+        <element id="likeLeast" premium="false" fieldX="35" fieldY="135" fieldWidth="175" fieldHeight="85" maxChars="large"/>
+      </page>
+    </profile_pages>
+  </module>
+</config>

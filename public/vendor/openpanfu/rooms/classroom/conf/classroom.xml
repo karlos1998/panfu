@@ -1,0 +1,61 @@
+<config check="d4b5cd3af67a3a57a0a038866cbf4e06">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="badRobot3" start="Aug 18 2021" finish="Aug 25 2021" check="fcf71ff99e446d5"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="tape" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="124,0,195" date="badRobot3"/>
+        </checks>
+        <button type="overClick" click="2" over="2" out="1"/>
+        <message value="badRobot.tapeClicked" type="badRobot"/>
+      </element>
+      <element id="candys" button="0" visible="0"/>
+      <element id="speaker1" button="0" visible="1"/>
+      <element id="speaker2" button="0" visible="1"/>
+      <element id="clown" button="1" visible="0"/>
+      <element id="penny2" button="1" visible="0"/>
+      <element id="yoyo" button="1" visible="0"/>
+      <element type="screensaver" button="0" visible="0"/>
+      <element id="blackboard" button="1" visible="1">
+        <button type="overClick" over="3" click="1"/>
+      </element>
+      <element id="maths" button="1" visible="1">
+        <button type="full" click="1" over="3" out="2"/>
+        <message value="askJoinGame" type="client">
+          <game value="26"/>
+        </message>
+      </element>
+      <element id="webschool" button="0" visible="0"/>
+      <element id="map" button="1" visible="1">
+        <button type="full" click="1" over="3" out="21"/>
+        <message value="askJoinGame" type="client">
+          <game value="27"/>
+        </message>
+      </element>
+      <element id="superlingua" button="1" visible="0">
+        <button type="full" click="1" over="3" out="2"/>
+        <message value="askJoinGame" type="client">
+          <game value="29"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips>
+      <tooltip id="maths" type="game" name="GAME_NAME_26"/>
+      <tooltip id="map" type="game" name="GAME_NAME_27"/>
+      <tooltip id="superlingua" type="game" name="GAME_NAME_29"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="27" type="room" x="746" y="416" rad="40" angle="35"/>
+    </hotspots>
+  </module>
+</config>

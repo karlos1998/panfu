@@ -1,0 +1,238 @@
+<config check="f66b8858da18cd6cbfd9eb2833206a7f">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/background2.mp3" loops="-1" backgroundmusic="0"/>
+    <sound id="pirateParty" volume="0.4" path="audio/pirateParty.mp3" loops="-1" backgroundmusic="1" date="pirateVacation" gamestate="138,0,235"/>
+  </sounds>
+  <dates>
+    <date id="pirateparty" start="Jun 17 2009" finish="Jul 31 2009" check="6fc1e7f07a395cc"/>
+    <date id="pirateVacation" start="Aug 21 2013" finish="Aug 28 2013" check="b3998d72922de34"/>
+    <date id="pirateVacation2" start="Aug 7 2013" finish="Aug 21 2013" check="31cb97e242582db"/>
+    <date id="pirateVacation3" start="Jul 31 2013" finish="Aug 21 2013" check="07bdae0b4f39857"/>
+  </dates>
+  <module>
+    <waterBombReactions>
+      <zone idTarget="npcWilliam" reaction="williamWaterBombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+    </waterBombReactions>
+    <elements>
+      <element id="Evron" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="138,0,5-54" date="pirateVacation3"/>
+          <visible value="1" gamestate="138,0,150-160" date="pirateVacation3"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="pirateVacation.talkToEvron" type="pirateVacation"/>
+      </element>
+      <element id="darkCloud1" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="138,0,15" date="pirateVacation3"/>
+          <visible value="1" gamestate="138,0,120" date="pirateVacation3"/>
+        </checks>
+      </element>
+      <element id="darkCloud2" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="138,0,20-115" date="pirateVacation3"/>
+        </checks>
+      </element>
+      <element id="pp_confeti1" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="pp_tables" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="pp_confeti2" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="pp_table1" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="pp_table2" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="pp_decoration" button="0" visible="0">
+        <checks>
+          <visible value="1" date="pirateVacation" gamestate="138,0,235"/>
+        </checks>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":pirateparty" date="pirateparty"/>
+        </checks>
+      </element>
+      <element id="wRock" button="1" visible="1" mouseEnabled="false">
+        <checks>
+          <mouseEnabled value="true" gamestate="2,0,170"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="wRock">
+          <name value="wRock"/>
+        </message>
+      </element>
+      <element id="i1Rock" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="i1Rock">
+          <name value="i1Rock"/>
+        </message>
+      </element>
+      <element id="l1Rock" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="l1Rock">
+          <name value="l1Rock"/>
+        </message>
+      </element>
+      <element id="l2Rock" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="l2Rock">
+          <name value="l2Rock"/>
+        </message>
+      </element>
+      <element id="i2Rock" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="i2Rock">
+          <name value="i2Rock"/>
+        </message>
+      </element>
+      <element id="aRock" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="aRock">
+          <name value="aRock"/>
+        </message>
+      </element>
+      <element id="mRock" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="mRock">
+          <name value="mRock"/>
+        </message>
+      </element>
+      <element id="tRock" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="tRock">
+          <name value="tRock"/>
+        </message>
+      </element>
+      <element id="xRock" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="xRock">
+          <name value="xRock"/>
+        </message>
+      </element>
+      <element id="sRock" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="sRock">
+          <name value="sRock"/>
+        </message>
+      </element>
+      <element id="crabMother" button="1" visible="1">
+        <button type="click" over="2" out="1" click="1"/>
+        <message value="crabMother" sendClickTarget="true">
+          <name value="crabMother"/>
+        </message>
+      </element>
+      <element id="cocoNutMother" button="1" visible="1">
+        <button type="click" over="2" out="1" click="1"/>
+        <message value="cocoNutMother" sendClickTarget="true">
+          <name value="cocoNutMother"/>
+        </message>
+      </element>
+      <element id="cocoMC2" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC2" sendClickTarget="true">
+          <name value="cocoMC2"/>
+        </message>
+      </element>
+      <element id="cocoMC3" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC3" sendClickTarget="true">
+          <name value="cocoMC3"/>
+        </message>
+      </element>
+      <element id="cocoMC4" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC4" sendClickTarget="true">
+          <name value="cocoMC4"/>
+        </message>
+      </element>
+      <element id="cocoMC5" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC5" sendClickTarget="true">
+          <name value="cocoMC5"/>
+        </message>
+      </element>
+      <element id="cocoMC6" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC6" sendClickTarget="true">
+          <name value="cocoMC6"/>
+        </message>
+      </element>
+      <element id="cocoMC7" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC7" sendClickTarget="true">
+          <name value="cocoMC7"/>
+        </message>
+      </element>
+      <element id="cocoMC8" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC8" sendClickTarget="true">
+          <name value="cocoMC8"/>
+        </message>
+      </element>
+      <element id="cocoMC9" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,180"/>
+        </checks>
+        <button type="click" click="1" clickFrame="3" clickOnce="true"/>
+        <message value="cocoMC9" sendClickTarget="true">
+          <name value="cocoMC9"/>
+        </message>
+      </element>
+      <element id="npcWilliam" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="2,0,150-170"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1" stopWalk="0"/>
+        <message value="talkToNPC" type="mysonisapirate">
+          <id value="npcWilliam"/>
+        </message>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="38" type="room" x="752" y="220" rad="60" angle="5"/>
+    </hotspots>
+    <properties/>
+  </module>
+</config>

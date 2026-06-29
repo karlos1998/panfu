@@ -13,10 +13,11 @@ class StaticFlashClientRepository implements FlashClientRepository
             'ruffleScript' => config('panfu.game_client.ruffle_script'),
             'swfUrl' => config('panfu.game_client.swf_url'),
             'baseUrl' => config('panfu.game_client.base_url'),
+            'informationServerUrl' => config('panfu.game_client.information_server'),
             'serverName' => config('panfu.game_client.server_name'),
             'flashvars' => [
-                'infoServer' => config('panfu.game_client.info_server'),
-                'lang' => config('panfu.game_client.language'),
+                'iServer' => config('panfu.game_client.information_server'),
+                'langId' => config('panfu.game_client.language_id'),
                 'mode' => config('panfu.game_client.mode'),
             ],
         ];

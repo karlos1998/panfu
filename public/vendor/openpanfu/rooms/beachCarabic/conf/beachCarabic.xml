@@ -1,0 +1,112 @@
+<config check="938b5c8d7709c7813491e9f92afbfa26">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="bigFoot" start="Feb 12 2014" finish="May 12 2099" check="4798dcace3cfbae"/>
+    <date id="mysonisapirate" start="May 19 2009" finish="May 19 2099" check="d50d92b30529e58"/>
+    <date id="surfer" start="Jun 29 2009" finish="Jun 29 2099" check="f6103d014d75227"/>
+    <date id="eclipse2022" start="Nov 7 2022" finish="Nov 9 2022" check="3b5385efc66ff8f"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <dates/>
+  <module>
+    <elements>
+      <element id="background" button="0" visible="1">
+        <checks>
+          <frame value=":eclipse" date="eclipse2022"/>
+        </checks>
+      </element>
+      <element id="eclipseOverlay" button="0" visible="0">
+        <checks>
+          <visible value="1" date="eclipse2022"/>
+        </checks>
+      </element>
+      <element id="table" button="1" visible="0">
+        <checks>
+          <button value="0" requestHasOneItem="101111"/>
+          <visible value="1" date="eclipse2022"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="getEclipseGlasses" type="room"/>
+      </element>
+      <element id="BF" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="25,0,0-11" date="bigFoot"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="bigFootQuest.talkToBigFoot" type="bigFootQuest"/>
+      </element>
+      <element id="BF2" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="25,0,12-34" date="bigFoot"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="bigFootQuest.talkToBigFoot2" type="bigFootQuest"/>
+      </element>
+      <element id="ship" button="0" visible="1">
+        <checks>
+          <visible value="1" gamestate="86,0,20-70"/>
+        </checks>
+      </element>
+      <element id="rainbowPlant" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="30,0,22"/>
+        </checks>
+        <button type="full" click="1" over="2" out="1" toolTip="101804"/>
+        <message value="newPetsQuest.rainbowPlantClicked" type="newPetsQuest"/>
+      </element>
+      <element id="octopus" button="1" visible="0">
+        <checks>
+          <visible value="1" date="mysonisapirate"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="unmarkAllMarkedNPCs" type="questLogBook"/>
+        <message value="talkToNPC" type="mysonisapirate">
+          <id value="FRED"/>
+        </message>
+      </element>
+      <element id="surfer" button="1" visible="1">
+        <button type="click" click="3"/>
+        <message value="SurferConsts.playRandomSong" type="surfer"/>
+        <message value="unmarkAllMarkedNPCs" type="questLogBook"/>
+        <message value="talkToNPC" type="client">
+          <id value="LENNY_BEACH"/>
+        </message>
+      </element>
+      <element id="penny" visible="0" button="1">
+        <checks>
+          <visible value="1" gamestate="82,0,15-25"/>
+          <button value="1" gamestate="82,0,15-25"/>
+          <visible value="1" date="surfer" gamestate="4,0,70-85"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="PENNY"/>
+        </message>
+      </element>
+      <element id="board" visible="1" button="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="48"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":eclipse" date="eclipse2022"/>
+          <frame value=":surfer" date="surfer"/>
+        </checks>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="board" type="game" name="GAME_NAME_48"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="55" type="room" x="30" y="230" rad="45" angle="180"/>
+    </hotspots>
+    <actions/>
+    <properties/>
+  </module>
+</config>

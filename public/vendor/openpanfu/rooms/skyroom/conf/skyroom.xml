@@ -1,0 +1,29 @@
+<config check="f8b7372af1d4b68d067ae58af4820c71">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates/>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/partyBackground.mp3" loops="-1" backgroundmusic="0"/>
+  </sounds>
+  <module>
+    <items/>
+    <elements>
+      <element id="blossoms" button="0" visible="1">
+        <checks>
+          <button value="1" gamestate="110,0,140-150"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="bringSpring.BlossomClicked" type="bringSpring"/>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips/>
+    <hotspots>
+      <hotspot target="53" type="room" x="88" y="67" rad="20"/>
+      <hotspot target="12" type="room" x="366" y="416" rad="35" user="1" angle="90"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

@@ -1,0 +1,50 @@
+<config check="25715483c57434c8ec95a88955e67cc5">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="christmas" start="Dec 1 2025" finish="Dec 24 2025" check="1d56b91a70d330e"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="elve" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="143,0,15" gamestate2="143,1,0"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="ELVE_NORTHPOLE"/>
+        </message>
+      </element>
+      <element id="sledge" button="1" visible="1">
+        <button type="click" click="3"/>
+        <message value="christmas.sledgeClicked" type="christmas"/>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="79" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="79" type="action" x="700" y="245" rad="40" angle="-90">
+        <checks>
+          <type value="action"/>
+          <target value="workshopCheck"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="workshopCheck">
+        <christmas.enterWorkshop/>
+      </action>
+    </actions>
+  </module>
+</config>

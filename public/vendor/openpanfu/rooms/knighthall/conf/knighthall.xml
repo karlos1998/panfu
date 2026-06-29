@@ -1,0 +1,84 @@
+<config check="25731882bfd869c8b82bafea0bb0d46c">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/background2.mp3" loops="-1" backgroundmusic="0"/>
+  </sounds>
+  <dates>
+    <date id="forgottenLove" start="Jul 11 2012" finish="Jul 24 2012" check="884c329e2c6dc08"/>
+    <date id="wedding" start="Jul 18 2012" finish="Jul 24 2012" check="8296d7002e23d62"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="ghosts" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,102-160" date="forgottenLove"/>
+          <button value="1" gamestate="119,0,105-160" date="forgottenLove"/>
+          <frame value=":idle" gamestate="119,0,105-160"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="talkToNPC" type="client">
+          <id value="GHOSTS_KNIGHTHALL"/>
+        </message>
+      </element>
+      <element id="wedding1" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,155-999" date="wedding"/>
+        </checks>
+      </element>
+      <element id="wedding2" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,155-999" date="wedding"/>
+        </checks>
+      </element>
+      <element id="wedding3" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,155-999" date="wedding"/>
+        </checks>
+      </element>
+      <element id="wedding4" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,155-999" date="wedding"/>
+        </checks>
+      </element>
+      <element id="wedding5" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,155-999" date="wedding"/>
+        </checks>
+      </element>
+      <element id="wedding6" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,155-999" date="wedding"/>
+        </checks>
+      </element>
+      <element id="wedding7" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,155-999" date="wedding"/>
+        </checks>
+      </element>
+      <element id="wedding8" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,155-999" date="wedding"/>
+        </checks>
+      </element>
+      <element id="wedding9" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,155-999" date="wedding"/>
+        </checks>
+      </element>
+      <element id="wedding10" visible="0" button="0">
+        <checks>
+          <visible value="1" gamestate="119,0,155-999" date="wedding"/>
+        </checks>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips/>
+    <hotspots>
+      <hotspot target="15" type="room" x="390" y="420" rad="30" angle="-270"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

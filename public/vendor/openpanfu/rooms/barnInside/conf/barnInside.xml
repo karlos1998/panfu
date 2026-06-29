@@ -1,0 +1,110 @@
+<config check="0e285107dfcb81acfccd4a76b4109f0f">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/dark_chillout_looped.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="summerQuest" start="Aug 13 2010" finish="Aug 14 2010" check="e47fae01fe2aad0"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="stoned_basket" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,420-421" date="summerQuest" requestHasOneActiveItem="102410"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertBasket" type="summerQuest"/>
+      </element>
+      <element id="elouisePetrace" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="40,0,0-1"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="publicRace.talkToEloise" type="publicRace"/>
+      </element>
+      <element id="pokopetCatalogue" button="1" visible="1" notWalkable="true">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="showCatalogue">
+          <name value="Pokopet01Catalogue"/>
+        </message>
+      </element>
+      <element id="wallBars" button="0" visible="1" frame=":jungle"/>
+      <element id="seedPot" button="0" visible="0"/>
+      <element id="slide" button="0" visible="1" frame=":jungle"/>
+      <element id="bock" button="0" visible="1" frame=":jungle"/>
+      <element id="basket" button="0" visible="1" frame=":jungle"/>
+      <element id="balls" button="0" visible="1" frame=":jungle"/>
+      <element id="climbingWall" button="0" visible="1"/>
+      <element id="npcElouise" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,0,73-76"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="eloise_npc"/>
+        </message>
+      </element>
+      <element id="blueDragon" button="0" visible="1" frame=":happy">
+        <checks>
+          <visible value="0" gamestate="30,0,1-73"/>
+        </checks>
+        <checks>
+          <frame value=":happy" gamestate="33,0,52-99"/>
+        </checks>
+      </element>
+      <element id="paradiseBird" button="0" visible="1" frame=":happy">
+        <checks>
+          <visible value="0" gamestate="30,0,1-73"/>
+        </checks>
+        <checks>
+          <frame value=":happy" gamestate="33,0,52-99"/>
+        </checks>
+      </element>
+      <element id="fox" button="0" visible="1" frame=":happy">
+        <checks>
+          <visible value="0" gamestate="30,0,1-73"/>
+        </checks>
+        <checks>
+          <frame value=":happy" gamestate="33,0,52-99"/>
+        </checks>
+      </element>
+      <element id="turtle" button="0" visible="1" frame=":happy">
+        <checks>
+          <visible value="0" gamestate="30,0,1-73"/>
+        </checks>
+        <checks>
+          <frame value=":happy" gamestate="33,0,52-99"/>
+        </checks>
+      </element>
+      <element id="hedgeHog" button="0" visible="1" frame=":happy">
+        <checks>
+          <visible value="0" gamestate="30,0,1-73"/>
+        </checks>
+        <checks>
+          <frame value=":happy" gamestate="33,0,52-99"/>
+        </checks>
+      </element>
+      <element id="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":summerQuest" date="summerQuest"/>
+        </checks>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="55" angle="-90"/>
+      <tooltip id="pokopetCatalogue" type="catalog" name="POKOPET_CATALOGUE"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="55" type="room" x="269" y="120" rad="40"/>
+    </hotspots>
+  </module>
+</config>

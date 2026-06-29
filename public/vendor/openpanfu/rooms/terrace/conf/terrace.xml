@@ -1,0 +1,103 @@
+<config check="3613cf590667c3b0ae5a0d0fb1f3083f">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="valentines2020" start="Feb 14 2020" finish="Feb 15 2020" check="e47fae01fe2aad0"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="valentines" volume="0.4" path="audio/valentines.mp3" loops="-1" backgroundmusic="1" date="valentines2020"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="flowers" button="0" visible="0">
+        <checks>
+          <visible value="1" date="valentines2020"/>
+        </checks>
+      </element>
+      <element id="windwheel" button="0" visible="0">
+        <button type="click" click="99"/>
+        <message value="transitionQuest.startRotating"/>
+      </element>
+      <element id="telescope" button="0" visible="1">
+        <checks>
+          <visible value="0" gamestate="89,0,10"/>
+          <button value="1" gamestate="67,0,5"/>
+        </checks>
+        <button type="overClick" click="1" over="1" out="1"/>
+        <message value="letsGoThere.telescopeStarted" type="letsGoThere"/>
+      </element>
+      <element id="telescopeNapasapa" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,115"/>
+          <visible value="1" gamestate="137,0,215"/>
+          <visible value="0" gamestate="67,0,1-1000"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="missingElla.telescopeClicked" type="missingElla"/>
+      </element>
+      <element id="fourboom" button="0" visible="1">
+        <checks>
+          <button value="1" gamestate="67,0,0"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="67,0,4999"/>
+        </checks>
+        <button type="full" click="1" over="3" out="2"/>
+        <message value="askJoinGame" type="client">
+          <game value="25"/>
+        </message>
+      </element>
+      <element type="door1" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door1"/>
+        </message>
+      </element>
+      <element type="door2" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door2"/>
+        </message>
+      </element>
+      <element type="door3" button="1" visible="1">
+        <checks>
+          <button value="1" gamestate="73,0,600"/>
+          <button value="1" gamestate="73,0,700"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door3"/>
+        </message>
+      </element>
+      <element id="kungFu" button="1" visible="1">
+        <button type="full" click="1" over="3" out="2"/>
+        <message value="askJoinGame" type="client">
+          <game value="17"/>
+        </message>
+      </element>
+      <element id="mahjong" button="1" visible="1">
+        <button type="full" click="1" over="3" out="2"/>
+        <message value="askJoinGame" type="client">
+          <game value="18"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips>
+      <tooltip id="kungFu" type="game" name="GAME_NAME_17"/>
+      <tooltip id="mahjong" type="game" name="GAME_NAME_18"/>
+      <tooltip id="fourboom" type="gameMulti" name="GAME_NAME_25"/>
+      <tooltip id="door1" type="door" target="20" angle="-120"/>
+      <tooltip id="door2" type="door" target="16" angle="-45"/>
+      <tooltip id="door3" type="door" target="60" angle="-45"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="59" type="room" x="693" y="424" rad="70" angle="1"/>
+      <hotspot id="door1" target="20" type="room" x="195" y="264" rad="15"/>
+      <hotspot id="door2" target="16" type="room" x="631" y="239" rad="30"/>
+      <hotspot id="door3" target="60" type="room" x="90" y="150" rad="20"/>
+    </hotspots>
+  </module>
+</config>

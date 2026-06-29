@@ -1,0 +1,11 @@
+<config check="d9c6b83b5a54bd453effb61a1ee715c9">
+  <snippets path="features/achievements/conf/snippets/achievements_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="achievementPopup" path="assets/achievementPopup.swf" preload="1"/>
+    <asset id="achievementList" path="assets/achievementList.swf" preload="1"/>
+  </assets>
+  <sounds>
+    <sound id="bells" volume="1" path="audio/bells.mp3" loops="1"/>
+  </sounds>
+  <module/>
+</config>

@@ -1,0 +1,58 @@
+<config check="0aca7e179f34c098854b36a0c089db24">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="panfuDefence" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="140,0,35"/>
+          <visible value="1" gamestate="140,0,60-1000"/>
+        </checks>
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="55"/>
+        </message>
+      </element>
+      <element id="eyes" button="0" visible="1">
+        <checks>
+          <button value="1" gamestate="140,0,25"/>
+        </checks>
+        <button type="click" over="1" out="1" click="1"/>
+        <message value="bitterCurse.eyesClicked" type="bitterCurse"/>
+      </element>
+      <element id="creeps" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="140,0,20-35"/>
+        </checks>
+      </element>
+      <element id="kamaria" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="140,0,20-45"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="KAMARIA_FOREST"/>
+        </message>
+      </element>
+      <element id="Evron" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="140,0,45-50"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="talkToNPC" type="client">
+          <id value="EVRON_FOREST"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="panfuDefence" type="game" name="GAME_NAME_55"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="62" type="room" x="30" y="400" rad="60" angle="160"/>
+    </hotspots>
+  </module>
+</config>

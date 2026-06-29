@@ -1,0 +1,58 @@
+<config check="17eddd86c8878fe29f1e4aa96e257970">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="backToSchool" start="Aug 29 2012" finish="Sep 12 2012" check="be015a5c4396e77"/>
+    <date id="scareCrow" start="Nov 13 2013" finish="Nov 20 2013" check="ef30f7903441bce"/>
+    <date id="badRobot3" start="Aug 18 2021" finish="Aug 25 2021" check="e861e9b33da8dbd"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/background2.mp3" loops="-1" backgroundmusic="0"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="tape" button="1" visible="0">
+        <checks>
+          <visible value="1" date="badRobot3" gamestate="124,0,195"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="badRobot.tapeClicked" type="badRobot"/>
+      </element>
+      <element id="teleporter" button="0" visible="1">
+        <checks>
+          <button value="1" date="scareCrow" gamestate="122,0,180-205"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="scareCrow.teleporterCicked" type="scareCrow"/>
+      </element>
+      <element id="eloise" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="121,0,195-200"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="ELOISE_AQUARIUM"/>
+        </message>
+      </element>
+      <element id="lockFG" button="0" visible="1">
+        <checks>
+          <button value="1" gamestate="121,0,100-185"/>
+          <button value="1" gamestate="121,0,195-1000"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="backToSchool.aquariumEntranceClicked" type="backToSchool"/>
+        <message value="schoolRoom.aquariumEntranceClicked" type="*"/>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips>
+      <tooltip id="teleporter" type="door" target="25" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="27" type="room" x="390" y="420" rad="30" angle="-270"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

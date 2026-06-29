@@ -1,0 +1,19 @@
+<config check="0a6eaf32997356b17705cc04025df2d8">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds/>
+  <dates/>
+  <module>
+    <elements>
+      <element id="calendar" button="1" visible="1">
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="showCalendar"/>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="151" type="room" x="740" y="420" rad="30" angle="45"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

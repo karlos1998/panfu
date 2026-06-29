@@ -1,0 +1,411 @@
+<config check="2efdb97f760a2f857f51570ebd730ff3">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+    <asset id="bookshelf" path="assets/bookshelf.swf"/>
+  </assets>
+  <dates>
+    <date id="tilldeath" start="Apr 2 2009" finish="Apr 9 2099" check="26d23f8a680e269"/>
+    <date id="horsequest" start="Jun 20 2009" finish="Apr 19 2099" check="4b87b70e0477226"/>
+    <date id="welcomeBackPreparation" start="Sep 2 2009" finish="Sep 9 2009" check="f51f2bded5611ad"/>
+    <date id="surfer" start="Jun 29 2009" finish="Jun 29 2099" check="ce6580230bafbd1"/>
+    <date id="backToSchool" start="Sep 8 2009" finish="Sep 28 2009" check="c9869b1c7026b7d"/>
+    <date id="eclipse" start="Sep 29 2009" finish="Oct 13 2009" check="e82da56dfb788bd"/>
+    <date id="ancientMap" start="Nov 10 2009" finish="Nov 24 2009" check="d2373c9d8b7cfa4"/>
+    <date id="ancientMapTesting" start="Nov 10 2009" finish="Nov 17 2009" check="b4d440c01e41d90"/>
+    <date id="pompomQuestDay4" start="Jan 8 2010" finish="Jan 9 2010" check="701746020ea8405"/>
+    <date id="summerQuest" start="Jul 27 2010" finish="Jul 28 2010" check="c57e171818da6a9"/>
+    <date id="summerQuest2" start="Aug 1 2010" finish="Aug 2  2010" check="b1421ac1a31b003"/>
+    <date id="summerQuest3" start="Aug 1 2010" finish="Sep 5  2010" check="d4a26cca3c7c92e"/>
+    <date id="summerQuest4" start="Aug 16 2010" finish="Aug 17  2010" check="d73d7373668924b"/>
+    <date id="summerQuest5" start="Sep 4 2010" finish="Sep 11 2010" check="c30e0b5570fb8f5"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="pig" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="59,0,6"/>
+        </checks>
+        <button type="overClick" click="1" over="3" out="1"/>
+        <message value="leadPouringQuest.getPig"/>
+      </element>
+      <element id="kamaria3" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,652" date="summerQuest5"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="summerQuest.talkToKamaria3" type="summerQuest"/>
+      </element>
+      <element id="stoned_sofa" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,230-231" date="summerQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertSofa" type="summerQuest"/>
+      </element>
+      <element id="stoned_bigchair" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,280-281" date="summerQuest2"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertBigchair" type="summerQuest"/>
+      </element>
+      <element id="stoned_shelf2" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,450-451" date="summerQuest4" requestHasOneActiveItem="102410"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertShelf2" type="summerQuest"/>
+      </element>
+      <element id="prism" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,305" date="summerQuest3" doesNotHaveOneItem="102409"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.getPrism" type="summerQuest"/>
+      </element>
+      <element id="part" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="25,0,20"/>
+        </checks>
+        <button type="overClick" click="2" out="2" over="3"/>
+        <message value="bigFootQuest.getItem3" type="bigFootQuest"/>
+      </element>
+      <element id="pompom" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="pompomQuestDay4" gamestate="8,0,33" doesNotHaveOneItem="101503"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="pompomQuest.getItem38" type="pompomQuest"/>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element id="chronicler" button="1" visible="1">
+        <checks>
+          <visible value="0" requestHasOneActiveItem="104152"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="*">
+          <id value="chronicler"/>
+        </message>
+      </element>
+      <element id="wallMap" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="73,0,5"/>
+        </checks>
+        <button type="overClick" click="1" over="1" out="1"/>
+        <message value="tutorial2.clickWallMap"/>
+      </element>
+      <element id="questBook" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="73,0,15"/>
+        </checks>
+        <button type="overClick" click="1" over="2" out="1"/>
+        <message value="tutorial2.ClickQuestBook"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":summerQuest" date="summerQuest"/>
+          <frame value=":summerQuest2" date="summerQuest2"/>
+          <frame value=":summerQuest5" date="summerQuest5"/>
+        </checks>
+      </element>
+      <element id="devReset" button="1" visible="0">
+        <checks>
+          <visible value="1" date="ancientMapTesting" mode="dev"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="ancientMapQuest.reset" type="ancientMapQuest"/>
+      </element>
+      <element id="devTest" button="1" visible="0">
+        <checks>
+          <visible value="1" date="ancientMapTesting" mode="dev"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="ancientMapQuest.test" type="ancientMapQuest"/>
+      </element>
+      <element id="devTeleport" button="1" visible="0">
+        <checks>
+          <visible value="1" date="ancientMapTesting" mode="dev"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="ancientMapQuest.teleport" type="ancientMapQuest"/>
+      </element>
+      <element id="devGetItem" button="1" visible="0">
+        <checks>
+          <visible value="1" date="ancientMapTesting" mode="dev" gamestate="14,0,1"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="ancientMapQuest.getItem1" type="ancientMapQuest"/>
+      </element>
+      <element id="schoolHat" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="backToSchool" gamestate="7,0,1"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="backToSchoolQuest.getItem1" type="backToSchoolQuest"/>
+      </element>
+      <element id="penny" button="1" visible="0">
+        <checks>
+          <visible value="1" date="surfer" gamestate="4,0,20-60"/>
+          <visible value="1" date="welcomeBackPreparation" gamestate="6,0,7-10"/>
+          <visible value="0" requestHasOneActiveItem="104152"/>
+        </checks>
+        <button type="overClick" click="1" over="2" out="1"/>
+        <message value="talkToNPC" type="surfer">
+          <id value="PENNY_LIB"/>
+        </message>
+        <message value="welcomeBackQuest.talkToPenny" type="welcomeBackQuest"/>
+      </element>
+      <element id="memory" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="4"/>
+        </message>
+      </element>
+      <element id="bookshelf" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="bookshelf" type="rooms"/>
+      </element>
+      <element id="oldbook" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="0,0,7-8"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="tilldeath.book" type="tillDeath"/>
+      </element>
+      <element id="statue" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="0,0,12-18"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.bust" type="tillDeath"/>
+      </element>
+      <element id="brokenstatue" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="0,0,19-32"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.bust" type="tillDeath"/>
+      </element>
+      <element id="saddle_3" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" hasItems="100681,100680" doesNotHaveOneItem="100679" gamestate="3,0,40"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="collectItem" type="horse">
+          <item value="saddle_1"/>
+        </message>
+      </element>
+      <element id="mystCallKamira" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="28,0,52-99"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="callQuest.kamiraClicked" type="mysteriousCall"/>
+      </element>
+      <element id="mystCallCaruso" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="28,0,52-99"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="callQuest.carusoClicked" type="mysteriousCall"/>
+      </element>
+      <element id="chair_0" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="0"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="0"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="0"/>
+        </message>
+      </element>
+      <element id="chair_1" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="1"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="1"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="1"/>
+        </message>
+      </element>
+      <element id="chair_2" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="2"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="2"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="2"/>
+        </message>
+      </element>
+      <element id="chair_3" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="3"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="3"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="3"/>
+        </message>
+      </element>
+      <element id="chair_4" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="4"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="4"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="4"/>
+        </message>
+      </element>
+      <element id="chair_5" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="5"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="5"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="5"/>
+        </message>
+      </element>
+      <element id="chair_6" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="6"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="6"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="6"/>
+        </message>
+      </element>
+      <element id="chair_7" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="7"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="7"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="7"/>
+        </message>
+      </element>
+      <element id="chair_8" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="8"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="8"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="8"/>
+        </message>
+      </element>
+    </elements>
+    <bookshelf>
+      <story id="book_0" name="Story01Catalogue"/>
+      <story id="book_1" name="Story02Catalogue"/>
+      <story id="book_2" name="Story03Catalogue"/>
+      <story id="book_3" name="Story04Catalogue"/>
+      <story id="book_4" name="Story05Catalogue"/>
+      <story id="book_5" name="Story06Catalogue"/>
+    </bookshelf>
+    <tooltips>
+      <tooltip id="memory" type="game" name="GAME_NAME_4"/>
+      <tooltip id="door" type="door" target="1" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="1" type="room" x="419" y="113" rad="30"/>
+      <hotspot type="action" target="sit_chair_0" x="247" y="122" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_1" x="291" y="115" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_2" x="342" y="109" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_3" x="581" y="223" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_4" x="614" y="267" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_5" x="518" y="129" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_6" x="320" y="180" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_7" x="197" y="224" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_8" x="143" y="298" rad="33" stop="1" into="0"/>
+    </hotspots>
+    <actions>
+      <action id="sit_chair_0">
+        <requestInteractSharedItem initial="chair_" itemID="0" x="247" y="122" direction="down_right" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+      <action id="sit_chair_1">
+        <requestInteractSharedItem initial="chair_" itemID="1" x="291" y="115" direction="down_right" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+      <action id="sit_chair_2">
+        <requestInteractSharedItem initial="chair_" itemID="2" x="342" y="109" direction="down_right" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+      <action id="sit_chair_3">
+        <requestInteractSharedItem initial="chair_" itemID="3" x="581" y="223" direction="left_down" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+      <action id="sit_chair_4">
+        <requestInteractSharedItem initial="chair_" itemID="4" x="614" y="267" direction="left_down" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+      <action id="sit_chair_5">
+        <requestInteractSharedItem initial="chair_" itemID="5" x="518" y="129" direction="left_down" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+      <action id="sit_chair_6">
+        <requestInteractSharedItem initial="chair_" itemID="6" x="320" y="180" direction="down_right" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+      <action id="sit_chair_7">
+        <requestInteractSharedItem initial="chair_" itemID="7" x="197" y="224" direction="down_right" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+      <action id="sit_chair_8">
+        <requestInteractSharedItem initial="chair_" itemID="8" x="143" y="298" direction="down_right" zsortposition="450"/>
+        <updateMoodValue action="sitDown_chezbruno"/>
+      </action>
+    </actions>
+  </module>
+</config>

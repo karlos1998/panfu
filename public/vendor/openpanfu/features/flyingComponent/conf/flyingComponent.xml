@@ -1,0 +1,47 @@
+<config check="313f996dc08939dee36b30e0d79dfcf5">
+  <assets>
+    <asset id="waterbomb" path="assets/waterbomb.swf"/>
+    <asset id="snowball" path="assets/SnowBall.swf"/>
+    <asset id="cake" path="assets/cake.swf"/>
+    <asset id="slimebombgreen" path="assets/slimebombGreen.swf"/>
+    <asset id="slimebombblue" path="assets/slimebombBlue.swf"/>
+    <asset id="slimebombSprite" path="assets/SlimebombSprite.swf"/>
+    <asset id="BlueslimebombSprite" path="assets/BlueslimebombSprite.swf"/>
+    <asset id="PinkslimebombSprite" path="assets/PinkslimebombSprite.swf"/>
+    <asset id="hotBomb" path="assets/hotbomb.swf"/>
+    <asset id="flyingCup" path="assets/flyingCup.swf"/>
+    <asset id="flyingBottle" path="assets/flyingBottle.swf"/>
+    <asset id="flyingBottle2" path="assets/flyingBottle2.swf"/>
+    <asset id="flyingPillow" path="assets/flyingPillow.swf"/>
+    <asset id="confetti" path="assets/confetti.swf"/>
+    <asset id="pancake" path="assets/pancake.swf"/>
+    <asset id="candys" path="assets/Candys.swf"/>
+    <asset id="flyingHeart" path="assets/flyingHeart.swf"/>
+    <asset id="flowerPower" path="assets/flowerPower.swf"/>
+  </assets>
+  <module>
+    <elements>
+      <element id="waterbomb" speed="300"/>
+      <element id="snowball" speed="300"/>
+      <element id="cake" speed="300"/>
+      <element id="confetti" speed="300"/>
+      <element id="slimebombgreen" speed="300"/>
+      <element id="slimebombblue" speed="300"/>
+      <element id="slimebombSprite" speed="300"/>
+      <element id="BlueslimebombSprite" speed="300"/>
+      <element id="PinkslimebombSprite" speed="300"/>
+      <element id="hotBomb" speed="400"/>
+      <element id="flyingCup" speed="200"/>
+      <element id="flyingBottle" speed="200"/>
+      <element id="flyingBottle2" speed="200"/>
+      <element id="flyingPillow" speed="200"/>
+      <element id="pancake" speed="200"/>
+      <element id="candys" speed="200"/>
+      <element id="flyingHeart" speed="200"/>
+      <element id="flowerPower" speed="200"/>
+    </elements>
+    <sounds>
+      <sound id="flyingComponent" path="$$base$$audio/$$animation$$.mp3" manySoundsAllowed="true"/>
+    </sounds>
+  </module>
+</config>

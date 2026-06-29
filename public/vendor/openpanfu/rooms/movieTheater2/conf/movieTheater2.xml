@@ -1,0 +1,14 @@
+<config check="f59252a29c3e9c792e51b38a670ba8da">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <module>
+    <elements>
+      <element id="movieLogo" button="0" visible="0"/>
+    </elements>
+    <hotspots>
+      <hotspot target="24" type="room" x="55" y="400" rad="30" angle="90"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

@@ -3,17 +3,24 @@
 namespace App\Domain\Panfu\Services;
 
 use App\Domain\Panfu\Repositories\FlashClientRepository;
+use App\Domain\Panfu\Repositories\LegacyPlayerRepository;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Support\Facades\Session;
 
 class FlashClientService
 {
-    public function __construct(private readonly FlashClientRepository $clients) {}
+    public function __construct(
+        private readonly FlashClientRepository $clients,
+        private readonly LegacyPlayerRepository $legacyPlayers,
+    ) {}
 
     /**
      * @return array<string, mixed>
      */
-    public function getPlayPage(): array
+    public function getPlayPage(?Authenticatable $user): array
     {
         $client = $this->clients->getClient();
+        $client['flashvars'] = $this->withAuthenticatedPlayer($client['flashvars'], $user);
         $client['flashvarsQuery'] = http_build_query(
             $client['flashvars'],
             '',
@@ -22,5 +29,28 @@ class FlashClientService
         );
 
         return $client;
+    }
+
+    /**
+     * @param  array<string, string>  $flashvars
+     * @return array<string, string>
+     */
+    private function withAuthenticatedPlayer(array $flashvars, ?Authenticatable $user): array
+    {
+        if ($user === null) {
+            return $flashvars;
+        }
+
+        $name = method_exists($user, 'getAttribute') ? $user->getAttribute('name') : null;
+        $sessionKey = hash('sha256', Session::getId().'|'.$user->getAuthIdentifier());
+
+        $flashvars['user'] = (string) ($name ?: $user->getAuthIdentifier());
+        $flashvars['sessionKey'] = $sessionKey;
+
+        if (config('panfu.game_client.sync_legacy_player')) {
+            $this->legacyPlayers->sync($user, $sessionKey);
+        }
+
+        return $flashvars;
     }
 }

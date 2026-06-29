@@ -1,0 +1,14 @@
+<config check="c3e3cc7f3983784411635478df7a06fa">
+  <assets>
+    <asset id="bollykidsGames" path="assets/bollykidsGames.swf"/>
+  </assets>
+  <selectorConfigs>
+    <selector id="bollykidsGames" handlingNotification="askJoinGame" paramKey="game">
+      <item id="bk_numbers" value="35" prevImagePath="assets/bollykidsGames/bk_numbers.png"/>
+      <item id="bk_blocks" value="36" prevImagePath="assets/bollykidsGames/bk_blocks.png"/>
+      <item id="bk_light" value="37" prevImagePath="assets/bollykidsGames/bk_light.png"/>
+      <item id="bk_soccer" value="38" prevImagePath="assets/bollykidsGames/bk_soccer.png"/>
+      <item id="bk_tickles" value="40" prevImagePath="assets/bollykidsGames/bk_tickles.png"/>
+    </selector>
+  </selectorConfigs>
+</config>

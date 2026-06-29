@@ -1,0 +1,53 @@
+<config check="14063a4289bfc698bd4d2a6bad572a91">
+  <snippets path="quests/swimmingQuest/conf/snippets/swimmingQuest_test_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <sounds>
+    <sound id="lifeGuardSpeak" path="audio/$$lang$$/$$key$$.MP3"/>
+    <sound id="object" path="audio/$$lang$$/POOL_UPDATE_MESSAGE_01.MP3"/>
+  </sounds>
+  <module statement_timeout="60" category="1">
+    <questType type="adventure" questNameInLogBook="QUEST_SWIMMING_NAME"/>
+    <npcs>
+      <npc id="LIFEGUARD_POOL" room="3" name="Lifeguard" x="490" y="330">
+        <speechBubble x="540" y="120" w="250" offX="0" offY="-1" pointX="0" pointY="30"/>
+        <behaviours>
+          <behaviour doesNotHaveOneItem="100554">
+            <statement key="POOL_UPDATE_LIFEGUARD_01" parse="name" value="myUserName" sound="lifeGuardSpeak"/>
+            <statement key="POOL_UPDATE_LIFEGUARD_02" sound="lifeGuardSpeak"/>
+            <statement key="POOL_UPDATE_LIFEGUARD_03" sound="lifeGuardSpeak"/>
+            <statement key="POOL_UPDATE_LIFEGUARD_04" sound="lifeGuardSpeak"/>
+          </behaviour>
+          <behaviour doesNotHaveOneItem="100554" gamestate="1,0,1" daypasstest="1,0,0">
+            <statement key="POOL_UPDATE_WAIT_TOMORROW" sound="lifeGuardSpeak"/>
+          </behaviour>
+          <behaviour doesNotHaveOneItem="100554" gamestate="1,0,1" daypasstest="1,0,1,+">
+            <statement key="POOL_UPDATE_LIFEGUARD_05" sound="lifeGuardSpeak"/>
+          </behaviour>
+          <behaviour doesNotHaveOneItem="100554" gamestate="1,1,1" daypasstest="1,1,0">
+            <statement key="POOL_UPDATE_WAIT_TOMORROW" sound="lifeGuardSpeak"/>
+          </behaviour>
+          <behaviour doesNotHaveOneItem="100554" gamestate="1,1,1" daypasstest="1,1,1,+">
+            <statement key="POOL_UPDATE_LIFEGUARD_06" sound="lifeGuardSpeak"/>
+          </behaviour>
+          <behaviour doesNotHaveOneItem="100554" hasItems="100555,100556,100557" gamestate="1,2,1">
+            <statement key="POOL_UPDATE_LIFEGUARD_07" sound="lifeGuardSpeak">
+              <action id="buyItem" itemID="swimmingSuit"/>
+            </statement>
+          </behaviour>
+          <behaviour hasItems="100554">
+            <statement key="POOL_UPDATE_LIFEGUARD_07" sound="lifeGuardSpeak"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <items>
+      <item id="swimmingObject1" itemID="100555" hash="058903b84430a487d61028c88ca875a7"/>
+      <item id="swimmingObject2" itemID="100556" hash="abbf0adcdf123b5e4fe9867220b21c87"/>
+      <item id="swimmingObject3" itemID="100557" hash="1cf4484f89d3e3aa1b46fcedec05dcde"/>
+      <item id="swimmingSuit" itemID="100554" hash="cd73af2a46daab53f0ebaa8cad25a4dd">
+        <remove itemID="100555"/>
+        <remove itemID="100556"/>
+        <remove itemID="100557"/>
+      </item>
+    </items>
+  </module>
+</config>

@@ -1,0 +1,53 @@
+<config check="6935e67d6a86aab5bcd5ba9b13a6f455">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="bigFootQuestTesting" start="Jan 30 2010" finish="Feb 18 2010" check="677fc34b49e5480"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <items/>
+    <elements>
+      <element id="door" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="bigFootQuest.elevatorDoorClick" type="bigFootQuest"/>
+      </element>
+      <element type="door2" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="outTunnel"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="53" angle="-135"/>
+      <tooltip id="door2" type="door" target="51" angle="90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="outMountain" type="action" x="137" y="247" rad="50" on="1">
+        <checks>
+          <target value="playElevatorAnimationUp"/>
+        </checks>
+      </hotspot>
+      <hotspot id="outTunnel" type="action" x="375" y="400" rad="50" on="1">
+        <checks>
+          <target value="playElevatorAnimationDown"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="playElevatorAnimationUp">
+        <playRockAnimationUp text="INACTIVE_ITEM_FOR_ROOM" type="alert"/>
+        <stopAvatar/>
+      </action>
+      <action id="playElevatorAnimationDown">
+        <playRockAnimationDown text="INACTIVE_ITEM_FOR_ROOM" type="alert"/>
+        <stopAvatar/>
+      </action>
+    </actions>
+  </module>
+</config>

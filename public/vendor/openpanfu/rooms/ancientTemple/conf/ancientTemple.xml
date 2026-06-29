@@ -1,0 +1,122 @@
+<config check="6a6f11ac6178ae6e895cf5d8af1f7db1">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1" gamestate="15,0,0-83"/>
+    <sound id="wedding" volume="0.7" path="audio/wedding.mp3" backgroundmusic="1" loops="1" gamestate="15,0,83" daypasstest="15,0,1,+"/>
+    <sound id="wedding" volume="0.7" path="audio/wedding.mp3" backgroundmusic="1" loops="1" gamestate="15,0,84"/>
+    <sound id="cafeBackground" volume="0.7" path="audio/cafeBackground.mp3" backgroundmusic="1" loops="-1" gamestate="15,0,100"/>
+  </sounds>
+  <dates>
+    <date id="lostTesting" start="Nov 11 2009" finish="Nov 26 2009" check="7a885b2da8cc53a"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="background" frame=":dark">
+        <checks>
+          <frame value=":light" gamestate="15,0,56-100"/>
+        </checks>
+        <checks>
+          <frame value=":marriage" gamestate="15,0,83" daypasstest="15,0,1,+"/>
+        </checks>
+        <checks>
+          <frame value=":marriage" gamestate="15,0,84"/>
+        </checks>
+        <checks>
+          <frame value=":bar" gamestate="15,0,100"/>
+        </checks>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":bar" gamestate="15,0,100"/>
+        </checks>
+        <checks>
+          <frame value=":marriage" gamestate="15,0,83" daypasstest="15,0,1,+"/>
+        </checks>
+      </element>
+      <element id="farid" button="0" visible="0" notWalkable="true" frame=":frozzen">
+        <checks>
+          <visible value="1" gamestate="15,0,0-60"/>
+          <button value="1" gamestate="15,0,59-60"/>
+          <frame value=":normal" gamestate="15,0,59-60"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="talkToNPC" type="theLostLover">
+          <id value="farid"/>
+        </message>
+      </element>
+      <element id="faridTalk" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,84"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="theLostLover">
+          <id value="farid2"/>
+        </message>
+      </element>
+      <element id="kamiraTalk" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,84"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="theLostLover">
+          <id value="KAMARIA2"/>
+        </message>
+      </element>
+      <element id="pompoms" visible="1" notWalkable="true" frame=":frozzen">
+        <checks>
+          <frame value=":normal" gamestate="15,0,59-100"/>
+        </checks>
+      </element>
+      <element id="walkarea" visible="0" frame=":default">
+        <checks>
+          <frame value=":normal" gamestate="15,0,75-100"/>
+        </checks>
+      </element>
+      <element id="diamondButton" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,50-55"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="lostLoverQuest.clickOnDiamond" type="theLostLover"/>
+      </element>
+      <element id="devTeleport" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" date="lostTesting"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="lostLoverQuest.teleportToKamaria" type="theLostLover"/>
+      </element>
+      <element id="marryAnim" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,83" daypasstest="15,0,1,+"/>
+        </checks>
+      </element>
+      <element id="barTable1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,100"/>
+        </checks>
+      </element>
+      <element id="barTable2" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,100"/>
+        </checks>
+      </element>
+      <element id="barTable3" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,100"/>
+        </checks>
+      </element>
+      <element id="barTable4" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,100"/>
+        </checks>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="47" type="room" x="700" y="381" rad="80" angle="33"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

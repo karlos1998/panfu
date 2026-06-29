@@ -1,0 +1,49 @@
+<config check="0248cd893ff3ec4ab2a0f2f905131107">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>   
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>   
+    <sound id="becomeWhite" volume="1" path="audio/becomeWhite.mp3" loops="0"/>   
+    <sound id="drawCircle" volume="1" path="audio/drawCircle.mp3" loops="0"/>   
+    <sound id="fadeIn" volume="1" path="audio/fadeIn.mp3" loops="0"/>   
+    <sound id="skullRoll" volume="1" path="audio/skullRoll.mp3" loops="0"/>   
+    <sound id="sphere" volume="1" path="audio/sphere.mp3" loops="0"/>   
+    <sound id="tileHit" volume="1" path="audio/tileHit.mp3" loops="0"/>   
+    <sound id="tileHit1" volume="1" path="audio/tileHit1.mp3" loops="0"/>   
+    <sound id="tileHit2" volume="1" path="audio/tileHit2.mp3" loops="0"/>   
+    <sound id="tileHit3" volume="1" path="audio/tileHit3.mp3" loops="0"/>   
+    <sound id="tileHit4" volume="1" path="audio/tileHit4.mp3" loops="0"/>   
+    <sound id="skullHit" volume="1" path="audio/skullHit.mp3" loops="0"/>   
+    <sound id="getGlow" volume="1" path="audio/getGlow.mp3" loops="0"/>   
+  </sounds>
+  <module>
+	<waterBombReactions>
+      <zone idTarget="web" reaction="webWaterbombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam" />
+      <zone idTarget="skull" reaction="skullWaterbombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="cow" reaction="cowWaterbombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="eyes" reaction="eyesWaterbombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="glas0" reaction="glasWaterbombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="glas1" reaction="glasWaterbombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="glas2" reaction="glasWaterbombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="glas3" reaction="glasWaterbombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      <zone idTarget="glas4" reaction="glasWaterbombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+      </waterBombReactions>  
+    <elements>
+	  <element id="skull" button="1" />
+	  <element id="spider" />
+	  <element id="web" />
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips/>
+    <hotspots>
+      <hotspot target="71" type="room" x="100" y="390" rad="30" angle="-225"/>     
+      <hotspot target="71" type="room" x="672" y="390" rad="30" angle="45"/>     
+      <hotspot target="71" type="room" x="100" y="90" rad="30" angle="-135"/>     
+      <hotspot target="71" type="room" x="672" y="90" rad="30" angle="-45"/>     
+    </hotspots>
+    <actions/>
+  </module>
+</config>

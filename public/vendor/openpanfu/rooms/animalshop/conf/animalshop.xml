@@ -1,0 +1,157 @@
+<config check="4837e8729cb444d0b73850d00a262bc5">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="swimmingQuestDate" start="Apr 06 2008" finish="Apr 19 2099" check="60f897f409ea0f5"/>
+    <date id="horsequest" start="Jun 20 2009" finish="Apr 19 2099" check="c9e3a259e24f0c3"/>
+    <date id="welcomeBackPreparation" start="Sep 2 2009" finish="Sep 9 2009" check="a8f03658ad293b9"/>
+    <date id="pompomQuestDay2" start="Jan 6 2010" finish="Jan 7 2010" check="1ee50a46b9f1aac"/>
+    <date id="summerQuest" start="Aug 6 2010" finish="Aug 7 2010" check="ab6991d2cdcc918"/>
+    <date id="summerQuest2" start="Sep 3 2010" finish="Sep 4 2010" check="9eb896cb8ae31d3"/>
+    <date id="gulliver" start="Jan 20 2011" finish="Feb 11 2011" check="2bfcea6f7f6dcd4"/>
+    <date id="stickerQuest" start="Aug 8 2011" finish="Aug 9 2011" check="c5d102fa5c2409b"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="penny" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="stickerQuest" gamestate="92,0,255-265"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="PENNY_PETSHOP"/>
+        </message>
+      </element>
+      <element id="feather" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="gulliver" gamestate="63,0,5" doesNotHaveOneItem="103012"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="gulliver.featherClicked" type="gulliver"/>
+      </element>
+      <element id="stoned_aquarium" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,350-351" date="summerQuest" requestHasOneActiveItem="102410"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertAquarium" type="summerQuest"/>
+      </element>
+      <element id="stoned_bolly" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,640-641" date="summerQuest2" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertBolly" type="summerQuest"/>
+      </element>
+      <element id="pompom" button="1" visible="0">
+        <checks>
+          <visible value="1" date="pompomQuestDay2" gamestate="8,0,33" doesNotHaveOneItem="101498"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="pompomQuest.getItem33" type="pompomQuest"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":pompom" date="pompomQuestDay2"/>
+        </checks>
+      </element>
+      <element type="random_ani">
+        <button type="random" priority="1"/>
+      </element>
+      <element type="ani" button="1" visible="1">
+        <checks>
+          <visible value="0" gamestate="43,0,640-641" date="summerQuest2" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="over" over="3"/>
+      </element>
+      <element id="arcadeBollyGames" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <checkButtons>
+          <checkButton key="socialLevelMin" value="16">
+            <failCheckButton value="showBlockEntranceExplanation" param="levelNeeded" valueParam="16"/>
+          </checkButton>
+        </checkButtons>
+        <message value="AppConsts.showGameSelector">
+          <id value="bollykidsGames"/>
+        </message>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element id="bollies" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="showCatalogue">
+          <name value="Bolly01Catalogue"/>
+        </message>
+      </element>
+      <element id="bollyFurniture" button="1" visible="1">
+        <button type="overClick" click="1" over="2" out="1"/>
+        <message value="showCatalogue">
+          <name value="BollyFurnitureCatalogue"/>
+        </message>
+      </element>
+      <element id="bars" button="1" visible="1">
+        <checks>
+          <button value="0" user="isPremium"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="showUpsellPopup">
+          <source value="animalshop"/>
+        </message>
+      </element>
+      <element id="panfuShop" button="1" visible="0"/>
+      <element id="goggle" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="swimmingQuestDate" doesNotHaveAllItems="100554,100555"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="collectItem" type="swimmingQuest">
+          <item value="swimmingObject1"/>
+        </message>
+        <message value="clickSwimmingQuestObject" type="swimmingQuest"/>
+        <message value="StateConsts.setstate">
+          <categoryID value="1"/>
+          <stateID value="0"/>
+          <value value="1"/>
+        </message>
+        <message value="StateManager.setState">
+          <categoryID value="1"/>
+          <stateID value="0"/>
+          <value value="1"/>
+        </message>
+      </element>
+      <element id="saddle_1" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" doesNotHaveOneItem="100681" gamestate="3,0,40"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="collectItem" type="horse">
+          <item value="saddle_3"/>
+        </message>
+      </element>
+      <element id="paper" button="1" visible="0">
+        <checks>
+          <visible value="1" date="welcomeBackPreparation" gamestate="6,0,11"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="welcomeBackQuest.getItem5" type="welcomeBackQuest"/>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="4" angle="1"/>
+      <tooltip id="bollies" type="catalog" name="BOLLY_CATALOGUE"/>
+      <tooltip id="bollyFurniture" type="catalog" name="BOLLYFURNITURE_CATALOGUE"/>
+      <tooltip id="arcadeBollyGames" type="game" name="Bolly Games"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="4" type="room" x="622" y="267" rad="30"/>
+    </hotspots>
+  </module>
+</config>

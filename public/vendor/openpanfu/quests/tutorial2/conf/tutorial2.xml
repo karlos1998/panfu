@@ -1,0 +1,541 @@
+<config check="c1b3b909f5a6e7084926b1491954001a">
+  <snippets path="quests/tutorial2/conf/snippets/the_chronicler_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="manny" path="assets/manny.swf"/>
+    <asset id="reOrderGame" path="assets/reOrder.swf"/>
+    <asset id="painterPictures" path="assets/paintersPictures.swf"/>
+    <asset id="speechBubbleQuizz" path="assets/speechBubbleQuizz.swf"/>
+    <asset id="mapCloseup" path="assets/mapCloseup.swf"/>
+    <asset id="blackBoardCloseup" path="assets/blackBoardCloseup.swf"/>
+  </assets>
+  <sounds>
+    <sound id="speaker" volume="1" path="audio/$$lang$$/$$key$$.mp3"/>
+    <sound id="swapSound" volume="1" path="audio/swapSound.mp3"/>
+    <sound id="dropItem" volume="1" path="audio/dropItem.mp3"/>
+  </sounds>
+  <module statement_timeout="60" category="73">
+    <questType type="tutorial" questNameInLogBook="NAME_QUEST_THECHRONICLER"/>
+    <npcs>
+      <npc id="chronicler" room="2" name="Hamelot">
+        <speechBubble x="206" y="270" w="350" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="73,0,0-1">
+            <statement key="CHRONICLER_THECHRONICLER_01" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_02" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_03" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_04" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_05" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_06" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_07" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_08" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_09" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_10" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_11" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_12" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_13" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_14" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_15" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_16" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_17" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_18" sound="speaker">
+              <action id="changeQuestState" state="73,0,5"/>
+              <action id="changeQuestState" state="73,1,1"/>
+              <action id="highlightMovieclip" mc="wallMap" avatar="-1"/>
+              <action id="markMovieclip" mc="wallMap" asset="arrow" yOff="50" xOff="70" rot="-45" avatar="-1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,5">
+            <statement key="CHRONICLER_THECHRONICLER_17" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_18" sound="speaker">
+              <action id="markMovieclip" mc="wallMap" asset="arrow" yOff="50" xOff="70" rot="-45" avatar="-1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,10">
+            <statement key="CHRONICLER_THECHRONICLER_19" sound="speaker">
+              <action id="unhighlightMovieclip" mc="wallMap" avatar="-1"/>
+            </statement>
+            <statement key="CHRONICLER_THECHRONICLER_20" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_21" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_22" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_23" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_24" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_25" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_26" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_27" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_28" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_29" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_30" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_31" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_32" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_33" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_34" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_35" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_36" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_37" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_38" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_39" sound="speaker" parse="name" value="myUserName">
+              <action id="changeQuestState" state="73,0,15"/>
+              <action id="playSound" soundID="dropItem"/>
+              <action id="updateRoom"/>
+              <action id="markMovieclip" mc="questBook" asset="arrow" yOff="0" xOff="0" rot="-0" avatar="-1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,15-100">
+            <statement key="CHRONICLER_THECHRONICLER_36" sound="speaker" parse="name" value="myUserName">
+              <action id="markMovieclip" mc="questBook" asset="arrow" yOff="0" xOff="0" rot="-0" avatar="-1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,101-899">
+            <statement key="CHRONICLER_THECHRONICLER_34" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_35" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_36" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_37" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_38" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_39" sound="speaker" parse="name" value="myUserName"/>
+          </behaviour>
+          <behaviour gamestate="73,0,900">
+            <statement key="CHRONICLER_THECHRONICLER_159" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_160" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_161" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_162" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_163" sound="speaker"/>
+            <statement>
+              <action id="startQuizz"/>
+              <action id="changeQuestState" state="73,1,900"/>
+              <action id="changeQuestState" state="73,0,901"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,901">
+            <statement>
+              <action id="startQuizz"/>
+              <action id="changeQuestState" state="73,1,901"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,910">
+            <statement key="CHRONICLER_THECHRONICLER_164" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_165" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_ALLWRONG" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_167" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_168" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_169" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_170" sound="speaker" parse="name" value="myUserName"/>
+            <statement>
+              <action id="changeQuestState" state="73,0,930"/>
+              <action id="changeQuestState" state="73,1,930"/>
+              <action id="startOrderGame"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,911-917">
+            <statement key="CHRONICLER_THECHRONICLER_164" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_165" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_CORRECT" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_166" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_REWARDQUIZ" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_167" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_168" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_169" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_170" sound="speaker" parse="name" value="myUserName"/>
+            <statement>
+              <action id="changeQuestState" state="73,0,930"/>
+              <action id="changeQuestState" state="73,1,930"/>
+              <action id="startOrderGame"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,918">
+            <statement key="CHRONICLER_THECHRONICLER_164" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_165" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_ALLCORRECT" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_166" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_REWARDQUIZ" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_167" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_168" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_169" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_170" sound="speaker" parse="name" value="myUserName"/>
+            <statement>
+              <action id="changeQuestState" state="73,0,930"/>
+              <action id="changeQuestState" state="73,1,930"/>
+              <action id="startOrderGame"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,930">
+            <statement key="CHRONICLER_THECHRONICLER_170" sound="speaker" parse="name" value="myUserName"/>
+            <statement>
+              <action id="startOrderGame"/>
+              <action id="changeQuestState" state="73,1,930"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,940">
+            <statement key="CHRONICLER_THECHRONICLER_ALLSORTEDWRONG" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_170_A" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_171" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_172" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_173" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_174" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_175" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_180" sound="speaker">
+              <action id="changeQuestState" state="73,0,1000"/>
+              <action id="changeQuestState" state="73,2,1"/>
+              <action id="changeQuestState" state="73,1,1000"/>
+              <action id="message" type="*" value="endChroniclerQuest"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,941-944">
+            <statement key="CHRONICLER_THECHRONICLER_SORTEDCORRECTLY" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_REWARDSORTING_" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_170_A" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_171" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_172" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_173" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_174" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_175" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_176" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_177" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_178" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_179" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_180" sound="speaker" parse="name" value="myUserName">
+              <action id="changeQuestState" state="73,0,1000"/>
+              <action id="changeQuestState" state="73,2,1"/>
+              <action id="changeQuestState" state="73,1,1000"/>
+              <action id="message" type="*" value="endChroniclerQuest"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,945">
+            <statement key="CHRONICLER_THECHRONICLER_ALLSORTEDCORRECTLY" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_REWARDSORTING_" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_170_A" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_171" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_172" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_173" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_174" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_175" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_176" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CHRONICLER_THECHRONICLER_177" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_178" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_179" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_180" sound="speaker" parse="name" value="myUserName">
+              <action id="changeQuestState" state="73,0,1000"/>
+              <action id="changeQuestState" state="73,2,1"/>
+              <action id="changeQuestState" state="73,1,1000"/>
+              <action id="message" type="*" value="endChroniclerQuest"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,1000">
+            <statement key="CHRONICLER_THECHRONICLER_174" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_175" sound="speaker"/>
+            <statement key="CHRONICLER_THECHRONICLER_180" sound="speaker" parse="name" value="myUserName"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="CLOWN_LAKE" room="39" name="Curley">
+        <speechBubble x="153" y="110" w="400" offX="1" offY="0" pointX="-20" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="73,0,100">
+            <statement key="CURLEY_THECHRONICLER_40" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CURLEY_THECHRONICLER_41" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_42" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CURLEY_THECHRONICLER_43" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_44" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_45" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_46" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_47" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_48" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_49" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_50" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_51" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_52" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_53" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_54" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CURLEY_THECHRONICLER_55" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_56" sound="speaker" parse="name" value="myUserName">
+              <action id="changeQuestState" state="73,0,200"/>
+              <action id="changeQuestState" state="73,1,101"/>
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,200">
+            <statement key="CURLEY_THECHRONICLER_54" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CURLEY_THECHRONICLER_55" sound="speaker"/>
+            <statement key="CURLEY_THECHRONICLER_56" sound="speaker" parse="name" value="myUserName">
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="BRUNO_CHEZ" room="30" name="Bruno">
+        <speechBubble x="520" y="130" w="200" offX="1" offY="-1" pointX="20" pointY="20"/>
+        <behaviours>
+          <behaviour gamestate="73,0,200">
+            <statement key="BRUNO_THECHRONICLER_57" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_58" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_59" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="BRUNO_THECHRONICLER_59_A" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_59_B" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_60" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_61" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_62" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="BRUNO_THECHRONICLER_63" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_64" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_65" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_66" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_67" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_68" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="BRUNO_THECHRONICLER_69" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_70" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_71" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_72" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_73" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_74" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_75" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="BRUNO_THECHRONICLER_76" sound="speaker" parse="name" value="myUserName">
+              <action id="changeQuestState" state="73,0,300"/>
+              <action id="changeQuestState" state="73,1,201"/>
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,300">
+            <statement key="BRUNO_THECHRONICLER_72" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_73" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_74" sound="speaker"/>
+            <statement key="BRUNO_THECHRONICLER_75" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="BRUNO_THECHRONICLER_76" sound="speaker" parse="name" value="myUserName">
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="momo" room="22" name="Momo" assetname="momo">
+        <speechBubble x="580" y="220" w="200" offX="0" offY="-1" pointX="80" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="73,0,300">
+            <statement key="MOMO_THECHRONICLER_76" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="MOMO_THECHRONICLER_77" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_78" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_79" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_80" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_81" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_82" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_83" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_84" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_85" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_86" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_SONG" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_91_A" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="MOMO_THECHRONICLER_92" sound="speaker" parse="name" value="myUserName">
+              <action id="changeQuestState" state="73,0,400"/>
+              <action id="changeQuestState" state="73,1,301"/>
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,400">
+            <statement key="MOMO_THECHRONICLER_93" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_SONG" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_94" sound="speaker"/>
+            <statement key="MOMO_THECHRONICLER_92" sound="speaker" parse="name" value="myUserName">
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="BOOKWORM_LABORATORY" room="26" name="Bookworm">
+        <speechBubble x="700" y="300" w="300" offX="-1" offY="-1" pointX="-90" pointY="20"/>
+        <behaviours>
+          <behaviour gamestate="73,0,400">
+            <statement key="BOOKWORM_THECHRONICLER_91_B" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_91_C" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="BOOKWORM_THECHRONICLER_91_D" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_91_E" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_95" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_96" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_97" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_98" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_99" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_100" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_101" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_102" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_103" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_104" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_105" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_106" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_107" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_108" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_109" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_110" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_111" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_112" sound="speaker" parse="name" value="myUserName">
+              <action id="changeQuestState" state="73,0,405"/>
+              <action id="highlightMovieclip" mc="blackBoard" avatar="-1"/>
+              <action id="markMovieclip" mc="blackBoard" asset="arrow" yOff="-40" xOff="0" rot="-0" avatar="-1"/>
+              <action id="changeQuestState" state="73,1,401"/>
+              <action id="updateRoom"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,405">
+            <statement key="BOOKWORM_THECHRONICLER_111" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_112" sound="speaker" parse="name" value="myUserName">
+              <action id="highlightMovieclip" mc="blackBoard" avatar="-1"/>
+              <action id="markMovieclip" mc="blackBoard" asset="arrow" yOff="-40" xOff="0" rot="-0" avatar="-1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,410">
+            <statement key="BOOKWORM_THECHRONICLER_113" sound="speaker">
+              <action id="unhighlightMovieclip" mc="blackBoard" avatar="-1"/>
+            </statement>
+            <statement key="BOOKWORM_THECHRONICLER_114" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_115" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_116" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_116_A" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_116_B" sound="speaker" parse="name" value="myUserName">
+              <action id="changeQuestState" state="73,0,500"/>
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,500">
+            <statement key="BOOKWORM_THECHRONICLER_114" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_115" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_116" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_116_A" sound="speaker"/>
+            <statement key="BOOKWORM_THECHRONICLER_116_B" sound="speaker" parse="name" value="myUserName">
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="GONZO_KIOSK" room="5" name="Gonzo">
+        <speechBubble x="252" y="150" w="350" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="73,0,500">
+            <statement key="GONZO_THECHRONICLER_117" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="GONZO_THECHRONICLER_118" sound="speaker"/>
+            <statement key="GONZO_THECHRONICLER_119" sound="speaker"/>
+            <statement key="GONZO_THECHRONICLER_120" sound="speaker"/>
+            <statement key="GONZO_THECHRONICLER_121" sound="speaker"/>
+            <statement key="GONZO_THECHRONICLER_122" sound="speaker"/>
+            <statement key="GONZO_THECHRONICLER_123" sound="speaker"/>
+            <statement key="GONZO_THECHRONICLER_124" sound="speaker"/>
+            <statement key="GONZO_THECHRONICLER_125" sound="speaker">
+              <action id="changeQuestState" state="73,0,600"/>
+              <action id="changeQuestState" state="73,1,501"/>
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,600">
+            <statement key="GONZO_THECHRONICLER_122" sound="speaker"/>
+            <statement key="GONZO_THECHRONICLER_123" sound="speaker"/>
+            <statement key="GONZO_THECHRONICLER_124" sound="speaker"/>
+            <statement key="GONZO_THECHRONICLER_125" sound="speaker">
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="PAUL_PAULSROOM" room="60" name="Paul">
+        <speechBubble x="390" y="235" w="150" offX="1" offY="-1" pointX="20" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="73,0,600">
+            <statement key="PAUL_THECHRONICLER_126" sound="speaker"/>
+            <statement key="PAUL_THECHRONICLER_127" sound="speaker"/>
+            <statement key="PAUL_THECHRONICLER_128" sound="speaker"/>
+            <statement key="PAUL_THECHRONICLER_129" sound="speaker">
+              <action id="changeQuestState" state="73,0,700"/>
+              <action id="changeQuestState" state="73,1,601"/>
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,700">
+            <statement key="PAUL_THECHRONICLER_126" sound="speaker"/>
+            <statement key="PAUL_THECHRONICLER_127" sound="speaker"/>
+            <statement key="PAUL_THECHRONICLER_128" sound="speaker"/>
+            <statement key="PAUL_THECHRONICLER_129" sound="speaker">
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,0-599">
+            <statement key="PAUL_THECHRONICLER_126" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="73,0,701-10000">
+            <statement key="PAUL_THECHRONICLER_126" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="PANDALAGELO_BALLROOM" room="16" name="Pandalangelo">
+        <speechBubble x="230" y="150" w="250" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="73,0,700">
+            <statement key="PAINTER_THECHRONICLER_130" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="PAINTER_THECHRONICLER_131" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="PAINTER_THECHRONICLER_132" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_133" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_134" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_135" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_136" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_137" sound="speaker">
+              <action id="changeQuestState" state="73,0,710"/>
+              <action id="highlightMovieclip" mc="easel" avatar="-1"/>
+              <action id="markMovieclip" mc="easel" asset="arrow" yOff="-40" xOff="0" rot="0" avatar="-1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,710">
+            <statement key="PAINTER_THECHRONICLER_137" sound="speaker">
+              <action id="highlightMovieclip" mc="easel" avatar="-1"/>
+              <action id="markMovieclip" mc="easel" asset="arrow" yOff="-40" xOff="0" rot="0" avatar="-1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,720">
+            <statement key="PAINTER_THECHRONICLER_138" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_139" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_140" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_141" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_142" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_143" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_144" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_145" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_146" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="PAINTER_THECHRONICLER_147" sound="speaker">
+              <action id="changeQuestState" state="73,1,701"/>
+              <action id="changeQuestState" state="73,0,800"/>
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,800">
+            <statement key="PAINTER_THECHRONICLER_144" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_145" sound="speaker"/>
+            <statement key="PAINTER_THECHRONICLER_146" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="PAINTER_THECHRONICLER_147" sound="speaker">
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="WILLIAM_PIRATEBAR" room="41">
+        <speechBubble x="92" y="280" w="450" offX="1" offY="-1" pointX="40" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="73,0,800">
+            <statement key="PANDABEARD_THECHRONICLER_148" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_148_A" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="PANDABEARD_THECHRONICLER_149" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_150" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_151" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_152" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_153" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_154" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_155" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_156" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_157" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_158" sound="speaker">
+              <action id="changeQuestState" state="73,1,801"/>
+              <action id="changeQuestState" state="73,0,900"/>
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="73,0,900">
+            <statement key="PANDABEARD_THECHRONICLER_156" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_157" sound="speaker"/>
+            <statement key="PANDABEARD_THECHRONICLER_158" sound="speaker">
+              <action id="flashUpElement" name="quest" com="play" frame="1"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+  </module>
+</config>

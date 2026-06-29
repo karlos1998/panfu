@@ -1,0 +1,111 @@
+<config check="b7d1d6b6932f85bed281905f797f8bac">
+  <snippets path="quests/woobyQuest/conf/snippets/chefwooby_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <sounds>
+    <sound id="ring" volume="0.8" path="audio/ring.mp3" loops="1"/>
+    <sound id="snore" volume="1" path="audio/snore.mp3" loops="-1"/>
+    <sound id="crying" volume="1" path="audio/crying.mp3" loops="-1"/>
+  </sounds>
+  <module statement_timeout="60" category="9">
+    <questType type="adventure" questNameInLogBook="NAME_QUEST_09"/>
+    <npcs>
+      <npc id="CLOWN_LAKE" room="39" name="Curley">
+        <speechBubble x="153" y="110" w="400" offX="1" offY="0" pointX="-20" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="9,0,0-1">
+            <statement key="SPEECH_CURLEY_01">
+              <action id="changeQuestState" state="9,1,1"/>
+            </statement>
+            <statement key="SPEECH_CURLEY_02"/>
+            <statement key="SPEECH_CURLEY_03"/>
+            <statement key="SPEECH_CURLEY_04">
+              <action id="changeQuestState" state="9,0,1"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="9,0,2">
+            <statement key="SPEECH_CURLEY_05"/>
+          </behaviour>
+          <behaviour gamestate="9,0,3">
+            <statement key="SPEECH_CURLEY_06">
+              <action id="changeQuestState" state="9,1,2"/>
+            </statement>
+            <statement key="SPEECH_CURLEY_07"/>
+            <statement key="SPEECH_CURLEY_08"/>
+            <statement key="SPEECH_CURLEY_09"/>
+          </behaviour>
+          <behaviour gamestate="9,0,16-99">
+            <statement key="SPEECH_CURLEY_10">
+              <action id="changeQuestState" state="9,1,6"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="KAMARIA_TOWER">
+        <speechBubble x="200" y="225" w="300" offX="0" offY="-1" pointX="20" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="9,0,3-8">
+            <statement key="SPEECH_KAMARIA_01"/>
+            <statement key="SPEECH_KAMARIA_02"/>
+            <statement key="SPEECH_KAMARIA_03"/>
+            <statement key="SPEECH_KAMARIA_04"/>
+            <statement key="SPEECH_KAMARIA_05"/>
+            <statement key="SPEECH_KAMARIA_06"/>
+          </behaviour>
+          <behaviour gamestate="9,0,10">
+            <statement key="SPEECH_KAMARIA_07"/>
+          </behaviour>
+          <behaviour gamestate="9,0,11">
+            <statement key="SPEECH_KAMARIA_08"/>
+          </behaviour>
+          <behaviour gamestate="9,0,12">
+            <statement key="SPEECH_KAMARIA_09"/>
+            <statement key="SPEECH_KAMARIA_10"/>
+            <statement key="SPEECH_KAMARIA_11"/>
+          </behaviour>
+          <behaviour gamestate="9,0,13">
+            <statement key="SPEECH_KAMARIA_10"/>
+            <statement key="SPEECH_KAMARIA_11"/>
+          </behaviour>
+          <behaviour gamestate="9,0,14">
+            <statement key="SPEECH_KAMARIA_12"/>
+          </behaviour>
+          <behaviour gamestate="9,0,15-16">
+            <statement key="SPEECH_KAMARIA_13"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="WILLIAM_PIRATEBAR" room="41">
+        <speechBubble x="143" y="290" w="250" offX="1" offY="0" pointX="-20" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="9,0,5-6">
+            <statement key="PANDABEARD_SPEECH_01"/>
+            <statement key="PANDABEARD_SPEECH_02"/>
+          </behaviour>
+          <behaviour gamestate="9,0,7-8">
+            <statement key="PANDABEARD_SPEECH_03">
+              <action id="changeQuestState" state="9,0,8"/>
+              <action id="changeQuestState" state="9,1,3"/>
+            </statement>
+            <statement key="PANDABEARD_SPEECH_04"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="DJ_DISCO" room="18">
+        <speechBubble x="465" y="115" w="400" offX="-1" offY="-1" pointX="-100" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="9,0,13">
+            <statement key="PANDI_MC_SPEECH_01"/>
+            <statement key="PANDI_MC_SPEECH_02"/>
+            <statement key="PANDI_MC_SPEECH_03"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <items>
+      <item id="WOOBY_QUEST_TISSUES" itemID="101068" name="Tissues"/>
+      <item id="WOOBY_QUEST_KEY" itemID="101069" name="Key"/>
+      <item id="WOOBY_QUEST_COFFEE" itemID="101071" name="Coffee"/>
+      <item id="WOOBY_ALARMCLOCK_CLOTH" itemID="103574" name="Alarm Clock"/>
+      <item id="WOOBY_ALARMCLOCK_FURNITURE" itemID="103575" name="Alarm Clock"/>
+    </items>
+  </module>
+</config>

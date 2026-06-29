@@ -1,0 +1,310 @@
+<config check="c988a960c5798d1e384f97beff6e9a64">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+    <asset id="roomOLD" path="assets/roomOLD.swf"/>
+  </assets>
+  <dates>
+    <date id="iglooSnowQuestDay2" start="Jan 27 2010" finish="Jan 28 2010" check="8e587a0b116c52e"/>
+    <date id="easternQuest" start="Mar 23 2010" finish="Apr 6 2010" check="3a12d86335b14f2"/>
+    <date id="summerQuest" start="Jul 8 2010" finish="Jul 9 2010" check="daadb914f643ed7"/>
+    <date id="summerQuest2" start="Jul 24 2010" finish="Jul 25 2010" check="44f1e674f05a157"/>
+    <date id="summerQuest3" start="Jul 29 2010" finish="Jul 30 2010" check="9effb72774a2024"/>
+    <date id="summerQuest4" start="Aug 17 2010" finish="Aug 18 2010" check="c5d35ec0edd086a"/>
+    <date id="gulliver" start="Jan 20 2011" finish="Feb 11 2011" check="c3963263e05abc1"/>
+    <date id="springAndSing" start="Mar 23 2011" finish="Mar 29 2011" check="0e4ff59d2fc8fee"/>
+    <date id="circusQuest" start="Apr 16 2011" finish="May 3 2011" check="eb1c4a2ea2e0abc"/>
+    <date id="eastern2011" start="Apr 20 2011" finish="Apr 26 2011" check="21baa3fc263aab8"/>
+    <date id="chipmunks" start="Dec 14 2011" finish="Dec 28 2011" check="6d41967ca893853"/>
+    <date id="easter" start="Apr 4 2012" finish="Apr 11 2012" check="f4594522f4d6397"/>
+    <date id="easter2" start="Mar 28 2012" finish="Apr 11 2012" check="e16229d1443197d"/>
+    <date id="treeMonster" start="Oct 9 2013" finish="Oct 16 2013" check="b4ff781d01f84c7"/>
+    <date id="greyPanfu" start="May 10 2013" finish="May 11 2013" check="16e7a09c0f8751b"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="NPC_sound" volume="0.4" path="audio/npc_tierarzt.mp3" loops="0"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="missingEllaPoster" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,15-285"/>
+          <button value="1" gamestate="137,2,0"/>
+          <frame value=":empty" gamestate="137,2,0"/>
+          <frame value=":full" gamestate="137,2,1"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="missingElla.PosterTagged2" type="missingElla"/>
+      </element>
+      <element id="apple" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="135,0,70"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="greyPanfu.appleClicked" type="greyPanfu"/>
+      </element>
+      <element id="Evron" button="0" visible="0">
+        <checks>
+          <button value="1" date="greyPanfu" gamestate="135,0,0-5"/>
+          <visible value="1" date="greyPanfu" gamestate="135,0,0-999"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="talkToNPC" type="client">
+          <id value="EVRON"/>
+        </message>
+      </element>
+      <element id="lemon1" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,210-255" gamestate2="134,1,0"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="sickIris.lemon1Clicked" type="sickIris"/>
+      </element>
+      <element id="lemon2" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,210-255" gamestate2="134,2,0"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="sickIris.lemon2Clicked" type="sickIris"/>
+      </element>
+      <element id="lemon3" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,210-255" gamestate2="134,3,0"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="sickIris.lemon3Clicked" type="sickIris"/>
+      </element>
+      <element id="lemon4" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,210-255" gamestate2="134,4,0"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="sickIris.lemon4Clicked" type="sickIris"/>
+      </element>
+      <element id="treeBranch" button="0" visible="0">
+        <checks>
+          <visible value="1" date="treeMonster" gamestate="117,2,0" gamestate2="117,0,110-120"/>
+          <button value="1" date="treeMonster" gamestate="117,2,0" gamestate2="117,0,110-120"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="treeMonster.collectBranch" type="treeMonster"/>
+      </element>
+      <element id="letter" button="0" visible="0">
+        <checks>
+          <visible value="1" date="easter2" gamestate="111,12,0"/>
+          <button value="1" date="easter2" gamestate="111,12,0"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="easter.LetterClicked" type="easter"/>
+      </element>
+      <element id="chicken" button="0" visible="0">
+        <checks>
+          <visible value="1" date="easter" gamestate="111,1,1"/>
+          <button value="1" date="easter" gamestate="111,1,1"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="easter.ChickenClicked" type="easter"/>
+      </element>
+      <element id="tree" button="0" visible="1">
+        <checks>
+          <visible value="0" date="chipmunks" gamestate="106,0,40-60"/>
+        </checks>
+      </element>
+      <element id="shaketree" button="0" visible="0">
+        <checks>
+          <visible value="1" date="chipmunks" gamestate="106,0,40-60"/>
+          <button value="1" date="chipmunks" gamestate="106,0,40"/>
+          <button value="1" date="chipmunks" gamestate="106,0,50"/>
+          <button value="1" date="chipmunks" gamestate="106,0,60"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="shakeTreeClicked" type="chipmunks"/>
+      </element>
+      <element id="chickenBox" button="0" visible="0">
+        <checks>
+          <visible value="1" date="eastern2011"/>
+        </checks>
+      </element>
+      <element id="cookieEastern2011" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eastern2011" gamestate="77,0,5"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="eastern2011.clickCookie" type="eastern2011"/>
+      </element>
+      <element id="easter2011Present" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eastern2011" gamestate="77,0,80"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="eastern2011.clickPresent" type="eastern2011"/>
+      </element>
+      <element id="bunny2011" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eastern2011"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="eastern2011">
+          <id value="bunny_npc"/>
+        </message>
+      </element>
+      <element id="poster" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="circusQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="circusQuest.showPoster" type="circusQuest"/>
+      </element>
+      <element id="spring" button="0" visible="0">
+        <checks>
+          <visible value="1" date="springAndSing"/>
+        </checks>
+      </element>
+      <element id="sand" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="gulliver" gamestate="63,0,9" doesNotHaveOneItem="103010"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="gulliver.sandClicked" type="gulliver"/>
+      </element>
+      <element id="stoned_tree" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,20-21" date="summerQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertTree" type="summerQuest"/>
+      </element>
+      <element id="stoned_building" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,200-201" date="summerQuest2"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertBuilding" type="summerQuest"/>
+      </element>
+      <element id="stoned_adherer" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,250-251" date="summerQuest3"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertAdherer" type="summerQuest"/>
+      </element>
+      <element id="stoned_duck" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,470-471" date="summerQuest4" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertDuck" type="summerQuest"/>
+      </element>
+      <element id="duck_animated" button="0" visible="1" notWalkable="true">
+        <checks>
+          <visible value="0" gamestate="43,0,470-471" date="summerQuest4" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+      </element>
+      <element id="bunny" button="1" visible="0">
+        <checks>
+          <visible value="1" date="easternQuest" gamestate="32,0,0-20"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="3"/>
+        <message value="easternQuest.talkToBunny" type="easternQuest"/>
+      </element>
+      <element id="handoverSign" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="28,0,18-50"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="28,0,18"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="callQuest.handoverSignClicked" type="mysteriousCall"/>
+      </element>
+      <element id="briefcase" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="28,0,20"/>
+        </checks>
+      </element>
+      <element id="cookieCrumbles" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="28,0,22-30"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="callQuest.cookieCrumblesClicked" type="mysteriousCall"/>
+      </element>
+      <element id="stick" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="25,0,27"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="bigFootQuest.getItem4" type="bigFootQuest"/>
+      </element>
+      <element id="Snowman" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="iglooSnowQuestDay2" doesNotHaveOneItem="101597" gamestate="23,0,1"/>
+        </checks>
+        <button type="overClick" click="2" over="3" out="2"/>
+        <message value="iglooSnowQuest.getSnow3" type="iglooSnowQuest"/>
+      </element>
+      <element id="track8" button="1" visible="0">
+        <checks>
+          <button value="0" gamestate="17,8,1"/>
+          <visible value="1" gamestate="17,0,3"/>
+          <visible value="1" gamestate="17,8,1"/>
+          <frame value=":highlight" gamestate="17,8,1"/>
+        </checks>
+        <button type="overClick" click="2" out="2" over="3"/>
+        <message value="bigBootQuest.track8" type="bigBootQuest"/>
+      </element>
+      <element id="track9" button="1" visible="0">
+        <checks>
+          <button value="0" gamestate="17,9,1"/>
+          <visible value="1" gamestate="17,0,3"/>
+          <visible value="1" gamestate="17,9,1"/>
+          <frame value=":highlight" gamestate="17,9,1"/>
+        </checks>
+        <button type="overClick" click="2" out="2" over="3"/>
+        <message value="bigBootQuest.track9" type="bigBootQuest"/>
+      </element>
+      <element id="entryPonyStableExtend" type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="entryPonyStableExtend"/>
+        </message>
+      </element>
+      <element id="doorII" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="doorII"/>
+        </message>
+      </element>
+      <element id="funnyFarmEntry" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="32"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":eastern" date="easternQuest"/>
+          <frame value=":summerQuest" date="summerQuest"/>
+          <frame value=":summerQuest2" date="summerQuest2"/>
+          <frame value=":summerQuest3" date="summerQuest3"/>
+          <frame value=":summerQuest4" date="summerQuest4"/>
+          <frame value=":gulliver" date="gulliver"/>
+          <frame value=":circusQuest" date="circusQuest"/>
+        </checks>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="funnyFarmEntry" type="game" name="GAME_NAME_32"/>
+      <tooltip id="doorII" type="door" target="32" angle="-90"/>
+      <tooltip id="entryPonyStableExtend" type="door" target="40" angle="-45"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="doorII" target="32" type="room" x="673" y="221" rad="40"/>
+      <hotspot target="22" type="room" x="57" y="261" rad="45" angle="-160"/>
+      <hotspot id="entryPonyStableExtend" target="40" type="room" x="491" y="192" rad="40" disableWithItem="104152"/>
+      <hotspot target="undefined" type="ponyyardAssets" x="0" y="0" rad="396"/>
+    </hotspots>
+    <properties/>
+  </module>
+</config>

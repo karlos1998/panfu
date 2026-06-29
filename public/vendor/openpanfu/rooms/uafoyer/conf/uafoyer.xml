@@ -1,0 +1,171 @@
+<config check="76dcbd93f04e26bd0f92961bed2980e5">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+    <asset id="roomOLD" path="assets/roomOLD.swf"/>
+    <asset id="mummies" path="assets/mummies.swf"/>
+  </assets>
+  <dates>
+    <date id="backToSchool" start="Sep 8 2009" finish="Sep 28 2009" check="f739ba5b3dc49f2"/>
+    <date id="pompomQuest" start="Oct 16 2009" finish="Oct 26 2009" check="1c2637db10420cf"/>
+    <date id="tivolaInvisible" start="Sep 1 2011" finish="Sep 16 2012" check="52517ac820a79a0"/>
+    <date id="backToSchool" start="Aug 22 2012" finish="Sep 19 2012" check="5b5637229cf7558"/>
+    <date id="backToSchool0" start="Aug 20 2012" finish="Aug 29 2012" check="5508815bf1a2be4"/>
+    <date id="backToSchool1" start="Aug 22 2012" finish="Aug 29 2012" check="332a6c3a8ff5760"/>
+    <date id="backToSchool2" start="Aug 22 2012" finish="Sep 5 2012" check="d3e1fc9e674e569"/>
+    <date id="backToSchool3" start="Aug 29 2012" finish="Sep 5 2012" check="e4567e964f1c7d9"/>
+    <date id="afterBacktoSchool" start="Aug 29 2012" finish="Aug 29 2099" check="1a28b85130d0994"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="roomBackground2" volume="0.4" path="audio/helpBackground.mp3" loops="-1" backgroundmusic="0"/>
+    <sound id="basketball" volume="1" path="audio/basketball.mp3" loops="1"/>
+    <sound id="entrance" volume="1" path="audio/entrance_door.mp3" loops="1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="pump1" button="0" visible="0">
+        <button type="click" click="99"/>
+        <checks>
+          <button value="1" gamestate="121,0,105-110" date="backToSchool3"/>
+          <visible value="1" gamestate="121,0,65-110" date="backToSchool2"/>
+        </checks>
+        <message value="backToSchool.pumpClicked" type="backToSchool"/>
+      </element>
+      <element id="pump2" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="121,0,70-110" date="backToSchool2"/>
+        </checks>
+      </element>
+      <element id="pump3" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="121,0,75-110" date="backToSchool2"/>
+        </checks>
+      </element>
+      <element id="pump4" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="121,0,80-110" date="backToSchool2"/>
+        </checks>
+      </element>
+      <element id="pump5" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="121,0,85-110" date="backToSchool2"/>
+        </checks>
+      </element>
+      <element id="pump6" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="121,0,90-110" date="backToSchool2"/>
+        </checks>
+      </element>
+      <element id="pump7" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="121,0,95-110" date="backToSchool2"/>
+        </checks>
+      </element>
+      <element id="manny" button="1" visible="0">
+        <checks>
+          <visible value="1" date="backToSchool2"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="MANNY_UAFOYER"/>
+        </message>
+      </element>
+      <element id="freddy" button="1" visible="0">
+        <button type="click" click="99"/>
+        <message value="tivolaQuest.talkToFreddy" type="*"/>
+      </element>
+      <element id="brainbot" button="0" visible="0"/>
+      <element id="brain" button="0" visible="0">
+        <button type="full" click="2" over="2" out="3"/>
+        <message value="trackTaskWindow" type="tivolaQuest"/>
+        <message value="tivola.openquests" type="tivola"/>
+      </element>
+      <element id="arm" button="0" visible="0">
+        <button type="full" click="2" over="2" out="3"/>
+        <message value="tivola.openslot" type="tivolaQuest"/>
+        <message value="tivola.openslot" type="tivola"/>
+      </element>
+      <element id="backToSchoolBanner" button="0" visible="0">
+        <checks>
+          <visible value="1" date="backToSchool"/>
+        </checks>
+      </element>
+      <element type="doorRightSide" button="1" visible="1">
+        <checks>
+          <button value="0" requesthasOneItem="104152"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="doorRightSide"/>
+        </message>
+      </element>
+      <element id="basketball" button="1" visible="1">
+        <button type="full" over="3">
+          <sounds rollOver="basketball"/>
+        </button>
+      </element>
+      <element id="poogle" button="0" visible="1"/>
+      <element id="entrance" button="1" visible="1">
+        <button type="full" over="3">
+          <sounds rollOver="entrance"/>
+        </button>
+      </element>
+      <element id="smartRace" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="33"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="smartRace" type="game" name="GAME_NAME_33"/>
+      <tooltip id="entrance" type="door" target="19" angle="-90"/>
+      <tooltip id="doorRightSide" type="door" target="74" angle="1"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="28" type="room" x="28" y="301" rad="45" angle="179"/>
+      <hotspot target="" type="action" x="335" y="133" rad="30">
+        <checks>
+          <target value="leaveSeaWorld"/>
+        </checks>
+      </hotspot>
+      <hotspot target="" type="action" x="480" y="220" rad="25" user="1">
+        <checks>
+          <target value="updateMood"/>
+        </checks>
+      </hotspot>
+      <hotspot id="doorRightSide" target="74" type="action" x="570" y="270" rad="30" angle="1" disableWithItem="104152">
+        <checks>
+          <type value="action" date="backToSchool1"/>
+          <target value="classroomCheck" date="backToSchool1"/>
+          <target value="classroomCheck" gamestate="121,0,100-110" date="afterBackToSchool"/>
+          <target value="allowEntryClassroom" gamestate="121,0,115-1000" date="afterBackToSchool"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="mummyAniFinished">
+        <showEffect module="jinxedPirate"/>
+      </action>
+      <action id="putOnWetsuit">
+        <showPopup text="INACTIVE_ITEM_FOR_ROOM" type="alert"/>
+      </action>
+      <action id="leaveSeaWorld">
+        <joinRoom room="19"/>
+      </action>
+      <action id="enterSeaWorld">
+        <showExternalMovie asset="underwater" sound="blub" muteRoom="1"/>
+      </action>
+      <action id="updateMood">
+        <checkMoodAnimation id="drinkMachine"/>
+      </action>
+      <action id="allowEntryClassroom">
+        <joinRoom room="74"/>
+      </action>
+      <action id="classroomCheck">
+        <classroomCheck/>
+      </action>
+    </actions>
+  </module>
+</config>

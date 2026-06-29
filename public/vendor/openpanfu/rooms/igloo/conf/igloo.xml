@@ -1,0 +1,364 @@
+<config check="e4bdc010149be23baf0f0993e5ecf712">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="party" start="Nov 16 2025" finish="Nov 23 2025" check="bf1b34df87f31d4"/>
+    <date id="advent" start="Nov 30 2025" finish="Dec 27 2025" check="0a74b2ec75fc850"/>
+    <date id="advent2" start="Dec 7 2025" finish="Dec 14 2025" check="5dc80bb804214c0"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="party" volume="0.4" path="audio/party.mp3" backgroundmusic="1" loops="-1" date="party"/>
+    <sound id="advent" volume="0.1" path="audio/advent.mp3" backgroundmusic="1" loops="-1" date="advent"/>
+  </sounds>
+  <module>
+    <waterBombReactions>
+      <!--<zone idTarget="fireplace" reaction="extinguishFire" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>-->
+    </waterBombReactions>
+    <elements>
+      <element id="Manny" button="0" visible="0">
+        <checks>
+          <!--<visible value="1" date="advent"/>-->
+        </checks>
+      </element>
+      <element id="construction" button="0" visible="0">
+        <checks>
+          <!--<visible value="1" date="advent"/>-->
+        </checks>
+      </element>
+      <element id="Lili" button="1" visible="0">
+        <checks>
+          <!--<visible value="1" date="advent" gamestate="105,0,0-7"/>-->
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="adventQuest.talkToLili"/>
+      </element>
+      <element id="fireplace" button="0" visible="1">
+        <checks>
+          <visible value="1" date="advent2"/>
+        </checks>
+      </element>
+      <element id="socks" button="0" visible="0">
+        <checks>
+          <visible value="1" date="advent2"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="adventQuest.socksClicked" type="adventQuest"/>
+      </element>
+      <element id="glowlights" button="0" visible="1">
+        <checks>
+          <visible value="0" date="advent2"/>
+        </checks>
+      </element>
+      <element id="party" visible="0">
+        <checks>
+          <visible value="1" date="party"/>
+        </checks>
+      </element>
+      <element id="food" visible="0">
+        <checks>
+          <visible value="1" date="party"/>
+        </checks>
+      </element>
+      <element id="chair_0" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="0"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="0"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="0"/>
+        </message>
+      </element>
+      <element id="chair_1" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="1"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="1"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="1"/>
+        </message>
+      </element>
+      <element id="chair_2" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="2"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="2"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="2"/>
+        </message>
+      </element>
+      <element id="chair_3" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="3"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="3"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="3"/>
+        </message>
+      </element>
+      <element id="chair_4" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="4"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="4"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="4"/>
+        </message>
+      </element>
+      <element id="chair_5" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="5"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="5"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="5"/>
+        </message>
+      </element>
+      <element id="chair_6" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="6"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="6"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="6"/>
+        </message>
+      </element>
+      <element id="chair_7" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="7"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="7"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="7"/>
+        </message>
+      </element>
+      <element id="chair_8" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="8"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="8"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="8"/>
+        </message>
+      </element>
+      <element id="chair_9" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="9"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="9"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="9"/>
+        </message>
+      </element>
+      <element id="chair_10" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="10"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="10"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="10"/>
+        </message>
+      </element>
+      <element id="chair_11" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="11"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="11"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="11"/>
+        </message>
+      </element>
+      <element id="chair_12" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="12"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="12"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="12"/>
+        </message>
+      </element>
+      <element id="chair_13" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="13"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="13"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="13"/>
+        </message>
+      </element>
+      <element id="chair_14" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="14"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="14"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="14"/>
+        </message>
+      </element>
+      <element id="chair_15" button="1" visible="1">
+        <button type="overClickMsg" over="1" out="1" click="1" stopWalk="0"/>
+        <messageMouseOver value="sharedItemMouseOver">
+          <initial value="chair_"/>
+          <itemID value="15"/>
+        </messageMouseOver>
+        <messageMouseOut value="sharedItemMouseOut">
+          <initial value="chair_"/>
+          <itemID value="15"/>
+        </messageMouseOut>
+        <message value="sharedItemMouseClick">
+          <itemID value="15"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <hotspots>
+      <hotspot target="12" type="room" x="88" y="140" rad="50" angle="180"/>
+      <hotspot type="action" target="fire" x="378" y="185" rad="14" stop="0" into="1"/>
+      <hotspot type="action" target="sit_chair_0" x="54" y="286" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_1" x="62" y="229" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_2" x="147" y="234" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_3" x="139" y="302" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_4" x="234" y="339" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_5" x="244" y="284" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_6" x="328" y="287" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_7" x="334" y="347" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_8" x="452" y="313" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_9" x="458" y="250" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_10" x="548" y="256" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_11" x="551" y="314" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_12" x="630" y="293" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_13" x="643" y="227" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_14" x="737" y="237" rad="33" stop="1" into="0"/>
+      <hotspot type="action" target="sit_chair_15" x="736" y="305" rad="33" stop="1" into="0"/>
+    </hotspots>
+    <actions>
+      <action id="fire">
+        <message value="adventQuest.reachedFire"/>
+      </action>
+      <action id="sit_chair_0">
+        <requestInteractSharedItem initial="chair_" itemID="0" x="54" y="286" direction="right_up" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_1">
+        <requestInteractSharedItem initial="chair_" itemID="1" x="62" y="229" direction="down_right" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_2">
+        <requestInteractSharedItem initial="chair_" itemID="2" x="147" y="234" direction="left_down" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_3">
+        <requestInteractSharedItem initial="chair_" itemID="3" x="139" y="302" direction="left_up" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_4">
+        <requestInteractSharedItem initial="chair_" itemID="4" x="234" y="339" direction="right_up" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_5">
+        <requestInteractSharedItem initial="chair_" itemID="5" x="244" y="284" direction="down_right" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_6">
+        <requestInteractSharedItem initial="chair_" itemID="6" x="328" y="287" direction="left_down" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_7">
+        <requestInteractSharedItem initial="chair_" itemID="7" x="334" y="347" direction="left_up" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_8">
+        <requestInteractSharedItem initial="chair_" itemID="8" x="452" y="313" direction="right_up" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_9">
+        <requestInteractSharedItem initial="chair_" itemID="9" x="458" y="250" direction="down_right" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_10">
+        <requestInteractSharedItem initial="chair_" itemID="10" x="551" y="256" direction="left_down" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_11">
+        <requestInteractSharedItem initial="chair_" itemID="11" x="551" y="314" direction="left_up" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_12">
+        <requestInteractSharedItem initial="chair_" itemID="12" x="630" y="293" direction="right_up" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_13">
+        <requestInteractSharedItem initial="chair_" itemID="13" x="643" y="227" direction="down_right" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_14">
+        <requestInteractSharedItem initial="chair_" itemID="14" x="737" y="237" direction="left_down" zsortposition="450"/>
+      </action>
+      <action id="sit_chair_15">
+        <requestInteractSharedItem initial="chair_" itemID="15" x="736" y="305" direction="left_up" zsortposition="450"/>
+      </action>
+    </actions>
+  </module>
+</config>

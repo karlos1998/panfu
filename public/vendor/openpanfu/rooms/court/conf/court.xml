@@ -1,0 +1,146 @@
+<config check="717e6e48a59353f7d1ed9a61c41de469">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="panfuAnniversary" start="Dec 17 2009" finish="Dec 21 2009" check="03ba242bd307e2e"/>
+    <date id="iglooSnowQuestDay4" start="Jan 29 2010" finish="Jan 30 2010" check="800ae65935e66de"/>
+    <date id="lanternFestival" start="Feb 23 2010" finish="Mar 1 2010" check="f090a4b3d6bfe7c"/>
+    <date id="petsHomeQuest" start="Mar 16 2010" finish="Mar 21 2010" check="747e106d85fc5d2"/>
+    <date id="easternDay2" start="Mar 31 2010" finish="Apr 6 2010" check="d8761c02bc56e97"/>
+    <date id="summerQuest" start="Jul 6 2010" finish="Sep 5 2010" check="520603950d315fa"/>
+    <date id="newCourt" start="Sep 14 2010" finish="Sep 18 2010" check="2b976506066f603"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="manny" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="49,0,0-2" date="newCourt"/>
+        </checks>
+        <button type="overClick" click="1" over="2" out="1"/>
+        <message value="newCourt.talkToManny" type="newCourt"/>
+      </element>
+      <element id="kamaria" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,1-2" date="summerQuest"/>
+        </checks>
+        <button type="overClick" click="1" over="2" out="1"/>
+        <message value="summerQuest.talkToKamaria" type="summerQuest"/>
+      </element>
+      <element id="glitter1" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" doesNotHaveOneItem="101840" date="easternDay2" gamestate="32,0,0-20"/>
+        </checks>
+        <checks>
+          <button value="1" doesNotHaveOneItem="101840"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="easternQuest.getEgg1" type="easternQuest"/>
+      </element>
+      <element id="wholeEgg" visible="1"/>
+      <element id="kamira" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="petsHomeQuest" gamestate="29,0,0-80"/>
+        </checks>
+        <button type="overClick" click="2" over="2" out="1"/>
+        <message value="petsHomeQuest.talkToKamaria" type="petsHomeQuest"/>
+      </element>
+      <element id="chainLantern1" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern1" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern2" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern3" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="squLantern1" button="0" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="26,1,5-6"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="chineseLanternFestival.showPopup"/>
+      </element>
+      <element id="Snowman" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="iglooSnowQuestDay4" doesNotHaveOneItem="101601" gamestate="23,0,1"/>
+        </checks>
+        <button type="overClick" click="2" over="3" out="2"/>
+        <message value="iglooSnowQuest.getSnow7" type="iglooSnowQuest"/>
+      </element>
+      <element id="Jay" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="panfuAnniversary" gamestate="18,0,0-10"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1"/>
+        <message value="panfuAnniversary.talkToJay" type="panfuAnniversary"/>
+      </element>
+      <element id="coffinBat" button="1" visible="1">
+        <button type="full" over="2" out="1" click="3"/>
+        <message value="coffinBat" type="room"/>
+      </element>
+      <element id="door1" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door1"/>
+        </message>
+      </element>
+      <element id="door2" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door2"/>
+        </message>
+      </element>
+      <element id="random_ani" type="random_ani">
+        <button type="random" priority="1"/>
+      </element>
+      <element id="door_to_city_runner" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1" toolTip="GAME_NAME_10"/>
+        <message value="askJoinGame" type="client">
+          <game value="10"/>
+        </message>
+      </element>
+      <element id="bundles" button="1" visible="0">
+        <checks>
+          <visible value="1" user="isNormal" bundles="hasBundles" checkDisplayBundle="true"/>
+          <visible value="1" user="idIsEven" isLang="DE,SE,ES,FR,EN" signedupAfter="23 Apr 2009" endDate="30 Apr 2009"/>
+          <visible value="0" user="isPremium"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="showCatalogue">
+          <name value="BundleCatalogue"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips>
+      <tooltip id="door2" type="door" target="15" angle="-120"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="17" type="room" x="209" y="157" rad="30" angle="-80"/>
+      <hotspot id="door1" target="18" type="room" x="375" y="336" rad="30"/>
+      <hotspot id="door2" target="15" type="room" x="392" y="180" rad="40"/>
+      <hotspot target="13" type="room" x="767" y="410" rad="90" angle="15"/>
+    </hotspots>
+    <properties>
+      <specialWalk value="6"/>
+    </properties>
+  </module>
+</config>

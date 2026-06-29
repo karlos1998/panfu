@@ -1,0 +1,789 @@
+<config check="92a2a193ebedbac818cb1bccff486107">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+    <asset id="roomOLD" path="assets/roomOLD.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="summerFeature" start="May 27 2010" finish="Jun 10 2010" check="e191840eb422ef0"/>
+    <date id="shrekcinema" start="Jun 28 2010" finish="Jul 4 2010" check="e241b963564e27b"/>
+    <date id="megamind1" start="Dec 7 2010" finish="Dec 14 2010" check="d8d70bd85e9f0ae"/>
+    <date id="megamind2" start="Dec 14 2010" finish="Dec 23 2010" check="2af2d381e2f42a3"/>
+    <date id="newYears" start="Dec 29 2010" finish="Jan 2 2011" check="1700b0aef5e6414"/>
+    <date id="yogiCinema" start="Dec 21 2010" finish="Dec 29 2010" check="d8aff745da497b3"/>
+    <date id="arthurCinema" start="Jan 27 2011" finish="Feb 2 2011" check="a50c31fb695a908"/>
+    <date id="transition3" start="Feb 2 2011" finish="Feb 9 2011" check="0e8efbe05257de5"/>
+    <date id="gulliverCinema" start="Feb 3 2011" finish="Feb 14 2011" check="bf6d6518838896d"/>
+    <date id="rexCinema" start="Feb 4 2011" finish="Feb 11 2011" check="219696d517f39ff"/>
+    <date id="cinemaLilli1" start="Feb 14 2011" finish="Feb 17 2011" check="d0fbe1f1972d8d5"/>
+    <date id="cinemaLilli2" start="Feb 17 2011" finish="Feb 28 2011" check="eb787daf310e524"/>
+    <date id="springAndSing" start="Mar 23 2011" finish="Mar 29 2011" check="594248196dbf5e7"/>
+    <date id="rioCinema" start="Apr 05 2011" finish="Apr 16 2011" check="36dbbed89eae7e2"/>
+    <date id="circusQuest" start="Apr 16 2011" finish="May 3 2011" check="468bd1ea127b8f1"/>
+    <date id="easternDay3" start="Apr 22 2011" finish="Apr 23 2011" check="aaae96864f3188d"/>
+    <date id="fairtrade" start="May 11 2011" finish="May 14 2011" check="34759e1e2f50ae6"/>
+    <date id="kfp2Cinema" start="May 30 2011" finish="Jun 20 2011" check="74437bfeed90b5e"/>
+    <date id="poppersPinguins" start="Jun 20 2011" finish="Jun 29 2011" check="1f4c26d35c18113"/>
+    <date id="superKapje" start="Jul 21 2011" finish="Jul 31 2011" check="cd510be9c5c6ae0"/>
+    <date id="stickerQuest" start="Aug 3 2011" finish="Aug 10 2011" check="276d8a700d2c290"/>
+    <date id="starCinema" start="Jul 26 2011" finish="Aug 11 2011" check="35a5c4110291b67"/>
+    <date id="starCinemaBefore" start="Jul 26 2011" finish="Aug 4 2011" check="0d90a3fe4cfdc78"/>
+    <date id="starCinemaAfter" start="Aug 4 2011" finish="Aug 11 2011" check="ec43e63eef96c83"/>
+    <date id="internationalYouthDay" start="Aug 15 2011" finish="Aug 17 2011" check="b94099ac2a35c01"/>
+    <date id="tivolaInvisible" start="Sep 6 2011" finish="Sep 16 2012" check="a1c0bf7d6e955a2"/>
+    <date id="mueller" start="Sep 21 2011" finish="Oct 1 2011" check="33740b08e0f2224"/>
+    <date id="wickieCinema" start="Sep 29 2011" finish="Oct 5 2011" check="940842395c6a1cf"/>
+    <date id="spykidsCinema" start="Oct 7 2011" finish="Oct 17 2011" check="e671d6661191a69"/>
+    <date id="disneyUniverse" start="Oct 27 2011" finish="Nov 10 2011" check="ca1d24901a012ca"/>
+    <date id="alvinCinema" start="Dec 12 2011" finish="Dec 26 2011" check="411957ae1814968"/>
+    <date id="nesquikCinema" start="Feb 13 2012" finish="Feb 22 2012" check="d2b4aae52f71a83"/>
+    <date id="nesquikCinema2" start="Feb 27 2012" finish="Mar 5 2012" check="3c7730e1a4f2fab"/>
+    <date id="achtsteCinema" start="Feb 10 2012" finish="Feb 17 2012" check="21e987445b787b6"/>
+    <date id="legoCinema" start="Mar 5 2012" finish="Apr 9 2012" check="029cd0dd1648dc7"/>
+    <date id="ciniCinemaF1" start="Mar 19 2012" finish="Mar 28 2012" check="5613c24d0f78a4b"/>
+    <date id="ciniCinemaF2" start="Apr 2 2012" finish="Apr 9 2012" check="57700b8f2be379b"/>
+    <date id="easter" start="Apr 4 2012" finish="Apr 11 2012" check="9f7b0a05608bf2e"/>
+    <date id="preLorax" start="Jul 4 2012" finish="Jul 6 2012" check="87c79ff80c811e1"/>
+    <date id="lorax" start="Jul 6 2012" finish="Jul 18 2012" check="e4558604371b01b"/>
+    <date id="lorax2" start="Jul 18 2012" finish="Jul 25 2012" check="a255a99c20540a4"/>
+    <date id="postLorax" start="Jul 11 2012" finish="Jul 25 2012" check="dc2bda0d6c38664"/>
+    <date id="loraxCinema" start="Jul 2 2012" finish="Jul 23 2012" check="bb28695a943f536"/>
+    <date id="backToSchool3" start="Sep 5 2012" finish="Sep 12 2012" check="c80567e9507084a"/>
+    <date id="scareCrowWeek2" start="Nov 6 2013" finish="Nov 13 2013" check="1f8da6a426d8f01"/>
+    <date id="halloween2013" start="Oct 26 2013" finish="Nov 3 2013" check="6f5b2cdb325b7c6"/>
+    <date id="christmas2013" start="Dec 16 2013" finish="Dec 27 2013" check="cd6ee7f6716226b"/>
+    <date id="panfuBirthday" start="Jan 2 2013" finish="Jan 23 2013" check="7c04132b27d9a72"/>
+    <date id="panfuBirthday2" start="Jan 2 2013" finish="Jan 30 2013" check="aa8624615c14a95"/>
+    <date id="zukoCinema" start="Jan 30 2013" finish="Feb 6 2013" check="3be6d595d9c1ea5"/>
+    <date id="greyPanfu" start="May 9 2013" finish="May 10 2013" check="94f3a078f3d9ab9"/>
+    <date id="ndogsCinema" start="May 15 2013" finish="May 27 2013" check="ea7a5dfd20acd04"/>
+    <date id="marioCinema" start="May 27 2013" finish="Jun 5 2013" check="7627fa9a76f252b"/>
+    <date id="animalCrossing1" start="Jun 10 2013" finish="Jun 17 2013" check="bc1b03c1fa0ffd9"/>
+    <date id="animalCrossingCinema" start="Jun 17 2013" finish="Jun 30 2013" check="376fd4779ec2aea"/>
+    <date id="wolkig2Cinema" start="Oct 7 2013" finish="Oct 28 2013" check="fad3260a1819f09"/>
+    <date id="wecycleCinema" start="Nov 13 2013" finish="Dec 6 2013" check="2becf5676246c61"/>
+    <date id="bitterCurse" start="Sep 25 2013" finish="Oct 2 2013" check="7e1631163473688"/>
+  </dates>
+  <module>
+    <waterBombReactions>
+      <zone idTarget="fireworks4" reaction="disarmFireworks4" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+    </waterBombReactions>
+    <items/>
+    <elements>
+      <element id="wolkigVieh" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="142,0,15-17" gamestate2="142,1,0"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="wolkigFleischball.viehClicked" type="wolkigFleischball"/>
+      </element>
+      <element id="creeps" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="140,0,0-35" date="bitterCurse"/>
+        </checks>
+      </element>
+      <element id="ACFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="136,0,5-10" isLang="DE" date="animalCrossing1"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="animalCrossing.ACFrameClicked" type="animalCrossing"/>
+      </element>
+      <element id="ACKFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="136,0,5-10" isNotLang="DE"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="animalCrossing.ACKFrameClicked" type="animalCrossing"/>
+      </element>
+      <element id="Evron" button="0" visible="0">
+        <checks>
+          <button value="1" date="greyPanfu" gamestate="135,0,0-5"/>
+          <visible value="1" date="greyPanfu" gamestate="135,0,0-999"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="talkToNPC" type="client">
+          <id value="EVRON"/>
+        </message>
+      </element>
+      <element id="lemon9" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,210-255" gamestate2="134,9,0"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="sickIris.lemon9Clicked" type="sickIris"/>
+      </element>
+      <element id="confetti" button="0" visible="0">
+        <checks>
+          <visible value="1" date="panfuBirthday2"/>
+        </checks>
+      </element>
+      <element id="balloons" button="0" visible="0">
+        <checks>
+          <visible value="1" date="panfuBirthday2"/>
+        </checks>
+      </element>
+      <element id="cake" button="0" visible="0">
+        <checks>
+          <visible value="1" date="panfuBirthday"/>
+          <frame value=":five" date="panfuBirthday" gamestate="127,0,0-5"/>
+          <frame value=":four" date="panfuBirthday" gamestate="127,0,20"/>
+          <frame value=":three" date="panfuBirthday" gamestate="127,0,40"/>
+          <frame value=":two" date="panfuBirthday" gamestate="127,0,60"/>
+          <frame value=":one" date="panfuBirthday" gamestate="127,0,80"/>
+          <frame value=":zero" date="panfuBirthday" gamestate="127,0,100"/>
+          <frame value=":stellaStage" date="panfuBirthday" gamestate="127,0,105"/>
+        </checks>
+      </element>
+      <element id="curley" button="1" visible="0">
+        <checks>
+          <visible value="1" date="panfuBirthday"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="999"/>
+        <message value="panfuBirthday.curleyClicked" type="panfuBirthday"/>
+        <message value="talkToNPC" type="client">
+          <id value="CURLEY_BIGCITY"/>
+        </message>
+      </element>
+      <element id="christmas2012" button="0" visible="0">
+        <checks>
+          <visible value="1" date="christmas2013"/>
+        </checks>
+      </element>
+      <element id="pumpkin" button="1" visible="0">
+        <checks>
+          <visible value="1" date="halloween2013"/>
+        </checks>
+        <button type="overClick" over="2" click="2"/>
+      </element>
+      <element id="raven" button="1" visible="0">
+        <checks>
+          <visible value="1" date="scareCrowWeek2" gamestate="122,22,0-2" gamestate2="122,0,65-80"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="scareCrow.ravenClicked" type="scareCrow"/>
+      </element>
+      <element id="feather" button="1" visible="0">
+        <checks>
+          <visible value="1" date="scareCrowWeek2" gamestate="122,22,1" gamestate2="122,0,65-80"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="scareCrow.featherCollected" type="scareCrow"/>
+      </element>
+      <element id="paperPlane" button="1" visible="0">
+        <checks>
+          <visible value="1" date="backToSchool3" gamestate="121,22,0" gamestate2="121,0,160-175"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="999"/>
+        <message value="backToSchool.paperPlaneClicked" type="backToSchool"/>
+      </element>
+      <element id="partySign" button="0" visible="0">
+        <checks>
+          <visible value="1" date="lorax2" isLang="DE"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="clickLoraxSign" type="loraxQuest"/>
+      </element>
+      <element id="loraxSign" button="1" visible="0">
+        <checks>
+          <visible value="1" date="postLorax" isLang="DE" gamestate="112,0,145"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="clickLoraxSign" type="loraxQuest"/>
+      </element>
+      <element id="sandPile" visible="0">
+        <checks>
+          <visible value="1" date="preLorax" isLang="DE"/>
+          <visible value="1" date="postLorax" isLang="DE" gamestate="112,0,145-155"/>
+        </checks>
+      </element>
+      <element id="eloise" button="0" visible="0">
+        <checks>
+          <visible value="1" date="lorax" isLang="DE" gamestate="112,0,0-140"/>
+          <button value="1" date="lorax" isLang="DE" gamestate="112,0,0-140"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="loraxTalkedToEloiseHB" type="loraxQuest"/>
+        <message value="talkToNPC" type="client">
+          <id value="ELOISE_CITY"/>
+        </message>
+      </element>
+      <element id="lorax" button="0" visible="0">
+        <checks>
+          <visible value="1" date="lorax" isLang="DE" gamestate="112,0,0-140"/>
+          <button value="1" date="lorax" isLang="DE" gamestate="112,0,0-140"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="talkedToLoraxHB" type="loraxQuest"/>
+        <message value="talkToNPC" type="client">
+          <id value="LORAX_CITY"/>
+        </message>
+      </element>
+      <element id="chicken" button="0" visible="0">
+        <checks>
+          <visible value="1" date="easter" gamestate="111,3,1"/>
+          <button value="1" date="easter" gamestate="111,3,1"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="easter.ChickenClicked" type="easter"/>
+      </element>
+      <element id="owlBigCity" button="1" visible="0"/>
+      <element id="partyDeco1" visible="0">
+        <checks>
+          <visible value="1" date="internationalYouthDay"/>
+        </checks>
+      </element>
+      <element id="partyDeco2" visible="0">
+        <checks>
+          <visible value="1" date="internationalYouthDay"/>
+        </checks>
+      </element>
+      <element id="jaypeaSFP" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="92,0,0-1000" date="stickerQuest"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="talkToNPC" type="client">
+          <id value="JAYPEA_SFP"/>
+        </message>
+      </element>
+      <element id="arrow" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="80,0,80"/>
+        </checks>
+      </element>
+      <element id="sack" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="80,0,65-75"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="fairtradeQuest.sackClicked" type="fairtradeQuest"/>
+      </element>
+      <element id="chicken3" button="1" visible="0">
+        <checks>
+          <visible value="1" date="easternDay3" gamestate="77,1,1-999"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="eastern2011.clickChicken3" type="eastern2011"/>
+      </element>
+      <element id="poster" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="circusQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="circusQuest.showPoster" type="circusQuest"/>
+      </element>
+      <element id="momo" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="73,0,300-400"/>
+        </checks>
+        <button type="overClick" out="1" over="2" click="2"/>
+        <message value="talkToNPC" type="tutorial2">
+          <id value="momo"/>
+        </message>
+      </element>
+      <element id="lenny" button="1" visible="0">
+        <checks>
+          <visible value="1" date="springAndSing"/>
+        </checks>
+        <button type="overClick" out="1" over="2" click="2"/>
+        <message value="springAndSing.talkToLenny" type="springAndSing"/>
+      </element>
+      <element id="spring" button="0" visible="0">
+        <checks>
+          <visible value="1" date="springAndSing"/>
+        </checks>
+      </element>
+      <element id="giftBox" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="44,2,13"/>
+        </checks>
+        <button type="click" click="3"/>
+        <message value="cityGiftClicked" type="welcomeTour"/>
+      </element>
+      <element id="fireworks4" button="1" visible="0">
+        <checks>
+          <visible value="1" date="newYears" gamestate="58,4,0"/>
+          <visible value="0" date="newYears" gamestate="58,0,0"/>
+        </checks>
+        <button type="click" click="3"/>
+        <message value="fireworks4Clicked"/>
+      </element>
+      <element id="quizmachine" button="0" visible="1"/>
+      <element id="quiz_highscore" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="showBestQuizPlayer" type="popup"/>
+      </element>
+      <element id="quiz_entry" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="51"/>
+        </message>
+      </element>
+      <element id="wecycleFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="wecycleCinema" isLang="NL"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="Wecycle.flv"/>
+          <thumbnail value="wecycle.jpg"/>
+          <width value="380"/>
+          <height value="250"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="WECYCLE_LINK"/>
+          <trackPartnerVideoClicks_NL value="http://ib.adnxs.com/clktrb?id=258940"/>
+          <trackOwnCinemaClicks value="WECYCLE_TRAILER"/>
+          <trackPartnerCinemaClicks_NL value=""/>
+          <languages value="NL"/>
+          <autoplay value="1"/>
+        </message>
+        <message value="cinemaClicked" type="*"/>
+      </element>
+      <element id="wecycleThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="wecycleCinema" isLang="NL"/>
+        </checks>
+      </element>
+      <element id="loraxThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="loraxCinema" isLang="DE" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="loraxFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="loraxCinema" isLang="DE" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="lorax.flv"/>
+          <thumbnail value="lorax.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.DE.LORAX"/>
+          <trackPartnerVideoClicks_DE value="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf~c=20~mc=click~pli=4904699~PluID=0~ord={random}"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.DE.LORAX"/>
+          <trackPartnerCinemaClicks_DE value="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf&amp;c=19&amp;mc=imp&amp;pli=4904699&amp;PluID=0&amp;ord={random}&amp;rtu=-1"/>
+          <languages value="DE"/>
+          <autoplay value="1"/>
+        </message>
+      </element>
+      <element id="animalCrossingFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="animalCrossingCinema" isLang="DE"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="ac.flv"/>
+          <thumbnail value="ac.jpg"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="013_025_023_AC_CW25_LINK"/>
+          <trackPartnerVideoClicks_DE value="http://ad-emea.doubleclick.net/clk;272696591;98306816;b"/>
+          <trackOwnCinemaClicks value="013_025_022_AC_CW25_TRAILER"/>
+          <trackPartnerCinemaClicks_DE value="http://ad-emea.doubleclick.net/ad/N1203.panfu.xenion.de/B7664806.2;sz=1x1;ord=[timestamp]?"/>
+          <languages value="DE"/>
+          <autoplay value="1"/>
+        </message>
+      </element>
+      <element id="animalCrossingThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="animalCrossingCinema" isLang="DE"/>
+        </checks>
+      </element>
+      <element id="marioFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="marioCinema" isLang="DE" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="mario.flv"/>
+          <thumbnail value="mario.jpg"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.DE.SUPER"/>
+          <trackPartnerVideoClicks_DE value="http://ad-emea.doubleclick.net/clk;272617618;98403510;j"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.DE.SUPER"/>
+          <trackPartnerCinemaClicks_DE value="http://ad-emea.doubleclick.net/ad/N1203.panfu.xenion.de/B7685917;sz=1x1;ord=[timestamp]?"/>
+          <languages value="DE"/>
+          <autoplay value="1"/>
+        </message>
+      </element>
+      <element id="marioThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="marioCinema" isLang="DE" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="ndogsFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="ndogsCinema" isLang="DE" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="Ndogs.flv"/>
+          <thumbnail value="ndogs.jpg"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.DE.NDOGS"/>
+          <trackPartnerVideoClicks_DE value="http://ad-emea.doubleclick.net/clk;272482514;98270100;b"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.DE.NDOGS"/>
+          <trackPartnerCinemaClicks_DE value="http://ad-emea.doubleclick.net/ad/N1203.160191.GAN-ONLINE.COM/B7664302;sz=1x1;ord=[timestamp]?"/>
+          <languages value="DE"/>
+          <autoplay value="1"/>
+        </message>
+      </element>
+      <element id="ndogsThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="ndogsCinema" isLang="DE" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="zukoFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="zukoCinema"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="zukoTrailer.flv"/>
+          <thumbnail value="zuko.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.DE.ZUKO"/>
+          <trackPartnerVideoClicks_DE value="http://www.zukomonsters.de/"/>
+          <trackPartnerVideoClicks_DK value="http://www.zukomonsters.com/"/>
+          <trackPartnerVideoClicks_EN value="http://www.zukomonsters.com/"/>
+          <trackPartnerVideoClicks_ES value="http://www.zukomonsters.com/"/>
+          <trackPartnerVideoClicks_FI value="http://www.zukomonsters.com/"/>
+          <trackPartnerVideoClicks_FR value="http://www.zukomonsters.com/"/>
+          <trackPartnerVideoClicks_NL value="http://www.zukomonsters.com/"/>
+          <trackPartnerVideoClicks_NO value="http://www.zukomonsters.com/"/>
+          <trackPartnerVideoClicks_PL value="http://www.zukomonsters.com/"/>
+          <trackPartnerVideoClicks_SE value="http://www.zukomonsters.com/"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.DE.ZUKO"/>
+          <trackPartnerCinemaClicks_DE value=""/>
+          <languages value="EN"/>
+          <autoplay value="1"/>
+        </message>
+      </element>
+      <element id="cini1Thumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="ciniCinemaF1" isLang="PL" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="ciniFrame1" button="1" visible="0">
+        <checks>
+          <visible value="1" date="ciniCinemaF1" isLang="PL" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="cini.flv"/>
+          <thumbnail value="cini.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.PL.CINIF1"/>
+          <trackPartnerVideoClicks_PL value="http://go.pol.bbelements.com/please/redirect/5155/1/1/33/?param=135658/155093_0_"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.PL.CINIF1"/>
+          <trackPartnerCinemaClicks_PL value="http://go.pol.bbelements.com/please/redirect/5155/1/1/33/?param=135661/155095_0_"/>
+          <languages value="PL"/>
+          <autoplay value="1"/>
+        </message>
+      </element>
+      <element id="cini2Thumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="ciniCinemaF2" isLang="PL" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="ciniFrame2" button="1" visible="0">
+        <checks>
+          <visible value="1" date="ciniCinemaF2" isLang="PL" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="cini.flv"/>
+          <thumbnail value="cini.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.PL.CINIF2"/>
+          <trackPartnerVideoClicks_PL value="http://go.pol.bbelements.com/please/redirect/5155/1/1/33/?param=135658/155093_0_"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.PL.CINIF2"/>
+          <trackPartnerCinemaClicks_PL value="http://go.pol.bbelements.com/please/redirect/5155/1/1/33/?param=135662/155096_0_"/>
+          <languages value="PL"/>
+          <autoplay value="1"/>
+        </message>
+      </element>
+      <element id="legoThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="legoCinema" isLang="FI" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="legoFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="legoCinema" isLang="FI" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="lego.flv"/>
+          <thumbnail value="lego.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.FI.LEGO"/>
+          <trackPartnerVideoClicks_FI value="http://ad-emea.doubleclick.net/clk;253961440;77762467;t"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.FI.LEGO"/>
+          <trackPartnerCinemaClicks_FI value=""/>
+          <languages value="FI"/>
+          <autoplay value="0"/>
+        </message>
+      </element>
+      <element id="achtsteThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="achtsteCinema" isLang="NL" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="achtsteFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="achtsteCinema" isLang="NL" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="achtste.flv"/>
+          <thumbnail value="achtste.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.NL.ACHTSTE.GROEPERS.HUILEN.NIET"/>
+          <trackPartnerVideoClicks_NL value="http://achtstegroepersdefilm.nl"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.NL.ACHTSTE.GROEPERS.HUILEN.NIET"/>
+          <trackPartnerCinemaClicks_NL value=""/>
+          <languages value="NL"/>
+          <autoplay value="0"/>
+        </message>
+      </element>
+      <element id="nesquikThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" isLang="PL" isRealPremium="false" date="nesquikCinema"/>
+          <visible value="1" date="nesquikCinema2" isLang="PL" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="nesquikFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" isLang="PL" isRealPremium="false" date="nesquikCinema"/>
+          <visible value="1" date="nesquikCinema2" isLang="PL" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="nesquik.flv"/>
+          <thumbnail value="nesquik.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.PL.NESQUIK"/>
+          <trackPartnerVideoClicks_PL value="http://go.pol.bbelements.com/please/redirect/5155/1/1/33/?param=132985/151994_0_"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.PL.NESQUIK"/>
+          <trackPartnerCinemaClicks_PL value="http://go.pol.bbelements.com/please/showit/5155/1/1/33/&amp;typkodu=img&amp;_idplan=151994"/>
+          <languages value="PL"/>
+          <autoplay value="0"/>
+        </message>
+      </element>
+      <element id="alvinThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="alvinCinema" isLang="DE" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="alvinFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="alvinCinema" isLang="DE" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="alvin.flv"/>
+          <thumbnail value="alvin.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.DE.ALVIN"/>
+          <trackPartnerVideoClicks_DE value="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf%26c=20%26mc=click%26pli=3505531%26PluID=0%26ord={random}"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.DE.ALVIN"/>
+          <trackPartnerCinemaClicks_DE value=""/>
+          <languages value="DE"/>
+          <autoplay value="0"/>
+        </message>
+      </element>
+      <element id="universeThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="disneyUniverse" isLang="DE" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="universeFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="disneyUniverse" isLang="DE" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="disneyuniverse.flv"/>
+          <thumbnail value="disneyuniverse.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.DE.DISNEYUNIVERSE"/>
+          <trackPartnerVideoClicks_DE value="http://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=tf%26c=20%26mc=click%26pli=3416744%26PluID=0%26ord={random}"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.DE.DISNEYUNIVERSE"/>
+          <trackPartnerCinemaClicks_DE value=""/>
+          <languages value="DE"/>
+          <autoplay value="0"/>
+        </message>
+      </element>
+      <element id="spykidsThumb" button="0" visible="0">
+        <checks>
+          <visible value="1" date="spykidsCinema" isLang="NL" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="spykidsFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="spykidsCinema" isLang="NL" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="spykids.flv"/>
+          <thumbnail value="spykids.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.NL.SPYKIDS"/>
+          <trackPartnerVideoClicks_NL value="http://spykidsmovie.net/"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.NL.SPYKIDS"/>
+          <trackPartnerCinemaClicks_NL value=""/>
+          <languages value="NL"/>
+          <autoplay value="0"/>
+        </message>
+      </element>
+      <element id="wickiePrev" button="0" visible="0">
+        <checks>
+          <visible value="1" date="wickieCinema" isLang="DE" isRealPremium="false"/>
+        </checks>
+      </element>
+      <element id="wickieFrame" button="1" visible="0">
+        <checks>
+          <visible value="1" date="wickieCinema" isLang="DE" isRealPremium="false"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="wickie.flv"/>
+          <thumbnail value="wickie.png"/>
+          <width value="380"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="PANFU.TRACKING.VIDEOCLICK.DE.WICKIE"/>
+          <trackPartnerVideoClicks_DE value="http://media.gan-online.com/www/delivery/ck.php?oaparams=2__bannerid=3646__zoneid=0__cb=RANDOM__oadest=http://www.wickie-film.de/?utm_source=gan-panfu%26utm_medium=cinema%26utm_campaign=wickie"/>
+          <trackOwnCinemaClicks value="PANFU.TRACKING.THUMBNAILCLICK.DE.WICKIE"/>
+          <trackPartnerCinemaClicks_DE value=""/>
+          <languages value="DE"/>
+          <autoplay value="0"/>
+        </message>
+      </element>
+      <element id="superKapje" button="1" visible="0">
+        <checks>
+          <visible value="1" date="superKapje" isLang="NL"/>
+          <visible value="0" user="isPremium"/>
+        </checks>
+        <button type="click" click="1" over="2" out="1"/>
+        <message value="openflv">
+          <video value="superkapje.flv"/>
+          <thumbnail value="superkapje.png"/>
+          <width value="360"/>
+          <height value="215"/>
+          <skin value="skins/default.swf"/>
+          <trackOwnVideoClicks value="panfu.tracking.onVideoClick.superKapje"/>
+          <trackPartnerVideoClicks_NL value="http://superkapje.nl"/>
+          <trackOwnCinemaClicks value="panfu.tracking.onCinemaClick.superKapje"/>
+          <trackPartnerCinemaClicks_NL value=""/>
+          <languages value="NL"/>
+        </message>
+      </element>
+      <element id="bsDoor" type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="bsDoor"/>
+        </message>
+      </element>
+      <element id="chezBrunoDoor" type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="chezBrunoDoor"/>
+        </message>
+      </element>
+      <element type="popup" button="1" visible="0">
+        <checks>
+          <visible value="1" date="basepef"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="showPopup">
+          <header value=""/>
+          <text value="VILLAIN_STORY_INFO_POPUP"/>
+          <target value="null"/>
+          <type value=""/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":bus" date="tour_be4" isLang="DE"/>
+          <frame value=":bus" date="tour_be4_int" isLang="EN"/>
+          <frame value=":bus" date="tour_be4_int" isLang="ES"/>
+          <frame value=":bus" date="tour_be4_int" isLang="FR"/>
+          <frame value=":bus" date="tour_be4_int" isLang="NL"/>
+          <frame value=":bus" date="tour_be4_int" isLang="PL"/>
+          <frame value=":bus" date="tour_be4_int" isLang="SE"/>
+          <frame value=":ponyquest" date="ponyquest"/>
+          <frame value=":eclipse" date="eclipse"/>
+          <frame value=":halloween" date="halloweenQuestDay3"/>
+          <frame value=":springAndSing" date="springAndSing"/>
+          <frame value=":circusquest" date="circusquest"/>
+          <frame value=":fairtrade" date="fairtrade"/>
+        </checks>
+      </element>
+      <element id="disneycinema" button="1" visible="0"/>
+    </elements>
+    <tooltips>
+      <tooltip id="chezBrunoDoor" type="door" target="30" angle="-45"/>
+      <tooltip id="bsDoor" type="door" target="23" angle="-135"/>
+      <tooltip id="quiz_entry" type="game" name="GAME_NAME_51"/>
+      <tooltip id="quiz_highscore" type="news" name="BESMARTER_SMARTYPANTS"/>
+      <tooltip id="sandPile" type="door" target="69" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="31" type="room" x="360" y="168" rad="55" angle="-90"/>
+      <hotspot target="4" type="room" x="730" y="410" rad="55" angle="10"/>
+      <hotspot id="chezBrunoDoor" target="30" type="action" x="581" y="201" rad="30">
+        <checks>
+          <target value="bouncerCheckEntry"/>
+        </checks>
+      </hotspot>
+      <hotspot id="bsDoor" target="23" type="room" x="160" y="266" rad="40"/>
+      <hotspot target="69" type="action" x="422" y="253" rad="25" angle="-90">
+        <checks>
+          <target value="allowEntryLorax" gamestate="112,0,150-155" date="lorax2" isLang="DE"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="bouncerCheckEntry">
+        <bouncerCheckEntry room="30"/>
+      </action>
+      <action id="allowEntryLorax">
+        <joinRoom room="69"/>
+      </action>
+    </actions>
+    <properties>
+      <specialWalk value="6"/>
+    </properties>
+  </module>
+</config>

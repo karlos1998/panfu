@@ -1,0 +1,10 @@
+<config check="6aeae945f086097b047b67e114e9d159">
+  <snippets path="features/oracle/conf/snippets/$$lang$$/oracle_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="oraclePopUp" path="assets/oraclePopUp.swf"/>
+  </assets>
+  <sounds>
+    <sound id="kamariaSound" volume="0.4" path="audio/mystery_fortune_sound.mp3" loops="0"/>
+  </sounds>
+  <module/>
+</config>

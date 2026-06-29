@@ -1,0 +1,34 @@
+<config check="337bea000056634138715e4b52b1bae6">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="scareCrow" start="Nov 13 2013" finish="Nov 20 2013" check="0a7ea4212e0aaf0"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="shell" button="1" visible="0">
+        <checks>
+          <visible value="1" date="scareCrow" gamestate="122,0,185"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="scareCrow.shellClicked" type="scareCrow"/>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="overClick" click="999" over="2" out="41"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="27" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="27" type="room" x="396" y="370" rad="30"/>
+    </hotspots>
+  </module>
+</config>

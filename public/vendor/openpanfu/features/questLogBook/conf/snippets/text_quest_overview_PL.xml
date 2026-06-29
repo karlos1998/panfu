@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<snippets date="07.06.2022 03:46:10">
+  <BRINGSPRING_HIERARCHY><![CDATA[Beginning of Spring]]></BRINGSPRING_HIERARCHY>
+  <BUTTON_CANCEL><![CDATA[Cancel Quest]]></BUTTON_CANCEL>
+  <BUTTON_RESTART><![CDATA[Play Again]]></BUTTON_RESTART>
+  <BUTTON_START><![CDATA[Begin Quest]]></BUTTON_START>
+  <EXPLANATION_CARNIVAL_01><![CDATA[Carnival season has begun and Mr. Curley seems to take to it like a duck to water! He's organising a parade through all of Panfu! You can read up on the details at the Panfu newsstand in the city, beside the pet shop.
+]]></EXPLANATION_CARNIVAL_01>
+  <EXPLANATION_QUEST01><![CDATA[This is the tragic story of Amalura and Joshua. In this quest, you'll have to save all of Panfu. Go to the beach and talk to the castaway.]]></EXPLANATION_QUEST01>
+  <EXPLANATION_QUEST02><![CDATA[In this quest you'll discover many secrets about Kamaria's past and meet some notorious pirates. Go talk to the giant octopus on the beach.]]></EXPLANATION_QUEST02>
+  <EXPLANATION_QUEST03><![CDATA[In this miniature quest, you can help out Lenny and Penny. Once you have solved it, you will receive a cool surfboard.
+]]></EXPLANATION_QUEST03>
+  <EXPLANATION_QUEST09><![CDATA[In this quest you'll have to help the Woobys find the lost Wooby king. The poor Woobys miss him so much!]]></EXPLANATION_QUEST09>
+  <EXPLANATION_QUEST15><![CDATA[Pandabeard's parrot is missing! Go to the Pirate Bar and help Pandabeard find him!]]></EXPLANATION_QUEST15>
+  <EXPLANATION_QUEST25><![CDATA[The evil Bonez has set up a giant hairdrier in Panfu and is slowly melting the icy home of Big Foot's family. Go to the Caribbean Beach and help Big Foot turn off the hairdrier to save his home from total meltdown!]]></EXPLANATION_QUEST25>
+  <EXPLANATION_QUEST28><![CDATA[The phone rings in the beauty salon. A dark, mysterious voice at the other end gets the attention of all Pandas. Who is behind this voice? Is there a villain in Panfu? Go and figure it out! Remember, in order to solve this quest, you have to know the inhabitants of Panfu really well!]]></EXPLANATION_QUEST28>
+  <EXPLANATION_QUEST28A><![CDATA[In this quest, a mysterious caller is causing a stir on Panfu. It is up to you to find out who's behind the voice. Is there an unknown villain on Panfu?
+
+Note: To solve this mystery, you should know the characters on Panfu pretty well. ]]></EXPLANATION_QUEST28A>
+  <EXPLANATION_QUEST29><![CDATA[In this quest you'll find out how the Pokopets came to Panfu. You'll also meet one of Kamaria's old friends, Eloise. Go to the plane and help Eloise save the Pokopets from the evil Bonez!]]></EXPLANATION_QUEST29>
+  <EXPLANATION_QUEST_BIGFOOT><![CDATA[In this quest, it is up to you to help the Yeti return to his family. But be careful - Bonez has his evil fingers in the game once again...]]></EXPLANATION_QUEST_BIGFOOT>
+  <EXPLANATION_SPIES><![CDATA[Something very strange is going on. You need to go to Bitterland and find out what Evron and his minions are up to. Talk to Max.]]></EXPLANATION_SPIES>
+  <EXPLANATION_SPRINGANDSING><![CDATA[The grass is green and the birds are chirping in Panfu! Spring is near! Lenny is at the fountain in San Franpanfu and has a surprise for you!]]></EXPLANATION_SPRINGANDSING>
+  <EXPLANATION_SPYWHOILOVED><![CDATA[Rumour in Panfu has it that there's a spy from Bitterland among us!
+Kamarias nose is itching like crazy. Could it only be a coincidence?
+Go to Kamaria on the Castle Terrace and talk to her.]]></EXPLANATION_SPYWHOILOVED>
+  <EXPLANATION_THECHRONICLER><![CDATA[Panfu wasn't always as it is today. A lot has changed, some of which seems quite mysterious. The Chronicler documents the history of the old Panfu. Visit him at the library in the ice cream parlour, he needs your help. He said something about a quest book...]]></EXPLANATION_THECHRONICLER>
+  <EXPLANATION_TUTORIAL_LESSON_BASICS><![CDATA[In this first lesson, you will learn your first steps. How do you walk? How do you jump? Apart from that, you will get the school bell, which will guide you through further lessons and the map, which will help you find your way around Panfu.]]></EXPLANATION_TUTORIAL_LESSON_BASICS>
+  <FEATURE_NAME_YOUTH><![CDATA[Youth Day]]></FEATURE_NAME_YOUTH>
+  <FEATURE_TEXT_DEFAULT><![CDATA[There is currently no weekly quest. Please check back tomorrow.]]></FEATURE_TEXT_DEFAULT>
+  <GCT_GUIDE_ME><![CDATA[Guide me]]></GCT_GUIDE_ME>
+  <GREY_HIERARCHY><![CDATA[Grey Panfu]]></GREY_HIERARCHY>
+  <HERARCHY_NAPASAPA><![CDATA[UFO on Panfu]]></HERARCHY_NAPASAPA>
+  <HIERARCHY_BACK_TO_SCHOOL><![CDATA[New Classroom]]></HIERARCHY_BACK_TO_SCHOOL>
+  <HIERARCHY_BADROBOT><![CDATA[Colossal Robot]]></HIERARCHY_BADROBOT>
+  <HIERARCHY_BITTERCURSE><![CDATA[Bitterland Curse]]></HIERARCHY_BITTERCURSE>
+  <HIERARCHY_DISNEY_01><![CDATA[Monster Alarm]]></HIERARCHY_DISNEY_01>
+  <HIERARCHY_FROG><![CDATA[Kiss the frog]]></HIERARCHY_FROG>
+  <HIERARCHY_LORAX><![CDATA[Lorax]]></HIERARCHY_LORAX>
+  <HIERARCHY_MOUSE><![CDATA[Mice Loose on Panfu!]]></HIERARCHY_MOUSE>
+  <HIERARCHY_NAPASAPA_FREEZING><![CDATA[A freezing Napasapa]]></HIERARCHY_NAPASAPA_FREEZING>
+  <HIERARCHY_NAPASAPA_IRIS><![CDATA[Napasapa on Panfu]]></HIERARCHY_NAPASAPA_IRIS>
+  <HIERARCHY_PANFU_BDAY><![CDATA[Panfu's Birthday Party]]></HIERARCHY_PANFU_BDAY>
+  <HIERARCHY_PEACE><![CDATA[International Day of Peace]]></HIERARCHY_PEACE>
+  <HIERARCHY_RARE_ITEM_WEEK><![CDATA[Broken Surprise Machine]]></HIERARCHY_RARE_ITEM_WEEK>
+  <HIERARCHY_RISOTTO><![CDATA[Uncle Risotto's Visit]]></HIERARCHY_RISOTTO>
+  <HIERARCHY_SCARECROW><![CDATA[The Scarecrow]]></HIERARCHY_SCARECROW>
+  <HIERARCHY_SNOWMAN_ATTACK><![CDATA[Snowman Monster]]></HIERARCHY_SNOWMAN_ATTACK>
+  <HIERARCHY_WINTER_ATTACK><![CDATA[Evron's Ice Attack]]></HIERARCHY_WINTER_ATTACK>
+  <HINT><![CDATA[While you're playing one quest, you won't be able to start another. You have to either finish or cancel the one you started first. ]]></HINT>
+  <HINT_AMALURA_01><![CDATA[Talk to the confused castaway. He was washed ashore. ]]></HINT_AMALURA_01>
+  <HINT_AMALURA_02><![CDATA[Go to Kamaria at the Castle Tower. She knows how to help the castaway.]]></HINT_AMALURA_02>
+  <HINT_AMALURA_03><![CDATA[Look for the healing plant that you can use to help the castaway. Follow along with this riddle: "High up on the stone in the distance it is seen". Tip: Use the telescope to help! Give the healing plant to the castaway.]]></HINT_AMALURA_03>
+  <HINT_AMALURA_04><![CDATA[Go to the Library and have a close look at the map that is hidden inside the book. Go to the spot that has been marked on the map. ]]></HINT_AMALURA_04>
+  <HINT_AMALURA_05><![CDATA[Talk to Captain Hering. He can help you. But first he will need a cup of coffee to wake up properly. You will be able to get coffee from Gonzo.]]></HINT_AMALURA_05>
+  <HINT_AMALURA_06><![CDATA[Now Captain Hering needs a fishing rod. You will likely find one somewhere in the City.]]></HINT_AMALURA_06>
+  <HINT_AMALURA_07><![CDATA[Captain Hering gave you a tip: Take a close look at the Panda bust made from stone in the Library.]]></HINT_AMALURA_07>
+  <HINT_AMALURA_08><![CDATA[Go to Kamaria and ask her what's up with the stone Panda bust at the Library.]]></HINT_AMALURA_08>
+  <HINT_AMALURA_09><![CDATA[Take a closer look at the stone Panda bust in the Library.]]></HINT_AMALURA_09>
+  <HINT_AMALURA_10><![CDATA[The Panda bust bears an engraving: "Where the water falls, I am at home. Go behind, look and roam." Look for a place like that and find out if there is anything mysterious about it. ]]></HINT_AMALURA_10>
+  <HINT_AMALURA_11><![CDATA[Talk to the cow ghost to find the three stones. He is hiding under the cow hide at the Castle. ]]></HINT_AMALURA_11>
+  <HINT_AMALURA_12><![CDATA[The cow ghost needs three items from you to make a potion: sun lotion, sugar and vulcano snow. Find those items and give them to the cow ghost. He will give you the first stone. ]]></HINT_AMALURA_12>
+  <HINT_AMALURA_13><![CDATA[You will find the second stone if you solve the riddle: "I'm in the dark with shiny friends. I always listen to music." A little tip: the music comes from the Sintepan.]]></HINT_AMALURA_13>
+  <HINT_AMALURA_14><![CDATA[Go back to the cow ghost. He will tell you where the third stone is.]]></HINT_AMALURA_14>
+  <HINT_AMALURA_15><![CDATA[Go to the Swimming Pool and keep your eyes peeled. You will find the third stone there. After that, go to the waterfall and fix all three stones to the wall. ]]></HINT_AMALURA_15>
+  <HINT_AMALURA_16><![CDATA[Bring Amalura to Joshua. Solve the following riddle to know where Joshua is: "Where you are afraid, he is at home. The road leads through his big mouth, then into his dome!". Check the Eerie Forest, there's a secret passage way!]]></HINT_AMALURA_16>
+  <HINT_AMALURA_17><![CDATA[You did it! Amalura and Joshua have been reunited. Panfu is no longer cursed. ]]></HINT_AMALURA_17>
+  <NAME_QUEST_01><![CDATA[Amalura's Love Story]]></NAME_QUEST_01>
+  <NAME_QUEST_02><![CDATA[My Son is a Pirate]]></NAME_QUEST_02>
+  <NAME_QUEST_03><![CDATA[Penny and Lenny!]]></NAME_QUEST_03>
+  <NAME_QUEST_09><![CDATA[The Lost Wooby King]]></NAME_QUEST_09>
+  <NAME_QUEST_15><![CDATA[The Magic Ice Diamond]]></NAME_QUEST_15>
+  <NAME_QUEST_25><![CDATA[Big Foot]]></NAME_QUEST_25>
+  <NAME_QUEST_28><![CDATA[A Mysterious Call]]></NAME_QUEST_28>
+  <NAME_QUEST_29><![CDATA[Save the Pokopets!]]></NAME_QUEST_29>
+  <NAME_QUEST_3><![CDATA[Pony Rides]]></NAME_QUEST_3>
+  <NAME_QUEST_92><![CDATA[Jay-Pea's Stickers]]></NAME_QUEST_92>
+  <NAME_QUEST_BOOKWORMSBUGS><![CDATA[Bookworm's Bugs]]></NAME_QUEST_BOOKWORMSBUGS>
+  <NAME_QUEST_CARNIVAL><![CDATA[Carnival]]></NAME_QUEST_CARNIVAL>
+  <NAME_QUEST_COW_GHOST><![CDATA[The Cow Ghost]]></NAME_QUEST_COW_GHOST>
+  <NAME_QUEST_CRAZYOUTFIT><![CDATA[Crazy Outfit Party]]></NAME_QUEST_CRAZYOUTFIT>
+  <NAME_QUEST_FISH_HUNT><![CDATA[Fish Hunt]]></NAME_QUEST_FISH_HUNT>
+  <NAME_QUEST_SPIES><![CDATA[Spies in Bitterland]]></NAME_QUEST_SPIES>
+  <NAME_QUEST_SPRINGANDSING><![CDATA[Spring and Sing]]></NAME_QUEST_SPRINGANDSING>
+  <NAME_QUEST_SPYWHOILOVED><![CDATA[The Spy I Loved]]></NAME_QUEST_SPYWHOILOVED>
+  <NAME_QUEST_THECHRONICLER><![CDATA[The Chronicler]]></NAME_QUEST_THECHRONICLER>
+  <NAME_QUEST_TUTORIAL_01><![CDATA[Lesson 1: Basics]]></NAME_QUEST_TUTORIAL_01>
+  <NAME_QUEST_UNICORN_QUEST><![CDATA[The First Unicorn]]></NAME_QUEST_UNICORN_QUEST>
+  <POPPER_QUEST_NAME><![CDATA[Penguins]]></POPPER_QUEST_NAME>
+  <POPUP_BASICS_03><![CDATA[Do you want to cancel $$name_current_quest$$?]]></POPUP_BASICS_03>
+  <POPUP_BASICS_04><![CDATA[Do you want to cancel $$name_current_quest$$ and begin $$name_start_quest$$? ]]></POPUP_BASICS_04>
+  <POPUP_BUTTON_CANCEL><![CDATA[Cancel]]></POPUP_BUTTON_CANCEL>
+  <POPUP_BUTTON_CANCEL_01><![CDATA[No]]></POPUP_BUTTON_CANCEL_01>
+  <POPUP_BUTTON_CONFIRM><![CDATA[Next]]></POPUP_BUTTON_CONFIRM>
+  <POPUP_BUTTON_CONFIRM_01><![CDATA[Yes]]></POPUP_BUTTON_CONFIRM_01>
+  <POPUP_DESC><![CDATA[Your current progress will be lost if you choose to proceed.
+The items you obtained in this quest will be deleted from your inventory.
+
+Are you sure you want to continue?]]></POPUP_DESC>
+  <POPUP_ENDADVENTURE><![CDATA[Dear Panda,
+
+you need to either complete or cancel your current quest before you can play a different one. ]]></POPUP_ENDADVENTURE>
+  <POPUP_TITLE><![CDATA[Attention]]></POPUP_TITLE>
+  <QUESTBOOK_ALLQUESTS><![CDATA[All Quests]]></QUESTBOOK_ALLQUESTS>
+  <QUESTBOOK_DIFFICULTY><![CDATA[Difficulty]]></QUESTBOOK_DIFFICULTY>
+  <QUESTBOOK_HINTS_BIGFOOT_REWARD><![CDATA[Tree House]]></QUESTBOOK_HINTS_BIGFOOT_REWARD>
+  <QUESTBOOK_HINTS_LOSTLOVER_01><![CDATA[Pandabeard is frantic! His parrot Beardy has disappeared! Did he fly away? Was he parrotnapped? Help Pandabeard and go look for Beardy! Maybe he's sitting in a tree somewhere? Check the 'Big Eye' to look for him. ]]></QUESTBOOK_HINTS_LOSTLOVER_01>
+  <QUESTBOOK_HINTS_LOSTLOVER_02><![CDATA[You found a blue feather and a bandage in the Eerie Forest. The feather surely is Beardy's! But what about the old bandage? Go to Pandabeard and show him what you found. ]]></QUESTBOOK_HINTS_LOSTLOVER_02>
+  <QUESTBOOK_HINTS_LOSTLOVER_03><![CDATA[William suspects Beardy might be in the cellar beneath his bar. Unfortunately, William doesn't have the key anymore. Go to the [red]Harbour[red], where you will find a [purple]crowbar[purple] that you can use to open the trap door. 
+]]></QUESTBOOK_HINTS_LOSTLOVER_03>
+  <QUESTBOOK_HINTS_LOSTLOVER_04><![CDATA[You found a [purple]crowbar[purple] at the Harbour. Quickly, head back to the [red]Pirate Bar[red] and use it to open the trap door. ]]></QUESTBOOK_HINTS_LOSTLOVER_04>
+  <QUESTBOOK_HINTS_LOSTLOVER_05><![CDATA[How spooky! There's a mummy in the cave underneath the Pirate Bar! Despite his creepy appearance, he seems to be quite friendly. It was this mummy who opened Beardy's cage. He flew into the cave behind the mummy. The mummy warned you of dangers lurking in the corridors that would let the blood freeze in any Panda's veins! If you still want to continue, you'll have to bring new bandages to the mummy first. Toilet roll would also work. Find toilet roll and bring it to the mummy. A shop clerk will help you!]]></QUESTBOOK_HINTS_LOSTLOVER_05>
+  <QUESTBOOK_HINTS_LOSTLOVER_06><![CDATA[You meet Gonzo, the business Panda, at the kiosk. The kiosk does not offer any bandages and toilet roll has unfortunately just sold out. There will be a new delivery tomorrow, though. Come back then and get a few strips of toilet roll. ]]></QUESTBOOK_HINTS_LOSTLOVER_06>
+  <QUESTBOOK_HINTS_LOSTLOVER_07><![CDATA[One day has passed. The toilet roll delivery should have arrived at the kiosk by now. Quickly go to the kiosk and get the toilet roll.]]></QUESTBOOK_HINTS_LOSTLOVER_07>
+  <QUESTBOOK_HINTS_LOSTLOVER_08><![CDATA[HAHAHA! The toilet roll is pink and has hearts on it! The mummy will be so surprised! Quickly return to the mummy underneath the Pirate Bar and give him the toilet roll, so you can continue to look for Beardy. ]]></QUESTBOOK_HINTS_LOSTLOVER_08>
+  <QUESTBOOK_HINTS_LOSTLOVER_09><![CDATA[The mummy is so happy that you were able to get the toilet roll. He wants to get changed straight away. Kindly leave the cellar for a little bit and then come back. A naked mummy is not a nice thing to behold!]]></QUESTBOOK_HINTS_LOSTLOVER_09>
+  <QUESTBOOK_HINTS_LOSTLOVER_10><![CDATA[Despite the embarrassing new bandages, the mummy lets you continue on your way. The mummy also told you a surprising story: A long time ago, Farid, Kamaria's lover, went into the cave to find the magical ice diamond! But then he was hit by the ice diamond's curse! Farid never returned from the cave. 
+
+You won't be able to pick your way through the dark cave without a torch! Go and look for a skilled and experienced old Panda who can carve a torch for you. Maybe you can find somebody at the harbor?. ]]></QUESTBOOK_HINTS_LOSTLOVER_10>
+  <QUESTBOOK_HINTS_LOSTLOVER_11><![CDATA[The fisherman is a handy craftsman and can carve a torch for you without any difficulty. To do that, he'll need a branch and a Swiss army knife. You'll probably find the branch in a forest and there's bound be a tinkerer or inventor in Panfu who owns a Swiss army knife. ]]></QUESTBOOK_HINTS_LOSTLOVER_11>
+  <QUESTBOOK_HINTS_LOSTLOVER_12><![CDATA[Professor Bookworm surely won't mind that you borrowed the pocket knife. You still need a branch to make the torch. ]]></QUESTBOOK_HINTS_LOSTLOVER_12>
+  <QUESTBOOK_HINTS_LOSTLOVER_13><![CDATA[You found a sturdy branch in the Eerie Forest. Perfect for a torch! But you still need a pocket knife.]]></QUESTBOOK_HINTS_LOSTLOVER_13>
+  <QUESTBOOK_HINTS_LOSTLOVER_14><![CDATA[You have everything you need for the torch! Now go to the fisherman at the harbour and let him carve a torch for the cave.]]></QUESTBOOK_HINTS_LOSTLOVER_14>
+  <QUESTBOOK_HINTS_LOSTLOVER_15><![CDATA[The fisherman will take a while to carve the torch. Please come back tomorrow.]]></QUESTBOOK_HINTS_LOSTLOVER_15>
+  <QUESTBOOK_HINTS_LOSTLOVER_16><![CDATA[One day has passed. The fisherman will likely have finished the torch by now. Go to the harbour and talk to the fisherman.]]></QUESTBOOK_HINTS_LOSTLOVER_16>
+  <QUESTBOOK_HINTS_LOSTLOVER_17><![CDATA[This is a sturdy torch. It'll surely burn very nice and bright. Now enter the cave behind the mummy and look for Beardy, Farid and the ice diamond. Don't get tripped up and master all riddles and obstacles until you have arrived at the last cave. If you get lost, ask Kamaria for help. She almost always knows what to do.]]></QUESTBOOK_HINTS_LOSTLOVER_17>
+  <QUESTBOOK_HINTS_LOSTLOVER_18><![CDATA[You found Beardy! The parrot is sitting on a ledge in the cave underneath the Pirate Bar. Unfortunately, you can't reach him. But what is Beardy saying? Is that maybe a hint…?! You'd better memorise what Beardy is telling you. ]]></QUESTBOOK_HINTS_LOSTLOVER_18>
+  <QUESTBOOK_HINTS_LOSTLOVER_18_A><![CDATA[Good job! You listened well to Beardy the parrot and activated the bridge across the lava flow. Proceed to the next room.]]></QUESTBOOK_HINTS_LOSTLOVER_18_A>
+  <QUESTBOOK_HINTS_LOSTLOVER_18_B><![CDATA[Another riddle is waiting to be solved. You can only step on the coloured jewels in the ground and there is only one way across the room. The colours above the door indicate which way you need to go. Remember how colours mix: yellow and blue make green…]]></QUESTBOOK_HINTS_LOSTLOVER_18_B>
+  <QUESTBOOK_HINTS_LOSTLOVER_18_C><![CDATA[You found the ice diamond! And there's Farid! The poor guy is completely frozen, an ice cold Panda statue! Just how can you save him…?
+Unfortunately, you can't touch the ice diamond. Its curse would turn you into a block of ice, too. Go to Kamaria, she'll know what to do.]]></QUESTBOOK_HINTS_LOSTLOVER_18_C>
+  <QUESTBOOK_HINTS_LOSTLOVER_19><![CDATA[You found Farid at the temple. The ice diamond's curse froze him, leaving him lifeless and stiff. Luckily, Kamaria knows exactly what to do! She'll come up with a powerful spell to rid Farid of the curse. She'll need the ice diamond to take care of that. In order to keep you from getting struck by the same curse, she'll sew a special lava glove for you that will allow you to safely touch the ice diamond. She will need lava plant pollen to do this. 
+Bring a lava plant to Kamaria.]]></QUESTBOOK_HINTS_LOSTLOVER_19>
+  <QUESTBOOK_HINTS_LOSTLOVER_20><![CDATA[You found a lava plant at the volcano's hillside. Quickly bring it to Kamaria!]]></QUESTBOOK_HINTS_LOSTLOVER_20>
+  <QUESTBOOK_HINTS_LOSTLOVER_21><![CDATA[Good job! Kamaria will need one day to make the lava glove. Come back tomorrow and pick up the glove from Kamaria.]]></QUESTBOOK_HINTS_LOSTLOVER_21>
+  <QUESTBOOK_HINTS_LOSTLOVER_22><![CDATA[One day has passed. Go to Kamaria and collect the lava glove. Then you will finally be able to touch the ice diamond. ]]></QUESTBOOK_HINTS_LOSTLOVER_22>
+  <QUESTBOOK_HINTS_LOSTLOVER_23><![CDATA[Kamaria gave you the lava glove. Now you can safely touch the ice diamond! Go to the temple under the Pirate Bar and get the ice diamond. Don't forget to put on the lava glove!]]></QUESTBOOK_HINTS_LOSTLOVER_23>
+  <QUESTBOOK_HINTS_LOSTLOVER_24><![CDATA[Awesome! You removed the ice diamond from its pedestal and took the curse off the temple. But Farid and the Pompoms are still cold as ice. Bring the ice diamond to Kamaria now. ]]></QUESTBOOK_HINTS_LOSTLOVER_24>
+  <QUESTBOOK_HINTS_LOSTLOVER_25><![CDATA[Kamaria will now work on a counter chant to dispel the unholy curse of the ice diamond. This will take all night. Please come back tomorrow.]]></QUESTBOOK_HINTS_LOSTLOVER_25>
+  <QUESTBOOK_HINTS_LOSTLOVER_26><![CDATA[One day has passed. Go to Kamaria and ask her for the counter chant. ]]></QUESTBOOK_HINTS_LOSTLOVER_26>
+  <QUESTBOOK_HINTS_LOSTLOVER_27><![CDATA[The counter chant is ready. Only you can break the ice diamond's curse. Go to the temple under the Pirate Bar and relieve Farid of the ice cold curse!
+To break the curse, you have to enter the word 'Love' into the chat box. ]]></QUESTBOOK_HINTS_LOSTLOVER_27>
+  <QUESTBOOK_HINTS_LOSTLOVER_28><![CDATA[Fantastic! You relieved Farid and the Pompoms of the curse! Farid is overjoyed and very grateful. Quickly go to Kamaria in the castle tower. ]]></QUESTBOOK_HINTS_LOSTLOVER_28>
+  <QUESTBOOK_HINTS_LOSTLOVER_29><![CDATA[How romantic! Kamaria and Farid have finally been reunited! You're a really good-hearted Panda! But your quest is not quite over yet. Pandabeard is still missing his parrot Beardy. Kamaria suggests baiting the bird with chocolate cookies. You might find chocolate cookies where ice cream is also sold. ]]></QUESTBOOK_HINTS_LOSTLOVER_29>
+  <QUESTBOOK_HINTS_LOSTLOVER_30><![CDATA[You found a bowl of cookies at the ice cream parlour. Go to the stair labyrinth under the Pirate Bar and feed the cookies to Beardy.]]></QUESTBOOK_HINTS_LOSTLOVER_30>
+  <QUESTBOOK_HINTS_LOSTLOVER_31><![CDATA[There you go! Beardy was easily drawn in by the yummy cookies. Now bring the parrot back to Pandabeard.]]></QUESTBOOK_HINTS_LOSTLOVER_31>
+  <QUESTBOOK_HINTS_LOSTLOVER_32><![CDATA[Pandabeard is over the moon to be reunited with his beloved parrot! There are more good news waiting for you! Quickly, go to the castle tower and talk to Kamaria. ]]></QUESTBOOK_HINTS_LOSTLOVER_32>
+  <QUESTBOOK_HINTS_LOSTLOVER_33><![CDATA[You have a difficult decision to make, brave little Panda. Kamaria thinks the ice diamond is too dangerous. It has to be destroyed in hot lava. The mummy wants to have the ice diamond for himself and promised to give you 20.000 Panda coins for it. 
+Decide wisely, little Panda. What should happen to the dangerous ice diamond?]]></QUESTBOOK_HINTS_LOSTLOVER_33>
+  <QUESTBOOK_HINTS_LOSTLOVER_34><![CDATA[Despite all concerns, you have decided to give the ice diamond to the mummy…You'll be a very wealthy Panda…Go to the mummy in the cellar at the Pirate Bar and collect your money. ]]></QUESTBOOK_HINTS_LOSTLOVER_34>
+  <QUESTBOOK_HINTS_LOSTLOVER_35><![CDATA[The quest is over. You returned Beardy the parrot safely to Pandabeard, lifted the curse from Farid and sold the ice diamond to the mummy for a lot of money. You are now a very wealthy Panda! But what kind of terrible things will the mummy do with the ice diamond? Have you really made the right decision?]]></QUESTBOOK_HINTS_LOSTLOVER_35>
+  <QUESTBOOK_HINTS_LOSTLOVER_36><![CDATA[You have decided to destroy the ice diamond. Kamaria applauds you for your selfless decision and promises you a reward. Apart from that, Farid and Kamaria invited you to their wedding! How romantic! But before that you have to go to the volcano and throw the ice diamond into the volcanic crater.]]></QUESTBOOK_HINTS_LOSTLOVER_36>
+  <QUESTBOOK_HINTS_LOSTLOVER_37><![CDATA[The magical ice diamond was destroyed and the curse was lifted from Panfu! You are a truly good-hearted Panda! Return to Kamaria. ]]></QUESTBOOK_HINTS_LOSTLOVER_37>
+  <QUESTBOOK_HINTS_LOSTLOVER_38><![CDATA[Kamaria is happy about the destruction of the ice diamond. As a reward, you were given a magical ice costume. And don't forget that Kamaria and Farid will get married tomorrow! The ceremony will be carried out in the ice diamond temple. Don't miss it!]]></QUESTBOOK_HINTS_LOSTLOVER_38>
+  <QUESTBOOK_HINTS_LOSTLOVER_39><![CDATA[One day has passed. Kamaria and Farid celebrate their wedding today. Go to the ice diamond temple under the Pirate Bar and join this memorable event. ]]></QUESTBOOK_HINTS_LOSTLOVER_39>
+  <QUESTBOOK_HINTS_LOSTLOVER_40><![CDATA[All's well that ends well! Kamaria and Farid are finally married to each other! Don't they look happy? This is all because of you, brave Panda! You should be proud of yourself!]]></QUESTBOOK_HINTS_LOSTLOVER_40>
+  <QUESTBOOK_HINTS_LOSTLOVER_REWARD><![CDATA[Magic ice costume]]></QUESTBOOK_HINTS_LOSTLOVER_REWARD>
+  <QUESTBOOK_HINTS_MYST_CALL_01><![CDATA[What a fright! When you picked up the phone at the beauty salon, a mysterious Panda threatened you. If you don't get him chocolate cookies, terrible things will happen! Take the briefcase from the beauty salon with you. ]]></QUESTBOOK_HINTS_MYST_CALL_01>
+  <QUESTBOOK_HINTS_MYST_CALL_02><![CDATA[The mysterious Panda demands that you fill the briefcase with chocolate cookies! Go to Kamaria, she'll know what to do. ]]></QUESTBOOK_HINTS_MYST_CALL_02>
+  <QUESTBOOK_HINTS_MYST_CALL_03><![CDATA[Luckily, Kamaria will help you! But she can't bake chocolate cookies without flour! Go and get flour and bring it to Kamaria.]]></QUESTBOOK_HINTS_MYST_CALL_03>
+  <QUESTBOOK_HINTS_MYST_CALL_03_A><![CDATA[You got the flour. Bring it to Kamaria.]]></QUESTBOOK_HINTS_MYST_CALL_03_A>
+  <QUESTBOOK_HINTS_MYST_CALL_04><![CDATA[Kamaria's got her flour. She's missing sugar yet - without that, the cookies won't be any good! You'll find sugar where ice cream and drinks are also sold. Where in Panfu could that be? Find sugar and bring it to Kamaria. ]]></QUESTBOOK_HINTS_MYST_CALL_04>
+  <QUESTBOOK_HINTS_MYST_CALL_04_A><![CDATA[You got the sugar. Bring it to Kamaria.]]></QUESTBOOK_HINTS_MYST_CALL_04_A>
+  <QUESTBOOK_HINTS_MYST_CALL_05><![CDATA[Kamaria now has everything she needs to make the cookies. Leave the room for a bit while Kamaria bakes the cookies. Return and let her give you the cookies.]]></QUESTBOOK_HINTS_MYST_CALL_05>
+  <QUESTBOOK_HINTS_MYST_CALL_06><![CDATA[The chocolate cookies are done! But Kamaria does not approve of anyone threatening innocent Pandas. Find out who's behind the call. To do that, you have to bring the briefcase full of cookies to the pony farm and deposit it in the marked spot. ]]></QUESTBOOK_HINTS_MYST_CALL_06>
+  <QUESTBOOK_HINTS_MYST_CALL_07><![CDATA[You have deposited the briefcase full of cookies in the marked spot. Leave the pony farm so that the mysterious caller can collect the briefcase. Then go back and look for clues.]]></QUESTBOOK_HINTS_MYST_CALL_07>
+  <QUESTBOOK_HINTS_MYST_CALL_08><![CDATA[You found a clue, but you can't really make out what it is. Just like a real detective, you need a magnifying glass! Keep your eyes peeled! A bright mind here in Panfu will surely lend you a magnifying glass.]]></QUESTBOOK_HINTS_MYST_CALL_08>
+  <QUESTBOOK_HINTS_MYST_CALL_09><![CDATA[Very good! Professor Bookworm lent you a magnifying glass. Go to the pony farm and look for clues. ]]></QUESTBOOK_HINTS_MYST_CALL_09>
+  <QUESTBOOK_HINTS_MYST_CALL_10><![CDATA[You've found a fabric scrap... but it's still unclear who's the culprit. Go to Kamaria and ask her for advice.]]></QUESTBOOK_HINTS_MYST_CALL_10>
+  <QUESTBOOK_HINTS_MYST_CALL_11><![CDATA[Kamaria thinks the fabric scrap looks familiar, but she can't quite figure out the culprit's identity, either...Come back tomorrow and look for more clues around Panfu.]]></QUESTBOOK_HINTS_MYST_CALL_11>
+  <QUESTBOOK_HINTS_MYST_CALL_12><![CDATA[The mysterious Panda is still at large! Look for clues all over Panfu. He'll surely have dropped some cookie crumbs somewhere and left behind more clues, so keep your eyes peeled.]]></QUESTBOOK_HINTS_MYST_CALL_12>
+  <QUESTBOOK_HINTS_MYST_CALL_13><![CDATA[Good job! You found another clue. But where did the red hair come from? Go to the castle tower and consult with Kamaria. ]]></QUESTBOOK_HINTS_MYST_CALL_13>
+  <QUESTBOOK_HINTS_MYST_CALL_14><![CDATA[Not a lot of Pandas have rusty coloured hair, but this is still not enough to expose the mysterious caller. Look for more clues tomorrow.]]></QUESTBOOK_HINTS_MYST_CALL_14>
+  <QUESTBOOK_HINTS_MYST_CALL_15><![CDATA[The mysterious Panda is still at large! You have not yet found enough clues to expose him. Look for more cookie crumbs.]]></QUESTBOOK_HINTS_MYST_CALL_15>
+  <QUESTBOOK_HINTS_MYST_CALL_16><![CDATA[You found more cookie crumbs and a carrot at the harbour. But what kind of Panda likes carrots...? Go to Kamaria in the castle tower and ask her for advice.]]></QUESTBOOK_HINTS_MYST_CALL_16>
+  <QUESTBOOK_HINTS_MYST_CALL_17><![CDATA[Kamaria already has an inkling who the mysterious Panda could be. But key proof is still missing. Tomorrow you can go and look for the last bit of evidence. ]]></QUESTBOOK_HINTS_MYST_CALL_17>
+  <QUESTBOOK_HINTS_MYST_CALL_18><![CDATA[You're closing in on the mysterious Panda! Look for even more cookie crumbs and the last few clues to expose him.]]></QUESTBOOK_HINTS_MYST_CALL_18>
+  <QUESTBOOK_HINTS_MYST_CALL_19><![CDATA[You found an igloo construction plan in the city. Is this the ultimate clue regarding the mysterious caller? Go to Kamaria on the castle terrace and show her the igloo construction plan.]]></QUESTBOOK_HINTS_MYST_CALL_19>
+  <QUESTBOOK_HINTS_MYST_CALL_20><![CDATA[A brown scrap of fabric, a a rust-coloured hair, a carrot and an igloo drawing...Kamaria is now sure she knows who the mysterious caller is! Do you know who it is? Enter the name into the chatbox to expose the Panda. ]]></QUESTBOOK_HINTS_MYST_CALL_20>
+  <QUESTBOOK_HINTS_MYST_CALL_20A><![CDATA[A bit of brown fabric, a reddish brown hair, a carrot and an igloo drawing...Kamaria is sure she knows who the mysterious caller is! Do you know? Enter the name into the chat box to reveal the Panda. If you don't know who the Panda is, get more information here: http://www.panfu.com/kids/vips.html
+
+Hint: The Panda we're looking for likes adventures, but hates spiders...]]></QUESTBOOK_HINTS_MYST_CALL_20A>
+  <QUESTBOOK_HINTS_MYST_CALL_21><![CDATA[You have exposed the mysterious caller - it is Carl Caruso! But why would Carl Caruso do something that mean? What is his motive? Go to the library and take him to task together with Kamaria.]]></QUESTBOOK_HINTS_MYST_CALL_21>
+  <QUESTBOOK_HINTS_MYST_CALL_22><![CDATA[Well done, Panda detective! Carl confessed and promised not to do anything like that ever again. He did not mean any harm and Kamaria has already forgiven him. Thanks to your help, Panfu once again is a calm and safe place. You should be proud of yourself!]]></QUESTBOOK_HINTS_MYST_CALL_22>
+  <QUESTBOOK_HINTS_MYST_CALL_REWARD><![CDATA[Detective's Outfit]]></QUESTBOOK_HINTS_MYST_CALL_REWARD>
+  <QUESTBOOK_HINTS_POKOPETQUEST_01><![CDATA[You have entered the mysterious [red]Plane[red]. What happened here? Talk to the handcuffed [green]Panda Lady[green]. She will surely be able to tell you what is going on.]]></QUESTBOOK_HINTS_POKOPETQUEST_01>
+  <QUESTBOOK_HINTS_POKOPETQUEST_02><![CDATA[The handcuffed [green]Panda Lady[green] on the plane does not seem to be able to talk. All that is coming from her mouth are chewing gum bubbles and single letters! [red]Pay close attention to what she says[red].]]></QUESTBOOK_HINTS_POKOPETQUEST_02>
+  <QUESTBOOK_HINTS_POKOPETQUEST_03><![CDATA[Kamaria is dismayed about what you told her. She wants to have a look for herself. Go to the [red]Plane[red].[green]Kamaria[green] will follow you there.]]></QUESTBOOK_HINTS_POKOPETQUEST_03>
+  <QUESTBOOK_HINTS_POKOPETQUEST_04><![CDATA[You now know who the handcuffed Panda is: Eloise, an old friend of Kamaria’s! Because of a bubble gum potion, Eloise is unable to talk. Kamaria has a recipe for an [purple]Antidote[purple]! First, fill the [purple]Test Tube[purple] with [purple]Toad Slime[purple]! Use the Telescope to take a look around the Volcano. [red]Toads love dark and damp places[red].]]></QUESTBOOK_HINTS_POKOPETQUEST_04>
+  <QUESTBOOK_HINTS_POKOPETQUEST_05><![CDATA[The Test Tube is full of Toad Slime! Quickly go to [green]Kamaria[green] on the [red]Plane[red] and give her the [purple]filled Test Tube[purple].]]></QUESTBOOK_HINTS_POKOPETQUEST_05>
+  <QUESTBOOK_HINTS_POKOPETQUEST_06><![CDATA[Okay, the Toad Slime has been taken care of. Now we are missing the special Star Herbs. They grow in [red]sandy ground[red], collect a few [purple]Star Herbs[purple].]]></QUESTBOOK_HINTS_POKOPETQUEST_06>
+  <QUESTBOOK_HINTS_POKOPETQUEST_07><![CDATA[You have collected a handful of Star Herbs at the Beach. Bring them to [green]Kamaria[green] on the [red]Plane[red].]]></QUESTBOOK_HINTS_POKOPETQUEST_07>
+  <QUESTBOOK_HINTS_POKOPETQUEST_08><![CDATA[Good job! Now we are missing a Rainbow Plant flower. This plant was brought to Panfu from the Caribbean and needs sunny, warm climate. Get a [red]Caribbean[red] [purple]Rainbow Plant[purple]. Thought it was just the flower you need?]]></QUESTBOOK_HINTS_POKOPETQUEST_08>
+  <QUESTBOOK_HINTS_POKOPETQUEST_09><![CDATA[You have found the last ingredient, the flower of the Rainbow Plant! Bring the plant to [green]Kamaria[green] on the [red]Plane[red], so that she can brew the [purple]Antidote[purple].]]></QUESTBOOK_HINTS_POKOPETQUEST_09>
+  <QUESTBOOK_HINTS_POKOPETQUEST_10><![CDATA[Well done! Kamaria will now brew the potion. The [purple]Antidote[purple] has to simmer for quite a while to develop its full potential. [blue]Wait one day[blue] and visit [green]Kamaria[green] at the [red]Castle Tower[red] tomorrow.]]></QUESTBOOK_HINTS_POKOPETQUEST_10>
+  <QUESTBOOK_HINTS_POKOPETQUEST_11><![CDATA[The [purple]Antidote[purple] has [blue]simmered long enough[blue]. Go to [green]Kamaria[green] at the [red]Castle Tower[red] and pick up the Antidote.]]></QUESTBOOK_HINTS_POKOPETQUEST_11>
+  <QUESTBOOK_HINTS_POKOPETQUEST_12><![CDATA[The potion is ready! Quickly go to the [red]Plane[red] and give the [purple]Antidote[purple] to [green]Eloise[green].	]]></QUESTBOOK_HINTS_POKOPETQUEST_12>
+  <QUESTBOOK_HINTS_POKOPETQUEST_13><![CDATA[Finally! The Antidote worked and Eloise can talk normally again! Unfortunately she is still handcuffed, though. You have to get a [purple]Pair of Scissors[purple] to free Eloise of her bonds. [green]Lili[green], the Panfu seamstress and fashion designer, should have a pair. You will find her [red]where you can get prettied up[red].]]></QUESTBOOK_HINTS_POKOPETQUEST_13>
+  <QUESTBOOK_HINTS_POKOPETQUEST_14><![CDATA[You met Lili at the Beauty Salon. She did not hesitate and lent you her [purple]Scissors[purple]. Go back to the [red]Plane[red] and free [green]Eloise[green] of her handcuffs!]]></QUESTBOOK_HINTS_POKOPETQUEST_14>
+  <QUESTBOOK_HINTS_POKOPETQUEST_15><![CDATA[You freed Eloise! She is overjoyed to be able to move freely again. Quickly go back to the [red]Beauty Salon[red] in San Franpanfu and return the [purple]Scissors[purple] to [green]Lili[green].]]></QUESTBOOK_HINTS_POKOPETQUEST_15>
+  <QUESTBOOK_HINTS_POKOPETQUEST_16><![CDATA[You brought the Scissors back to Lili. She wishes you luck for your future adventures. Quickly go to the [red]Plane[red] and talk to [green]Eloise[green]!]]></QUESTBOOK_HINTS_POKOPETQUEST_16>
+  <QUESTBOOK_HINTS_POKOPETQUEST_17><![CDATA[You have to free the Pokopets from the cages before Bonez returns! Click on the [purple]Locks[purple] within the [red]Plane[red] to open them. ]]></QUESTBOOK_HINTS_POKOPETQUEST_17>
+  <QUESTBOOK_HINTS_POKOPETQUEST_18><![CDATA[Unfortunately, that was not correct. The lock is now blocked [blue]for one day[blue]. Come back to the 
+[red]Plane[red] [blue]tomorrow[blue] and try again. 
+]]></QUESTBOOK_HINTS_POKOPETQUEST_18>
+  <QUESTBOOK_HINTS_POKOPETQUEST_19><![CDATA[Well done! You have solved the first riddle and opened one of the locks! Be quick and also open the other lock within the [red]Plane[red]!]]></QUESTBOOK_HINTS_POKOPETQUEST_19>
+  <QUESTBOOK_HINTS_POKOPETQUEST_20><![CDATA[You have opened both cages on the plane! But the poor Pokopets are very frightened and refuse to get out of their cages. Talk to [green]Eloise[green] on the [red]Plane[red].]]></QUESTBOOK_HINTS_POKOPETQUEST_20>
+  <QUESTBOOK_HINTS_POKOPETQUEST_20_A><![CDATA[Eloise knows what to do! Pokopets love [purple]Chili Crossies[purple]. The Pokopets will surely come out of their cages if they smell some Crossies. You will find the proper location and the Panda to help you in [red]San Franpanfu[red].]]></QUESTBOOK_HINTS_POKOPETQUEST_20_A>
+  <QUESTBOOK_HINTS_POKOPETQUEST_21><![CDATA[You have met the famous chef Bruno. He would like to help you and Eloise, but he needs the super hot Chili Plant for the Chili Crossies. Go and look for the [purple]Super Hot Chili Plant[purple]. You will find it [red]where it is boiling hot[red].]]></QUESTBOOK_HINTS_POKOPETQUEST_21>
+  <QUESTBOOK_HINTS_POKOPETQUEST_22><![CDATA[You harvested the [purple]Chili Plant[purple] at the crater of the Volcano. Unfortunately, it looks a little weak yet. Bring it to [green]Bruno[green] at the [red]Chez Bruno[red] in San Franpanfu.]]></QUESTBOOK_HINTS_POKOPETQUEST_22>
+  <QUESTBOOK_HINTS_POKOPETQUEST_23><![CDATA[Unfortunately, the Chili Plant is not ripe yet and does not bear any fruit. Bruno will not be able to make Chili Crossies from that! But he has a solution! Professor Bookworm can put the plant into his Time Machine and make it grow super fast! Visit [green]Professor Bookworm[green] at his [red]Lab[red] in the caves underneath the Jungle. ]]></QUESTBOOK_HINTS_POKOPETQUEST_23>
+  <QUESTBOOK_HINTS_POKOPETQUEST_24><![CDATA[According to Prof. Bookworm’s calculations, the Chili Plant will take one day to fully grow. Come back to his [red]Lab[red] in the caves underneath the Jungle [blue]tomorrow[blue].]]></QUESTBOOK_HINTS_POKOPETQUEST_24>
+  <QUESTBOOK_HINTS_POKOPETQUEST_25><![CDATA[[blue]One day has passed[blue]. Go to [green]Professor Bookworm[green] at his [red]Lab[red]. ]]></QUESTBOOK_HINTS_POKOPETQUEST_25>
+  <QUESTBOOK_HINTS_POKOPETQUEST_26><![CDATA[The chili Plant is fully grown and carries wonderful, super hot chili fruit! Quickly bring it to 
+[green]Bruno[green] at his restaurant [red]Chez Bruno[red] in San Franpanfu. 
+]]></QUESTBOOK_HINTS_POKOPETQUEST_26>
+  <QUESTBOOK_HINTS_POKOPETQUEST_27><![CDATA[In order for the Chili Crossie to get really crispy, they will have to stay in the oven overnight. [blue]Come back tomorrow[blue] and pick up the [purple]Chili Crossies[purple] from [green]Bruno[green] at his restaurant [red]Chez Bruno[red] in San Franpanfu.]]></QUESTBOOK_HINTS_POKOPETQUEST_27>
+  <QUESTBOOK_HINTS_POKOPETQUEST_28><![CDATA[The Chili Crossies should be ready about now: really hot and crispy. Go to [green]Bruno[green] at his restaurant [red]Chez Bruno[red] in San Franpanfu and pick up the [purple]Chili Crossies[purple].]]></QUESTBOOK_HINTS_POKOPETQUEST_28>
+  <QUESTBOOK_HINTS_POKOPETQUEST_29><![CDATA[Last night, a burglar broke into the restaurant. The burglar fled, but left a riddle behind. Solve the [green]Riddle[green] under the [purple]Cheese Cover[purple] on the table at the restaurant [red]Chez Bruno[red] in San Franpanfu.]]></QUESTBOOK_HINTS_POKOPETQUEST_29>
+  <QUESTBOOK_HINTS_POKOPETQUEST_30><![CDATA[Unfortunately that was not correct! Now you’ll have to wait one day until you can try solving the riddle again. How many [purple]Candles[purple] have [red]NOT[red] burned down in the course of the night?]]></QUESTBOOK_HINTS_POKOPETQUEST_30>
+  <QUESTBOOK_HINTS_POKOPETQUEST_31><![CDATA[Fantastic, you are a very smart Panda! Talk to [green]Bruno[green] at the restaurant [red]Chez Bruno[red] in San Franpanfu to get the [purple]Chili Crossies[purple]. ]]></QUESTBOOK_HINTS_POKOPETQUEST_31>
+  <QUESTBOOK_HINTS_POKOPETQUEST_32><![CDATA[You got the Chili Crossies! They smell spicy and fiery hot! But do not taste them, or you will end up breathing fire! Bring the portion of [purple]Chili Crossies[purple] quickly to [green]Eloise[green] on the [red]Plane[red].]]></QUESTBOOK_HINTS_POKOPETQUEST_32>
+  <QUESTBOOK_HINTS_POKOPETQUEST_33><![CDATA[You did it! The Pokopets ate the Chili Crossies and have gathered up all their courage! They are now ready to follow you to the barn. Go to the [red]Pokopet Barn[red] and meet [green]Eloise[green] inside.]]></QUESTBOOK_HINTS_POKOPETQUEST_33>
+  <QUESTBOOK_HINTS_POKOPETQUEST_34><![CDATA[The Pokopets have been freed from Bonez’ greedy grasp and have been safely put up in the barn. Eloise is overjoyed, too. As a reward, she gives you a [purple]Pokopet Voucher[purple]. With this, you can get a special Pokopet, the catalogue lies on the floor of the Pokopet Barn. ]]></QUESTBOOK_HINTS_POKOPETQUEST_34>
+  <QUESTBOOK_HINTS_POKOPETQUEST_35><![CDATA[The danger is not quite over yet. Bonez is still on Panfu and poses a threat for the Pokopets. He has to be driven away! Eloise already has a plan, too. Meet [green]Eloise[green] in front of the [red]Plane[red].]]></QUESTBOOK_HINTS_POKOPETQUEST_35>
+  <QUESTBOOK_HINTS_POKOPETQUEST_36><![CDATA[Use the Screw to repair the motor. The noises of the machines will attract Bonez. As soon as he is aboard the Plane, you press the button beside the door. The Plane will take off and fly away from Panfu via auto pilot and take Bonez with it! Now put the [purple]Screw[purple] into the [red]Motor of the Plane[red]!]]></QUESTBOOK_HINTS_POKOPETQUEST_36>
+  <QUESTBOOK_HINTS_POKOPETQUEST_37><![CDATA[The motor is running! Bonez will surely be here soon. He cannot see you or Eloise! Leave the [red]Plane[red] and the [red]Crash Site[red] and then return. ]]></QUESTBOOK_HINTS_POKOPETQUEST_37>
+  <QUESTBOOK_HINTS_POKOPETQUEST_38><![CDATA[Bonez is on the plane! That is THE chance to drive him away from Panfu! Press the [purple]Red Start Button[purple] beside the door of the plane to start the engines.]]></QUESTBOOK_HINTS_POKOPETQUEST_38>
+  <QUESTBOOK_HINTS_POKOPETQUEST_39><![CDATA[Great work, brave Panda! You have driven out Bonez and saved the Pokopets! You can be really proud of yourself! [purple]Do not forget to adopt your new Pokopet at the Barn![purple].]]></QUESTBOOK_HINTS_POKOPETQUEST_39>
+  <QUESTBOOK_HINTS_POKOPETQUEST_REWARD><![CDATA[Pokopet Voucher]]></QUESTBOOK_HINTS_POKOPETQUEST_REWARD>
+  <QUESTBOOK_HINTS_SONISAPIRATE_01><![CDATA[All of Panfu is in danger! You met a giant octopus at the Caribbean beach who is threatening to squirt black ink all over Panfu! He is angry, because someone stole his treasure! Who in Panfu would steal a treasure? And what does Kamaria have to do with all that? Quickly, go to Kamaria and try to find out more.]]></QUESTBOOK_HINTS_SONISAPIRATE_01>
+  <QUESTBOOK_HINTS_SONISAPIRATE_02><![CDATA[Kamaria is shocked! A long time ago, an octopus by the name of Fred was her son's best friend. The two of them left Panfu many years ago, in order to look for the lost father of Kamaria's son and Kamaria's lover. Is the octopus on the Caribbean Beach the same Fred who went away with Kamaria's son back then? Go to the Caribbean Beach and talk to the octopus. ]]></QUESTBOOK_HINTS_SONISAPIRATE_02>
+  <QUESTBOOK_HINTS_SONISAPIRATE_03><![CDATA[Indeed! The octopus on the Caribbean Beach is the same friend who accompanied Kamaria's son years ago! He claims that Kamaria's son took off with the treasures that they had found on their adventures. Fred feels betrayed and wants his treasures back! Go into the Eerie Forest and talk to Kamaria's son. Use the telescope on the volcano to get to the Eerie Forest. ]]></QUESTBOOK_HINTS_SONISAPIRATE_03>
+  <QUESTBOOK_HINTS_SONISAPIRATE_04><![CDATA[You met Kamaria's son hiding from Fred the Octopus in the Eerie Forest. He assures you that he's innocent and swears he was not the one to steal the treasures. 
+He's starving because he has been on the run for a long time. Please bring him a plate of chicken from the restaurant. ]]></QUESTBOOK_HINTS_SONISAPIRATE_04>
+  <QUESTBOOK_HINTS_SONISAPIRATE_05><![CDATA[You found a plate of delicious chicken at the restaurant Chez Bruno. It smells lovely! Quickly bring the food to Kamaria's son, before he passes out from hunger. ]]></QUESTBOOK_HINTS_SONISAPIRATE_05>
+  <QUESTBOOK_HINTS_SONISAPIRATE_06><![CDATA[Kamaria's son is very grateful. He will eat, rest and gather new strength. Come back tomorrow! After that, he'll tell you more about what happened.]]></QUESTBOOK_HINTS_SONISAPIRATE_06>
+  <QUESTBOOK_HINTS_SONISAPIRATE_07><![CDATA[One day has passed. Kamaria's son has now gained enough strength and can tell you what happened on his adventures with Fred. Go into the Eerie Forest and talk to Kamaria's son.]]></QUESTBOOK_HINTS_SONISAPIRATE_07>
+  <QUESTBOOK_HINTS_SONISAPIRATE_08><![CDATA[Kamaria's son and Fred the Octopus had made friends with an old pirate named William Pandabeard. But Pandabeard tricked them! He stole their treasures and convinced Fred that Kamaria's son had taken them. To escape Fred's wrath, he's been hiding in the Eerie Forest ever since. 
+Go to Fred the Octopus on the Caribbean Beach and try to convince him of the truth.]]></QUESTBOOK_HINTS_SONISAPIRATE_08>
+  <QUESTBOOK_HINTS_SONISAPIRATE_09><![CDATA[Fred doesn't believe one word! He's extremely angry and demands that Kamaria's son should come to the beach himself and face Fred. Go to Kamaria's son in the Eerie Forest and deliver the message. ]]></QUESTBOOK_HINTS_SONISAPIRATE_09>
+  <QUESTBOOK_HINTS_SONISAPIRATE_10><![CDATA[Kamaria's son would rather not go to see Fred. Considering how agitated the octopus is, it just wouldn't be a good idea. Instead he suggests asking Kamaria for advice. Go to Kamaria in the castle tower and talk to her.]]></QUESTBOOK_HINTS_SONISAPIRATE_10>
+  <QUESTBOOK_HINTS_SONISAPIRATE_11><![CDATA[Kamaria does everything in her power to help her son. To protect him, she hides him in her castle for now. Kamaria suggests finding the pirate William Pandabeard and getting back the treasure. This is the only way to calm down Fred and save Panfu from being covered in black ink. 
+Go to the harbour and talk to the old fisherman. He always gives advice and knows the ocean like the back of his hand.]]></QUESTBOOK_HINTS_SONISAPIRATE_11>
+  <QUESTBOOK_HINTS_SONISAPIRATE_12><![CDATA[The fisherman tells you that Pandabeard lives on an island nearby. Using the motor boat at the harbour, you can get to Pandabeard's island. Unfortunately, the fisherman lost the key to the motor boat somewhere around the volcano. 
+Go and look for the key to the motor boat.]]></QUESTBOOK_HINTS_SONISAPIRATE_12>
+  <QUESTBOOK_HINTS_SONISAPIRATE_13><![CDATA[You found the key to the motor boat at the volcanic crater. What a cute key chain! Go back to the harbour and talk to the fisherman.]]></QUESTBOOK_HINTS_SONISAPIRATE_13>
+  <QUESTBOOK_HINTS_SONISAPIRATE_14><![CDATA[Well done. Unfortunately, the motor boat is not quite ready to use. Come back tomorrow! The fisherman will tell you then what's needed to start the motor boat. ]]></QUESTBOOK_HINTS_SONISAPIRATE_14>
+  <QUESTBOOK_HINTS_SONISAPIRATE_15><![CDATA[One day has passed. Go to the old harbour and talk to the fisherman to figure out how you can make the motor boat seaworthy again.]]></QUESTBOOK_HINTS_SONISAPIRATE_15>
+  <QUESTBOOK_HINTS_SONISAPIRATE_16><![CDATA[You already have the key to the boat, but you're still missing fuel. Without fuel, you won't get very far. Look for a fuel canister in Panfu. The fisherman believes he might have seen one either at the kiosk or at the pony farm.]]></QUESTBOOK_HINTS_SONISAPIRATE_16>
+  <QUESTBOOK_HINTS_SONISAPIRATE_17><![CDATA[It's a surprise that the kiosk even sells fuel. In any case, soon you'll be able to set sail. Go back to the harbour and talk to the fisherman.]]></QUESTBOOK_HINTS_SONISAPIRATE_17>
+  <QUESTBOOK_HINTS_SONISAPIRATE_18><![CDATA[Great! You finally have both key and fuel. Unfortunately, you'll have to wait a little while before you can go to Pandabeard's island. Come back in two days, the motor boat will be ready then.]]></QUESTBOOK_HINTS_SONISAPIRATE_18>
+  <QUESTBOOK_HINTS_SONISAPIRATE_19><![CDATA[One day has passed. You have to wait another day until you can go to Pandabeard's island with the motor boat. Be patient, little Panda!]]></QUESTBOOK_HINTS_SONISAPIRATE_19>
+  <QUESTBOOK_HINTS_SONISAPIRATE_20><![CDATA[Two days have passed. The fisherman got the motor boat ready! Quickly, go to the harbour and talk to the fisherman.]]></QUESTBOOK_HINTS_SONISAPIRATE_20>
+  <QUESTBOOK_HINTS_SONISAPIRATE_21><![CDATA[After a long journey, you have reached Pandabeard's island! The old pirate will not give up the stolen treasure willingly! 
+To get the treasure, you first have to master Pandabeard's challenges. The first challenge has already begun! Every rock at the shore has a letter on it. Jump from one rock to another to enter the island. But pay attention! You have to spell a certain word with the rocks that has a connection to William Pandabeard. ]]></QUESTBOOK_HINTS_SONISAPIRATE_21>
+  <QUESTBOOK_HINTS_SONISAPIRATE_22><![CDATA[Well done! You solved Pandabeard's first riddle. But the old pirate has more challenges waiting for you. Now he wants to know how many coconuts you can find on the island. You have to click on all the coconuts. The island has two sides: left and right. You have to find the coconuts on both sides and click on them. When you're done, talk to Pandabeard.]]></QUESTBOOK_HINTS_SONISAPIRATE_22>
+  <QUESTBOOK_HINTS_SONISAPIRATE_22_A><![CDATA[You have counted the [purple]Coconuts[purple]! Talk to [green]William Pandabeared[green] on the [red]right hand side of the pirate island[red].]]></QUESTBOOK_HINTS_SONISAPIRATE_22_A>
+  <QUESTBOOK_HINTS_SONISAPIRATE_23><![CDATA[Good job! You managed to solve Pandabeard's second riddle! But one task is still waiting for you: How many coloured crabs can you find on the island? You have to count them by clicking on them. Don't forget to count the crabs on both sides of the island.]]></QUESTBOOK_HINTS_SONISAPIRATE_23>
+  <QUESTBOOK_HINTS_SONISAPIRATE_24><![CDATA[Very good, Panda! You solved all the riddles! Go and talk to Pandabeard again.]]></QUESTBOOK_HINTS_SONISAPIRATE_24>
+  <QUESTBOOK_HINTS_SONISAPIRATE_25><![CDATA[You might have solved all the riddles, but Pandabeard is not prepared to declare defeat just yet. The old pirate wants you to make a difficult decision: He has Fred the Octopus' treasure, but he also has a clue about the location of Kamaria's lost lover. Pandabeard will only let you choose one of the two things!
+What will you pick, brave Panda? The treasure or the clue about Kamaria's lover?
+Listen to your heart and choose wisely!]]></QUESTBOOK_HINTS_SONISAPIRATE_25>
+  <QUESTBOOK_HINTS_SONISAPIRATE_26><![CDATA[You followed your heart. You did really well! Kamaria is very happy to have received a clue about her lost love. Fred the Octopus is so happy for Kamaria that he decides to join forces with Kamaria's son again to continue to look for his father. Everyone is happy! You have mastered the quest very well. ]]></QUESTBOOK_HINTS_SONISAPIRATE_26>
+  <QUESTBOOK_HINTS_SONISAPIRATE_27><![CDATA[You did it! You have found the treasure. Good job! Fred the Octopus will stop harrassing Panfu and take off with the treasure. Unfortunately, Kamaria is sad that you did not choose the clue about her lost love. Her son has disappeared again, looking for his father. But this is a different story for a different day. Maybe you should have listened to your heart and made Kamaria happy…]]></QUESTBOOK_HINTS_SONISAPIRATE_27>
+  <QUESTBOOK_HINTS_SONISAPIRATE_28><![CDATA[You're all set for your big journey. Click on the motor boat to get underway.]]></QUESTBOOK_HINTS_SONISAPIRATE_28>
+  <QUESTBOOK_HINTS_SONISAPIRATE_REWARD><![CDATA[Pirate Hat OR One Gold Coin]]></QUESTBOOK_HINTS_SONISAPIRATE_REWARD>
+  <QUESTBOOK_HINTS_SPIES_01><![CDATA[We're on our flying boat on the way to the castle of Bitterland. We still need to land safely.
+
+You've spoken to Max and seen the suspicious events through the telescope. Very strange things are going on in Bitterland. Max has given you a disguise and a camera. You're on the Professor's flying boat together on a secret mission. Ella was not pleased at all and didn't go with you.]]></QUESTBOOK_HINTS_SPIES_01>
+  <QUESTBOOK_HINTS_SPIES_02><![CDATA[We're hiding in the bushes and can't get any further! The road to the castle is heavily guarded, and only those poor, weary-looking workers can get through. We need to find a way past the guards.
+
+Thanks to the landing kit that Professor Bookworm gave you, you've been able to land safely and close to the castle.]]></QUESTBOOK_HINTS_SPIES_02>
+  <QUESTBOOK_HINTS_SPIES_03><![CDATA[The secret lies behind the gate! There's just no way past the guards...Maybe Max will have an idea?
+
+You disguised yourself as workers and successfully fooled the guards on the road. You're now at the castle entrance.]]></QUESTBOOK_HINTS_SPIES_03>
+  <QUESTBOOK_HINTS_SPIES_04><![CDATA[We made it! You bravely took a photo of the suspicious events inside the castle of Bitterland. Just what can you make out? Meet Max and study the photo more carefully together.
+
+While Max cleverly distracted the guards, you were able to sneak into the castle and take a photo of an extraordinary machine. Despite your best efforts, your cover was blown. Only in the very last second you could flee, thanks to Ella. ]]></QUESTBOOK_HINTS_SPIES_04>
+  <QUESTBOOK_HINTS_SPIES_REWARD><![CDATA[Spy Costume ]]></QUESTBOOK_HINTS_SPIES_REWARD>
+  <QUESTBOOK_HINTS_SURFER_01><![CDATA[You met Lenny the surfer at the Caribbean Beach. He came back to Panfu to see Penny. Go to the [red]Library[red] and talk to [green]Penny[green]. You'll find the [red]Library[red] where cold treats are served.
+]]></QUESTBOOK_HINTS_SURFER_01>
+  <QUESTBOOK_HINTS_SURFER_02><![CDATA[You found Penny, but she is angry. She doesn't want to see Lenny, because he never replied to her letters. Go to the [red]Caribbean Beach[red] and talk to [green]Lenny[green].
+
+]]></QUESTBOOK_HINTS_SURFER_02>
+  <QUESTBOOK_HINTS_SURFER_03><![CDATA[Lenny is shocked, because he never even got a single letter from Penny. Maybe there is hope yet! Quickly, go to the [red]Library[red] and tell [green]Penny![green]
+]]></QUESTBOOK_HINTS_SURFER_03>
+  <QUESTBOOK_HINTS_SURFER_04><![CDATA[Penny almost can't believe that Lenny shouldn't have gotten any of her letters! She sent so many messages in a bottle. The fisherman must have seen her do it. Go and talk to the fisherman [green]Horst Hering[green]. He is where ships lay at anchor.
+]]></QUESTBOOK_HINTS_SURFER_04>
+  <QUESTBOOK_HINTS_SURFER_05><![CDATA[What a disaster! The bottles with Penny's letters got caught in the fishing net! Quickly, go and see [green]Penny[green] at the [red]Library[red] and clear up the misunderstanding!]]></QUESTBOOK_HINTS_SURFER_05>
+  <QUESTBOOK_HINTS_SURFER_06><![CDATA[Hooray! Penny now knows about the problem with the letters. She is now ready to talk to Lenny. Will there be a romantic Happy Ending after all? Hurry to the [red]Caribbean Beach[red] and talk to [green]Lenny[green]. ]]></QUESTBOOK_HINTS_SURFER_06>
+  <QUESTBOOK_HINTS_SURFER_07><![CDATA[Good job! Thanks to you, Lenny and Penny have found their way back together. As a reward, you got [purple]Lenny's surfboard[purple].]]></QUESTBOOK_HINTS_SURFER_07>
+  <QUESTBOOK_HINTS_SURFER_REWARD><![CDATA[Surfboard]]></QUESTBOOK_HINTS_SURFER_REWARD>
+  <QUESTBOOK_HINTS_THECHRONICLER_01><![CDATA[The Chronicler is in the middle of writing down the history of the old Panfu. He is still missing important information. He gave you a Quest Book with a list of eye witness Pandas and asked you to talk to them.
+
+Visit Mr. Curley at the lake and talk to him.]]></QUESTBOOK_HINTS_THECHRONICLER_01>
+  <QUESTBOOK_HINTS_THECHRONICLER_02><![CDATA[Mr. Curley told you how all the Pandas blew away the dark clouds in the sky and then a dark island appeared.
+
+Visit Bruno at his restaurant "Chez Bruno" in San Franpanfu and talk to him.]]></QUESTBOOK_HINTS_THECHRONICLER_02>
+  <QUESTBOOK_HINTS_THECHRONICLER_03><![CDATA[Bruno told you about Paul the Kid's magical powers that he can only use in his sleep. Paul the Kid also loves pancakes more than anything else, even more than Bruno's fries. Bruno thinks that is unprofessional. 
+
+Visit Momo in San Franpanfu.]]></QUESTBOOK_HINTS_THECHRONICLER_03>
+  <QUESTBOOK_HINTS_THECHRONICLER_04><![CDATA[Momo, the singer of the Smashing Pancakes, suspects that Evron made a huge pancake to lure in Paul the Kid. He also wrote a song about Evron. 
+
+Visit Professor Bookworm at his lab in the cave beneath the Jungle.]]></QUESTBOOK_HINTS_THECHRONICLER_04>
+  <QUESTBOOK_HINTS_THECHRONICLER_05><![CDATA[According to the professor, it took four weeks until Panfu was connected to Bitterland. He also wants to continue to study Paul the Kid's magical powers. 
+
+Visit Gonzo at the Kiosk by the Swimming Pool.]]></QUESTBOOK_HINTS_THECHRONICLER_05>
+  <QUESTBOOK_HINTS_THECHRONICLER_06><![CDATA[Gonzo told you that everything was Evron's Plan. Evron had even made a pancake to lure in Paul the Kid. Gonzo thinks Kamaria should do something.
+
+Visit Paul the Kid in his room on the castle terrace.]]></QUESTBOOK_HINTS_THECHRONICLER_06>
+  <QUESTBOOK_HINTS_THECHRONICLER_07><![CDATA[Paul didn't say a lot. A big "E" was painted on his window. What could that mean?
+
+Visit the painter in the castle ballroom.]]></QUESTBOOK_HINTS_THECHRONICLER_07>
+  <QUESTBOOK_HINTS_THECHRONICLER_08><![CDATA[Panfu's painter finds the events very dramatic and perfectly suitable as an artistic theme. 
+He sent his pictures to the Chronicler.
+
+Visit Pandabeard in his pirate bar at the harbour.
+]]></QUESTBOOK_HINTS_THECHRONICLER_08>
+  <QUESTBOOK_HINTS_THECHRONICLER_09><![CDATA[Old Pandabeard was not particularly helpful. He thinks Paul the Kid would scoff Bruno's fries. 
+
+Report to the Chronicler at the library about your findings.]]></QUESTBOOK_HINTS_THECHRONICLER_09>
+  <QUESTBOOK_HINTS_THECHRONICLER_10><![CDATA[As a reward, you got a Quest Book from the Chronicler. Keep checking your Quest Book, maybe you'll find a quest or two!
+
+You successfully helped the Chronicler put the history of the old Panfu in order.]]></QUESTBOOK_HINTS_THECHRONICLER_10>
+  <QUESTBOOK_HINTS_WOOBYQUEST_01><![CDATA[The Wooby King is gone without a trace! The little Woobies are beside themselves! Help Mr Curley and the Woobies. Get a [purple]giant pack of tissues[purple] to dry the Wooby tears. You will find the tissues where you can get prettied up.
+]]></QUESTBOOK_HINTS_WOOBYQUEST_01>
+  <QUESTBOOK_HINTS_WOOBYQUEST_02><![CDATA[Very Good! You got a giant pack of tissues at the Beauty Salon. Quickly go to the [red]Lake[red] and click on the [green]Woobies[green] to dry their tears.]]></QUESTBOOK_HINTS_WOOBYQUEST_02>
+  <QUESTBOOK_HINTS_WOOBYQUEST_03><![CDATA[You have to find the Wooby King and bring him back to the Lake! According to Mr Curley, the Wooby King visited Kamaria often in the last little while. Visit [green]Kamaria[green] at the [red]Castle Tower[red].]]></QUESTBOOK_HINTS_WOOBYQUEST_03>
+  <QUESTBOOK_HINTS_WOOBYQUEST_04><![CDATA[[green]Kamaria[green] told you that the Wooby King often helped her put her herbs and potions in order recently.]]></QUESTBOOK_HINTS_WOOBYQUEST_04>
+  <QUESTBOOK_HINTS_WOOBYQUEST_05><![CDATA[The Wooby King drank Kamaria's sleep potion! Unfortunately, the lid of the chest fell shut and the lock snapped into place. Hurry up, otherwise the Wooby King will fall into everlasting sleep and nobody will be able to wake him again! Go to [green]William Pandabeard[green] in the [red]Pirate Bar[red] where ships drop their anchors.]]></QUESTBOOK_HINTS_WOOBYQUEST_05>
+  <QUESTBOOK_HINTS_WOOBYQUEST_06><![CDATA[Sadly, the old pirate William can't remember where he put the [purple]key[purple] to the treasure chest! William will likely have refreshed his memory by tomorrow. Come back to the [red]Pirate Bar[red] at the Harbour again [blue]tomorrow[blue].]]></QUESTBOOK_HINTS_WOOBYQUEST_06>
+  <QUESTBOOK_HINTS_WOOBYQUEST_07><![CDATA[[blue]One day has passed[blue]. The Wooby King still needs your help! Go to [green]William Pandabeard[green] in the [red]Pirate Bar[red] at the Harbour and ask him for the [purple]key[purple] to the chest.]]></QUESTBOOK_HINTS_WOOBYQUEST_07>
+  <QUESTBOOK_HINTS_WOOBYQUEST_08><![CDATA[William Pandabeard has hung his key somewhere.. He can only remember the flying bats around his head. Look around the darkest places in the Jungle and search for the key.]]></QUESTBOOK_HINTS_WOOBYQUEST_08>
+  <QUESTBOOK_HINTS_WOOBYQUEST_09><![CDATA[Great, you found the key! Why would Pandabeard keep it in the 4Boom game cave?! In any case, you can now finally open the chest. Hurry to the [red]Castle Tower[red] and talk to [green]Kamaria[green].]]></QUESTBOOK_HINTS_WOOBYQUEST_09>
+  <QUESTBOOK_HINTS_WOOBYQUEST_10><![CDATA[The chest is finally open, but the Wooby King is still fast asleep! Kamaria suggests getting a cup of strong coffee to rouse the Wooby King. You'll get the [purple]strongest coffee[purple] where you can get a snack after swimming.
+]]></QUESTBOOK_HINTS_WOOBYQUEST_10>
+  <QUESTBOOK_HINTS_WOOBYQUEST_11><![CDATA[You found a cup of coffee at the Kiosk. The coffee is hot and fresh, a great pick-me-up! Quickly, go to [red]Kamaria's Tower[red] at the Castle and give the [purple]coffee[purple] to the [green]Wooby King[green], so that he'll wake up.]]></QUESTBOOK_HINTS_WOOBYQUEST_11>
+  <QUESTBOOK_HINTS_WOOBYQUEST_12><![CDATA[Unfortunately, the coffee wasn't strong enough to wake the Wooby King. Kamaria suggested getting a loud alarm clock. DJ Pandi wears an alarm clock as a necklace. Go and search the [red]Castle Disco[red], ask [green]DJ Pandi[green] if you can have his [purple]Alarm Clock Necklace[purple].]]></QUESTBOOK_HINTS_WOOBYQUEST_12>
+  <QUESTBOOK_HINTS_WOOBYQUEST_13><![CDATA[DJ Pandi gave you the Pandi DJ alarm clock. Go back to the [red]Castle Tower[red] and wake the [green]Wooby King[green] with the [purple]Alarm Clock Necklace[purple].]]></QUESTBOOK_HINTS_WOOBYQUEST_13>
+  <QUESTBOOK_HINTS_WOOBYQUEST_14><![CDATA[The Wooby King is awake and in good health! Kamaria is overjoyed. As a reward for your efforts you get a [purple]Wooby Alarm Clock[purple]. Go to the [red]Lake[red] again and talk to [green]Mr Curley[green]. 
+]]></QUESTBOOK_HINTS_WOOBYQUEST_14>
+  <QUESTBOOK_HINTS_WOOBYQUEST_15><![CDATA[Congratulations! The Wooby King has arrived safely back at the Lake! All the Woobies are overjoyed and Mr Curley can finally laugh again. Peace and happiness have returned to the Lake! As a reward, you have got the [purple]Wooby Alarm Clock[purple] furniture and the [purple]Alarm Clock Necklace[purple] clothing!]]></QUESTBOOK_HINTS_WOOBYQUEST_15>
+  <QUESTBOOK_HINTS_WOOBYQUEST_REWARD><![CDATA[Wooby Alarm Clock and Alarm Clock Necklace]]></QUESTBOOK_HINTS_WOOBYQUEST_REWARD>
+  <QUESTBOOK_HINT_BIGFOOT_01><![CDATA[The poor Yeti is starving. Quick, bring him some [purple]fish[purple]. Maybe you should ask someone who has experience with fish and the sea...]]></QUESTBOOK_HINT_BIGFOOT_01>
+  <QUESTBOOK_HINT_BIGFOOT_02><![CDATA[Horst Hering's [purple]fishing rod[purple] lies where bats like to spend their time. [red]They mostly like dark places...[red]]]></QUESTBOOK_HINT_BIGFOOT_02>
+  <QUESTBOOK_HINT_BIGFOOT_03><![CDATA[You found the [purple]fishing rod[purple]. Now go back to [green]Horst Hering[green].]]></QUESTBOOK_HINT_BIGFOOT_03>
+  <QUESTBOOK_HINT_BIGFOOT_04><![CDATA[Horst caught a fresh [purple]fish[purple] for you. Go on, bring it to the [green]Yeti[green].]]></QUESTBOOK_HINT_BIGFOOT_04>
+  <QUESTBOOK_HINT_BIGFOOT_05><![CDATA[Yetis don't like raw fish, but there's an excellent [green]chef[green] on Panfu who can turn it into yummy [red]fish fingers[red]...]]></QUESTBOOK_HINT_BIGFOOT_05>
+  <QUESTBOOK_HINT_BIGFOOT_06><![CDATA[Bruno is all out of [purple]olive oil[purple], so he can't fry the fish. [red]You'll find some where Pandas go to pretty themselves up...[red]]]></QUESTBOOK_HINT_BIGFOOT_06>
+  <QUESTBOOK_HINT_BIGFOOT_07><![CDATA[Go to [green]Bruno[green] and bring him the [purple]olive oil[purple].]]></QUESTBOOK_HINT_BIGFOOT_07>
+  <QUESTBOOK_HINT_BIGFOOT_08><![CDATA[Bruno is very busy at the moment. It will be a little while before he makes the fish fingers. [blue]Come back tomorrow, please[blue].]]></QUESTBOOK_HINT_BIGFOOT_08>
+  <QUESTBOOK_HINT_BIGFOOT_09><![CDATA[[blue]A day has passed[blue]. See if [green]Bruno[green] is done with the [red]fish fingers[red].]]></QUESTBOOK_HINT_BIGFOOT_09>
+  <QUESTBOOK_HINT_BIGFOOT_10><![CDATA[Bruno fried [purple]yummy fish fingers[purple]. Bring them to the [green]Yeti[green] before they go cold. ]]></QUESTBOOK_HINT_BIGFOOT_10>
+  <QUESTBOOK_HINT_BIGFOOT_11><![CDATA[The Yeti is feeling better now, but he needs your help: The evil Bonez wants to use a giant hair dryer to melt the ice on the island where the Yeti lives with his family, just to catch them all and sell them to a zoo. 
+
+You have to find the [purple]giant hair dryer[purple] and turn it off - [red]it's supposed to be somewhere around the top of a mountain...[red] Maybe [green]Kamaria or Horst Hering[green] can help.]]></QUESTBOOK_HINT_BIGFOOT_11>
+  <QUESTBOOK_HINT_BIGFOOT_12><![CDATA[Weird...a strange Panda keeps going into the changing rooms, but never comes out again. Is that maybe the way we're looking for?]]></QUESTBOOK_HINT_BIGFOOT_12>
+  <QUESTBOOK_HINT_BIGFOOT_13><![CDATA[An odd light is coming from the locker, but unfortunately it's locked. Go and talk to [green]Willi the pool attendant[green] again.]]></QUESTBOOK_HINT_BIGFOOT_13>
+  <QUESTBOOK_HINT_BIGFOOT_14><![CDATA[[green]Kamaria[green] has got the [purple]key[purple] for the locker, but it's somewhere in her attic. [blue]Visit her again tomorrow[blue], she'll have found it by then.]]></QUESTBOOK_HINT_BIGFOOT_14>
+  <QUESTBOOK_HINT_BIGFOOT_15><![CDATA[[blue]One day has passed[blue]. Go to [green]Kamaria[green] and see whether she's found the [purple]key[purple].]]></QUESTBOOK_HINT_BIGFOOT_15>
+  <QUESTBOOK_HINT_BIGFOOT_16><![CDATA[Kamaria has given you a bunch of keys. Go back to the [red]changing rooms[red] and see if the correct [purple]key[purple] is among them.]]></QUESTBOOK_HINT_BIGFOOT_16>
+  <QUESTBOOK_HINT_BIGFOOT_17><![CDATA[The way is clear, but an eerie passage lies behind it. Where does it lead to...?]]></QUESTBOOK_HINT_BIGFOOT_17>
+  <QUESTBOOK_HINT_BIGFOOT_18><![CDATA[Oh no, a door is blocking the way to the elevator. You'll need a [purple]'sliding tile'[purple] to open the door. I wonder if [green]Willi[green] knows anything about that?]]></QUESTBOOK_HINT_BIGFOOT_18>
+  <QUESTBOOK_HINT_BIGFOOT_19><![CDATA[You have found the [purple]'sliding tile'[purple]. Now try your luck with the [red]locked door[red].]]></QUESTBOOK_HINT_BIGFOOT_19>
+  <QUESTBOOK_HINT_BIGFOOT_20><![CDATA[The door is still locked! Now it's up to you. Solve the slide puzzle to continue.]]></QUESTBOOK_HINT_BIGFOOT_20>
+  <QUESTBOOK_HINT_BIGFOOT_21><![CDATA[Another obstacle is blocking the way! You'll have to solve the [red]quiz within the elevator[red]. Be careful: if you give a wrong answer, you have to wait one day to try again.]]></QUESTBOOK_HINT_BIGFOOT_21>
+  <QUESTBOOK_HINT_BIGFOOT_22><![CDATA[There's the giant hair dryer - you have finally found the mountain peak! Now you just need to find a way to turn it off. To do that, set the hair dryer to the correct [purple]solution[purple]. ]]></QUESTBOOK_HINT_BIGFOOT_22>
+  <QUESTBOOK_HINT_BIGFOOT_23><![CDATA[Done!!! You turned off the giant hair dryer. Now Bonez can't cause any more harm. Go to the Yeti and tell him about your work.]]></QUESTBOOK_HINT_BIGFOOT_23>
+  <QUESTBOOK_HINT_BIGFOOT_24><![CDATA[The Yeti wants to return to his family, but unfortunately his ice raft melted. He'll need your help to build a new one. First, he'll need a [purple]stick[purple] to use as a mast. Panfu has a lot of trees, so you should have no problem finding a stick. [red]Search in a place where animals live on Panfu...[red]]]></QUESTBOOK_HINT_BIGFOOT_24>
+  <QUESTBOOK_HINT_BIGFOOT_25><![CDATA[Well done, bring the [purple]stick[purple] to the [green]Yeti[green].]]></QUESTBOOK_HINT_BIGFOOT_25>
+  <QUESTBOOK_HINT_BIGFOOT_26><![CDATA[Now the Yeti needs a [purple]tough fabric[purple] and a [purple]sewing kit[purple] for the sail. Ask the[green]seamstress Lili[green] for help.]]></QUESTBOOK_HINT_BIGFOOT_26>
+  <QUESTBOOK_HINT_BIGFOOT_27><![CDATA[Now you have the sewing kit, but not yet the [red]fabric[red] for the sail. Lili has to look for it first, please [blue]come back tomorrow[blue].]]></QUESTBOOK_HINT_BIGFOOT_27>
+  <QUESTBOOK_HINT_BIGFOOT_28><![CDATA[[blue]One day has passed[blue].[green]Lili[green] is probably waiting for you with the [purple]fabric[purple] already.]]></QUESTBOOK_HINT_BIGFOOT_28>
+  <QUESTBOOK_HINT_BIGFOOT_29><![CDATA[Go back to the [green]Yeti[green], so he can make his sail.]]></QUESTBOOK_HINT_BIGFOOT_29>
+  <QUESTBOOK_HINT_BIGFOOT_30><![CDATA[Now the [green]Yeti[green] needs a lot of [purple]ice cubes[purple] to build an ice raft. To make the ice cubes, you'll have to find the [red]ice cube machine on Panfu[red]. And remember: ice is nothing other than frozen water...]]></QUESTBOOK_HINT_BIGFOOT_30>
+  <QUESTBOOK_HINT_BIGFOOT_31><![CDATA[Now that he has the [purple]ice cubes[purple], the [green]Yeti[green] has everything he needs to build his ice raft. Go to him so he can finally get back to his family. ]]></QUESTBOOK_HINT_BIGFOOT_31>
+  <QUESTBOOK_HINT_BIGFOOT_32><![CDATA[Hooray!!! The Yeti has returned to his family safe and sound. And they all lived happily ever after...]]></QUESTBOOK_HINT_BIGFOOT_32>
+  <QUESTBOOK_INSTRUCTIONS><![CDATA[To select a quest, choose from the list to your left. You'll see a start button that you can use to start the quest. Have fun! 
+]]></QUESTBOOK_INSTRUCTIONS>
+  <QUESTBOOK_MULTIPLAYER><![CDATA[Multiplayer Quests]]></QUESTBOOK_MULTIPLAYER>
+  <QUESTBOOK_REWARD><![CDATA[Reward]]></QUESTBOOK_REWARD>
+  <QUESTBOOK_SINGLEPLAYER><![CDATA[Quests]]></QUESTBOOK_SINGLEPLAYER>
+  <QUESTBOOK_TEXT_COMINGUP><![CDATA[Here you'll soon find the exact descriptions of the steps in the quests. Bear with us, please.
+]]></QUESTBOOK_TEXT_COMINGUP>
+  <QUESTBOOK_TUTORIAL><![CDATA[Panfu Lessons]]></QUESTBOOK_TUTORIAL>
+  <QUESTBOOK_TUTORIAL_BUTTON><![CDATA[Lessons]]></QUESTBOOK_TUTORIAL_BUTTON>
+  <QUESTBOOK_WEEKLYQUEST_TITLE><![CDATA[Weekly Quest]]></QUESTBOOK_WEEKLYQUEST_TITLE>
+  <QUEST_LOCKED_MY_SON_IS_A_PIRATE><![CDATA[You have to complete the quest
+[green]My Son is a Pirate[green]
+in order to unlock [red]The Magic Ice Diamond[red]. ]]></QUEST_LOCKED_MY_SON_IS_A_PIRATE>
+  <QUEST_LOCKED_SPIES_IN_BITTERLAND><![CDATA[You have to complete the quest 
+[green]The Chronicler[green] in order to unlock [red]Spies in Bitterland[red].]]></QUEST_LOCKED_SPIES_IN_BITTERLAND>
+  <QUEST_LOCKED_SPIES_IN_BITTERLAND_NOCOLOR><![CDATA[You have to complete the quest The Chronicler in order to unlock Spies in Bitterland.]]></QUEST_LOCKED_SPIES_IN_BITTERLAND_NOCOLOR>
+  <QUEST_NAME><![CDATA[Quest Name]]></QUEST_NAME>
+  <QUEST_SWIMMING_NAME><![CDATA[Swimming Quest]]></QUEST_SWIMMING_NAME>
+  <START_TEXT><![CDATA[All the great quests that you can play on Panfu are listed here. The ones marked in green are still available for you to play and are listed as "available". The ones marked "active" indicate the quest that you are currently playing. If you'd like to stop the quest for whatever reason, you can cancel it here. Quests marked in red are quests that you've already played. Click on the quest and then "begin quest" to play again from the beginning.]]></START_TEXT>
+  <STATE_ACTIVE><![CDATA[Active]]></STATE_ACTIVE>
+  <STATE_FINISHED><![CDATA[Completed]]></STATE_FINISHED>
+  <STATE_OPEN><![CDATA[Open]]></STATE_OPEN>
+  <TITEL><![CDATA[Quest Book]]></TITEL>
+  <VACATION_HIERARCHY><![CDATA[Summer Holidays on the Pirate Island]]></VACATION_HIERARCHY>
+  <WEEKLY_BOOKWORM_MACHINE><![CDATA[Visit Prof. Bookworm in the Jungle Cave, he has improved his shrink machine.]]></WEEKLY_BOOKWORM_MACHINE>
+</snippets>

@@ -1,0 +1,45 @@
+<config check="738deeeaaa9d442b7f96fd186f7198ec">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates/>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="hole" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="137,0,215"/>
+        </checks>
+      </element>
+      <element id="shadow" button="0" visible="1">
+        <checks>
+          <visible value="0" gamestate="137,0,215"/>
+        </checks>
+      </element>
+      <element id="flour" button="0" visible="1" notWalkable="true">
+        <checks>
+          <button value="1" gamestate="67,0,3010"/>
+        </checks>
+        <button type="overClick" over="3" click="1" out="1"/>
+        <message value="letsGoThere.entranceFlourClicked" type="letsGoThere"/>
+      </element>
+      <element id="camera" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="67,0,3015"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="letsGoThere.entranceCameraClicked" type="letsGoThere"/>
+      </element>
+      <element id="rope1" button="0" visible="1" notWalkable="true">
+        <checks>
+          <button value="1" gamestate="67,0,3030"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="letsGoThere.ropeClicked" type="letsGoThere"/>
+      </element>
+    </elements>
+    <hotspots/>
+  </module>
+</config>

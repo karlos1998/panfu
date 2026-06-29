@@ -64,6 +64,26 @@ return [
             ]) : [],
         ],
 
+        'legacy_openpanfu' => [
+            'driver' => 'mysql',
+            'url' => env('LEGACY_OPENPANFU_DB_URL'),
+            'host' => env('LEGACY_OPENPANFU_DB_HOST', '127.0.0.1'),
+            'port' => env('LEGACY_OPENPANFU_DB_PORT', '3307'),
+            'database' => env('LEGACY_OPENPANFU_DB_DATABASE', 'openpanfu'),
+            'username' => env('LEGACY_OPENPANFU_DB_USERNAME', 'openPanfu'),
+            'password' => env('LEGACY_OPENPANFU_DB_PASSWORD', 'password'),
+            'unix_socket' => env('LEGACY_OPENPANFU_DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                Mysql::ATTR_SSL_CA => env('LEGACY_OPENPANFU_MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
         'mariadb' => [
             'driver' => 'mariadb',
             'url' => env('DB_URL'),

@@ -51,6 +51,7 @@ export interface FlashClient {
     ruffleScript: string;
     swfUrl: string;
     baseUrl: string;
+    informationServerUrl: string;
     serverName: string;
     flashvars: Record<string, string>;
     flashvarsQuery: string;

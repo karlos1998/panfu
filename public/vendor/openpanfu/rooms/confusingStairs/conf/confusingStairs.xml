@@ -1,0 +1,107 @@
+<config check="95960ce2791d1ab6b00d9ddb8663a781">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="parrot" button="1" visible="0">
+        <button type="overClick" over="2" out="1" click="2" stopWalk="1"/>
+        <checks>
+          <visible value="1" gamestate="15,0,20-62"/>
+        </checks>
+        <message value="lostLoverQuest.talkToParrot" type="theLostLover"/>
+      </element>
+      <element id="background" frame=":default">
+        <checks>
+          <frame value=":lighten" gamestate="15,0,21-999"/>
+        </checks>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":lighten" gamestate="15,0,21-999"/>
+        </checks>
+      </element>
+      <element id="torchHolder" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,0-20"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="lostLoverQuest.clickTorchHolder" type="theLostLover"/>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="44" type="room" x="390" y="430" rad="50" angle="90"/>
+      <hotspot target="onDoor5a" type="action" x="341" y="125" rad="30" on="1"/>
+      <hotspot target="onDoor5b" type="action" x="697" y="170" rad="30" on="1"/>
+      <hotspot target="onDoor4a" type="action" x="360" y="50" rad="30" on="1"/>
+      <hotspot target="onDoor4b" type="action" x="232" y="120" rad="30" on="1"/>
+      <hotspot target="onDoor3a" type="action" x="176" y="20" rad="20" on="1"/>
+      <hotspot target="onDoor3b" type="action" x="635" y="245" rad="30" on="1"/>
+      <hotspot target="onDoor2a" type="action" x="269" y="43" rad="30" on="1"/>
+      <hotspot target="onDoor2b" type="action" x="474" y="54" rad="30" on="1"/>
+      <hotspot target="onDoor1a" type="action" x="198" y="370" rad="30" on="1"/>
+      <hotspot target="onDoor1b" type="action" x="683" y="71" rad="30" on="1"/>
+      <hotspot target="onOuta1" type="action" x="607" y="13" rad="30" on="1"/>
+      <hotspot target="onOuta2" type="action" x="13" y="64" rad="30" on="1"/>
+      <hotspot target="onOutb1" type="action" x="751" y="68" rad="30" on="1"/>
+      <hotspot target="onOutb2" type="action" x="14" y="294" rad="30" on="1"/>
+      <hotspot target="onOutc1" type="action" x="751" y="68" rad="30" on="1"/>
+      <hotspot target="onOutc2" type="action" x="14" y="294" rad="30" on="1"/>
+      <hotspot target="48" type="room" x="596" y="110" rad="30" on="1"/>
+    </hotspots>
+    <actions>
+      <action id="onDoor5a">
+        <confusingStairsTeleport toX="697" toY="170" dir="left"/>
+      </action>
+      <action id="onDoor5b">
+        <confusingStairsTeleport toX="341" toY="125" dir="left"/>
+      </action>
+      <action id="onDoor4a">
+        <confusingStairsTeleport toX="232" toY="120" dir="left"/>
+      </action>
+      <action id="onDoor4b">
+        <confusingStairsTeleport toX="360" toY="50" dir="left"/>
+      </action>
+      <action id="onDoor3a">
+        <confusingStairsTeleport toX="635" toY="245" dir="left"/>
+      </action>
+      <action id="onDoor3b">
+        <confusingStairsTeleport toX="176" toY="36" dir="left"/>
+      </action>
+      <action id="onDoor2a">
+        <confusingStairsTeleport toX="474" toY="54" dir="left"/>
+      </action>
+      <action id="onDoor2b">
+        <confusingStairsTeleport toX="269" toY="43" dir="left"/>
+      </action>
+      <action id="onDoor1a">
+        <confusingStairsTeleport toX="683" toY="71" dir="left"/>
+      </action>
+      <action id="onDoor1b">
+        <confusingStairsTeleport toX="198" toY="370" dir="left"/>
+      </action>
+      <action id="onOuta1">
+        <confusingStairsTeleport toX="13" toY="64" dir="left"/>
+      </action>
+      <action id="onOuta2">
+        <confusingStairsTeleport toX="607" toY="13" dir="left"/>
+      </action>
+      <action id="onOutb1">
+        <confusingStairsTeleport toX="14" toY="294" dir="left"/>
+      </action>
+      <action id="onOutb2">
+        <confusingStairsTeleport toX="751" toY="68" dir="left"/>
+      </action>
+      <action id="onOutc1">
+        <confusingStairsTeleport toX="14" toY="294" dir="left"/>
+      </action>
+      <action id="onOutc2">
+        <confusingStairsTeleport toX="751" toY="68" dir="left"/>
+      </action>
+    </actions>
+  </module>
+</config>

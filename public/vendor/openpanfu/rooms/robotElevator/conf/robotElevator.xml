@@ -1,0 +1,107 @@
+<config check="a00961df4995ddb41b08e6eba7eb9e9c">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1" gamestate="124,0,0-280"/>
+    <sound id="lift" volume="0.4" path="audio/lift.mp3" loops="0"/>
+  </sounds>
+  <module>
+    <elements>
+      <element type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="outMountain"/>
+        </message>
+      </element>
+	    <element id="monitor1" button="0" visible="1">
+		    <checks>
+          <button value="1" gamestate="124,0,260"/>       
+        </checks>
+        <button type="full" click="1" over="1" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="52"/>
+        </message>
+      </element>
+	    <element id="monitor2" button="0" visible="1">
+	      <checks>
+          <button value="1" gamestate="124,0,265"/>       
+        </checks>
+        <button type="full" click="1" over="1" out="1"/>
+        <message value="badRobot.startPuzzle" type="badRobot" />         
+      </element>
+	    <element id="arrow" button="0" visible="0">
+	      <checks>
+          <visible value="1" gamestate="124,0,270"/>	     	  
+        </checks>         
+      </element>
+	    <element id="lever1" button="0" visible="1">
+	      <checks>
+          <button value="1" gamestate="124,0,270"/>
+	        <frame value=":used" gamestate="124,0,275-500"/>		  
+        </checks>
+        <button type="click" click="1" />
+        <message value="badRobot.clickLever1" type="badRobot" />         
+      </element>
+	    <element id="lever2" button="0" visible="1">
+	      <checks>
+          <button value="1" gamestate="124,0,270"/>   
+		      <frame value=":used" gamestate="124,0,275-500"/>		  
+        </checks>
+        <button type="click" click="1" />
+        <message value="badRobot.clickLever2" type="badRobot" />         
+      </element>
+	    <element id="panel1" button="0" visible="1">
+	      <checks>          
+		      <frame value=":used" gamestate="124,0,275-500"/>		  
+        </checks>             
+      </element>
+	    <element id="panel2" button="0" visible="1">
+	      <checks>          
+		      <frame value=":used" gamestate="124,0,275-500"/>		  
+        </checks>             
+      </element>
+	    <element id="panel3" button="0" visible="1">
+	      <checks>          
+		      <frame value=":used" gamestate="124,0,275-500"/>		  
+        </checks>             
+      </element>
+	    <element id="panel4" button="0" visible="1">
+	      <checks>          
+		      <frame value=":used" gamestate="124,0,275-500"/>		  
+        </checks>             
+      </element>
+	    <element id="panel5" button="0" visible="1">
+	      <checks>          
+		      <frame value=":used" gamestate="124,0,275-500"/>		  
+        </checks>             
+      </element>
+	    <element id="panel6" button="0" visible="1">
+	      <checks>          
+		      <frame value=":used" gamestate="124,0,275-500"/>		  
+        </checks>             
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="12" angle="-135"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="outMountain" type="action" x="137" y="247" rad="50" on="1">
+        <checks>
+          <target value="playElevatorAnimationDown"/>
+        </checks>
+      </hotspot>      
+    </hotspots>
+    <actions>
+      <action id="playElevatorAnimationUp">
+        <playRockAnimationUp text="INACTIVE_ITEM_FOR_ROOM" type="alert"/>
+        <stopAvatar/>
+      </action>
+      <action id="playElevatorAnimationDown">
+        <playRockAnimationDown text="INACTIVE_ITEM_FOR_ROOM" type="alert"/>
+        <stopAvatar/>
+      </action>
+    </actions>
+  </module>
+</config>

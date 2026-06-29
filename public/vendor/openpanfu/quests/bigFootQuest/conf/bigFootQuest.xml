@@ -1,0 +1,256 @@
+<config>
+	<snippets path='quests/bigFootQuest/conf/snippets/bigfoot_text_snippets_$$lang$$.xml' _REPLACE_='1' /> 
+	
+	<assets>
+		<asset id="Puzzle" path="assets/Puzzle.swf" />
+		<asset id="LiftQuiz" path="assets/LiftQuiz.swf" />
+		<asset id="Generator" path="assets/Generator.swf" />
+		<asset id="TheEnd" path="assets/TheEnd.swf" />
+	</assets>
+	
+	<sounds>
+		<sound id="speaker" volume="3" path="audio/$$lang$$/$$key$$.mp3" />
+		<sound id="crack" volume="0.7" path="audio/crack.mp3"  loops="1"  />
+		<sound id="pa_till" volume="0.7" path="audio/pa_till.mp3"  loops="1"  />
+		<sound id="gear_correct" volume="0.7" path="audio/gear_correct.mp3"  loops="1"  /> 
+	</sounds>	
+	
+	<module statement_timeout="60" category="25" >
+		<questType type="adventure" questNameInLogBook="NAME_QUEST_25"/>
+
+		<tracker>
+			<track state="25,1,1" message="Quest_06_Bigfoot_01_YETI_BIGFOOT_01" />
+			<track state="25,1,2" message="Quest_06_Bigfoot_02_BRUNO_BIGFOOT_07" />		
+			<track state="25,1,3" message="Quest_06_Bigfoot_03_KAMARIA_BIGFOOT_06" />		
+			<track state="25,1,4" message="Quest_06_Bigfoot_04_Door_puzzle" />			
+			<track state="25,1,5" message="Quest_06_Bigfoot_05_elevator Quiz" />			
+			<track state="25,1,6" message="Quest_06_Bigfoot_06_Mountaintop" />		
+			<track state="25,1,7" message="Quest_06_Bigfoot_07_YETI_BIGFOOT_11" />		
+			<track state="25,1,8" message="Quest_06_Bigfoot_08_LILI_BIGFOOT_06" />			
+			<track state="25,1,9" message="Quest_06_Bigfoot_09_Item_Ice_ItemID_101655" />			
+			<track state="25,1,10" message="Quest_06_Bigfoot_10_YETI_BIGFOOT_20" />				
+		</tracker>
+		
+		<npcs>
+			<npc id='BigFoot' room='36'>
+				<speechBubble x="580" y="300" w="450" offX="-1" offY="-1" pointX="-100" pointY="25" />
+				<behaviours>
+					
+					<behaviour gamestate="25,0,0"> 
+						<statement key='YETI_BIGFOOT_01' sound='speaker'> 
+							<action id='changeQuestState' state='25,1,1' />
+						</statement>
+					</behaviour>
+					<behaviour gamestate="25,0,1-4"> 
+						<statement key='YETI_BIGFOOT_02' sound='speaker' />
+					</behaviour>
+					<behaviour gamestate="25,0,5-10"> 
+						<statement key='YETI_BIGFOOT_03' sound='speaker' />
+					</behaviour>
+					<behaviour gamestate="25,0,11">
+						<statement key='YETI_BIGFOOT_04' sound='speaker' />
+					</behaviour>
+					<behaviour isAnotherQuestStarted="25">
+						<statement key="QUEST_HINT" />
+					</behaviour>
+
+				</behaviours>
+			</npc>
+			<npc id='BigFoot2' room='36' name='BigFoot2'>
+				<speechBubble x="630" y="270" w="450" offX="-1" offY="-1" pointX="-100" pointY="25" />
+				<behaviours>
+					<behaviour gamestate="25,0,12"> 
+						<statement key='YETI_BIGFOOT_05' sound='speaker'/> 
+						<statement key='YETI_BIGFOOT_06' sound='speaker'/> 
+						<statement key='YETI_BIGFOOT_07' sound='speaker'/> 
+						<statement key='YETI_BIGFOOT_08' sound='speaker'/> 
+						<statement key='YETI_BIGFOOT_09' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,13-25"> 
+						<statement key='YETI_BIGFOOT_10' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,26"> 
+						<statement key='YETI_BIGFOOT_11' sound='speaker'> 
+							<action id='changeQuestState' state='25,1,7' />
+						</statement>
+						<statement key='YETI_BIGFOOT_12' sound='speaker'/> 
+						<statement key='YETI_BIGFOOT_13' sound='speaker'/> 
+						<statement key='YETI_BIGFOOT_14' sound='speaker'/>
+					</behaviour>
+					<behaviour gamestate="25,0,27"> 
+						<statement key='YETI_BIGFOOT_14' sound='speaker'/>
+					</behaviour>
+					<behaviour gamestate="25,0,28"> 
+						<statement key='YETI_BIGFOOT_15' sound='speaker'/>
+						<statement key='YETI_BIGFOOT_16' sound='speaker'/>
+					</behaviour>
+					<behaviour gamestate="25,0,29-31"> 
+						<statement key='YETI_BIGFOOT_16' sound='speaker'/>
+					</behaviour>
+					<behaviour gamestate="25,0,32"> 
+						<statement key='YETI_BIGFOOT_17' sound='speaker'/>
+						<statement key='YETI_BIGFOOT_18' sound='speaker'/>
+					</behaviour>
+					<behaviour gamestate="25,0,33"> 
+						<statement key='YETI_BIGFOOT_18' sound='speaker'/>
+					</behaviour>
+					<behaviour gamestate="25,0,34"> 
+						<statement key='YETI_BIGFOOT_19' sound='speaker'/>
+						<statement key='YETI_BIGFOOT_20' sound='speaker'>
+							<action id='changeQuestState' state='25,1,10' />
+						</statement>
+					</behaviour>
+				</behaviours>
+			</npc>
+			<npc id='HORST_HARBOUR' room='24'>
+				<speechBubble x="242" y="150" w="450" offX="1" offY="-1" pointX="40" pointY="25" /> 
+				<behaviours>
+					<behaviour gamestate="25,0,1"> 
+						<statement key='FISHERMAN_BIGFOOT_01' parse='name' value='myUserName' sound='speaker'/> 
+						<statement key='FISHERMAN_BIGFOOT_02' sound='speaker'/> 
+						<statement key='FISHERMAN_BIGFOOT_03' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,2"> 
+						<statement key='FISHERMAN_BIGFOOT_04' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,3"> 
+						<statement key='FISHERMAN_BIGFOOT_05A' sound='speaker'>
+							<action id='changeQuestState' state='25,0,4'/>
+						</statement>
+					</behaviour>
+					<behaviour gamestate="25,0,6-10"> 
+						<statement key='FISHERMAN_BIGFOOT_06' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,13"> 
+						<statement key='FISHERMAN_BIGFOOT_07' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,15"> 
+						<statement key='FISHERMAN_BIGFOOT_08' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,20"> 
+						<statement key='FISHERMAN_BIGFOOT_10' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,21-25"> 
+						<statement key='FISHERMAN_BIGFOOT_09' sound='speaker'/> 
+					</behaviour>
+				</behaviours>
+			</npc>
+			<npc id='BRUNO_CHEZ' room='30'>
+				<speechBubble x="580" y="130" w="450" offX="-1" offY="-1" pointX="-80" pointY="20" />
+				<behaviours>
+					<behaviour gamestate="25,0,6"> 
+						<statement key='BRUNO_BIGFOOT_01' parse='name' value='myUserName' sound='speaker'/> 
+						<statement key='BRUNO_BIGFOOT_02' sound='speaker'/> 
+						<statement key='BRUNO_BIGFOOT_03' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,7"> 
+						<statement key='BRUNO_BIGFOOT_04' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,8"> 
+						<statement key='BRUNO_BIGFOOT_05' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,9"> 
+						<statement key='BRUNO_BIGFOOT_06' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,10"> 
+						<statement key='BRUNO_BIGFOOT_07' sound='speaker'> 
+							<action id='changeQuestState' state='25,1,2' />
+						</statement>
+					</behaviour>
+				</behaviours>
+			</npc>
+			<npc id='LILI_BEAUTYSALON' room='23'>
+				<speechBubble x='620' y='185' w='450' offX='-1' offY='-1' pointX='-100' pointY='30' />
+				<behaviours>
+					<behaviour gamestate="25,0,29"> 
+						<statement key='LILI_BIGFOOT_01' sound='speaker'/> 
+						<statement key='LILI_BIGFOOT_02' sound='speaker'/> 
+						<statement key='LILI_BIGFOOT_03' sound='speaker'/> 
+						<statement key='LILI_BIGFOOT_04' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,30"> 
+						<statement key='LILI_BIGFOOT_05' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,31"> 
+						<statement key='LILI_BIGFOOT_06' sound='speaker'> 
+							<action id='changeQuestState' state='25,1,8' />
+						</statement>
+					</behaviour>
+				</behaviours>
+			</npc>
+			<npc id='KAMARIA_TOWER' room='20'>
+				<speechBubble x="252" y="210" w="450" offX="1" offY="-1" pointX="40" pointY="25" /> 
+				<behaviours>
+					<behaviour gamestate="25,0,6-10"> 
+						<statement key='KAMARIA_BIGFOOT_01' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,13-14"> 
+						<statement key='KAMARIA_BIGFOOT_02' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,15"> 
+						<statement key='KAMARIA_BIGFOOT_03' sound='speaker'/> 
+						<statement key='KAMARIA_BIGFOOT_04' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,16"> 
+						<statement key='KAMARIA_BIGFOOT_05' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,17"> 
+						<statement key='KAMARIA_BIGFOOT_06' sound='speaker'> 
+							<action id='changeQuestState' state='25,1,3' />
+						</statement>
+					</behaviour>
+					<behaviour gamestate="25,0,19"> 
+						<statement key='KAMARIA_BIGFOOT_07' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,20"> 
+						<statement key='KAMARIA_BIGFOOT_08' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,21-25"> 
+						<statement key='KAMARIA_BIGFOOT_07' sound='speaker'/> 
+					</behaviour>
+				</behaviours>
+			</npc>
+			<npc id='LIFEGUARD_POOL' room='3'>
+				<speechBubble x='580' y='120' w='450' offX='-1' offY='-1' pointX='-100' pointY='30' />
+				<behaviours>
+					<behaviour gamestate="25,0,13"> 
+						<statement key='TRAINER_BIGFOOT_01' sound='speaker'/> 
+						<statement key='TRAINER_BIGFOOT_02' sound='speaker'/> 
+						<statement key='TRAINER_BIGFOOT_03' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,14">
+						<statement key='TRAINER_BIGFOOT_03' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,15-17">
+						<statement key='TRAINER_BIGFOOT_04' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,19">
+						<statement key='TRAINER_BIGFOOT_05' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,20">
+						<statement key='TRAINER_BIGFOOT_06' sound='speaker'/> 
+					</behaviour>
+					<behaviour gamestate="25,0,21-25">
+						<statement key='TRAINER_BIGFOOT_05' sound='speaker'/> 
+					</behaviour>
+				</behaviours>
+			</npc>
+		</npcs>
+		
+		<items>
+			<item id="fishingRod" itemID="101646" name="Fishing Rod" />
+			<item id="fish" itemID="101647" name="Fish" />
+			<item id="oil" itemID="101648" name="Olive Oil" />
+			<item id="fishFingers" itemID="101649" name="Fish Fingers" />
+			<item id="keys" itemID="101650" name="Bundle of Keys" />
+			<item id="piece" itemID="101651" name="Puzzle Piece" />
+			<item id="canvas" itemID="101652" name="Canvas" />
+			<item id="stick" itemID="101653" name="Stick" />
+			<item id="needle" itemID="101654" name="Needle" />
+			<item id="ice" itemID="101655" name="Ice" />
+			<item id="secrethouse" itemID="101678" name="Secret Treehouse" />
+			<item id="igloothouse" itemID="101679" name="Igloo Treehouse" />
+		</items>
+	</module>
+
+</config>

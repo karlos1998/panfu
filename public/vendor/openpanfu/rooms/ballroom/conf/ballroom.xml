@@ -1,0 +1,114 @@
+<config check="9822dc3240bceada0908209aefd175a4">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="panfuAnniversary" start="Oct 4 2025" finish="Oct 22 2025" check="ef194474395e6e5"/>
+    <date id="halloween" start="Oct 31 2025" finish="Nov 2 2025" check="7fb7d23334a2886"/>
+    <date id="newYearsEve" start="Dec 28 2025" finish="Jan 2 2026" check="d668b80ddc083c1"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="panfuAnniversary" volume="1" path="audio/partyBackground.mp3" loops="-1" backgroundmusic="1" date="panfuAnniversary"/>
+    <sound id="halloween" volume="0.4" path="audio/halloween.mp3" backgroundmusic="1" loops="-1" date="halloween"/>
+    <sound id="newYearEveBackground" volume="1" path="audio/newYearBackground.mp3" loops="-1" backgroundmusic="1" date="newYearsEve"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="ballons" button="0" visible="0">
+        <checks>
+          <frame value=":panfuAnniversary" date="panfuAnniversary"/>
+          <visible value="1" date="panfuAnniversary"/>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+      </element>
+      <element id="confetti" button="0" visible="0">
+        <checks>
+          <visible value="1" date="panfuAnniversary"/>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+      </element>
+      <element id="table1_NY" button="0" visible="0">
+        <checks>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+      </element>
+      <element id="table2_NY" button="0" visible="0">
+        <checks>
+          <visible value="1" date="panfuAnniversary"/>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+      </element>
+      <element id="table3_NY" button="0" visible="0">
+        <checks>
+          <visible value="1" date="panfuAnniversary"/>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+      </element>
+      <element id="table4_NY" button="0" visible="0">
+        <checks>
+          <visible value="1" date="panfuAnniversary"/>
+          <visible value="1" date="newYearsEve"/>
+        </checks>
+      </element>
+      <element id="painter" button="1" visible="1">
+        <checks>
+          <visible value="0" requestHasOneActiveItem="104152"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="PANDALAGELO_BALLROOM"/>
+        </message>
+      </element>
+      <element id="easel" button="1" visible="1">
+        <button type="click" over="2" out="1" click="1"/>
+        <message value="tutorial2.clickOnEasel" type="tutorial2"/>
+      </element>
+      <element id="grave" button="0" visible="0">
+        <checks>
+          <button value="1" gamestate="83,22,0-2" date="halloween"/>
+          <visible value="1" date="halloween"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="GRAVE_BALLROOM"/>
+        </message>
+      </element>
+      <element id="anniversary_cake" button="0" visible="0">
+        <checks>
+          <button value="1" date="panfuAnniversary" doesNotHaveOneItem="103940"/>
+          <visible value="1" date="panfuAnniversary"/>
+        </checks>
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="panfuAnniversary.cakeClick" type="client"/>
+      </element>
+      <element id="fiveYear_cakeHat" button="0" visible="0">
+        <checks>
+          <button value="1" date="panfuAnniversary" doesNotHaveOneItem="104155"/>
+          <visible value="1" date="panfuAnniversary"/>
+        </checks>
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="panfuAnniversary.cakeHatClick" type="client"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":cake" date="panfuAnniversary"/>
+          <frame value=":newYear" date="newYearsEve"/>
+        </checks>
+      </element>
+      <element id="" type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="17" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="15" type="room" x="743" y="371" rad="50" angle="20"/>
+      <hotspot id="door" target="17" type="room" x="382" y="204" rad="30"/>
+    </hotspots>
+  </module>
+</config>

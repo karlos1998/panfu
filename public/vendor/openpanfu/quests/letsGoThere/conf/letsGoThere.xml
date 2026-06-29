@@ -1,0 +1,751 @@
+<config check="913d48ca2e4c387dad42f108b6e04ca2">
+  <snippets path="quests/letsGoThere/conf/snippets/spies_quest_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="spyCostume" path="assets/spyCostume.swf"/>
+    <asset id="camera" path="assets/camera.swf"/>
+    <asset id="boat" path="assets/boat.swf"/>
+    <asset id="boat2" path="assets/boat2.swf"/>
+    <asset id="boat3" path="assets/boat3.swf"/>
+    <asset id="giftBubble" path="assets/giftBubble.swf"/>
+    <asset id="flour" path="assets/flour.swf"/>
+    <asset id="bagSlave" path="assets/bagSlave.swf"/>
+    <asset id="mixer" path="assets/mixer.swf"/>
+    <asset id="filter" path="assets/filter.swf"/>
+  </assets>
+  <sounds>
+    <sound id="speaker" volume="1" path="audio/$$lang$$/$$key$$.mp3" lowerVolume="1"/>
+    <sound id="exclamationmark" volume="1" path="audio/Exclamationmark.mp3"/>
+    <sound id="questionmark" volume="1" path="audio/Questionmark.mp3"/>
+    <sound id="angry" volume="1" path="audio/Angry.mp3"/>
+    <sound id="bulb" volume="1" path="audio/Idea.mp3"/>
+    <sound id="propSlow" volume="0.4" path="audio/SFX_EvronQuest1_airbalde_soft_1.mp3" loops="-1"/>
+    <sound id="cameraSpawn" volume="1" path="audio/SFX_EvronQuest1_camera_1.mp3"/>
+    <sound id="engineStart" volume="1" path="audio/SFX_EvronQuest1_engine_run_2.mp3" loops="-1"/>
+    <sound id="balloonPop1" volume="1" path="audio/SFX_EvronQuest1_balloon_pop_4.mp3"/>
+    <sound id="balloonPopChain" volume="1" path="audio/SFX_EvronQuest1_balloon_pop_chain_1.mp3"/>
+    <sound id="boatFire" volume="1" path="audio/SFX_EvronQuest1_fire_boat_2.mp3" loops="-1"/>
+    <sound id="giftNeedle" volume="1" path="audio/SFX_EvronQuest1_gift_needle_2.mp3"/>
+    <sound id="shipFalling" volume="1" path="audio/SFX_EvronQuest1_ship_falling_1.mp3"/>
+    <sound id="shipCrash" volume="1" path="audio/SFX_EvronQuest1_crash_2.mp3"/>
+    <sound id="shipKnock" volume="1" path="audio/SFX_EvronQuest1_knock_boat_2.mp3" loops="-1"/>
+    <sound id="stars" volume="1" path="audio/SFX_EvronQuest1_emotion_stars_5.mp3"/>
+    <sound id="heart" volume="1" path="audio/SFX_EvronQuest1_emotion_heartbeat_1.mp3"/>
+    <sound id="ropes" volume="1" path="audio/SFX_EvronQuest1_ropes_falling_1.mp3"/>
+    <sound id="stealBag" volume="1" path="audio/SFX_EvronQuest1_stealing_bag_5.mp3"/>
+    <sound id="dropSack" volume="1" path="audio/SFX_EvronQuest1_sack_drop_3.mp3"/>
+    <sound id="roomBackground2" volume="0.5" path="audio/background2.mp3" loops="-1"/>
+    <sound id="disco" volume="0.5" path="audio/disco.mp3" loops="-1"/>
+  </sounds>
+  <module statement_timeout="60" category="67">
+    <actionsNPC>
+      <actionNPC actionID="createMax" typeActionNPC="createNPC" npcID="-999" name="" clothes="100432,100433,100434" positionX="365" positionY="286" direction="6" onEndMovement="" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="createElla" typeActionNPC="createNPC" npcID="-998" name="" clothes="100429,100430,100431" positionX="293" positionY="300" direction="7" onEndMovement="" time="0" notificationOnFinished="letsGoThere.highlightMax"/>
+      <actionNPC actionID="createMax2" typeActionNPC="createNPC" npcID="-9999" name="" clothes="103098" positionX="895" positionY="469" direction="6" onEndMovement="" time="1000" notificationOnFinished="loadBoat2"/>
+      <actionNPC actionID="followUser1" npcID="-998" typeActionNPC="startFollowUser"/>
+      <actionNPC actionID="walkToStartPosMax" npcID="-999" typeActionNPC="moveNPC" movementType="walk" positionX="365" positionY="286" time="1000" onEndMovement="walkToStartPosMax2" notificationOnFinished=""/>
+      <actionNPC actionID="walkToStartPosMax2" npcID="-999" typeActionNPC="moveNPC" movementType="walk" positionX="365" positionY="287" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="walkToBoatPos" npcID="-999" typeActionNPC="moveNPC" movementType="walk" positionX="615" positionY="300" time="3000" onEndMovement="lookToRope" notificationOnFinished=""/>
+      <actionNPC actionID="lookToRope" npcID="-999" typeActionNPC="moveNPC" movementType="walk" positionX="615" positionY="299" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="pullRope" npcID="-999" typeActionNPC="moveNPC" movementType="walk" positionX="399" positionY="300" time="1600" onEndMovement="lookToRope2" notificationOnFinished="ellaExclamation"/>
+      <actionNPC actionID="lookToRope2" npcID="-999" typeActionNPC="moveNPC" movementType="walk" positionX="400" positionY="299" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="jumpIntoBoat" npcID="-999" typeActionNPC="moveNPC" movementType="jump" positionX="565" positionY="225" time="1000" onEndMovement="" notificationOnFinished="letsGoThere.maxEnteredBoat"/>
+      <actionNPC actionID="playerJumpIntoBoat" npcID="-1" typeActionNPC="moveNPC" movementType="jump" positionX="515" positionY="220" time="1000" onEndMovement="" notificationOnFinished="letsGoThere.playerEnteredBoat"/>
+      <actionNPC actionID="removeNPC1" npcID="-999" typeActionNPC="removeNPC" toRoomID="9"/>
+      <actionNPC actionID="doChangeClothes" npcID="-999" typeActionNPC="updateNPCClothes" clothes="1001,103098" onEndMovement="" time="" notificationOnFinished=""/>
+      <actionNPC actionID="doChangeClothesSelf" npcID="-1" typeActionNPC="updateNPCClothes" clothes="1001,103097" onEndMovement="" time="" notificationOnFinished=""/>
+      <actionNPC actionID="walkToInitPos" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="345" positionY="388" time="1" onEndMovement="walkToInitPos2" notificationOnFinished=""/>
+      <actionNPC actionID="walkToInitPos2" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="345" positionY="387" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="despawnPlayer" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="-200" positionY="-200" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="createGuard1" name="" typeActionNPC="createNPC" npcID="999" positionX="350" positionY="333" direction="7" clothes="103106,103107"/>
+      <actionNPC actionID="createGuard2" name="" typeActionNPC="createNPC" npcID="888" positionX="469" positionY="343" direction="5" clothes="103106,103107"/>
+      <actionNPC actionID="createSlave1" typeActionNPC="createNPC" npcID="-666" positionX="381" positionY="506" direction="2" name="" onEndMovement="slave1_wait" time="0" notificationOnFinished="" clothes="103110,103109"/>
+      <actionNPC actionID="slave1_wait" npcID="-666" typeActionNPC="moveNPC" movementType="walk" positionX="404" positionY="366" time="3000" onEndMovement="createSlave2" notificationOnFinished=""/>
+      <actionNPC actionID="slave1_1" npcID="-666" typeActionNPC="moveNPC" movementType="walk" positionX="404" positionY="330" time="1000" onEndMovement="slave1_2" notificationOnFinished=""/>
+      <actionNPC actionID="slave1_2" npcID="-666" typeActionNPC="moveNPC" movementType="walk" positionX="524" positionY="284" time="2500" onEndMovement="slave1_3" notificationOnFinished=""/>
+      <actionNPC actionID="slave1_3" npcID="-666" typeActionNPC="moveNPC" movementType="walk" positionX="460" positionY="245" time="2000" onEndMovement="slave1_4" notificationOnFinished=""/>
+      <actionNPC actionID="slave1_4" npcID="-666" typeActionNPC="moveNPC" movementType="walk" positionX="474" positionY="228" time="1000" onEndMovement="removeSlave1" notificationOnFinished=""/>
+      <actionNPC actionID="removeSlave1" npcID="-666" typeActionNPC="removeNPC" time="5000" onEndMovement="slave2_1" notificationOnFinished="" toRoomID="61"/>
+      <actionNPC actionID="createSlave2" typeActionNPC="createNPC" npcID="-667" positionX="381" positionY="506" direction="2" name="" onEndMovement="slave2_wait" time="0" notificationOnFinished="" clothes="103110,103109"/>
+      <actionNPC actionID="slave2_wait" npcID="-667" typeActionNPC="moveNPC" movementType="walk" positionX="350" positionY="388" time="2500" onEndMovement="createSlave3" notificationOnFinished=""/>
+      <actionNPC actionID="slave2_1" npcID="-667" typeActionNPC="moveNPC" movementType="walk" positionX="404" positionY="330" time="1500" onEndMovement="slave2_2" notificationOnFinished=""/>
+      <actionNPC actionID="slave2_2" npcID="-667" typeActionNPC="moveNPC" movementType="walk" positionX="524" positionY="284" time="2500" onEndMovement="slave2_3" notificationOnFinished=""/>
+      <actionNPC actionID="slave2_3" npcID="-667" typeActionNPC="moveNPC" movementType="walk" positionX="460" positionY="245" time="2000" onEndMovement="slave2_4" notificationOnFinished=""/>
+      <actionNPC actionID="slave2_4" npcID="-667" typeActionNPC="moveNPC" movementType="walk" positionX="474" positionY="228" time="1000" onEndMovement="removeSlave2" notificationOnFinished=""/>
+      <actionNPC actionID="removeSlave2" npcID="-667" typeActionNPC="removeNPC" time="5000" onEndMovement="slave3_1" notificationOnFinished="" toRoomID="61"/>
+      <actionNPC actionID="createSlave3" typeActionNPC="createNPC" npcID="-668" positionX="381" positionY="506" direction="2" name="" onEndMovement="slave3_wait" time="0" notificationOnFinished="" clothes="103110,103109"/>
+      <actionNPC actionID="slave3_wait" npcID="-668" typeActionNPC="moveNPC" movementType="walk" positionX="450" positionY="389" time="2500" onEndMovement="slave3_wait2" notificationOnFinished=""/>
+      <actionNPC actionID="slave3_wait2" npcID="-668" typeActionNPC="moveNPC" movementType="walk" positionX="450" positionY="388" time="1" onEndMovement="slave1_1" notificationOnFinished=""/>
+      <actionNPC actionID="slave3_1" npcID="-668" typeActionNPC="moveNPC" movementType="walk" positionX="404" positionY="330" time="1500" onEndMovement="slave3_2" notificationOnFinished=""/>
+      <actionNPC actionID="slave3_2" npcID="-668" typeActionNPC="moveNPC" movementType="walk" positionX="524" positionY="284" time="2500" onEndMovement="slave3_3" notificationOnFinished=""/>
+      <actionNPC actionID="slave3_3" npcID="-668" typeActionNPC="moveNPC" movementType="walk" positionX="460" positionY="245" time="2000" onEndMovement="slave3_4" notificationOnFinished=""/>
+      <actionNPC actionID="slave3_4" npcID="-668" typeActionNPC="moveNPC" movementType="walk" positionX="474" positionY="228" time="1000" onEndMovement="removeSlave3" notificationOnFinished=""/>
+      <actionNPC actionID="removeSlave3" npcID="-668" typeActionNPC="removeNPC" time="5000" onEndMovement="createSlave1" notificationOnFinished="" toRoomID="61"/>
+      <actionNPC actionID="removeOneBagSlave3" npcID="-668" name="-1" typeActionNPC="updateNPCClothes" clothes="103110,103108"/>
+      <actionNPC actionID="createMax3" typeActionNPC="createNPC" npcID="-1999" name="" clothes="103098" positionX="681" positionY="381" direction="5" onEndMovement="sitMax" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="sitMax" npcID="-1999" typeActionNPC="actionNPC" movementType="sit" onEndMovement="sitUser"/>
+      <actionNPC actionID="sitUser" npcID="-1" typeActionNPC="actionNPC" movementType="sit"/>
+      <actionNPC actionID="idleMax" npcID="-1999" typeActionNPC="actionNPC" movementType="idle"/>
+      <actionNPC actionID="giveSlaveCostumeMax" name="Max" npcID="-1999" typeActionNPC="updateNPCClothes" clothes="103110"/>
+      <actionNPC actionID="giveSlaveCostumeUser" npcID="-1" name="-1" typeActionNPC="updateNPCClothes" clothes="103110"/>
+      <actionNPC actionID="giveSlaveCostumeAndBagMax" name="Max" npcID="-1999" typeActionNPC="updateNPCClothes" clothes="103110,103108"/>
+      <actionNPC actionID="giveSlaveCostumeAndBagUser" npcID="-1" name="-1" typeActionNPC="updateNPCClothes" clothes="103110,103108"/>
+      <actionNPC actionID="max3FollowUser" npcID="-1999" typeActionNPC="startFollowUser"/>
+      <actionNPC actionID="createGuardEntrance1" typeActionNPC="createNPC" npcID="-1001" positionX="270" positionY="290" direction="0" clothes="103106,103107"/>
+      <actionNPC actionID="createGuardEntrance2" typeActionNPC="createNPC" npcID="-1002" positionX="340" positionY="330" direction="1" clothes="103106,103107"/>
+      <actionNPC actionID="createGuardEntrance3" typeActionNPC="createNPC" npcID="-1003" positionX="485" positionY="340" direction="2" clothes="103106,103107"/>
+      <actionNPC actionID="createSlaveEntrance1" typeActionNPC="createNPC" npcID="-1111" positionX="790" positionY="285" direction="4" name="" onEndMovement="slaveEntrance1_1" time="0" notificationOnFinished="" clothes="103110,103108"/>
+      <actionNPC actionID="createSlaveEntrance2" typeActionNPC="createNPC" npcID="-2222" positionX="790" positionY="285" direction="4" name="" onEndMovement="slaveEntrance2_1" time="1500" notificationOnFinished="" clothes="103110,103108"/>
+      <actionNPC actionID="createSlaveEntrance3" typeActionNPC="createNPC" npcID="-3333" positionX="790" positionY="285" direction="4" name="" onEndMovement="slaveEntrance3_1" time="3000" notificationOnFinished="" clothes="103110,103108"/>
+      <actionNPC actionID="createSlaveEntrance2_1" typeActionNPC="createNPC" npcID="-2222" positionX="790" positionY="285" direction="4" name="" onEndMovement="slaveEntrance2_1" time="0" notificationOnFinished="" clothes="103110,103108"/>
+      <actionNPC actionID="createSlaveEntrance3_1" typeActionNPC="createNPC" npcID="-3333" positionX="790" positionY="285" direction="4" name="" onEndMovement="slaveEntrance3_1" time="0" notificationOnFinished="" clothes="103110,103108"/>
+      <actionNPC actionID="createMax4" typeActionNPC="createNPC" npcID="-99999" name="" clothes="103110" positionX="580" positionY="360" direction="4" onEndMovement="" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="createElla2" typeActionNPC="createNPC" npcID="-99998" name="" clothes="1001" positionX="300" positionY="-10" direction="0" onEndMovement="" time="0" notificationOnFinished=""/>
+      <actionNPC actionID="slaveEntrance1_1" npcID="-1111" typeActionNPC="moveNPC" movementType="walk" positionX="453" positionY="280" time="4000" onEndMovement="slaveEntrance1_2" notificationOnFinished="removeBagSlave1"/>
+      <actionNPC actionID="slaveEntrance1_2" npcID="-1111" typeActionNPC="moveNPC" movementType="walk" positionX="350" positionY="530" time="4000" onEndMovement="removeSlaveEntrance1" notificationOnFinished=""/>
+      <actionNPC actionID="removeSlaveEntrance1" npcID="-1111" typeActionNPC="removeNPC" time="5000" onEndMovement="createSlaveEntrance1" notificationOnFinished=""/>
+      <actionNPC actionID="slaveEntrance2_1" npcID="-2222" typeActionNPC="moveNPC" movementType="walk" positionX="453" positionY="280" time="4000" onEndMovement="slaveEntrance2_2" notificationOnFinished="removeBagSlave2"/>
+      <actionNPC actionID="slaveEntrance2_2" npcID="-2222" typeActionNPC="moveNPC" movementType="walk" positionX="350" positionY="530" time="4000" onEndMovement="removeSlaveEntrance2" notificationOnFinished=""/>
+      <actionNPC actionID="removeSlaveEntrance2" npcID="-2222" typeActionNPC="removeNPC" time="5000" onEndMovement="createSlaveEntrance2_1" notificationOnFinished=""/>
+      <actionNPC actionID="slaveEntrance3_1" npcID="-3333" typeActionNPC="moveNPC" movementType="walk" positionX="453" positionY="280" time="4000" onEndMovement="slaveEntrance3_2" notificationOnFinished="removeBagSlave3"/>
+      <actionNPC actionID="slaveEntrance3_2" npcID="-3333" typeActionNPC="moveNPC" movementType="walk" positionX="350" positionY="530" time="4000" onEndMovement="removeSlaveEntrance3" notificationOnFinished="slaveWaveDone"/>
+      <actionNPC actionID="removeSlaveEntrance3" npcID="-3333" typeActionNPC="removeNPC" time="5000" onEndMovement="createSlaveEntrance3_1" notificationOnFinished=""/>
+      <actionNPC actionID="removeSlaveEntrance1X" npcID="-1111" typeActionNPC="removeNPC" time="0" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="removeSlaveEntrance2X" npcID="-2222" typeActionNPC="removeNPC" time="0" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="removeSlaveEntrance3X" npcID="-3333" typeActionNPC="removeNPC" time="0" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="stopSlave1" typeActionNPC="modifyAction" actionIDTarget="createSlaveEntrance1" values="onEndMovement,removeSlaveEntrance1X"/>
+      <actionNPC actionID="stopSlave2" typeActionNPC="modifyAction" actionIDTarget="createSlaveEntrance2_1" values="onEndMovement,removeSlaveEntrance2X"/>
+      <actionNPC actionID="stopSlave3" typeActionNPC="modifyAction" actionIDTarget="createSlaveEntrance3_1" values="onEndMovement,removeSlaveEntrance3X"/>
+      <actionNPC actionID="removeBagSlave1" npcID="-1111" typeActionNPC="updateNPCClothes" clothes="103110"/>
+      <actionNPC actionID="removeBagSlave2" npcID="-2222" typeActionNPC="updateNPCClothes" clothes="103110"/>
+      <actionNPC actionID="removeBagSlave3" npcID="-3333" typeActionNPC="updateNPCClothes" clothes="103110"/>
+      <actionNPC actionID="createUserClothes" npcID="-1" typeActionNPC="updateNPCClothes" clothes="103110,103108"/>
+      <actionNPC actionID="updateUserClothes" npcID="-1" typeActionNPC="updateNPCClothes" clothes="103110"/>
+      <actionNPC actionID="walkToDancePos" npcID="-99999" typeActionNPC="moveNPC" movementType="walk" positionX="400" positionY="400" time="2000" onEndMovement="MaxDance"/>
+      <actionNPC actionID="walkToFlour" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="510" positionY="265" time="1500" onEndMovement="" notificationOnFinished="dropSack"/>
+      <actionNPC actionID="MaxDance" npcID="-99999" typeActionNPC="actionNPC" movementType="danceMJ" time="500" notificationOnFinished="MaxDance"/>
+      <actionNPC actionID="walkToTrapPosMax" npcID="-99999" typeActionNPC="moveNPC" movementType="walk" positionX="380" positionY="250" time="2000" onEndMovement="walkToTrapPosMax2" notificationOnFinished=""/>
+      <actionNPC actionID="walkToTrapPosMax2" npcID="-99999" typeActionNPC="moveNPC" movementType="walk" positionX="380" positionY="251" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard1SeeMax" npcID="-1001" typeActionNPC="moveNPC" movementType="walk" positionX="300" positionY="350" time="1000" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard2SeeMax" npcID="-1002" typeActionNPC="moveNPC" movementType="walk" positionX="355" positionY="350" time="1000" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard3SeeMax" npcID="-1003" typeActionNPC="moveNPC" movementType="walk" positionX="440" positionY="360" time="1000" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="walkToCam" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="280" positionY="234" time="2000" onEndMovement="walkToCam2" notificationOnFinished="takePhoto"/>
+      <actionNPC actionID="walkToCam2" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="280" positionY="235" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard1Trap" npcID="-1001" typeActionNPC="moveNPC" movementType="walk" positionX="190" positionY="391" time="1000" onEndMovement="guard1Trap_1" notificationOnFinished=""/>
+      <actionNPC actionID="guard2Trap" npcID="-1002" typeActionNPC="moveNPC" movementType="walk" positionX="340" positionY="391" time="500" onEndMovement="guard2Trap_1" notificationOnFinished=""/>
+      <actionNPC actionID="guard3Trap" npcID="-1003" typeActionNPC="moveNPC" movementType="walk" positionX="503" positionY="391" time="1000" onEndMovement="guard3Trap_1" notificationOnFinished=""/>
+      <actionNPC actionID="guard1Trap_1" npcID="-1001" typeActionNPC="moveNPC" movementType="walk" positionX="192" positionY="390" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard2Trap_1" npcID="-1002" typeActionNPC="moveNPC" movementType="walk" positionX="340" positionY="390" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard3Trap_1" npcID="-1003" typeActionNPC="moveNPC" movementType="walk" positionX="501" positionY="390" time="1" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard1Trap_2" npcID="-1001" typeActionNPC="moveNPC" movementType="walk" positionX="205" positionY="360" time="500" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard2Trap_2" npcID="-1002" typeActionNPC="moveNPC" movementType="walk" positionX="340" positionY="360" time="500" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard3Trap_2" npcID="-1003" typeActionNPC="moveNPC" movementType="walk" positionX="472" positionY="360" time="500" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard1Trap_3" npcID="-1001" typeActionNPC="moveNPC" movementType="walk" positionX="225" positionY="330" time="500" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard2Trap_3" npcID="-1002" typeActionNPC="moveNPC" movementType="walk" positionX="340" positionY="330" time="500" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard3Trap_3" npcID="-1003" typeActionNPC="moveNPC" movementType="walk" positionX="435" positionY="330" time="500" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard1Trap_4" npcID="-1001" typeActionNPC="moveNPC" movementType="walk" positionX="255" positionY="300" time="500" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard2Trap_4" npcID="-1002" typeActionNPC="moveNPC" movementType="walk" positionX="340" positionY="300" time="500" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="guard3Trap_4" npcID="-1003" typeActionNPC="moveNPC" movementType="walk" positionX="400" positionY="300" time="500" onEndMovement="" notificationOnFinished=""/>
+      <actionNPC actionID="createMax5" typeActionNPC="createNPC" npcID="-987" name="" clothes="103110" positionX="850" positionY="600" direction="4" onEndMovement="" time="1000" notificationOnFinished="loadLastBoat"/>
+      <actionNPC actionID="createElla3" typeActionNPC="createNPC" npcID="-988" name="" clothes="100429,100430,100431" positionX="950" positionY="600" direction="0" onEndMovement="" time="0" notificationOnFinished=""/>
+    </actionsNPC>
+    <npcs>
+      <npc id="-987" name="Max" room="63" typeNPC="avatarNPC">
+        <initActions>
+          <initAction actionID="createMax5">
+            <check gamestate="67,0,2999-9999"/>
+          </initAction>
+        </initActions>
+        <speechBubble sendOnStage="true" offsetY="-15"/>
+        <behaviours>
+          <behaviour gamestate="67,0,4005">
+            <statement key="MAX_SPIES_81" sound="speaker"/>
+            <statement key="MAX_SPIES_82" sound="speaker">
+              <action id="changeQuestState" state="67,0,4010"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-987"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="-988" name="Ella" room="63" typeNPC="avatarNPC">
+        <initActions>
+          <initAction actionID="createElla3">
+            <check gamestate="67,0,2999-9999"/>
+          </initAction>
+        </initActions>
+        <speechBubble sendOnStage="true" offsetY="-15"/>
+        <behaviours>
+          <behaviour gamestate="67,0,4010">
+            <statement key="ELLA_SPIES_83" sound="speaker"/>
+            <statement key="">
+              <action id="markMovieclip" mc="" asset="heartIcon" yOff="-90" xOff="-20" rot="0" avatar="-987"/>
+              <action id="playSound" soundID="heart"/>
+              <action id="changeQuestState" state="67,0,4015"/>
+              <action id="moveBoat3"/>
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-988" parameter="Ella"/>
+              <action id="trackEndQuest" name="THE_SPY_QUEST"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="-99999" name="Max" room="61" typeNPC="avatarNPC">
+        <initActions>
+          <initAction actionID="createMax4">
+            <check gamestate="67,0,2999-4500"/>
+          </initAction>
+          <initAction actionID="createGuardEntrance1">
+            <check gamestate="67,0,1-4500"/>
+          </initAction>
+          <initAction actionID="createGuardEntrance2">
+            <check gamestate="67,0,1-4500"/>
+          </initAction>
+          <initAction actionID="createGuardEntrance3">
+            <check gamestate="67,0,1-4500"/>
+          </initAction>
+          <initAction actionID="createSlaveEntrance1">
+            <check gamestate="67,0,1-4500"/>
+          </initAction>
+          <initAction actionID="createSlaveEntrance2">
+            <check gamestate="67,0,1-4500"/>
+          </initAction>
+          <initAction actionID="createSlaveEntrance3">
+            <check gamestate="67,0,1-4500"/>
+          </initAction>
+          <initAction actionID="createUserClothes">
+            <check gamestate="67,0,2999-4500"/>
+          </initAction>
+        </initActions>
+        <speechBubble x="200" y="210" w="250" offX="0" offY="-1" pointX="30" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="67,0,3005">
+            <statement key="MAX_SPIES_66" sound="speaker"/>
+            <statement key="MAX_SPIES_67" sound="speaker"/>
+            <statement key="MAX_SPIES_68"/>
+            <statement key="MAX_SPIES_69" sound="speaker"/>
+            <statement key="MAX_SPIES_70" sound="speaker"/>
+            <statement key="MAX_SPIES_71" sound="speaker"/>
+            <statement key="MAX_SPIES_72" sound="speaker"/>
+            <statement key="MAX_SPIES_73" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,3010"/>
+              <action id="updateWalkArea" nameWA="full"/>
+              <action id="markMovieclip" mc="flour" asset="arrow" yOff="50" xOff="0" rot="0" avatar="-1"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,3010">
+            <statement key="MAX_SPIES_71" sound="speaker"/>
+            <statement key="MAX_SPIES_72" sound="speaker"/>
+            <statement key="MAX_SPIES_73" parse="name" value="myUserName" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="67,0,3025">
+            <statement key="MAX_SPIES_75" parse="name" value="myUserName" sound="speaker">
+              <action id="updateWalkArea" nameWA="trap"/>
+            </statement>
+            <statement key="MAX_SPIES_76" sound="speaker">
+              <action id="playNPCAnimation" actionID="guard1Trap_2"/>
+              <action id="playNPCAnimation" actionID="guard2Trap_2"/>
+              <action id="playNPCAnimation" actionID="guard3Trap_2"/>
+            </statement>
+            <statement key="MAX_SPIES_77" parse="name" value="myUserName" sound="speaker">
+              <action id="playNPCAnimation" actionID="guard1Trap_3"/>
+              <action id="playNPCAnimation" actionID="guard2Trap_3"/>
+              <action id="playNPCAnimation" actionID="guard3Trap_3"/>
+            </statement>
+            <statement key="MAX_SPIES_78" sound="speaker"/>
+            <statement key="MAX_SPIES_79" sound="speaker">
+              <action id="playNPCAnimation" actionID="guard1Trap_4"/>
+              <action id="playNPCAnimation" actionID="guard2Trap_4"/>
+              <action id="playNPCAnimation" actionID="guard3Trap_4"/>
+            </statement>
+            <statement key="">
+              <action id="continuetalk"/>
+              <action id="spawnRopes"/>
+              <action id="markMovieclip" mc="" asset="questionmark" yOff="-90" xOff="-20" rot="0" avatar="-99999"/>
+              <action id="playSound" soundID="questionmark"/>
+              <action id="playSound" soundID="ropes"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="-99998" name="Ella" room="61" typeNPC="avatarNPC">
+        <initActions>
+          <initAction actionID="createElla2">
+            <check gamestate="67,0,0-9999"/>
+          </initAction>
+        </initActions>
+        <speechBubble flipHorizontal="true" offsetY="160" sendOnStage="true"/>
+        <behaviours>
+          <behaviour gamestate="67,0,3030">
+            <statement key="ELLA_SPIES_80" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="67,0,3035">
+            <statement key="ELLA_SPIES_LASSO" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="-1999" name="Max" room="62" typeNPC="avatarNPC">
+        <initActions>
+          <initAction actionID="createMax3">
+            <check gamestate="67,0,1000-2999"/>
+          </initAction>
+          <initAction actionID="createGuard1">
+            <check gamestate="67,0,1000-2999"/>
+          </initAction>
+          <initAction actionID="createGuard2">
+            <check gamestate="67,0,1000-2999"/>
+          </initAction>
+          <initAction actionID="createSlave1">
+            <check gamestate="67,0,1000-2999"/>
+          </initAction>
+        </initActions>
+        <speechBubble flipVertical="true" offsetX="20" offsetY="-10" sendOnStage="true"/>
+        <behaviours>
+          <behaviour gamestate="67,0,2001">
+            <statement key="MAX_SPIES_49" parse="player" value="myUserName" sound="speaker">
+              <action id="unmarkMovieclip" mc="" avatar="-1999"/>
+              <action id="playNPCAnimation" actionID="idleMax"/>
+            </statement>
+            <statement key="MAX_SPIES_50" parse="player" value="myUserName" sound="speaker"/>
+            <statement key="MAX_SPIES_51" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="MAX_SPIES_52" parse="player" value="myUserName" sound="speaker"/>
+            <statement key="MAX_SPIES_52A" parse="player" value="myUserName" sound="speaker"/>
+            <statement key="MAX_SPIES_53" parse="player" value="myUserName" sound="speaker"/>
+            <statement key="MAX_SPIES_55" parse="player" value="myUserName" sound="speaker"/>
+            <statement key="MAX_SPIES_56" parse="player" value="myUserName" sound="speaker"/>
+            <statement>
+              <action id="playNPCAnimation" actionID="sitMax"/>
+              <action id="startMax3Timer"/>
+            </statement>
+            <statement key="MAX_SPIES_57" parse="player" value="myUserName" sound="speaker">
+              <action id="playNPCAnimation" actionID="idleMax"/>
+            </statement>
+            <statement key="MAX_SPIES_58" parse="player" value="myUserName" sound="speaker"/>
+            <statement>
+              <action id="changeQuestState" state="67,0,2010"/>
+              <action id="showNeedle"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,2020"/>
+          <behaviour gamestate="67,0,2030">
+            <statement key="MAX_SPIES_59" parse="player" value="myUserName" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="67,0,2035">
+            <statement key="MAX_SPIES_60" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="MAX_SPIES_61" parse="player" value="myUserName" sound="speaker">
+              <action id="playNPCAnimation" actionID="giveSlaveCostumeMax"/>
+              <action id="resetCursor"/>
+              <action id="changeQuestState" state="67,0,2050"/>
+              <action id="changeQuestState" state="67,1,5"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,2050">
+            <statement key="MAX_SPIES_61" parse="player" value="myUserName" sound="speaker">
+              <action id="changeQuestState" state="67,0,2050"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,2060">
+            <statement key="MAX_SPIES_62" parse="name" value="myUserName" sound="speaker">
+              <action id="changeQuestState" state="67,0,2063"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,2063">
+            <statement key="MAX_SPIES_62" parse="name" value="myUserName" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="67,0,2070">
+            <statement key="MAX_SPIES_63" parse="name" value="myUserName" sound="speaker">
+              <action id="changeQuestState" state="67,1,6"/>
+            </statement>
+            <statement key="MAX_SPIES_64" parse="player" value="myUserName"/>
+            <statement key="MAX_SPIES_65" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,2999"/>
+              <action id="playNPCAnimation" actionID="max3FollowUser"/>
+              <action id="updateWalkArea" nameWA="full"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,3000">
+            <statement key="MAX_SPIES_65" parse="name" value="myUserName" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="-999" name="Max" room="17" typeNPC="avatarNPC">
+        <initActions>
+          <initAction actionID="createMax">
+            <check gamestate="67,0,1-999"/>
+          </initAction>
+        </initActions>
+        <speechBubble flipVertical="true" offsetY="-20" offsetX="10"/>
+        <behaviours>
+          <behaviour gamestate="67,0,1">
+            <statement key="MAX_SPIES_01" parse="player" value="myUserName" sound="speaker">
+              <action id="unmarkMovieclip" mc="" avatar="-999"/>
+              <action id="unhighlightMovieclip" mc="" avatar="-999"/>
+              <action id="changeQuestState" state="67,0,2"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-999"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,2">
+            <statement key="MAX_SPIES_03" sound="speaker"/>
+            <statement key="MAX_SPIES_04" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,5"/>
+              <action id="markMovieclip" mc="telescope" asset="arrow" yOff="105" xOff="20" rot="-45" avatar="-1"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,5">
+            <statement key="MAX_SPIES_03" sound="speaker"/>
+            <statement key="MAX_SPIES_04" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="67,0,10">
+            <statement key="MAX_SPIES_05" sound="speaker"/>
+            <statement key="MAX_SPIES_05A" sound="speaker"/>
+            <statement key="MAX_SPIES_06" sound="speaker">
+              <action id="changeQuestState" state="67,0,15"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-999"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,20">
+            <statement key="MAX_SPIES_08" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-998" parameter="Ella"/>
+            </statement>
+            <statement key="MAX_SPIES_09" sound="speaker"/>
+            <statement key="MAX_SPIES_09A" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="MAX_SPIES_10" sound="speaker"/>
+            <statement key="MAX_SPIES_10A" parse="name" value="myUserName" sound="speaker">
+              <action id="changeQuestState" state="67,0,25"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-999"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,30">
+            <statement key="MAX_SPIES_12" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-998" parameter="Ella"/>
+            </statement>
+            <statement key="MAX_SPIES_13" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,35"/>
+              <action id="spawnSpyCostume" x="500" y="350"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,35">
+            <statement key="MAX_SPIES_COSTUME" parse="name" value="myUserName" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="67,0,40">
+            <statement key="MAX_SPIES_14" sound="speaker"/>
+            <statement key="MAX_SPIES_14A" sound="speaker">
+              <action id="changeQuestState" state="67,0,45"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-999"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,50">
+            <statement key="MAX_SPIES_16" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-998" parameter="Ella"/>
+            </statement>
+            <statement key="MAX_SPIES_17" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,55"/>
+              <action id="spawnCamera" x="430" y="300"/>
+              <action id="playSound" soundID="cameraSpawn"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,55">
+            <statement key="MAX_SPIES_CAMERA" parse="name" value="myUserName" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="67,0,65">
+            <statement key="MAX_SPIES_19" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-998" parameter="Ella"/>
+            </statement>
+            <statement key="MAX_SPIES_19A" sound="speaker">
+              <action id="changeQuestState" state="67,0,70"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-999"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,80">
+            <statement key="MAX_SPIES_21" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-998" parameter="Ella"/>
+            </statement>
+            <statement key="MAX_SPIES_22" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,85"/>
+              <action id="playNPCAnimation" actionID="jumpIntoBoat"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-999"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,95">
+            <statement key="MAX_SPIES_24" parse="name" value="myUserName" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-998" parameter="Ella"/>
+            </statement>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,100"/>
+              <action id="markMovieclip" mc="" asset="thunder" yOff="-90" xOff="-20" rot="0" avatar="-998"/>
+              <action id="markMovieclip" mc="boat" asset="arrow" yOff="-50" xOff="-60" rot="0" avatar="-1"/>
+              <action id="playSound" soundID="angry"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,100">
+            <statement key="MAX_SPIES_24" parse="name" value="myUserName" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-998" parameter="Ella"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,105">
+            <statement key="MAX_SPIES_25" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-998" parameter="Ella"/>
+            </statement>
+            <statement key="MAX_SPIES_25A" sound="speaker"/>
+            <statement key="MAX_SPIES_25B" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,110"/>
+              <action id="highlightEngine"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,110-115">
+            <statement key="MAX_SPIES_25B" parse="name" value="myUserName" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="67,0,125">
+            <statement key="MAX_SPIES_25B" parse="name" value="myUserName" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-998" parameter="Ella"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,130">
+            <statement key="MAX_SPIES_27" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,135"/>
+              <action id="highlightEngine"/>
+              <action id="markMovieclip" mc="" asset="exclamationmark" yOff="-90" xOff="-20" rot="0" avatar="-998"/>
+              <action id="playSound" soundID="exclamationmark"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-999"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,135-140">
+            <statement key="MAX_SPIES_27" parse="name" value="myUserName" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="67,0,145">
+            <statement key="MAX_SPIES_28" sound="speaker"/>
+            <statement key="MAX_SPIES_29" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,150"/>
+              <action id="continuetalk"/>
+              <action id="startBoat"/>
+              <action id="unmarkMovieclip" mc="" avatar="-999"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="-998" name="Ella" room="17" typeNPC="avatarNPC">
+        <initActions>
+          <initAction actionID="createElla">
+            <check gamestate="67,0,1-999"/>
+          </initAction>
+        </initActions>
+        <speechBubble flipVertical="true"/>
+        <behaviours>
+          <behaviour gamestate="67,0,1">
+            <statement key="ELLA_SPIES_02" parse="player" value="myUserName" sound="speaker">
+              <action id="unmarkMovieclip" mc="" avatar="-999"/>
+              <action id="unhighlightMovieclip" mc="" avatar="-999"/>
+              <action id="changeQuestState" state="67,0,2"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,15">
+            <statement key="ELLA_SPIES_07" sound="speaker">
+              <action id="changeQuestState" state="67,0,20"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-998"/>
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-999" parameter="Max"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,25">
+            <statement key="ELLA_SPIES_11" sound="speaker">
+              <action id="changeQuestState" state="67,0,30"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-998"/>
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-999" parameter="Max"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,45">
+            <statement key="ELLA_SPIES_15" sound="speaker">
+              <action id="changeQuestState" state="67,0,50"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-998"/>
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-999" parameter="Max"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,60">
+            <statement key="ELLA_SPIES_18" sound="speaker">
+              <action id="changeQuestState" state="67,0,65"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-998"/>
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-999" parameter="Max"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,70">
+            <statement key="ELLA_SPIES_20" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-999" parameter="Max"/>
+            </statement>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,75"/>
+              <action id="playNPCAnimation" actionID="walkToBoatPos"/>
+              <action id="moveBoat"/>
+              <action id="continuetalk"/>
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-999" parameter="Max"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,90">
+            <statement key="ELLA_SPIES_23" sound="speaker">
+              <action id="changeQuestState" state="67,0,95"/>
+              <action id="continuetalk"/>
+              <action id="unmarkMovieclip" mc="" avatar="-998"/>
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-999" parameter="Max"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,120">
+            <statement key="ELLA_SPIES_26" sound="speaker">
+              <action id="markMovieclip" mc="" asset="npcName" yOff="-65" xOff="0" rot="0" avatar="-999" parameter="Max"/>
+            </statement>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,125"/>
+              <action id="highlightEngine"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,150">
+            <statement key="ELLA_SPIES_30" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,155"/>
+              <action id="markMovieclip" mc="" asset="bulb" yOff="-90" xOff="-20" rot="0" avatar="-998"/>
+              <action id="playSound" soundID="bulb"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="-9999" name="Max" room="63" typeNPC="avatarNPC">
+        <initActions>
+          <initAction actionID="createMax2">
+            <check gamestate="67,0,0-3000"/>
+          </initAction>
+        </initActions>
+        <speechBubble sendOnStage="true" flipVertical="true"/>
+        <behaviours>
+          <behaviour gamestate="67,0,1005">
+            <statement key="MAX_SPIES_31" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="MAX_SPIES_32" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,1010"/>
+              <action id="startBalloons"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,1010">
+            <statement key="MAX_SPIES_32" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="resetTimer2"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,1020">
+            <statement key="MAX_SPIES_33" sound="speaker"/>
+            <statement key="MAX_SPIES_34" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,1025"/>
+              <action id="startSail"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,1025">
+            <statement key="MAX_SPIES_34" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,1035">
+            <statement key="MAX_SPIES_35" sound="speaker"/>
+            <statement key="MAX_SPIES_36" sound="speaker"/>
+            <statement key="MAX_SPIES_37" sound="speaker"/>
+            <statement>
+              <action id="markMovieclip" mc="" asset="questionmark" yOff="-90" xOff="-20" rot="0" avatar="-9999"/>
+              <action id="playSound" soundID="questionmark"/>
+              <action id="startQMTimer"/>
+            </statement>
+            <statement>
+              <action id="unmarkMovieclip" mc="" avatar="-9999"/>
+              <action id="markMovieclip" mc="" asset="exclamationmark" yOff="-90" xOff="-20" rot="0" avatar="-9999"/>
+              <action id="playSound" soundID="exclamationmark"/>
+              <action id="startEMTimer"/>
+            </statement>
+            <statement key="MAX_SPIES_39" parse="name" value="myUserName" sound="speaker">
+              <action id="unmarkMovieclip" mc="" avatar="-9999"/>
+              <action id="stopEmoteTimers"/>
+            </statement>
+            <statement key="">
+              <action id="playSound" soundID="boatFire"/>
+              <action id="changeQuestState" state="67,0,1040"/>
+              <action id="startFire"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,1040">
+            <statement key="MAX_SPIES_39" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,1050">
+            <statement key="MAX_SPIES_40" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="MAX_SPIES_41" sound="speaker"/>
+            <statement key="MAX_SPIES_42" sound="speaker"/>
+            <statement key="MAX_SPIES_43" sound="speaker"/>
+            <statement key="MAX_SPIES_44" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="changeQuestState" state="67,0,1055"/>
+              <action id="spawnGift" x="210" y="480"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,1055">
+            <statement key="MAX_SPIES_44" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="resetTimer2"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,1060">
+            <statement key="MAX_SPIES_45" sound="speaker"/>
+            <statement key="MAX_SPIES_46" sound="speaker"/>
+            <statement key="MAX_SPIES_47" parse="name" value="myUserName" sound="speaker">
+              <action id="changeQuestState" state="67,0,1065"/>
+            </statement>
+            <statement key="">
+              <action id="prepareBalloon"/>
+              <action id="makeCursorNeedle"/>
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="67,0,1065">
+            <statement key="MAX_SPIES_46" sound="speaker"/>
+            <statement key="MAX_SPIES_47" parse="name" value="myUserName" sound="speaker"/>
+            <statement key="">
+              <action id="continuetalk"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <items>
+      <item id="Spy Costume" itemID="103097" name="Spy Costume"/>
+    </items>
+  </module>
+</config>

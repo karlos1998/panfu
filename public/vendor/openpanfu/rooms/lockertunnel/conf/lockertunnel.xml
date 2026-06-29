@@ -1,0 +1,28 @@
+<config check="c3d0bf89cb600edd0776801ac96197fb">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="bigFootQuestTesting" start="Jan 30 2010" finish="Feb 18 2010" check="66f829130491aec"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <items/>
+    <elements>
+      <element id="door" button="1" visible="1">
+        <button type="click" click="1"/>
+        <message value="bigFootQuest.tunnelDoorClick" type="bigFootQuest"/>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="52" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="10" type="room" x="275" y="400" rad="50" user="1" angle="140"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

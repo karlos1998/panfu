@@ -1,0 +1,296 @@
+<config check="87ad9c3d787df94cf49fae30f90f5f2e">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+    <asset id="hoopBlue" path="assets/HoopBlue.swf"/>
+    <asset id="hoopRed" path="assets/HoopRed.swf"/>
+    <asset id="hoopPink" path="assets/HoopPink.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="growWoop" volume="1" path="audio/growExploWoop.mp3"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <dates>
+    <date id="summerQuest" start="Jul 21 2010" finish="Jul 22 2010" check="a5ad7bdebc44148"/>
+    <date id="pokopetCircus" start="Sep 10 2010" finish="Sep 13 2010" check="250b2a9d69ba135"/>
+    <date id="stMartinQuest" start="Nov 11 2010" finish="Nov 15 2010" check="5a2ec0e9d99b615"/>
+    <date id="gulliver" start="Jan 20 2011" finish="Feb 11 2011" check="39488d4b8dcf57e"/>
+    <date id="transition3" start="Feb 2 2011" finish="Feb 9 2011" check="1c50c2b41c32cd9"/>
+    <date id="springAndSing" start="Mar 23 2011" finish="Mar 29 2011" check="ab4073c7c802d70"/>
+    <date id="spyQuest" start="Apr 27 2011" finish="May 4 2011" check="02722273b0d63a4"/>
+    <date id="summerGames" start="Sep 15 2011" finish="Sep 16 2011" check="f6fb8e41316f780"/>
+    <date id="summerGames2" start="Sep 16 2011" finish="Sep 17 2011" check="ecd55aacbdfd02f"/>
+    <date id="napasapa" start="Oct 12 2011" finish="Oct 19 2011" check="2d462c2b89d0bd3"/>
+    <date id="freeBilly" start="May 2 2012" finish="May 23 2012" check="c55eed36f2496f5"/>
+    <date id="freeBilly2" start="May 9 2012" finish="May 23 2012" check="ac342b0c0d14467"/>
+    <date id="freeBillyComplete" start="May 2 2012" finish="May 30 2012" check="f234a5cf00f7402"/>
+    <date id="greyPanfu" start="May 13 2013" finish="May 14 2013" check="3edab35e67568fe"/>
+  </dates>
+  <module>
+    <npcs>
+      <npc id="Clown">
+        <speechBubble x="133" y="60" w="400" offX="1" offY="0" pointX="-20" pointY="30"/>
+        <behaviours>
+          <behaviour>
+            <statement key="HOOP_MAN_01" parse="name" value="myUserName"/>
+            <statement key="HOOP_MAN_02"/>
+            <statement key="HOOP_MAN_03"/>
+            <statement key="HOOP_MAN_07"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="ClownToEarly">
+        <speechBubble x="133" y="50" w="400" offX="1" offY="0" pointX="-20" pointY="30"/>
+        <behaviours>
+          <behaviour>
+            <statement key="HOOP_MAN_04"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="ClownOk">
+        <speechBubble x="133" y="55" w="450" offX="1" offY="0" pointX="-20" pointY="30"/>
+        <behaviours>
+          <behaviour>
+            <statement key="HOOP_MAN_05"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="ClownToLate">
+        <speechBubble x="133" y="50" w="400" offX="1" offY="0" pointX="-20" pointY="30"/>
+        <behaviours>
+          <behaviour>
+            <statement key="HOOP_MAN_06"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <elements>
+      <element id="wolkigVieh" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="142,0,15-17" gamestate2="142,3,0"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="wolkigFleischball.viehClicked" type="wolkigFleischball"/>
+      </element>
+      <element id="Evron" button="0" visible="0">
+        <checks>
+          <button value="1" date="greyPanfu" gamestate="135,0,0-5"/>
+          <visible value="1" date="greyPanfu" gamestate="135,0,0-999"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="talkToNPC" type="client">
+          <id value="EVRON"/>
+        </message>
+      </element>
+      <element id="wale" button="0" visible="0">
+        <checks>
+          <visible value="1" date="freeBillyComplete" gamestate="116,0,0-200"/>
+          <frame value=":sad" gamestate="116,0,0-5"/>
+          <frame value=":sad" gamestate="116,0,150-195"/>
+          <frame value=":happy" gamestate="116,0,10-145"/>
+        </checks>
+      </element>
+      <element id="tear" button="0" visible="0">
+        <checks>
+          <visible value="1" date="freeBilly" gamestate="116,0,5"/>
+        </checks>
+      </element>
+      <element id="scoreboardLake1" button="0" visible="0">
+        <checks>
+          <visible value="1" date="summerGames" gamestate="99,0,60-70"/>
+        </checks>
+      </element>
+      <element id="scoreboardLake2" button="0" visible="0">
+        <checks>
+          <visible value="1" date="summerGames2" gamestate="99,0,90-100"/>
+        </checks>
+      </element>
+      <element id="underwaterSpy" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="78,0,40-45"/>
+        </checks>
+      </element>
+      <element id="spring" button="0" visible="0">
+        <checks>
+          <visible value="1" date="springAndSing"/>
+        </checks>
+      </element>
+      <element id="balloonmaker" button="1" visible="0">
+        <checks>
+          <visible value="1" date="napasapa" gamestate="101,0,70-105"/>
+          <button value="0" gamestate="101,0,100-105"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="napasapa.balloonmakerClicked" type="napasapaQuest"/>
+      </element>
+      <element id="fruit" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="gulliver" gamestate="63,0,1" doesNotHaveOneItem="103002"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="gulliver.fruitClicked" type="gulliver"/>
+      </element>
+      <element id="sand" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="gulliver" gamestate="63,0,9" doesNotHaveOneItem="103011"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="gulliver.sandClicked" type="gulliver"/>
+      </element>
+      <element id="lantern" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="55,0,10-999" date="stMartinQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="stMartinQuest.lightLantern" type="stMartinQuest"/>
+      </element>
+      <element id="stoned_faces" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,170-171" date="summerQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertFaces" type="summerQuest"/>
+      </element>
+      <element id="runningWater" button="0" visible="1" notWalkable="true">
+        <checks>
+          <visible value="0" gamestate="43,0,170-171" date="summerQuest"/>
+        </checks>
+      </element>
+      <element id="hoopBlue" button="1" visible="1" stopWalk="1">
+        <button type="downUp" hold="true"/>
+        <pos x="185" y="200"/>
+      </element>
+      <element id="hoopRed" button="1" visible="1" stopWalk="1">
+        <button type="downUp" hold="true"/>
+        <pos x="185" y="200"/>
+      </element>
+      <element id="hoopPink" button="1" visible="1" stopWalk="1">
+        <button type="downUp" hold="true"/>
+        <pos x="185" y="200"/>
+      </element>
+      <element id="funniestJumper" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="47"/>
+        </message>
+      </element>
+      <element id="clownNPC" button="1" visible="1">
+        <button type="overClick" over="3" out="1" click="1" stopWalk="1"/>
+        <message value="talkedToClownHB" type="freeBilly"/>
+        <message value="talkToNPC" type="room">
+          <id value="CLOWN_LAKE"/>
+        </message>
+        <message value="talkToNPC" type="client">
+          <id value="CLOWN_LAKE"/>
+        </message>
+      </element>
+      <element id="runningWooby" visible="1">
+        <checks>
+          <visible value="0" gamestate="9,0,0-15"/>
+        </checks>
+      </element>
+      <element id="runningWooby2" visible="1">
+        <checks>
+          <visible value="0" gamestate="9,0,0-99"/>
+        </checks>
+      </element>
+      <element id="happyWooby1" visible="1">
+        <checks>
+          <visible value="0" gamestate="9,0,0-15"/>
+        </checks>
+      </element>
+      <element id="happyWooby2" visible="1">
+        <checks>
+          <visible value="0" gamestate="9,0,0-15"/>
+        </checks>
+      </element>
+      <element id="happyWooby3" visible="1">
+        <checks>
+          <visible value="0" gamestate="9,0,0-15"/>
+        </checks>
+      </element>
+      <element id="woobyNPC" visible="0">
+        <checks>
+          <visible value="1" gamestate="9,0,16-98"/>
+        </checks>
+      </element>
+      <element id="wooby1" button="1" visible="0" frame=":cry">
+        <checks>
+          <visible value="1" gamestate="9,0,0-98"/>
+          <frame value=":sad" gamestate="9,0,3-15"/>
+          <frame value=":happy" gamestate="9,0,16-98"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="woobyQuest.wooby1" type="woobyQuest"/>
+      </element>
+      <element id="wooby2" button="1" visible="0" frame=":cry">
+        <checks>
+          <visible value="1" gamestate="9,0,0-98"/>
+          <frame value=":sad" gamestate="9,0,3-15"/>
+          <frame value=":happy" gamestate="9,0,16-98"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="woobyQuest.wooby2" type="woobyQuest"/>
+      </element>
+      <element id="wooby3" button="1" visible="0" frame=":cry">
+        <checks>
+          <visible value="1" gamestate="9,0,0-98"/>
+          <frame value=":sad" gamestate="9,0,3-15"/>
+          <frame value=":happy" gamestate="9,0,16-98"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="woobyQuest.wooby3" type="woobyQuest"/>
+      </element>
+      <element id="wooby4" button="1" visible="0" frame=":cry">
+        <checks>
+          <visible value="1" gamestate="9,0,0-98"/>
+          <frame value=":sad" gamestate="9,0,3-15"/>
+          <frame value=":happy" gamestate="9,0,16-98"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="woobyQuest.wooby4" type="woobyQuest"/>
+      </element>
+      <element id="reset" visible="0"/>
+      <element id="test" visible="0"/>
+      <element id="item1" visible="0"/>
+      <element id="infoPanel" button="1" visible="1">
+        <button type="overClick" over="0" out="1" click="1" stopWalk="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="INFOPANEL_LAKE"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":spyQuest" date="spyQuest"/>
+        </checks>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="funniestJumper" type="game" name="GAME_NAME_47"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="3" type="room" x="0" y="270" rad="60" angle="175"/>
+      <hotspot target="12" type="room" x="40" y="430" rad="80" angle="135"/>
+      <hotspot target="" type="action" x="747" y="223" rad="80" user="1">
+        <checks>
+          <target value="onLakeSlideHotSpot"/>
+        </checks>
+      </hotspot>
+      <hotspot target="70" type="action" x="435" y="360" rad="75" angle="-135">
+        <checks>
+          <target value="onWaleEnter"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="onLakeSlideHotSpot">
+        <message value="showSlideLakeAnimation" type="room"/>
+        <message value="showSlideLakeAnimation" type="summerGamesQuest"/>
+      </action>
+      <action id="onWaleEnter">
+        <message value="freeBilly.checkWaleEnter" type="freeBilly"/>
+      </action>
+    </actions>
+    <properties/>
+  </module>
+</config>

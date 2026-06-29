@@ -1,0 +1,85 @@
+<config check="e770a61d7ee556d5c9ae8295a9880970">
+  <snippets path="quests/horse/conf/snippets/horse_quest_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="horsePlant" path="assets/HorsePlant.swf"/>
+  </assets>
+  <dates/>
+  <sounds>
+    <sound id="voicesHorseQuest" path="audio/$$lang$$/$$key$$.MP3"/>
+  </sounds>
+  <module statement_timeout="60" category="3">
+    <questType type="adventure" questNameInLogBook="NAME_QUEST_3"/>
+    <npcs>
+      <npc id="TRAINER">
+        <speechBubble x="560" y="196" w="200" offX="1" offY="0" pointX="-20" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="3,0,10-20" doesNotHaveOneItem="100678">
+            <statement key="HORSE_QUEST_HORSEY_01" sound="voicesHorseQuest"/>
+            <statement key="HORSE_QUEST_HORSEY_02" sound="voicesHorseQuest"/>
+            <statement key="HORSE_QUEST_HORSEY_03" sound="voicesHorseQuest"/>
+            <statement key="HORSE_QUEST_HORSEY_04" sound="voicesHorseQuest"/>
+            <statement key="HORSE_QUEST_HORSEY_05" sound="voicesHorseQuest"/>
+            <statement key="HORSE_QUEST_HORSEY_06" sound="voicesHorseQuest">
+              <action id="HorseConsts.setstate_localandremote" prev="3,0,10" newstate="3,0,20"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="3,0,10-30" hasItems="100678">
+            <statement key="HORSE_QUEST_HORSEY_07" sound="voicesHorseQuest">
+              <action id="HorseConsts.setstate_localonly" prev="3,0,10" newstate="3,0,30"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="3,0,31-50">
+            <statement key="HORSE_QUEST_HORSEY_08" sound="voicesHorseQuest">
+              <action id="HorseConsts.setstate_localandremote" prev="3,0,31" newstate="3,0,40"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="SADDLER">
+        <speechBubble x="520" y="196" w="200" offX="-1" offY="-1" pointX="20" pointY="-30"/>
+        <behaviours>
+          <behaviour gamestate="3,0,10-30">
+            <statement key="HORSE_QUEST_SADDLER_01" sound="voicesHorseQuest"/>
+          </behaviour>
+          <behaviour gamestate="3,0,40" doesNotHaveAllItems="100679,100680,100681">
+            <statement key="HORSE_QUEST_SADDLER_02" sound="voicesHorseQuest"/>
+            <statement key="HORSE_QUEST_SADDLER_03" sound="voicesHorseQuest"/>
+          </behaviour>
+          <behaviour gamestate="3,0,40" hasItems="100681" doesNotHaveAllItems="100680,100679">
+            <statement key="HORSE_QUEST_SADDLER_04" sound="voicesHorseQuest"/>
+          </behaviour>
+          <behaviour gamestate="3,0,40" hasItems="100681,100680" doesNotHaveOneItem="100679">
+            <statement key="HORSE_QUEST_SADDLER_05" sound="voicesHorseQuest"/>
+          </behaviour>
+          <behaviour gamestate="3,0,40-50" hasItems="100679,100680,100681">
+            <statement key="HORSE_QUEST_SADDLER_06" sound="voicesHorseQuest">
+              <action id="HorseConsts.setstate_localandremote" prev="3,0,40" newstate="3,0,50"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="3,0,50" daypasstest="3,0,1,+">
+            <statement key="HORSE_QUEST_SADDLER_07" sound="voicesHorseQuest" reward="removeSaddlePieces">
+              <action id="buyItem" itemID="saddle_complete"/>
+              <action id="buyItem" itemID="horseBackground"/>
+              <action id="HorseConsts.setstate_localandremote" prev="3,0,50" newstate="3,0,60"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <items>
+      <item id="plant" itemID="100678" hash="c93f9b36859bbf48aa6dc8c870ed93f0" key="NARRATOR_QUEST_HORSEY_01"/>
+      <item id="saddle_1" itemID="100679" hash="aca0f1df85548ce990a464118cf8380d" key="NARRATOR_QUEST_HORSEY_04"/>
+      <item id="saddle_2" itemID="100680" hash="d4d5c7e4b3bfbda42498e99cdabe3d50" key="NARRATOR_QUEST_HORSEY_03"/>
+      <item id="saddle_3" itemID="100681" hash="b2ac5eb38e6b2aefc6b34c8ed7007098" key="NARRATOR_QUEST_HORSEY_02"/>
+      <item id="saddle_complete" itemID="100682" hash="a17268f829a7ef35401a8d6621c3b66f">
+        <required itemID="100679"/>
+        <required itemID="100680"/>
+        <required itemID="100681"/>
+        <remove itemID="100679"/>
+        <remove itemID="100680"/>
+        <remove itemID="100681"/>
+      </item>
+      <item id="horseBackground" itemID="100692" hash="20cc47815ec752dc009b1d066f197650" key="NARRATOR_QUEST_HORSEY_05"/>
+    </items>
+  </module>
+</config>

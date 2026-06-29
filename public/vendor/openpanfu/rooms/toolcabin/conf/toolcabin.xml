@@ -1,0 +1,26 @@
+<config check="dad7bc16d409e8bedaf39ef06bd39a81">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds/>
+  <dates>
+    <date id="mannyTools" start="Mar 13 2013" finish="Mar 20 2013" check="646f099fba21408"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="bunny" button="1" visible="0">
+        <checks>
+          <visible value="1" date="mannyTools" gamestate="130,0,60-65"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="BUNNY_TOOLCABIN"/>
+        </message>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="8" type="room" x="390" y="420" rad="40" angle="90"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

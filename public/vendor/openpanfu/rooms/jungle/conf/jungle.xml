@@ -1,0 +1,71 @@
+<config check="9609bb330468cf702237f91755915e4e">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <waterBombReactions>
+      <zone idTarget="horsePlant" reaction="horsePlantWaterBombReaction"/>
+    </waterBombReactions>
+    <elements>
+      <element id="cloud" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="11"/>
+        </message>
+      </element>
+      <element id="fishing" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="5"/>
+        </message>
+        <message value="fishingClicked"/>
+      </element>
+      <element id="infoBooth" button="1" visible="1">
+        <checks>
+          <visible value="0" date="cinema" isLang="DE" user="isNormal"/>
+        </checks>
+        <button type="overTipClick" over="2" out="1" click="1" toolTip="TOOL_TIP_INFO_BOOTH"/>
+        <message value="startHelperQuiz"/>
+      </element>
+      <element id="cookieCrumbles" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="28,0,33"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="2"/>
+        <message value="callQuest.cookieCrumblesClicked" type="mysteriousCall"/>
+      </element>
+      <element id="horsePlant" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="3,0,20-25" doesNotHaveOneItem="100678"/>
+        </checks>
+      </element>
+      <element id="horsePlantGrown" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="3,0,25-30" doesNotHaveOneItem="100678"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="collectItem" type="horse">
+          <item value="plant"/>
+        </message>
+      </element>
+      <element id="bundles" button="1" visible="0"/>
+      <element id="manny" button="1" visible="0"/>
+    </elements>
+    <tooltips>
+      <tooltip id="cloud" type="game" name="GAME_NAME_11"/>
+      <tooltip id="fishing" type="game" name="GAME_NAME_5"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="4" type="room" x="668" y="420" rad="50" angle="13"/>
+      <hotspot target="3" type="room" x="52" y="178" rad="50" angle="-175"/>
+      <hotspot target="19" type="room" x="156" y="389" rad="45" angle="135"/>
+      <hotspot target="21" type="room" x="413" y="368" rad="35" angle="13"/>
+      <hotspot target="39" type="room" x="700" y="190" rad="45" angle="-45"/>
+      <!--<hotspot target="49" type="room" x="285" y="170" rad="35" angle="-45"/>-->
+      <hotspot target="35" type="room" x="295" y="116" rad="35" angle="-60"/>
+    </hotspots>
+  </module>
+</config>

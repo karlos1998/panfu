@@ -1,0 +1,17 @@
+<config check="284ff60fe8e7c44bf7e80d0a444f55a2">
+  <assets>
+    <asset id="buddylist" path="assets/buddylist.swf"/>
+  </assets>
+  <module>
+    <element id="buddylist">
+      <page>
+        <size width="200" height="200"/>
+      </page>
+      <pageContent>
+        <entry linkage="userEntry"/>
+        <filters linkage="filters"/>
+        <bestfriendEffect linkage="bestfriendEffect"/>
+      </pageContent>
+    </element>
+  </module>
+</config>

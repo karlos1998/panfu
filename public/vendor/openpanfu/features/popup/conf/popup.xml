@@ -1,0 +1,392 @@
+<config check="7e49960568f4158dc43bd3d0fafb20be">
+  <snippets path="features/popup/conf/snippets/popup_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="goldPackageDayPopupAsset" path="assets/goldPackageDayPopup.swf" classReference="GoldPackageDayPopupMediator"/>
+    <asset id="goldPackageExpiredPopupAsset" path="assets/goldPackageExpiredPopup.swf" classReference="GoldPackageExpiredPopupMediator"/>
+    <asset id="levelExplanationPopup" path="assets/socialLevelExplanationPopup.swf" classReference="LevelExplanationPopupMediator"/>
+    <asset id="upsellSmsPopup" path="assets/upsellSmsPopup.swf" classReference="UpsellSmsPopupMediator"/>
+    <asset id="levelUpPopup" path="assets/levelUpDialogAsset.swf" classReference="LevelUpPopupMediator"/>
+    <asset id="upsellPopup" path="assets/upsellPopup.swf" classReference="UpsellPopupMediator"/>
+    <asset id="upsellPopup2" path="assets/upsellPopup2.swf" classReference="UpsellPopup2Mediator"/>
+    <asset id="introtourGoldPopup" path="assets/IntrotourGoldPopup.swf" classReference="IntrotourGoldPopup"/>
+    <asset id="staticUpsellPopup" path="http://mbox12.offermatica.com/m2/twsyounginternet/ubox/page?mbox=panfu_upsell_1&amp;mboxXDomain=disabled&amp;mboxSession=$$uniqueID$$&amp;mboxPC=$$uniqueID$$&amp;mboxDefault=http%3A%2F%2Fstaging%2etrakken%2einfo%2Fpanfu%2Fupsellhook%2FstaticUpsellPopup%2eswf" classReference="UpsellPopupStaticMediator"/>
+    <asset id="standardPopups" path="assets/standardPopup.swf" classReference="StandardPopupMediator"/>
+    <asset id="validationPopupAsset" path="assets/validateEmailPopUpAsset.swf" classReference="ValidateEmailPopupMediator"/>
+    <asset id="advancedUpsellPopupFrame" path="assets/upsellassets/advancedUpsellPopupFrame.swf " classReference="AdvancedUpsellPopupMediator"/>
+    <asset id="defaultTextComponent" path="assets/upsellassets/defaultTextComponent.swf"/>
+    <asset id="ponyyardComponent" path="assets/upsellassets/videos/ponyyard_video.swf"/>
+    <asset id="inviteFriendsPopupAsset" path="assets/inviteFriendsPopup.swf" classReference="InviteFriendsPopupMediator"/>
+    <asset id="enterEmailsPopupAsset" path="assets/enterEmailsPopup.swf" classReference="EnterEmailsPopupMediator"/>
+    <asset id="smsBundlePopUpAsset" path="assets/smsBundlePopUpAsset.swf" classReference="SmsBundlePopUp"/>
+    <asset id="bundlePanda" preload="0" path="../../assets/ui/catalogue/bundle/pandas/bundlePanda_$$0$$.swf"/>
+    <asset id="inviteAdAsset" preload="0" path="assets/inviteAd.swf" classReference="InviteAdMediator"/>
+    <asset id="fadeText" preload="0" path="assets/fadeText.swf" classReference="FadeTextMediator"/>
+    <asset id="questFinished" preload="0" path="assets/questFinished.swf" classReference="QuestFinishedMediator"/>
+    <asset id="happyHourPopupAsset" preload="0" path="assets/happyHourPopup.swf" classReference="HappyHourPopupMediator"/>
+    <asset id="bugsyPromoPopupAsset" preload="0" path="assets/bugsyPopup/bugsy_popup_AR.swf" classReference="BugsyPromoPopupMediator"/>
+    <asset id="torkPromoPopupAsset" preload="0" path="assets/torkPopup/withTimer/tork_popup_$$0$$.swf" useLang="1" classReference="TorkPromoPopupMediator"/>
+    <asset id="worldCupPopupAsset" preload="0" path="assets/worldCupPopup/wc_popup_$$0$$.swf" useLang="1" classReference="WorldCupPopUpMediator"/>
+    <asset id="defaultPromoPopupAsset" preload="0" path="assets/defaultPromoPopup/defaultPromoPopup_$$0$$.swf" useLang="1" classReference="DefaultPromoPopupMediator"/>
+    <asset id="easterPopupAsset" preload="0" path="assets/easterPopup.swf" classReference="HappyHourPopupMediator"/>
+    <asset id="smsPopUpAsset" preload="0" path="assets/smsabo/SmsAboPopupIPTracking.swf" useLang="1" classReference="SmsPopUpIpTracking"/>
+    <asset id="invite2StartUpAsset" preload="0" path="assets/invite2StartUpAsset.swf" classReference="Invite2StartUp"/>
+    <asset id="PPRWaitingForPlayersPopup" preload="0" path="assets/PPRWaitingForPlayersPopup.swf" useLang="1" classReference="PPRWaitingForPlayersPopup"/>
+    <asset id="gotItemPopUpAsset" preload="0" path="assets/GetItemPopUp.swf" classReference="GotItemPopUp"/>
+    <asset id="gotItemPopUpChristmasAsset" preload="0" path="assets/GetItemPopUpChristmas.swf" classReference="GotItemPopUpChristmas"/>
+    <asset id="chatClosingPopupAsset" preload="0" path="assets/ChatClosingPopup.swf" classReference="ChatClosingPopup"/>
+    <asset id="videoAddPopupAsset" preload="0" path="assets/VideoAddPopup.swf" classReference="VideoAddPopup"/>
+    <asset id="screenshotPopupAsset" preload="0" path="assets/ScreenshotPopup.swf" classReference="ScreenshotPopup"/>
+    <asset id="ingamePollPopup" preload="0" path="assets/IngamePollPopup.swf" classReference="IngamePollPopup"/>
+    <asset id="beSmarterPopupAsset" preload="0" path="assets/BeSmarterPopup.swf" classReference="BeSmarterPopup"/>
+    <asset id="costume1PopupAsset" preload="0" path="assets/Costume1Popup.swf" classReference="Costume1Popup"/>
+    <asset id="costume2PopupAsset" preload="0" path="assets/Costume2Popup.swf" classReference="Costume2Popup"/>
+    <asset id="costume3PopupAsset" preload="0" path="assets/Costume3Popup.swf" classReference="Costume3Popup"/>
+    <asset id="nohealth" preload="0" path="assets/pokopet/NoHealth.swf" classReference="NoHealthMediator"/>
+    <asset id="onepethungry" preload="0" path="assets/pokopet/YourPokopetIsHungry.swf" classReference="OnePetHungryMediator"/>
+    <asset id="morePetsHungry" preload="0" path="assets/pokopet/YourPokopetsAreHungry.swf" classReference="MorePetsHungryMediator"/>
+    <asset id="confirmkick" preload="0" path="assets/pokopet/confirmKick.swf" classReference="ConfirmKickMediator"/>
+    <asset id="MicroAboBundleShortCodeView" path="assets/smsabo/AboShortCodeField.swf"/>
+    <asset id="instantMessenger" path="assets/InGame_PopUp_Kamaria_cs3.swf" classReference="InstantMessengerMediator"/>
+    <asset id="comufySuggestionEmail" path="assets/error_page_email.swf" classReference="ComufySuggestionForEmailsMediator"/>
+    <asset id="KrucioComingSoon" path="assets/KrucioComingSoon.swf" classReference="KrucioComingSoonMediator"/>
+    <asset id="SmashingPancakes" path="assets/SmashingPancakes.swf" classReference="SmashingPancakesMediator"/>
+    <asset id="PostcardPrivateRace" path="assets/PostcardPrivateRace.swf" classReference="PrivateRacePopupMediator"/>
+    <asset id="LockPopup" path="assets/LockPopup.swf" classReference="LockPopupMediator"/>
+    <asset id="PlugsPopup" path="assets/PlugsPopup.swf" classReference="PlugsPopupMediator"/>
+    <asset id="afterTrialPopup" path="assets/trialPeriod/afterTrialPopup.swf" classReference="AfterTrialPopupMediator"/>
+    <asset id="trialOldUserPopup" path="assets/trialPeriod/trialOldUserPopup.swf" classReference="TrialOldUserPopupMediator"/>
+    <asset id="explanationTrialPopup" path="assets/trialPeriod/explanationTrialPopup.swf" classReference="ExplanationTrialPopupMediator"/>
+    <asset id="gotPresentPopup" path="assets/gotPresentPopup.swf" classReference="GotPresentPopupMediator"/>
+    <asset id="pickupPresentPopup" path="assets/pickupPresentPopup.swf" classReference="PickupPresentPopupMediator"/>
+    <asset id="goldCoinPopup" path="assets/goldCoinPopup.swf" classReference="GoldCoinPopupMediator"/>
+    <asset id="onGPActivationPopup" path="assets/onGPActivationPopup.swf" classReference="OnGPActivationPopupMediator"/>
+    <asset id="automaticWarning" path="assets/moderator/AutomaticWarning.swf" classReference="AutomaticWarningMediator"/>
+    <asset id="cannotChatPopup" path="assets/moderator/CannotChatPopup.swf" classReference="CannotChatPopupMediator"/>
+    <asset id="deactivatedPopup" path="assets/moderator/DeactivatedPopup.swf" classReference="DeactivatedPopupMediator"/>
+    <asset id="ignorePopup" path="assets/moderator/IgnorePopup.swf" classReference="IgnorePopupMediator"/>
+    <asset id="ignoreConfirmPopup" path="assets/moderator/IgnoreConfirmPopup.swf" classReference="IgnoreConfirmPopupMediator"/>
+    <asset id="lockedPopup" path="assets/moderator/LockedPopup.swf" classReference="LockedPopupMediator"/>
+    <asset id="reportConfirmPopup" path="assets/moderator/ReportConfirmPopup.swf" classReference="ReportConfirmPopupMediator"/>
+    <asset id="reportPopup" path="assets/moderator/ReportPopup.swf" classReference="ReportPopupMediator"/>
+    <asset id="rulesPopup" path="assets/moderator/RulesPopup.swf" classReference="RulesPopupMediator"/>
+    <asset id="safeChatPopup" path="assets/moderator/SafeChatPopup.swf" classReference="SafeChatPopupMediator"/>
+    <asset id="tivolawood" path="assets/tivolawood.swf" classReference="TivolaWoodUserPopupMediator"/>
+  </assets>
+  <sounds>
+    <sound id="levelUpSound" volume="1" path="audio/levelUpSound.mp3" loops="1"/>
+  </sounds>
+  <module>
+    <type id="dynamicUpsellHook">
+      <asset id="advancedUpsellPopupFrame"/>
+      <component snippetSelector="DEFAULT" sourceIdentifier="default">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="DEFAULT" sourceIdentifier="mahjong">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="DEFAULT" sourceIdentifier="stickerCatalog">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="DEFAULT" sourceIdentifier="bollyCatalog">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="DEFAULT" sourceIdentifier="bollyFurnitureCatalog">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="STARTUP" sourceIdentifier="startup">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="PONYYARD" sourceIdentifier="31">
+        <remote isLang="">
+          <url path="http://mbox12.offermatica.com/m2/twsyounginternet/ubox/page?mbox=panfu_upsell_ponyyard&amp;mboxXDomain=disabled&amp;mboxSession=$$uniqueID$$&amp;mboxPC=$$uniqueID$$&amp;mboxDefault=http://staging.trakken.info/panfu/upsellhook/ponyyard_video.swf"/>
+        </remote>
+        <local>
+          <type id="SWF"/>
+          <asset id="ponyyardComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="PONYSTABLE" sourceIdentifier="32">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="CHEZBRUNO" sourceIdentifier="30">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="CLASSROOM" sourceIdentifier="28">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="UAFOYER" sourceIdentifier="27">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="DISCO" sourceIdentifier="18">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="VOLCANO" sourceIdentifier="11">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="CATALOGUE" sourceIdentifier="catalogue">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="CATALOGUE" sourceIdentifier="clothesCatalog">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="CATALOGUE" sourceIdentifier="furnitureCatalog">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+      <component snippetSelector="CATALOGUE" sourceIdentifier="pokopetCatalog">
+        <local>
+          <type id="LIST"/>
+          <asset id="defaultTextComponent"/>
+        </local>
+      </component>
+    </type>
+    <type id="upsellPopup">
+      <asset id="upsellPopup2"/>
+    </type>
+    <type id="introtourGoldPopup">
+      <asset id="introtourGoldPopup"/>
+    </type>
+    <type id="upsellSms">
+      <asset id="upsellSmsPopup"/>
+    </type>
+    <type id="levelExplanation">
+      <asset id="levelExplanationPopup"/>
+    </type>
+    <type id="levelUpDialog">
+      <asset id="levelUpPopup"/>
+      <sound id="levelUpSound"/>
+    </type>
+    <type id="standardPopup">
+      <asset id="standardPopups"/>
+    </type>
+    <type id="validationPopup">
+      <asset id="validationPopupAsset"/>
+    </type>
+    <type id="validationPopupV2">
+      <asset id="validationPopupV2Asset"/>
+    </type>
+    <type id="inviteFriendsPopup">
+      <asset id="inviteFriendsPopupAsset"/>
+    </type>
+    <type id="enterEmailsPopup">
+      <asset id="enterEmailsPopupAsset"/>
+    </type>
+    <type id="goldPackageDayPopup">
+      <asset id="goldPackageDayPopupAsset"/>
+    </type>
+    <type id="goldPackageExpiredPopup">
+      <asset id="goldPackageExpiredPopupAsset"/>
+    </type>
+    <type id="smsBundlePopUp">
+      <asset id="smsBundlePopUpAsset"/>
+    </type>
+    <type id="inviteAd">
+      <asset id="inviteAdAsset"/>
+    </type>
+    <type id="fadeText">
+      <asset id="fadeText"/>
+    </type>
+    <type id="questFinished">
+      <asset id="questFinished"/>
+    </type>
+    <type id="happyHourPopup">
+      <asset id="easterPopupAsset"/>
+    </type>
+    <type id="bugsyPromoPopupAsset">
+      <asset id="bugsyPromoPopupAsset"/>
+    </type>
+    <type id="defaultPromoPopupAsset">
+      <asset id="defaultPromoPopupAsset"/>
+    </type>
+    <type id="torkPromoPopupAsset">
+      <asset id="torkPromoPopupAsset"/>
+    </type>
+    <type id="worldCupPopupAsset">
+      <asset id="worldCupPopupAsset"/>
+    </type>
+    <type id="tivolawood">
+      <asset id="tivolawood"/>
+    </type>
+    <timings>
+      <timing day="03 10 2010" hours="18,20,22" popup="twoHourPopup"/>
+      <timing day="03 10 2010" hours="19,21,23" popup="oneHourPopup"/>
+      <timing day="03 11 2010" hours="8,10,12" popup="twoHourPopup"/>
+      <timing day="03 11 2010" hours="9,11" popup="oneHourPopup"/>
+      <timing day="03 13 2010" hours="10,14,18" popup="twoHourPopup"/>
+      <timing day="03 13 2010" hours="11,15,19" popup="oneHourPopup"/>
+      <timing day="03 14 2010" hours="12,16,20" popup="twoHourPopup"/>
+      <timing day="03 14 2010" hours="13,17,21" popup="oneHourPopup"/>
+      <timing day="04 08 2010" hours="0,2,4,6,8,10,12,14,16,18,20,22" popup="twoHourPopup"/>
+      <timing day="04 09 2010" hours="0,2,4,6,8,10,12,14,16,18,20,22" popup="twoHourPopup"/>
+      <timing day="04 10 2010" hours="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23" popup="oneHourPopup"/>
+      <timing day="04 11 2010" hours="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23" popup="oneHourPopup"/>
+    </timings>
+    <type id="smsPopUp">
+      <asset id="smsPopUpAsset"/>
+    </type>
+    <type id="Invite2StartUp">
+      <asset id="invite2StartUpAsset"/>
+    </type>
+    <type id="PPRWaitingForPlayersPopup">
+      <asset id="PPRWaitingForPlayersPopup"/>
+    </type>
+    <type id="gotItemPopUp">
+      <asset id="gotItemPopUpAsset"/>
+    </type>
+    <type id="gotItemPopUpChristmas">
+      <asset id="gotItemPopUpChristmasAsset"/>
+    </type>
+    <type id="chatClosingPopup">
+      <asset id="chatClosingPopupAsset"/>
+    </type>
+    <type id="videoAddPopup">
+      <asset id="videoAddPopupAsset"/>
+    </type>
+    <type id="beSmarterPopup">
+      <asset id="beSmarterPopupAsset"/>
+    </type>
+    <type id="costume1Popup">
+      <asset id="costume1PopupAsset"/>
+    </type>
+    <type id="costume2Popup">
+      <asset id="costume2PopupAsset"/>
+    </type>
+    <type id="costume3Popup">
+      <asset id="costume3PopupAsset"/>
+    </type>
+    <type id="screenshotPopup">
+      <asset id="screenshotPopupAsset"/>
+    </type>
+    <type id="ingamePollPopup">
+      <asset id="ingamePollPopup"/>
+    </type>
+    <type id="NoHealth">
+      <asset id="nohealth"/>
+    </type>
+    <type id="onepethungry">
+      <asset id="onepethungry"/>
+    </type>
+    <type id="confirmkick">
+      <asset id="confirmkick"/>
+    </type>
+    <type id="MorePetsHungy">
+      <asset id="morePetsHungry"/>
+    </type>
+    <type id="InstantMessenger">
+      <asset id="instantMessenger"/>
+    </type>
+    <type id="ComufySuggestionEmail">
+      <asset id="comufySuggestionEmail"/>
+    </type>
+    <type id="KrucioComingSoon">
+      <asset id="KrucioComingSoon"/>
+    </type>
+    <type id="SmashingPancakes">
+      <asset id="SmashingPancakes"/>
+    </type>
+    <type id="PostcardPrivateRace">
+      <asset id="PostcardPrivateRace"/>
+    </type>
+    <type id="LockPopup">
+      <asset id="LockPopup"/>
+    </type>
+    <type id="PlugsPopup">
+      <asset id="PlugsPopup"/>
+    </type>
+    <type id="afterTrialPopup">
+      <asset id="afterTrialPopup"/>
+    </type>
+    <type id="trialOldUserPopup">
+      <asset id="trialOldUserPopup"/>
+    </type>
+    <type id="explanationTrialPopup">
+      <asset id="explanationTrialPopup"/>
+    </type>
+    <type id="gotPresentPopup">
+      <asset id="gotPresentPopup"/>
+    </type>
+    <type id="pickupPresentPopup">
+      <asset id="pickupPresentPopup"/>
+    </type>
+    <type id="goldCoinPopup">
+      <asset id="goldCoinPopup"/>
+    </type>
+    <type id="onGPActivationPopup">
+      <asset id="onGPActivationPopup"/>
+    </type>
+    <type id="automaticWarning">
+      <asset id="automaticWarning"/>
+    </type>
+    <type id="cannotChatPopup">
+      <asset id="cannotChatPopup"/>
+    </type>
+    <type id="deactivatedPopup">
+      <asset id="deactivatedPopup"/>
+    </type>
+    <type id="ignorePopup">
+      <asset id="ignorePopup"/>
+    </type>
+    <type id="ignoreConfirmPopup">
+      <asset id="ignoreConfirmPopup"/>
+    </type>
+    <type id="lockedPopup">
+      <asset id="lockedPopup"/>
+    </type>
+    <type id="reportConfirmPopup">
+      <asset id="reportConfirmPopup"/>
+    </type>
+    <type id="reportPopup">
+      <asset id="reportPopup"/>
+    </type>
+    <type id="rulesPopup">
+      <asset id="rulesPopup"/>
+    </type>
+    <type id="safeChatPopup">
+      <asset id="safeChatPopup"/>
+    </type>
+  </module>
+</config>

@@ -1,0 +1,49 @@
+<config check="de1edb0b6da3e00f91c25d47d22669ff">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="bigFootQuestTesting" start="Jan 30 2010" finish="Feb 19 2010" check="9990a9517bf3a06"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <items/>
+    <elements>
+      <element id="flower" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="133,0,25"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="mouse.FlowerClicked" type="mouse"/>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element id="generator" button="0" visible="1">
+        <checks>
+          <button value="1" gamestate="25,0,25"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="bigFootQuest.generatorClick" type="bigFootQuest"/>
+      </element>
+      <element id="ani" visible="0">
+        <checks>
+          <visible value="1" gamestate="25,0,25"/>
+        </checks>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="52" angle="-135"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="52" type="room" x="566" y="84" rad="30" user="1" angle="220"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

@@ -1,0 +1,237 @@
+<config check="4a56492a4cd6250ce3067b059647ee03">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+    <sound id="timeTravel" volume="0.4" path="audio/timeTravel.mp3" backgroundmusic="1" loops="-1" date="bday" gamestate="127,0,200"/>
+  </sounds>
+  <dates>
+    <date id="tilldeath" start="Apr 2 2009" finish="Apr 19 2099" check="0b8747b31a6a225"/>
+    <date id="welcomeBackPreparation" start="Sep 2 2009" finish="Sep 9 2009" check="e5beec9aa63c44b"/>
+    <date id="IceParty" start="Oct 26 2009" finish="Nov 9 2009" check="60f7403beeea072"/>
+    <date id="lostTesting" start="Nov 11 2009" finish="Nov 26 2009" check="5081bb79c063466"/>
+    <date id="picnic" start="Apr 11 2012" finish="Apr 18 2012" check="87943f206426740"/>
+    <date id="summerQuest" start="Jul 23 2010" finish="Jul 24 2010" check="3bf02d0f8606f94"/>
+    <date id="summerQuest2" start="Aug 4 2010" finish="Aug 5 2010" check="27a5c74121e6b57"/>
+    <date id="summerQuest3" start="Aug 10 2010" finish="Aug 11 2010" check="217982bdf8ec15a"/>
+    <date id="summerQuest4" start="Aug 21 2010" finish="Aug 22 2010" check="3d7fea4f821d662"/>
+    <date id="summerQuest5" start="Aug 30 2010" finish="Aug 31 2010" check="6fc3c2be5d761e8"/>
+    <date id="summerQuest6" start="Sep 2 2010" finish="Sep 3 2010" check="9ea12a44b74d8dc"/>
+    <date id="treeMonster" start="Oct 16 2013" finish="Oct 23 2013" check="083b198481dec20"/>
+    <date id="bday" start="Jan 20 2013" finish="Jan 21 2013" check="3e64054db76558c"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="cartridge" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="137,0,250-280"/>
+          <button value="1" gamestate="137,0,255-275"/>
+        </checks>
+        <button type="click" click="999"/>
+      </element>
+      <element type="bdayDoor" button="1" visible="0"/>
+      <element id="cookie" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="117,0,185-190" date="treeMonster"/>
+          <button value="1" gamestate="117,0,190" date="treeMonster"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="treeMonster.cookieClicked" type="treeMonster"/>
+      </element>
+      <element id="bambooGum" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="89,0,220-250"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="89,0,220-245"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="bitterTideQuest.onGumClick" type="bitterTideQuest"/>
+      </element>
+      <element id="stoned_suit" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,190-191" date="summerQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertSuit" type="summerQuest"/>
+      </element>
+      <element id="stoned_icebox" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,330-331" date="summerQuest2" requestHasOneActiveItem="102410"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertIcebox" type="summerQuest"/>
+      </element>
+      <element id="stoned_magazin" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,390-391" date="summerQuest3" requestHasOneActiveItem="102410"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertMagazin" type="summerQuest"/>
+      </element>
+      <element id="stoned_jar" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,510-511" date="summerQuest4" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertJar" type="summerQuest"/>
+      </element>
+      <element id="stoned_sweets" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,600-601" date="summerQuest5" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertSweets" type="summerQuest"/>
+      </element>
+      <element id="stoned_candy" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,630-631" date="summerQuest6" requestHasOneActiveItem="102410" requestHasOneItem="102448"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertCandy" type="summerQuest"/>
+      </element>
+      <element id="charcoal" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" doesNotHaveOneItem="102018" gamestate="113,0,1" date="picnic"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="picnic.getCharcoal" type="picnic"/>
+      </element>
+      <element id="inflatableShark" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" doesNotHaveOneItem="101887" gamestate="34,0,1"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="pokopetCatalogueQuest.getInflatableShark" type="pokopetCatalogueQuest"/>
+      </element>
+      <element id="icecream" button="1" visible="0">
+        <checks>
+          <visible value="1" date="IceParty" gamestate="13,0,6"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="icePartyQuest.getItem2" type="icePartyQuest"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":summerQuest2" date="summerQuest2"/>
+          <frame value=":summerQuest3" date="summerQuest3"/>
+          <frame value=":summerQuest6" date="summerQuest6"/>
+        </checks>
+      </element>
+      <element type="doorOut" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="doorOut"/>
+        </message>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="backToSchool.cashMachineClicked" type="backToSchool"/>
+      </element>
+      <element id="packandgo" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="46"/>
+        </message>
+      </element>
+      <element id="clothes" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="showCatalogue">
+          <name value="Clothes01Catalogue"/>
+        </message>
+      </element>
+      <element id="gas" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="2,0,140"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="mysonisapirate">
+          <id value="GASOLINE"/>
+        </message>
+        <message value="collectItem" type="mysonisapirate">
+          <item value="BoatGas"/>
+        </message>
+      </element>
+      <element id="arcadeBollyGames" button="1" visible="1">
+        <button type="overClick" over="3" out="1" click="1"/>
+        <checkButtons>
+          <checkButton key="socialLevelMin" value="16">
+            <failCheckButton value="showBlockEntranceExplanation" param="levelNeeded" valueParam="16"/>
+          </checkButton>
+        </checkButtons>
+        <message value="AppConsts.showGameSelector">
+          <id value="bollykidsGames"/>
+        </message>
+      </element>
+      <element id="panfuShop" button="1" visible="0"/>
+      <element id="get_coffee2" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="9,0,11"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="woobyQuest.getItem3" type="woobyQuest"/>
+      </element>
+      <element id="get_coffee" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,9"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="tilldeath.coffee" type="tillDeath"/>
+      </element>
+      <element id="get_sugar" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100492"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="tilldeath.sugar" type="tillDeath"/>
+      </element>
+      <element id="get_sunmilk" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100491"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="tilldeath.sunmilk" type="tillDeath"/>
+      </element>
+      <element id="marzipan" button="1" visible="0">
+        <checks>
+          <visible value="1" date="welcomeBackPreparation" gamestate="6,0,3"/>
+        </checks>
+        <button type="overClick" over="1" out="1" click="1"/>
+        <message value="welcomeBackQuest.getItem2" type="welcomeBackQuest"/>
+      </element>
+      <element id="lostLoverPassDay" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" date="lostTesting" gamestate="15,0,8"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="lostLoverQuest.passKioskPinkBandageDay" type="theLostLover"/>
+      </element>
+      <element id="kioskBoy" button="1" visible="1">
+        <checks/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="GONZO_KIOSK"/>
+        </message>
+      </element>
+      <element id="pinkBandage" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,8" daypasstest="15,0,1,+"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="lostLoverQuest.pickupPinkBandage" type="theLostLover"/>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="packandgo" type="game" name="GAME_NAME_46"/>
+      <tooltip id="doorOut" type="door" target="3" angle="-90"/>
+      <tooltip id="arcadeBollyGames" type="game" name="Bolly Games"/>
+      <tooltip id="clothes" type="catalog" name="CLOTHES_CATALOGUE"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="doorOut" target="3" type="room" x="472" y="169" rad="30"/>
+    </hotspots>
+  </module>
+</config>

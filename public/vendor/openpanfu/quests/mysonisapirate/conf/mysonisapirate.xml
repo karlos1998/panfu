@@ -1,0 +1,887 @@
+<config check="fdb4d4a5127ceb046b6d04ef9d6f4832">
+  <snippets path="quests/mysonisapirate/conf/snippets/text_quest_pirate_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="mapTravellingBoat" path="assets/mapTravellingBoat.swf"/>
+    <asset id="pirateTreasure" path="assets/pirateTreasure.swf"/>
+    <asset id="octopusAngry" path="assets/octopusAngry.swf"/>
+    <asset id="octopusIdleAngry" path="assets/octopusIdleAngry.swf"/>
+    <asset id="octopusMap" path="assets/octopusMap.swf"/>
+    <asset id="hint" path="assets/hint.swf"/>
+    <asset id="treasure" path="assets/treasure.swf"/>
+    <asset id="hintAnimation" path="assets/hintAnimation.swf"/>
+    <asset id="treasureAnimation" path="assets/treasureAnimation.swf"/>
+    <asset id="octopusBeforeQuest" path="assets/octopusBeforeQuest.swf"/>
+    <asset id="arrowReward" path="assets/arrowReward.swf"/>
+  </assets>
+  <dates/>
+  <sounds>
+    <sound id="badRock" path="audio/BADROCK.MP3"/>
+    <sound id="riddleSolved" path="audio/RIDDLESOLVED.MP3"/>
+    <sound id="hideFog" path="audio/HIDEFOG.MP3"/>
+    <sound id="clap" path="audio/CLAP.MP3"/>
+    <sound id="motorBoat" path="audio/MOTORBOAT.MP3"/>
+    <sound id="fred_01_de" path="audio/de/Fred_speech_01.mp3"/>
+    <sound id="fred_01_en" path="audio/en/Fred_speech_01.mp3"/>
+    <sound id="fred_02_de" path="audio/de/Fred_speech_02.mp3"/>
+    <sound id="fred_02_en" path="audio/en/Fred_speech_02.mp3"/>
+    <sound id="fred_03_de" path="audio/de/Fred_speech_03.mp3"/>
+    <sound id="fred_03_en" path="audio/en/Fred_speech_03.mp3"/>
+    <sound id="fred_04_de" path="audio/de/Fred_speech_04.mp3"/>
+    <sound id="fred_04_en" path="audio/en/Fred_speech_04.mp3"/>
+    <sound id="fred_05_de" path="audio/de/Fred_speech_05.mp3"/>
+    <sound id="fred_05_en" path="audio/en/Fred_speech_05.mp3"/>
+    <sound id="fred_06_de" path="audio/de/Fred_speech_06.mp3"/>
+    <sound id="fred_06_en" path="audio/en/Fred_speech_06.mp3"/>
+    <sound id="fred_07_de" path="audio/de/Fred_speech_07.mp3"/>
+    <sound id="fred_07_en" path="audio/en/Fred_speech_07.mp3"/>
+    <sound id="fred_08_de" path="audio/de/Fred_speech_08.mp3"/>
+    <sound id="fred_08_en" path="audio/en/Fred_speech_08.mp3"/>
+    <sound id="fred_09_de" path="audio/de/Fred_speech_09.mp3"/>
+    <sound id="fred_09_en" path="audio/en/Fred_speech_09.mp3"/>
+    <sound id="fred_10_de" path="audio/de/Fred_speech_10.mp3"/>
+    <sound id="fred_10_en" path="audio/en/Fred_speech_10.mp3"/>
+    <sound id="fred_11_de" path="audio/de/Fred_speech_11.mp3"/>
+    <sound id="fred_11_en" path="audio/en/Fred_speech_11.mp3"/>
+    <sound id="fred_12_de" path="audio/de/Fred_speech_12.mp3"/>
+    <sound id="fred_12_en" path="audio/en/Fred_speech_12.mp3"/>
+    <sound id="fred_13_de" path="audio/de/Fred_speech_13.mp3"/>
+    <sound id="fred_13_en" path="audio/en/Fred_speech_13.mp3"/>
+    <sound id="kamaria_01_de" path="audio/de/Kamaria_speech_01.mp3"/>
+    <sound id="kamaria_01_en" path="audio/en/Kamaria_speech_01.mp3"/>
+    <sound id="kamaria_02_de" path="audio/de/Kamaria_speech_02.mp3"/>
+    <sound id="kamaria_02_en" path="audio/en/Kamaria_speech_02.mp3"/>
+    <sound id="kamaria_03_de" path="audio/de/Kamaria_speech_03.mp3"/>
+    <sound id="kamaria_03_en" path="audio/en/Kamaria_speech_03.mp3"/>
+    <sound id="kamaria_04_de" path="audio/de/Kamaria_speech_04.mp3"/>
+    <sound id="kamaria_04_en" path="audio/en/Kamaria_speech_04.mp3"/>
+    <sound id="kamaria_05a_de" path="audio/de/Kamaria_speech_05A.mp3"/>
+    <sound id="kamaria_05a_en" path="audio/en/Kamaria_speech_05A.mp3"/>
+    <sound id="kamaria_05b_de" path="audio/de/Kamaria_speech_05B.mp3"/>
+    <sound id="kamaria_05b_en" path="audio/en/Kamaria_speech_05B.mp3"/>
+    <sound id="kamaria_05c_de" path="audio/de/Kamaria_speech_05C.mp3"/>
+    <sound id="kamaria_05c_en" path="audio/en/Kamaria_speech_05C.mp3"/>
+    <sound id="kamaria_06_de" path="audio/de/Kamaria_speech_06.mp3"/>
+    <sound id="kamaria_06_en" path="audio/en/Kamaria_speech_06.mp3"/>
+    <sound id="kamaria_07_de" path="audio/de/Kamaria_speech_07.mp3"/>
+    <sound id="kamaria_07_en" path="audio/en/Kamaria_speech_07.mp3"/>
+    <sound id="kamaria_08_de" path="audio/de/Kamaria_speech_08.mp3"/>
+    <sound id="kamaria_08_en" path="audio/en/Kamaria_speech_08.mp3"/>
+    <sound id="kamaria_09_de" path="audio/de/Kamaria_speech_09.mp3"/>
+    <sound id="kamaria_09_en" path="audio/en/Kamaria_speech_09.mp3"/>
+    <sound id="kamaria_10_de" path="audio/de/Kamaria_speech_10.mp3"/>
+    <sound id="kamaria_10_en" path="audio/en/Kamaria_speech_10.mp3"/>
+    <sound id="kamaria_11_de" path="audio/de/Kamaria_speech_11.mp3"/>
+    <sound id="kamaria_11_en" path="audio/en/Kamaria_speech_11.mp3"/>
+    <sound id="kamaria_12_de" path="audio/de/Kamaria_speech_12.mp3"/>
+    <sound id="kamaria_12_en" path="audio/en/Kamaria_speech_12.mp3"/>
+    <sound id="kamaria_13_de" path="audio/de/Kamaria_speech_13.mp3"/>
+    <sound id="kamaria_13_en" path="audio/en/Kamaria_speech_13.mp3"/>
+    <sound id="son_01_de" path="audio/de/Kamarias_son_speech_01.mp3"/>
+    <sound id="son_01_en" path="audio/en/Kamarias_son_speech_01.mp3"/>
+    <sound id="son_02_de" path="audio/de/Kamarias_son_speech_02.mp3"/>
+    <sound id="son_02_en" path="audio/en/Kamarias_son_speech_02.mp3"/>
+    <sound id="son_03_de" path="audio/de/Kamarias_son_speech_03.mp3"/>
+    <sound id="son_03_en" path="audio/en/Kamarias_son_speech_03.mp3"/>
+    <sound id="son_04_de" path="audio/de/Kamarias_son_speech_04.mp3"/>
+    <sound id="son_04_en" path="audio/en/Kamarias_son_speech_04.mp3"/>
+    <sound id="son_05_de" path="audio/de/Kamarias_son_speech_05.mp3"/>
+    <sound id="son_05_en" path="audio/en/Kamarias_son_speech_05.mp3"/>
+    <sound id="son_06_de" path="audio/de/Kamarias_son_speech_06.mp3"/>
+    <sound id="son_06_en" path="audio/en/Kamarias_son_speech_06.mp3"/>
+    <sound id="son_07_de" path="audio/de/Kamarias_son_speech_07.mp3"/>
+    <sound id="son_07_en" path="audio/en/Kamarias_son_speech_07.mp3"/>
+    <sound id="son_08_de" path="audio/de/Kamarias_son_speech_08.mp3"/>
+    <sound id="son_08_en" path="audio/en/Kamarias_son_speech_08.mp3"/>
+    <sound id="fisherman_01_de" path="audio/de/Fischermann_speech_01.mp3"/>
+    <sound id="fisherman_01_en" path="audio/en/Fischermann_speech_01.mp3"/>
+    <sound id="fisherman_02_de" path="audio/de/Fischermann_speech_02.mp3"/>
+    <sound id="fisherman_02_en" path="audio/en/Fischermann_speech_02.mp3"/>
+    <sound id="fisherman_03_de" path="audio/de/Fischermann_speech_03.mp3"/>
+    <sound id="fisherman_03_en" path="audio/en/Fischermann_speech_03.mp3"/>
+    <sound id="fisherman_04_de" path="audio/de/Fischermann_speech_04.mp3"/>
+    <sound id="fisherman_04_en" path="audio/en/Fischermann_speech_04.mp3"/>
+    <sound id="fisherman_05_de" path="audio/de/Fischermann_speech_05.mp3"/>
+    <sound id="fisherman_05_en" path="audio/en/Fischermann_speech_05.mp3"/>
+    <sound id="fisherman_06_de" path="audio/de/Fischermann_speech_06.mp3"/>
+    <sound id="fisherman_06_en" path="audio/en/Fischermann_speech_06.mp3"/>
+    <sound id="fisherman_07_de" path="audio/de/Fischermann_speech_07.mp3"/>
+    <sound id="fisherman_07_en" path="audio/en/Fischermann_speech_07.mp3"/>
+    <sound id="fisherman_08_de" path="audio/de/Fischermann_speech_08.mp3"/>
+    <sound id="fisherman_08_en" path="audio/en/Fischermann_speech_08.mp3"/>
+    <sound id="fisherman_09_de" path="audio/de/Fischermann_speech_09.mp3"/>
+    <sound id="fisherman_09_en" path="audio/en/Fischermann_speech_09.mp3"/>
+    <sound id="william_01_de" path="audio/de/Pirate_william_speech_01.mp3"/>
+    <sound id="william_01_en" path="audio/en/Pirate_william_speech_01.mp3"/>
+    <sound id="william_02_de" path="audio/de/Pirate_william_speech_02.mp3"/>
+    <sound id="william_02_en" path="audio/en/Pirate_william_speech_02.mp3"/>
+    <sound id="william_03_de" path="audio/de/Pirate_william_speech_03.mp3"/>
+    <sound id="william_03_en" path="audio/en/Pirate_william_speech_03.mp3"/>
+    <sound id="william_04_de" path="audio/de/Pirate_william_speech_04.mp3"/>
+    <sound id="william_04_en" path="audio/en/Pirate_william_speech_04.mp3"/>
+    <sound id="william_05_de" path="audio/de/Pirate_william_speech_05.mp3"/>
+    <sound id="william_05_en" path="audio/en/Pirate_william_speech_05.mp3"/>
+    <sound id="william_06_de" path="audio/de/Pirate_william_speech_06.mp3"/>
+    <sound id="william_06_en" path="audio/en/Pirate_william_speech_06.mp3"/>
+    <sound id="william_07_de" path="audio/de/Pirate_william_speech_07.mp3"/>
+    <sound id="william_07_en" path="audio/en/Pirate_william_speech_07.mp3"/>
+    <sound id="william_08_de" path="audio/de/Pirate_william_speech_08.mp3"/>
+    <sound id="william_08_en" path="audio/en/Pirate_william_speech_08.mp3"/>
+    <sound id="william_09_de" path="audio/de/Pirate_william_speech_09.mp3"/>
+    <sound id="william_09_en" path="audio/en/Pirate_william_speech_09.mp3"/>
+    <sound id="william_10_de" path="audio/de/Pirate_william_speech_10.mp3"/>
+    <sound id="william_10_en" path="audio/en/Pirate_william_speech_10.mp3"/>
+    <sound id="william_11_de" path="audio/de/Pirate_william_speech_11.mp3"/>
+    <sound id="william_11_en" path="audio/en/Pirate_william_speech_11.mp3"/>
+    <sound id="william_12_de" path="audio/de/Pirate_william_speech_12.mp3"/>
+    <sound id="william_12_en" path="audio/en/Pirate_william_speech_12.mp3"/>
+    <sound id="william_13_de" path="audio/de/Pirate_william_speech_13.mp3"/>
+    <sound id="william_13_en" path="audio/en/Pirate_william_speech_13.mp3"/>
+    <sound id="william_14_de" path="audio/de/Pirate_william_speech_14.mp3"/>
+    <sound id="william_14_en" path="audio/en/Pirate_william_speech_14.mp3"/>
+    <sound id="william_15_de" path="audio/de/Pirate_william_speech_15.mp3"/>
+    <sound id="william_15_en" path="audio/en/Pirate_william_speech_15.mp3"/>
+    <sound id="narrator_treasure_en" path="audio/en/Narrator_speech06.mp3"/>
+    <sound id="narrator_treasure_de" path="audio/de/Narrator_speech06.mp3"/>
+    <sound id="narrator_hint_en" path="audio/en/Narrator_speech07.mp3"/>
+    <sound id="narrator_hint_de" path="audio/de/Narrator_speech07.mp3"/>
+  </sounds>
+  <module statement_timeout="60" category="2">
+    <questType type="adventure" questNameInLogBook="NAME_QUEST_02"/>
+    <mapItem idAsset="octopusMap" idLocation="loc36"/>
+    <octopuses>
+      <octopuse idAsset="octopusAngry" room="36" x="450" y="70"/>
+      <octopuse idAsset="octopusIdleAngry" room="36" x="450" y="70"/>
+      <octopuse idAsset="octopusBeforeQuest" room="36" x="450" y="70"/>
+      <octopuse idAsset="hint" room="37" x="234" y="155"/>
+      <octopuse idAsset="hintAnimation" room="37" x="50" y="50"/>
+      <octopuse idAsset="treasure" room="37" x="177" y="164"/>
+      <octopuse idAsset="treasureAnimation" room="37" x="50" y="50"/>
+      <octopuse idAsset="arrowReward" room="37" x="180" y="90"/>
+    </octopuses>
+    <rocks>
+      <rock id="wRock" xJump="295" yJump="324"/>
+      <rock id="i1Rock" xJump="364" yJump="282"/>
+      <rock id="l1Rock" xJump="442" yJump="270"/>
+      <rock id="l2Rock" xJump="525" yJump="387"/>
+      <rock id="i2Rock" xJump="369" yJump="379"/>
+      <rock id="aRock" xJump="443" yJump="383"/>
+      <rock id="mRock" xJump="518" yJump="302"/>
+      <rock id="tRock" xJump="291" yJump="383"/>
+      <rock id="xRock" xJump="392" yJump="318"/>
+      <rock id="sRock" xJump="452" yJump="326"/>
+    </rocks>
+    <npcs>
+      <npc id="FRED" room="36" name="Fred" assetname="octopus" ignoreAsset="1">
+        <speechBubble x="525" y="215" w="250" offX="-1" offY="-1" pointX="20" pointY="-30"/>
+        <behaviours>
+          <behaviour gamestate="2,0,10-24">
+            <statement key="FRED_SPEECH_01" sound="fred_01_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,10" newstate="2,0,20"/>
+              <action id="changeQuestState" state="2,1,1"/>
+            </statement>
+            <statement key="FRED_SPEECH_02" sound="fred_02_en"/>
+            <statement key="FRED_SPEECH_03" sound="fred_03_en"/>
+            <statement key="FRED_SPEECH_04" sound="fred_04_en"/>
+          </behaviour>
+          <behaviour gamestate="2,0,25-59">
+            <statement key="FRED_SPEECH_06" sound="fred_06_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,25" newstate="2,0,30"/>
+            </statement>
+            <statement key="FRED_SPEECH_07" sound="fred_07_en"/>
+            <statement key="FRED_SPEECH_08" sound="fred_08_en"/>
+            <statement key="FRED_SPEECH_09" sound="fred_09_en"/>
+            <statement key="FRED_SPEECH_10" sound="fred_10_en"/>
+          </behaviour>
+          <behaviour gamestate="2,0,60-200">
+            <statement key="FRED_SPEECH_11" sound="fred_11_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,60" newstate="2,0,70"/>
+            </statement>
+            <statement key="FRED_SPEECH_12" sound="fred_12_en"/>
+            <statement key="FRED_SPEECH_13" sound="fred_13_en"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,10-24">
+            <statement key="FRED_SPEECH_01" sound="fred_01_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,10" newstate="2,0,20"/>
+              <action id="changeQuestState" state="2,1,1"/>
+            </statement>
+            <statement key="FRED_SPEECH_02" sound="fred_02_de"/>
+            <statement key="FRED_SPEECH_03" sound="fred_03_de"/>
+            <statement key="FRED_SPEECH_04" sound="fred_04_de"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,25-59">
+            <statement key="FRED_SPEECH_06" sound="fred_06_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,25" newstate="2,0,30"/>
+            </statement>
+            <statement key="FRED_SPEECH_07" sound="fred_07_de"/>
+            <statement key="FRED_SPEECH_08" sound="fred_08_de"/>
+            <statement key="FRED_SPEECH_09" sound="fred_09_de"/>
+            <statement key="FRED_SPEECH_10" sound="fred_10_de"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,60-200">
+            <statement key="FRED_SPEECH_11" sound="fred_11_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,60" newstate="2,0,70"/>
+            </statement>
+            <statement key="FRED_SPEECH_12" sound="fred_12_de"/>
+            <statement key="FRED_SPEECH_13" sound="fred_13_de"/>
+          </behaviour>
+          <behaviour isAnotherQuestStarted="2">
+            <statement key="QUEST_HINT_01"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="KAMARIA_TOWER" name="Kamaria">
+        <speechBubble x="200" y="225" w="300" offX="0" offY="-1" pointX="20" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="2,0,20-29">
+            <statement key="KAMARIA_SPEECH_01" parse="name" value="myUserName" sound="kamaria_01_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,20" newstate="2,0,25"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_02" sound="kamaria_02_en"/>
+            <statement key="KAMARIA_SPEECH_03" sound="kamaria_03_en"/>
+            <statement key="KAMARIA_SPEECH_04" sound="kamaria_04_en"/>
+            <statement key="KAMARIA_SPEECH_05A" sound="kamaria_05a_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="play"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_05B" sound="kamaria_05b_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary/diary" com="play" frame="page2"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_05C" sound="kamaria_05c_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary/diary" com="play" frame="page3"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_06" sound="kamaria_06_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="disappear"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,30-39" repeat="true">
+            <statement key="KAMARIA_SPEECH_08" parse="name" value="myUserName" sound="kamaria_08_en"/>
+          </behaviour>
+          <behaviour gamestate="2,0,40-89" repeat="true">
+            <statement key="KAMARIA_SPEECH_10" sound="kamaria_10_en"/>
+          </behaviour>
+          <behaviour gamestate="2,0,90-200">
+            <statement key="KAMARIA_SPEECH_11" parse="name" value="myUserName" sound="kamaria_11_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,90" newstate="2,0,110"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_12" sound="kamaria_12_en"/>
+            <statement key="KAMARIA_SPEECH_13" sound="kamaria_13_en"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,20-29">
+            <statement key="KAMARIA_SPEECH_01" parse="name" value="myUserName" sound="kamaria_01_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,20" newstate="2,0,25"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_02" sound="kamaria_02_de"/>
+            <statement key="KAMARIA_SPEECH_03" sound="kamaria_03_de"/>
+            <statement key="KAMARIA_SPEECH_04" sound="kamaria_04_de"/>
+            <statement key="KAMARIA_SPEECH_05A" sound="kamaria_05a_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="play"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_05B" sound="kamaria_05b_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary/diary" com="play" frame="page2"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_05C" sound="kamaria_05c_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary/diary" com="play" frame="page3"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_06" sound="kamaria_06_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="disappear"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,30-39">
+            <statement key="KAMARIA_SPEECH_08" parse="name" value="myUserName" sound="kamaria_08_de"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,40-89">
+            <statement key="KAMARIA_SPEECH_10" sound="kamaria_10_de"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,90-200">
+            <statement key="KAMARIA_SPEECH_11" parse="name" value="myUserName" sound="kamaria_11_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,90" newstate="2,0,110"/>
+            </statement>
+            <statement key="KAMARIA_SPEECH_12" sound="kamaria_12_de"/>
+            <statement key="KAMARIA_SPEECH_13" sound="kamaria_13_de"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="npcSon" room="34" name="Nasir" assetname="npcSon">
+        <speechBubble x="495" y="225" w="400" offX="0" offY="-1" pointX="10" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="2,0,30-40">
+            <statement key="KAMARIAS_SON_SPEECH_01" sound="son_01_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,30" newstate="2,0,40"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,2"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_02" parse="name" value="myUserName" sound="son_02_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="" parse="name" sound="" value="myUserName">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,50-54">
+            <statement key="KAMARIAS_SON_SPEECH_03" sound="son_03_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,50" newstate="2,0,55"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="buyItem" itemID="removeChickenPlate"/>
+              <action id="changeQuestState" state="2,1,3"/>
+            </statement>
+            <statement key="" parse="name" sound="" value="myUserName">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,55">
+            <statement key="KAMARIAS_SON_SPEECH_03" sound="son_03_en">
+              <action id="buyItem" itemID="removeChickenPlate"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,56">
+            <statement key="KAMARIAS_SON_SPEECH_04" sound="son_04_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,56" newstate="2,0,60"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_05" sound="son_05_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="play"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_06" sound="son_06_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="disappear"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,60">
+            <statement key="KAMARIAS_SON_SPEECH_04" sound="son_04_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_05" sound="son_05_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="play"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_06" sound="son_06_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="disappear"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,70-109" repeat="true">
+            <statement key="KAMARIAS_SON_SPEECH_07" sound="son_07_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_08" sound="son_08_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,70" newstate="2,0,90"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,30-40">
+            <statement key="KAMARIAS_SON_SPEECH_01" sound="son_01_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,30" newstate="2,0,40"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,2"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_02" parse="name" value="myUserName" sound="son_02_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="" parse="name" sound="" value="myUserName">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,50-54">
+            <statement key="KAMARIAS_SON_SPEECH_03" sound="son_03_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,50" newstate="2,0,55"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="buyItem" itemID="removeChickenPlate"/>
+              <action id="changeQuestState" state="2,1,3"/>
+            </statement>
+            <statement key="" parse="name" sound="" value="myUserName">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,55">
+            <statement key="KAMARIAS_SON_SPEECH_03" sound="son_03_de">
+              <action id="buyItem" itemID="removeChickenPlate"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,56">
+            <statement key="KAMARIAS_SON_SPEECH_04" sound="son_04_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,56" newstate="2,0,60"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_05" sound="son_05_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="play"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_06" sound="son_06_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="disappear"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,60">
+            <statement key="KAMARIAS_SON_SPEECH_04" sound="son_04_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_05" sound="son_05_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="play"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_06" sound="son_06_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/diary/diary" com="play" frame="disappear"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,70-109">
+            <statement key="KAMARIAS_SON_SPEECH_07" sound="son_07_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="KAMARIAS_SON_SPEECH_08" sound="son_08_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,70" newstate="2,0,90"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/son/son" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="MEAL">
+        <speechBubble x="625" y="185" w="200" offX="0" offY="1" pointX="20" pointY="-30"/>
+        <behaviours>
+          <behaviour gamestate="2,0,40">
+            <statement key="">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,40" newstate="2,0,50"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="KEY">
+        <speechBubble x="625" y="185" w="200" offX="0" offY="1" pointX="20" pointY="-30"/>
+        <behaviours>
+          <behaviour gamestate="2,0,120">
+            <statement key="">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,120" newstate="2,0,130"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="GASOLINE">
+        <speechBubble x="625" y="185" w="200" offX="0" offY="1" pointX="20" pointY="-30"/>
+        <behaviours>
+          <behaviour gamestate="2,0,140">
+            <statement key="">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,140" newstate="2,0,145"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="BOAT" name="">
+        <speechBubble x="300" y="205" w="200" offX="1" offY="0" pointX="-20" pointY="-30"/>
+        <behaviours>
+          <behaviour gamestate="2,0,150">
+            <statement key=""/>
+          </behaviour>
+          <behaviour gamestate="2,0,0-10">
+            <statement key="BOAT_01"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="HORST_HARBOUR">
+        <speechBubble x="325" y="205" w="200" offX="1" offY="0" pointX="-20" pointY="-30"/>
+        <behaviours>
+          <behaviour gamestate="2,0,110-120">
+            <statement key="FISCHERMANN_SPEECH_01" parse="name" value="myUserName" sound="fisherman_01_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,110" newstate="2,0,120"/>
+              <action id="changeQuestState" state="2,1,4"/>
+            </statement>
+            <statement key="FISCHERMANN_SPEECH_02" sound="fisherman_02_en"/>
+            <statement key="FISCHERMANN_SPEECH_03" sound="fisherman_03_en"/>
+          </behaviour>
+          <behaviour gamestate="2,0,130-135">
+            <statement key="FISCHERMANN_SPEECH_04" sound="fisherman_04_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,130" newstate="2,0,135"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,136-139">
+            <statement key="FISCHERMANN_SPEECH_05" sound="fisherman_05_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,136" newstate="2,0,140"/>
+              <action id="changeQuestState" state="2,1,5"/>
+            </statement>
+            <statement key="FISCHERMANN_SPEECH_06" sound="fisherman_06_en"/>
+          </behaviour>
+          <behaviour gamestate="2,0,140">
+            <statement key="FISCHERMANN_SPEECH_05" sound="fisherman_05_en"/>
+            <statement key="FISCHERMANN_SPEECH_06" sound="fisherman_06_en"/>
+          </behaviour>
+          <behaviour gamestate="2,0,145-147">
+            <statement key="FISCHERMANN_SPEECH_07" sound="fisherman_07_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,145" newstate="2,0,147"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,148">
+            <statement key="FISCHERMANN_SPEECH_08" sound="fisherman_08_en"/>
+          </behaviour>
+          <behaviour gamestate="2,0,149">
+            <statement key="FISCHERMANN_SPEECH_09" sound="fisherman_09_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,149" newstate="2,0,150"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,150">
+            <statement key="FISCHERMANN_SPEECH_09" sound="fisherman_09_en"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,110-120">
+            <statement key="FISCHERMANN_SPEECH_01" parse="name" value="myUserName" sound="fisherman_01_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,110" newstate="2,0,120"/>
+              <action id="changeQuestState" state="2,1,4"/>
+            </statement>
+            <statement key="FISCHERMANN_SPEECH_02" sound="fisherman_02_de"/>
+            <statement key="FISCHERMANN_SPEECH_03" sound="fisherman_03_de"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,130-135">
+            <statement key="FISCHERMANN_SPEECH_04" sound="fisherman_04_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,130" newstate="2,0,135"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,136-139">
+            <statement key="FISCHERMANN_SPEECH_05" sound="fisherman_05_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,136" newstate="2,0,140"/>
+              <action id="changeQuestState" state="2,1,5"/>
+            </statement>
+            <statement key="FISCHERMANN_SPEECH_06" sound="fisherman_06_de"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,140">
+            <statement key="FISCHERMANN_SPEECH_05" sound="fisherman_05_de"/>
+            <statement key="FISCHERMANN_SPEECH_06" sound="fisherman_06_de"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,145-147">
+            <statement key="FISCHERMANN_SPEECH_07" sound="fisherman_07_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,145" newstate="2,0,147"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,147" daypasstest="2,0,1">
+            <statement key="FISCHERMANN_SPEECH_08" sound="fisherman_08_de"/>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,147" daypasstest="2,0,2,+">
+            <statement key="FISCHERMANN_SPEECH_09" sound="fisherman_09_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,147" newstate="2,0,150"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,150">
+            <statement key="FISCHERMANN_SPEECH_09" sound="fisherman_09_de"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="npcWilliam" room="37" name="William" assetname="npcWilliam" bouncing="1">
+        <speechBubble x="505" y="90" w="200" offX="-1" offY="1" pointX="20" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="2,0,150-159">
+            <statement key="PIRATE_WILLIAM_SPEECH_01" sound="william_01_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,6"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_02" sound="william_02_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_03" sound="william_03_en">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,150" newstate="2,0,155"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,160">
+            <statement key="PIRATE_WILLIAM_SPEECH_04" sound="william_04_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,160" newstate="2,0,170"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_05" sound="william_05_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,7"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,170" newstate="2,0,180"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,170">
+            <statement key="PIRATE_WILLIAM_SPEECH_05" sound="william_05_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,170" newstate="2,0,180"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,150-159">
+            <statement key="PIRATE_WILLIAM_SPEECH_01" sound="william_01_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,6"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_02" sound="william_02_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_03" sound="william_03_de">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,150" newstate="2,0,155"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,160">
+            <statement key="PIRATE_WILLIAM_SPEECH_04" sound="william_04_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,160" newstate="2,0,170"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_05" sound="william_05_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,7"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,170" newstate="2,0,180"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,170">
+            <statement key="PIRATE_WILLIAM_SPEECH_05" sound="william_05_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,170" newstate="2,0,180"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="npcWilliam" room="38" name="William" assetname="npcWilliam" bouncing="1">
+        <speechBubble x="590" y="160" w="250" offX="-1" offY="1" pointX="20" pointY="60"/>
+        <behaviours>
+          <behaviour gamestate="2,0,180">
+            <statement key="PIRATE_WILLIAM_SPEECH_07" sound="william_07_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,190">
+            <statement key="PIRATE_WILLIAM_SPEECH_06" sound="william_06_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,190" newstate="2,0,200"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_08" sound="william_08_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_09" sound="william_09_en">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,200" newstate="2,0,210"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,8"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,200">
+            <statement key="PIRATE_WILLIAM_SPEECH_08" sound="william_08_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_09" sound="william_09_en">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,200" newstate="2,0,210"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,8"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,210">
+            <statement key="PIRATE_WILLIAM_SPEECH_11" sound="william_11_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,220">
+            <statement key="PIRATE_WILLIAM_SPEECH_10" sound="william_10_en">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,220" newstate="2,0,230"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,230-235">
+            <statement key="PIRATE_WILLIAM_SPEECH_12" sound="william_12_en">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,230" newstate="2,0,235"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,9"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,240">
+            <statement key="PIRATE_WILLIAM_SPEECH_14" sound="william_14_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,11"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_15" sound="william_15_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,240" newstate="2,0,260"/>
+              <action id="changeQuestState" state="2,1,12"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="2,0,250">
+            <statement key="PIRATE_WILLIAM_SPEECH_13" sound="william_13_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,10"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_15" sound="william_15_en">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,250" newstate="2,0,270"/>
+              <action id="changeQuestState" state="2,1,12"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,180">
+            <statement key="PIRATE_WILLIAM_SPEECH_07" sound="william_07_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,190">
+            <statement key="PIRATE_WILLIAM_SPEECH_06" sound="william_06_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,190" newstate="2,0,200"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_08" sound="william_08_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_09" sound="william_09_de">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,200" newstate="2,0,210"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,8"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,200">
+            <statement key="PIRATE_WILLIAM_SPEECH_08" sound="william_08_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_09" sound="william_09_de">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,200" newstate="2,0,210"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliamnpcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,8"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,210">
+            <statement key="PIRATE_WILLIAM_SPEECH_11" sound="william_11_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="idle"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,220">
+            <statement key="PIRATE_WILLIAM_SPEECH_10" sound="william_10_de">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,220" newstate="2,0,230"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,230-235">
+            <statement key="PIRATE_WILLIAM_SPEECH_12" sound="william_12_de">
+              <action id="MysonisapirateConsts.setstate_localonly" prev="2,0,230" newstate="2,0,235"/>
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,9"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,240">
+            <statement key="PIRATE_WILLIAM_SPEECH_14" sound="william_14_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,11"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_15" sound="william_15_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliamnpcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,240" newstate="2,0,260"/>
+              <action id="changeQuestState" state="2,1,12"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+          <behaviour isLang="DE" gamestate="2,0,250">
+            <statement key="PIRATE_WILLIAM_SPEECH_13" sound="william_13_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+              <action id="changeQuestState" state="2,1,10"/>
+            </statement>
+            <statement key="PIRATE_WILLIAM_SPEECH_15" sound="william_15_de">
+              <action id="MysonisapirateConsts.handleAnimation" path="elements/npcWilliam/npcWilliam" com="play" frame="talk"/>
+            </statement>
+            <statement key="" sound="">
+              <action id="MysonisapirateConsts.setstate_localandremote" prev="2,0,250" newstate="2,0,270"/>
+              <action id="changeQuestState" state="2,1,12"/>
+              <action id="resetBubbles"/>
+            </statement>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <reward value="1000"/>
+    <items>
+      <item id="PirateTreasure" itemID="100603" hash="5e01ad4e0fe6b12c83f92eb1a8d454c0"/>
+      <item id="PirateMap" itemID="100604" hash="f4d8fcdf69ee699418daae615714bdfa"/>
+      <item id="ChickenPlate" itemID="100605" hash="c94fbc94578457e8a1aa11748dd39c1e" key="GOT_NEW_ITEM"/>
+      <item id="BoatKey" itemID="100606" hash="a2613c142289595a1bacf4b199a3253d" key="GOT_NEW_ITEM"/>
+      <item id="BoatGas" itemID="100607" hash="ec8da8fd099a5da972d5006513a13ef3" key="GOT_NEW_ITEM"/>
+      <item id="GoldenCoin" itemID="100608" hash="e88dda07f8adb908741cf7cc3949cc94"/>
+      <item id="PiratHat" itemID="100609" hash="650c44e09ae0982bd32d0030df58eb9b"/>
+      <item id="removeChickenPlate" itemID="0">
+        <remove itemID="100605"/>
+      </item>
+      <item id="removeBoatStuff" itemID="0">
+        <required itemID="100606"/>
+        <required itemID="100607"/>
+        <remove itemID="100606"/>
+        <remove itemID="100607"/>
+      </item>
+    </items>
+  </module>
+</config>

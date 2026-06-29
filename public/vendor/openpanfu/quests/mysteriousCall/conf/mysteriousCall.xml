@@ -1,0 +1,172 @@
+<config>
+	<snippets path='quests/mysteriousCall/conf/snippets/call_text_snippets_$$lang$$.xml' _REPLACE_='1' /> 
+	
+	<assets>
+		<asset id="magnifyPopUp" path="assets/magnifyPopup.swf" />
+	</assets>
+	
+	<sounds>
+		<sound id="mystCallSpeaker" volume="2" path="audio/$$lang$$/$$key$$.mp3" />
+		
+		<sound id="phoneRing" volume="1" path="audio/phone.mp3"  loops="1000"  />
+	</sounds>	
+	
+	
+	<module category="28">
+	<questType type="adventure" questNameInLogBook="NAME_QUEST_28"/>
+	
+		<tracker>
+			<track state="28,1,1" message="Quest_07_MysteriousCall_01_MYST_CALL_VOICE_CALL_01" />
+			<track state="28,1,2" message="Quest_07_MysteriousCall_02_MYST_CALL_KAMARIA_CALL_07" />		
+			<track state="28,1,3" message="Quest_07_MysteriousCall_03_Clue_2_ItemID_101717" />		
+			<track state="28,1,4" message="Quest_07_MysteriousCall_04_Clue_3_ItemID_101711" />			
+			<track state="28,1,5" message="Quest_07_MysteriousCall_05_Clue_4_ItemID_101715" />			
+			<track state="28,1,6" message="Quest_07_MysteriousCall_06_final_MYST_CALL_KAMARIA_CALL_21" />		
+			<track state="28,1,7" message="Quest_07_MysteriousCall_07_end_MYST_CALL_CARUSO_CALL_10" />			
+		</tracker>
+		<npcs>
+			<npc id='phoneNPC' room='23' name='phoneNPC'>
+				<speechBubble x="494" y="160" w="230" offX="1" offY="-1" pointX="40" pointY="25" />
+				<behaviours>
+					<behaviour gamestate="28,0,1"> 
+						<statement key='MYST_CALL_VOICE_CALL_01' sound='mystCallSpeaker'> 
+							<action id='changeQuestState' state='28,1,1' />
+						</statement>
+						<statement key='MYST_CALL_VOICE_CALL_02' sound='mystCallSpeaker'/>
+						<statement key='MYST_CALL_VOICE_CALL_03' sound='mystCallSpeaker' /> 
+						<statement key='MYST_CALL_VOICE_CALL_04' sound='mystCallSpeaker' /> 
+						<statement key='MYST_CALL_VOICE_CALL_05' sound='mystCallSpeaker' /> 
+						<statement key='MYST_CALL_VOICE_CALL_06' sound='mystCallSpeaker' /> 
+						<statement key='MYST_CALL_VOICE_CALL_07' sound='mystCallSpeaker' > 
+							<action id='changeQuestState' state='28,1,2' />
+						</statement>
+					</behaviour>
+					<behaviour gamestate="28,0,3"> 
+						<statement key='MYST_CALL_VOICE_CALL_08'  sound='mystCallSpeaker' /> 
+					</behaviour>					
+				</behaviours>
+			</npc>
+			<npc id='KAMARIA_TOWER' room='20'>
+				<speechBubble x="370" y="195" w="250" offX="-1" offY="-1" pointX="-100" pointY="25"  sound='mystCallSpeaker'/>
+				<behaviours>
+					<behaviour gamestate="28,0,6"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_01'  sound='mystCallSpeaker' /> 
+						<statement key='MYST_CALL_KAMARIA_CALL_02' sound='mystCallSpeaker' />
+					</behaviour>
+					<behaviour gamestate="28,0,8"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_03' sound='mystCallSpeaker' /> 
+					</behaviour>
+					<behaviour gamestate="28,0,10"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_04' sound='mystCallSpeaker' /> 
+					</behaviour>
+					<behaviour gamestate="28,0,12"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_05'  sound='mystCallSpeaker'/> 
+					</behaviour>	
+					<behaviour gamestate="28,0,14-15"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_06'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,16"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_07'  sound='mystCallSpeaker'/>
+						<statement key='MYST_CALL_KAMARIA_CALL_08'  sound='mystCallSpeaker' />
+						<statement key='MYST_CALL_KAMARIA_CALL_09' sound='mystCallSpeaker' />
+						<statement key='MYST_CALL_KAMARIA_CALL_10'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,18"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_09' sound='mystCallSpeaker' /> 
+					</behaviour>
+					<behaviour gamestate="28,0,22"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_11' sound='mystCallSpeaker' /> 
+					</behaviour>
+					<behaviour gamestate="28,0,28"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_12' sound='mystCallSpeaker' /> 
+					</behaviour>
+					<behaviour gamestate="28,0,30"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_14'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,32"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_15'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,33" > 
+						<statement key='MYST_CALL_KAMARIA_CALL_16'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,34" > 
+						<statement key='MYST_CALL_KAMARIA_CALL_17'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,36" > 
+						<statement key='MYST_CALL_KAMARIA_CALL_15'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,37" > 
+						<statement key='MYST_CALL_KAMARIA_CALL_16'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,40"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_18'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,42" > 
+						<statement key='MYST_CALL_KAMARIA_CALL_15'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,43" > 
+						<statement key='MYST_CALL_KAMARIA_CALL_16'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,44"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_19'  sound='mystCallSpeaker'/>
+						<statement key='MYST_CALL_KAMARIA_CALL_20'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,46"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_20'  sound='mystCallSpeaker'/> 
+					</behaviour>
+					<behaviour gamestate="28,0,50"> 
+						<statement key='MYST_CALL_KAMARIA_CALL_21'  sound='mystCallSpeaker'>
+							<action id='changeQuestState' state='28,1,6' />
+						</statement>
+						<statement key='MYST_CALL_KAMARIA_CALL_22'  sound='mystCallSpeaker'/> 
+					</behaviour>
+				</behaviours>
+			</npc>
+			<npc id='BOOKWORM_LABORATORY'>
+				<speechBubble x="700" y="300" w="300" offX="-1" offY="-1" pointX="-90" pointY="20"/>
+				<behaviours>
+					<behaviour gamestate="28,0,22"> 
+						<statement key='MYST_CALL_BOOKWORM_CALL_01'  sound='mystCallSpeaker'/> 
+						<statement key='MYST_CALL_BOOKWORM_CALL_02'  sound='mystCallSpeaker'/>
+					</behaviour>
+				</behaviours>
+			</npc>
+			<npc id='mystCallCaruso' room='2' name='mystCallCaruso'>
+				<speechBubble x="517" y="275" w="220" offX="1" offY="-1" pointX="40" pointY="25" />
+				<behaviours>
+					<behaviour gamestate="28,0,52"> 
+						<statement key='MYST_CALL_CARUSO_CALL_01'  sound='mystCallSpeaker'/> 
+						<statement key='MYST_CALL_CARUSO_CALL_02'  sound='mystCallSpeaker'/> 
+						<statement key='MYST_CALL_CARUSO_CALL_03'  sound='mystCallSpeaker'/>
+						<statement key='MYST_CALL_CARUSO_CALL_04'  sound='mystCallSpeaker'/> 
+						<statement key='MYST_CALL_CARUSO_CALL_05'  sound='mystCallSpeaker'/>
+						<statement key='MYST_CALL_CARUSO_CALL_06'  sound='mystCallSpeaker'/>
+						<statement key='MYST_CALL_CARUSO_CALL_07'  sound='mystCallSpeaker'/>
+						<statement key='MYST_CALL_CARUSO_CALL_08'  sound='mystCallSpeaker'/>
+						<statement key='MYST_CALL_CARUSO_CALL_09'  sound='mystCallSpeaker'/>
+						<statement key='MYST_CALL_CARUSO_CALL_10'  sound='mystCallSpeaker'>
+							<action id='changeQuestState' state='28,1,7' />
+							<action id='trackEndQuest' name='THE_MYSTERIOUS_CALL' />
+						</statement>
+					</behaviour>
+				</behaviours>
+			</npc>
+		</npcs>
+		
+		<items>
+			<item id='briefcase' itemID='101710' name="Black Briefcase"/>
+			<item id='flour' itemID='101713' name="Flour"/>
+			<item id='sugar' itemID='101714' name="Sugar"/>
+			<item id='briefcaseCookies' itemID='101710' name="Briefcase with Cookies"/>
+			<item id='magnifyGlasses' itemID='101716' name="Magnifying Glass"/>
+			
+			<item id='pieceOfCloth' itemID='101712' name="Piece of Cloth"/>
+			<item id='redHair' itemID='101717' name="Red Hair"/>
+			<item id='carrot' itemID='101711' name="Carrot"/>
+			<item id='igloDraft' itemID='101715' name="Igloo Draft"/>
+			<item id='detectiveCoat' itemID='101733' name="Detective Coat"/>
+			<item id='detectiveHat' itemID='101734' name="Detective Hat"/>
+		</items>
+	</module>
+
+</config>

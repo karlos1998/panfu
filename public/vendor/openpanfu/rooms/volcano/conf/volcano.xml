@@ -1,0 +1,437 @@
+<config check="fce6cd0b48290d82e56373ac76022a27">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+    <asset id="roomOLD" path="assets/roomOLD.swf"/>
+  </assets>
+  <dates>
+    <date id="tilldeath" start="Apr 12 2009" finish="Apr 19 2099" check="156adc73da6ed6d"/>
+    <date id="mysonisapirate" start="May 2 2009" finish="May 24 2099" check="516f4e751c022e2"/>
+    <date id="ancientMap" start="Nov 10 2009" finish="Nov 24 2009" check="2b9d8a9a6843550"/>
+    <date id="bobsleighQuestTesting" start="Jan 5 2010" finish="Jan 12 2010" check="8c3695ad9c7a135"/>
+    <date id="bobsleighQuest" start="Jan 5 2010" finish="Jan 19 2010" check="9ee5d9836973d92"/>
+    <date id="lanternFestival" start="Feb 23 2010" finish="Mar 1 2010" check="d3f73ad2cf239b4"/>
+    <date id="lanternFestivalDragon" start="Feb 27 2010" finish="Mar 1 2010" check="c2503066c80e463"/>
+    <date id="summerQuest" start="Jul 12 2010" finish="Jul 13 2010" check="a3aa6b7a00c0504"/>
+    <date id="summerQuest2" start="Aug 1 2010" finish="Sep 5  2010" check="23010158f206141"/>
+    <date id="stMartinQuest" start="Nov 11 2010" finish="Nov 15 2010" check="09cd8eb6d4ce10c"/>
+    <date id="transition3" start="Feb 2 2011" finish="Feb 9 2011" check="3638c1ad264794c"/>
+    <date id="carnival2011" start="Mar 2 2011" finish="Mar 8 2011" check="eb2ba62e099065a"/>
+    <date id="bananaHunt" start="Jul 1 2011" finish="Jul 27 2011" check="2c0f4163faba71f"/>
+    <date id="stickerQuest" start="Aug 7 2011" finish="Aug 8 2011" check="a8afb9c9dfee210"/>
+    <date id="napasapaQuest" start="Sep 28 2011" finish="Nov 8 2011" check="36db03dd7fb354f"/>
+    <date id="napasapaReturns" start="Jan 11 2012" finish="Feb 12 2012" check="b55167dc781a722"/>
+    <date id="napasapaReturns2" start="Jan 25 2012" finish="Feb 12 2012" check="5d0e01ddb629a4c"/>
+    <date id="halloween2013" start="Oct 26 2013" finish="Nov 3 2013" check="a6549c6049847c4"/>
+    <date id="zuko2" start="Feb 2 2013" finish="Feb 6 2013" check="0d3691da1ac3701"/>
+    <date id="sickIris" start="Apr 24 2013" finish="May 8 2013" check="8b951c136bc0ea3"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="fwPop1" volume="1" path="audio/fwPop1.mp3" loops="1"/>
+    <sound id="fwPop2" volume="1" path="audio/fwPop2.mp3" loops="1"/>
+    <sound id="fwPop3" volume="1" path="audio/fwPop3.mp3" loops="1"/>
+    <sound id="fwLaunch" volume="1" path="audio/fwLaunch.mp3" loops="1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+    <sound id="zukoBGM" volume="0.4" path="audio/ZukoBGM.mp3" loops="-1" backgroundmusic="1" date="zuko2" gamestate="128,0,15" gamestate2="128,3,0"/>
+  </sounds>
+  <module>
+    <waterBombReactions>
+      <zone idTarget="lavaArea" inActiveElement="true" reaction="lavaVolcanoWaterBombReaction" assetExplosion="waterbombExplosionSteam" soundExplosion="waterbombSplashSteam"/>
+    </waterBombReactions>
+    <elements>
+      <element id="meteor" button="1" visible="0">
+        <checks>
+          <visible value="1" date="zuko2" gamestate="128,3,0" gamestate2="128,0,15"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="zukoMonsters.catchedZuko3" type="zukoMonsters"/>
+      </element>
+      <element id="pumpkin" button="1" visible="0">
+        <checks>
+          <visible value="1" date="halloween2013"/>
+        </checks>
+        <button type="overClick" over="2" click="2"/>
+      </element>
+      <element id="container" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="108,0,260-305" date="napasapaReturns2"/>
+          <button value="1" gamestate="108,0,275-285" date="napasapaReturns2"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="napasapa.containerClicked" type="napasapaReturns"/>
+      </element>
+      <element id="ufo" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,100-999" date="sickIris"/>
+        </checks>
+        <button type="click" click="999"/>
+        <message value="sickIris.onUfoClicked" type="sickIris"/>
+      </element>
+      <element id="shine" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,100-305" date="sickIris"/>
+        </checks>
+      </element>
+      <element id="cross" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="134,0,100-305" date="sickIris"/>
+        </checks>
+      </element>
+      <element id="caruso" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="92,0,205-215" date="stickerQuest"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="CARUSO_VULCANO"/>
+        </message>
+      </element>
+      <element id="banana" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="90,0,5-10" date="bananaHunt"/>
+        </checks>
+      </element>
+      <element id="candys" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="68,0,30-36" date="carnival2011"/>
+        </checks>
+      </element>
+      <element id="fire" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="55,0,100-110" date="stMartinQuest"/>
+        </checks>
+      </element>
+      <element id="stoned_bridge" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,60-61" date="summerQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertBridge" type="summerQuest"/>
+      </element>
+      <element id="lavaBrick" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,307" date="summerQuest2" doesNotHaveOneItem="102408"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.getLavaBrick" type="summerQuest"/>
+      </element>
+      <element id="chilliplantYoung" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,0,48"/>
+        </checks>
+        <button type="full" over="2" out="1" click="1" toolTip="101802"/>
+        <message value="youngChilliPlantClicked" type="newPetsQuest"/>
+      </element>
+      <element id="kamira2" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="lanternFestivalDragon"/>
+        </checks>
+        <button type="overClick" click="2" over="2" out="1"/>
+        <message value="chineseLanternFestivalQuest.talkToNPC" type="chineseLanternFestival"/>
+      </element>
+      <element id="lantern1" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern2" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern3" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern4" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern5" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern6" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern7" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern8" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="lantern9" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+      </element>
+      <element id="dragon" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestivalDragon"/>
+        </checks>
+      </element>
+      <element id="lantern10" button="0" visible="0">
+        <checks>
+          <visible value="1" date="lanternFestival"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="26,5,5-6"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="chineseLanternFestival.showPopup"/>
+      </element>
+      <element id="Trainer" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="bobsleighQuest"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1"/>
+        <message value="bobsleighQuest.talkToTrainer" type="bobsleighQuest"/>
+      </element>
+      <element id="sledge" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" date="bobsleighQuest"/>
+          <button value="1" gamestate="20,0,5"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="bobsleighQuest.jump" type="bobsleighQuest"/>
+      </element>
+      <element id="snow" visible="0">
+        <checks>
+          <visible value="1" date="bobsleighQuest"/>
+        </checks>
+      </element>
+      <element id="devReset" button="1" visible="0">
+        <checks>
+          <visible value="1" mode="dev" date="bobsleighQuestTesting"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1"/>
+        <message value="bobsleighQuest.reset" type="bobsleighQuest"/>
+      </element>
+      <element id="devHotBoom" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="20,0,2" mode="dev" date="bobsleighQuestTesting"/>
+        </checks>
+        <button type="overClick" over="3" out="1" click="1"/>
+        <message value="bobsleighQuest.onHotBoomLose" type="bobsleighQuest"/>
+      </element>
+      <element id="lavaPlant" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="15,0,52"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="lostLoverQuest.getLavaPlant" type="theLostLover"/>
+      </element>
+      <element id="lavaBtn2" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="15,0,80-81"/>
+        </checks>
+        <button type="overClick" click="2" over="2" out="1"/>
+        <message value="lostLoverQuest.burnDiamondInVulcano" type="theLostLover"/>
+      </element>
+      <element id="lavaBtn" button="1" visible="0">
+        <checks>
+          <visible value="1" date="ancientMap" gamestate="14,0,7"/>
+        </checks>
+        <button type="overClick" click="2" over="2" out="1"/>
+        <message value="ancientMapQuest.destroyMap" type="ancientMapQuest"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":map" date="ancientMap"/>
+          <frame value=":summerQuest" date="summerQuest"/>
+          <frame value=":stMartinQuest" date="stMartinQuest"/>
+          <frame value=":napasapaQuest" date="sickIris"/>
+        </checks>
+      </element>
+      <element id="bundles" button="1" visible="0">
+        <checks>
+          <visible value="1" user="isNormal" bundles="hasBundles" checkDisplayBundle="true"/>
+          <visible value="1" user="idIsEven" isLang="DE,SE,ES,FR,EN" signedupAfter="23 Apr 2009" endDate="30 Apr 2009"/>
+          <visible value="0" user="isPremium"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="showCatalogue">
+          <name value="BundleCatalogue"/>
+        </message>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="over" over="2" out="1"/>
+      </element>
+      <element id="hubi" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="6"/>
+        </message>
+      </element>
+      <element id="telescope" button="1" visible="1">
+        <checks>
+          <button value="0" requestHasOneActiveItem="104152"/>
+        </checks>
+        <button type="overClick" click="1" over="2" out="1"/>
+        <message value="showExternalMovie" type="movieplayer">
+          <asset value="default"/>
+          <filters value="peephole"/>
+        </message>
+      </element>
+      <element id="jumpPointToPool" button="1" visible="0">
+        <checks>
+          <visible value="1" hasActiveItems="100398"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="jumpPointClicked" sendClickTarget="true"/>
+      </element>
+      <element id="jumpPointToCastle" button="1" visible="0">
+        <checks>
+          <visible value="1" hasActiveItems="100398"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="jumpPointClicked" sendClickTarget="true"/>
+      </element>
+      <element id="get_snow_1" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_2" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_3" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_4" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_5" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_6" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_7" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_8" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_9" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_10" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_11" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_12" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="get_snow_13" button="1" visible="0">
+        <checks>
+          <visible value="1" date="tilldeath" gamestate="0,0,23" doesNotHaveOneItem="100490"/>
+        </checks>
+        <button type="overClick" over="3" out="2" click="1"/>
+        <message value="tilldeath.snow" type="tillDeath"/>
+      </element>
+      <element id="key" button="1" visible="0">
+        <checks>
+          <visible value="1" date="mysonisapirate" gamestate="2,0,120"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="mysonisapirate">
+          <id value="KEY"/>
+        </message>
+        <message value="collectKey" type="mysonisapirate"/>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="hubi" type="game" name="GAME_NAME_6"/>
+      <tooltip id="telescope" type="telescope" name="TELESCOPE"/>
+      <tooltip id="bundles" type="catalog" name="BUNDLE_CATALOGUE"/>
+    </tooltips>
+    <hotspots>
+      <hotspot target="13" type="room" x="680" y="411" rad="75" angle="45"/>
+      <hotspot target="3" type="room" x="130" y="391" rad="75" angle="135"/>
+      <hotspot target="13" type="room" x="678.8" y="137.5" rad="55"/>
+      <hotspot target="4" type="room" x="83" y="206" rad="55"/>
+      <hotspot target="randomJump" type="action" x="83" y="106" rad="55"/>
+    </hotspots>
+    <actions>
+      <action id="randomJump">
+        <message value="bobsleighQuest.randomJump" type="bobsleighQuest"/>
+      </action>
+      <action id="joinRoom13">
+        <joinRoom room="13"/>
+      </action>
+      <action id="joinRoom3">
+        <joinRoom room="3"/>
+      </action>
+    </actions>
+    <passingOfTime dayLength="180 minutes">
+      <fireworks probability="0.008" begin="0.531" end="0.559">
+        <show day="0" minHour="0" maxHour="24"/>
+        <show day="1" minHour="0" maxHour="24"/>
+        <show day="2" minHour="0" maxHour="24"/>
+        <show day="3" minHour="0" maxHour="24"/>
+        <show day="4" minHour="0" maxHour="24"/>
+        <show day="5" minHour="0" maxHour="24"/>
+        <show day="6" minHour="0" maxHour="24"/>
+      </fireworks>
+      <clouds minSpeed="0.2" maxSpeed="1.0" begin="0.7" end="0.3"/>
+    </passingOfTime>
+  </module>
+</config>

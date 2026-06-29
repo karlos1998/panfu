@@ -1,0 +1,301 @@
+<config check="88961626fe24df6eed8e9f25bfb0a17d">
+  <snippets path="rooms/newcave/conf/snippets/levelbooster_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="levelup_positive" volume="0.5" path="audio/levelup/positive.mp3" loops="3"/>
+    <sound id="levelup_negative" volume="0.5" path="audio/levelup/negative.mp3" loops="1"/>
+  </sounds>
+  <dates>
+      <date id="levelup_1" start="Jan 6 2026" finish="Jan 7 2026" check="2682d31d33f020f"/>
+      <date id="levelup_2" start="Jan 15 2026" finish="Jan 16 2026" check="370b01b5bbcac66"/>
+      <date id="levelup_3" start="Jan 20 2026" finish="Jan 21 2026" check="72519b0c4efcc3e"/>
+      <date id="levelup_4" start="Jan 29 2026" finish="Jan 30 2026" check="7c75c25bc9e0cfc"/>
+      <date id="levelup_5" start="Feb 9 2026" finish="Feb 10 2026" check="acee70513b1b20a"/>
+      <date id="levelup_6" start="Feb 14 2026" finish="Feb 15 2026" check="6860a841fe32dce"/>
+      <date id="levelup_7" start="Feb 17 2026" finish="Feb 18 2026" check="9d05e5d28f7749b"/>
+      <date id="levelup_8" start="Feb 28 2026" finish="Mar 1 2026" check="a7cba636f3e0331"/>
+      <date id="levelup_9" start="Mar 5 2026" finish="Mar 6 2026" check="b14e15d720da5c2"/>
+      <date id="levelup_10" start="Mar 10 2026" finish="Mar 11 2026" check="817d6795982b671"/>
+      <date id="levelup_11" start="Mar 23 2026" finish="Mar 24 2026" check="f947e8a303c13ae"/>
+      <date id="levelup_12" start="Mar 28 2026" finish="Mar 29 2026" check="741768170b803cb"/>
+      <date id="levelup_13" start="Mar 31 2026" finish="Apr 1 2026" check="18e5df7fd67b3c0"/>
+      <date id="levelup_14" start="Apr 8 2026" finish="Apr 9 2026" check="ef94f5f14aabb59"/>
+      <date id="levelup_15" start="Apr 19 2026" finish="Apr 20 2026" check="e43ad7386a1f890"/>
+      <date id="levelup_16" start="Apr 27 2026" finish="Apr 28 2026" check="33c0c8bb23f1675"/>
+      <date id="levelup_17" start="Apr 28 2026" finish="Apr 29 2026" check="87be60917c55230"/>
+      <date id="levelup_18" start="May 10 2026" finish="May 11 2026" check="0e3b117fe7d720a"/>
+      <date id="levelup_19" start="May 16 2026" finish="May 17 2026" check="ede15259161423e"/>
+      <date id="levelup_20" start="May 19 2026" finish="May 20 2026" check="831e425898a9ed1"/>
+      <date id="levelup_21" start="Jun 1 2026" finish="Jun 2 2026" check="99d6f9579eaa0a0"/>
+      <date id="levelup_22" start="Jun 6 2026" finish="Jun 7 2026" check="243df709a8fb822"/>
+      <date id="levelup_23" start="Jun 11 2026" finish="Jun 12 2026" check="0a1d594419e2e73"/>
+      <date id="levelup_24" start="Jun 19 2026" finish="Jun 20 2026" check="647407c0749eeb0"/>
+      <date id="levelup_25" start="Jun 29 2026" finish="Jun 30 2026" check="64944b906af8556"/>
+      <date id="levelup_26" start="Jun 30 2026" finish="Jul 1 2026" check="51211ded995c914"/>
+      <date id="levelup_27" start="Jul 10 2026" finish="Jul 11 2026" check="1bb8ba05898cfbe"/>
+      <date id="levelup_28" start="Jul 19 2026" finish="Jul 20 2026" check="4d9ad113a6c6ec5"/>
+      <date id="levelup_29" start="Jul 24 2026" finish="Jul 25 2026" check="018fc41711d6c43"/>
+      <date id="levelup_30" start="Jul 30 2026" finish="Jul 31 2026" check="8646a8bc139a147"/>
+      <date id="levelup_31" start="Aug 5 2026" finish="Aug 6 2026" check="ab5a82559fa1d09"/>
+      <date id="levelup_32" start="Aug 17 2026" finish="Aug 18 2026" check="61d427716c0270e"/>
+      <date id="levelup_33" start="Aug 18 2026" finish="Aug 19 2026" check="d0b457197913da0"/>
+      <date id="levelup_34" start="Aug 30 2026" finish="Aug 31 2026" check="2eb8e4fefa719ec"/>
+      <date id="levelup_35" start="Sep 2 2026" finish="Sep 3 2026" check="d9f883cabaafc71"/>
+      <date id="levelup_36" start="Sep 11 2026" finish="Sep 12 2026" check="c79a0f9e163c04d"/>
+      <date id="levelup_37" start="Sep 21 2026" finish="Sep 22 2026" check="a1a3b675f7e8a10"/>
+      <date id="levelup_38" start="Sep 27 2026" finish="Sep 28 2026" check="f4b4fa6fb186382"/>
+      <date id="levelup_39" start="Oct 1 2026" finish="Oct 2 2026" check="2f02b49b670e50d"/>
+      <date id="levelup_40" start="Oct 7 2026" finish="Oct 8 2026" check="483c14c64e47df0"/>
+      <date id="levelup_41" start="Oct 17 2026" finish="Oct 18 2026" check="7579002cfff9ca3"/>
+      <date id="levelup_42" start="Oct 20 2026" finish="Oct 21 2026" check="4db18f2fcba1658"/>
+      <date id="levelup_43" start="Oct 30 2026" finish="Oct 31 2026" check="382e91558311a05"/>
+      <date id="levelup_44" start="Nov 5 2026" finish="Nov 6 2026" check="c6ca950943ca9ed"/>
+      <date id="levelup_45" start="Nov 13 2026" finish="Nov 14 2026" check="90840509c8be84d"/>
+      <date id="levelup_46" start="Nov 21 2026" finish="Nov 22 2026" check="00cb5f99b0c5a5f"/>
+      <date id="levelup_47" start="Nov 25 2026" finish="Nov 26 2026" check="b55b04c0936d6e1"/>
+      <date id="levelup_48" start="Dec 7 2026" finish="Dec 8 2026" check="62fcda4e139ace3"/>
+      <date id="levelup_49" start="Dec 11 2026" finish="Dec 12 2026" check="f4ba5f4d175eb82"/>
+      <date id="levelup_50" start="Dec 20 2026" finish="Dec 21 2026" check="4c05e7c83e4c5b0"/>
+      <date id="levelup_51" start="Dec 22 2026" finish="Dec 23 2026" check="2889db6e6ca25a9"/>
+      <date id="levelup_52" start="Dec 30 2026" finish="Dec 31 2026" check="e93713dff1df289"/>
+  </dates>
+  <module>
+    <elements>
+      <element id="Bookworm" button="1" visible="0">
+        <button type="overClick" out="1" over="3" click="1"/>
+        <message value="summerQuest.talkToBookworm" type="summerQuest"/>
+      </element>
+      <element id="screwdriver" button="0" visible="0">
+        <button type="click" click="1"/>
+        <message value="petsHomeQuest.giveItem2" type="petsHomeQuest"/>
+      </element>
+      <element id="door" button="1" visible="1">
+        <button type="loop"/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element id="extAppLauncher" button="1" visible="0" notWalkable="true">
+        <button type="click" click="1"/>
+        <message value="tivola.openquests" type="tivola"/>
+      </element>
+      <element id="slot" button="1" visible="0" notWalkable="true">
+        <button type="click" click="1"/>
+        <message value="tivola.openslot" type="tivola"/>
+      </element>
+      <element id="computer" button="1" visible="1">
+        <button type="overClick" over="1" out="1" click="1" stopWalk="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="INFOPANEL_BOOSTERCAVE"/>
+        </message>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":petshome" date="petsHomeQuest"/>
+          <frame value=":summerQuest" gamestate="summerQuest"/>
+        </checks>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="door" type="door" target="21" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="21" type="room" x="411" y="193" rad="31"/>
+      <hotspot type="action" x="309" y="316" rad="30">
+        <checks>
+          <target value="levelup_negative_wrongday"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_1" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_1" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_1" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_2" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_2" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_2" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_3" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_3" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_3" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_4" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_4" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_4" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_5" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_5" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_5" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_6" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_6" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_6" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_7" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_7" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_7" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_8" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_8" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_8" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_9" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_9" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_9" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_10" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_10" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_10" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_11" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_11" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_11" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_12" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_12" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_12" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_13" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_13" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_13" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_14" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_14" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_14" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_15" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_15" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_15" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_16" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_16" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_16" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_17" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_17" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_17" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_18" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_18" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_18" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_19" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_19" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_19" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_20" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_20" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_20" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_21" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_21" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_21" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_22" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_22" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_22" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_23" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_23" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_23" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_24" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_24" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_24" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_25" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_25" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_25" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_26" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_26" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_26" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_27" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_27" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_27" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_28" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_28" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_28" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_29" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_29" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_29" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_30" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_30" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_30" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_31" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_31" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_31" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_32" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_32" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_32" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_33" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_33" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_33" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_34" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_34" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_34" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_35" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_35" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_35" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_36" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_36" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_36" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_37" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_37" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_37" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_38" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_38" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_38" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_39" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_39" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_39" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_40" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_40" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_40" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_41" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_41" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_41" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_42" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_42" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_42" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_43" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_43" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_43" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_44" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_44" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_44" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_45" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_45" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_45" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_46" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_46" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_46" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_47" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_47" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_47" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_48" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_48" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_48" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_49" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_49" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_49" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_50" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_50" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_50" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_51" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_51" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_51" gamestate="5,0,10"/>
+          <target value="levelup_negative_alreadytoday" date="levelup_52" daypasstest="5,0,0"/>
+          <target value="levelup_positive" date="levelup_52" gamestate="5,0,20" daypasstest="5,0,1,+"/>
+          <target value="levelup_positive" date="levelup_52" gamestate="5,0,10"/>
+        </checks>
+      </hotspot>
+    </hotspots>
+    <actions>
+      <action id="levelup_positive">
+        <onLevelBoost/>
+        <startLevelBoost/>
+        <handleAnimation path="elements/laser/laser" com="play" frame="3"/>
+        <handleAnimation path="elements/brainmachine/brainmachine" com="play" frame="3"/>
+        <handleAnimation path="elements/computer/computer" com="play" frame="levelup"/>
+        <stopAvatar/>
+        <blockScreen block="1"/>
+      </action>
+      <action id="levelup_negative_wrongday">
+        <onLevelBoost/>
+        <playSound id="levelup_negative"/>
+      </action>
+      <action id="levelup_negative_alreadytoday">
+        <onLevelBoost/>
+        <playSound id="levelup_negative"/>
+      </action>
+      <action id="laserFinished">
+        <levelboost/>
+        <blockScreen block="0"/>
+        <showAvatar vis="1"/>
+      </action>
+      <action id="lasersound">
+        <playSound id="levelup_positive"/>
+      </action>
+      <action id="lasersoundOver">
+        <stopSound id="levelup_positive"/>
+      </action>
+    </actions>
+  </module>
+</config>

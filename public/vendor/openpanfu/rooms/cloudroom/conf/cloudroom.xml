@@ -1,0 +1,13 @@
+<config check="e9f2d9ec818e16bdc1b87587105db70d">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds/>
+  <dates/>
+  <module>
+    <elements/>
+    <hotspots>
+      <hotspot target="150" type="room" x="740" y="420" rad="30" angle="45"/>
+    </hotspots>
+  </module>
+</config>

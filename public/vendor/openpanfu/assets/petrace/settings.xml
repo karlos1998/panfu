@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <version>2024-12-08</version>
+  <general>
+    <winnanimation path="assets/effects/Winner.swf"/>
+    <looseanimation path="assets/effects/Loser.swf"/>
+  </general>
+  <track>
+    <tiletypes>
+      <tileasset id="0" depth="-1" special="start" name="tracktile_startline" path="assets/track/track_start_D0_01.swf"/>
+      <tileasset id="1000" depth="-1" special="" name="tracktile_startline" path="assets/tiles/RaceTrack_start.swf"/>
+      <tileasset id="1" depth="-1" special="finish" name="tracktile_finish" path="assets/track/track_finish_D0_01.swf"/>
+      <tileasset id="1001" depth="-1" special="" name="tracktile_finish" path="assets/tiles/RaceTrack_finish.swf"/>
+      <tileasset id="2" depth="-1" special="" name="tracktile_std01" path="assets/tiles/RaceTrack_middle01.swf"/>
+      <tileasset id="3" depth="-1" special="" name="tracktile_std02" path="assets/tiles/RaceTrack_middle01.swf"/>
+      <tileasset id="4" depth="-1" special="" name="tracktile_middle" path="assets/tiles/RaceTrack_middle01.swf"/>
+      <tileasset id="5" depth="0" special="" name="tracktile_middle" path="assets/track/track_middle_D0_01.swf"/>
+      <tileasset id="6" depth="0" special="" name="tracktile_middle" path="assets/track/track_middle_D0_02.swf"/>
+      <tileasset id="7" depth="0" special="" name="tracktile_middle" path="assets/track/track_middle_D0_03.swf"/>
+      <tileasset id="8" depth="0" special="" name="tracktile_middle" path="assets/track/track_middle_D0_04.swf"/>
+      <tileasset id="9" depth="0" special="" name="tracktile_middle" path="assets/track/track_middle_D0_05.swf"/>
+      <tileasset id="20" depth="-1" special="" name="tracktile_finish" path="assets/tiles/RaceTrack_middle01.swf"/>
+      <tileasset id="21" depth="-1" special="" name="tracktile_finish" path="assets/tiles/RaceTrack_middle01.swf"/>
+      <tileasset id="22" depth="-1" special="border" name="tracktile_middle" path="assets/track/track_middle_D0_05.swf"/>
+      <tileasset id="50" depth="1" special="" name="tracktile_finish" path="assets/tiles/RaceTrack_BgL1.swf"/>
+      <tileasset id="51" depth="1" special="" name="tracktile_finish" path="assets/track/track_trees_D1_01.swf"/>
+      <tileasset id="52" depth="1" special="" name="tracktile_finish" path="assets/track/track_trees_D1_02.swf"/>
+      <tileasset id="101" depth="2" special="" name="tracktile_finish" path="assets/tiles/RaceTrack_BgL2.swf"/>
+      <tileasset id="102" depth="2" special="" name="tracktile_finish" path="assets/track/track_mountain_D2_01.swf"/>
+    </tiletypes>
+    <tiles stepspertile="10" tilewidth="720">
+      <trackstructure tiles="2,1,2,3,2,2,2,2,2,4"/>
+      <trackstructure tiles="6,5,6,6,6,6"/>
+      <trackstructure tiles="5,5,5,5,5"/>
+    </tiles>
+  </track>
+  <specialtypes>
+    <!-- Obstacles -->
+    <specialtype id="0" path="assets/specials/ObstacleW1_01.swf"/>
+    <specialtype id="1" path="assets/specials/ObstacleW2_01.swf"/>
+    <specialtype id="2" path="assets/specials/ObstacleW3_01.swf"/>
+    <specialtype id="3" path="assets/specials/Water.swf"/>
+
+    <!-- Level Reward Specials -->
+    <specialtype id="501" path="assets/specials/Boost.swf" align="Anchor_A" sfx="assets/sounds/specials/Boost.mp3" cardIconPath="assets/specials/icons/Boost.swf" snippetid="PETRACE_TT_SPECIAL_BOOST"/>
+    <specialtype id="502" path="assets/specials/RockyRoad.swf" sfx="assets/sounds/specials/Rockyroad.mp3" cardIconPath="assets/specials/icons/RockyRoad.swf" snippetid="PETRACE_TT_SPECIAL_ROCKYROAD"/>
+    <specialtype id="503" path="assets/specials/WingedCap.swf" sfx="assets/sounds/specials/Wingedcap.mp3" cardIconPath="assets/specials/icons/WingedHead.swf" snippetid="PETRACE_TT_SPECIAL_WINGEDCAP"/>
+    <specialtype id="504" path="assets/specials/EvilSlower.swf" sfx="assets/sounds/specials/Root.mp3" cardIconPath="assets/specials/icons/EvilSpirits.swf" snippetid="PETRACE_TT_SPECIAL_EVILSPIRITS"/>
+    <specialtype id="505" path="assets/specials/RoadCrash.swf" sfx="assets/sounds/specials/Roadcrash.mp3" cardIconPath="assets/specials/icons/RoadCrash.swf" snippetid="PETRACE_TT_SPECIAL_ROADCRASH"/>
+    <specialtype id="506" path="assets/specials/SpeedRacer.swf" sfx="assets/sounds/specials/Speedracer.mp3" cardIconPath="assets/specials/icons/SpeedRacer.swf" snippetid="PETRACE_TT_SPECIAL_SPEEDRACER"/>
+    <specialtype id="507" path="assets/specials/Fly.swf" sfx="assets/sounds/specials/Fly.mp3" cardIconPath="assets/specials/icons/Fly.swf" snippetid="PETRACE_TT_SPECIAL_THEFLY"/>
+    <specialtype id="508" path="assets/specials/IceBeam.swf" sfx="" cardIconPath="assets/specials/icons/IceBean.swf" snippetid="PETRACE_TT_SPECIAL_ICEBEAM"/>
+    <specialtype id="509" path="assets/specials/RushToVictory.swf" align="Anchor_A" sfx="assets/sounds/specials/Boost.mp3" cardIconPath="assets/specials/icons/RushToVictory.swf" snippetid="PETRACE_TT_SPECIAL_RUSHTOVICTORY"/>
+    <specialtype id="510" path="assets/specials/Potion.swf" cardIconPath="assets/specials/icons/Narcotic.swf" snippetid="PETRACE_TT_SPECIAL_POTION"/>
+    <specialtype id="511" path="assets/specials/GlueBomb.swf" cardIconPath="assets/specials/icons/GlueBomb.swf" snippetid="PETRACE_TT_SPECIAL_GLUEBOMB"/>
+    <specialtype id="512" path="assets/specials/BigJump.swf" sfx="assets/sounds/specials/Bigjump.mp3" cardIconPath="assets/specials/icons/BigJump.swf" snippetid="PETRACE_TT_SPECIAL_BIGJUMP"/>
+    <specialtype id="513" path="assets/specials/Turn.swf" cardIconPath="assets/specials/icons/Turn.swf" snippetid="PETRACE_TT_SPECIAL_TURN"/>
+    <specialtype id="2514" type="connection" specialA="514" specialB="614" cardIconPath="assets/specials/icons/IconMissing.swf" snippetid="PETRACE_TT_SPECIAL_LIFELINE"/>
+    <specialtype id="514" path="assets/specials/LifeLine.swf" sfx="assets/sounds/specials/Lifeline.mp3" cardIconPath="assets/specials/icons/Lifeline.swf" snippetid="PETRACE_TT_SPECIAL_LIFELINE"/>
+    <specialtype id="614" path="assets/specials/LifeLine_B.swf" align="Anchor_A" cardIconPath="assets/specials/icons/IconMissing.swf" snippetid="PETRACE_TT_SPECIAL_LIFELINE"/>
+    <specialtype id="515" path="assets/specials/Hurricane.swf" sfx="assets/sounds/specials/Hurricane.mp3" cardIconPath="assets/specials/icons/Hurricane.swf" snippetid="PETRACE_TT_SPECIAL_HURRICANE"/>
+    <specialtype id="516" path="assets/specials/Teleport.swf" sfx="assets/sounds/specials/Teleport.mp3" cardIconPath="assets/specials/icons/Teleport.swf" snippetid="PETRACE_TT_SPECIAL_TELEPORT"/>
+    <specialtype id="517" path="assets/specials/Counterspell.swf" sfx="assets/sounds/specials/Counterspell.mp3" cardIconPath="assets/specials/icons/CounterSpell.swf" snippetid="PETRACE_TT_SPECIAL_COUNTERSPELL"/>
+    <specialtype id="518" path="assets/specials/Magnet.swf" sfx="assets/sounds/specials/Magnetl.mp3" cardIconPath="assets/specials/icons/Magnet.swf" snippetid="PETRACE_TT_SPECIAL_MAGNET"/>
+    <specialtype id="519" path="assets/specials/PowerThief.swf" align="Anchor_C" sfx="assets/sounds/specials/Powerthief.mp3" cardIconPath="assets/specials/icons/PowerThief.swf" snippetid="PETRACE_TT_SPECIAL_POWERTHIEF"/>
+    <specialtype id="520" path="assets/specials/AintNotOverYet.swf" align="Anchor_D" sfx="assets/sounds/specials/Aintoveryet.mp3" cardIconPath="assets/specials/icons/AintNotOverYet.swf" snippetid="PETRACE_TT_SPECIAL_AINTOVERYET"/>
+    <specialtype id="521" path="assets/specials/Sponge.swf" align="Anchor_D" sfx="assets/sounds/specials/Sponge.mp3" cardIconPath="assets/specials/icons/Sponge.swf" snippetid="PETRACE_TT_SPECIAL_SPONGE"/>
+    <specialtype id="522" path="assets/specials/Mirror.swf" sfx="assets/sounds/specials/Mirror.mp3" cardIconPath="assets/specials/icons/Mirror.swf" snippetid="PETRACE_TT_SPECIAL_MIRROR"/>
+    <specialtype id="523" path="assets/specials/Barrier.swf" sfx="assets/sounds/specials/Barrier.mp3" cardIconPath="assets/specials/icons/Barrier.swf" snippetid="PETRACE_TT_SPECIAL_BARRIER"/>
+
+    <!-- Pet Specials -->
+    <specialtype id="1001" cardIconPath="assets/specials/icons/Icon_Surfing.swf" snippetid="PETRACE_TT_SPECIAL_U_SURFING"/>
+    <specialtype id="1002" cardIconPath="assets/specials/icons/Icon_Cryforhelp.swf" snippetid="PETRACE_TT_SPECIAL_U_CRYFORHELP"/>
+    <specialtype id="1003" cardIconPath="assets/specials/icons/Icon_Rocket.swf" snippetid="PETRACE_TT_SPECIAL_U_ROCKET"/>
+    <specialtype id="1004" cardIconPath="assets/specials/icons/Icon_Shield.swf" snippetid="PETRACE_TT_SPECIAL_U_SHIELD"/>
+    <specialtype id="1005" path="assets/specials/UltimateObstacleBluedragon.swf" cardIconPath="assets/specials/icons/Icon_Grove.swf" snippetid="PETRACE_TT_SPECIAL_U_GROVE"/>
+    <specialtype id="1006" cardIconPath="assets/specials/icons/Icon_Focus.swf" snippetid="PETRACE_TT_SPECIAL_U_BUGSY"/>
+    <specialtype id="1007" cardIconPath="assets/specials/icons/Icon_Sprint.swf" snippetid="PETRACE_TT_SPECIAL_U_TORK"/>
+    <specialtype id="1008" path="assets/specials/UltimateObstaclePingoo.swf" cardIconPath="assets/specials/icons/Icon_Grove.swf" snippetid="PETRACE_TT_SPECIAL_U_PINGOO"/>
+    <specialtype id="1009" cardIconPath="assets/specials/icons/ultimate_marieta.swf" snippetid="PETRACE_TT_SPECIAL_U_LADYBUG"/>
+
+    <!-- ??? -->
+    <specialtype id="5001" align="Anchor_D" path="assets/effects/Confetti.swf"/>
+    <specialtype id="5002" align="Anchor_D" path="assets/effects/MyPetPointer.swf"/>
+    <specialtype id="5003" type="glow" path=""/>
+  </specialtypes>
+  <pettypes>
+    <pettype id="1" movementassetpath="assets/pets/Petassets_Turt.swf" portraitpath="assets/pets/portraits/Helmet.swf"/>
+    <pettype id="2" movementassetpath="assets/pets/Petassets_ParadiseBird.swf" portraitpath="assets/pets/portraits/Stella.swf"/>
+    <pettype id="3" movementassetpath="assets/pets/Petassets_Fox.swf" portraitpath="assets/pets/portraits/Soque.swf"/>
+    <pettype id="4" movementassetpath="assets/pets/Petassets_Hedgehog.swf" portraitpath="assets/pets/portraits/Cuddle.swf"/>
+    <pettype id="5" movementassetpath="assets/pets/Petassets_Bluedragon.swf" portraitpath="assets/pets/portraits/Woody.swf"/>
+    <pettype id="6" movementassetpath="assets/pets/Petassets_Bugsy.swf" portraitpath="assets/pets/portraits/Portrait_Bugsy.swf"/>
+    <pettype id="7" movementassetpath="assets/pets/Petassets_Tork.swf" portraitpath="assets/pets/portraits/Tork.swf"/>
+    <pettype id="8" movementassetpath="assets/pets/Petassets_Pingoo.swf" portraitpath="assets/pets/portraits/Pingoo.swf"/>
+    <pettype id="9" movementassetpath="assets/pets/Petassets_Marieta.swf" portraitpath="assets/pets/portraits/Marieta.swf"/>
+  </pettypes>
+  <sounds>
+    <sound sound_id="1" path="assets/sounds/ambience_01.mp3"/>
+    <sound sound_id="2" path="assets/sounds/start_whistle.mp3"/>
+    <sound sound_id="3" path="assets/sounds/finish_line.mp3"/>
+  </sounds>
+</settings>

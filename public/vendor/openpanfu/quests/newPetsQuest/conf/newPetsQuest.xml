@@ -1,0 +1,271 @@
+<config check="fc9f3767657d377f0578a2c5eaffd9c6">
+  <snippets path="quests/newPetsQuest/conf/snippets/pets_text_speeches_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="riddle1Asset" path="assets/Riddle1Asset.swf"/>
+    <asset id="riddle2Asset" path="assets/Riddle2Asset.swf"/>
+    <asset id="riddle3Asset" path="assets/Riddle3Asset.swf"/>
+    <asset id="EndScreenNewPetsQuest" path="assets/EndScreenNewPetsQuest.swf"/>
+  </assets>
+  <sounds>
+    <sound id="newPetsSpeakerSounds" volume="2" path="audio/$$lang$$/$$key$$.mp3"/>
+    <sound id="eatChillies" volume="2" path="audio/eatChillies.mp3"/>
+    <sound id="riddleRight" volume="1" path="audio/riddleRight.mp3"/>
+    <sound id="riddleWrong" volume="1" path="audio/riddleWrong.mp3"/>
+    <sound id="scissorSound" volume="1" path="audio/pet_quest_scissor.mp3"/>
+    <sound id="drinkSound" volume="1.5" path="audio/pet_quest_drink.mp3"/>
+    <sound id="planeSound" volume="1" path="audio/pet_quest_plane_engine.mp3"/>
+  </sounds>
+  <module statement_timeout="60" category="30">
+    <questType type="adventure" questNameInLogBook="NAME_QUEST_29"/>
+    <npcs>
+      <npc id="KAMARIA_TOWER">
+        <speechBubble x="280" y="220" w="230" offX="1" offY="-1" pointX="20" pointY="15"/>
+        <behaviours>
+          <behaviour gamestate="30,0,5-7">
+            <statement key="KAMARIA_PETS_01" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,26">
+            <statement key="KAMARIA_PETS_12_IN_TOWER" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,27">
+            <statement key="KAMARIA_PETS_13" sound="newPetsSpeakerSounds">
+              <action id="changeQuestState" state="30,4,4"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="30,0,28-99">
+            <statement key="KAMARIA_PETS_14" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="kamaria_npc_inPlane" room="57" name="Kamaria" assetname="kamaria">
+        <speechBubble x="474" y="268" w="230" offX="1" offY="-1" pointX="20" pointY="15"/>
+        <behaviours>
+          <behaviour gamestate="30,0,7">
+            <statement key="KAMARIA_PETS_02" sound="newPetsSpeakerSounds">
+              <action id="changeQuestState" state="30,4,2"/>
+            </statement>
+            <statement key="KAMARIA_PETS_03" sound="newPetsSpeakerSounds"/>
+            <statement key="KAMARIA_PETS_04" sound="newPetsSpeakerSounds"/>
+            <statement key="KAMARIA_PETS_05" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,10-15">
+            <statement key="KAMARIA_PETS_06" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,16">
+            <statement key="KAMARIA_PETS_07" sound="newPetsSpeakerSounds">
+              <action id="changeQuestState" state="30,4,3"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="30,0,18">
+            <statement key="KAMARIA_PETS_08" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,20">
+            <statement key="KAMARIA_PETS_09" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,22">
+            <statement key="KAMARIA_PETS_10" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,24-26">
+            <statement key="KAMARIA_PETS_11" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="eloise_npc4" room="56" name="Eloise" assetname="npcElouise"/>
+      <npc id="eloise_npc3" room="58" name="Eloise" assetname="npcElouise"/>
+      <npc id="eloise_npc2" room="57" name="Eloise" assetname="npcElouise"/>
+      <npc id="eloise_npc5" room="57" name="Eloise" assetname="npcLouiseBond"/>
+      <npc id="eloise_npc">
+        <speechBubble x="500" y="232" w="220" offX="-1" offY="-1" pointX="20" pointY="15"/>
+        <behaviours>
+          <behaviour gamestate="30,0,30">
+            <statement key="ELOISE_PETS_01" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_02" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,32">
+            <statement key="ELOISE_PETS_03" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,36">
+            <statement key="ELOISE_PETS_04" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,38">
+            <statement key="ELOISE_PETS_04A" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,40">
+            <statement key="ELOISE_PETS_05" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_06" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_07" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_08" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_09" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_10" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,42-43">
+            <statement key="ELOISE_PETS_09" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_10" sound="newPetsSpeakerSounds">
+              <action id="changeQuestState" state="30,4,5"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="30,0,44">
+            <statement key="ELOISE_PETS_11" sound="newPetsSpeakerSounds">
+              <action id="changeQuestState" state="30,4,6"/>
+            </statement>
+            <statement key="ELOISE_PETS_12" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,46">
+            <statement key="ELOISE_PETS_13" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,68-73">
+            <statement key="ELOISE_PETS_14" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,73-74">
+            <statement key="ELOISE_PETS_14A" sound="newPetsSpeakerSounds">
+              <action id="changeQuestState" state="30,0,74"/>
+            </statement>
+            <statement key="ELOISE_PETS_15" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_16" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,76">
+            <statement key="ELOISE_PETS_17" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_18" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="eloise_npc_outside_plane" room="56" name="Eloise" assetname="">
+        <speechBubble x="110" y="257" w="220" offX="1" offY="-1" pointX="20" pointY="15"/>
+        <behaviours>
+          <behaviour gamestate="30,0,78">
+            <statement key="ELOISE_PETS_19" sound="newPetsSpeakerSounds">
+              <action id="changeQuestState" state="30,4,10"/>
+            </statement>
+            <statement key="ELOISE_PETS_20" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_21" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,80">
+            <statement key="ELOISE_PETS_22" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,82">
+            <statement key="ELOISE_PETS_23" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_24" sound="newPetsSpeakerSounds"/>
+            <statement key="ELOISE_PETS_25" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,83-85">
+            <statement key="ELOISE_PETS_26" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,86">
+            <statement key="ELOISE_PETS_26" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="LILI_BEAUTYSALON">
+        <speechBubble x="640" y="205" w="250" offX="-1" offY="-1" pointX="-100" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="30,0,32">
+            <statement key="LILI_PETS_01" parse="name" value="myUserName" sound="newPetsSpeakerSounds"/>
+            <statement key="LILI_PETS_02" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,38">
+            <statement key="LILI_PETS_03" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="BRUNO_CHEZ">
+        <speechBubble x="495" y="140" w="290" offX="-1" offY="-1" pointX="10" pointY="5"/>
+        <behaviours>
+          <behaviour gamestate="30,0,46">
+            <statement key="BRUNO_PETS_01" parse="name" value="myUserName" sound="newPetsSpeakerSounds"/>
+            <statement key="BRUNO_PETS_02" sound="newPetsSpeakerSounds"/>
+            <statement key="BRUNO_PETS_03" sound="newPetsSpeakerSounds"/>
+            <statement key="BRUNO_PETS_04" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,48">
+            <statement key="BRUNO_PETS_04" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,50">
+            <statement key="BRUNO_PETS_05" sound="newPetsSpeakerSounds"/>
+            <statement key="BRUNO_PETS_06" sound="newPetsSpeakerSounds"/>
+            <statement key="BRUNO_PETS_07" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,52">
+            <statement key="BRUNO_PETS_07" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,60">
+            <statement key="BRUNO_PETS_08" sound="newPetsSpeakerSounds"/>
+            <statement key="BRUNO_PETS_09" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,61">
+            <statement key="BRUNO_PETS_08" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,62-63">
+            <statement key="BRUNO_PETS_10" sound="newPetsSpeakerSounds">
+              <action id="changeQuestState" state="30,4,8"/>
+            </statement>
+            <statement key="BRUNO_PETS_11" sound="newPetsSpeakerSounds"/>
+            <statement key="BRUNO_PETS_12" sound="newPetsSpeakerSounds"/>
+            <statement key="BRUNO_PETS_13" sound="newPetsSpeakerSounds"/>
+            <statement key="BRUNO_PETS_14" sound="newPetsSpeakerSounds"/>
+            <statement key="BRUNO_PETS_15" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,64-65">
+            <statement key="BRUNO_PETS_15" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,66">
+            <statement key="BRUNO_PETS_16" sound="newPetsSpeakerSounds">
+              <action id="changeQuestState" state="30,4,9"/>
+            </statement>
+            <statement key="BRUNO_PETS_17" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,68-71">
+            <statement key="BRUNO_PETS_GO_FEED" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,72-82">
+            <statement key="BRUNO_PETS_GO_DEFAULT" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="BOOKWORM_LABORATORY">
+        <speechBubble x="610" y="300" w="230" offX="-1" offY="-1" pointX="10" pointY="5"/>
+        <behaviours>
+          <behaviour gamestate="30,0,52">
+            <statement key="BOOKWORM_PETS_01" sound="newPetsSpeakerSounds"/>
+            <statement key="BOOKWORM_PETS_02" sound="newPetsSpeakerSounds"/>
+            <statement key="BOOKWORM_PETS_03" sound="newPetsSpeakerSounds"/>
+            <statement key="BOOKWORM_PETS_04" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,54">
+            <statement key="BOOKWORM_PETS_05" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,55">
+            <statement key="BOOKWORM_PETS_06" sound="newPetsSpeakerSounds">
+              <action id="changeQuestState" state="30,4,7"/>
+            </statement>
+            <statement key="BOOKWORM_PETS_07" sound="newPetsSpeakerSounds"/>
+            <statement key="BOOKWORM_PETS_08" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+          <behaviour gamestate="30,0,60">
+            <statement key="BOOKWORM_PETS_08" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="bonez_npc" room="57" name="Bonez" assetname="npc_bonez">
+        <speechBubble x="590" y="230" w="230" offX="-1" offY="-1" pointX="10" pointY="5"/>
+        <behaviours>
+          <behaviour gamestate="30,0,86">
+            <statement key="BONEZ_PETS_01" sound="newPetsSpeakerSounds"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <items>
+      <item id="testingGlass" itemID="101808" name="Testglass"/>
+      <item id="starPlant" itemID="101807" name="Star Herbs"/>
+      <item id="rainbowPlant" itemID="101804" name="Rainbows Flower"/>
+      <item id="scissors" itemID="101805" name="Scissors"/>
+      <item id="TESTGLASS_LIQUID" itemID="101809" name="Testglass Liquid"/>
+      <item id="chilliplant" itemID="101802" name="Chilliplant"/>
+      <item id="chilliplantgrown" itemID="101818" name="Chilliplant"/>
+      <item id="chillicrossies" itemID="101801" name="Chilli Crossies"/>
+      <item id="screw" itemID="101806" name="Screw"/>
+      <item id="MEDICIN_FOR_ELOISE" itemID="101829" name="Medicin"/>
+      <!--<item id="PETS_VOUCHER" itemID="101830" name="Pokopets Voucher"/>-->
+    </items>
+  </module>
+</config>

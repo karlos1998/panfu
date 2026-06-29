@@ -1,0 +1,1522 @@
+<config mode="live" check="30084ecea7473fff13b10ee3c51ec9e5">
+  <assets room="room">
+    <asset id="room" path="assets/room.swf"/>
+    <asset id="jukebox" path="assets/jukebox.swf"/>
+    <asset id="100" path="assets/backgrounds/treehouse.swf"/>
+    <asset id="101" path="assets/backgrounds/orientaltent.swf"/>
+    <asset id="102" path="assets/backgrounds/caravan.swf"/>
+    <asset id="103" path="assets/backgrounds/bamboohouse.swf"/>
+    <asset id="104" path="assets/backgrounds/stonehouse.swf"/>
+    <asset id="105" path="assets/backgrounds/cave.swf"/>
+    <asset id="106" path="assets/backgrounds/spacestation.swf"/>
+    <asset id="107" path="assets/backgrounds/castle.swf"/>
+    <asset id="108" path="assets/backgrounds/tent.swf"/>
+    <asset id="100394" path="assets/backgrounds/aqualaguna.swf"/>
+    <asset id="100623" path="assets/backgrounds/pinky.swf"/>
+    <asset id="100870" path="assets/backgrounds/spacestation_up.swf"/>
+    <asset id="100871" path="assets/backgrounds/spacestation_down.swf"/>
+    <asset id="100936" path="assets/backgrounds/spacestation_multi.swf"/>
+    <asset id="100937" path="assets/backgrounds/castle_multi.swf"/>
+    <asset id="100939" path="assets/backgrounds/castle_right.swf"/>
+    <asset id="100938" path="assets/backgrounds/castle_left.swf"/>
+    <asset id="101678" path="assets/backgrounds/secrethome.swf"/>
+    <asset id="101679" path="assets/backgrounds/igloohome.swf"/>
+    <asset id="101971" path="assets/backgrounds/loft.swf"/>
+    <asset id="102101" path="assets/backgrounds/footballhouse.swf"/>
+    <asset id="102147" path="assets/backgrounds/footballhouse.swf"/>
+    <asset id="102305" path="assets/backgrounds/treehouse_forest.swf"/>
+    <asset id="102337" path="assets/backgrounds/treehouse_beach.swf"/>
+    <asset id="102338" path="assets/backgrounds/treehouse_sweets.swf"/>
+    <asset id="102366" path="assets/backgrounds/treehouseBeach.swf"/>
+    <asset id="103150" path="assets/backgrounds/treehouseUC.swf"/>
+    <asset id="103199" path="assets/backgrounds/old_treehouse.swf"/>
+    <asset id="103343" path="assets/backgrounds/penthouse.swf"/>
+    <asset id="103897" path="assets/backgrounds/treehouse_sweets.swf"/>
+    <asset id="103961" path="assets/backgrounds/hauntedhouse.swf"/>
+    <asset id="104394" path="assets/backgrounds/pirateShip.swf"/>
+    <asset id="104464" path="assets/backgrounds/winterTreehouse.swf"/>
+    <asset id="furnitureItem3D" path="assets/furniture/FurnitureItem3D_$$0$$.swf"/>
+    <asset id="furnitureInventory" path="assets/furniture_icons/FurnitureInventory_$$0$$.swf"/>
+    <asset id="water" path="assets/backgrounds/water.swf"/>
+    <asset id="bollyDenying" path="assets/bollies/bollyDenying.swf"/>
+    <asset id="bollyNormal" path="assets/bollies/bollyNormal.swf"/>
+    <asset id="bollySleeping" path="assets/bollies/bollySleeping.swf"/>
+    <asset id="bollyBubbles" path="assets/bollies/playing/bollyBubbles.swf"/>
+    <asset id="bollyJuggle" path="assets/bollies/playing/bollyJuggle.swf"/>
+    <asset id="bollyRocket" path="assets/bollies/playing/bollyRocket.swf"/>
+    <asset id="bollyCombing" path="assets/bollies/idle/bollyCombing.swf"/>
+    <asset id="bollyDreaming" path="assets/bollies/idle/bollyDreaming.swf"/>
+    <asset id="bollyEaster" path="assets/bollies/idle/bollyEaster.swf"/>
+    <asset id="bollyTiger" path="assets/bollies/idle/bollyTiger.swf"/>
+    <asset id="bollyGold" path="assets/bollies/idle/bollyGold.swf"/>
+    <asset id="bollyEaster09" path="assets/bollies/idle/bollyEaster09.swf"/>
+    <asset id="bollyFlying" path="assets/bollies/idle/bollyFlying.swf"/>
+    <asset id="bollyRelaxing" path="assets/bollies/idle/bollyRelaxing.swf"/>
+    <asset id="bollyRunning" path="assets/bollies/idle/bollyRunning.swf"/>
+    <asset id="bollyFood" path="assets/bollies/eating/bollyFood.swf"/>
+    <asset id="woobyColorfulNormal" path="assets/bollies/idle/woobyColorfulNormal.swf"/>
+    <asset id="woobyColorfulBubbles" path="assets/bollies/playing/woobyColorfulBubbles.swf"/>
+    <asset id="woobyColorfulSleeping" path="assets/bollies/woobyColorfulSleeping.swf"/>
+    <asset id="woobyColorfulDenying" path="assets/bollies/woobyColorfulDenying.swf"/>
+    <asset id="woobyColorfulEating" path="assets/bollies/woobyColorfulEating.swf"/>
+    <asset id="woobyOrangeNormal" path="assets/bollies/woobyOrangeNormal.swf"/>
+    <asset id="woobyOrangeBubbles" path="assets/bollies/woobyOrangeBubbles.swf"/>
+    <asset id="woobyOrangeSleeping" path="assets/bollies/woobyOrangeSleeping.swf"/>
+    <asset id="woobyOrangeDenying" path="assets/bollies/woobyOrangeDenying.swf"/>
+    <asset id="woobyOrangeEating" path="assets/bollies/woobyOrangeEating.swf"/>
+    <asset id="woobyGreenNormal" path="assets/bollies/woobyGreenNormal.swf"/>
+    <asset id="woobyGreenBubbles" path="assets/bollies/woobyGreenBubbles.swf"/>
+    <asset id="woobyGreenSleeping" path="assets/bollies/woobyGreenSleeping.swf"/>
+    <asset id="woobyGreenDenying" path="assets/bollies/woobyGreenDenying.swf"/>
+    <asset id="woobyGreenEating" path="assets/bollies/woobyGreenEating.swf"/>
+    <asset id="woobyHeartNormal" path="assets/bollies/woobyHeartNormal.swf"/>
+    <asset id="woobyHeartPlaying" path="assets/bollies/woobyHeartPlaying.swf"/>
+    <asset id="woobyHeartSleeping" path="assets/bollies/woobyHeartSleeping.swf"/>
+    <asset id="woobyHeartDenying" path="assets/bollies/woobyHeartDenying.swf"/>
+    <asset id="woobyHeartEating" path="assets/bollies/woobyHeartEating.swf"/>
+    <asset id="woobyEasterIdle" path="assets/bollies/woobyEasterIdle.swf"/>
+    <asset id="woobyEasterClean" path="assets/bollies/woobyEasterClean.swf"/>
+    <asset id="woobyEasterSleeping" path="assets/bollies/woobyEasterSleeping.swf"/>
+    <asset id="woobyEasterPlaying" path="assets/bollies/woobyEasterPlaying.swf"/>
+    <asset id="woobyEasterFood" path="assets/bollies/woobyEasterFood.swf"/>
+    <asset id="woobyEasterDenying" path="assets/bollies/woobyEasterDenying.swf"/>
+    <asset id="woobyBlueNormal" path="assets/bollies/woobyBlueNormal.swf"/>
+    <asset id="woobyBlueClean" path="assets/bollies/woobyBlueClean.swf"/>
+    <asset id="woobyBlueSleeping" path="assets/bollies/woobyBlueSleeping.swf"/>
+    <asset id="woobyBlueEating" path="assets/bollies/woobyBlueEating.swf"/>
+    <asset id="woobyBlueDenying" path="assets/bollies/woobyBlueDenying.swf"/>
+    <asset id="turtleIdle" preload="0" path="assets/pokopets/turtle/turtleIdle.swf"/>
+    <asset id="turtleTrick" preload="0" path="assets/pokopets/turtle/turtleTrick.swf"/>
+    <asset id="turtleEating" preload="0" path="assets/pokopets/turtle/turtleEating.swf"/>
+    <asset id="turtlePissed" preload="0" path="assets/pokopets/turtle/turtlePissed.swf"/>
+    <asset id="hedgehogIdle" preload="0" path="assets/pokopets/hedgehog/hedgehogIdle.swf"/>
+    <asset id="hedgehogTrick" preload="0" path="assets/pokopets/hedgehog/hedgehogTrick.swf"/>
+    <asset id="hedgehogEating" preload="0" path="assets/pokopets/hedgehog/hedgehogEating.swf"/>
+    <asset id="hedgehogPissed" preload="0" path="assets/pokopets/hedgehog/hedgehogPissed.swf"/>
+    <asset id="foxIdle" preload="0" path="assets/pokopets/fox/foxIdle.swf"/>
+    <asset id="foxTrick" preload="0" path="assets/pokopets/fox/foxTrick.swf"/>
+    <asset id="foxEating" preload="0" path="assets/pokopets/fox/foxEating.swf"/>
+    <asset id="foxPissed" preload="0" path="assets/pokopets/fox/foxPissed.swf"/>
+    <asset id="blueDragonIdle" preload="0" path="assets/pokopets/blueDragon/blueDragonIdle.swf"/>
+    <asset id="blueDragonTrick" preload="0" path="assets/pokopets/blueDragon/blueDragonTrick.swf"/>
+    <asset id="blueDragonEating" preload="0" path="assets/pokopets/blueDragon/blueDragonEating.swf"/>
+    <asset id="blueDragonPissed" preload="0" path="assets/pokopets/blueDragon/blueDragonPissed.swf"/>
+    <asset id="birdIdle" preload="0" path="assets/pokopets/paradiseBird/birdIdle.swf"/>
+    <asset id="birdTrick" preload="0" path="assets/pokopets/paradiseBird/birdTrick.swf"/>
+    <asset id="birdEating" preload="0" path="assets/pokopets/paradiseBird/birdEating.swf"/>
+    <asset id="birdPissed" preload="0" path="assets/pokopets/paradiseBird/birdPissed.swf"/>
+    <asset id="torkIdle" preload="0" path="assets/pokopets/tork/torkIdle.swf"/>
+    <asset id="torkTrick" preload="0" path="assets/pokopets/tork/torkTrick.swf"/>
+    <asset id="torkEating" preload="0" path="assets/pokopets/tork/torkEating.swf"/>
+    <asset id="torkPissed" preload="0" path="assets/pokopets/tork/torkPissed.swf"/>
+    <asset id="bugsyIdle" preload="0" path="assets/pokopets/bugsy/bugsyIdle.swf"/>
+    <asset id="bugsyTrick" preload="0" path="assets/pokopets/bugsy/bugsyTrick.swf"/>
+    <asset id="bugsyEating" preload="0" path="assets/pokopets/bugsy/bugsyEating.swf"/>
+    <asset id="bugsyPissed" preload="0" path="assets/pokopets/bugsy/bugsyPissed.swf"/>
+    <asset id="pingooIdle" preload="0" path="assets/pokopets/pingoo/pingooIdle.swf"/>
+    <asset id="pingooTrick" preload="0" path="assets/pokopets/pingoo/pingooTrick.swf"/>
+    <asset id="pingooEating" preload="0" path="assets/pokopets/pingoo/pingooEating.swf"/>
+    <asset id="pingooPissed" preload="0" path="assets/pokopets/pingoo/pingooPissed.swf"/>
+    <asset id="marietaIdle" preload="0" path="assets/pokopets/marieta/marietaIdle.swf"/>
+    <asset id="marietaTrick" preload="0" path="assets/pokopets/marieta/marietaTrick.swf"/>
+    <asset id="marietaEating" preload="0" path="assets/pokopets/marieta/marietaEating.swf"/>
+    <asset id="marietaDenying" preload="0" path="assets/pokopets/marieta/marietaDenying.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="jukebox" path="audio/jukebox/$$id$$.mp3" volume="0.4" loops="-1"/>
+    <sound id="machine" path="audio/jukebox/machine.mp3"/>
+    <sound id="musicbox" volume="1" path="audio/musicbox_overtherainbow.mp3" loops="0"/>
+    <sound id="babycrib" volume="1" path="audio/SFX_Babybed_lullaby_3.mp3" loops="0"/>
+    <sound id="squirt" volume="1" path="audio/SFX_Squirt_01.mp3" loops="0"/>
+    <sound id="bubble" volume="1" path="audio/SFX_LEVEL_56_BUBBLE_01.mp3" loops="0"/>
+    <sound id="cash_register" volume="1" path="audio/cash_register.mp3" loops="0"/>
+    <sound id="light_switch" volume="1" path="audio/SFX_lightswitch.mp3" loops="0"/>
+    <sound id="racoon" volume="1" path="audio/SFX_munching_racoon.mp3" loops="0"/>
+    <sound id="recycling" volume="1" path="audio/Recylcling_machine_1_Lower.mp3" loops="0"/>
+    <sound id="giantteddy" volume="1" path="audio/SFX_bear_1.mp3" loops="0"/>
+    <sound id="drumset" volume="1" path="audio/drum_set.mp3" loops="0"/>
+    <sound id="jack" volume="1" path="audio/Jack_in_a_box_2.mp3" loops="1"/>
+    <sound id="rubberDuck" volume="1" path="audio/rubberDuck.mp3" loops="1"/>
+    <sound id="toyCar" volume="1" path="audio/toycar.mp3" loops="1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+    <sound id="parrot" volume="1" path="audio/parrot.mp3" loops="1"/>
+    <sound id="shark" volume="1" path="audio/shark.mp3" loops="1"/>
+    <sound id="hoop" volume="1" path="audio/hoop.mp3" loops="1"/>
+    <sound id="lights" volume="1" path="audio/lights.mp3" loops="1"/>
+    <sound id="alarmclock" volume="1" path="audio/alarmclock.mp3" loops="1"/>
+    <sound id="alienradio" volume="1" path="audio/alienradio.mp3" loops="1"/>
+    <sound id="beam" volume="1" path="audio/beam.mp3" loops="1"/>
+    <sound id="alienpod" volume="1" path="audio/alienpod.mp3" loops="1"/>
+    <sound id="claw" volume="1" path="audio/claw.mp3" loops="-1"/>
+    <sound id="radio" volume="1" path="audio/radio.mp3" loops="-1"/>
+    <sound id="oven" volume="1" path="audio/oven.mp3" loops="-1"/>
+    <sound id="dragon" volume="1" path="audio/dragon.mp3" loops="0"/>
+    <sound id="fire" volume="1" path="audio/fire.mp3" loops="-1"/>
+    <sound id="fireplace" volume="1" path="audio/fireplace.mp3" loops="0"/>
+    <sound id="snowGlobe" volume="1" path="audio/snowglobe.mp3" loops="0"/>
+    <sound id="mistletoe" volume="1" path="audio/mistletoe.mp3" loops="0"/>
+    <sound id="santaLamp" volume="1" path="audio/santaLamp.mp3" loops="0"/>
+    <sound id="bell" volume="1" path="audio/bell.mp3" loops="0"/>
+    <sound id="clown" volume="1" path="audio/clown.mp3" loops="0"/>
+    <sound id="monkey" volume="1" path="audio/monkey.mp3" loops="0"/>
+    <sound id="snowcannon" volume="1" path="audio/snowcannon.mp3" loops="0"/>
+    <sound id="rocket" volume="1" path="audio/rocket.mp3" loops="0"/>
+    <sound id="grammophone" volume="1" path="audio/grammophone.mp3" loops="0"/>
+    <sound id="piggy" volume="1" path="audio/piggy.mp3" loops="0"/>
+    <sound id="door" volume="1" path="audio/door.mp3" loops="0"/>
+    <sound id="genie" volume="1" path="audio/genie.mp3" loops="0"/>
+    <sound id="ducky" volume="1" path="audio/ducky.mp3" loops="0"/>
+    <sound id="winteregg" volume="1" path="audio/winteregg.mp3" loops="0"/>
+    <sound id="fishing" volume="1" path="audio/fishing.mp3" loops="0"/>
+    <sound id="eifel" volume="1" path="audio/eifel.mp3" loops="0"/>
+    <sound id="sphinx" volume="1" path="audio/sphinx.mp3" loops="0"/>
+    <sound id="pisa" volume="1" path="audio/pisa.mp3" loops="0"/>
+    <sound id="saxo" volume="1" path="audio/saxo.mp3" loops="0"/>
+    <sound id="guitar" volume="1" path="audio/guitar.mp3" loops="0"/>
+    <sound id="harp" volume="1" path="audio/harp.mp3" loops="0"/>
+    <sound id="piano" volume="1" path="audio/piano.mp3" loops="0"/>
+    <sound id="bufallo" volume="1" path="audio/bufallo.mp3" loops="0"/>
+    <sound id="poker" volume="1" path="audio/poker.mp3" loops="0"/>
+    <sound id="tipi" volume="1" path="audio/tipi.mp3" loops="0"/>
+    <sound id="totem" volume="1" path="audio/totem.mp3" loops="0"/>
+    <sound id="cookie" volume="1" path="audio/cookie.mp3" loops="0"/>
+    <sound id="bonsai" volume="1" path="audio/bonsai.mp3" loops="0"/>
+    <sound id="lamp" volume="1" path="audio/lamp.mp3" loops="0"/>
+    <sound id="heart" volume="1" path="audio/heart.mp3" loops="0"/>
+    <sound id="elephant" volume="1" path="audio/elephant.mp3" loops="0"/>
+    <sound id="crab" volume="1" path="audio/crab.mp3" loops="0"/>
+    <sound id="pearl" volume="1" path="audio/pearl.mp3" loops="0"/>
+    <sound id="seahorse" volume="1" path="audio/seahorse.mp3" loops="-1"/>
+    <sound id="ra" volume="1" path="audio/ra.mp3" loops="0"/>
+    <sound id="mummy" volume="1" path="audio/mummy.mp3" loops="0"/>
+    <sound id="hippo" volume="1" path="audio/hippo.mp3" loops="0"/>
+    <sound id="spider" volume="1" path="audio/spider.mp3" loops="0"/>
+    <sound id="paint" volume="1" path="audio/paint.mp3" loops="0"/>
+    <sound id="bed" volume="1" path="audio/bed.mp3" loops="0"/>
+    <sound id="knight" volume="1" path="audio/knight.mp3" loops="0"/>
+    <sound id="gravity" volume="1" path="audio/gravity.mp3" loops="-1"/>
+    <sound id="flower" volume="1" path="audio/flower.mp3" loops="-1"/>
+    <sound id="elephant2" volume="1" path="audio/elephant2.mp3" loops="0"/>
+    <sound id="monkey2" volume="1" path="audio/monkey2.mp3" loops="0"/>
+    <sound id="snake" volume="1" path="audio/snake.mp3" loops="0"/>
+    <sound id="twitter" volume="1" path="audio/twitter.mp3" loops="0"/>
+    <sound id="buglamp" volume="1" path="audio/buglamp.mp3" loops="0"/>
+    <sound id="ufo" volume="1" path="audio/ufo.mp3" loops="-1"/>
+    <sound id="eggcooker" volume="1" path="audio/eggcooker.mp3" loops="-1"/>
+    <sound id="babyChicken" volume="1" path="audio/babyChicken.mp3" loops="0"/>
+    <sound id="banner" volume="1" path="audio/banner.mp3" loops="0"/>
+    <sound id="antenna" volume="1" path="audio/antenna.mp3" loops="-1"/>
+    <sound id="window" volume="1" path="audio/window.mp3" loops="0"/>
+    <sound id="schrank" volume="1" path="audio/schrank.mp3" loops="0"/>
+    <sound id="telephone" volume="1" path="audio/telephone.mp3" loops="0"/>
+    <sound id="teddy" volume="1" path="audio/teddy.mp3" loops="0"/>
+    <sound id="window2" volume="1" path="audio/window2.mp3" loops="0"/>
+    <sound id="wale" volume="1" path="audio/wale.mp3" loops="0"/>
+    <sound id="trampolin" volume="1" path="audio/trampolin.mp3" loops="0"/>
+    <sound id="monster" volume="1" path="audio/monster.mp3" loops="0"/>
+    <sound id="monsterSofa" volume="1" path="audio/monsterSofa.mp3" loops="0"/>
+    <sound id="washingmachine" volume="1" path="audio/washingmachine.mp3" loops="0"/>
+    <sound id="floatingPalm" volume="1" path="audio/floatingPalm.mp3" loops="0"/>
+    <sound id="hammerGame" volume="1" path="audio/hammerGame.mp3" loops="0"/>
+    <sound id="waterballoonClown" volume="1" path="audio/waterballoonClown.mp3" loops="0"/>
+    <sound id="lighthouse" volume="1" path="audio/lighthouse.mp3" loops="0"/>
+    <sound id="toilet" volume="1" path="audio/toilet.mp3" loops="0"/>
+    <sound id="ballgame1" volume="1" path="audio/ballgame1.mp3" loops="0"/>
+    <sound id="ballgame2" volume="1" path="audio/ballgame2.mp3" loops="0"/>
+    <sound id="ballgame3" volume="1" path="audio/ballgame3.mp3" loops="0"/>
+    <sound id="hydrant" volume="1" path="audio/hydrant.mp3" loops="0"/>
+    <sound id="drums" volume="1" path="audio/drums.mp3" loops="0"/>
+    <sound id="guitar2" volume="1" path="audio/guitar2.mp3" loops="0"/>
+    <sound id="hifi" volume="1" path="audio/hifi.mp3" loops="0"/>
+    <sound id="vinyl" volume="1" path="audio/vinyl.mp3" loops="0"/>
+    <sound id="throw1" volume="1" path="audio/throw1.mp3" loops="0"/>
+    <sound id="throw2" volume="1" path="audio/throw2.mp3" loops="0"/>
+    <sound id="throw3" volume="1" path="audio/throw3.mp3" loops="0"/>
+    <sound id="flags" volume="1" path="audio/flags.mp3" loops="0"/>
+    <sound id="dwarf" volume="1" path="audio/dwarf.mp3" loops="0"/>
+    <sound id="goldChicken" volume="1" path="audio/goldChicken.mp3" loops="0"/>
+    <sound id="soccer" volume="1" path="audio/soccer.mp3" loops="0"/>
+    <sound id="vuvuzela" volume="1" path="audio/vuvuzela.mp3" loops="0"/>
+    <sound id="goldFrog" volume="1" path="audio/goldFrog.mp3" loops="0"/>
+    <sound id="mirrorForglove" volume="1" path="audio/mirrorForglove.mp3" loops="0"/>
+    <sound id="trophy" volume="1" path="audio/trophy.mp3" loops="0"/>
+    <sound id="cauldron" volume="1" path="audio/cauldron.mp3" loops="0"/>
+    <sound id="campfire" volume="1" path="audio/campfire.mp3" loops="0"/>
+    <sound id="bdayCake" volume="1" path="audio/bdayCake.mp3" loops="0"/>
+    <sound id="beeHive1" volume="1" path="audio/beeHive1.mp3" loops="0"/>
+    <sound id="beeHive2" volume="1" path="audio/beeHive2.mp3" loops="0"/>
+    <sound id="flyingBee" volume="1" path="audio/flyingBee.mp3" loops="0"/>
+    <sound id="owl" volume="1" path="audio/owl.mp3" loops="0"/>
+    <sound id="rockingPig" volume="1" path="audio/rockingPig.mp3" loops="0"/>
+    <sound id="olympicFire" volume="1" path="audio/olympicFire.mp3" loops="0"/>
+    <sound id="icelamp" volume="1" path="audio/icelamp.mp3" loops="0"/>
+    <sound id="laurelWreath" volume="1" path="audio/laurelWreath.mp3" loops="0"/>
+    <sound id="venusTrap" volume="1" path="audio/venusTrap.mp3" loops="0"/>
+    <sound id="mouse" volume="1" path="audio/mouse.mp3" loops="0"/>
+    <sound id="waterfall" volume="1" path="audio/waterfall.mp3" loops="0"/>
+    <sound id="radio2" volume="1" path="audio/radio2.mp3" loops="0"/>
+    <sound id="microwave" volume="1" path="audio/microwave.mp3" loops="0"/>
+    <sound id="swingingMonkey" volume="1" path="audio/swingingMonkey.mp3" loops="0"/>
+    <sound id="mixer" volume="1" path="audio/mixer.mp3" loops="0"/>
+    <sound id="candyLight" volume="1" path="audio/candyLight.mp3" loops="0"/>
+    <sound id="candyShower" volume="1" path="audio/candyShower.mp3" loops="0"/>
+    <sound id="magicHat" volume="1" path="audio/magicHat.mp3" loops="0"/>
+    <sound id="toaster" volume="1" path="audio/toaster.mp3" loops="0"/>
+    <sound id="crystalBall" volume="1" path="audio/crystalBall.mp3" loops="0"/>
+    <sound id="magicDove" volume="1" path="audio/magicDove.mp3" loops="0"/>
+    <sound id="bendingSpoon" volume="1" path="audio/bendingSpoon.mp3" loops="0"/>
+    <sound id="coffeeMaker" volume="1" path="audio/coffeeMaker.mp3" loops="0"/>
+    <sound id="lightTower" volume="1" path="audio/lightTower.mp3" loops="0"/>
+    <sound id="windowKite" volume="1" path="audio/windowKite.mp3" loops="0"/>
+    <sound id="broom" volume="1" path="audio/broom.mp3" loops="0"/>
+    <sound id="autumnWindow" volume="1" path="audio/autumnWindow.mp3" loops="0"/>
+    <sound id="autumnTree" volume="1" path="audio/autumnTree.mp3" loops="0"/>
+    <sound id="autumnCloud" volume="1" path="audio/autumnCloud.mp3" loops="0"/>
+    <sound id="jumpingJack" volume="1" path="audio/jumpingJack.mp3" loops="0"/>
+    <sound id="hedgehog" volume="1" path="audio/hedgehog.mp3" loops="0"/>
+    <sound id="autumnLamp" volume="1" path="audio/autumnLamp.mp3" loops="0"/>
+    <sound id="scottishDog" volume="1" path="audio/scottishDog.mp3" loops="0"/>
+    <sound id="bat" volume="1" path="audio/bat.mp3" loops="0"/>
+    <sound id="werewolf" volume="1" path="audio/werewolf.mp3" loops="0"/>
+    <sound id="ghost" volume="1" path="audio/ghost.mp3" loops="0"/>
+    <sound id="pumpkin" volume="1" path="audio/pumpkin.mp3" loops="0"/>
+    <sound id="skelett" volume="1" path="audio/skelett.mp3" loops="0"/>
+    <sound id="blackCat" volume="1" path="audio/blackCat.mp3" loops="0"/>
+    <sound id="lochNess" volume="1" path="audio/lochNess.mp3" loops="0"/>
+    <sound id="bagPipe" volume="1" path="audio/bagPipe.mp3" loops="0"/>
+    <sound id="officeLamp" volume="1" path="audio/officeLamp.mp3" loops="0"/>
+    <sound id="officePrinter" volume="1" path="audio/officePrinter.mp3" loops="0"/>
+    <sound id="monsterHand" volume="1" path="audio/monsterHand.mp3" loops="0"/>
+    <sound id="magicBook" volume="1" path="audio/magicBook.mp3" loops="0"/>
+    <sound id="miniRobot" volume="1" path="audio/miniRobot.mp3" loops="0"/>
+    <sound id="emoRadio" volume="1" path="audio/emoRadio.mp3" loops="0"/>
+    <sound id="merlinStaff" volume="1" path="audio/merlinStaff.mp3" loops="0"/>
+    <sound id="skullLight" volume="1" path="audio/skullLight.mp3" loops="0"/>
+    <sound id="advent2012Fireplace" volume="1" path="audio/advent2012Fireplace.mp3" loops="0"/>
+    <sound id="advent2012SnowGlobe" volume="1" path="audio/advent2012SnowGlobe.mp3" loops="0"/>
+    <sound id="advent2012WinterWindow" volume="1" path="audio/advent2012WinterWindow.mp3" loops="0"/>
+    <sound id="advent2012ChristmasBear" volume="1" path="audio/advent2012ChristmasBear.mp3" loops="0"/>
+    <sound id="advent2012ChristmasLamp" volume="1" path="audio/advent2012ChristmasLamp.mp3" loops="0"/>
+    <sound id="magicHat2" volume="1" path="audio/magicHat2.mp3" loops="0"/>
+    <sound id="magicShelf" volume="1" path="audio/magicShelf.mp3" loops="0"/>
+    <sound id="winterCloud" volume="1" path="audio/winterCloud.mp3" loops="-1"/>
+    <sound id="penguin" volume="1" path="audio/penguin.mp3" loops="0"/>
+    <sound id="blockingArea" volume="1" path="audio/blockingArea.mp3" loops="0"/>
+    <sound id="jackhammer" volume="1" path="audio/jackhammer.mp3" loops="0"/>
+    <sound id="indianDrums" volume="1" path="audio/indianDrums.mp3" loops="0"/>
+    <sound id="indianWindow" volume="1" path="audio/indianWindow.mp3" loops="0"/>
+    <sound id="woodSaw" volume="1" path="audio/woodSaw.mp3" loops="0"/>
+    <sound id="pterodactyl" volume="1" path="audio/pterodactyl.mp3" loops="0"/>
+    <sound id="lavaPot" volume="1" path="audio/lavaPot.mp3" loops="0"/>
+    <sound id="fireKettle" volume="1" path="audio/fireKettle.mp3" loops="0"/>
+    <sound id="mammoth" volume="1" path="audio/mammoth.mp3" loops="0"/>
+    <sound id="gumballMachine" volume="1" path="audio/gumballMachine.mp3" loops="0"/>
+    <sound id="cottonCandy" volume="1" path="audio/cottonCandy.mp3" loops="0"/>
+    <sound id="popcornMachine" volume="1" path="audio/popcornMachine.mp3" loops="0"/>
+    <sound id="slushieMachine" volume="1" path="audio/slushieMachine.mp3" loops="0"/>
+    <sound id="forceField" volume="1" path="audio/forceField.mp3" loops="0"/>
+    <sound id="easterChick" volume="1" path="audio/easterChick.mp3" loops="0"/>
+    <sound id="sneezingFlower" volume="1" path="audio/sneezingFlower.mp3" loops="0"/>
+    <sound id="farmanimalPig" volume="1" path="audio/farmanimalPig.mp3" loops="0"/>
+    <sound id="windChimes" volume="1" path="audio/windChimes.mp3" loops="0"/>
+    <sound id="birdHouse" volume="1" path="audio/birdHouse.mp3" loops="0"/>
+    <sound id="firefighterLight" volume="1" path="audio/firefighterLight.mp3" loops="0"/>
+    <sound id="XRay" volume="1" path="audio/XRay.mp3" loops="0"/>
+    <sound id="farmanimalGoat" volume="1" path="audio/farmanimalGoat.mp3" loops="0"/>
+    <sound id="farmanimalChicken" volume="1" path="audio/farmanimalChicken.mp3" loops="0"/>
+    <sound id="grafittiBrickWall" volume="1" path="audio/grafittiBrickWall.mp3" loops="0"/>
+    <sound id="grafittiNeonLight" volume="1" path="audio/grafittiNeonLight.mp3" loops="0"/>
+    <sound id="grafittiBlaster" volume="1" path="audio/grafittiBlaster.mp3" loops="0"/>
+    <sound id="farmanimalSheep" volume="1" path="audio/farmanimalSheep.mp3" loops="0"/>
+    <sound id="rareFan" volume="1" path="audio/rareFan.mp3" loops="0"/>
+    <sound id="raceToy" volume="1" path="audio/raceToy.mp3" loops="0"/>
+    <sound id="cameraStand" volume="1" path="audio/cameraStand.mp3" loops="0"/>
+    <sound id="foosballTable" volume="1" path="audio/foosballTable.mp3" loops="0"/>
+    <sound id="poolTable" volume="1" path="audio/poolTable.mp3" loops="0"/>
+    <sound id="tableTennis" volume="1" path="audio/tableTennis.mp3" loops="0"/>
+    <sound id="airHockey" volume="1" path="audio/airHockey.mp3" loops="0"/>
+    <sound id="oven2" volume="1" path="audio/oven2.mp3" loops="0"/>
+    <sound id="eggPan" volume="1" path="audio/eggPan.mp3" loops="0"/>
+    <sound id="pastaPot" volume="1" path="audio/pastaPot.mp3" loops="0"/>
+    <sound id="waterBlaster" volume="1" path="audio/waterBlaster.mp3" loops="0"/>
+    <sound id="sprayCan" volume="1" path="audio/sprayCan.mp3" loops="0"/>
+    <sound id="robot2" volume="1" path="audio/robot2.mp3" loops="0"/>
+    <sound id="teeBall" volume="1" path="audio/teeBall.mp3" loops="0"/>
+    <sound id="carrotCuttingBoard" volume="1" path="audio/carrotCuttingBoard.mp3" loops="0"/>
+    <sound id="tomatoSoup" volume="1" path="audio/tomatoSoup.mp3" loops="0"/>
+    <sound id="paddleBall" volume="1" path="audio/paddleBall.mp3" loops="0"/>
+    <sound id="pieLauncher" volume="1" path="audio/pieLauncher.mp3" loops="0"/>
+    <sound id="circusMonkey" volume="1" path="audio/circusMonkey.mp3" loops="0"/>
+    <sound id="musicBook" volume="1" path="audio/musicBook.mp3" loops="0"/>
+    <sound id="colaMachine" volume="1" path="audio/colaMachine.mp3" loops="0"/>
+    <sound id="officeGolf" volume="1" path="audio/officeGolf.mp3" loops="0"/>
+    <sound id="oldRecordPlayer" volume="1" path="audio/oldRecordPlayer.mp3" loops="0"/>
+    <sound id="scissors" volume="1" path="audio/scissors.mp3" loops="0"/>
+    <sound id="trumpet" volume="1" path="audio/trumpet.mp3" loops="0"/>
+    <sound id="duck" volume="1" path="audio/duck.mp3" loops="0"/>
+  </sounds>
+  <dates/>
+  <modes>
+    <mode id="dev" backend="mockup"/>
+    <mode id="live" backend="backend"/>
+  </modes>
+  <module>
+    <items>
+      <item id="birthday_cake" itemID="100478"/>
+      <item id="remove_birthday_cake">
+        <require itemID="100478"/>
+        <remove itemID="100478"/>
+      </item>
+    </items>
+    <actions>
+      <action id="onHomeSlideHotSpot">
+        <message value="showSlideHomeAnimation" type="room"/>
+      </action>
+    </actions>
+    <sceneries>
+      <scenery id="100" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="370" y="200" rad="30"/>
+        </hotspots>
+      </scenery>
+      <scenery id="101" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="380" y="290" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="102" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="420" y="230" rad="45"/>
+        </hotspots>
+      </scenery>
+      <scenery id="103" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="500" y="220" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="104" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="120" y="320" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="105" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="570" y="150" rad="100"/>
+        </hotspots>
+      </scenery>
+      <scenery id="106" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="380" y="210" rad="30"/>
+        </hotspots>
+      </scenery>
+      <scenery id="100936" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="380" y="160" rad="80"/>
+          <hotspot id="spacestation_up" target="100870" type="subroom" x="11" y="347" rad="97"/>
+          <hotspot id="spacestation_down" target="100871" type="subroom" x="736" y="334" rad="90"/>
+        </hotspots>
+      </scenery>
+      <scenery id="100870" x="50" y="40" w="670" h="390" type="subroom">
+        <hotspots>
+          <hotspot id="door" target="100936" type="mainroom" x="31" y="331" rad="92"/>
+        </hotspots>
+      </scenery>
+      <scenery id="100871" x="50" y="40" w="670" h="390" type="subroom">
+        <hotspots>
+          <hotspot id="door" target="100936" type="mainroom" x="750" y="322" rad="102"/>
+        </hotspots>
+      </scenery>
+      <scenery id="100937" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="370" y="160" rad="80"/>
+          <hotspot id="door_left" target="100938" type="subroom" x="47" y="290" rad="60"/>
+          <hotspot id="door_right" target="100939" type="subroom" x="684" y="316" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="100938" x="50" y="40" w="670" h="390" type="subroom">
+        <hotspots>
+          <hotspot id="door" target="100937" type="mainroom" x="700" y="271" rad="80"/>
+        </hotspots>
+      </scenery>
+      <scenery id="100939" x="50" y="40" w="670" h="390" type="subroom">
+        <hotspots>
+          <hotspot id="door" target="100937" type="mainroom" x="63" y="311" rad="30"/>
+        </hotspots>
+      </scenery>
+      <scenery id="107" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="60" y="300" rad="45"/>
+        </hotspots>
+      </scenery>
+      <scenery id="108" x="50" y="100" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="380" y="235" rad="45"/>
+        </hotspots>
+      </scenery>
+      <scenery id="100394" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot target="-1" type="room" x="445" y="210" rad="55" anlge="35"/>
+        </hotspots>
+      </scenery>
+      <scenery id="100623" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="671" y="404" rad="30"/>
+        </hotspots>
+      </scenery>
+      <scenery id="101678" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="390" y="210" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="101679" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="700" y="150" rad="30"/>
+        </hotspots>
+      </scenery>
+      <scenery id="101971" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="665" y="200" rad="80"/>
+          <hotspot target="" type="action" x="544" y="201" rad="30" user="1">
+            <checks>
+              <target value="onHomeSlideHotSpot"/>
+            </checks>
+          </hotspot>
+        </hotspots>
+      </scenery>
+      <scenery id="102101" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="392" y="264" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="102147" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="392" y="264" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="102305" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="329" y="205" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="102337" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="523" y="271" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="102338" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="384" y="270" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="103897" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="384" y="270" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="102366" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="382" y="261" rad="50"/>
+        </hotspots>
+      </scenery>
+      <scenery id="103199" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="385" y="260" rad="30"/>
+        </hotspots>
+      </scenery>
+      <scenery id="103343" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="70" y="375" rad="30"/>
+        </hotspots>
+      </scenery>
+      <scenery id="103961" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="380" y="210" rad="30"/>
+        </hotspots>
+      </scenery>
+      <scenery id="104394" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="245" y="200" rad="30"/>
+        </hotspots>
+      </scenery>
+      <scenery id="104464" x="50" y="40" w="670" h="390">
+        <hotspots>
+          <hotspot id="door" target="-1" type="room" x="245" y="200" rad="30"/>
+        </hotspots>
+      </scenery>
+    </sceneries>
+    <elements>
+      <element type="door" button="1" visible="1">
+        <button type="loop"/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element type="spacestation_up" button="1" visible="1">
+        <button type="loop"/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="spacestation_up"/>
+        </message>
+      </element>
+      <element type="spacestation_down" button="1" visible="1">
+        <button type="loop"/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="spacestation_down"/>
+        </message>
+      </element>
+      <element type="door_left" button="1" visible="1">
+        <button type="loop"/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door_left"/>
+        </message>
+      </element>
+      <element type="door_right" button="1" visible="1">
+        <button type="loop"/>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door_right"/>
+        </message>
+      </element>
+      <element id="background"/>
+      <element id="walkarea"/>
+      <element id="jukebox" button="1" visible="1">
+        <button type="click" click="onClick"/>
+      </element>
+      <element id="party_jukebox" button="1" visible="1">
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="onClick"/>
+      </element>
+    </elements>
+    <specials>
+      <special id="13061" event="jukebox" owner="1" premium="0"/>
+      <special id="101929" event="party_jukebox" owner="1" premium="0"/>
+      <special id="103298" event="singletrack" owner="1" premium="0" track="musicbox"/>
+      <special id="103308" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="3" id="squirt"/>
+        </tracks>
+      </special>
+      <special id="103337" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="cash_register"/>
+        </tracks>
+      </special>
+      <special id="103324" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="1" id="bubble"/>
+        </tracks>
+      </special>
+      <special id="103310" event="singletrack" owner="1" premium="0" track="babycrib"/>
+      <special id="103369" event="toggle" owner="1" premium="0"/>
+      <special id="103386" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="squirt"/>
+        </tracks>
+      </special>
+      <special id="103387" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="light_switch"/>
+        </tracks>
+      </special>
+      <special id="103401" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="racoon"/>
+        </tracks>
+      </special>
+      <special id="103407" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="recycling"/>
+        </tracks>
+      </special>
+      <special id="103408" event="notification" name="askJoinGame" param="6" owner="1" premium="0"/>
+      <special id="103409" event="toggle" owner="1" premium="0"/>
+      <special id="103439" event="toggle" owner="1" premium="0"/>
+      <special id="103460" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="giantteddy"/>
+        </tracks>
+      </special>
+      <special id="103461" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="drumset"/>
+        </tracks>
+      </special>
+      <special id="123" event="part" parent="122" owner="1" premium="1"/>
+      <special id="124" event="part" parent="122" owner="1" premium="1"/>
+      <special id="125" event="part" parent="122" owner="1" premium="1"/>
+      <special id="126" event="part" parent="122" owner="1" premium="1"/>
+      <special id="103473" event="toggle" owner="1" premium="0">
+        <frames>
+          <frame number="2">
+            <action type="colorTransform" redOffset="-50" greenOffset="-50" blueOffset="120"/>
+          </frame>
+        </frames>
+      </special>
+      <special id="103471" event="toggle" owner="1" premium="0">
+        <frames>
+          <frame number="2">
+            <action type="colorTransform" redOffset="80" greenOffset="-50" blueOffset="-50"/>
+          </frame>
+        </frames>
+      </special>
+      <special id="103492" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="jack"/>
+        </tracks>
+      </special>
+      <special id="103497" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="rubberDuck"/>
+        </tracks>
+      </special>
+      <special id="103506" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="toyCar"/>
+        </tracks>
+      </special>
+      <special id="103510" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="parrot"/>
+        </tracks>
+      </special>
+      <special id="103511" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="shark"/>
+        </tracks>
+      </special>
+      <special id="103554" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="hoop"/>
+        </tracks>
+      </special>
+      <special id="103556" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="lights"/>
+        </tracks>
+      </special>
+      <special id="103575" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="alarmclock"/>
+        </tracks>
+      </special>
+      <special id="103577" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="alienradio"/>
+        </tracks>
+      </special>
+      <special id="103579" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="beam"/>
+        </tracks>
+      </special>
+      <special id="103588" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="alienpod"/>
+        </tracks>
+      </special>
+      <special id="103589" event="toggle" owner="1" premium="0">
+        <tracks/>
+      </special>
+      <special id="103613" event="toggle" owner="1" premium="0">
+        <tracks/>
+      </special>
+      <special id="103615" event="toggle" owner="1" premium="0"/>
+      <special id="103617" event="toggle" owner="1" premium="0"/>
+      <special id="103618" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="claw"/>
+        </tracks>
+      </special>
+      <special id="103619" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="radio"/>
+        </tracks>
+      </special>
+      <special id="103620" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="oven"/>
+        </tracks>
+      </special>
+      <special id="103621" event="toggle" owner="1" premium="0"/>
+      <special id="103627" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="iceCream"/>
+        </tracks>
+      </special>
+      <special id="103636" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="snowLamp"/>
+        </tracks>
+      </special>
+      <special id="103640" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="snowGlobe"/>
+        </tracks>
+      </special>
+      <special id="103641" event="singletrack" owner="1" premium="0" track="mistletoe"/>
+      <special id="103634" event="singletrack" owner="1" premium="0" track="fireplace"/>
+      <special id="103646" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="snowLamp"/>
+        </tracks>
+      </special>
+      <special id="103650" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="snowGlobe"/>
+        </tracks>
+      </special>
+      <special id="103651" event="singletrack" owner="1" premium="0" track="mistletoe"/>
+      <special id="103644" event="singletrack" owner="1" premium="0" track="fireplace"/>
+      <special id="103676" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="santaLamp"/>
+        </tracks>
+      </special>
+      <special id="103686" event="singletrack" owner="1" premium="0" track="bell"/>
+      <special id="103687" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="clown"/>
+        </tracks>
+      </special>
+      <special id="103688" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="monkey"/>
+        </tracks>
+      </special>
+      <special id="103689" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="snowcannon"/>
+        </tracks>
+      </special>
+      <special id="103696" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="rocket"/>
+        </tracks>
+      </special>
+      <special id="103717" event="singletrack" owner="1" premium="0" track="grammophone"/>
+      <special id="103736" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="piggy"/>
+        </tracks>
+      </special>
+      <special id="103739" event="singletrack" owner="1" premium="0" track="door"/>
+      <special id="103738" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="genie"/>
+        </tracks>
+      </special>
+      <special id="103749" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="ducky"/>
+        </tracks>
+      </special>
+      <special id="103750" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="winteregg"/>
+        </tracks>
+      </special>
+      <special id="103751" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="fishing"/>
+        </tracks>
+      </special>
+      <special id="103754" event="singletrack" owner="1" premium="0" track="eifel"/>
+      <special id="103759" event="singletrack" owner="1" premium="0" track="sphinx"/>
+      <special id="103760" event="singletrack" owner="1" premium="0" track="pisa"/>
+      <special id="103755" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="piano"/>
+        </tracks>
+      </special>
+      <special id="103756" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="harp"/>
+        </tracks>
+      </special>
+      <special id="103757" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="saxo"/>
+        </tracks>
+      </special>
+      <special id="103758" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="guitar"/>
+        </tracks>
+      </special>
+      <special id="103771" event="singletrack" owner="1" premium="0" track="tipi"/>
+      <special id="103772" event="singletrack" owner="1" premium="0" track="totem"/>
+      <special id="103773" event="singletrack" owner="1" premium="0" track="poker"/>
+      <special id="103774" event="singletrack" owner="1" premium="0" track="bufallo"/>
+      <special id="103782" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="lamp"/>
+        </tracks>
+      </special>
+      <special id="103783" event="singletrack" owner="1" premium="0" track="bonsai"/>
+      <special id="103784" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="cookie"/>
+        </tracks>
+      </special>
+      <special id="103785" event="singletrack" owner="1" premium="0" track="heart"/>
+      <special id="103787" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="elephant"/>
+        </tracks>
+      </special>
+      <special id="103792" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="crab"/>
+        </tracks>
+      </special>
+      <special id="103793" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="pearl"/>
+        </tracks>
+      </special>
+      <special id="103795" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="seahorse"/>
+        </tracks>
+        <frames>
+          <frame number="2">
+            <action type="waterTransform"/>
+          </frame>
+        </frames>
+      </special>
+      <special id="103796" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="ra"/>
+        </tracks>
+      </special>
+      <special id="103799" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="mummy"/>
+        </tracks>
+      </special>
+      <special id="103800" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="hippo"/>
+        </tracks>
+      </special>
+      <special id="103801" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="spider"/>
+        </tracks>
+      </special>
+      <special id="103808" event="notification" name="springFlowerClicked" param="getPos" owner="1" premium="0"/>
+      <special id="103811" event="singletrack" owner="1" premium="0" track="paint"/>
+      <special id="103812" event="singletrack" owner="1" premium="0" track="bed"/>
+      <special id="103813" event="singletrack" owner="1" premium="0" track="knight"/>
+      <special id="103814" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2"/>
+        </tracks>
+      </special>
+      <special id="103836" event="notification" name="startHomeGravity" param="" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="gravity"/>
+        </tracks>
+      </special>
+      <special id="103837" event="singletrack" owner="1" premium="0" track="flower"/>
+      <special id="103839" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="elephant2"/>
+        </tracks>
+      </special>
+      <special id="103840" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="snake"/>
+        </tracks>
+      </special>
+      <special id="103841" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="twitter"/>
+        </tracks>
+      </special>
+      <special id="103842" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="monkey2"/>
+        </tracks>
+      </special>
+      <special id="103845" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="buglamp"/>
+        </tracks>
+      </special>
+      <special id="103846" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="ufo"/>
+        </tracks>
+      </special>
+      <special id="103838" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="eggcooker"/>
+        </tracks>
+      </special>
+      <special id="103849" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="babyChicken"/>
+        </tracks>
+      </special>
+      <special id="103853" event="singletrack" owner="1" premium="0" track="banner"/>
+      <special id="103855" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="antenna"/>
+        </tracks>
+        <frames>
+          <frame number="2">
+            <action type="blackWhiteTransform"/>
+          </frame>
+        </frames>
+      </special>
+      <special id="103856" event="singletrack" owner="1" premium="0" track="teddy"/>
+      <special id="103857" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="schrank"/>
+        </tracks>
+      </special>
+      <special id="103858" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="window"/>
+        </tracks>
+      </special>
+      <special id="103859" event="singletrack" owner="1" premium="0" track="telephone"/>
+      <special id="103863" event="singletrack" owner="1" premium="0" track="window2"/>
+      <special id="103879" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="wale"/>
+        </tracks>
+      </special>
+      <special id="103885" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="monsterSofa"/>
+        </tracks>
+      </special>
+      <special id="103884" event="singletrack" owner="1" premium="0" track="monster"/>
+      <special id="103892" event="singletrack" owner="1" premium="0" track="washingmachine"/>
+      <special id="103893" event="singletrack" owner="1" premium="0" track="floatingPalm"/>
+      <special id="103894" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="hammerGame"/>
+        </tracks>
+      </special>
+      <special id="103898" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="waterballoonClown"/>
+        </tracks>
+      </special>
+      <special id="103899" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="lighthouse"/>
+        </tracks>
+      </special>
+      <special id="103904" event="singletrack" owner="1" premium="0" track="toilet"/>
+      <special id="103906" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="ballgame1"/>
+          <track frame="3" id="ballgame2"/>
+          <track frame="4" id="ballgame3"/>
+        </tracks>
+      </special>
+      <special id="103909" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="hydrant"/>
+        </tracks>
+      </special>
+      <special id="103910" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="throw1"/>
+          <track frame="3" id="throw2"/>
+          <track frame="4" id="throw3"/>
+        </tracks>
+      </special>
+      <special id="102329" event="singletrack" owner="1" premium="0" track="guitar2"/>
+      <special id="102328" event="singletrack" owner="1" premium="0" track="drums"/>
+      <special id="102332" event="singletrack" owner="1" premium="0" track="hifi"/>
+      <special id="102335" event="singletrack" owner="1" premium="0" track="vinyl"/>
+      <special id="103912" event="singletrack" owner="1" premium="0" track="flags"/>
+      <special id="103911" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="dwarf"/>
+        </tracks>
+      </special>
+      <special id="103917" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="soccer"/>
+        </tracks>
+      </special>
+      <special id="103918" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="goldChicken"/>
+        </tracks>
+      </special>
+      <special id="103923" event="singletrack" owner="1" premium="0" track="vuvuzela"/>
+      <special id="103925" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="goldFrog"/>
+        </tracks>
+      </special>
+      <special id="103931" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="mirrorForglove"/>
+        </tracks>
+      </special>
+      <special id="103926" event="singletrack" owner="1" premium="0" track="trophy"/>
+      <special id="103932" event="singletrack" owner="1" premium="0" track="cauldron"/>
+      <special id="103938" event="singletrack" owner="1" premium="0" track="campfire"/>
+      <special id="103940" event="singletrack" owner="1" premium="0" track="bdayCake"/>
+      <special id="103947" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="beeHive1"/>
+          <track frame="3" id="beeHive2"/>
+        </tracks>
+      </special>
+      <special id="103946" event="singletrack" owner="1" premium="0" track="flyingBee"/>
+      <special id="103949" event="singletrack" owner="1" premium="0" track="owl"/>
+      <special id="103950" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="rockingPig"/>
+        </tracks>
+      </special>
+      <special id="103953" event="singletrack" owner="1" premium="0" track="olympicFire"/>
+      <special id="103955" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="icelamp"/>
+        </tracks>
+      </special>
+      <special id="103960" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="mouse"/>
+        </tracks>
+      </special>
+      <special id="103962" event="singletrack" owner="1" premium="0" track="laurelWreath"/>
+      <special id="103963" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="venusTrap"/>
+        </tracks>
+      </special>
+      <special id="103966" event="singletrack" owner="1" premium="0" track="waterfall"/>
+      <special id="103969" event="singletrack" owner="1" premium="0" track="radio2"/>
+      <special id="103973" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="microwave"/>
+        </tracks>
+      </special>
+      <special id="103974" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="swingingMonkey"/>
+        </tracks>
+      </special>
+      <special id="103976" event="singletrack" owner="1" premium="0" track="mixer"/>
+      <special id="103977" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="candyLight"/>
+        </tracks>
+      </special>
+      <special id="103978" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="candyShower"/>
+        </tracks>
+      </special>
+      <special id="103981" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="magicHat"/>
+        </tracks>
+      </special>
+      <special id="103984" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="toaster"/>
+        </tracks>
+      </special>
+      <special id="103985" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="crystalBall"/>
+        </tracks>
+      </special>
+      <special id="103986" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="magicDove"/>
+        </tracks>
+      </special>
+      <special id="103987" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="bendingSpoon"/>
+        </tracks>
+      </special>
+      <special id="103989" event="singletrack" owner="1" premium="0" track="coffeeMaker"/>
+      <special id="104001" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="lightTower"/>
+        </tracks>
+      </special>
+      <special id="104008" event="singletrack" owner="1" premium="0" track="windowKite"/>
+      <special id="104009" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="broom"/>
+        </tracks>
+      </special>
+      <special id="104016" event="singletrack" owner="1" premium="0" track="autumnWindow"/>
+      <special id="104018" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="autumnTree"/>
+        </tracks>
+      </special>
+      <special id="104021" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="autumnCloud"/>
+        </tracks>
+      </special>
+      <special id="104022" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="jumpingJack"/>
+        </tracks>
+      </special>
+      <special id="104023" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="hedgehog"/>
+        </tracks>
+      </special>
+      <special id="104025" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="autumnLamp"/>
+        </tracks>
+      </special>
+      <special id="104028" event="singletrack" owner="1" premium="0" track="scottishDog"/>
+      <special id="104038" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="bat"/>
+        </tracks>
+      </special>
+      <special id="104044" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="werewolf"/>
+        </tracks>
+      </special>
+      <special id="104046" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="skelett"/>
+        </tracks>
+      </special>
+      <special id="104047" event="singletrack" owner="1" premium="0" track="pumpkin"/>
+      <special id="104048" event="singletrack" owner="1" premium="0" track="ghost"/>
+      <special id="104050" event="singletrack" owner="1" premium="0" track="blackCat"/>
+      <special id="104051" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="miniRobot"/>
+        </tracks>
+      </special>
+      <special id="104052" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="lochNess"/>
+        </tracks>
+      </special>
+      <special id="104062" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="bagPipe"/>
+        </tracks>
+      </special>
+      <special id="104064" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="officePrinter"/>
+        </tracks>
+      </special>
+      <special id="104066" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="officeLamp"/>
+        </tracks>
+      </special>
+      <special id="104067" event="singletrack" owner="1" premium="0" track="monsterHand"/>
+      <special id="104075" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="magicBook"/>
+        </tracks>
+      </special>
+      <special id="104083" event="singletrack" owner="1" premium="0" track="emoRadio"/>
+      <special id="104085" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="skullLight"/>
+        </tracks>
+        <frames>
+          <frame number="2">
+            <action type="colorTransform" redOffset="-100" greenOffset="-100" blueOffset="-100"/>
+          </frame>
+        </frames>
+      </special>
+      <special id="104087" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="merlinStaff"/>
+        </tracks>
+      </special>
+      <special id="104089" event="singletrack" owner="1" premium="0" track="advent2012Fireplace"/>
+      <special id="104091" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="advent2012SnowGlobe"/>
+        </tracks>
+      </special>
+      <special id="104102" event="singletrack" owner="1" premium="0" track="advent2012WinterWindow"/>
+      <special id="104097" event="singletrack" owner="1" premium="0" track="advent2012ChristmasBear"/>
+      <special id="104105" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="advent2012ChristmasLamp"/>
+        </tracks>
+      </special>
+      <special id="104116" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="magicHat2"/>
+        </tracks>
+      </special>
+      <special id="104119" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="magicShelf"/>
+        </tracks>
+      </special>
+      <special id="104125" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="winterCloud"/>
+        </tracks>
+      </special>
+      <special id="104151" event="singletrack" owner="1" premium="0" track="penguin"/>
+      <special id="104154" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="blockingArea"/>
+        </tracks>
+      </special>
+      <special id="104162" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="jackhammer"/>
+        </tracks>
+      </special>
+      <special id="104163" event="singletrack" owner="1" premium="0" track="indianDrums"/>
+      <special id="104178" event="singletrack" owner="1" premium="0" track="indianWindow"/>
+      <special id="104179" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="woodSaw"/>
+        </tracks>
+      </special>
+      <special id="104191" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2"/>
+        </tracks>
+      </special>
+      <special id="104200" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="pterodactyl"/>
+        </tracks>
+      </special>
+      <special id="104201" event="singletrack" owner="1" premium="0" track="lavaPot"/>
+      <special id="104202" event="singletrack" owner="1" premium="0" track="fireKettle"/>
+      <special id="104203" event="singletrack" owner="1" premium="0" track="mammoth"/>
+      <special id="104211" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="gumballMachine"/>
+        </tracks>
+      </special>
+      <special id="104212" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="cottonCandy"/>
+        </tracks>
+      </special>
+      <special id="104213" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="popcornMachine"/>
+        </tracks>
+      </special>
+      <special id="104214" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="slushieMachine"/>
+        </tracks>
+      </special>
+      <special id="104215" event="notification" name="askJoinGame" param="53" owner="1" premium="0"/>
+      <special id="104228" event="singletrack" owner="1" premium="0" track="easterChick"/>
+      <special id="104229" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="sneezingFlower"/>
+        </tracks>
+      </special>
+      <special id="104235" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="forceField"/>
+        </tracks>
+      </special>
+      <special id="104243" event="singletrack" owner="1" premium="0" track="windChimes"/>
+      <special id="104254" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="farmanimalPig"/>
+        </tracks>
+      </special>
+      <special id="104255" event="singletrack" owner="1" premium="0" track="birdHouse"/>
+      <special id="104259" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="fireFighterLight"/>
+        </tracks>
+      </special>
+      <special id="104260" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="XRay"/>
+        </tracks>
+      </special>
+      <special id="104270" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="farmanimalGoat"/>
+        </tracks>
+      </special>
+      <special id="104271" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="farmanimalChicken"/>
+        </tracks>
+      </special>
+      <special id="104273" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="grafittiBrickWall"/>
+        </tracks>
+      </special>
+      <special id="104275" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="grafittiNeonLight"/>
+        </tracks>
+        <frames>
+          <frame number="2">
+            <action type="colorTransform" redOffset="50" greenOffset="-100" blueOffset="100"/>
+          </frame>
+        </frames>
+      </special>
+      <special id="104276" event="singletrack" owner="1" premium="0" track="grafittiBlaster"/>
+      <special id="104277" event="singletrack" owner="1" premium="0" track="farmanimalSheep"/>
+      <special id="104279" event="singletrack" owner="1" premium="0" track="rareFan"/>
+      <special id="104283" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="raceToy"/>
+        </tracks>
+      </special>
+      <special id="104284" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="cameraStand"/>
+        </tracks>
+      </special>
+      <special id="104293" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="foosballTable"/>
+        </tracks>
+      </special>
+      <special id="104294" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="poolTable"/>
+        </tracks>
+      </special>
+      <special id="104295" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="tableTennis"/>
+        </tracks>
+      </special>
+      <special id="104305" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="airHockey"/>
+        </tracks>
+      </special>
+      <special id="104362" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="oven2"/>
+        </tracks>
+      </special>
+      <special id="104371" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="eggPan"/>
+        </tracks>
+      </special>
+      <special id="104372" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="pastaPot"/>
+        </tracks>
+      </special>
+      <special id="104386" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="waterBlaster"/>
+        </tracks>
+      </special>
+      <special id="104402" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="sprayCan"/>
+        </tracks>
+      </special>
+      <special id="104403" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="robot2"/>
+        </tracks>
+      </special>
+      <special id="104417" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="teeBall"/>
+        </tracks>
+      </special>
+      <special id="104420" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="carrotCuttingBoard"/>
+        </tracks>
+      </special>
+      <special id="104421" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="tomatoSoup"/>
+        </tracks>
+      </special>
+      <special id="104424" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="paddleBall"/>
+        </tracks>
+      </special>
+      <special id="104442" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="pieLauncher"/>
+        </tracks>
+      </special>
+      <special id="104443" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="circusMonkey"/>
+        </tracks>
+      </special>
+      <special id="104451" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="musicBook"/>
+        </tracks>
+      </special>
+      <special id="104471" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="colaMachine"/>
+        </tracks>
+      </special>
+      <special id="104474" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="officeGolf"/>
+        </tracks>
+      </special>
+      <special id="104475" event="singletrack" owner="1" premium="0" track="oldRecordPlayer"/>
+      <special id="104480" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2" id="scissors"/>
+        </tracks>
+      </special>
+      <special id="104481" event="singletrack" owner="1" premium="0" track="trumpet"/>
+      <special id="104509" event="toggle" owner="1" premium="0">
+        <tracks>
+          <track frame="2"/>
+        </tracks>
+      </special>
+    </specials>
+    <jukebox>
+      <tracks>
+        <track id="100034"/>
+        <track id="100035"/>
+        <track id="100234"/>
+        <track id="100235"/>
+        <track id="100240"/>
+        <track id="100238"/>
+        <track id="100239"/>
+        <track id="101960"/>
+      </tracks>
+    </jukebox>
+  </module>
+</config>

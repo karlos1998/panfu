@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<snippets date="03.08.2021 02:45:06">
+  <ANNIVERSARY_PARTY><![CDATA[Anniversary Party]]></ANNIVERSARY_PARTY>
+  <BIRTHDAY_PARTY><![CDATA[Birthday Party]]></BIRTHDAY_PARTY>
+  <CHAT_TIME_DESCR_ANSWER><![CDATA[will wait!]]></CHAT_TIME_DESCR_ANSWER>
+  <CHAT_TIME_DESCR_INBOARD><![CDATA[The chat has not yet been activated, let's talk later.]]></CHAT_TIME_DESCR_INBOARD>
+  <CHAT_TIME_DESCR_NEWMSG><![CDATA[Tell a Panda you want to chat with them when the chat is active. ]]></CHAT_TIME_DESCR_NEWMSG>
+  <CHAT_TIME_TYPE><![CDATA[Chat times!]]></CHAT_TIME_TYPE>
+  <CLOTHES_TYPE><![CDATA[Cool Outfit!]]></CLOTHES_TYPE>
+  <CLOTHE_DESCR_ANSWER><![CDATA[is happy that you like her/his outfit!]]></CLOTHE_DESCR_ANSWER>
+  <CLOTHE_DESCR_INBOARD><![CDATA[likes your outfit!]]></CLOTHE_DESCR_INBOARD>
+  <CLOTHE_DESCR_NEWMSG><![CDATA[Tell one Panda dressed in a funky way that you like their outfit!]]></CLOTHE_DESCR_NEWMSG>
+  <CONFIRM_DEL_MSG><![CDATA[Do you want to delete this message?]]></CONFIRM_DEL_MSG>
+  <COOL_PANDA_DESCR_ANSWER><![CDATA[says thanks for the compliment.]]></COOL_PANDA_DESCR_ANSWER>
+  <COOL_PANDA_DESCR_INBOARD><![CDATA[thinks you're cool!]]></COOL_PANDA_DESCR_INBOARD>
+  <COOL_PANDA_DESCR_NEWMSG><![CDATA[Tell a Panda that you think he/she is cool!]]></COOL_PANDA_DESCR_NEWMSG>
+  <COOL_PANDA_TYPE><![CDATA[Cool Panda!]]></COOL_PANDA_TYPE>
+  <CRAZYOUTFIT_PARTY><![CDATA[Crazy Outfit Party]]></CRAZYOUTFIT_PARTY>
+  <CREATE_NEW_MSG_MSGBOARD><![CDATA[Send New Message]]></CREATE_NEW_MSG_MSGBOARD>
+  <DANCING_PARTY><![CDATA[Disco Party]]></DANCING_PARTY>
+  <DAY_OF_THE_WEEK_0><![CDATA[Next Sunday]]></DAY_OF_THE_WEEK_0>
+  <DAY_OF_THE_WEEK_1><![CDATA[Next Monday]]></DAY_OF_THE_WEEK_1>
+  <DAY_OF_THE_WEEK_2><![CDATA[Next Tuesday]]></DAY_OF_THE_WEEK_2>
+  <DAY_OF_THE_WEEK_3><![CDATA[Next Wednesday]]></DAY_OF_THE_WEEK_3>
+  <DAY_OF_THE_WEEK_4><![CDATA[Next Thursday]]></DAY_OF_THE_WEEK_4>
+  <DAY_OF_THE_WEEK_5><![CDATA[Next Friday]]></DAY_OF_THE_WEEK_5>
+  <DAY_OF_THE_WEEK_6><![CDATA[Next Saturday]]></DAY_OF_THE_WEEK_6>
+  <DAY_TODAY><![CDATA[Today ]]></DAY_TODAY>
+  <DAY_TOMORROW><![CDATA[Tomorrow]]></DAY_TOMORROW>
+  <EVENT_CREATE_TEXT><![CDATA[Create an event!]]></EVENT_CREATE_TEXT>
+  <EVENT_DESCR_INBOARD><![CDATA[invites you $$partyType$$! $$weekday$$ on $$Servername$$ at $$servertime$$ $$eventlocation$$!]]></EVENT_DESCR_INBOARD>
+  <EVENT_DETAILS><![CDATA[[Select an event]]]></EVENT_DETAILS>
+  <EVENT_FRIEND><![CDATA[[Select friends]]]></EVENT_FRIEND>
+  <EVENT_FRIENDS_CHOSEN><![CDATA[Friends chosen!]]></EVENT_FRIENDS_CHOSEN>
+  <EVENT_FRIEND_HEADLINE><![CDATA[Invite your friends!]]></EVENT_FRIEND_HEADLINE>
+  <EVENT_LOCATION><![CDATA[[Select the location]]]></EVENT_LOCATION>
+  <EVENT_LOCATION_AIRPLANE><![CDATA[in the Airplane]]></EVENT_LOCATION_AIRPLANE>
+  <EVENT_LOCATION_BEACH><![CDATA[at the Beach]]></EVENT_LOCATION_BEACH>
+  <EVENT_LOCATION_CARRIBEAN_BEACH><![CDATA[at the Caribbean Beach]]></EVENT_LOCATION_CARRIBEAN_BEACH>
+  <EVENT_LOCATION_CASTLE><![CDATA[in front of the Castle]]></EVENT_LOCATION_CASTLE>
+  <EVENT_LOCATION_CITY><![CDATA[in the City]]></EVENT_LOCATION_CITY>
+  <EVENT_LOCATION_HARBOUR><![CDATA[at the Harbour]]></EVENT_LOCATION_HARBOUR>
+  <EVENT_LOCATION_JUNGLE><![CDATA[in the Jungle]]></EVENT_LOCATION_JUNGLE>
+  <EVENT_LOCATION_OWNTREEHOUSE><![CDATA[at my Tree House]]></EVENT_LOCATION_OWNTREEHOUSE>
+  <EVENT_LOCATION_POKOPETS><![CDATA[in front of the Pokopet Barn]]></EVENT_LOCATION_POKOPETS>
+  <EVENT_LOCATION_PONYHOF><![CDATA[at the Pony Yard]]></EVENT_LOCATION_PONYHOF>
+  <EVENT_LOCATION_POOL><![CDATA[at the Swimming Pool]]></EVENT_LOCATION_POOL>
+  <EVENT_LOCATION_RACETRACKING><![CDATA[on the Race Track]]></EVENT_LOCATION_RACETRACKING>
+  <EVENT_LOCATION_SANFRANPANFU><![CDATA[in San Franpanfu]]></EVENT_LOCATION_SANFRANPANFU>
+  <EVENT_LOCATION_SPORTFIELD><![CDATA[on the Sports Field]]></EVENT_LOCATION_SPORTFIELD>
+  <EVENT_LOCATION_VOLCANO><![CDATA[on the Volcano]]></EVENT_LOCATION_VOLCANO>
+  <EVENT_REPLY><![CDATA[will take part in this event!]]></EVENT_REPLY>
+  <EVENT_SELECT_ALL><![CDATA[Select all]]></EVENT_SELECT_ALL>
+  <EVENT_SEND><![CDATA[Invite!]]></EVENT_SEND>
+  <EVENT_TIME><![CDATA[[Select the time]]]></EVENT_TIME>
+  <EVENT_TYPE_ADVENTURE><![CDATA[on a Quest]]></EVENT_TYPE_ADVENTURE>
+  <EVENT_TYPE_BIRTHDAY><![CDATA[to a Birthday Party]]></EVENT_TYPE_BIRTHDAY>
+  <EVENT_TYPE_DATE><![CDATA[on a Date]]></EVENT_TYPE_DATE>
+  <EVENT_TYPE_MEETING><![CDATA[to a Meeting]]></EVENT_TYPE_MEETING>
+  <EVENT_TYPE_PARTY><![CDATA[to a Party]]></EVENT_TYPE_PARTY>
+  <EVENT_TYPE_WEDDING><![CDATA[to a Wedding]]></EVENT_TYPE_WEDDING>
+  <EVENT_WEEKDAY><![CDATA[[Select the day]]]></EVENT_WEEKDAY>
+  <EVENT_WORLD><![CDATA[[Select the server]]]></EVENT_WORLD>
+  <FULLMOON_PARTY><![CDATA[Full Moon Party]]></FULLMOON_PARTY>
+  <GIFT_DESCR_ANSWER><![CDATA[was very happy to receive your gift!]]></GIFT_DESCR_ANSWER>
+  <GIFT_DESCR_INBOARD><![CDATA[sent you a gift]]></GIFT_DESCR_INBOARD>
+  <GIFT_DESCR_NEWMSG><![CDATA[Show how much you like a Panda and send them a present!]]></GIFT_DESCR_NEWMSG>
+  <GIFT_TYPE><![CDATA[Gift]]></GIFT_TYPE>
+  <H12AM><![CDATA[12 a.m.]]></H12AM>
+  <H1AM><![CDATA[1 a.m.]]></H1AM>
+  <H2AM><![CDATA[2 a.m.]]></H2AM>
+  <H3AM><![CDATA[3 a.m.]]></H3AM>
+  <H4AM><![CDATA[4 a.m.]]></H4AM>
+  <H5AM><![CDATA[5 a.m.]]></H5AM>
+  <H6AM><![CDATA[6 a.m.]]></H6AM>
+  <H7AM><![CDATA[7 a.m.]]></H7AM>
+  <H8AM><![CDATA[8 a.m.]]></H8AM>
+  <H9AM><![CDATA[9 a.m.]]></H9AM>
+  <H10AM><![CDATA[10 a.m.]]></H10AM>
+  <H11AM><![CDATA[11 a.m.]]></H11AM>
+  <H12PM><![CDATA[12 p.m.]]></H12PM>
+  <H1PM><![CDATA[1 p.m.]]></H1PM>
+  <H2PM><![CDATA[2 p.m.]]></H2PM>
+  <H3PM><![CDATA[3 p.m.]]></H3PM>
+  <H4PM><![CDATA[4 p.m.]]></H4PM>
+  <H5PM><![CDATA[5 p.m.]]></H5PM>
+  <H6PM><![CDATA[6 p.m.]]></H6PM>
+  <H7PM><![CDATA[7 p.m.]]></H7PM>
+  <H8PM><![CDATA[8 p.m.]]></H8PM>
+  <H9PM><![CDATA[9 p.m.]]></H9PM>
+  <H10PM><![CDATA[10 p.m.]]></H10PM>
+  <H11PM><![CDATA[11 p.m.]]></H11PM>
+  <LOCKED_DESCR_ANSWER><![CDATA[understands your problem.]]></LOCKED_DESCR_ANSWER>
+  <LOCKED_DESCR_INBOARD><![CDATA[can't chat because he/she has been locked. ]]></LOCKED_DESCR_INBOARD>
+  <LOCKED_DESCR_NEWMSG><![CDATA[Let a Panda know that you have been locked and can't reply for now. ]]></LOCKED_DESCR_NEWMSG>
+  <LOCKED_TYPE><![CDATA[Locked!]]></LOCKED_TYPE>
+  <LOVE_DESCR_ANSWER><![CDATA[loves you too!]]></LOVE_DESCR_ANSWER>
+  <LOVE_DESCR_INBOARD><![CDATA[loves you!]]></LOVE_DESCR_INBOARD>
+  <LOVE_DESCR_NEWMSG><![CDATA[Tell a Panda that you love him/her.]]></LOVE_DESCR_NEWMSG>
+  <LOVE_TYPE><![CDATA[I really like you!]]></LOVE_TYPE>
+  <MESSAGE_ANSWER_SENT><![CDATA[Message sent]]></MESSAGE_ANSWER_SENT>
+  <MESSAGE_CREATED_DAYS><![CDATA[$$value$$ day(s) ago]]></MESSAGE_CREATED_DAYS>
+  <MESSAGE_CREATED_HOURS><![CDATA[$$value$$ hour(s) ago]]></MESSAGE_CREATED_HOURS>
+  <MESSAGE_CREATED_MONTHS><![CDATA[$$value$$ month(s) ago]]></MESSAGE_CREATED_MONTHS>
+  <MESSAGE_CREATED_YEARS><![CDATA[$$value$$ year(s) ago]]></MESSAGE_CREATED_YEARS>
+  <MESSAGE_ECARD_TEXT><![CDATA["$$username$$" sent you a Picture Message. Click on the icon to open it.]]></MESSAGE_ECARD_TEXT>
+  <MESSAGE_ECARD_TITLE><![CDATA[Picture Message received!]]></MESSAGE_ECARD_TITLE>
+  <MESSAGE_FRIENDSHIP_CONFIRMED_TEXT><![CDATA[You and "$$username$$" are now friends.]]></MESSAGE_FRIENDSHIP_CONFIRMED_TEXT>
+  <MESSAGE_FRIENDSHIP_CONFIRMED_TITLE><![CDATA[Friendship confirmed!]]></MESSAGE_FRIENDSHIP_CONFIRMED_TITLE>
+  <MESSAGE_SENT><![CDATA[Message sent. You can send $$player$$ another message tomorrow.]]></MESSAGE_SENT>
+  <MOVIESTAR_PARTY><![CDATA[Movie Star Party]]></MOVIESTAR_PARTY>
+  <MSGBOARD_DETAILS><![CDATA[Details:]]></MSGBOARD_DETAILS>
+  <MSGBOARD_FRIEND_REQUEST><![CDATA[Add as friend]]></MSGBOARD_FRIEND_REQUEST>
+  <MSGBOARD_PLAYER_BLOCKED><![CDATA[You cannot send messages to a Panda that you are ignoring.]]></MSGBOARD_PLAYER_BLOCKED>
+  <MSGBOARD_TO><![CDATA[To: ]]></MSGBOARD_TO>
+  <MSGBOARD_TYPE><![CDATA[Message type:]]></MSGBOARD_TYPE>
+  <MSG_NOT_SENT_ERROR><![CDATA[An error occurred. The message has not been sent. ]]></MSG_NOT_SENT_ERROR>
+  <MSG_ONLY_ONCE_PER_DAY><![CDATA[You can send only one message per day to this Panda.]]></MSG_ONLY_ONCE_PER_DAY>
+  <MSG_ONLY_TEN_PER_DAY><![CDATA[You can send only ten messages per day to this Panda.]]></MSG_ONLY_TEN_PER_DAY>
+  <MSG_TYPE_FOR_PREMIUM_ONLY><![CDATA[You need to be a Gold Member to send this message.]]></MSG_TYPE_FOR_PREMIUM_ONLY>
+  <NEW_MESSAGE><![CDATA[New message: ]]></NEW_MESSAGE>
+  <PARTY_DESCR_ANSWER><![CDATA[is looking forward to your $$partyType$$!]]></PARTY_DESCR_ANSWER>
+  <PARTY_DESCR_INBOARD><![CDATA[is inviting you to $$partyType$$! When and where? $$weekday$$ on $$Servername$$ at $$servertime$$! ]]></PARTY_DESCR_INBOARD>
+  <PARTY_DESCR_NEWMSG><![CDATA[Invite your friends to your party!]]></PARTY_DESCR_NEWMSG>
+  <PARTY_TYPE><![CDATA[Party]]></PARTY_TYPE>
+  <PAST_EVENT><![CDATA[past event]]></PAST_EVENT>
+  <PINBOARD_NAME_TAB><![CDATA[Pinboard]]></PINBOARD_NAME_TAB>
+  <PLAYER_HAS_SEND_STICKER><![CDATA[$$Playername$$ has sent you a $$Stickername$$-Sticker.]]></PLAYER_HAS_SEND_STICKER>
+  <POKOPET_PARTY><![CDATA[Pokopet Party]]></POKOPET_PARTY>
+  <POPUP_NO_FRIENDS><![CDATA[You can only send messages to a friend from your Friend List. 
+You can add a Panda as a friend by first clicking on the Panda and then on the Panda head icon in the Panda's Player Card on the bottom left. ]]></POPUP_NO_FRIENDS>
+  <ROBO_PARTY><![CDATA[Robot Party]]></ROBO_PARTY>
+  <ROCKSTAR_PARTY><![CDATA[Rock Star Party]]></ROCKSTAR_PARTY>
+  <SELECT_FRIEND><![CDATA[Select Friend]]></SELECT_FRIEND>
+  <SELECT_STICKER><![CDATA[Select a sticker]]></SELECT_STICKER>
+  <SEND_ANSWER><![CDATA[Reply]]></SEND_ANSWER>
+  <SEND_MESSAGE><![CDATA[Send message]]></SEND_MESSAGE>
+  <SEND_MESSAGE_MSGBOARD><![CDATA[Send a Message]]></SEND_MESSAGE_MSGBOARD>
+  <SEND_STICKERS><![CDATA[Send Sticker]]></SEND_STICKERS>
+  <STICKERBOARD_PRICE><![CDATA[Price:]]></STICKERBOARD_PRICE>
+  <STICKERBOARD_TO><![CDATA[To:]]></STICKERBOARD_TO>
+  <STICKERBOARD_TYPE><![CDATA[Type:]]></STICKERBOARD_TYPE>
+  <STICKERBOARD_YOU_HAVE><![CDATA[You have:]]></STICKERBOARD_YOU_HAVE>
+  <STICKERS><![CDATA[My Stickers]]></STICKERS>
+  <STICKER_ONLY_ONCE_PER_DAY><![CDATA[Unfortunately, you have already sent a sticker to this user. Please try again tomorrow.]]></STICKER_ONLY_ONCE_PER_DAY>
+  <STICKER_POINTS><![CDATA[Sticker Points: $$value$$]]></STICKER_POINTS>
+  <STICKER_SENT><![CDATA[Your sticker has been sent.]]></STICKER_SENT>
+  <STICKER_TYPE_BABYHORSE><![CDATA[Pony]]></STICKER_TYPE_BABYHORSE>
+  <STICKER_TYPE_BIRTHDAYCAKE><![CDATA[Birthday Cake]]></STICKER_TYPE_BIRTHDAYCAKE>
+  <STICKER_TYPE_CACTUS><![CDATA[Small Cactus]]></STICKER_TYPE_CACTUS>
+  <STICKER_TYPE_CLOUD_LIGHTNING><![CDATA[Cloud with Lightning]]></STICKER_TYPE_CLOUD_LIGHTNING>
+  <STICKER_TYPE_CROWN><![CDATA[Crown]]></STICKER_TYPE_CROWN>
+  <STICKER_TYPE_CUPCAKE><![CDATA[Cupcake]]></STICKER_TYPE_CUPCAKE>
+  <STICKER_TYPE_DIAMOND><![CDATA[Diamond]]></STICKER_TYPE_DIAMOND>
+  <STICKER_TYPE_FOUNTAIN><![CDATA[Fountain ]]></STICKER_TYPE_FOUNTAIN>
+  <STICKER_TYPE_GOLDFISH><![CDATA[Goldfish]]></STICKER_TYPE_GOLDFISH>
+  <STICKER_TYPE_GREENBALLOON><![CDATA[Green Balloon
+]]></STICKER_TYPE_GREENBALLOON>
+  <STICKER_TYPE_HAMSTER><![CDATA[Hamster ]]></STICKER_TYPE_HAMSTER>
+  <STICKER_TYPE_HANDSHAKE><![CDATA[Handshake]]></STICKER_TYPE_HANDSHAKE>
+  <STICKER_TYPE_HEARTMAIL><![CDATA[Heart Envelope]]></STICKER_TYPE_HEARTMAIL>
+  <STICKER_TYPE_HUGGINGPANDAS><![CDATA[Hugging Pandas]]></STICKER_TYPE_HUGGINGPANDAS>
+  <STICKER_TYPE_PANFUFLAG><![CDATA[Panfu Flag]]></STICKER_TYPE_PANFUFLAG>
+  <STICKER_TYPE_PARTYHAT><![CDATA[Party Hat]]></STICKER_TYPE_PARTYHAT>
+  <STICKER_TYPE_PINATA><![CDATA[Pinata]]></STICKER_TYPE_PINATA>
+  <STICKER_TYPE_PIRATEFLAG><![CDATA[Pirate Flag]]></STICKER_TYPE_PIRATEFLAG>
+  <STICKER_TYPE_RACECAR><![CDATA[Racing Car]]></STICKER_TYPE_RACECAR>
+  <STICKER_TYPE_RAINBOW><![CDATA[Rainbow]]></STICKER_TYPE_RAINBOW>
+  <STICKER_TYPE_RAINBOW_DESC><![CDATA[Rainbow]]></STICKER_TYPE_RAINBOW_DESC>
+  <STICKER_TYPE_REDROSE><![CDATA[Red Rose]]></STICKER_TYPE_REDROSE>
+  <STICKER_TYPE_REDROSE_DESC><![CDATA[Red Rose]]></STICKER_TYPE_REDROSE_DESC>
+  <STICKER_TYPE_ROBBIE><![CDATA[Robby Robot]]></STICKER_TYPE_ROBBIE>
+  <STICKER_TYPE_ROBBIE_DESC><![CDATA[Robby Robot]]></STICKER_TYPE_ROBBIE_DESC>
+  <STICKER_TYPE_RUBBERDUCK><![CDATA[Rubber Duck]]></STICKER_TYPE_RUBBERDUCK>
+  <STICKER_TYPE_SMILINGPANDA><![CDATA[Smiling Panda]]></STICKER_TYPE_SMILINGPANDA>
+  <STICKER_TYPE_SUN><![CDATA[Sun]]></STICKER_TYPE_SUN>
+  <STICKER_TYPE_SUNFLOWER><![CDATA[Sunflower]]></STICKER_TYPE_SUNFLOWER>
+  <STICKER_TYPE_SUNFLOWER_DESC><![CDATA[Sunflower]]></STICKER_TYPE_SUNFLOWER_DESC>
+  <STICKER_TYPE_THUMBSUP><![CDATA[Thumbs Up]]></STICKER_TYPE_THUMBSUP>
+  <STICKER_TYPE_TIARA><![CDATA[Tiara]]></STICKER_TYPE_TIARA>
+  <STICKER_TYPE_TREASURECHEST><![CDATA[Treasure Chest]]></STICKER_TYPE_TREASURECHEST>
+  <STICKER_TYPE_WEDDINGRINGS><![CDATA[Wedding Rings]]></STICKER_TYPE_WEDDINGRINGS>
+  <STICKER_TYPE_WOOBIEHAT><![CDATA[Wooby with hat]]></STICKER_TYPE_WOOBIEHAT>
+  <TREEHOUSE_DESCR_ANSWER><![CDATA[is happy that you like her/his Tree House!]]></TREEHOUSE_DESCR_ANSWER>
+  <TREEHOUSE_DESCR_INBOARD><![CDATA[thinks your Tree House is great!]]></TREEHOUSE_DESCR_INBOARD>
+  <TREEHOUSE_DESCR_NEWMSG><![CDATA[Tell a Panda that you like their Tree House!]]></TREEHOUSE_DESCR_NEWMSG>
+  <TREEHOUSE_PARTY><![CDATA[Tree House Party]]></TREEHOUSE_PARTY>
+  <TREEHOUSE_TYPE><![CDATA[Great Tree House!]]></TREEHOUSE_TYPE>
+  <VISIT_HOUSE_DESCR_ANSWER><![CDATA[will stop by. ]]></VISIT_HOUSE_DESCR_ANSWER>
+  <VISIT_HOUSE_DESCR_INBOARD><![CDATA[wants to show you his/her Tree House.]]></VISIT_HOUSE_DESCR_INBOARD>
+  <VISIT_HOUSE_DESCR_NEWMSG><![CDATA[Tell a Panda that you want to show him/her your Tree House. ]]></VISIT_HOUSE_DESCR_NEWMSG>
+  <VISIT_HOUSE_TYPE><![CDATA[Visit my Tree House!]]></VISIT_HOUSE_TYPE>
+  <WANT_SEND_ANSWER><![CDATA[Do you want to send this reply?]]></WANT_SEND_ANSWER>
+</snippets>

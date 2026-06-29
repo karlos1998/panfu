@@ -1,0 +1,44 @@
+<config check="f7005b79823dbee904623f4df754771f">
+  <assets>
+    <asset id="closeButton" path="assets/close.swf"/>
+    <asset id="default" path="assets/defaultMovie.swf"/>
+    <asset id="evronCastleEntrance" path="assets/evronCastleEntrance.swf"/>
+    <asset id="Map" path="assets/map2.swf"/>
+    <asset id="olympicrings" path="assets/olympic.swf"/>
+    <asset id="underwater" path="assets/underwater.swf" sound="blub"/>
+    <asset id="introTour" path="assets/introTour.swf"/>
+    <asset id="mapBoat" path="assets/Map_travelling_boat.swf"/>
+    <asset id="transition0" path="assets/transition0.swf"/>
+    <asset id="transition1" path="assets/transition1.swf"/>
+    <asset id="transition2" path="assets/transition2.swf"/>
+    <asset id="transition3" path="assets/transition3.swf"/>
+    <asset id="transition4" path="assets/transition4.swf"/>
+    <asset id="transition5" path="assets/transition5.swf"/>
+    <asset id="transition6" path="assets/transition6.swf"/>
+    <asset id="transition7" path="assets/transition7.swf"/>
+    <asset id="bitterTide" path="assets/bitterTide.swf"/>
+    <asset id="telescopeView" path="assets/TelescopeView.swf"/>
+    <asset id="telescopeView2" path="assets/TelescopeView2.swf"/>
+    <asset id="telescopeView3" path="assets/TelescopeView3.swf"/>
+    <asset id="napasapaTelescope" path="assets/NapasapaTelescope.swf"/>
+    <asset id="napasapaTelescope2" path="assets/NapasapaTelescope2.swf"/>
+    <asset id="napasapaTelescope3" path="assets/NapasapaTelescope3.swf"/>
+    <asset id="snowmanTelescope" path="assets/SnowmanTelescope.swf"/>
+    <asset id="snowmanTelescope2" path="assets/SnowmanTelescope2.swf"/>
+    <asset id="snowmanTelescope3" path="assets/SnowmanTelescope3.swf"/>
+    <asset id="billyViewPre1" path="assets/BillyViewPre1.swf"/>
+    <asset id="billyViewPre2" path="assets/BillyViewPre2.swf"/>
+    <asset id="billyView1" path="assets/BillyView1.swf"/>
+    <asset id="billyView2" path="assets/BillyView2.swf"/>
+    <asset id="billyView3" path="assets/BillyView3.swf"/>
+    <asset id="backSchool1" path="assets/BackSchool1.swf"/>
+    <asset id="backSchool2" path="assets/BackSchool2.swf"/>
+    <asset id="backSchool3" path="assets/BackSchool3.swf"/>
+    <asset id="zukoView" path="assets/ZukoView.swf"/>
+    <asset id="zukoView" path="assets/ZukoView.swf"/>
+    <asset id="missingEllaTelescope" path="assets/MissingEllaTelescope.swf"/>
+  </assets>
+  <sounds>
+    <sound id="blub" path="audio/blub.mp3" loops="-1"/>
+  </sounds>
+</config>

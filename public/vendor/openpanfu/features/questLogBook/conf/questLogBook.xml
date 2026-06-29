@@ -1,0 +1,324 @@
+<config check="29e3eb7f9e3b3e1185e22af4f5536e55">
+  <snippets path="features/questLogBook/conf/snippets/text_quest_overview_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="logBook" path="assets/QuestLogBook.swf"/>
+    <asset id="quest" path="assets/QuestIcon.swf"/>
+    <asset id="tutorialquest" path="assets/QuestIcon.swf"/>
+    <asset id="multiquest" path="assets/QuestIcon.swf"/>
+    <asset id="allquest" path="assets/QuestIcon.swf"/>
+    <asset id="confirm" path="assets/confirmPopup.swf"/>
+    <asset id="tutorialconfirm" path="assets/tutorialconfirmPopup.swf"/>
+    <asset id="tutorialwarn" path="assets/tutorialwarnPopup.swf"/>
+    <asset id="warn" path="assets/warnPopup.swf"/>
+    <asset id="questbookScrollPane" path="assets/QuestbookScrollPane.swf"/>
+  </assets>
+  <sounds>
+    <sound id="closeQB" volume="1" path="audio/QBook_close.mp3" loops="0"/>
+    <sound id="openQB" volume="1" path="audio/QBook_open.mp3" loops="0"/>
+    <sound id="skimQB" volume="1" path="audio/QBook_skim.mp3" loops="0"/>
+  </sounds>
+  <module>
+    <quests>
+      <weeklyquest descr="HOT_BUTTON_DOLPHIN" startstate="105,0,0" finishstate="105,0,0" dateStart="Feb 10 2026" dateEnd="Mar 1 2026" location="19"/>
+      <quest id="4" name="NAME_QUEST_03" room="36" firstNPCAsset="surfer" descr="EXPLANATION_QUEST03">
+        <item id="board" itemID="100796"/>
+        <progress state="4,0,20" snippet="QUESTBOOK_HINTS_SURFER_01"/>
+        <progress state="4,0,30" snippet="QUESTBOOK_HINTS_SURFER_02"/>
+        <progress state="4,0,40" snippet="QUESTBOOK_HINTS_SURFER_03"/>
+        <progress state="4,0,50" snippet="QUESTBOOK_HINTS_SURFER_04"/>
+        <progress state="4,0,60" snippet="QUESTBOOK_HINTS_SURFER_05"/>
+        <progress state="4,0,70-80" snippet="QUESTBOOK_HINTS_SURFER_06"/>
+        <progress state="4,0,85" snippet="QUESTBOOK_HINTS_SURFER_07" finalState="true"/>
+      </quest>
+      <quest id="9" name="NAME_QUEST_09" room="39" firstNPCAsset="clownNPC" descr="EXPLANATION_QUEST09">
+        <item id="item1" itemID="101068"/>
+        <item id="item2" itemID="101069"/>
+        <item id="item3" itemID="101071"/>
+        <item id="item4" itemID="101070"/>
+        <item id="item5" itemID="101072"/>
+        <progress state="9,0,1" snippet="QUESTBOOK_HINTS_WOOBYQUEST_01"/>
+        <progress state="9,0,2" snippet="QUESTBOOK_HINTS_WOOBYQUEST_02"/>
+        <progress state="9,0,3" snippet="QUESTBOOK_HINTS_WOOBYQUEST_03"/>
+        <progress state="9,0,4" snippet="QUESTBOOK_HINTS_WOOBYQUEST_04"/>
+        <progress state="9,0,5" snippet="QUESTBOOK_HINTS_WOOBYQUEST_05"/>
+        <progress state="9,0,6" snippet="QUESTBOOK_HINTS_WOOBYQUEST_06"/>
+        <progress state="9,0,7" snippet="QUESTBOOK_HINTS_WOOBYQUEST_07"/>
+        <progress state="9,0,8" snippet="QUESTBOOK_HINTS_WOOBYQUEST_08"/>
+        <progress state="9,0,10" snippet="QUESTBOOK_HINTS_WOOBYQUEST_09"/>
+        <progress state="9,0,11" snippet="QUESTBOOK_HINTS_WOOBYQUEST_10"/>
+        <progress state="9,0,12" snippet="QUESTBOOK_HINTS_WOOBYQUEST_11"/>
+        <progress state="9,0,13" snippet="QUESTBOOK_HINTS_WOOBYQUEST_12"/>
+        <progress state="9,0,14-15" snippet="QUESTBOOK_HINTS_WOOBYQUEST_13"/>
+        <progress state="9,0,16" snippet="QUESTBOOK_HINTS_WOOBYQUEST_14"/>
+        <progress state="9,0,99-100" snippet="QUESTBOOK_HINTS_WOOBYQUEST_15" finalState="true"/>
+      </quest>
+      <quest id="30" name="NAME_QUEST_29" room="56" firstNPCAsset="plane" descr="EXPLANATION_QUEST29">
+        <item id="testingGlass" itemID="101808" name="Testglass"/>
+        <item id="starPlant" itemID="101807" name="Star Herbs"/>
+        <item id="rainbowPlant" itemID="101804" name="Rainbows Flower"/>
+        <item id="scissors" itemID="101805" name="Scissors"/>
+        <item id="TESTGLASS_LIQUID" itemID="101809" name="Testglass Liquid"/>
+        <item id="chilliplant" itemID="101802" name="Chilliplant"/>
+        <item id="chilliplantgrown" itemID="101818" name="Chilliplant"/>
+        <item id="chillicrossies" itemID="101801" name="Chilli Crossies"/>
+        <item id="screw" itemID="101806" name="Screw"/>
+        <item id="MEDICIN_FOR_ELOISE" itemID="101829" name="Medicin"/>
+        <progress state="30,0,2" snippet="QUESTBOOK_HINTS_POKOPETQUEST_01"/>
+        <progress state="30,0,5" snippet="QUESTBOOK_HINTS_POKOPETQUEST_02"/>
+        <progress state="30,0,7" snippet="QUESTBOOK_HINTS_POKOPETQUEST_03"/>
+        <progress state="30,0,10" snippet="QUESTBOOK_HINTS_POKOPETQUEST_04"/>
+        <progress state="30,0,16" snippet="QUESTBOOK_HINTS_POKOPETQUEST_05"/>
+        <progress state="30,0,18" snippet="QUESTBOOK_HINTS_POKOPETQUEST_06"/>
+        <progress state="30,0,20" snippet="QUESTBOOK_HINTS_POKOPETQUEST_07"/>
+        <progress state="30,0,22" snippet="QUESTBOOK_HINTS_POKOPETQUEST_08"/>
+        <progress state="30,0,24" snippet="QUESTBOOK_HINTS_POKOPETQUEST_09"/>
+        <progress state="30,0,26" snippet="QUESTBOOK_HINTS_POKOPETQUEST_10"/>
+        <progress state="30,0,27" snippet="QUESTBOOK_HINTS_POKOPETQUEST_11"/>
+        <progress state="30,0,28" snippet="QUESTBOOK_HINTS_POKOPETQUEST_12"/>
+        <progress state="30,0,30-32" snippet="QUESTBOOK_HINTS_POKOPETQUEST_13"/>
+        <progress state="30,0,34-36" snippet="QUESTBOOK_HINTS_POKOPETQUEST_14"/>
+        <progress state="30,0,38" snippet="QUESTBOOK_HINTS_POKOPETQUEST_15"/>
+        <progress state="30,0,40" snippet="QUESTBOOK_HINTS_POKOPETQUEST_16"/>
+        <progress state="30,0,42" snippet="QUESTBOOK_HINTS_POKOPETQUEST_17"/>
+        <progress state="30,0,43" snippet="QUESTBOOK_HINTS_POKOPETQUEST_19"/>
+        <progress state="30,0,44" snippet="QUESTBOOK_HINTS_POKOPETQUEST_20"/>
+        <progress state="30,0,46" snippet="QUESTBOOK_HINTS_POKOPETQUEST_20_A"/>
+        <progress state="30,0,48" snippet="QUESTBOOK_HINTS_POKOPETQUEST_21"/>
+        <progress state="30,0,50" snippet="QUESTBOOK_HINTS_POKOPETQUEST_22"/>
+        <progress state="30,0,52" snippet="QUESTBOOK_HINTS_POKOPETQUEST_23"/>
+        <progress state="30,0,54" snippet="QUESTBOOK_HINTS_POKOPETQUEST_24"/>
+        <progress state="30,0,55" snippet="QUESTBOOK_HINTS_POKOPETQUEST_25"/>
+        <progress state="30,0,60" snippet="QUESTBOOK_HINTS_POKOPETQUEST_26"/>
+        <progress state="30,0,61" snippet="QUESTBOOK_HINTS_POKOPETQUEST_27"/>
+        <progress state="30,0,62" snippet="QUESTBOOK_HINTS_POKOPETQUEST_28"/>
+        <progress state="30,0,63-65" snippet="QUESTBOOK_HINTS_POKOPETQUEST_29"/>
+        <progress state="30,0,66" snippet="QUESTBOOK_HINTS_POKOPETQUEST_31"/>
+        <progress state="30,0,68-71" snippet="QUESTBOOK_HINTS_POKOPETQUEST_32"/>
+        <progress state="30,0,72-76" snippet="QUESTBOOK_HINTS_POKOPETQUEST_33"/>
+        <progress state="30,0,78" snippet="QUESTBOOK_HINTS_POKOPETQUEST_35"/>
+        <progress state="30,0,80" snippet="QUESTBOOK_HINTS_POKOPETQUEST_36"/>
+        <progress state="30,0,83-84" snippet="QUESTBOOK_HINTS_POKOPETQUEST_37"/>
+        <progress state="30,0,86" snippet="QUESTBOOK_HINTS_POKOPETQUEST_38" finalState="true"/>
+      </quest>
+      <quest id="2" name="NAME_QUEST_02" room="36" firstNPCAsset="octopus" descr="EXPLANATION_QUEST02">
+        <item id="PirateTreasure" itemID="100603"/>
+        <item id="PirateMap" itemID="100604"/>
+        <item id="ChickenPlate" itemID="100605"/>
+        <item id="BoatKey" itemID="100606"/>
+        <item id="BoatGas" itemID="100607"/>
+        <item id="GoldenCoin" itemID="100608"/>
+        <item id="PiratHat" itemID="100609"/>
+        <progress state="2,0,20" snippet="QUESTBOOK_HINTS_SONISAPIRATE_01"/>
+        <progress state="2,0,25" snippet="QUESTBOOK_HINTS_SONISAPIRATE_02"/>
+        <progress state="2,0,30" snippet="QUESTBOOK_HINTS_SONISAPIRATE_03"/>
+        <progress state="2,0,40" snippet="QUESTBOOK_HINTS_SONISAPIRATE_04"/>
+        <progress state="2,0,50" snippet="QUESTBOOK_HINTS_SONISAPIRATE_05"/>
+        <progress state="2,0,55" snippet="QUESTBOOK_HINTS_SONISAPIRATE_06"/>
+        <progress state="2,0,56" snippet="QUESTBOOK_HINTS_SONISAPIRATE_07"/>
+        <progress state="2,0,60" snippet="QUESTBOOK_HINTS_SONISAPIRATE_08"/>
+        <progress state="2,0,70" snippet="QUESTBOOK_HINTS_SONISAPIRATE_09"/>
+        <progress state="2,0,90" snippet="QUESTBOOK_HINTS_SONISAPIRATE_10"/>
+        <progress state="2,0,110" snippet="QUESTBOOK_HINTS_SONISAPIRATE_11"/>
+        <progress state="2,0,120" snippet="QUESTBOOK_HINTS_SONISAPIRATE_12"/>
+        <progress state="2,0,130" snippet="QUESTBOOK_HINTS_SONISAPIRATE_13"/>
+        <progress state="2,0,135" snippet="QUESTBOOK_HINTS_SONISAPIRATE_14"/>
+        <progress state="2,0,136" snippet="QUESTBOOK_HINTS_SONISAPIRATE_15"/>
+        <progress state="2,0,140" snippet="QUESTBOOK_HINTS_SONISAPIRATE_16"/>
+        <progress state="2,0,145" snippet="QUESTBOOK_HINTS_SONISAPIRATE_17"/>
+        <progress state="2,0,147" snippet="QUESTBOOK_HINTS_SONISAPIRATE_18"/>
+        <progress state="2,0,148" snippet="QUESTBOOK_HINTS_SONISAPIRATE_19"/>
+        <progress state="2,0,149" snippet="QUESTBOOK_HINTS_SONISAPIRATE_20"/>
+        <progress state="2,0,150" snippet="QUESTBOOK_HINTS_SONISAPIRATE_28"/>
+        <progress state="2,0,155-160" snippet="QUESTBOOK_HINTS_SONISAPIRATE_21"/>
+        <progress state="2,0,170-185" snippet="QUESTBOOK_HINTS_SONISAPIRATE_22"/>
+        <progress state="2,0,190" snippet="QUESTBOOK_HINTS_SONISAPIRATE_22_A"/>
+        <progress state="2,0,200-210" snippet="QUESTBOOK_HINTS_SONISAPIRATE_23"/>
+        <progress state="2,0,220-230" snippet="QUESTBOOK_HINTS_SONISAPIRATE_24"/>
+        <progress state="2,0,235" snippet="QUESTBOOK_HINTS_SONISAPIRATE_25"/>
+        <progress state="2,0,250" snippet="QUESTBOOK_HINTS_SONISAPIRATE_27" finalState="true"/>
+        <progress state="2,0,260" snippet="QUESTBOOK_HINTS_SONISAPIRATE_26" finalState="true"/>
+        <progress state="2,0,270" snippet="QUESTBOOK_HINTS_SONISAPIRATE_27" finalState="true"/>
+      </quest>
+      <quest id="15" name="NAME_QUEST_15" room="41" firstNPCAsset="william" descr="EXPLANATION_QUEST15">
+        <item id="feather" itemID="101266" name="Piece of Bandages with Blue Feather"/>
+        <item id="crowbar" itemID="101275" name="Crowbar"/>
+        <item id="pinkBandage" itemID="101276" name="Paper Roll"/>
+        <item id="swissknife" itemID="101277" name="Swiss Knife"/>
+        <item id="wood" itemID="101278" name="Wood"/>
+        <item id="torch" itemID="101279" name="Torch"/>
+        <item id="iceCrown" itemID="101306" name="Magic Ice Crown"/>
+        <item id="iceSuit" itemID="101307" name="Magic Ice Suit"/>
+        <item id="lavaPlant" itemID="101308" name="Lava Plant"/>
+        <item id="diamond" itemID="101309" name="Magic Ice Diamond"/>
+        <item id="lavaGlove" itemID="101310" name="Lava Glove"/>
+        <item id="cookie" itemID="101311" name="Chocolate Cookie"/>
+        <item id="parrot" itemID="101328" name="Beardy"/>
+        <progress state="15,0,2" snippet="QUESTBOOK_HINTS_LOSTLOVER_01"/>
+        <progress state="15,0,3" snippet="QUESTBOOK_HINTS_LOSTLOVER_02"/>
+        <progress state="15,0,4" snippet="QUESTBOOK_HINTS_LOSTLOVER_03"/>
+        <progress state="15,0,5-6" snippet="QUESTBOOK_HINTS_LOSTLOVER_04"/>
+        <progress state="15,0,7" snippet="QUESTBOOK_HINTS_LOSTLOVER_05"/>
+        <progress state="15,0,8" daypasstest="15,0,0,0" snippet="QUESTBOOK_HINTS_LOSTLOVER_06"/>
+        <progress state="15,0,8" daypasstest="15,0,1,+" snippet="QUESTBOOK_HINTS_LOSTLOVER_07"/>
+        <progress state="15,0,9" snippet="QUESTBOOK_HINTS_LOSTLOVER_08"/>
+        <progress state="15,0,10-11" snippet="QUESTBOOK_HINTS_LOSTLOVER_09"/>
+        <progress state="15,0,12" snippet="QUESTBOOK_HINTS_LOSTLOVER_10"/>
+        <progress state="15,0,13" doesNotHaveOneItem="101277,101278" snippet="QUESTBOOK_HINTS_LOSTLOVER_11"/>
+        <progress state="15,0,13" doesNotHaveOneItem="101277" hasItems="101278" snippet="QUESTBOOK_HINTS_LOSTLOVER_13"/>
+        <progress state="15,0,13" doesNotHaveOneItem="101278" hasItems="101277" snippet="QUESTBOOK_HINTS_LOSTLOVER_12"/>
+        <progress state="15,0,13" hasItems="101277,101278" snippet="QUESTBOOK_HINTS_LOSTLOVER_14"/>
+        <progress state="15,0,14" daypasstest="15,0,0,0" snippet="QUESTBOOK_HINTS_LOSTLOVER_15"/>
+        <progress state="15,0,14" daypasstest="15,0,1,+" snippet="QUESTBOOK_HINTS_LOSTLOVER_16"/>
+        <progress state="15,0,19-20" snippet="QUESTBOOK_HINTS_LOSTLOVER_17"/>
+        <progress state="15,0,21" snippet="QUESTBOOK_HINTS_LOSTLOVER_18"/>
+        <progress state="15,0,22" snippet="QUESTBOOK_HINTS_LOSTLOVER_18_A"/>
+        <progress state="15,0,25-50" snippet="QUESTBOOK_HINTS_LOSTLOVER_18_B"/>
+        <progress state="15,0,51" snippet="QUESTBOOK_HINTS_LOSTLOVER_18_C"/>
+        <progress state="15,0,52" snippet="QUESTBOOK_HINTS_LOSTLOVER_19"/>
+        <progress state="15,0,53" snippet="QUESTBOOK_HINTS_LOSTLOVER_20"/>
+        <progress state="15,0,54" daypasstest="15,0,0,0" snippet="QUESTBOOK_HINTS_LOSTLOVER_21"/>
+        <progress state="15,0,54" daypasstest="15,0,1,+" snippet="QUESTBOOK_HINTS_LOSTLOVER_22"/>
+        <progress state="15,0,55" snippet="QUESTBOOK_HINTS_LOSTLOVER_23"/>
+        <progress state="15,0,56" snippet="QUESTBOOK_HINTS_LOSTLOVER_24"/>
+        <progress state="15,0,57" daypasstest="15,0,0,0" snippet="QUESTBOOK_HINTS_LOSTLOVER_25"/>
+        <progress state="15,0,57" daypasstest="15,0,1,+" snippet="QUESTBOOK_HINTS_LOSTLOVER_26"/>
+        <progress state="15,0,58-59" snippet="QUESTBOOK_HINTS_LOSTLOVER_27"/>
+        <progress state="15,0,60" snippet="QUESTBOOK_HINTS_LOSTLOVER_28"/>
+        <progress state="15,0,61" snippet="QUESTBOOK_HINTS_LOSTLOVER_29"/>
+        <progress state="15,0,62" snippet="QUESTBOOK_HINTS_LOSTLOVER_30"/>
+        <progress state="15,0,63" snippet="QUESTBOOK_HINTS_LOSTLOVER_31"/>
+        <progress state="15,0,75" snippet="QUESTBOOK_HINTS_LOSTLOVER_32"/>
+        <progress state="15,0,80-81" snippet="QUESTBOOK_HINTS_LOSTLOVER_36"/>
+        <progress state="15,0,82" snippet="QUESTBOOK_HINTS_LOSTLOVER_37"/>
+        <progress state="15,0,83" daypasstest="15,0,0,0" snippet="QUESTBOOK_HINTS_LOSTLOVER_38"/>
+        <progress state="15,0,83" daypasstest="15,0,1,+" snippet="QUESTBOOK_HINTS_LOSTLOVER_39"/>
+        <progress state="15,0,84" snippet="QUESTBOOK_HINTS_LOSTLOVER_35"/>
+        <progress state="15,0,91" snippet="QUESTBOOK_HINTS_LOSTLOVER_34"/>
+        <progress state="15,0,95" snippet="QUESTBOOK_HINTS_LOSTLOVER_35" finalState="true"/>
+        <progress state="15,0,100" snippet="QUESTBOOK_HINTS_LOSTLOVER_40" finalState="true"/>
+      </quest>
+      <quest id="73" name="NAME_QUEST_THECHRONICLER" room="2" firstNPCAsset="chronicler" descr="EXPLANATION_THECHRONICLER" questname="tutorial2">
+        <progress state="73,0,1-99" snippet="EXPLANATION_THECHRONICLER"/>
+        <progress state="73,0,100-199" snippet="QUESTBOOK_HINTS_THECHRONICLER_01"/>
+        <progress state="73,0,200-299" snippet="QUESTBOOK_HINTS_THECHRONICLER_02"/>
+        <progress state="73,0,300-399" snippet="QUESTBOOK_HINTS_THECHRONICLER_03"/>
+        <progress state="73,0,400-499" snippet="QUESTBOOK_HINTS_THECHRONICLER_04"/>
+        <progress state="73,0,500-599" snippet="QUESTBOOK_HINTS_THECHRONICLER_05"/>
+        <progress state="73,0,600-699" snippet="QUESTBOOK_HINTS_THECHRONICLER_06"/>
+        <progress state="73,0,700-799" snippet="QUESTBOOK_HINTS_THECHRONICLER_07"/>
+        <progress state="73,0,800-899" snippet="QUESTBOOK_HINTS_THECHRONICLER_08"/>
+        <progress state="73,0,900-999" snippet="QUESTBOOK_HINTS_THECHRONICLER_09"/>
+        <progress state="73,0,1000" snippet="QUESTBOOK_HINTS_THECHRONICLER_10" finalState="true"/>
+      </quest>
+      <quest id="67" name="NAME_QUEST_SPIES" room="17" descr="EXPLANATION_SPIES" type="SINGLE" questname="letsGoThere">
+        <item id="Spy Costume" itemID="103097" name="Spy Costume"/>
+        <progress state="67,0,1-998" snippet="EXPLANATION_SPIES"/>
+        <progress state="67,0,999-1998" snippet="QUESTBOOK_HINTS_SPIES_01"/>
+        <progress state="67,0,1999-2998" snippet="QUESTBOOK_HINTS_SPIES_02"/>
+        <progress state="67,0,2999-3998" snippet="QUESTBOOK_HINTS_SPIES_03"/>
+        <progress state="67,0,3999-4998" snippet="QUESTBOOK_HINTS_SPIES_04"/>
+      </quest>
+      <quest id="25" name="NAME_QUEST_25" room="36" descr="EXPLANATION_QUEST_BIGFOOT" date="12 Feb 2014">
+        <item id="fishingRod" itemID="101646" name="Fishing Rod"/>
+        <item id="fish" itemID="101647" name="Fish"/>
+        <item id="oil" itemID="101648" name="Olive Oil"/>
+        <item id="fishFingers" itemID="101649" name="Fish Fingers"/>
+        <item id="keys" itemID="101650" name="Bundle of Keys"/>
+        <item id="piece" itemID="101651" name="Piece"/>
+        <item id="canvas" itemID="101652" name="Canvas"/>
+        <item id="stick" itemID="101653" name="Stick"/>
+        <item id="needle" itemID="101654" name="Needle"/>
+        <item id="ice" itemID="101655" name="Ice"/>
+        <progress state="25,0,1" snippet="QUESTBOOK_HINT_BIGFOOT_01"/>
+        <progress state="25,0,2" snippet="QUESTBOOK_HINT_BIGFOOT_02"/>
+        <progress state="25,0,3-4" snippet="QUESTBOOK_HINT_BIGFOOT_03"/>
+        <progress state="25,0,5" snippet="QUESTBOOK_HINT_BIGFOOT_04"/>
+        <progress state="25,0,6" snippet="QUESTBOOK_HINT_BIGFOOT_05"/>
+        <progress state="25,0,7" snippet="QUESTBOOK_HINT_BIGFOOT_06"/>
+        <progress state="25,0,8" snippet="QUESTBOOK_HINT_BIGFOOT_07"/>
+        <progress state="25,0,9" snippet="QUESTBOOK_HINT_BIGFOOT_08"/>
+        <progress state="25,0,10" snippet="QUESTBOOK_HINT_BIGFOOT_09"/>
+        <progress state="25,0,11-12" snippet="QUESTBOOK_HINT_BIGFOOT_10"/>
+        <progress state="25,0,13" snippet="QUESTBOOK_HINT_BIGFOOT_11"/>
+        <progress state="25,0,14" snippet="QUESTBOOK_HINT_BIGFOOT_12"/>
+        <progress state="25,0,15" snippet="QUESTBOOK_HINT_BIGFOOT_13"/>
+        <progress state="25,0,16" snippet="QUESTBOOK_HINT_BIGFOOT_14"/>
+        <progress state="25,0,17" snippet="QUESTBOOK_HINT_BIGFOOT_15"/>
+        <progress state="25,0,18" snippet="QUESTBOOK_HINT_BIGFOOT_16"/>
+        <progress state="25,0,19" snippet="QUESTBOOK_HINT_BIGFOOT_17"/>
+        <progress state="25,0,20" snippet="QUESTBOOK_HINT_BIGFOOT_18"/>
+        <progress state="25,0,21" snippet="QUESTBOOK_HINT_BIGFOOT_19"/>
+        <progress state="25,0,22" snippet="QUESTBOOK_HINT_BIGFOOT_20"/>
+        <progress state="25,0,23-24" snippet="QUESTBOOK_HINT_BIGFOOT_21"/>
+        <progress state="25,0,25" snippet="QUESTBOOK_HINT_BIGFOOT_22"/>
+        <progress state="25,0,26" snippet="QUESTBOOK_HINT_BIGFOOT_23"/>
+        <progress state="25,0,27" snippet="QUESTBOOK_HINT_BIGFOOT_24"/>
+        <progress state="25,0,28" snippet="QUESTBOOK_HINT_BIGFOOT_25"/>
+        <progress state="25,0,29" snippet="QUESTBOOK_HINT_BIGFOOT_26"/>
+        <progress state="25,0,30" snippet="QUESTBOOK_HINT_BIGFOOT_27"/>
+        <progress state="25,0,31" snippet="QUESTBOOK_HINT_BIGFOOT_28"/>
+        <progress state="25,0,32" snippet="QUESTBOOK_HINT_BIGFOOT_29"/>
+        <progress state="25,0,33" snippet="QUESTBOOK_HINT_BIGFOOT_30"/>
+        <progress state="25,0,34" snippet="QUESTBOOK_HINT_BIGFOOT_31"/>
+        <progress state="25,0,35" snippet="QUESTBOOK_HINT_BIGFOOT_32" finalState="true"/>
+      </quest>
+      <quest id="28" name="NAME_QUEST_28" room="23" descr="EXPLANATION_QUEST28" date="5 Mar 2014">
+        <item id="briefcase" itemID="101710" name="Black Briefcase"/>
+        <item id="flour" itemID="101713" name="Flour"/>
+        <item id="sugar" itemID="101714" name="Sugar"/>
+        <progress state="28,0,1-3" snippet="QUESTBOOK_HINTS_MYST_CALL_01"/>
+        <progress state="28,0,6" snippet="QUESTBOOK_HINTS_MYST_CALL_02"/>
+        <progress state="28,0,8" snippet="QUESTBOOK_HINTS_MYST_CALL_03"/>
+        <progress state="28,0,10" snippet="QUESTBOOK_HINTS_MYST_CALL_03_A"/>
+        <progress state="28,0,12" snippet="QUESTBOOK_HINTS_MYST_CALL_04"/>
+        <progress state="28,0,14" snippet="QUESTBOOK_HINTS_MYST_CALL_04_A"/>
+        <progress state="28,0,15-16" snippet="QUESTBOOK_HINTS_MYST_CALL_05"/>
+        <progress state="28,0,18" snippet="QUESTBOOK_HINTS_MYST_CALL_06"/>
+        <progress state="28,0,20" snippet="QUESTBOOK_HINTS_MYST_CALL_07"/>
+        <progress state="28,0,22" snippet="QUESTBOOK_HINTS_MYST_CALL_08"/>
+        <progress state="28,0,26-28" snippet="QUESTBOOK_HINTS_MYST_CALL_09"/>
+        <progress state="28,0,30" snippet="QUESTBOOK_HINTS_MYST_CALL_10"/>
+        <progress state="28,0,32" snippet="QUESTBOOK_HINTS_MYST_CALL_11"/>
+        <progress state="28,0,33" snippet="QUESTBOOK_HINTS_MYST_CALL_12"/>
+        <progress state="28,0,34" snippet="QUESTBOOK_HINTS_MYST_CALL_13"/>
+        <progress state="28,0,36" snippet="QUESTBOOK_HINTS_MYST_CALL_14"/>
+        <progress state="28,0,37" snippet="QUESTBOOK_HINTS_MYST_CALL_15"/>
+        <progress state="28,0,40" snippet="QUESTBOOK_HINTS_MYST_CALL_16"/>
+        <progress state="28,0,42" snippet="QUESTBOOK_HINTS_MYST_CALL_17"/>
+        <progress state="28,0,43" snippet="QUESTBOOK_HINTS_MYST_CALL_18"/>
+        <progress state="28,0,44" snippet="QUESTBOOK_HINTS_MYST_CALL_19"/>
+        <progress state="28,0,46" snippet="QUESTBOOK_HINTS_MYST_CALL_20"/>
+        <progress state="28,0,50-52" snippet="QUESTBOOK_HINTS_MYST_CALL_21"/>
+      </quest>
+      <quest id="0" name="NAME_QUEST_01" room="19" firstNPCAsset="william" descr="EXPLANATION_QUEST01" date="26 Mar 2014">
+        <item id="tilldeath_herb" itemID="100496"/>
+        <item id="tilldeath_coffee" itemID="100488"/>
+        <item id="tilldeath_fishingrod" itemID="100489"/>
+        <item id="tilldeath_snow" itemID="100490"/>
+        <item id="tilldeath_sunmilk" itemID="100491"/>
+        <item id="tilldeath_sugar" itemID="100492"/>
+        <item id="tilldeath_stone_1" itemID="100493"/>
+        <item id="tilldeath_stone_2" itemID="100494"/>
+        <item id="tilldeath_stone_3" itemID="100495"/>
+        <item id="savior_pin" itemID="100552"/>
+        <item id="savior_cape" itemID="100553"/>
+        <progress state="0,0,2" snippet="HINT_AMALURA_02"/>
+        <progress state="0,0,3-6" snippet="HINT_AMALURA_03"/>
+        <progress state="0,0,7-8" snippet="HINT_AMALURA_04"/>
+        <progress state="0,0,9-10" snippet="HINT_AMALURA_05"/>
+        <progress state="0,0,11-12" snippet="HINT_AMALURA_06"/>
+        <progress state="0,0,13" snippet="HINT_AMALURA_07"/>
+        <progress state="0,0,14-16" snippet="HINT_AMALURA_08"/>
+        <progress state="0,0,17" snippet="HINT_AMALURA_09"/>
+        <progress state="0,0,18-19" snippet="HINT_AMALURA_10"/>
+        <progress state="0,0,20-22" snippet="HINT_AMALURA_11"/>
+        <progress state="0,0,23-27" snippet="HINT_AMALURA_12"/>
+        <progress state="0,0,28" snippet="HINT_AMALURA_13"/>
+        <progress state="0,0,29" snippet="HINT_AMALURA_14"/>
+        <progress state="0,0,30" snippet="HINT_AMALURA_15"/>
+        <progress state="0,0,31" snippet="HINT_AMALURA_16"/>
+        <progress state="0,0,32" snippet="HINT_AMALURA_17" finalState="true"/>
+      </quest>
+    </quests>
+  </module>
+</config>

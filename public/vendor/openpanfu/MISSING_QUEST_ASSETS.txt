@@ -1,0 +1,28 @@
+Remaining quest dependencies not found on the public flashclient CDN after local aliases.
+
+Local aliases created:
+- quests/horse/assets/HorsePlant.swf <- public quests/horse/assets/horsePlant.swf (case mismatch)
+- quests/tutorial2/assets/manny.swf <- local/public quests/tutorial1/assets/manny.swf (same asset referenced from tutorial2)
+- quests/mysonisapirate/assets/pirateTreasure.swf <- local quests/mysonisapirate/assets/treasure.swf (public pirateTreasure.swf is 404)
+- quests/unicornQuest/assets/XX.swf <- local quests/unicornQuest/unicornQuest.swf (public XX.swf is 404)
+
+Still absent upstream; left for later if a browser log asks for exact audio:
+- quests/mysonisapirate/audio/en/Kamarias_son_speech_08.mp3
+- quests/tillDeath/audio/de/ghostcow/COWGHOST_23.mp3
+- quests/tillDeath/audio/de/ghostcow/COWGHOST_24.mp3
+- quests/tillDeath/audio/de/ghostcow/COWGHOST_25.mp3
+- quests/tillDeath/audio/de/ghostcow/COWGHOST_26.mp3
+- quests/tillDeath/audio/de/ghostcow/COWGHOST_27.mp3
+- quests/tillDeath/audio/de/ghostcow/COWGHOST_28.mp3
+- quests/tillDeath/audio/de/ghostcow/COWGHOST_35.mp3
+- quests/tillDeath/audio/en/cow/COWGHOST_23.mp3
+- quests/tillDeath/audio/en/cow/COWGHOST_24.mp3
+- quests/tillDeath/audio/en/cow/COWGHOST_25.mp3
+- quests/tillDeath/audio/en/cow/COWGHOST_26.mp3
+- quests/tillDeath/audio/en/kamaria/kamaria_30.mp3
+- quests/tillDeath/audio/en/kamaria/kamaria_31.mp3
+- quests/tillDeath/audio/en/kamaria/kamaria_32.mp3
+- quests/tillDeath/audio/en/kamaria/kamaria_33.mp3
+- quests/tillDeath/audio/en/narrator/narrator_11.mp3
+- quests/tillDeath/audio/en/narrator/narrator_15.mp3
+- quests/transitionQuest/audio/eartquake.mp3

@@ -1,0 +1,26 @@
+<config check="87829b30c03843682b88ffd22811821a">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="1" path="audio/background.mp3" loops="-1"/>
+    <sound id="spiderAttack" volume="1" path="audio/spiderAttack.mp3" loops="0"/>
+    <sound id="spiderMove" volume="1" path="audio/spiderMove.mp3" loops="-1"/>
+    <sound id="spiderSleep" volume="1" path="audio/spiderSleep.mp3" loops="-1"/>
+    <sound id="avatarHit" volume="1" path="audio/avatarHit.mp3" loops="0"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="spider" button="1" visible="1">
+        <button type="click" click="999"/>
+        <message value="startSpiderEncounter" type="room"/>
+      </element>
+      <element id="walkarea" frame=":default"/>
+    </elements>
+    <tooltips/>
+    <hotspots>
+      <hotspot target="34" type="room" x="740" y="450" rad="50" angle="-315"/>
+    </hotspots>
+    <actions/>
+  </module>
+</config>

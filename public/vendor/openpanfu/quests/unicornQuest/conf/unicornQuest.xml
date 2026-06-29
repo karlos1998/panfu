@@ -1,0 +1,170 @@
+<config check="e98fdb1d95a3cce461a45adace69e16d">
+  <snippets path="quests/unicornQuest/conf/snippets/unicornReloaded_text_snippets_$$lang$$.xml" _REPLACE_="1"/>
+  <assets>
+    <asset id="XX" path="assets/XX.swf"/>
+  </assets>
+  <sounds>
+    <sound id="speaker" volume="1" path="audio/$$lang$$/$$key$$.mp3"/>
+    <sound id="angryhorse" volume="1" path="audio/angryhorse.mp3"/>
+    <sound id="happyhorse" volume="1" path="audio/happyhorse.mp3"/>
+    <sound id="spray" volume="1" path="audio/spray.mp3"/>
+  </sounds>
+  <module statement_timeout="60" category="95">
+    <questType type="adventure" questNameInLogBook="NAME_QUEST_UNICORN_QUEST"/>
+    <tracker>
+      <track state="95,1,1" message="11CW34Unicorn_01Start01"/>
+      <track state="95,1,2" message="11CW34Unicorn_02Start02"/>
+      <track state="95,1,3" message="11CW34Unicorn_03Start03"/>
+      <track state="95,1,4" message="11CW34Unicorn_04Start04"/>
+      <track state="95,1,5" message="11CW34Unicorn_05Start05"/>
+      <track state="95,1,6" message="11CW34Unicorn_06SaddleStart"/>
+      <track state="95,1,7" message="11CW34Unicorn_07Crown"/>
+      <track state="95,1,8" message="11CW34Unicorn_08SFinish"/>
+      <track state="95,1,9" message="11CW34Unicorn_09Lotion"/>
+      <track state="95,1,10" message="11CW34Unicorn_10Glove"/>
+    </tracker>
+    <actionsNPC>
+      <actionNPC actionID="bounceFromUnicorn" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="430" positionY="330" onEndMovement="" time="1000" notificationOnFinished="unicornQuest.endOfWalking"/>
+      <actionNPC actionID="bounceTo1" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="350" positionY="250" onEndMovement="" time="200" notificationOnFinished=""/>
+      <actionNPC actionID="bounceTo2" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="270" positionY="300" onEndMovement="" time="200" notificationOnFinished=""/>
+      <actionNPC actionID="bounceTo3" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="330" positionY="360" onEndMovement="" time="200" notificationOnFinished=""/>
+      <actionNPC actionID="bounceTo4" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="550" positionY="380" onEndMovement="" time="200" notificationOnFinished=""/>
+      <actionNPC actionID="bounceTo5" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="640" positionY="330" onEndMovement="" time="200" notificationOnFinished=""/>
+      <actionNPC actionID="noBounce1" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="400" positionY="330" onEndMovement="" time="1000" notificationOnFinished="unicornQuest.animateUnicorn"/>
+      <actionNPC actionID="noBounce2" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="410" positionY="360" onEndMovement="" time="1000" notificationOnFinished="unicornQuest.animateUnicorn"/>
+      <actionNPC actionID="noBounce3" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="440" positionY="380" onEndMovement="" time="1000" notificationOnFinished="unicornQuest.animateUnicorn"/>
+      <actionNPC actionID="noBounce4" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="500" positionY="360" onEndMovement="" time="1000" notificationOnFinished="unicornQuest.animateUnicorn"/>
+      <actionNPC actionID="noBounce5" npcID="-1" typeActionNPC="moveNPC" movementType="walk" positionX="510" positionY="340" onEndMovement="" time="1000" notificationOnFinished="unicornQuest.animateUnicorn"/>
+      <actionNPC actionID="putOnGloves" npcID="-1" typeActionNPC="addNPCClothes" clothes="103475" onEndMovement="" time="" notificationOnFinished=""/>
+    </actionsNPC>
+    <bouncingObjects>
+      <bouncingObject assetname="velvetGloves" room="32"/>
+    </bouncingObjects>
+    <npcs>
+      <npc id="TRAINER" ignoreAsset="1">
+        <speechBubble x="460" y="196" w="200" offX="-1" offY="0" pointX="20" pointY="30"/>
+        <behaviours>
+          <behaviour gamestate="95,0,1">
+            <statement key="CW34_HORSEY_01" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CW34_HORSEY_02" sound="speaker"/>
+            <statement key="CW34_HORSEY_03" sound="speaker">
+              <action id="changeQuestState" state="95,0,10"/>
+              <action id="trackDay"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="95,0,10">
+            <statement key="CW34_HORSEY_03" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="95,0,20-120">
+            <statement key="CW34_HORSEY_04" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="95,0,190">
+            <statement key="CW34_HORSEY_05" sound="speaker"/>
+            <statement key="CW34_HORSEY_06" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="95,0,195">
+            <statement key="CW34_HORSEY_01" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CW34_HORSEY_02" sound="speaker"/>
+            <statement key="CW34_HORSEY_EDGECASE_01" sound="speaker"/>
+            <statement key="CW34_HORSEY_EDGECASE_02" sound="speaker"/>
+            <statement key="CW34_HORSEY_EDGECASE_03" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="95,0,199">
+            <statement key="CW34_HORSEY_EDGECASE_04" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="SADDLER" ignoreAsset="1">
+        <speechBubble x="520" y="196" w="200" offX="-1" offY="-1" pointX="20" pointY="-30"/>
+        <behaviours>
+          <behaviour gamestate="95,0,10">
+            <statement key="CW34_HENRY_01" sound="speaker" parse="name" value="myUserName"/>
+            <statement key="CW34_HENRY_02" sound="speaker"/>
+            <statement key="CW34_HENRY_03" sound="speaker"/>
+            <statement key="CW34_HENRY_04" sound="speaker"/>
+            <statement key="CW34_HENRY_05" sound="speaker">
+              <action id="changeQuestState" state="95,0,20"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="95,0,20">
+            <statement key="CW34_HENRY_04" sound="speaker"/>
+            <statement key="CW34_HENRY_05" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="95,0,30">
+            <statement key="CW34_HENRY_06" sound="speaker"/>
+            <statement key="CW34_HENRY_07" sound="speaker"/>
+            <statement key="CW34_HENRY_08" sound="speaker">
+              <action id="changeQuestState" state="95,0,40"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="95,0,40-45">
+            <statement key="CW34_HENRY_08" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="95,0,50">
+            <statement key="CW34_KAMARIA_05"/>
+          </behaviour>
+          <behaviour gamestate="95,0,55">
+            <statement key="CW34_HENRY_09" sound="speaker"/>
+            <statement key="CW34_HENRY_10" sound="speaker"/>
+            <statement key="CW34_HENRY_11" sound="speaker"/>
+            <statement key="CW34_HENRY_12" sound="speaker">
+              <action id="highlightGloves"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="95,0,60-70">
+            <statement key="CW34_HENRY_12" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="95,0,80">
+            <statement key="CW34_HENRY_13" sound="speaker"/>
+            <statement key="CW34_HENRY_14" sound="speaker">
+              <action id="changeQuestState" state="95,0,90"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="95,0,90">
+            <statement key="CW34_HENRY_14" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="95,0,100">
+            <statement key="CW34_HENRY_16" sound="speaker"/>
+            <statement key="CW34_HENRY_17" sound="speaker"/>
+            <statement key="CW34_HENRY_18" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="95,0,110-120">
+            <statement key="CW34_HENRY_17" sound="speaker"/>
+          </behaviour>
+          <behaviour gamestate="95,0,190">
+            <statement key="CW34_HENRY_19" sound="speaker"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+      <npc id="KAMARIA_TOWER" ignoreAsset="1">
+        <speechBubble x="370" y="195" w="250" offX="-1" offY="-1" pointX="-100" pointY="25"/>
+        <behaviours>
+          <behaviour gamestate="95,0,40">
+            <statement key="CW34_KAMARIA_01" sound="speaker"/>
+            <statement key="CW34_KAMARIA_02" sound="speaker"/>
+            <statement key="CW34_KAMARIA_03" sound="speaker"/>
+            <statement key="CW34_KAMARIA_04" sound="speaker">
+              <action id="highlightLotion"/>
+              <action id="changeQuestState" state="95,0,45"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="95,0,45">
+            <statement key="CW34_KAMARIA_04" sound="speaker">
+              <action id="highlightLotion"/>
+            </statement>
+          </behaviour>
+          <behaviour gamestate="95,0,50">
+            <statement key="CW34_KAMARIA_05" sound="speaker"/>
+            <statement key="CW34_KAMARIA_06" sound="speaker" parse="name" value="myUserName"/>
+          </behaviour>
+        </behaviours>
+      </npc>
+    </npcs>
+    <items>
+      <item id="UNICORN_HERB_LOTION" itemID="103474" name="Herb Lotion"/>
+      <item id="UNICORN_VELVET_GLOVES" itemID="103475" name="Soft Velvet Gloves"/>
+      <item id="UNICORN_CROWN" itemID="103476" name="Unicorn Crown"/>
+      <item id="FANTASY_SADDLE" itemID="100807" name="Unicorn Saddle"/>
+    </items>
+  </module>
+</config>

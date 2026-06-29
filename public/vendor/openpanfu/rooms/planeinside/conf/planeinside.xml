@@ -1,0 +1,161 @@
+<config check="22888a0e59e679d08990c76a8f5e7faf">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <dates/>
+  <module>
+    <elements>
+      <element id="npcLouiseBond" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,0,0-34"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToLouise" type="newPetsQuest"/>
+      </element>
+      <element id="npcElouise" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,0,36-72"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="eloise_npc"/>
+        </message>
+      </element>
+      <element id="kamaria" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,0,7-24"/>
+        </checks>
+        <checks>
+          <visible value="1" gamestate="30,0,26"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="kamaria_npc_inPlane"/>
+        </message>
+      </element>
+      <element id="lock1" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,1,0-2"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="30,1,1-2"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="lock1Clicked" type="newPetsQuest"/>
+      </element>
+      <element id="lock2" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,2,0-2"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="30,2,1-2"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="lock2Clicked" type="newPetsQuest"/>
+      </element>
+      <element id="chain1" button="0" frame=":anfang">
+        <checks>
+          <frame value=":openCage" gamestate="30,1,3-4"/>
+        </checks>
+        <checks>
+          <frame value=":happyPets" gamestate="30,1,5"/>
+        </checks>
+        <checks>
+          <frame value=":noPets" gamestate="30,1,6"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="30,1,4"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="chain1Clicked" type="newPetsQuest"/>
+      </element>
+      <element id="chain2" button="0" frame=":anfang">
+        <checks>
+          <frame value=":openCage" gamestate="30,2,3-4"/>
+        </checks>
+        <checks>
+          <frame value=":happyPets" gamestate="30,2,5"/>
+        </checks>
+        <checks>
+          <frame value=":noPets" gamestate="30,1,6"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="30,2,4"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="chain2Clicked" type="newPetsQuest"/>
+      </element>
+      <element id="pet1" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,1,3"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="30,1,4"/>
+        </checks>
+        <button type="click" click="1"/>
+      </element>
+      <element id="pet2" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,1,3"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="30,1,4"/>
+        </checks>
+        <button type="click" click="1"/>
+      </element>
+      <element id="pet3" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,1,3"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="30,1,4"/>
+        </checks>
+        <button type="click" click="1"/>
+      </element>
+      <element id="pet4" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,2,3"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="30,2,4"/>
+        </checks>
+        <button type="click" click="1"/>
+      </element>
+      <element id="pet5" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,2,3"/>
+        </checks>
+        <checks>
+          <button value="1" gamestate="30,2,4"/>
+        </checks>
+        <button type="click" click="1"/>
+      </element>
+      <element id="click1" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,1,4"/>
+        </checks>
+        <button type="click" click="1"/>
+      </element>
+      <element id="click2" button="0" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,2,4"/>
+        </checks>
+        <button type="click" click="1"/>
+      </element>
+      <element id="npc_bonez" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="30,0,86-99"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="newPetsQuest.talkToBonez" type="newPetsQuest"/>
+      </element>
+    </elements>
+    <hotspots>
+      <hotspot target="56" type="room" x="719" y="216" rad="40" angle="-5"/>
+    </hotspots>
+  </module>
+</config>

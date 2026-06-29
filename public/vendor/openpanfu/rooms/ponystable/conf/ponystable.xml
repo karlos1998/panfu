@@ -1,0 +1,143 @@
+<config check="6abb1634d7098428af988419b615df40">
+  <assets>
+    <asset id="room" path="assets/room.swf"/>
+  </assets>
+  <dates>
+    <date id="pompomQuestDay1" start="Jan 5 2010" finish="Jan 6 2010" check="9a99bfc3f6282d1"/>
+    <date id="petsHomeQuest" start="Mar 16 2010" finish="Mar 21 2010" check="61bb9cc6e33b58c"/>
+    <date id="summerQuest" start="Jul 31 2010" finish="Aug 1 2010" check="3c8cefcc4eb1fbe"/>
+    <date id="napasapaFreeze" start="Jan 18 2012" finish="Jan 25 2012" check="27ed3cf8c52dcf8"/>
+    <date id="easter" start="Apr 4 2012" finish="Apr 11 2012" check="9b4fa08339e9ec3"/>
+    <date id="eastern2013" start="Mar 27 2013" finish="Mar 28 2013" check="62ba5f1869979dd"/>
+  </dates>
+  <sounds>
+    <sound id="roomBackground" volume="0.4" path="audio/background.mp3" loops="-1"/>
+    <sound id="ghostTheme" volume="0.4" path="audio/GHOST_THEME.mp3" loops="-1"/>
+  </sounds>
+  <module>
+    <elements>
+      <element id="easterEgg" button="1" visible="0">
+        <checks>
+          <visible value="1" date="eastern2013" gamestate="131,0,40"/>
+        </checks>
+        <button type="click" click="1" stopWalk="1"/>
+        <message value="eastern2013.EggClicked" type="eastern2013"/>
+      </element>
+      <element id="chicken" button="0" visible="0">
+        <checks>
+          <visible value="1" date="easter" gamestate="111,9,1"/>
+          <button value="1" date="easter" gamestate="111,9,1"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="easter.ChickenClicked" type="easter"/>
+      </element>
+      <element id="chickenX" button="0" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="108,0,180-249" date="napasapaFreeze"/>
+          <button value="1" gamestate="108,0,180-182" date="napasapaFreeze"/>
+          <button value="1" gamestate="108,0,185" date="napasapaFreeze"/>
+          <frame value=":calm" gamestate="108,0,180-249" date="napasapaFreeze"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="napasapa.clickChicken" type="napasapaReturns"/>
+      </element>
+      <element id="velvetGloves" button="1" visible="0">
+        <checks>
+          <visible value="1" gamestate="95,0,60"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="unicornQuest.onGlovesClick" type="unicornQuest"/>
+      </element>
+      <element id="stoned_haypile" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" gamestate="43,0,270-271" date="summerQuest"/>
+        </checks>
+        <button type="click" click="99"/>
+        <message value="summerQuest.convertHaypile" type="summerQuest"/>
+      </element>
+      <element id="straw" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" doesNotHaveOneItem="101889" gamestate="34,0,2"/>
+        </checks>
+        <button type="overClick" over="2" out="1" click="1"/>
+        <message value="pokopetCatalogueQuest.getStraw" type="pokopetCatalogueQuest"/>
+      </element>
+      <element id="flatspanner" button="0" visible="0">
+        <checks>
+          <visible value="1" date="petsHomeQuest" gamestate="29,0,10-50" doesNotHaveOneItem="101766"/>
+        </checks>
+        <checks>
+          <button value="1" date="petsHomeQuest" gamestate="29,0,10-50" doesNotHaveOneItem="101766"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="petsHomeQuest.giveItem6" type="petsHomeQuest"/>
+      </element>
+      <element id="pompom" button="1" visible="0">
+        <checks>
+          <visible value="1" date="pompomQuestDay1" gamestate="8,0,33" doesNotHaveOneItem="101497"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="pompomQuest.getItem32" type="pompomQuest"/>
+      </element>
+      <element id="walkarea" frame=":default">
+        <checks>
+          <frame value=":pompom" date="pompomQuestDay1"/>
+          <frame value=":petshome" date="petsHomeQuest"/>
+          <frame value=":summerQuest" date="summerQuest"/>
+        </checks>
+      </element>
+      <element type="door" button="1" visible="1">
+        <button type="overClick" over="open" out="close" click="1"/>
+        <message value="gotoHotSpot">
+          <hotSpot value="door"/>
+        </message>
+      </element>
+      <element type="water" button="1" visible="1">
+        <button type="over" over="open" out="close"/>
+      </element>
+      <element type="water" button="1" visible="1">
+        <button type="over" over="open" out="close"/>
+      </element>
+      <element id="horseGate" button="1" visible="1">
+        <button type="full" click="1" over="2" out="1"/>
+        <message value="askJoinGame" type="client">
+          <game value="31"/>
+        </message>
+      </element>
+      <element id="pimp" button="1" visible="0" notWalkable="true">
+        <checks>
+          <visible value="1" hasItems="100555" doesNotHaveOneItem="100554,100556" daypasstest="1,0,1,+"/>
+        </checks>
+        <button type="click" click="1"/>
+        <message value="collectItem" type="swimmingQuest">
+          <item value="swimmingObject2"/>
+        </message>
+        <message value="clickSwimmingQuestObject" type="swimmingQuest"/>
+        <message value="StateConsts.setstate">
+          <categoryID value="1"/>
+          <stateID value="1"/>
+          <value value="1"/>
+        </message>
+        <message value="StateManager.setState">
+          <categoryID value="1"/>
+          <stateID value="1"/>
+          <value value="1"/>
+        </message>
+      </element>
+      <element id="chairMaker" button="1" visible="1">
+        <button type="overClick" over="14" out="1" click="1" stopWalk="1"/>
+        <message value="talkToNPC" type="client">
+          <id value="SADDLER"/>
+        </message>
+      </element>
+    </elements>
+    <tooltips>
+      <tooltip id="horseGate" type="game" name="GAME_NAME_31"/>
+      <tooltip id="door" type="door" target="31" angle="-90"/>
+    </tooltips>
+    <hotspots>
+      <hotspot id="door" target="31" type="room" x="388" y="187" rad="30"/>
+      <hotspot target="undefined" type="ponystableAssets" x="0" y="0" rad="408"/>
+    </hotspots>
+  </module>
+</config>
