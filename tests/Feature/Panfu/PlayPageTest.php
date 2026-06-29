@@ -24,6 +24,9 @@ class PlayPageTest extends TestCase
 
         $response
             ->assertOk()
+            ->assertDontSee('Try Ruffle')
+            ->assertDontSee('Download')
+            ->assertDontSee("Your browser doesn't support Flash Player")
             ->assertInertia(fn (Assert $page) => $page
                 ->component('Panfu/Play')
                 ->where('client.ruffleScript', '/vendor/ruffle/ruffle.js')

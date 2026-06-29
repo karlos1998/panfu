@@ -17,7 +17,7 @@ const props = defineProps<{
 
 const meta: MetaContent = {
     title: 'Panfu',
-    description: 'Lokalny klient Panfu uruchamiany przez Ruffle.',
+    description: 'Lokalny klient Panfu.',
 };
 
 const navigation: NavigationItem[] = [
@@ -34,10 +34,12 @@ onMounted(() => {
         autoplay: 'on',
         base: props.client.baseUrl,
         credentialAllowList: [window.location.origin],
+        favorFlash: false,
         logLevel: 'warn',
         openUrlMode: 'deny',
         publicPath: '/vendor/ruffle/',
         showSwfDownload: false,
+        splashScreen: false,
         socketProxy: [
             { host: '127.0.0.1', port: 9595, proxyUrl: 'ws://localhost:9596' },
             { host: 'localhost', port: 9595, proxyUrl: 'ws://localhost:9596' },
