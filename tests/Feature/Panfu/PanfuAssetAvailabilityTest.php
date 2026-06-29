@@ -69,4 +69,14 @@ class PanfuAssetAvailabilityTest extends TestCase
             public_path('vendor/openpanfu/rooms/home/assets/furniture/FurnitureItem3D_104421.swf'),
         );
     }
+
+    public function test_minigame_movies_are_available(): void
+    {
+        foreach ([...range(1, 7), ...range(9, 56)] as $gameId) {
+            $path = public_path("vendor/openpanfu/swf/games/game{$gameId}.swf");
+
+            $this->assertFileExists($path, "Missing minigame movie game{$gameId}.swf");
+            $this->assertGreaterThan(1024, filesize($path), "Minigame movie game{$gameId}.swf is unexpectedly small");
+        }
+    }
 }
