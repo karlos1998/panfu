@@ -63,6 +63,18 @@ services:
             - sail
         depends_on:
             - mysql
+    phpmyadmin-legacy:
+        image: 'phpmyadmin:5.2'
+        ports:
+            - '${FORWARD_LEGACY_PHPMYADMIN_PORT:-19998}:80'
+        environment:
+            PMA_HOST: '${LEGACY_OPENPANFU_DB_HOST:-host.docker.internal}'
+            PMA_PORT: '${LEGACY_OPENPANFU_DB_PORT:-3307}'
+            UPLOAD_LIMIT: 256M
+        extra_hosts:
+            - 'host.docker.internal:host-gateway'
+        networks:
+            - sail
     redis:
         image: 'redis:alpine'
         ports:
