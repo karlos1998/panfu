@@ -1,0 +1,22 @@
+<snippets date="05.05.2011 09:16:07">
+<SINTEPAN_BUT_CANCEL><![CDATA[Anuluj]]></SINTEPAN_BUT_CANCEL>
+<SINTEPAN_BUT_CLOSE><![CDATA[Zamknij]]></SINTEPAN_BUT_CLOSE>
+<SINTEPAN_BUT_COPY><![CDATA[Kopiuj]]></SINTEPAN_BUT_COPY>
+<SINTEPAN_BUT_EXPORT><![CDATA[Wyślij melodię ]]></SINTEPAN_BUT_EXPORT>
+<SINTEPAN_BUT_LOAD><![CDATA[Ładuj melodię]]></SINTEPAN_BUT_LOAD>
+<SINTEPAN_BUT_OK><![CDATA[Ok]]></SINTEPAN_BUT_OK>
+<SINTEPAN_BUT_PLAY><![CDATA[Graj]]></SINTEPAN_BUT_PLAY>
+<SINTEPAN_BUT_RESET><![CDATA[Zacznij od nowa]]></SINTEPAN_BUT_RESET>
+<SINTEPAN_EXPORT_LABEL><![CDATA[Twój utwór został pomyślnie wysłany]]></SINTEPAN_EXPORT_LABEL>
+<SINTEPAN_EXPORT_MSG><![CDATA[Znajdziesz swój utwór w
+schowku. Skopiuj go i wklej na blog,
+do dokumentu lub wyślij mailem.]]></SINTEPAN_EXPORT_MSG>
+<SINTEPAN_HELP_LOAD><![CDATA[Aby wysłuchać melodię, którą skomponowałeś musisz skopiować jej kod do pustego pola. Jeżeli nie posiadasz kodu melodii, musisz najpierw skomponować swój utwór lub użyć kodu swojego przyjaciela! Gdy skopiowałeś już swoją melodię, kliknij na "Zagraj".]]></SINTEPAN_HELP_LOAD>
+<SINTEPAN_HELP_SAVE><![CDATA[Poniższy tekst przedstawia kod melodii, którą utworzyłeś. Możesz go skopiować i wkleić do folderu tak aby móc odsłuchać swoją melodię później. Możesz także przesłać swój utwór mailem do przyjaciół! W ten sposób możesz dzielić się swoją muzyką z innymi. Aby odsłuchać melodię, do której masz już kod, kliknij na przycisk "Ładuj melodię".]]></SINTEPAN_HELP_SAVE>
+<SINTEPAN_RESET_LABEL><![CDATA[Uruchom ponownie Sintepan]]></SINTEPAN_RESET_LABEL>
+<SINTEPAN_RESET_MSG><![CDATA[Czy na pewno chcesz
+skasować wszystkie nuty
+i zacząć od nowa?]]></SINTEPAN_RESET_MSG>
+<SINTEPAN_TXT_PASTEHERE><![CDATA[Wklej kod tutaj]]></SINTEPAN_TXT_PASTEHERE>
+<SINTEPAN_WORD_KIT><![CDATA[Dźwięk]]></SINTEPAN_WORD_KIT>
+</snippets>

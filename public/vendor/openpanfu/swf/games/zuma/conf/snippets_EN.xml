@@ -1,0 +1,31 @@
+<snippets date="05.05.2011 09:15:50">
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_INSTR><![CDATA[Instructions]]></BTN_INSTR>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Play & Chat]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Play]]></BTN_START>
+<HELLO><![CDATA[Hello $$name$$!!!]]></HELLO>
+<TEXT_BACK_BONUS><![CDATA[Change direction]]></TEXT_BACK_BONUS>
+<TEXT_BOMB_BONUS><![CDATA[Bomb]]></TEXT_BOMB_BONUS>
+<TEXT_BONUS><![CDATA[BONUS]]></TEXT_BONUS>
+<TEXT_BONUS_MULTIPLE><![CDATA[Bonus: +$$points$$]]></TEXT_BONUS_MULTIPLE>
+<TEXT_BONUS_SEQUENCE><![CDATA[Bonus: *$$factor$$]]></TEXT_BONUS_SEQUENCE>
+<TEXT_DEFEAT><![CDATA[GAME OVER]]></TEXT_DEFEAT>
+<TEXT_FAST_BONUS><![CDATA[Speed up balls]]></TEXT_FAST_BONUS>
+<TEXT_INSTRUCTION><![CDATA[Shoot the colored balls so that 3 balls of the same color meet.<Br><Br>The objective is to make all the balls disappear before the arrives.<Br><Br>Play with your computer mouse .]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LEVEL_END><![CDATA[LEVEL COMPLETED!]]></TEXT_LEVEL_END>
+<TEXT_LIFE_BONUS><![CDATA[Extra life]]></TEXT_LIFE_BONUS>
+<TEXT_LIVES><![CDATA[Lifes:]]></TEXT_LIVES>
+<TEXT_LOSE_LIFE><![CDATA[Lifes lost:]]></TEXT_LOSE_LIFE>
+<TEXT_POINTER_BONUS><![CDATA[Pointer]]></TEXT_POINTER_BONUS>
+<TEXT_POINTS><![CDATA[Points:]]></TEXT_POINTS>
+<TEXT_POINTS_BONUS><![CDATA[Extra points]]></TEXT_POINTS_BONUS>
+<TEXT_PREPARE><![CDATA[Ready!]]></TEXT_PREPARE>
+<TEXT_SCORE><![CDATA[Your points:]]></TEXT_SCORE>
+<TEXT_SLOW_BONUS><![CDATA[Slow down balls]]></TEXT_SLOW_BONUS>
+<TEXT_STOP_BONUS><![CDATA[Stop balls]]></TEXT_STOP_BONUS>
+<TEXT_TIME><![CDATA[Time:]]></TEXT_TIME>
+<TEXT_TITLE><![CDATA[INSTRUCTIONS]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[GAME OVER]]></TEXT_VICTORY>
+</snippets>

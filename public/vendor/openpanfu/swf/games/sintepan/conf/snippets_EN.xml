@@ -1,0 +1,22 @@
+<snippets date="05.05.2011 09:16:05">
+<SINTEPAN_BUT_CANCEL><![CDATA[Cancel]]></SINTEPAN_BUT_CANCEL>
+<SINTEPAN_BUT_CLOSE><![CDATA[Close]]></SINTEPAN_BUT_CLOSE>
+<SINTEPAN_BUT_COPY><![CDATA[Copy to clipboard]]></SINTEPAN_BUT_COPY>
+<SINTEPAN_BUT_EXPORT><![CDATA[Export song]]></SINTEPAN_BUT_EXPORT>
+<SINTEPAN_BUT_LOAD><![CDATA[Load song]]></SINTEPAN_BUT_LOAD>
+<SINTEPAN_BUT_OK><![CDATA[Ok]]></SINTEPAN_BUT_OK>
+<SINTEPAN_BUT_PLAY><![CDATA[Play]]></SINTEPAN_BUT_PLAY>
+<SINTEPAN_BUT_RESET><![CDATA[Reset]]></SINTEPAN_BUT_RESET>
+<SINTEPAN_EXPORT_LABEL><![CDATA[Export successful]]></SINTEPAN_EXPORT_LABEL>
+<SINTEPAN_EXPORT_MSG><![CDATA[You can find the song in 
+the clipboard. Now paste it in a blog, 
+email or text file.]]></SINTEPAN_EXPORT_MSG>
+<SINTEPAN_HELP_LOAD><![CDATA[To listen to a song that was created previously, you must have its song-code and paste it into the box below. If you don't have a song-code you must create a song first or get your friends to send you their songs! Once you have pasted your song here click on "Play".]]></SINTEPAN_HELP_LOAD>
+<SINTEPAN_HELP_SAVE><![CDATA[The text below shows you the song-code for the song you have made so far. You can copy and paste it to a file so that you can listen to it later. Or you can email it to a friend!! This way you can share your songs with others. To listen to a song for which you have the song-code, click on the "Load song" button]]></SINTEPAN_HELP_SAVE>
+<SINTEPAN_RESET_LABEL><![CDATA[Restart Sintepan]]></SINTEPAN_RESET_LABEL>
+<SINTEPAN_RESET_MSG><![CDATA[Are you sure you want to 
+erase all notes and
+start again?]]></SINTEPAN_RESET_MSG>
+<SINTEPAN_TXT_PASTEHERE><![CDATA[Paste the code here]]></SINTEPAN_TXT_PASTEHERE>
+<SINTEPAN_WORD_KIT><![CDATA[Kit]]></SINTEPAN_WORD_KIT>
+</snippets>

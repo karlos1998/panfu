@@ -1,0 +1,30 @@
+﻿<snippets date="05.05.2011 09:15:47">
+<BTN_AFFIRM><![CDATA[Ja]]></BTN_AFFIRM>
+<BTN_CANCEL><![CDATA[Nein]]></BTN_CANCEL>
+<BTN_EXIT><![CDATA[Beenden]]></BTN_EXIT>
+<TXT_ALREADY_PLAYED><![CDATA[Das "Be Smarter" Quiz kann man nur einmal am Tag spielen.
+
+Du hast das Quiz heute schon gespielt.]]></TXT_ALREADY_PLAYED>
+<TXT_ANSWERS_CORRECT><![CDATA[Richtige Antworten: $$num$$]]></TXT_ANSWERS_CORRECT>
+<TXT_ANSWERS_WRONG><![CDATA[Falsche Antworten: $$num$$]]></TXT_ANSWERS_WRONG>
+<TXT_CHECK_EMAIL><![CDATA[Wir senden Dir dazu eine E-Mail. Schau jetzt gleich nach!]]></TXT_CHECK_EMAIL>
+<TXT_CONNECTION_ERROR><![CDATA[Ein Fehler ist aufgetreten!
+
+Bitte verlasse das Quiz und versuche es erneut zu starten.]]></TXT_CONNECTION_ERROR>
+<TXT_COUNT_QUESTION><![CDATA[Frage
+$$current$$ von $$total$$]]></TXT_COUNT_QUESTION>
+<TXT_COUNT_TIMEOUT><![CDATA[Zeit:
+$$seconds$$]]></TXT_COUNT_TIMEOUT>
+<TXT_FAIL><![CDATA[Du hast leider nichts gewonnen. Wie schade!
+Wenn Du Dich beim nächsten Mal etwas mehr anstrengst, dann schaffst Du es bestimmt!]]></TXT_FAIL>
+<TXT_INTRO><![CDATA[Du kannst täglich 500 Münzen mit dem "Be Smarter" Quiz gewinnen. Ein glücklicher Gewinner erhält zusätzlich für eine Woche das Goldpaket. Viel Glück!]]></TXT_INTRO>
+<TXT_READY><![CDATA[Bist Du bereit für
+Deine $$num$$ Fragen?]]></TXT_READY>
+<TXT_RESULT_HEAD><![CDATA[Dein Ergebnis:]]></TXT_RESULT_HEAD>
+<TXT_REWARD_GOLD_PAKET><![CDATA[Du hast ein Wochen-langes Goldpandapaket gewonnen! Log Dich aus und wieder ein und dann Du bist ein Goldpanda!]]></TXT_REWARD_GOLD_PAKET>
+<TXT_REWARD_ITEM><![CDATA[Du gewinnst ein neues Item,]]></TXT_REWARD_ITEM>
+<TXT_REWARD_SCORE><![CDATA[Du hast $$num$$ Münzen gewonnen! Gehe am besten gleich in den Laden und kaufe Dir Etwas Schönes. ]]></TXT_REWARD_SCORE>
+<TXT_TRY_AGAIN><![CDATA[Versuch es morgen noch einmal!]]></TXT_TRY_AGAIN>
+<TXT_WIN><![CDATA[Herzlichen Glückwunsch!
+Du hast alle Fragen richtig beantwortet.]]></TXT_WIN>
+</snippets>

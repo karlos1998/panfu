@@ -1,0 +1,31 @@
+﻿<snippets date="05.05.2011 09:15:50">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INSTR><![CDATA[Anleitung]]></BTN_INSTR>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Spielen]]></BTN_START>
+<HELLO><![CDATA[Hallo, $$name$$!!!]]></HELLO>
+<TEXT_BACK_BONUS><![CDATA[Richtung ändern]]></TEXT_BACK_BONUS>
+<TEXT_BOMB_BONUS><![CDATA[Bombe]]></TEXT_BOMB_BONUS>
+<TEXT_BONUS><![CDATA[BONUS]]></TEXT_BONUS>
+<TEXT_BONUS_MULTIPLE><![CDATA[Bonus: +$$points$$]]></TEXT_BONUS_MULTIPLE>
+<TEXT_BONUS_SEQUENCE><![CDATA[Bonus: *$$factor$$]]></TEXT_BONUS_SEQUENCE>
+<TEXT_DEFEAT><![CDATA[SPIEL VORBEI]]></TEXT_DEFEAT>
+<TEXT_FAST_BONUS><![CDATA[Bälle beschleunigen]]></TEXT_FAST_BONUS>
+<TEXT_INSTRUCTION><![CDATA[Schieße die bunten Bälle so ab, dass immer 3 Bälle derselben Farbe aufeinandertreffen.<Br><Br>Ziel ist es, alle Bälle zum Verschwinden zu bringen, bevor die Schlange am Ende angekommen ist.<Br><Br>Spiel mit Deiner Maus.]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LEVEL_END><![CDATA[LEVEL GESCHAFFT!]]></TEXT_LEVEL_END>
+<TEXT_LIFE_BONUS><![CDATA[Extraleben]]></TEXT_LIFE_BONUS>
+<TEXT_LIVES><![CDATA[Leben:]]></TEXT_LIVES>
+<TEXT_LOSE_LIFE><![CDATA[Leben verloren!]]></TEXT_LOSE_LIFE>
+<TEXT_POINTER_BONUS><![CDATA[Zeiger]]></TEXT_POINTER_BONUS>
+<TEXT_POINTS><![CDATA[Punkte:]]></TEXT_POINTS>
+<TEXT_POINTS_BONUS><![CDATA[Extrapunkte]]></TEXT_POINTS_BONUS>
+<TEXT_PREPARE><![CDATA[Fertig!]]></TEXT_PREPARE>
+<TEXT_SCORE><![CDATA[Deine Punkte:]]></TEXT_SCORE>
+<TEXT_SLOW_BONUS><![CDATA[Bälle verlangsamen]]></TEXT_SLOW_BONUS>
+<TEXT_STOP_BONUS><![CDATA[Bälle anhalten]]></TEXT_STOP_BONUS>
+<TEXT_TIME><![CDATA[Zeit:]]></TEXT_TIME>
+<TEXT_TITLE><![CDATA[ANLEITUNG]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[SPIEL VORBEI]]></TEXT_VICTORY>
+</snippets>

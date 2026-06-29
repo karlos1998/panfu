@@ -1,0 +1,22 @@
+<snippets date="05.05.2011 09:13:14">
+<BTN_FINISH><![CDATA[End]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Play and Chat
+]]></BTN_PLAY_CHAT>
+<END_TEXT><![CDATA[Caught fish]]></END_TEXT>
+<GAME_FINISHED><![CDATA[Game finished]]></GAME_FINISHED>
+<GAME_OVER><![CDATA[Game over!]]></GAME_OVER>
+<INSTRUCTION_TEXT><![CDATA[The aim of the game is to try to remove all the figures from the board. The figures can be removed by clicking on individual tiles which add up to exactly the same sum as the figure on the tile in the right-hand corner. But be careful that the tiles don't tower up too high or you will lose a life! When you use the tile zapper, all the figures of the same value on the board will disappear.]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instructions]]></INSTRUCTION_TITLE>
+<LEVEL><![CDATA[Level]]></LEVEL>
+<LEVEL_COMPLETE><![CDATA[You've got to the next level]]></LEVEL_COMPLETE>
+<LIVES><![CDATA[Lives]]></LIVES>
+<LOADING_TILES><![CDATA[Load tiles]]></LOADING_TILES>
+<LOST_LIFE><![CDATA[You have lost a life]]></LOST_LIFE>
+<QUIT><![CDATA[End]]></QUIT>
+<SCORE><![CDATA[Score]]></SCORE>
+<TILE_ZAPPER><![CDATA[Tile zapper]]></TILE_ZAPPER>
+<TIME_OVER><![CDATA[Time's up]]></TIME_OVER>
+<YOUR_SCORE_IS><![CDATA[Your score is:]]></YOUR_SCORE_IS>
+</snippets>

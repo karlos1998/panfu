@@ -1,0 +1,29 @@
+<snippets date="05.05.2011 09:15:49">
+<BTN_AFFIRM><![CDATA[Tak]]></BTN_AFFIRM>
+<BTN_CANCEL><![CDATA[Nie]]></BTN_CANCEL>
+<BTN_EXIT><![CDATA[Zakończ]]></BTN_EXIT>
+<TXT_ALREADY_PLAYED><![CDATA[Możesz zagrać w grę "Be Smarter" tylko raz dziennie.
+Dzisiaj już grałeś raz w tę grę.]]></TXT_ALREADY_PLAYED>
+<TXT_ANSWERS_CORRECT><![CDATA[Poprawne odpowiedzi: $$num$$]]></TXT_ANSWERS_CORRECT>
+<TXT_ANSWERS_WRONG><![CDATA[Błędne odpowiedzi: $$num$$]]></TXT_ANSWERS_WRONG>
+<TXT_CHECK_EMAIL><![CDATA[Wysłaliśmy wiadomość na twojego maila. Idź szybko sprawdzić!]]></TXT_CHECK_EMAIL>
+<TXT_CONNECTION_ERROR><![CDATA[Niestety wystąpił błąd!
+Wyjdź proszę z gry i spróbuj ponownie.]]></TXT_CONNECTION_ERROR>
+<TXT_COUNT_QUESTION><![CDATA[Pytanie
+$$current$$ na $$total$$
+]]></TXT_COUNT_QUESTION>
+<TXT_COUNT_TIMEOUT><![CDATA[Czas:
+$$seconds$$]]></TXT_COUNT_TIMEOUT>
+<TXT_FAIL><![CDATA[Niestety nie udało ci się wygrać. Szkoda!
+Na pewno następnym razem pójdzie ci lepiej!]]></TXT_FAIL>
+<TXT_INTRO><![CDATA[Co dzień, grając w grę "Be Smarter" możesz wygrać 500 monet! Ponadto, jeden szczęśliwy gracz dziennie będzie miał okazję wygrać tygodniowy Złoty Pakiet. Powodzenia!]]></TXT_INTRO>
+<TXT_READY><![CDATA[Czy jesteś gotowy na
+Swoje $$num$$ pytania?]]></TXT_READY>
+<TXT_RESULT_HEAD><![CDATA[Twój wynik:]]></TXT_RESULT_HEAD>
+<TXT_REWARD_GOLD_PAKET><![CDATA[Wygrałeś tygodniowy Złoty Pakiet! Wyloguj się, po czym zaloguj się ponownie i będziesz już Złotą Pandą!]]></TXT_REWARD_GOLD_PAKET>
+<TXT_REWARD_ITEM><![CDATA[Wygrałeś nowy przedmiot,]]></TXT_REWARD_ITEM>
+<TXT_REWARD_SCORE><![CDATA[Wygrałeś $$num$$ monet! Idź do sklepu i kup sobie coś ładnego!]]></TXT_REWARD_SCORE>
+<TXT_TRY_AGAIN><![CDATA[Spróbuj szczęścia jutro!]]></TXT_TRY_AGAIN>
+<TXT_WIN><![CDATA[Gratulacje!
+Odpowiedziałeś poprawnie na wszystkie pytania!]]></TXT_WIN>
+</snippets>

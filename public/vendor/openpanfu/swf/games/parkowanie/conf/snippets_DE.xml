@@ -1,0 +1,29 @@
+﻿<snippets date="05.05.2011 09:15:24">
+<ATTENTION><![CDATA[Achtung]]></ATTENTION>
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_NEXT><![CDATA[Spielen]]></BTN_NEXT>
+<BTN_NO><![CDATA[Nein]]></BTN_NO>
+<BTN_PAUSE><![CDATA[Pause]]></BTN_PAUSE>
+<BTN_PLAY><![CDATA[Spielen!]]></BTN_PLAY>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<BTN_RESTART><![CDATA[Neu starten]]></BTN_RESTART>
+<BTN_START><![CDATA[Start!]]></BTN_START>
+<BTN_YES><![CDATA[Ja]]></BTN_YES>
+<DEFEAT><![CDATA[Diesmal hast Du es leider nicht geschafft!]]></DEFEAT>
+<END_GAME><![CDATA[Willst Du das Spiel wirklich beenden?]]></END_GAME>
+<GAME_OVER><![CDATA[Spiel vorbei!]]></GAME_OVER>
+<INSTRUCTION_TEXT1><![CDATA[Parke Dein Auto zwischen den Spielsachen. Je schneller Du bist, desto mehr Punkt bekommst Du!]]></INSTRUCTION_TEXT1>
+<INSTRUCTION_TEXT2><![CDATA[Das Auto kann mit den Pfeiltasten gesteuert werden.]]></INSTRUCTION_TEXT2>
+<LEVEL><![CDATA[Level:]]></LEVEL>
+<LIVES><![CDATA[Leben:]]></LIVES>
+<NEW_LEVEL><![CDATA[Du bist im nächsten Level!]]></NEW_LEVEL>
+<PLAYAGAIN><![CDATA[Willst Du es nochmal versuchen?]]></PLAYAGAIN>
+<POINTS><![CDATA[Punkte:]]></POINTS>
+<POINTS_TO_GET><![CDATA[Zu erreichende Punkte:]]></POINTS_TO_GET>
+<PREPARE><![CDATA[Fertig!]]></PREPARE>
+<VICTORY><![CDATA[Glückwunsch! Du hast es geschafft. Bis zum nächsten Mal!]]></VICTORY>
+<WAS_HIT><![CDATA[Es gab einen Unfall!]]></WAS_HIT>
+<YOUR_POINTS><![CDATA[Deine Punkte:]]></YOUR_POINTS>
+</snippets>

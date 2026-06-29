@@ -1,0 +1,12 @@
+﻿<snippets date="05.05.2011 09:13:02">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Anleitung]]></BTN_INTRODUCTION>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<GOT_POINTS><![CDATA[Gratulation!
+Du hast $$score$$ Punkte gewonnen!]]></GOT_POINTS>
+<PLAY_CHAT><![CDATA[Spielen & Chatten]]></PLAY_CHAT>
+<TEXT_CRASHED><![CDATA[Game over]]></TEXT_CRASHED>
+<TEXT_FINISH_SUCCESS><![CDATA[Glückwunsch! Geschafft!]]></TEXT_FINISH_SUCCESS>
+<TEXT_WELCOME><![CDATA[Ein schrecklicher Sturm hat Panfu verwüstet! Versuche, jeden Papierflieger und jede Flaschenpost einzusammeln, ohne mit den Wrackteilen oder den Pelikanen zusammenzustoßen. Um zu springen musst Du auf den Bildschirm klicken. Je öfter Du klickst, umso höher springt Dein Panda. Viel Spaß!]]></TEXT_WELCOME>
+</snippets>

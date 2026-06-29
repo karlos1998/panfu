@@ -1,0 +1,24 @@
+﻿<snippets date="05.05.2011 09:17:37">
+<BONUS_TEXT><![CDATA[Bonus:]]></BONUS_TEXT>
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instrukcje]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Menu główne]]></BTN_MENU>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Graj teraz]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Graj & czatuj]]></BTN_PLAY_CHAT>
+<END_TEXT><![CDATA[Zdobyłeś $$score$$ punkty/ów!]]></END_TEXT>
+<GAME_END2_TEXT><![CDATA[Niestety przegrałeś!]]></GAME_END2_TEXT>
+<GAME_END_TEXT><![CDATA[Gratulacje! Wygrałeś!]]></GAME_END_TEXT>
+<INSTRUCTION_TEXT><![CDATA[Aby stać się mistrzem surfingu musisz pokonać 10 ogromnych fal! Im dalej uda ci się płynąć na desce, tym więcej punktów dostajesz. Uważaj jednak na rekiny i inne przeszkody! Jeżeli chcesz poruszać się szybciej, użyj przycisku do sterowania szybkością. Miłej zabawy i łapania fal!]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instrukcje]]></INSTRUCTION_TITLE>
+<LEVEL_END_TEXT><![CDATA[Udało ci się się dojść do fali $$wave$$!]]></LEVEL_END_TEXT>
+<LEVEL_TEXT><![CDATA[Fala]]></LEVEL_TEXT>
+<LIVES_TEXT><![CDATA[Życia]]></LIVES_TEXT>
+<LOGO_URL><![CDATA[http://www.panfu.pl]]></LOGO_URL>
+<OBSTACLES_TEXT><![CDATA[Przeszkody]]></OBSTACLES_TEXT>
+<POINTS_TEXT><![CDATA[Punkty]]></POINTS_TEXT>
+<PREPARE_TEXT><![CDATA[Uwaga!]]></PREPARE_TEXT>
+<ROTATION_TEXT><![CDATA[Skręć:]]></ROTATION_TEXT>
+<SELECT_TEXT><![CDATA[Wybierz zawodnika!]]></SELECT_TEXT>
+<SPEED_TEXT><![CDATA[Szybkosć]]></SPEED_TEXT>
+</snippets>

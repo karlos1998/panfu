@@ -1,0 +1,25 @@
+<snippets date="05.05.2011 09:13:34">
+<BTN_AGAIN><![CDATA[Jeszcze raz]]></BTN_AGAIN>
+<BTN_FINISH><![CDATA[Koniec]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instrukcje]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Menu główne]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Następna runda]]></BTN_NEXTROUND>
+<BTN_PLAY><![CDATA[Zagraj teraz]]></BTN_PLAY>
+<BTN_PLAY_CHAT><![CDATA[Graj i czatuj]]></BTN_PLAY_CHAT>
+<BTN_PRACTICE><![CDATA[Trening]]></BTN_PRACTICE>
+<BTN_SCORE><![CDATA[Najlepsze wyniki]]></BTN_SCORE>
+<DEFENDING_TEXT><![CDATA[Broń]]></DEFENDING_TEXT>
+<FAILED_TEXT><![CDATA[Obronione]]></FAILED_TEXT>
+<GOAL_TEXT><![CDATA[Gol]]></GOAL_TEXT>
+<INSTRUCTION_TEXT><![CDATA[Znajdujesz się zamiennie w pozycji napastnika i bramkarza. Kliknij na "Zagraj teraz" i wybierz Mini Pandę, z którą gra się najprościej. Jeżeli uda ci się przejść rundę z Mini Pandą, będziesz mógł grać z Midi i z Maxem którzy mają lepszy poziom od Mini. Bramkarz przeciwnej drużyny będzie czekał na twoje strzały.\Kliknij "Lewy przycisk myszki\" długo = mocny strzał \ krótko = lekki strzał. Następnie strzela twój przeciwnik. Gdy klikniesz na \"Lewy przycisk myszki\" wtedy zawodnik strzela! Za strzelone i obronione bramki, dostaniesz 1 punkt. Za przejście rundy, dostaniesz kolejne 10 punktów. Jeżeli uda ci się przejść rundę bez błędów, wygrasz aż 50 punktów! Baw się dobrze!]]></INSTRUCTION_TEXT>
+<LOSEMATCH_TEXT><![CDATA[Niestety przegrałeś!]]></LOSEMATCH_TEXT>
+<OVERTIME_TEXT><![CDATA[Play-off]]></OVERTIME_TEXT>
+<POINTS_BONUS><![CDATA[Bonus / Super Bonus]]></POINTS_BONUS>
+<POINTS_PREV_TOTAL><![CDATA[Poprzednia runda]]></POINTS_PREV_TOTAL>
+<POINTS_ROUND><![CDATA[Strzelone i nietrafione gole]]></POINTS_ROUND>
+<POINTS_ROUND_TOTAL><![CDATA[Punkty z tej rundy]]></POINTS_ROUND_TOTAL>
+<POINTS_TOTAL><![CDATA[Suma punktów]]></POINTS_TOTAL>
+<SHOOTING_TEXT><![CDATA[Strzelaj]]></SHOOTING_TEXT>
+<WINMATCH_TEXT><![CDATA[Wygrałeś!]]></WINMATCH_TEXT>
+<WINROUND_TEXT><![CDATA[Zaliczyłeś ten poziom!]]></WINROUND_TEXT>
+</snippets>

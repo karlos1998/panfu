@@ -1,0 +1,22 @@
+<snippets date="05.05.2011 09:13:29">
+<BTN_PLAYAGAIN><![CDATA[Zagraj jeszcze raz]]></BTN_PLAYAGAIN>
+<END><![CDATA[Spróbuj jeszcze raz!]]></END>
+<END_BTN><![CDATA[Anuluj]]></END_BTN>
+<END_HEADLINE><![CDATA[Koniec gry]]></END_HEADLINE>
+<END_TIMESUP><![CDATA[Czas minął!]]></END_TIMESUP>
+<GAME_BALLS><![CDATA[Piłki:]]></GAME_BALLS>
+<GAME_BREAK><![CDATA[Przerwa]]></GAME_BREAK>
+<GAME_FILLED><![CDATA[pełne]]></GAME_FILLED>
+<GAME_LEVEL><![CDATA[Poziom:]]></GAME_LEVEL>
+<GAME_LIFES><![CDATA[Życie:]]></GAME_LIFES>
+<GAME_POINTS><![CDATA[Punkty:]]></GAME_POINTS>
+<GAME_RESTART><![CDATA[Od nowa]]></GAME_RESTART>
+<GAME_TIME><![CDATA[Czas:]]></GAME_TIME>
+<INTRO><![CDATA[Aby przejść do kolejnego poziomu, twoje balony muszą zapełnić dwie trzecie przestrzeni. Kliknij na myszkę by nadmuchać balony ale uważaj by nie pękły.]]></INTRO>
+<INTRO_BTN><![CDATA[Początek gry]]></INTRO_BTN>
+<INTRO_HEADLINE><![CDATA[Instrukcja]]></INTRO_HEADLINE>
+<LEVELUP><![CDATA[Kliknij by przejść do następnego poziomu.]]></LEVELUP>
+<LEVELUP_BTN><![CDATA[do przodu]]></LEVELUP_BTN>
+<LEVELUP_HEADLINE><![CDATA[Poziom dokonany!]]></LEVELUP_HEADLINE>
+<PLAY_CHAT><![CDATA[Graj i Czatuj]]></PLAY_CHAT>
+</snippets>

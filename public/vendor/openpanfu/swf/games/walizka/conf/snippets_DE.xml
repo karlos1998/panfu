@@ -1,0 +1,29 @@
+﻿<snippets date="05.05.2011 09:17:12">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_HINT><![CDATA[Joker]]></BTN_HINT>
+<BTN_INSTRUCTION><![CDATA[Anleitung]]></BTN_INSTRUCTION>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt Spielen!]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Starten]]></BTN_START>
+<DEFEAT><![CDATA[SPIEL VORBEI!]]></DEFEAT>
+<DEFEAT_TEXT><![CDATA[Leider hast Du es nicht geschafft, alles einzupacken!]]></DEFEAT_TEXT>
+<FISH><![CDATA[Fisch]]></FISH>
+<HELLO><![CDATA[Hallo, $$name$$!!!]]></HELLO>
+<INSTRUCTION_TITLE><![CDATA[Spielanleitung]]></INSTRUCTION_TITLE>
+<SCORE><![CDATA[Deine Punkte:]]></SCORE>
+<TEXT_END_LEVEL1><![CDATA[Glückwunsch!]]></TEXT_END_LEVEL1>
+<TEXT_END_LEVEL2><![CDATA[Du hast es geschafft!]]></TEXT_END_LEVEL2>
+<TEXT_HINT><![CDATA[Hilfe:]]></TEXT_HINT>
+<TEXT_INSTRUCTION><![CDATA[Hilf Deinem Panda dabei, den Koffer für den Urlaub zu packen!<br><br>Du musst ihn so packen, dass alles genau hineinpasst.<br><br>Benutze dazu Deine Maus.]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LOSE1><![CDATA[SPIEL VORBEI!]]></TEXT_LOSE1>
+<TEXT_LOSE2><![CDATA[Leider hast Du es nicht geschafft, alles einzupacken!]]></TEXT_LOSE2>
+<TEXT_POINTS><![CDATA[Punkte:]]></TEXT_POINTS>
+<TEXT_TIME><![CDATA[Zeit:]]></TEXT_TIME>
+<TEXT_TITLE><![CDATA[ANLEITUNG]]></TEXT_TITLE>
+<TEXT_TO_GET><![CDATA[Zu erreichende Punkte:]]></TEXT_TO_GET>
+<VICTORY><![CDATA[SPIEL VORBEI!]]></VICTORY>
+<VICTORY_TEXT><![CDATA[Glückwunsch! Du hast es geschafft!]]></VICTORY_TEXT>
+<WORMS><![CDATA[Würmer]]></WORMS>
+</snippets>

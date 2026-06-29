@@ -1,0 +1,22 @@
+﻿<snippets date="05.05.2011 09:16:06">
+<SINTEPAN_BUT_CANCEL><![CDATA[Abbrechen]]></SINTEPAN_BUT_CANCEL>
+<SINTEPAN_BUT_CLOSE><![CDATA[Schließen]]></SINTEPAN_BUT_CLOSE>
+<SINTEPAN_BUT_COPY><![CDATA[Kopieren]]></SINTEPAN_BUT_COPY>
+<SINTEPAN_BUT_EXPORT><![CDATA[Melodie exportieren]]></SINTEPAN_BUT_EXPORT>
+<SINTEPAN_BUT_LOAD><![CDATA[Melodie laden...]]></SINTEPAN_BUT_LOAD>
+<SINTEPAN_BUT_OK><![CDATA[Ok]]></SINTEPAN_BUT_OK>
+<SINTEPAN_BUT_PLAY><![CDATA[Spielen]]></SINTEPAN_BUT_PLAY>
+<SINTEPAN_BUT_RESET><![CDATA[Neu starten]]></SINTEPAN_BUT_RESET>
+<SINTEPAN_EXPORT_LABEL><![CDATA[Export erfolgreich]]></SINTEPAN_EXPORT_LABEL>
+<SINTEPAN_EXPORT_MSG><![CDATA[Du kannst die Melodie
+in der Zwischenablage finden.
+Jetzt kannst Du sie in einen Blog, eine<br/>E-Mail oder eine Textdatei kopieren.]]></SINTEPAN_EXPORT_MSG>
+<SINTEPAN_HELP_LOAD><![CDATA[Um eine Melodie anzuhören, die Du vorher komponiert hast, musst Du ihren Code haben und ihn in die Zeile hineinkopieren. Wenn Du keinen Code hast, musst Du zuerst eine Melodie komponieren oder Dir von Deinen Freunden eine Melodie schicken lassen! Wenn Du Deine Melodie hineinkopiert hast, klicke auf "Spielen".]]></SINTEPAN_HELP_LOAD>
+<SINTEPAN_HELP_SAVE><![CDATA[Der untenstehende Text ist der Code der Melodie, die Du komponiert hast. Du kannst ihn kopieren und ihn speichern und ihn später wieder anhören. Oder Du kannst ihn an einen Freund mailen! So kannst Du Deine Musik mit Deinen Freunden teilen. Um Dir eine Melodie anzuhören, für die Du einen Code hast, klicke auf den "Lade Lied"-Button.]]></SINTEPAN_HELP_SAVE>
+<SINTEPAN_RESET_LABEL><![CDATA[Sintepan neustarten]]></SINTEPAN_RESET_LABEL>
+<SINTEPAN_RESET_MSG><![CDATA[Bist Du sicher,
+dass Du alles löschen willst und
+neu starten willst?]]></SINTEPAN_RESET_MSG>
+<SINTEPAN_TXT_PASTEHERE><![CDATA[Code hier hineinkopieren]]></SINTEPAN_TXT_PASTEHERE>
+<SINTEPAN_WORD_KIT><![CDATA[Klang]]></SINTEPAN_WORD_KIT>
+</snippets>

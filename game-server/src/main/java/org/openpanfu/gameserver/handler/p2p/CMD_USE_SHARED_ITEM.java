@@ -22,6 +22,33 @@ public class CMD_USE_SHARED_ITEM implements IP2PHandler {
 		response.writeString(actionToPerform);
 		response.writeString(actionFrameName);
 		response.writeInt(sort);
+
+		// Shared room items drive the sender's own seat/action animation too.
+		if (!receiverIncludesSender(receiver, sender.getUserId())) {
+			sender.sendPacket(response);
+		}
+
 		sender.sendForReceiver(response, receiver);
+	}
+
+	private boolean receiverIncludesSender(String receiver, int senderId) {
+		if (receiver.equals(String.valueOf(senderId))) {
+			return true;
+		}
+
+		if (!receiver.contains(",")) {
+			return false;
+		}
+
+		String[] split = receiver.split(",", 2);
+		if (split.length != 2) {
+			return false;
+		}
+
+		try {
+			return Integer.valueOf(split[1]) == senderId;
+		} catch (NumberFormatException exception) {
+			return false;
+		}
 	}
 }

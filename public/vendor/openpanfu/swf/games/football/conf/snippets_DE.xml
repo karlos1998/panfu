@@ -1,0 +1,30 @@
+<snippets date="05.05.2011 09:13:33">
+<BTN_AGAIN><![CDATA[Noch einmal]]></BTN_AGAIN>
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Anleitung]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Hauptmenü]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Nächste Runde]]></BTN_NEXTROUND>
+<BTN_PLAY><![CDATA[Jetzt spielen]]></BTN_PLAY>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<BTN_PRACTICE><![CDATA[Training
+]]></BTN_PRACTICE>
+<BTN_SCORE><![CDATA[High Scores
+
+]]></BTN_SCORE>
+<DEFENDING_TEXT><![CDATA[Verteidigen]]></DEFENDING_TEXT>
+<FAILED_TEXT><![CDATA[Gehalten]]></FAILED_TEXT>
+<GOAL_TEXT><![CDATA[Tor]]></GOAL_TEXT>
+<INSTRUCTION_TEXT><![CDATA[Man befindet sich abwechselnd im Schützen- und im Torwart-Modus. Klick auf 'Jetzt spielen' und wähle Mini Panda. Der Modus "Mini Panda" ist die einfachste Stufe. Danach kannst du gegen schwierigere Gegner spielen. Der gegnerische Torwart ist bereits angetreten und wartet auf Deinen Schuss. \"Linke Maustaste\" lange drücken = fester Schuss / Maustaste kurz anklicken = leichter Schuss. Nun ist der Gegner am Ball. Wenn Du die \"linke Mausttaste\" drückst, schießt er! Pro gewonnene Runde gewinnst 10 Extra-Punkte. Für ein perfektes Spiel bekommst du ganze 50 Punkte! Viel Spaß!
+]]></INSTRUCTION_TEXT>
+<LOSEMATCH_TEXT><![CDATA[Du hast das Spiel leider verloren!
+]]></LOSEMATCH_TEXT>
+<OVERTIME_TEXT><![CDATA[Play-off]]></OVERTIME_TEXT>
+<POINTS_BONUS><![CDATA[Bonus / Super Bonus]]></POINTS_BONUS>
+<POINTS_PREV_TOTAL><![CDATA[Vorherige Runden]]></POINTS_PREV_TOTAL>
+<POINTS_ROUND><![CDATA[Geschossene und verhinderte Tore]]></POINTS_ROUND>
+<POINTS_ROUND_TOTAL><![CDATA[Rundenpunkte]]></POINTS_ROUND_TOTAL>
+<POINTS_TOTAL><![CDATA[Gesamt]]></POINTS_TOTAL>
+<SHOOTING_TEXT><![CDATA[Schießen]]></SHOOTING_TEXT>
+<WINMATCH_TEXT><![CDATA[Du hast das Spiel gewonnen!]]></WINMATCH_TEXT>
+<WINROUND_TEXT><![CDATA[Du hast diesen Level geschafft!]]></WINROUND_TEXT>
+</snippets>

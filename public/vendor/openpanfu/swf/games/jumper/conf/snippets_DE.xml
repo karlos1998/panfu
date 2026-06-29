@@ -1,0 +1,26 @@
+﻿<snippets date="05.05.2011 09:17:04">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INSTR><![CDATA[Anleitung]]></BTN_INSTR>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Jetzt spielen]]></BTN_START>
+<HELLO><![CDATA[Hallo, $$name$$!!!]]></HELLO>
+<TEXT_BONUS><![CDATA[BONUS]]></TEXT_BONUS>
+<TEXT_BONUSPOINTS><![CDATA[Punkte]]></TEXT_BONUSPOINTS>
+<TEXT_DEFEAT><![CDATA[SPIEL VORBEI]]></TEXT_DEFEAT>
+<TEXT_DOUBLE><![CDATA[Doppelte Punkte für Springen]]></TEXT_DOUBLE>
+<TEXT_FAST><![CDATA[Schneller Panda]]></TEXT_FAST>
+<TEXT_INSTRUCTION><![CDATA[Hilf Deinem Panda dabei, mit dem Trampolin auf die andere Seite des Flusses zu kommen.<br><br>Das Trampolin kannst Du mit der Maus bewegen.<br><br>Sammele die herabfallenden Bonusse auf, aber sei vorsichtig, nicht alle bringen Dir Punkte ein!]]></TEXT_INSTRUCTION>
+<TEXT_LIFE><![CDATA[Leben]]></TEXT_LIFE>
+<TEXT_LIVES><![CDATA[Leben:]]></TEXT_LIVES>
+<TEXT_LOSE><![CDATA[Leider hast Du keine Leben mehr!]]></TEXT_LOSE>
+<TEXT_POINTS><![CDATA[Deine Punkte:]]></TEXT_POINTS>
+<TEXT_RANDOM><![CDATA[Zufallsbonus]]></TEXT_RANDOM>
+<TEXT_SHIELD><![CDATA[Brücke]]></TEXT_SHIELD>
+<TEXT_SHORT><![CDATA[Kleines Trampolin]]></TEXT_SHORT>
+<TEXT_SLOW><![CDATA[Langsamer Panda]]></TEXT_SLOW>
+<TEXT_TITLE><![CDATA[ANLEITUNG]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[SPIEL VORBEI]]></TEXT_VICTORY>
+<TEXT_VICTORY1><![CDATA[Gratulation! Du hast gewonnen!]]></TEXT_VICTORY1>
+<TEXT_WIDE><![CDATA[Großes Trampolin]]></TEXT_WIDE>
+</snippets>

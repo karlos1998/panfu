@@ -1,0 +1,29 @@
+<snippets date="05.05.2011 09:17:21">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instrukcje]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Menu główne]]></BTN_MENU>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Graj teraz]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Graj i czatuj]]></BTN_PLAY_CHAT>
+<ENEMY_POINT_TEXT><![CDATA[Punkty przeciwnika]]></ENEMY_POINT_TEXT>
+<ENEMY_SETS_TEXT><![CDATA[Przeciwnik]]></ENEMY_SETS_TEXT>
+<ENEMY_SET_TEXT><![CDATA[Przeciwnik zdobył seta! ]]></ENEMY_SET_TEXT>
+<ENEMY_WIN_TEXT><![CDATA[Twój przeciwnik wygrał!]]></ENEMY_WIN_TEXT>
+<INSTRUCTION2_TEXT><![CDATA[Zasady ping-ponga 
+
+Gra ta polega na przebijaniu piłeczki za pomocą rakietek, w taki sposób, aby ta odbiła się na polu przeciwnika i nie została przez niego odegrana. Inaczej stracisz punkty! Po każdych 2 punktach zawodnik odbierający staje się podającym. Gdy stan seta jest wyrównany (10:10), wtedy zmiana następuję co punkt. Każdy set ma 11 punktów. Wygra ten zawodnik, który zdobędzie 3 sety. Miłej zabawy!]]></INSTRUCTION2_TEXT>
+<INSTRUCTION_HEAD><![CDATA[Instrukcje]]></INSTRUCTION_HEAD>
+<INSTRUCTION_TEXT><![CDATA[Reguły gry są takie same jak w prawdziwym tenisie stołowym/ ping-pongu. Aby zaserwować kliknij na piłkę. Następnie kontynuuj grę, nie klikając na myszkę. Aby wygrać grę, musisz zdobyć 3 sety (rundy) po 11 punktów. Twoje punkty:]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instrukcje]]></INSTRUCTION_TITLE>
+<LOGO_URL><![CDATA[http://www.panfu.pl]]></LOGO_URL>
+<LOSE_TEXT><![CDATA[Przegrałeś!]]></LOSE_TEXT>
+<PLAYER_SETS_TEXT><![CDATA[Gracz]]></PLAYER_SETS_TEXT>
+<POINTS_TEXT><![CDATA[Punkty]]></POINTS_TEXT>
+<PREPARE_TEXT><![CDATA[Uwaga!]]></PREPARE_TEXT>
+<ROUND_TEXT><![CDATA[Set/Runda]]></ROUND_TEXT>
+<SCORE_END_TEXT><![CDATA[Bonusy za różnice punktów]]></SCORE_END_TEXT>
+<WIN_TEXT><![CDATA[Wygrałeś!]]></WIN_TEXT>
+<YOUR_POINT_TEXT><![CDATA[Twoje punkty!]]></YOUR_POINT_TEXT>
+<YOUR_SET_TEXT><![CDATA[Zdobyłeś seta!]]></YOUR_SET_TEXT>
+<YOU_WIN_TEXT><![CDATA[Wygrałeś!]]></YOU_WIN_TEXT>
+</snippets>

@@ -1,0 +1,31 @@
+<snippets date="05.05.2011 09:15:51">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INSTR><![CDATA[Instrukcje]]></BTN_INSTR>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Graj & Czatuj]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Graj]]></BTN_START>
+<HELLO><![CDATA[Witaj, $$name$$!!!]]></HELLO>
+<TEXT_BACK_BONUS><![CDATA[Zmień kierunek]]></TEXT_BACK_BONUS>
+<TEXT_BOMB_BONUS><![CDATA[Bomba]]></TEXT_BOMB_BONUS>
+<TEXT_BONUS><![CDATA[BONUS]]></TEXT_BONUS>
+<TEXT_BONUS_MULTIPLE><![CDATA[Bonus: +$$points$$]]></TEXT_BONUS_MULTIPLE>
+<TEXT_BONUS_SEQUENCE><![CDATA[Bonus: *$$factor$$]]></TEXT_BONUS_SEQUENCE>
+<TEXT_DEFEAT><![CDATA[KONIEC GRY]]></TEXT_DEFEAT>
+<TEXT_FAST_BONUS><![CDATA[Szybsze piłki]]></TEXT_FAST_BONUS>
+<TEXT_INSTRUCTION><![CDATA[Strzelaj kolorowymi piłkami tak aby ułożyć 3 piłki tego samego koloru obok siebie.<Br><Br> Celem gry jest sprawić aby wszystkie piłki zniknęły z ekranu zanim wąż dotrze do końca.<Br><Br> Do gry używaj swojej myszki.]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Poziom:]]></TEXT_LEVEL>
+<TEXT_LEVEL_END><![CDATA[POZIOM UKOŃCZONY!]]></TEXT_LEVEL_END>
+<TEXT_LIFE_BONUS><![CDATA[Dodatkowe życie]]></TEXT_LIFE_BONUS>
+<TEXT_LIVES><![CDATA[Życia:]]></TEXT_LIVES>
+<TEXT_LOSE_LIFE><![CDATA[Straciłeś życie!]]></TEXT_LOSE_LIFE>
+<TEXT_POINTER_BONUS><![CDATA[Celownik]]></TEXT_POINTER_BONUS>
+<TEXT_POINTS><![CDATA[Punkty:]]></TEXT_POINTS>
+<TEXT_POINTS_BONUS><![CDATA[Punkty bonusowe: ]]></TEXT_POINTS_BONUS>
+<TEXT_PREPARE><![CDATA[Gotowy!]]></TEXT_PREPARE>
+<TEXT_SCORE><![CDATA[Twoje punkty:]]></TEXT_SCORE>
+<TEXT_SLOW_BONUS><![CDATA[Wolniejsze piłki]]></TEXT_SLOW_BONUS>
+<TEXT_STOP_BONUS><![CDATA[Zatrzymaj piłki]]></TEXT_STOP_BONUS>
+<TEXT_TIME><![CDATA[Czas:]]></TEXT_TIME>
+<TEXT_TITLE><![CDATA[INSTRUKCJE]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[KONIEC GRY]]></TEXT_VICTORY>
+</snippets>

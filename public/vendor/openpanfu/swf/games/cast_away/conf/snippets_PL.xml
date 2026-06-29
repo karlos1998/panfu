@@ -1,0 +1,12 @@
+<snippets date="05.05.2011 09:13:03">
+<BTN_FINISH><![CDATA[Anuluj]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instrukcja]]></BTN_INTRODUCTION>
+<BTN_PLAYAGAIN><![CDATA[Zagraj jeszcze raz]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Graj teraz]]></BTN_PLAYNOW>
+<GOT_POINTS><![CDATA[Gratulacje!
+Wygrałeś $$score$$ punktów!]]></GOT_POINTS>
+<PLAY_CHAT><![CDATA[Graj i Czatuj]]></PLAY_CHAT>
+<TEXT_CRASHED><![CDATA[Game over]]></TEXT_CRASHED>
+<TEXT_FINISH_SUCCESS><![CDATA[Gratulacje! Udało ci się!]]></TEXT_FINISH_SUCCESS>
+<TEXT_WELCOME><![CDATA[Straszny sztorm uderzył na Panfu! Wybierz się w poszukiwaniu każdego samolocika, oraz listów w butelce, starając się omijać wraki i pelikany. Aby przeskoczyć, wystarczy kliknąć na ekran. Im częściej klikasz, im wyżej przeskoczy twoja Panda. Miłej zabawy!]]></TEXT_WELCOME>
+</snippets>

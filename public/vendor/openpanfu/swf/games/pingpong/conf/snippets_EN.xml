@@ -1,0 +1,33 @@
+<snippets date="05.05.2011 09:17:19">
+<BTN_FINISH><![CDATA[End]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instructions]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Main menu]]></BTN_MENU>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Play and Chat]]></BTN_PLAY_CHAT>
+<ENEMY_POINT_TEXT><![CDATA[Opponent's point]]></ENEMY_POINT_TEXT>
+<ENEMY_SETS_TEXT><![CDATA[Opponent]]></ENEMY_SETS_TEXT>
+<ENEMY_SET_TEXT><![CDATA[Opponent's set]]></ENEMY_SET_TEXT>
+<ENEMY_WIN_TEXT><![CDATA[The opponent has won!]]></ENEMY_WIN_TEXT>
+<INSTRUCTION2_TEXT><![CDATA[Table-tennis rules
+Hit the ball to your opponent's side. Be sure that the ball lands in the middle of the table or you'll lose points.
+The server changes after every two points and after one point when the score is 10:10. Every set goes to eleven points.
+You have to win three sets to win the game.
+Have fun!
+
+]]></INSTRUCTION2_TEXT>
+<INSTRUCTION_HEAD><![CDATA[Instructions]]></INSTRUCTION_HEAD>
+<INSTRUCTION_TEXT><![CDATA[The rules are the same as for an ordinary table-tennis game. To serve, you must click on the ball. Then continue playing without clicking. In order to win the game, you need 3 sets of 11 points each. Your points for the game:]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instructions]]></INSTRUCTION_TITLE>
+<LOGO_URL><![CDATA[http://www.panfu.com]]></LOGO_URL>
+<LOSE_TEXT><![CDATA[Sorry, you have lost the game.]]></LOSE_TEXT>
+<PLAYER_SETS_TEXT><![CDATA[You]]></PLAYER_SETS_TEXT>
+<POINTS_TEXT><![CDATA[Points]]></POINTS_TEXT>
+<PREPARE_TEXT><![CDATA[Game over!]]></PREPARE_TEXT>
+<ROUND_TEXT><![CDATA[Set]]></ROUND_TEXT>
+<SCORE_END_TEXT><![CDATA[Bonus points for the difference]]></SCORE_END_TEXT>
+<WIN_TEXT><![CDATA[You have won the game!]]></WIN_TEXT>
+<YOUR_POINT_TEXT><![CDATA[Your point!]]></YOUR_POINT_TEXT>
+<YOUR_SET_TEXT><![CDATA[Your set!]]></YOUR_SET_TEXT>
+<YOU_WIN_TEXT><![CDATA[You have won the game!]]></YOU_WIN_TEXT>
+</snippets>

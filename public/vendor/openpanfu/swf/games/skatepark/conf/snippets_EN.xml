@@ -1,0 +1,38 @@
+<snippets date="05.05.2011 09:16:08">
+<BTN_FINISH><![CDATA[End]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instructions]]></BTN_INSTRUCTION>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now!]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Play and chat]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Play now]]></BTN_START>
+<HELLO><![CDATA[Hello, $$name$$!!!]]></HELLO>
+<INSTRUCTION_TITLE><![CDATA[Instructions]]></INSTRUCTION_TITLE>
+<TEXT_DEFEAT><![CDATA[Game over!]]></TEXT_DEFEAT>
+<TEXT_DEFEAT1><![CDATA[Unfortunately you haven't won the game!]]></TEXT_DEFEAT1>
+<TEXT_EVOLUTION1><![CDATA[Score]]></TEXT_EVOLUTION1>
+<TEXT_EVOLUTION2><![CDATA[Score]]></TEXT_EVOLUTION2>
+<TEXT_EVOLUTION3><![CDATA[Score]]></TEXT_EVOLUTION3>
+<TEXT_EVOLUTION4><![CDATA[Score]]></TEXT_EVOLUTION4>
+<TEXT_EVOLUTION5><![CDATA[Score]]></TEXT_EVOLUTION5>
+<TEXT_EVOLUTION6><![CDATA[Score]]></TEXT_EVOLUTION6>
+<TEXT_EVOLUTION7><![CDATA[Score]]></TEXT_EVOLUTION7>
+<TEXT_EVOLUTION8><![CDATA[Score]]></TEXT_EVOLUTION8>
+<TEXT_FALL><![CDATA[You fell!]]></TEXT_FALL>
+<TEXT_INSTRUCTION1><![CDATA[Press the space key while skating down the halfpipe. Release the space key if the panda gets into the yellow area. This allows the panda to jump high enough to perform artistic movements.]]></TEXT_INSTRUCTION1>
+<TEXT_INSTRUCTION2><![CDATA[You can perform stunts while jumping with the panda. You will get a score for every performed stunt.]]></TEXT_INSTRUCTION2>
+<TEXT_INSTRUCTION3><![CDATA[Use the arrow keys to perform a stunt while jumping. Every arrow key performs a seperate stunt if pressed.]]></TEXT_INSTRUCTION3>
+<TEXT_INSTRUCTION4><![CDATA[Press this key combination and one of the arrow keys to perform difficult stunts which allow you to get a higher score:]]></TEXT_INSTRUCTION4>
+<TEXT_INSTRUCTION_SUBTITLE1><![CDATA[The panda in the halfpipe]]></TEXT_INSTRUCTION_SUBTITLE1>
+<TEXT_INSTRUCTION_SUBTITLE2><![CDATA[Stunts with the skateboard]]></TEXT_INSTRUCTION_SUBTITLE2>
+<TEXT_INSTRUCTION_TITLE><![CDATA[Instruction]]></TEXT_INSTRUCTION_TITLE>
+<TEXT_LEVEL><![CDATA[Round:]]></TEXT_LEVEL>
+<TEXT_LEVEL_END><![CDATA[Level acomplished!]]></TEXT_LEVEL_END>
+<TEXT_POINTS><![CDATA[Score:]]></TEXT_POINTS>
+<TEXT_PREPARE><![CDATA[Prepare!]]></TEXT_PREPARE>
+<TEXT_SCORE><![CDATA[Your highscore:]]></TEXT_SCORE>
+<TEXT_TITLE><![CDATA[Show your best tricks on the skateboard!]]></TEXT_TITLE>
+<TEXT_TOO_FAST><![CDATA[You have been too fast!]]></TEXT_TOO_FAST>
+<TEXT_TOO_SLOW><![CDATA[You jumped too late!]]></TEXT_TOO_SLOW>
+<TEXT_VICTORY><![CDATA[Game complete!]]></TEXT_VICTORY>
+<TEXT_VICTORY1><![CDATA[You won the game!]]></TEXT_VICTORY1>
+</snippets>

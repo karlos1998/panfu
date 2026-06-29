@@ -1,0 +1,34 @@
+<snippets date="05.05.2011 09:14:42">
+<BTN_ABORT_LEVEL><![CDATA[Schließen]]></BTN_ABORT_LEVEL>
+<BTN_ACCEPT><![CDATA[Ja]]></BTN_ACCEPT>
+<BTN_CANCEL><![CDATA[Nein]]></BTN_CANCEL>
+<BTN_CHOOSE_LEVEL><![CDATA[Level wählen]]></BTN_CHOOSE_LEVEL>
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_HIT><![CDATA[Hilfe]]></BTN_HIT>
+<BTN_INTRODUCTION><![CDATA[Anleitung]]></BTN_INTRODUCTION>
+<BTN_NEXT><![CDATA[Nächstes]]></BTN_NEXT>
+<BTN_NEXTLEVEL><![CDATA[Nächster Level]]></BTN_NEXTLEVEL>
+<BTN_PAUSE><![CDATA[Pause]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<BTN_PREV><![CDATA[Zurück]]></BTN_PREV>
+<BTN_RESET><![CDATA[Von vorne]]></BTN_RESET>
+<BTN_RESUME><![CDATA[Start]]></BTN_RESUME>
+<BTN_SHUFFLE><![CDATA[Neu mischen]]></BTN_SHUFFLE>
+<TEXT_BONUS><![CDATA[Bonus]]></TEXT_BONUS>
+<TEXT_CRASHED><![CDATA[GAME OVER]]></TEXT_CRASHED>
+<TEXT_DIALOG><![CDATA[Willst Du das Spiel wirklich beenden?
+Du verlierst dann alle Punkte!]]></TEXT_DIALOG>
+<TEXT_FINISH_FAILURE><![CDATA[Die Zeit ist um!]]></TEXT_FINISH_FAILURE>
+<TEXT_FINISH_GAME><![CDATA[Glückwunsch! Du hast alle Level geschafft!]]></TEXT_FINISH_GAME>
+<TEXT_FINISH_LEVEL><![CDATA[Glückwunsch! Level geschafft!]]></TEXT_FINISH_LEVEL>
+<TEXT_TOTAL_SCORE><![CDATA[Gesamtpunktzahl: ]]></TEXT_TOTAL_SCORE>
+<TEXT_WELCOME><![CDATA[Versuche, Paare mit dem gleichen Muster zu finden! Du musst alle Paare finden, so dass am Ende keine Steine übrigbleiben.
+Ziel ist es, die Paare so schnell wie möglich zu finden, indem man sie mit der Maus anklickt. Vergiss nicht, dass Du nur die Steine anklicken kannst, die nicht von anderen Steinen umgeben sind. Auf der rechten Seite ist ein "Hilfe"-Knopf, der Dir ein passendes Paar verrät. Du kannst ihn bis zu dreimal benutzen, doch daür werden dir jedesmal einige Sekunden abgezogen.]]></TEXT_WELCOME>
+<TITLE_DIALOG><![CDATA[WARNUNG!]]></TITLE_DIALOG>
+<TITLE_FINISH_GAME><![CDATA[SPIEL VORBEI!]]></TITLE_FINISH_GAME>
+<TITLE_FINISH_LEVEL><![CDATA[LEVEL GESCHAFFT!]]></TITLE_FINISH_LEVEL>
+<TITLE_PAUSE><![CDATA[PAUSE]]></TITLE_PAUSE>
+<TITLE_WELCOME><![CDATA[Anleitung]]></TITLE_WELCOME>
+</snippets>

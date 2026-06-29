@@ -1,0 +1,34 @@
+﻿<snippets date="05.05.2011 09:16:00">
+<BTN_AGAIN><![CDATA[Noch einmal]]></BTN_AGAIN>
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Anleitung]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Hauptmenü]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Nächste Runde]]></BTN_NEXTROUND>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<GROUP0><![CDATA[Bread,Dark bread,Bread rolls,Baguette,Cake]]></GROUP0>
+<GROUP1><![CDATA[12 Eggs,Kefir,Milk,Cream,Hard cheese,Yogurt,6 eggs,Cottage cheese
+]]></GROUP1>
+<GROUP2><![CDATA[Peanut butter,Cherry jam,Orange jam,Corn flakes,Choco flakes,Peas,Chips,Ham,Tuna]]></GROUP2>
+<GROUP3><![CDATA[White socks,Green T-shirt,Trousers,Blue socks,Shorts,Orange T-shirt,Red shoes,Coat,Sandals]]></GROUP3>
+<GROUP4><![CDATA[Lemons,Oranges,Pears,Bananas,Apples,Watermelon,Grapes,Plums]]></GROUP4>
+<GROUP5><![CDATA[Potatoes,Cabbage,Cucumber,Tomatoes,Garlic,Onions,Carrots,Cauliflower]]></GROUP5>
+<GROUP6><![CDATA[Mineral water,Soda water,Lemonade,Tonic water,Orange juice,Apple juice,Cola]]></GROUP6>
+<GROUPS><![CDATA[Bakery products,Dairy products,Packed lunch,Clothing,Fruits,Vegetables,Beverages]]></GROUPS>
+<INSTRUCTION_TEXT><![CDATA[Kaufe nur die Produkte, die auf der Einkaufsliste stehen. Präge sie Dir gut ein, denn jedes Mal, wenn Du wieder in die Liste schaust, verlierst Du Punkte. Achtung! Du hast nur 90 Sekunden, um alle Produkte zu finden!
+
+Punkte: 
+Richtiges Produkt: +5 
+Falsches Produkt: -5 
+In der Liste nachgucken: -5 
+Bonus für geschafften Runde: +5 
+Bonus für fehlerfrei geschafften Runde: +10 ]]></INSTRUCTION_TEXT>
+<LOGO_URL><![CDATA[http://www.panfu.com/]]></LOGO_URL>
+<TEXT_BONUS><![CDATA[Bonus]]></TEXT_BONUS>
+<TEXT_CURROUNDPTS><![CDATA[Punkte für richtige Artikel]]></TEXT_CURROUNDPTS>
+<TEXT_GAMEEND><![CDATA[DU HAST DAS SPIEL GEWONNEN!]]></TEXT_GAMEEND>
+<TEXT_PREVROUNDPTS><![CDATA[Vorherige Runden]]></TEXT_PREVROUNDPTS>
+<TEXT_ROUNDEND><![CDATA[DU HAST DIESEN LEVEL GESCHAFFT!]]></TEXT_ROUNDEND>
+<TEXT_ROUNDFAILED><![CDATA[Du warst leider zu langsam!]]></TEXT_ROUNDFAILED>
+<TEXT_ROUNDTOTALPTS><![CDATA[Rundenpunkte]]></TEXT_ROUNDTOTALPTS>
+<TEXT_TOTAL><![CDATA[GESAMT]]></TEXT_TOTAL>
+</snippets>

@@ -1,0 +1,25 @@
+﻿<snippets date="05.05.2011 09:17:35">
+<BONUS_TEXT><![CDATA[Bonus:]]></BONUS_TEXT>
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instructions]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Main Menu]]></BTN_MENU>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Play & Chat]]></BTN_PLAY_CHAT>
+<END_TEXT><![CDATA[You have earned $$score$$ Points!]]></END_TEXT>
+<GAME_END2_TEXT><![CDATA[Sorry, you lost!]]></GAME_END2_TEXT>
+<GAME_END_TEXT><![CDATA[Congratulations! You have won the game!]]></GAME_END_TEXT>
+<INSTRUCTION_TEXT><![CDATA[You have to be an excellent surfer in this game! To do this, you have to be impressive and ride 10 waves. You get 5 points for each wave you surf successfully. But watch out for sharks and other obstacles! Use the speed button to go faster on the wave. Have fun!
+]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instructions]]></INSTRUCTION_TITLE>
+<LEVEL_END_TEXT><![CDATA[Excellent Dude, you did it! You surfed until the end of the $$wave$$ wave.]]></LEVEL_END_TEXT>
+<LEVEL_TEXT><![CDATA[Wave]]></LEVEL_TEXT>
+<LIVES_TEXT><![CDATA[Lives]]></LIVES_TEXT>
+<LOGO_URL><![CDATA[http://www.panfu.com]]></LOGO_URL>
+<OBSTACLES_TEXT><![CDATA[Obstacle]]></OBSTACLES_TEXT>
+<POINTS_TEXT><![CDATA[Points]]></POINTS_TEXT>
+<PREPARE_TEXT><![CDATA[Watch out!]]></PREPARE_TEXT>
+<ROTATION_TEXT><![CDATA[Turn:]]></ROTATION_TEXT>
+<SELECT_TEXT><![CDATA[Choose a player]]></SELECT_TEXT>
+<SPEED_TEXT><![CDATA[Speed]]></SPEED_TEXT>
+</snippets>

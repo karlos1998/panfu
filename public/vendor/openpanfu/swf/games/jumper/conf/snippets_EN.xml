@@ -1,0 +1,26 @@
+<snippets date="05.05.2011 09:17:04">
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_INSTR><![CDATA[Instructions]]></BTN_INSTR>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Chat and Play]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Play now]]></BTN_START>
+<HELLO><![CDATA[Hello, $$name$$!!!]]></HELLO>
+<TEXT_BONUS><![CDATA[BONUS]]></TEXT_BONUS>
+<TEXT_BONUSPOINTS><![CDATA[Points]]></TEXT_BONUSPOINTS>
+<TEXT_DEFEAT><![CDATA[GAME OVER]]></TEXT_DEFEAT>
+<TEXT_DOUBLE><![CDATA[Double points for jumps]]></TEXT_DOUBLE>
+<TEXT_FAST><![CDATA[Faster Panda]]></TEXT_FAST>
+<TEXT_INSTRUCTION><![CDATA[Help your panda use the trampoline to jump to the other side of the river. <br><br>YOu can move the trampoline with your mouse.<br><br>Collect the falling bonuses, but be careful, not all of them bring you points!]]></TEXT_INSTRUCTION>
+<TEXT_LIFE><![CDATA[Lives]]></TEXT_LIFE>
+<TEXT_LIVES><![CDATA[Lives:]]></TEXT_LIVES>
+<TEXT_LOSE><![CDATA[Unfortunately you have no lives left!]]></TEXT_LOSE>
+<TEXT_POINTS><![CDATA[Your points:]]></TEXT_POINTS>
+<TEXT_RANDOM><![CDATA[Random Bonuses]]></TEXT_RANDOM>
+<TEXT_SHIELD><![CDATA[Bridge]]></TEXT_SHIELD>
+<TEXT_SHORT><![CDATA[Small Trampoline]]></TEXT_SHORT>
+<TEXT_SLOW><![CDATA[Slower Panda]]></TEXT_SLOW>
+<TEXT_TITLE><![CDATA[INSTRUCTIONS]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[GAME OVER]]></TEXT_VICTORY>
+<TEXT_VICTORY1><![CDATA[Congratulations! You have won!]]></TEXT_VICTORY1>
+<TEXT_WIDE><![CDATA[Big Trampoline]]></TEXT_WIDE>
+</snippets>

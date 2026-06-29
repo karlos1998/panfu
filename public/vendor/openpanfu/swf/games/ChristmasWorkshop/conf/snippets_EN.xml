@@ -1,0 +1,47 @@
+<snippets date="16.09.2013 11:19:26">
+<BUTTON_UPGRADE_BOLLY><![CDATA[Upgrade - extends Heart Radius and Heart Throw Frequency]]></BUTTON_UPGRADE_BOLLY>
+<PD_BOLLY_TOOLTIP_ABIL><![CDATA[will hit individual monsters]]></PD_BOLLY_TOOLTIP_ABIL>
+<PD_BUTTON_BOLLY_TOOLTIP><![CDATA[Bolly - will hit individual monsters - price: 10 Coins]]></PD_BUTTON_BOLLY_TOOLTIP>
+<PD_BUTTON_BROWSE_BACKWARD><![CDATA[Back]]></PD_BUTTON_BROWSE_BACKWARD>
+<PD_BUTTON_CONTINUE><![CDATA[Continue]]></PD_BUTTON_CONTINUE>
+<PD_BUTTON_END><![CDATA[Close]]></PD_BUTTON_END>
+<PD_BUTTON_POKOPET_TOOLTIP><![CDATA[Pokopet - will slow down monster movements - price: 15 Coins]]></PD_BUTTON_POKOPET_TOOLTIP>
+<PD_BUTTON_RESTART><![CDATA[Restart]]></PD_BUTTON_RESTART>
+<PD_BUTTON_WOOBY_TOOLTIP><![CDATA[Wooby - will hit multiple monsters at the same time - price: 20 Coins]]></PD_BUTTON_WOOBY_TOOLTIP>
+<PD_HINT_01><![CDATA[Sometimes it is better to upgrade the abilities of your existing towers instead of buying new ones.]]></PD_HINT_01>
+<PD_HINT_02><![CDATA[Try to spend as little Coins as possible within a level. They will come in handy in later levels.]]></PD_HINT_02>
+<PD_HINT_03><![CDATA[Think good and hard about where you place your towers, in order to cover the biggest possible distance]]></PD_HINT_03>
+<PD_HINT_04><![CDATA[Always try to combine your towers to increase their effectiveness]]></PD_HINT_04>
+<PD_HINT_HEADER><![CDATA[Hint]]></PD_HINT_HEADER>
+<PD_ICON_COINS_TOOLTIP><![CDATA[Coins]]></PD_ICON_COINS_TOOLTIP>
+<PD_ICON_HEARTS_TOOLTIP><![CDATA[remaining heart energy]]></PD_ICON_HEARTS_TOOLTIP>
+<PD_LOST_RESTART><![CDATA[Do you want to restart the level or exit the game?]]></PD_LOST_RESTART>
+<PD_POKOPET_TOOLTIP_ABIL><![CDATA[will slow down monster movements]]></PD_POKOPET_TOOLTIP_ABIL>
+<PD_POPUP_LOST><![CDATA[Unfortunately you have no heart energy left.]]></PD_POPUP_LOST>
+<PD_POPUP_LOST_HEADER><![CDATA[You have lost!]]></PD_POPUP_LOST_HEADER>
+<PD_POPUP_NEXT_LEVEL><![CDATA[You have reached the next level]]></PD_POPUP_NEXT_LEVEL>
+<PD_POPUP_NEXT_LEVEL_HEADER><![CDATA[Level completed!]]></PD_POPUP_NEXT_LEVEL_HEADER>
+<PD_SCREEN_HELP_HEADER><![CDATA[Instructions]]></PD_SCREEN_HELP_HEADER>
+<PD_SCREEN_HELP_TEXT_01><![CDATA[There are three different types of defence towers: Bolly, Wooby and Pokopet. Click the corresponding button to purchase one of them. ]]></PD_SCREEN_HELP_TEXT_01>
+<PD_SCREEN_HELP_TEXT_02><![CDATA[Using your cursor, place your tower on an empty space]]></PD_SCREEN_HELP_TEXT_02>
+<PD_SCREEN_HELP_TEXT_03><![CDATA[Evron's evil creatures from Bitterland appear through the red portal and are trying to reach Panfu]]></PD_SCREEN_HELP_TEXT_03>
+<PD_SCREEN_HELP_TEXT_04><![CDATA[Place your towers within the reach of the creatures in order to defeat them with Magic Hearts. You will receive a Coin for every creature that was hit by a Heart and disappeared]]></PD_SCREEN_HELP_TEXT_04>
+<PD_SCREEN_HELP_TEXT_05><![CDATA[Press the Upgrade Button underneath a tower to increase its ability. The price rises with each new upgrade.]]></PD_SCREEN_HELP_TEXT_05>
+<PD_SCREEN_HELP_TEXT_06><![CDATA[Careful: with every creature that reaches the green portal, your Heart Energy will decrease. Once your energy has gone down to zero, you have lost the game.]]></PD_SCREEN_HELP_TEXT_06>
+<PD_SCREEN_PLAYTHROUGH><![CDATA[You did it, all of the evil creatures have been defeated. Panfu has been saved!!!]]></PD_SCREEN_PLAYTHROUGH>
+<PD_SCREEN_PLAYTHROUGH_HEADER><![CDATA[You won!]]></PD_SCREEN_PLAYTHROUGH_HEADER>
+<PD_SCREEN_START_BUTTON_HELP><![CDATA[Instructions]]></PD_SCREEN_START_BUTTON_HELP>
+<PD_SCREEN_START_BUTTON_START><![CDATA[Start playing]]></PD_SCREEN_START_BUTTON_START>
+<PD_SCREEN_START_HEADER><![CDATA[PANFU DEFENCE]]></PD_SCREEN_START_HEADER>
+<PD_TOWER_NAME_BOLLY><![CDATA[Bolly]]></PD_TOWER_NAME_BOLLY>
+<PD_TOWER_NAME_POKOPET><![CDATA[Pokopet]]></PD_TOWER_NAME_POKOPET>
+<PD_TOWER_NAME_WOOBY><![CDATA[Wooby]]></PD_TOWER_NAME_WOOBY>
+<PD_TOWER_TOOLTIP_DAMAGE><![CDATA[Damage:]]></PD_TOWER_TOOLTIP_DAMAGE>
+<PD_TOWER_TOOLTIP_HI><![CDATA[high]]></PD_TOWER_TOOLTIP_HI>
+<PD_TOWER_TOOLTIP_LOW><![CDATA[low]]></PD_TOWER_TOOLTIP_LOW>
+<PD_TOWER_TOOLTIP_MID><![CDATA[medium]]></PD_TOWER_TOOLTIP_MID>
+<PD_TOWER_TOOLTIP_PRICE><![CDATA[Price:]]></PD_TOWER_TOOLTIP_PRICE>
+<PD_TOWER_TOOLTIP_RANGE><![CDATA[Range:]]></PD_TOWER_TOOLTIP_RANGE>
+<PD_TOWER_TOOLTIP_RATE><![CDATA[Heart Throw Frequency:]]></PD_TOWER_TOOLTIP_RATE>
+<PD_WOOBY_TOOLTIP_ABIL><![CDATA[will hit multiple monsters at the same time]]></PD_WOOBY_TOOLTIP_ABIL>
+</snippets>

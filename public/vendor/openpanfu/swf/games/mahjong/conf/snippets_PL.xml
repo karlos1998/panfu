@@ -1,0 +1,34 @@
+<snippets date="05.05.2011 09:14:43">
+<BTN_ABORT_LEVEL><![CDATA[Zakończ]]></BTN_ABORT_LEVEL>
+<BTN_ACCEPT><![CDATA[Tak]]></BTN_ACCEPT>
+<BTN_CANCEL><![CDATA[Nie]]></BTN_CANCEL>
+<BTN_CHOOSE_LEVEL><![CDATA[Wybierz poziom]]></BTN_CHOOSE_LEVEL>
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_HIT><![CDATA[Pomoc]]></BTN_HIT>
+<BTN_INTRODUCTION><![CDATA[Instrukcja]]></BTN_INTRODUCTION>
+<BTN_NEXT><![CDATA[Dalej]]></BTN_NEXT>
+<BTN_NEXTLEVEL><![CDATA[Następny poziom]]></BTN_NEXTLEVEL>
+<BTN_PAUSE><![CDATA[Pauza]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Zagraj teraz]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Graj i Czatuj]]></BTN_PLAY_CHAT>
+<BTN_PREV><![CDATA[Wróć]]></BTN_PREV>
+<BTN_RESET><![CDATA[Od początku]]></BTN_RESET>
+<BTN_RESUME><![CDATA[Start]]></BTN_RESUME>
+<BTN_SHUFFLE><![CDATA[Losowanie]]></BTN_SHUFFLE>
+<TEXT_BONUS><![CDATA[Bonus]]></TEXT_BONUS>
+<TEXT_CRASHED><![CDATA[KONIEC GRY]]></TEXT_CRASHED>
+<TEXT_DIALOG><![CDATA[Czy na pewno chcesz zakończyć grę?
+Stracisz wtedy wszystkie swoje punkty!]]></TEXT_DIALOG>
+<TEXT_FINISH_FAILURE><![CDATA[Koniec czasu!]]></TEXT_FINISH_FAILURE>
+<TEXT_FINISH_GAME><![CDATA[Gratulacje! Udało ci się przejść przez wszystkie poziomy!]]></TEXT_FINISH_GAME>
+<TEXT_FINISH_LEVEL><![CDATA[Gratulacje! Udało ci się ukończyć poziom!]]></TEXT_FINISH_LEVEL>
+<TEXT_TOTAL_SCORE><![CDATA[Twoje punkty: ]]></TEXT_TOTAL_SCORE>
+<TEXT_WELCOME><![CDATA[Postaraj się odnaleźć pary z tym samym wzorem! Musisz odnaleźć wszystkie pary tak aby na końcu nie został żaden kamień. Celem gry jest odnalezienie wszystkich par w jak najkrótszym czasie, klikając na nie swoją myszką.
+Pamiętaj że możesz klikać tylko na te kamienie, które nie są otoczone innymi kamieniami. Po prawej stronie znajduje się przycisk "Pomoc" i gdy na niego klikniesz ujawni się jedna pasująca para. Możesz użyć pomocy tylko trzy razy, i za każdym razem zostanie odjętych kilka sekund od twojego czasu.]]></TEXT_WELCOME>
+<TITLE_DIALOG><![CDATA[UWAGA!]]></TITLE_DIALOG>
+<TITLE_FINISH_GAME><![CDATA[KONIEC GRY!]]></TITLE_FINISH_GAME>
+<TITLE_FINISH_LEVEL><![CDATA[POZIOM ZAKOŃCZONY!]]></TITLE_FINISH_LEVEL>
+<TITLE_PAUSE><![CDATA[PAUZA]]></TITLE_PAUSE>
+<TITLE_WELCOME><![CDATA[Instrukcja]]></TITLE_WELCOME>
+</snippets>

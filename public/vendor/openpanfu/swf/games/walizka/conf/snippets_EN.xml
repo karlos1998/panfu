@@ -1,0 +1,30 @@
+<snippets date="05.05.2011 09:17:12">
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_HINT><![CDATA[Joker]]></BTN_HINT>
+<BTN_INSTRUCTION><![CDATA[Instructions]]></BTN_INSTRUCTION>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Play and Chat]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Start]]></BTN_START>
+<DEFEAT><![CDATA[GAME OVER!]]></DEFEAT>
+<DEFEAT_TEXT><![CDATA[Unfortunately you didn't mange to pack everything.]]></DEFEAT_TEXT>
+<END_TEXT><![CDATA[Fish caught]]></END_TEXT>
+<FISH><![CDATA[Fish]]></FISH>
+<HELLO><![CDATA[Hello, $$name$$!!!]]></HELLO>
+<INSTRUCTION_TITLE><![CDATA[Instructions]]></INSTRUCTION_TITLE>
+<SCORE><![CDATA[Your points:]]></SCORE>
+<TEXT_END_LEVEL1><![CDATA[Congratulations!]]></TEXT_END_LEVEL1>
+<TEXT_END_LEVEL2><![CDATA[You did it!]]></TEXT_END_LEVEL2>
+<TEXT_HINT><![CDATA[Tip:]]></TEXT_HINT>
+<TEXT_INSTRUCTION><![CDATA[Help your panda pack the suitcase for a holiday.<br><br>You must pack the suitcase so that everything fits in properly<br><br>Use your mouse to move things.]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LOSE1><![CDATA[GAME OVER!]]></TEXT_LOSE1>
+<TEXT_LOSE2><![CDATA[Sorry, you didn't manage to pack everything.]]></TEXT_LOSE2>
+<TEXT_POINTS><![CDATA[Points:]]></TEXT_POINTS>
+<TEXT_TIME><![CDATA[Time:]]></TEXT_TIME>
+<TEXT_TITLE><![CDATA[INSTRUCTIONS]]></TEXT_TITLE>
+<TEXT_TO_GET><![CDATA[Points gained:]]></TEXT_TO_GET>
+<VICTORY><![CDATA[GAME OVER!]]></VICTORY>
+<VICTORY_TEXT><![CDATA[Congratulations! You did it!]]></VICTORY_TEXT>
+<WORMS><![CDATA[Worms]]></WORMS>
+</snippets>

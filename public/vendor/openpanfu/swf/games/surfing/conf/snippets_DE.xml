@@ -1,0 +1,24 @@
+﻿<snippets date="05.05.2011 09:17:36">
+<BONUS_TEXT><![CDATA[Bonus:]]></BONUS_TEXT>
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Anleitung]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Hauptmenü]]></BTN_MENU>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<END_TEXT><![CDATA[Du hast $$score$$ Punkte verdient!]]></END_TEXT>
+<GAME_END2_TEXT><![CDATA[Du hast leider verloren!]]></GAME_END2_TEXT>
+<GAME_END_TEXT><![CDATA[Gratulieren! Du hast das Spiel gewonnen!]]></GAME_END_TEXT>
+<INSTRUCTION_TEXT><![CDATA[Du kannst ein guter Surfer werden! Dazu musst Du aber 10 beeindruckende Wellen bewältigen. Für jede Drehung bekommst Du 5 Punkte. Pass aber auf die Haie und die Hindernisse auf! Wenn Du schneller als die Welle sein willst, dann benutze den Geschwindigkeitsbutton! Viel Spaß!]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Anleitung]]></INSTRUCTION_TITLE>
+<LEVEL_END_TEXT><![CDATA[Du hast es geschafft, ans Ende der $$wave$$ zu surfen!]]></LEVEL_END_TEXT>
+<LEVEL_TEXT><![CDATA[Welle]]></LEVEL_TEXT>
+<LIVES_TEXT><![CDATA[Leben]]></LIVES_TEXT>
+<LOGO_URL><![CDATA[http://www.panfu.com]]></LOGO_URL>
+<OBSTACLES_TEXT><![CDATA[Hindernis]]></OBSTACLES_TEXT>
+<POINTS_TEXT><![CDATA[Punkte]]></POINTS_TEXT>
+<PREPARE_TEXT><![CDATA[Achtung!]]></PREPARE_TEXT>
+<ROTATION_TEXT><![CDATA[Drehen:]]></ROTATION_TEXT>
+<SELECT_TEXT><![CDATA[Wähle einen Spieler!]]></SELECT_TEXT>
+<SPEED_TEXT><![CDATA[Geschwindigkeit]]></SPEED_TEXT>
+</snippets>

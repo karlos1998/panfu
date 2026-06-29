@@ -1,0 +1,48 @@
+<snippets date="16.09.2013 11:19:26">
+<BUTTON_UPGRADE_BOLLY><![CDATA[Upgrade - zwiększa zasięg i częstotliwość rzucania serduszek. ]]></BUTTON_UPGRADE_BOLLY>
+<PD_BOLLY_TOOLTIP_ABIL><![CDATA[trafia pojedyncze potwory ]]></PD_BOLLY_TOOLTIP_ABIL>
+<PD_BUTTON_BOLLY_TOOLTIP><![CDATA[Bolly - trafia pojedyncze potwory - cena: 10 monet]]></PD_BUTTON_BOLLY_TOOLTIP>
+<PD_BUTTON_BROWSE_BACKWARD><![CDATA[Wróć]]></PD_BUTTON_BROWSE_BACKWARD>
+<PD_BUTTON_CONTINUE><![CDATA[Dalej]]></PD_BUTTON_CONTINUE>
+<PD_BUTTON_END><![CDATA[Zakończ]]></PD_BUTTON_END>
+<PD_BUTTON_POKOPET_TOOLTIP><![CDATA[Pokopet - spowolni ruchy potworów - cena: 15 monet. ]]></PD_BUTTON_POKOPET_TOOLTIP>
+<PD_BUTTON_RESTART><![CDATA[Od nowa]]></PD_BUTTON_RESTART>
+<PD_BUTTON_WOOBY_TOOLTIP><![CDATA[Wooby - trafia kilka potworów jednocześnie - cena: 20 monet. ]]></PD_BUTTON_WOOBY_TOOLTIP>
+<PD_HINT_01><![CDATA[Czasami lepiej jest ulepszyć wierze które już masz zamiast kupować nowe wierze. ]]></PD_HINT_01>
+<PD_HINT_02><![CDATA[Nie wydawaj wszystkich swoich monet od razu. Przydadzą Ci się one na następnych poziomach. ]]></PD_HINT_02>
+<PD_HINT_03><![CDATA[Zastanów się dobrze gdzie umieścić swoje wierze, tak aby pokryć jak największy dystans. ]]></PD_HINT_03>
+<PD_HINT_04><![CDATA[Staraj się łączyć swoje wierze tak aby zwiększyć ich efektywność. ]]></PD_HINT_04>
+<PD_HINT_HEADER><![CDATA[Wskazówki ]]></PD_HINT_HEADER>
+<PD_ICON_COINS_TOOLTIP><![CDATA[Monety ]]></PD_ICON_COINS_TOOLTIP>
+<PD_ICON_HEARTS_TOOLTIP><![CDATA[pozostała energia serc]]></PD_ICON_HEARTS_TOOLTIP>
+<PD_LOST_RESTART><![CDATA[Chcesz rozpocząć ten poziom od nowa czy zakończyć grę?]]></PD_LOST_RESTART>
+<PD_POKOPET_TOOLTIP_ABIL><![CDATA[spowolni ruchy potworów]]></PD_POKOPET_TOOLTIP_ABIL>
+<PD_POPUP_LOST><![CDATA[Niestety energia Twoich serc została wyczerpana. ]]></PD_POPUP_LOST>
+<PD_POPUP_LOST_HEADER><![CDATA[Przegrałeś!]]></PD_POPUP_LOST_HEADER>
+<PD_POPUP_NEXT_LEVEL><![CDATA[Przeszedłeś do kolejnego poziomu.]]></PD_POPUP_NEXT_LEVEL>
+<PD_POPUP_NEXT_LEVEL_HEADER><![CDATA[Poziom skończony!]]></PD_POPUP_NEXT_LEVEL_HEADER>
+<PD_SCREEN_HELP_HEADER><![CDATA[Instrukcje]]></PD_SCREEN_HELP_HEADER>
+<PD_SCREEN_HELP_TEXT_01><![CDATA[Są trzy rodzaje wierzy obronnych: Bolly, Wooby i Pokopet. Kliknij na odpowiedni przycisk aby je zakupić. ]]></PD_SCREEN_HELP_TEXT_01>
+<PD_SCREEN_HELP_TEXT_02><![CDATA[Używając kursora umieść swoje wierze w wolnym miejscu na polu gry. ]]></PD_SCREEN_HELP_TEXT_02>
+<PD_SCREEN_HELP_TEXT_03><![CDATA[Niedobre potwory Evrona pojawiają się w czerwonym portalu i próbują zdobyć Panfu. ]]></PD_SCREEN_HELP_TEXT_03>
+<PD_SCREEN_HELP_TEXT_04><![CDATA[Umieść swoje wierze tak abyś mógł dosięgnąć potwory rzucając w nie magicznymi sercami. Za każdego potwora którego trafisz magicznym sercem i który zniknie, otrzymasz monetę. ]]></PD_SCREEN_HELP_TEXT_04>
+<PD_SCREEN_HELP_TEXT_05><![CDATA[Kliknij na Upgrade pod wierzą aby polepszyć jej możliwości. Cena zwiększa się z każdym polepszeniem. ]]></PD_SCREEN_HELP_TEXT_05>
+<PD_SCREEN_HELP_TEXT_06><![CDATA[Uwaga: za każdym razem gdy potwór dojdzie do zielonego portalu, obniża się Twoja energia serc. Kiedy Twoja energia wyczerpie się, oznacza to że przegrałeś grę. ]]></PD_SCREEN_HELP_TEXT_06>
+<PD_SCREEN_PLAYTHROUGH><![CDATA[Udało się! Wszystkie potwory zostały pokonane. Panfu jest uratowane!!!]]></PD_SCREEN_PLAYTHROUGH>
+<PD_SCREEN_PLAYTHROUGH_HEADER><![CDATA[Wygrałeś!]]></PD_SCREEN_PLAYTHROUGH_HEADER>
+<PD_SCREEN_START><![CDATA[(NOWY TEKST)]]></PD_SCREEN_START>
+<PD_SCREEN_START_BUTTON_HELP><![CDATA[Instrukcje]]></PD_SCREEN_START_BUTTON_HELP>
+<PD_SCREEN_START_BUTTON_START><![CDATA[Początek gry]]></PD_SCREEN_START_BUTTON_START>
+<PD_SCREEN_START_HEADER><![CDATA[PANFU DEFENCE]]></PD_SCREEN_START_HEADER>
+<PD_TOWER_NAME_BOLLY><![CDATA[Bolly]]></PD_TOWER_NAME_BOLLY>
+<PD_TOWER_NAME_POKOPET><![CDATA[Pokopet]]></PD_TOWER_NAME_POKOPET>
+<PD_TOWER_NAME_WOOBY><![CDATA[Wooby]]></PD_TOWER_NAME_WOOBY>
+<PD_TOWER_TOOLTIP_DAMAGE><![CDATA[Szkody: ]]></PD_TOWER_TOOLTIP_DAMAGE>
+<PD_TOWER_TOOLTIP_HI><![CDATA[wysoko]]></PD_TOWER_TOOLTIP_HI>
+<PD_TOWER_TOOLTIP_LOW><![CDATA[nisko]]></PD_TOWER_TOOLTIP_LOW>
+<PD_TOWER_TOOLTIP_MID><![CDATA[średnio]]></PD_TOWER_TOOLTIP_MID>
+<PD_TOWER_TOOLTIP_PRICE><![CDATA[Cena:]]></PD_TOWER_TOOLTIP_PRICE>
+<PD_TOWER_TOOLTIP_RANGE><![CDATA[Zasięg:]]></PD_TOWER_TOOLTIP_RANGE>
+<PD_TOWER_TOOLTIP_RATE><![CDATA[Częstotliwość rzutów sercami:]]></PD_TOWER_TOOLTIP_RATE>
+<PD_WOOBY_TOOLTIP_ABIL><![CDATA[trafi kilka potworów jednocześnie]]></PD_WOOBY_TOOLTIP_ABIL>
+</snippets>

@@ -1,0 +1,30 @@
+<snippets date="05.05.2011 09:17:13">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_HINT><![CDATA[Joker]]></BTN_HINT>
+<BTN_INSTRUCTION><![CDATA[Instrukcje]]></BTN_INSTRUCTION>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Graj teraz!]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Graj & Czatuj]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Start]]></BTN_START>
+<DEFEAT><![CDATA[KONIEC GRY!]]></DEFEAT>
+<DEFEAT_TEXT><![CDATA[Niestety nie udało ci się spakować do końca!]]></DEFEAT_TEXT>
+<END_TEXT><![CDATA[Złapane ryby]]></END_TEXT>
+<FISH><![CDATA[Ryba]]></FISH>
+<HELLO><![CDATA[Cześć, $$name$$!!!]]></HELLO>
+<INSTRUCTION_TITLE><![CDATA[Instrukcje]]></INSTRUCTION_TITLE>
+<SCORE><![CDATA[Twoje punkty:]]></SCORE>
+<TEXT_END_LEVEL1><![CDATA[Gratulacje!]]></TEXT_END_LEVEL1>
+<TEXT_END_LEVEL2><![CDATA[Udało się!]]></TEXT_END_LEVEL2>
+<TEXT_HINT><![CDATA[Pomoc:]]></TEXT_HINT>
+<TEXT_INSTRUCTION><![CDATA[Pomóż Pandzie spakować walizkę na wakacje!<br><br> Musisz pakować rzeczy tak, aby wszystko się w środku pomieściło. <br><br> Do gry używaj myszki.]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Poziom:]]></TEXT_LEVEL>
+<TEXT_LOSE1><![CDATA[KONIEC GRY!]]></TEXT_LOSE1>
+<TEXT_LOSE2><![CDATA[Niestety nie udało ci się wszystkiego spakować!]]></TEXT_LOSE2>
+<TEXT_POINTS><![CDATA[Punkty:]]></TEXT_POINTS>
+<TEXT_TIME><![CDATA[Czas:]]></TEXT_TIME>
+<TEXT_TITLE><![CDATA[INSTRUKCJE]]></TEXT_TITLE>
+<TEXT_TO_GET><![CDATA[Punkty do zdobycia:]]></TEXT_TO_GET>
+<VICTORY><![CDATA[KONIEC GRY!]]></VICTORY>
+<VICTORY_TEXT><![CDATA[Brawo! Udało się!]]></VICTORY_TEXT>
+<WORMS><![CDATA[Przynęty]]></WORMS>
+</snippets>

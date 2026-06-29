@@ -1,0 +1,36 @@
+<snippets date="05.05.2011 09:16:02">
+<BTN_AGAIN><![CDATA[Jeszcze raz
+]]></BTN_AGAIN>
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instrukcje]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Menu główne]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Następna runda]]></BTN_NEXTROUND>
+<BTN_PLAYNOW><![CDATA[Graj teraz]]></BTN_PLAYNOW>
+<GROUP0><![CDATA[Bread,Dark bread,Bread rolls,Baguette,Cake]]></GROUP0>
+<GROUP1><![CDATA[12 Eggs,Kefir,Milk,Cream,Hard cheese,Yogurt,6 eggs,Cottage cheese
+]]></GROUP1>
+<GROUP2><![CDATA[Peanut butter,Cherry jam,Orange jam,Corn flakes,Choco flakes,Peas,Chips,Ham,Tuna]]></GROUP2>
+<GROUP3><![CDATA[White socks,Green T-shirt,Trousers,Blue socks,Shorts,Orange T-shirt,Red shoes,Coat,Sandals]]></GROUP3>
+<GROUP4><![CDATA[Lemons,Oranges,Pears,Bananas,Apples,Watermelon,Grapes,Plums]]></GROUP4>
+<GROUP5><![CDATA[Potatoes,Cabbage,Cucumber,Tomatoes,Garlic,Onions,Carrots,Cauliflower]]></GROUP5>
+<GROUP6><![CDATA[Mineral water,Soda water,Lemonade,Tonic water,Orange juice,Apple juice,Cola]]></GROUP6>
+<GROUPS><![CDATA[Bakery products,Dairy products,Packed lunch,Clothing,Fruits,Vegetables,Beverages]]></GROUPS>
+<INSTRUCTION_TEXT><![CDATA[Kupuj tylko te produkty, które znajdują się na twojej liście zakupów. Zapamiętaj dobrze produkty ponieważ za każdym razem gdy będziesz znów zaglądał do listy stracisz punkty. Uwaga! Masz tylko 90 sekund aby odnaleźć wszystkie produkty.
+
+Punkty:
+Właściwy produkt: +5
+Zły produkt: -5
+Zaglądanie do listy: -5
+Bonus za ukończoną rundę: +5
+Bonus za bezbłędnie ukończoną rundę: +10
+]]></INSTRUCTION_TEXT>
+<LOGO_URL><![CDATA[http://www.panfu.pl/]]></LOGO_URL>
+<TEXT_BONUS><![CDATA[Bonus]]></TEXT_BONUS>
+<TEXT_CURROUNDPTS><![CDATA[Punkty za Zakupy]]></TEXT_CURROUNDPTS>
+<TEXT_GAMEEND><![CDATA[WYGRAŁEŚ GRĘ!]]></TEXT_GAMEEND>
+<TEXT_PREVROUNDPTS><![CDATA[Poprzednia runda]]></TEXT_PREVROUNDPTS>
+<TEXT_ROUNDEND><![CDATA[PRZESZEDŁEŚ TEN POZIOM!]]></TEXT_ROUNDEND>
+<TEXT_ROUNDFAILED><![CDATA[Byłeś zbyt wolny!]]></TEXT_ROUNDFAILED>
+<TEXT_ROUNDTOTALPTS><![CDATA[Punkty za rundę]]></TEXT_ROUNDTOTALPTS>
+<TEXT_TOTAL><![CDATA[WYNIK]]></TEXT_TOTAL>
+</snippets>

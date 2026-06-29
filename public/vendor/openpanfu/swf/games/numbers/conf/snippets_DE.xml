@@ -1,0 +1,21 @@
+﻿<snippets date="05.05.2011 09:13:15">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<END_TEXT><![CDATA[Gefangene Fische]]></END_TEXT>
+<GAME_FINISHED><![CDATA[Spiel zu Ende]]></GAME_FINISHED>
+<GAME_OVER><![CDATA[Game Over!]]></GAME_OVER>
+<INSTRUCTION_TEXT><![CDATA[Ziel des Spiels ist es, möglichst alle Zahlen aus dem Spielfeld wegzuräumen. Die Zahlen kann man wegräumen, indem man einzelne Kacheln zusammenzählt und anklickt, die genau die Zahl ergeben, die oben in der rechten Ecke steht. Man muss aber aufpassen, dass die Kacheln sich nicht zu hoch auftürmen, sonst verliert man ein Leben! Wenn Du den Kachel-Zapper nutzt, verschwinden alle Zahlen eines Wertes auf dem Spielfeld.]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Anleitung]]></INSTRUCTION_TITLE>
+<LEVEL><![CDATA[Level]]></LEVEL>
+<LEVEL_COMPLETE><![CDATA[Du hast das Level geschafft]]></LEVEL_COMPLETE>
+<LIVES><![CDATA[Leben]]></LIVES>
+<LOADING_TILES><![CDATA[Lade Kacheln]]></LOADING_TILES>
+<LOST_LIFE><![CDATA[Du hast ein Leben verloren]]></LOST_LIFE>
+<QUIT><![CDATA[Beenden]]></QUIT>
+<SCORE><![CDATA[Punkte]]></SCORE>
+<TILE_ZAPPER><![CDATA[Kachel-Zapper]]></TILE_ZAPPER>
+<TIME_OVER><![CDATA[Zeit ist um]]></TIME_OVER>
+<YOUR_SCORE_IS><![CDATA[Deine Punkte:]]></YOUR_SCORE_IS>
+</snippets>

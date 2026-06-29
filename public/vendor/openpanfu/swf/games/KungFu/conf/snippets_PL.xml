@@ -1,0 +1,35 @@
+<snippets date="05.05.2011 09:14:35">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instrukcja]]></BTN_INSTRUCTION>
+<BTN_MASTREPEAT><![CDATA[Trenuj z Mistrzem.]]></BTN_MASTREPEAT>
+<BTN_MENU><![CDATA[Menu główne]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Następna runda]]></BTN_NEXTROUND>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_SHOWAGAIN><![CDATA[Pokaż ponownie]]></BTN_SHOWAGAIN>
+<BTN_SHOWFORM><![CDATA[Obejrzyj układ "$$name$$".]]></BTN_SHOWFORM>
+<BTN_START><![CDATA[Zagraj teraz]]></BTN_START>
+<FORM0><![CDATA[Biały Lotos]]></FORM0>
+<FORM1><![CDATA[Wijący się Wąż]]></FORM1>
+<FORM2><![CDATA[Przyczajony Tygrys]]></FORM2>
+<FORM3><![CDATA[Ognisty Smok]]></FORM3>
+<FORM4><![CDATA[Złoty Mistrz]]></FORM4>
+<LOGO_URL><![CDATA[http://www.panfu.pl]]></LOGO_URL>
+<TEXT_ENDGAME><![CDATA[Gratulacje!
+Jesteś teraz MISTRZEM PANDA!]]></TEXT_ENDGAME>
+<TEXT_ENDROUND><![CDATA[Gratulacje!
+Przechodzisz do następnego poziomu inicjacji. ]]></TEXT_ENDROUND>
+<TEXT_FAILED><![CDATA[Błędny ruch!
+Czy chciałbyś go zobaczyć jeszcze raz?]]></TEXT_FAILED>
+<TEXT_INITIATIONLEVEL><![CDATA[POZIOM INICJACJI:]]></TEXT_INITIATIONLEVEL>
+<TEXT_INSTRUCTION><![CDATA[Witam. Jestem chińskim mistrzem Kung-Fu. Jeżeli chcesz poznać kilkusetletnią sztukę walki Kung-Fu, podążaj za moimi instrukcjami. W Kung-Fu najważniejsze są koncentracja i wytrwałość.]]></TEXT_INSTRUCTION>
+<TEXT_INSTRUCTION2><![CDATA[Wciśnij odpowiedni klawisz na swojej klawiaturze.]]></TEXT_INSTRUCTION2>
+<TEXT_LEVEL><![CDATA[POZIOM]]></TEXT_LEVEL>
+<TEXT_MASTERLOOK><![CDATA[Wciśnij na SPACJE i zapamiętaj dobrze ruchy, które zobaczyłeś.]]></TEXT_MASTERLOOK>
+<TEXT_MASTERWELCOME><![CDATA[Uczniu-Pando. Pokaże ci teraz układ "$$form$$". Patrz uważnie na moje ruchy i spróbuj je powtórzyć.]]></TEXT_MASTERWELCOME>
+<TEXT_NEXTPHASE><![CDATA[OK, przejdźmy do nowego układu.]]></TEXT_NEXTPHASE>
+<TEXT_STUDENTREADY><![CDATA[Wciśnij SPACJE i powtórz ruchy Mistrza.]]></TEXT_STUDENTREADY>
+<TEXT_STUDENTREPEAT><![CDATA[Powtórz]]></TEXT_STUDENTREPEAT>
+<TEXT_TOOFAST><![CDATA[Jest zbyt niecierpliwy, młodzieńcze! ]]></TEXT_TOOFAST>
+<TEXT_TOOSLOW><![CDATA[Jesteś zbyt wolny, młodzieńcze!]]></TEXT_TOOSLOW>
+<TEXT_WELCOME><![CDATA[Każda Panda może stać się mistrzem Kung-Fu. Idź na spotkanie z czcigodnym Mistrzem z Chin i poznaj tajemnice wschodnich sztuk walki.]]></TEXT_WELCOME>
+</snippets>

@@ -1,0 +1,26 @@
+<snippets date="05.05.2011 09:17:05">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INSTR><![CDATA[Instrukcje]]></BTN_INSTR>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Graj & Czatuj]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Graj teraz]]></BTN_START>
+<HELLO><![CDATA[Witaj, $$name$$!!!]]></HELLO>
+<TEXT_BONUS><![CDATA[BONUS]]></TEXT_BONUS>
+<TEXT_BONUSPOINTS><![CDATA[Punkty]]></TEXT_BONUSPOINTS>
+<TEXT_DEFEAT><![CDATA[KONIEC GRY]]></TEXT_DEFEAT>
+<TEXT_DOUBLE><![CDATA[Podwójne punkty za skoki]]></TEXT_DOUBLE>
+<TEXT_FAST><![CDATA[Szybsza Panda]]></TEXT_FAST>
+<TEXT_INSTRUCTION><![CDATA[Pomóż swojej Pandzie dotrzeć na drugą stronę rzeki, używając do tego trampoliny.<br><br> Aby poruszać trampoliną, użyj myszki.<br><br> Zbieraj dodatkowo bonusy, ale uważaj bo nie każdy daje punkty!]]></TEXT_INSTRUCTION>
+<TEXT_LIFE><![CDATA[Życia]]></TEXT_LIFE>
+<TEXT_LIVES><![CDATA[Życia:]]></TEXT_LIVES>
+<TEXT_LOSE><![CDATA[Niestety straciłeś wszystkie życia!]]></TEXT_LOSE>
+<TEXT_POINTS><![CDATA[Twoje punkty:]]></TEXT_POINTS>
+<TEXT_RANDOM><![CDATA[Losowy Bonus]]></TEXT_RANDOM>
+<TEXT_SHIELD><![CDATA[Most]]></TEXT_SHIELD>
+<TEXT_SHORT><![CDATA[Mała trampolina]]></TEXT_SHORT>
+<TEXT_SLOW><![CDATA[Wolniejsza Panda]]></TEXT_SLOW>
+<TEXT_TITLE><![CDATA[INSTRUKCJE]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[KONIEC GRY]]></TEXT_VICTORY>
+<TEXT_VICTORY1><![CDATA[Gratulacje! Wygrałeś!]]></TEXT_VICTORY1>
+<TEXT_WIDE><![CDATA[Duża trampolina]]></TEXT_WIDE>
+</snippets>

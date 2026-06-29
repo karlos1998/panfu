@@ -1,0 +1,35 @@
+<snippets date="05.05.2011 09:14:34">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Anleitung]]></BTN_INSTRUCTION>
+<BTN_MASTREPEAT><![CDATA[Trainiere mit dem Meister.]]></BTN_MASTREPEAT>
+<BTN_MENU><![CDATA[Hauptmenü]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Nächste Runde]]></BTN_NEXTROUND>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_SHOWAGAIN><![CDATA[Nochmal zeigen]]></BTN_SHOWAGAIN>
+<BTN_SHOWFORM><![CDATA[Schau Dir die Figur "$$name$$" an.]]></BTN_SHOWFORM>
+<BTN_START><![CDATA[Jetzt spielen]]></BTN_START>
+<FORM0><![CDATA[Weißer Lotus]]></FORM0>
+<FORM1><![CDATA[Schleichende Schlange]]></FORM1>
+<FORM2><![CDATA[Verborgener Tiger]]></FORM2>
+<FORM3><![CDATA[Feuriger Drache]]></FORM3>
+<FORM4><![CDATA[Gold Master]]></FORM4>
+<LOGO_URL><![CDATA[http://www.panfu.de]]></LOGO_URL>
+<TEXT_ENDGAME><![CDATA[Herzlichen Glückwunsch!
+Nun bist du ein PANDA-MEISTER.]]></TEXT_ENDGAME>
+<TEXT_ENDROUND><![CDATA[Herzlichen Glückwunsch! 
+Du hast die nächste Initiierungsstufe erreicht.]]></TEXT_ENDROUND>
+<TEXT_FAILED><![CDATA[Falsche Bewegung!
+Möchtest Du sie noch einmal sehen?]]></TEXT_FAILED>
+<TEXT_INITIATIONLEVEL><![CDATA[INITIIERUNGSSTUFE:]]></TEXT_INITIATIONLEVEL>
+<TEXT_INSTRUCTION><![CDATA[Willkommen. Ich bin ein chinesischer Kung Fu Meister. Wenn Du die Geheimnisse der jahrhundertealten Kung Fu Kunst erlernen möchtest, dann folge meinen Anweisungen. Kung Fu hat viel mit Konzentration und Ausdauer zu tun.]]></TEXT_INSTRUCTION>
+<TEXT_INSTRUCTION2><![CDATA[Drücke die richtige Taste auf Deiner Tastatur.]]></TEXT_INSTRUCTION2>
+<TEXT_LEVEL><![CDATA[LEVEL ]]></TEXT_LEVEL>
+<TEXT_MASTERLOOK><![CDATA[Drücke die LEERTASTE und merke Dir die Bewegungen, die Du gesehen hast.]]></TEXT_MASTERLOOK>
+<TEXT_MASTERWELCOME><![CDATA[Panda-Schüler. Ich zeige Dir die Figur "$$form$$". Achte genau auf meine Bewegungen und wiederhole sie.]]></TEXT_MASTERWELCOME>
+<TEXT_NEXTPHASE><![CDATA[OK, es ist Zeit für eine neue Figur.]]></TEXT_NEXTPHASE>
+<TEXT_STUDENTREADY><![CDATA[Drücke die LEERTASTE und wiederhole die Bewegungen des Meisters.]]></TEXT_STUDENTREADY>
+<TEXT_STUDENTREPEAT><![CDATA[Wiederholen]]></TEXT_STUDENTREPEAT>
+<TEXT_TOOFAST><![CDATA[Du bist zu ungeduldig, junger Panda!]]></TEXT_TOOFAST>
+<TEXT_TOOSLOW><![CDATA[Du bist zu langsam, junger Panda!]]></TEXT_TOOSLOW>
+<TEXT_WELCOME><![CDATA[Jeder Panda kann ein Kung Fu Meister werden. Triff den ehrwürdigen chinesischen Meister und erlerne das Geheimnis der Kampfkunst.]]></TEXT_WELCOME>
+</snippets>

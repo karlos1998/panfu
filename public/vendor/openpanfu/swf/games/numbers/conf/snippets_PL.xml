@@ -1,0 +1,21 @@
+<snippets date="05.05.2011 09:13:16">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Graj teraz]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Graj i czatuj]]></BTN_PLAY_CHAT>
+<END_TEXT><![CDATA[Złowione ryby]]></END_TEXT>
+<GAME_FINISHED><![CDATA[Koniec gry]]></GAME_FINISHED>
+<GAME_OVER><![CDATA[Game Over!]]></GAME_OVER>
+<INSTRUCTION_TEXT><![CDATA[Celem gry jest usunięcie wszystkich liczb z tabeli. Aby je usunąć musisz klikać na odpowiednie kostki z liczbami, tak aby ich suma zgadzała się z liczbą, która się pojawia po prawej stronie na górze tabeli. Uważaj aby kostki z liczbami nie ułożyły się zbyt wysoko w tabeli bo wówczas stracisz jedno życie! Gdy klikniesz na "Usuń liczby", wtedy wszystkie kostki z tą samą liczbą zostaną usunięte z tabeli.]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instrukcje]]></INSTRUCTION_TITLE>
+<LEVEL><![CDATA[Poziom]]></LEVEL>
+<LEVEL_COMPLETE><![CDATA[Przechodzisz do następnego poziomu]]></LEVEL_COMPLETE>
+<LIVES><![CDATA[Życia]]></LIVES>
+<LOADING_TILES><![CDATA[Ładowanie liczb]]></LOADING_TILES>
+<LOST_LIFE><![CDATA[Straciłeś jedno życie]]></LOST_LIFE>
+<QUIT><![CDATA[Zakończ]]></QUIT>
+<SCORE><![CDATA[Punkty]]></SCORE>
+<TILE_ZAPPER><![CDATA[Usuń liczby]]></TILE_ZAPPER>
+<TIME_OVER><![CDATA[Koniec czasu]]></TIME_OVER>
+<YOUR_SCORE_IS><![CDATA[Twoje punkty:]]></YOUR_SCORE_IS>
+</snippets>

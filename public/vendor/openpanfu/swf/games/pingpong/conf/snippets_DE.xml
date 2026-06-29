@@ -1,0 +1,31 @@
+﻿<snippets date="05.05.2011 09:17:20">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Anleitung]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Hauptmenü]]></BTN_MENU>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen und Chatten]]></BTN_PLAY_CHAT>
+<ENEMY_POINT_TEXT><![CDATA[Punkte Gegner]]></ENEMY_POINT_TEXT>
+<ENEMY_SETS_TEXT><![CDATA[Gegner]]></ENEMY_SETS_TEXT>
+<ENEMY_SET_TEXT><![CDATA[Gegner Satz]]></ENEMY_SET_TEXT>
+<ENEMY_WIN_TEXT><![CDATA[Dein Gegner hat gewonnen!]]></ENEMY_WIN_TEXT>
+<INSTRUCTION2_TEXT><![CDATA[Tischtennis-Regeln
+Du musst den Ball auf die Seite Deines Gegners schlagen. Achte darauf, dass er in der Mitte des Tisches aufkommt, sonst verlierst Du Punkte! 
+Aufgeschlagen wird immer abwechselnd nach zwei Punkten und nach einem Punkt, wenn es 10:10 steht. Jeder Satz besteht aus 11 Punkten. Man muss 3 Sätze gewinnen, um das Spiel zu gewinnen.
+Viel Vergnügen!]]></INSTRUCTION2_TEXT>
+<INSTRUCTION_HEAD><![CDATA[Anleitung]]></INSTRUCTION_HEAD>
+<INSTRUCTION_TEXT><![CDATA[Die Regeln sind dieselben wie bei einem normalen Tischtennis-Spiel. Um aufzuschlagen, musst Du auf den Ball klicken. Dann Spiele weiter, ohne zu klicken. Um das Spiel zu gewinnen, musst Du 3 Sätze zu je 11 Punkten gewinnen. Deine Punkte für das Spiel:]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Anleitung]]></INSTRUCTION_TITLE>
+<LOGO_URL><![CDATA[http://www.panfu.de]]></LOGO_URL>
+<LOSE_TEXT><![CDATA[Du hast das Spiel verloren!]]></LOSE_TEXT>
+<PLAYER_SETS_TEXT><![CDATA[Du]]></PLAYER_SETS_TEXT>
+<POINTS_TEXT><![CDATA[Points]]></POINTS_TEXT>
+<PREPARE_TEXT><![CDATA[Fertig!]]></PREPARE_TEXT>
+<ROUND_TEXT><![CDATA[Satz]]></ROUND_TEXT>
+<SCORE_END_TEXT><![CDATA[Bonus für Differenz der Punkte]]></SCORE_END_TEXT>
+<TEST><![CDATA[(NEW TEXT)]]></TEST>
+<WIN_TEXT><![CDATA[Du hast das Spiel gewonnen!]]></WIN_TEXT>
+<YOUR_POINT_TEXT><![CDATA[Dein Punkt!]]></YOUR_POINT_TEXT>
+<YOUR_SET_TEXT><![CDATA[Dein Satz!]]></YOUR_SET_TEXT>
+<YOU_WIN_TEXT><![CDATA[Du hast das Spiel gewonnen!]]></YOU_WIN_TEXT>
+</snippets>

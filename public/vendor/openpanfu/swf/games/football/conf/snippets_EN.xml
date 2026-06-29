@@ -1,0 +1,25 @@
+<snippets date="05.05.2011 09:13:33">
+<BTN_AGAIN><![CDATA[Again]]></BTN_AGAIN>
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instructions]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Main Menu]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Next round]]></BTN_NEXTROUND>
+<BTN_PLAY><![CDATA[Play now]]></BTN_PLAY>
+<BTN_PLAY_CHAT><![CDATA[Play & Chat!]]></BTN_PLAY_CHAT>
+<BTN_PRACTICE><![CDATA[Practice]]></BTN_PRACTICE>
+<BTN_SCORE><![CDATA[High Scores]]></BTN_SCORE>
+<DEFENDING_TEXT><![CDATA[Defend]]></DEFENDING_TEXT>
+<FAILED_TEXT><![CDATA[Defended]]></FAILED_TEXT>
+<GOAL_TEXT><![CDATA[Goal]]></GOAL_TEXT>
+<INSTRUCTION_TEXT><![CDATA[You are alternatively in the attacker position and the defense position. Click on "Play Now" and choose first the easy mode with Mini Panda. Once you will finish the game with Mini Panda, you will have to play with Midi and Max who are more difficult opponents. Each one of them will be waiting for your kick. \"Long left mouse-click\" = very long kick / short left mouse-click = short kick. It will be your opponent's turn when you click the "left mouse\" Go get him! For a goal and a defense, you can win 1 point. You will win 10 more points when you will achieve one round. If you play the match without any mistake, you can win even 50 points! Have fun!]]></INSTRUCTION_TEXT>
+<LOSEMATCH_TEXT><![CDATA[Sorry, you have lost the match.]]></LOSEMATCH_TEXT>
+<OVERTIME_TEXT><![CDATA[Play-off]]></OVERTIME_TEXT>
+<POINTS_BONUS><![CDATA[Bonus / Super Bonus]]></POINTS_BONUS>
+<POINTS_PREV_TOTAL><![CDATA[Previous rounds]]></POINTS_PREV_TOTAL>
+<POINTS_ROUND><![CDATA[Successful and defended goals]]></POINTS_ROUND>
+<POINTS_ROUND_TOTAL><![CDATA[Round points]]></POINTS_ROUND_TOTAL>
+<POINTS_TOTAL><![CDATA[Total]]></POINTS_TOTAL>
+<SHOOTING_TEXT><![CDATA[Shoot]]></SHOOTING_TEXT>
+<WINMATCH_TEXT><![CDATA[You have won the match!]]></WINMATCH_TEXT>
+<WINROUND_TEXT><![CDATA[Congratulations! You have won this round!]]></WINROUND_TEXT>
+</snippets>

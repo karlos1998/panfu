@@ -1,0 +1,38 @@
+<snippets date="05.05.2011 09:16:08">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Anleitung]]></BTN_INSTRUCTION>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt Spielen]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Jetzt spielen]]></BTN_START>
+<HELLO><![CDATA[Hallo, $$name$$!!!]]></HELLO>
+<INSTRUCTION_TITLE><![CDATA[Anleitung]]></INSTRUCTION_TITLE>
+<TEXT_DEFEAT><![CDATA[Spiel vorbei!]]></TEXT_DEFEAT>
+<TEXT_DEFEAT1><![CDATA[Leider hast Du das Spiel nicht gewonnen!]]></TEXT_DEFEAT1>
+<TEXT_EVOLUTION1><![CDATA[Punkte]]></TEXT_EVOLUTION1>
+<TEXT_EVOLUTION2><![CDATA[Punkte]]></TEXT_EVOLUTION2>
+<TEXT_EVOLUTION3><![CDATA[Punkte]]></TEXT_EVOLUTION3>
+<TEXT_EVOLUTION4><![CDATA[Punkte]]></TEXT_EVOLUTION4>
+<TEXT_EVOLUTION5><![CDATA[Punkte]]></TEXT_EVOLUTION5>
+<TEXT_EVOLUTION6><![CDATA[Punkte]]></TEXT_EVOLUTION6>
+<TEXT_EVOLUTION7><![CDATA[Punkte]]></TEXT_EVOLUTION7>
+<TEXT_EVOLUTION8><![CDATA[Punkte]]></TEXT_EVOLUTION8>
+<TEXT_FALL><![CDATA[Leider bist Du hingefallen!]]></TEXT_FALL>
+<TEXT_INSTRUCTION1><![CDATA[Wenn der Panda die Halfpipe hinunterfährt, halte die Leertaste gedrückt. Lass die Leertaste wieder los, wenn er in den gelben Bereich kommt. Dann springst Du hoch genug, um Kunststücke machen zu können.]]></TEXT_INSTRUCTION1>
+<TEXT_INSTRUCTION2><![CDATA[Wenn der Panda in der Luft ist, kannst Du Kunststücke auf dem Skateboard machen, die von der Jury bewertet werden.]]></TEXT_INSTRUCTION2>
+<TEXT_INSTRUCTION3><![CDATA[Um ein Kunststück zu machen, klicke einfach auf eine Pfeiltaste auf der Tastatur. Solange Du die Taste gedrückt hältst, macht der Panda ein Kunststück. Jede Pfeiltaste steht für ein anderes Kunststück.]]></TEXT_INSTRUCTION3>
+<TEXT_INSTRUCTION4><![CDATA[Um richtige schwere akrobatische Kunststücke zu machen (für die es mehr Punkte gibt), klicke auf die Pfeiltasten und gleichzeitig auf folgende Tastenkombinationen:]]></TEXT_INSTRUCTION4>
+<TEXT_INSTRUCTION_SUBTITLE1><![CDATA[Der Panda in der Halfpipe]]></TEXT_INSTRUCTION_SUBTITLE1>
+<TEXT_INSTRUCTION_SUBTITLE2><![CDATA[Kunststücke in der Luft]]></TEXT_INSTRUCTION_SUBTITLE2>
+<TEXT_INSTRUCTION_TITLE><![CDATA[Anleitung]]></TEXT_INSTRUCTION_TITLE>
+<TEXT_LEVEL><![CDATA[Runde:]]></TEXT_LEVEL>
+<TEXT_LEVEL_END><![CDATA[Level geschafft!]]></TEXT_LEVEL_END>
+<TEXT_POINTS><![CDATA[Punkte:]]></TEXT_POINTS>
+<TEXT_PREPARE><![CDATA[Los geht's!]]></TEXT_PREPARE>
+<TEXT_SCORE><![CDATA[Deine Punkte:]]></TEXT_SCORE>
+<TEXT_TITLE><![CDATA[Zeige Deine besten akrobatischen Tricks auf dem Skateboard!]]></TEXT_TITLE>
+<TEXT_TOO_FAST><![CDATA[Du bist zu schnell gewesen!]]></TEXT_TOO_FAST>
+<TEXT_TOO_SLOW><![CDATA[Du bist zu spät gesprungen!]]></TEXT_TOO_SLOW>
+<TEXT_VICTORY><![CDATA[Spiel vorbei!]]></TEXT_VICTORY>
+<TEXT_VICTORY1><![CDATA[Spiel gewonnen!]]></TEXT_VICTORY1>
+</snippets>

@@ -1,0 +1,49 @@
+<snippets date="16.09.2013 11:19:26">
+<BUTTON_UPGRADE_BOLLY><![CDATA[Upgrade - erweitert Herz-Radius und Herzwurf-Rate]]></BUTTON_UPGRADE_BOLLY>
+<PD_BOLLY_TOOLTIP_ABIL><![CDATA[trifft einzelne Monster]]></PD_BOLLY_TOOLTIP_ABIL>
+<PD_BUTTON_BOLLY_TOOLTIP><![CDATA[Bolly - trifft einzelne Monster - Preis: 10 Münzen]]></PD_BUTTON_BOLLY_TOOLTIP>
+<PD_BUTTON_BROWSE_BACKWARD><![CDATA[Zurück]]></PD_BUTTON_BROWSE_BACKWARD>
+<PD_BUTTON_CONTINUE><![CDATA[Weiter]]></PD_BUTTON_CONTINUE>
+<PD_BUTTON_END><![CDATA[Beenden]]></PD_BUTTON_END>
+<PD_BUTTON_POKOPET_TOOLTIP><![CDATA[Pokopet - verlangsamt Monsterbewegungen - Preis: 15 Münzen]]></PD_BUTTON_POKOPET_TOOLTIP>
+<PD_BUTTON_RESTART><![CDATA[Neustart]]></PD_BUTTON_RESTART>
+<PD_BUTTON_WOOBY_TOOLTIP><![CDATA[Wooby - trifft mehrere Monster gleichzeitig - Preis: 20 Münzen
+]]></PD_BUTTON_WOOBY_TOOLTIP>
+<PD_HINT_01><![CDATA[Manchmal ist es sinnvoller die Fähigkeiten deiner Türme zu erhöhen, statt neue zu kaufen]]></PD_HINT_01>
+<PD_HINT_02><![CDATA[Versuche innerhalb eines Levels sowenig Münzen wie möglich auszugeben. Du kannst sie in den neuen Levels gut gebrauchen.]]></PD_HINT_02>
+<PD_HINT_03><![CDATA[Platziere deine Türme strategisch klug, um eine möglichst große Reichweite abzudecken]]></PD_HINT_03>
+<PD_HINT_04><![CDATA[Versuche stets deine Türme miteinander zu kombinieren, um ihre Effektivität zu steigern]]></PD_HINT_04>
+<PD_HINT_HEADER><![CDATA[Hinweis]]></PD_HINT_HEADER>
+<PD_ICON_COINS_TOOLTIP><![CDATA[Münzen]]></PD_ICON_COINS_TOOLTIP>
+<PD_ICON_HEARTS_TOOLTIP><![CDATA[verbleibende Herz-Energie]]></PD_ICON_HEARTS_TOOLTIP>
+<PD_LOST_RESTART><![CDATA[Möchtest du das Level neu starten oder das Spiel beenden?]]></PD_LOST_RESTART>
+<PD_POKOPET_TOOLTIP_ABIL><![CDATA[verlangsamt Monsterbewegungen]]></PD_POKOPET_TOOLTIP_ABIL>
+<PD_POPUP_LOST><![CDATA[Leider hast du keine Herz-Energie mehr.]]></PD_POPUP_LOST>
+<PD_POPUP_LOST_HEADER><![CDATA[Du hast verloren!]]></PD_POPUP_LOST_HEADER>
+<PD_POPUP_NEXT_LEVEL><![CDATA[Du hast das nächste Level erreicht]]></PD_POPUP_NEXT_LEVEL>
+<PD_POPUP_NEXT_LEVEL_HEADER><![CDATA[Level geschafft!]]></PD_POPUP_NEXT_LEVEL_HEADER>
+<PD_SCREEN_HELP_HEADER><![CDATA[Anleitung]]></PD_SCREEN_HELP_HEADER>
+<PD_SCREEN_HELP_TEXT_01><![CDATA[Es gibt drei unterschiedliche Verteidigungs-Türme: Bolly, Wooby und Pokopet. Drücke den jeweiligen Button, um einen von ihnen zu kaufen.]]></PD_SCREEN_HELP_TEXT_01>
+<PD_SCREEN_HELP_TEXT_02><![CDATA[Setze deinen Turm mit Hilfe des Cursors auf eine freie Fläche innerhalb des Spielfeldes]]></PD_SCREEN_HELP_TEXT_02>
+<PD_SCREEN_HELP_TEXT_03><![CDATA[Evrons böse Kreaturen aus Bitterland erscheinen durch das rote Portal und versuchen Panfu zu erreichen]]></PD_SCREEN_HELP_TEXT_03>
+<PD_SCREEN_HELP_TEXT_04><![CDATA[Plaziere deine Tower in Wurfreichweite der Kreaturen, um sie mit magischen Herzen abzuwehren. Du erhältst für jedes Wesen eine Münze, das von einem Herzen getroffen und aufgelöst wird]]></PD_SCREEN_HELP_TEXT_04>
+<PD_SCREEN_HELP_TEXT_05><![CDATA[Drücke den Upgrade-Button unterhalb eines Turms, um seine Fähigkeiten zu erhöhen. Der Preis steigt mit jedem neuen Upgrade.]]></PD_SCREEN_HELP_TEXT_05>
+<PD_SCREEN_HELP_TEXT_06><![CDATA[Achtung: für jede Kreatur, die das grüne Portal erreicht, sinkt deine Herz-Energie. Sollte deine Energie auf Null gehen, hast du das Spiel verloren. ]]></PD_SCREEN_HELP_TEXT_06>
+<PD_SCREEN_PLAYTHROUGH><![CDATA[Du hast es geschafft, alle bösen Kreaturen wurden abgewehrt. Panfu ist gerettet!!!]]></PD_SCREEN_PLAYTHROUGH>
+<PD_SCREEN_PLAYTHROUGH_HEADER><![CDATA[Du hast gewonnen!]]></PD_SCREEN_PLAYTHROUGH_HEADER>
+<PD_SCREEN_START><![CDATA[(NEW TEXT)]]></PD_SCREEN_START>
+<PD_SCREEN_START_BUTTON_HELP><![CDATA[Anleitung]]></PD_SCREEN_START_BUTTON_HELP>
+<PD_SCREEN_START_BUTTON_START><![CDATA[Spiel starten]]></PD_SCREEN_START_BUTTON_START>
+<PD_SCREEN_START_HEADER><![CDATA[PANFU DEFENCE]]></PD_SCREEN_START_HEADER>
+<PD_TOWER_NAME_BOLLY><![CDATA[Bolly]]></PD_TOWER_NAME_BOLLY>
+<PD_TOWER_NAME_POKOPET><![CDATA[Pokopet]]></PD_TOWER_NAME_POKOPET>
+<PD_TOWER_NAME_WOOBY><![CDATA[Wooby]]></PD_TOWER_NAME_WOOBY>
+<PD_TOWER_TOOLTIP_DAMAGE><![CDATA[Schaden:]]></PD_TOWER_TOOLTIP_DAMAGE>
+<PD_TOWER_TOOLTIP_HI><![CDATA[hoch]]></PD_TOWER_TOOLTIP_HI>
+<PD_TOWER_TOOLTIP_LOW><![CDATA[niedrig]]></PD_TOWER_TOOLTIP_LOW>
+<PD_TOWER_TOOLTIP_MID><![CDATA[mittel]]></PD_TOWER_TOOLTIP_MID>
+<PD_TOWER_TOOLTIP_PRICE><![CDATA[Preis:]]></PD_TOWER_TOOLTIP_PRICE>
+<PD_TOWER_TOOLTIP_RANGE><![CDATA[Reichweite:]]></PD_TOWER_TOOLTIP_RANGE>
+<PD_TOWER_TOOLTIP_RATE><![CDATA[Herzwurf-Frequenz:]]></PD_TOWER_TOOLTIP_RATE>
+<PD_WOOBY_TOOLTIP_ABIL><![CDATA[trifft mehrere Monster gleichzeitig]]></PD_WOOBY_TOOLTIP_ABIL>
+</snippets>

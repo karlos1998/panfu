@@ -1,0 +1,35 @@
+<snippets date="05.05.2011 09:14:34">
+<BTN_FINISH><![CDATA[End]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instructions]]></BTN_INSTRUCTION>
+<BTN_MASTREPEAT><![CDATA[Train with the master.]]></BTN_MASTREPEAT>
+<BTN_MENU><![CDATA[Main menu]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Next round]]></BTN_NEXTROUND>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_SHOWAGAIN><![CDATA[Show again]]></BTN_SHOWAGAIN>
+<BTN_SHOWFORM><![CDATA[Observe the "$$name$$" form.]]></BTN_SHOWFORM>
+<BTN_START><![CDATA[Play now]]></BTN_START>
+<FORM0><![CDATA[White lotus]]></FORM0>
+<FORM1><![CDATA[Sinuous snake]]></FORM1>
+<FORM2><![CDATA[Concealed tiger]]></FORM2>
+<FORM3><![CDATA[Fiery dragon]]></FORM3>
+<FORM4><![CDATA[Gold master]]></FORM4>
+<LOGO_URL><![CDATA[http://www.panfu.com]]></LOGO_URL>
+<TEXT_ENDGAME><![CDATA[Congratulations!
+Now you are a PANDA MASTER!]]></TEXT_ENDGAME>
+<TEXT_ENDROUND><![CDATA[Congratulations!
+You have reached the next initiation level.]]></TEXT_ENDROUND>
+<TEXT_FAILED><![CDATA[False move!
+Do you want to see it again?]]></TEXT_FAILED>
+<TEXT_INITIATIONLEVEL><![CDATA[INITIATION LEVEL:]]></TEXT_INITIATIONLEVEL>
+<TEXT_INSTRUCTION><![CDATA[Welcome. I'm a Chinese Kung Fu master. If you want to learn the age-old secrets of the art of Kung Fu, follow my instructions. Kung Fu is all about concentration and endurance.]]></TEXT_INSTRUCTION>
+<TEXT_INSTRUCTION2><![CDATA[Press the correct key on your keyboard.]]></TEXT_INSTRUCTION2>
+<TEXT_LEVEL><![CDATA[LEVEL]]></TEXT_LEVEL>
+<TEXT_MASTERLOOK><![CDATA[Press the SPACE bar and remember the movements that you have seen.]]></TEXT_MASTERLOOK>
+<TEXT_MASTERWELCOME><![CDATA[Panda-pupil. I'll show you the "$$form$$" form. Observe my movements closely and repeat them.]]></TEXT_MASTERWELCOME>
+<TEXT_NEXTPHASE><![CDATA[OK, it's time for a new form.]]></TEXT_NEXTPHASE>
+<TEXT_STUDENTREADY><![CDATA[Press on the SPACE bar and repeat the movements of the master.]]></TEXT_STUDENTREADY>
+<TEXT_STUDENTREPEAT><![CDATA[Repeat]]></TEXT_STUDENTREPEAT>
+<TEXT_TOOFAST><![CDATA[You are too impatient, young panda!]]></TEXT_TOOFAST>
+<TEXT_TOOSLOW><![CDATA[You are too slow, young panda!]]></TEXT_TOOSLOW>
+<TEXT_WELCOME><![CDATA[Every panda can become a Kung Fu master. Meet the venerable Chinese master and learn the secrets of this martial art.]]></TEXT_WELCOME>
+</snippets>

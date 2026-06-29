@@ -1,0 +1,26 @@
+<snippets date="05.05.2011 09:12:07">
+<BACK><![CDATA[Wróć]]></BACK>
+<COMPLETE><![CDATA[Poziom<br>ukończony]]></COMPLETE>
+<END_TEXT><![CDATA[Ukończyłeś wszystkie poziomy.]]></END_TEXT>
+<GAMEOVER><![CDATA[Game<br>Over]]></GAMEOVER>
+<GAME_NAME><![CDATA[Pop It]]></GAME_NAME>
+<HELP><![CDATA[Instrukcje]]></HELP>
+<HELP_TEXT><![CDATA[Postaraj się przekłuć balony za pomocą rzutek: im dłużej przyciśniesz lewy przycisk myszki, tym twój strzał będzie mocniejszy. Możesz także kontrolować kierunek swojego strzału używając do tego swojej myszki. Ale uważaj! Jeżeli dotkniesz zamrożonego balona, wszystkie inne balony znajdujące się w pobliżu także się zamrożą i nie będą mogły pęknąć.]]></HELP_TEXT>
+<INTRO><![CDATA[Kliknij na "Graj teraz" aby wybrać poziom. Przeczytaj instrukcje aby poznać zasady gry.]]></INTRO>
+<LEVEL_COUNT><![CDATA[Poziom:]]></LEVEL_COUNT>
+<MAIN_MENU><![CDATA[Menu główne]]></MAIN_MENU>
+<NEW_LEVEL><![CDATA[Nowy poziom]]></NEW_LEVEL>
+<NEXTLEVEL><![CDATA[Następny poziom]]></NEXTLEVEL>
+<PLAY><![CDATA[Graj teraz]]></PLAY>
+<POINTS_TEXT><![CDATA[Punkty]]></POINTS_TEXT>
+<POPP_COUNT><![CDATA[Pęknięte:]]></POPP_COUNT>
+<POPP_TEXT><![CDATA[Pęknięte balony]]></POPP_TEXT>
+<QUIT><![CDATA[Zakończ]]></QUIT>
+<RESET><![CDATA[Jeszcze raz]]></RESET>
+<ROCK_COUNT><![CDATA[Rzutki:]]></ROCK_COUNT>
+<SELECT_LEVEL><![CDATA[Wybierz poziom]]></SELECT_LEVEL>
+<SOUND_OFF><![CDATA[Wyłącz dźwięk]]></SOUND_OFF>
+<SOUND_ON><![CDATA[Włącz dźwięk]]></SOUND_ON>
+<STANDALONE_END><![CDATA[Czatuj i graj]]></STANDALONE_END>
+<TARGET_COUNT><![CDATA[Cel:]]></TARGET_COUNT>
+</snippets>

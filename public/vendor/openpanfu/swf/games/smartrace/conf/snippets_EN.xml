@@ -1,0 +1,22 @@
+<snippets date="05.05.2011 09:16:13">
+<ANSWER_1><![CDATA[Correct!]]></ANSWER_1>
+<ANSWER_2><![CDATA[Fantastic!]]></ANSWER_2>
+<ANSWER_3><![CDATA[Good!]]></ANSWER_3>
+<ANSWER_TIMEOUT><![CDATA[Too late!]]></ANSWER_TIMEOUT>
+<ANSWER_WRONG><![CDATA[Wrong answer!]]></ANSWER_WRONG>
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BUTTON_EXIT><![CDATA[Finish]]></BUTTON_EXIT>
+<BUTTON_INSTRUCTIONS><![CDATA[Instructions]]></BUTTON_INSTRUCTIONS>
+<BUTTON_PLAY><![CDATA[Play now]]></BUTTON_PLAY>
+<BUTTON_REPLAY><![CDATA[Play again]]></BUTTON_REPLAY>
+<GAME_INSTRUCTIONS><![CDATA[Welcome to Smart Race! This game is easy: Solve the tasks correctly. The faster you are, the better! The faster you respond, the more points you get. When you reach the goal of the first round, you come to the next round.]]></GAME_INSTRUCTIONS>
+<GAME_OVER><![CDATA[The game is over!
+Sorry, you lost! Level $$level$$ with $$points$$ points.]]></GAME_OVER>
+<GAME_WON><![CDATA[Congratulations!
+You have won! Level $$level$$ with $$points$$ points.]]></GAME_WON>
+<HELLO><![CDATA[Hello $$name$$!!!]]></HELLO>
+<PLAY_CHAT><![CDATA[Play & Chat]]></PLAY_CHAT>
+<WOW_GAME_OVER><![CDATA[Lost!]]></WOW_GAME_OVER>
+<WOW_GAME_WON><![CDATA[Won!]]></WOW_GAME_WON>
+<WOW_LEVEL_NUMBER><![CDATA[Round $$level$$!]]></WOW_LEVEL_NUMBER>
+</snippets>

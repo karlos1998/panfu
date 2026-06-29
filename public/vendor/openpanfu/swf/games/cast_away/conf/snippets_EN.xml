@@ -1,0 +1,12 @@
+<snippets date="05.05.2011 09:13:01">
+<BTN_FINISH><![CDATA[End]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instructions]]></BTN_INTRODUCTION>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<GOT_POINTS><![CDATA[Congratulations!
+You have won $$score$$ points!]]></GOT_POINTS>
+<PLAY_CHAT><![CDATA[Play & Chat]]></PLAY_CHAT>
+<TEXT_CRASHED><![CDATA[Game over]]></TEXT_CRASHED>
+<TEXT_FINISH_SUCCESS><![CDATA[Congratulations! Success!]]></TEXT_FINISH_SUCCESS>
+<TEXT_WELCOME><![CDATA[A terrible storm has hit Panfu! Try to gather every paper airplane and each message in a bottle, without colliding with the wreckage or the pelicans. To jump you must click on the screen. The more you click, the higher your panda will jump! Good luck and have fun!]]></TEXT_WELCOME>
+</snippets>

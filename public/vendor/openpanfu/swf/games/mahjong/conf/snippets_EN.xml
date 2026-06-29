@@ -1,0 +1,34 @@
+<snippets date="05.05.2011 09:14:42">
+<BTN_ABORT_LEVEL><![CDATA[Close]]></BTN_ABORT_LEVEL>
+<BTN_ACCEPT><![CDATA[Yes]]></BTN_ACCEPT>
+<BTN_CANCEL><![CDATA[No]]></BTN_CANCEL>
+<BTN_CHOOSE_LEVEL><![CDATA[Choose level]]></BTN_CHOOSE_LEVEL>
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_HIT><![CDATA[Help]]></BTN_HIT>
+<BTN_INTRODUCTION><![CDATA[Instructions]]></BTN_INTRODUCTION>
+<BTN_NEXT><![CDATA[Next]]></BTN_NEXT>
+<BTN_NEXTLEVEL><![CDATA[Next level]]></BTN_NEXTLEVEL>
+<BTN_PAUSE><![CDATA[Pause]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Play & Chat]]></BTN_PLAY_CHAT>
+<BTN_PREV><![CDATA[Back]]></BTN_PREV>
+<BTN_RESET><![CDATA[Reset]]></BTN_RESET>
+<BTN_RESUME><![CDATA[Start]]></BTN_RESUME>
+<BTN_SHUFFLE><![CDATA[Shuffle]]></BTN_SHUFFLE>
+<TEXT_BONUS><![CDATA[Bonus]]></TEXT_BONUS>
+<TEXT_CRASHED><![CDATA[GAME OVER]]></TEXT_CRASHED>
+<TEXT_DIALOG><![CDATA[Do you really want to finish the game?
+You will loose all your points!]]></TEXT_DIALOG>
+<TEXT_FINISH_FAILURE><![CDATA[TIME OUT!]]></TEXT_FINISH_FAILURE>
+<TEXT_FINISH_GAME><![CDATA[Congratulations! You have finished all levels!]]></TEXT_FINISH_GAME>
+<TEXT_FINISH_LEVEL><![CDATA[Congratulations! Level completed!]]></TEXT_FINISH_LEVEL>
+<TEXT_TOTAL_SCORE><![CDATA[Your Points: ]]></TEXT_TOTAL_SCORE>
+<TEXT_WELCOME><![CDATA[Find pairs of the same pattern! You have to find all the pairs before the time is over. Click the pieces so they disappear.
+Remember that you can only click the pieces that aren't surrounded by other pieces. On the right side there is a "Help"-button, click on it to see a pair you can remove. You can click on the "Help"-button up to 3 times, but every time it is used five seconds is removed from your time.]]></TEXT_WELCOME>
+<TITLE_DIALOG><![CDATA[WARNING!]]></TITLE_DIALOG>
+<TITLE_FINISH_GAME><![CDATA[GAME OVER!]]></TITLE_FINISH_GAME>
+<TITLE_FINISH_LEVEL><![CDATA[LEVEL COMPLETED!]]></TITLE_FINISH_LEVEL>
+<TITLE_PAUSE><![CDATA[PAUSE]]></TITLE_PAUSE>
+<TITLE_WELCOME><![CDATA[Instructions]]></TITLE_WELCOME>
+</snippets>

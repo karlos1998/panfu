@@ -1,0 +1,22 @@
+<snippets date="05.05.2011 09:14:44">
+<AFRICA><![CDATA[Algeria,Angola,Benin,Botsuana,Burkina Faso,Burundi,Cameroon,Central African Republic,Chad,Congo,The Democratic Republic of Congo,Djibouti,Egypt,Equatorial Guinea,Eritrea,Ethiopia,Gabon,Gambia,Ghana,Guinea,Guinea Bissau,Ivory Coast,Kenya,Lesotho,Liberia,Libya,Madagascar,Malawi,Mali,Mauritania,Morocco,Mozambique,Namibia,Niger,Nigeria,Rwanda,Senegal,Sierra Leone,Somalia,South Africa,Sudan,Swaziland,Tanzania,Togo,Tunisia,Uganda,Western Sahara,Zambia,Zimbabwe]]></AFRICA>
+<ASIA><![CDATA[Afghanistan,Armenia,Azerbaijan,Bangladesh,Bhutan,China,Cambodia,EastTimor,Georgia,India,Indonesia,Iran,Iraq,Israel,Japan,Jordan,Kazakhstan,Kuwait,Kyrgyzstan,Laos,Lebanon,Malaysia,Mongolia,Burma,Nepal,North Korea,Oman,Pakistan,The Philippines,Russia,Saudi Arabia,South Korea,Syria,Taiwan,Tajikistan,Thailand,Turkey,Turkmenistan,United Arab Emirates,Uzbekistan,Vietnam,Yemen,Sri Lanka]]></ASIA>
+<AUSTRALIA><![CDATA[East Timor,New Caledonia,New South Wales,New Zealand,Northern Territory,Papua New Guinea,Queensland,Solomon Isles,South Australia,Tasmania,Vanuatu,Victoria,Western Australia]]></AUSTRALIA>
+<BTN_FINISH><![CDATA[Close]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Play and chat]]></BTN_PLAY_CHAT>
+<CONTINETS><![CDATA[North America,South America,Europe,Asia,Africa,Australia]]></CONTINETS>
+<CORRECT><![CDATA[Correct]]></CORRECT>
+<END_TEXT><![CDATA[(NEW TEXT)]]></END_TEXT>
+<EUROPE><![CDATA[Albania,Austria,Belarus,Belgium,Bosnia and Herzegovina,Bulgaria,Croatia,Cyprus,Czech Republic,Denmark,Estonia,Finland,France,Germany,Greece,Hungary,Iceland,Ireland,Italy,Latvia,Lithuania,Macedonia,Malta,Moldavia,Netherlands,Norway,Poland,Portugal,Romania,Slovakia,Slovenia,Spain,Sweden,Switzerland,Ukraine,Great Britian,Serbia,Montenegro]]></EUROPE>
+<INSTRUCTION_TEXT><![CDATA[When you've chosen a continent, the countries on it will be shown one after the other. Click as quickly as possible with your mouse on the correct country. If you get it on the first attempt, you'll win 10 points and if you get it on the second or later attempts, you'll win 2.]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instructions]]></INSTRUCTION_TITLE>
+<MAINMENU_HEADER><![CDATA[Choose a continent:]]></MAINMENU_HEADER>
+<MAINMENU_TITLE><![CDATA[Continent]]></MAINMENU_TITLE>
+<NORTHAMERICA><![CDATA[Alaska,Bahamas,Canada,Greenland,Mexico,United States,Guatemala,Belize,Honduras,El Salvador,Nicaragua,Costa Rica,Panama,Cuba,Haiti,Dominican Republic,Jamaica]]></NORTHAMERICA>
+<POINTS_CAPTION><![CDATA[Points:]]></POINTS_CAPTION>
+<SOUTHAMERICA><![CDATA[Argentina,Bolivia,Brazil,Chile,Colombia,Ecuador,Falkland Islands,French Guyana,Galapagos Islands,Guyana,Paraguay,Peru,South Georgia Island,Suriname,Uruguay,Venezuela]]></SOUTHAMERICA>
+<TIMER_CAPTION><![CDATA[Time:]]></TIMER_CAPTION>
+<WRONG><![CDATA[False]]></WRONG>
+</snippets>

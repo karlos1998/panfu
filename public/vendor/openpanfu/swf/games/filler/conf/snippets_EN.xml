@@ -1,0 +1,22 @@
+<snippets date="05.05.2011 09:13:27">
+<BTN_PLAYAGAIN><![CDATA[Again]]></BTN_PLAYAGAIN>
+<END><![CDATA[Try Again!]]></END>
+<END_BTN><![CDATA[Finish]]></END_BTN>
+<END_HEADLINE><![CDATA[Game over]]></END_HEADLINE>
+<END_TIMESUP><![CDATA[Time's up!]]></END_TIMESUP>
+<GAME_BALLS><![CDATA[Balls:]]></GAME_BALLS>
+<GAME_BREAK><![CDATA[Pause]]></GAME_BREAK>
+<GAME_FILLED><![CDATA[filled]]></GAME_FILLED>
+<GAME_LEVEL><![CDATA[Level:]]></GAME_LEVEL>
+<GAME_LIFES><![CDATA[Lives:]]></GAME_LIFES>
+<GAME_POINTS><![CDATA[Points:]]></GAME_POINTS>
+<GAME_RESTART><![CDATA[Restart]]></GAME_RESTART>
+<GAME_TIME><![CDATA[Time:]]></GAME_TIME>
+<INTRO><![CDATA[You need to fill up at least two thirds of the area with balls, in order to reach the next level. Using your mouse, click to increase the size of your ball.]]></INTRO>
+<INTRO_BTN><![CDATA[Begin game]]></INTRO_BTN>
+<INTRO_HEADLINE><![CDATA[Instructions]]></INTRO_HEADLINE>
+<LEVELUP><![CDATA[Click to reach the next level.]]></LEVELUP>
+<LEVELUP_BTN><![CDATA[continue]]></LEVELUP_BTN>
+<LEVELUP_HEADLINE><![CDATA[Level completed!]]></LEVELUP_HEADLINE>
+<PLAY_CHAT><![CDATA[Play & Chat]]></PLAY_CHAT>
+</snippets>

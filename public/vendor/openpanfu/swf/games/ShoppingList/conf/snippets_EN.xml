@@ -1,0 +1,33 @@
+<snippets date="05.05.2011 09:16:00">
+<BTN_AGAIN><![CDATA[Again]]></BTN_AGAIN>
+<BTN_FINISH><![CDATA[End]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instructions]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Main menu]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Next round]]></BTN_NEXTROUND>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<GROUP0><![CDATA[Pan,Pan integral,Panecillos,Pastel,Maní]]></GROUP0>
+<GROUP1><![CDATA[12 Huevos,Kéfir,Leche,Nata,Queso duro,Yogur,6 huevos,Requesón]]></GROUP1>
+<GROUP2><![CDATA[Mantequilla,Cereza mermelada,Naranja mermelada,Maíz hojuelas,Chocolate hojuelas,Guisantes,Crujientes,Jamón,Atún]]></GROUP2>
+<GROUP3><![CDATA[Blanco calcetines,Verde camiseta,Pantalones,Azul calcetines,Bermudas,Naranja camiseta,Zapatos rojos,Abrigo,Sandalias]]></GROUP3>
+<GROUP4><![CDATA[Limones,Naranjas,Peras,Bananas,Manzanas,Sandía,Uvas,Ciruelas]]></GROUP4>
+<GROUP5><![CDATA[Papas,Repollo,Pepino,Tomates,Ajo,Cebollas,Zanahorias,Coliflor]]></GROUP5>
+<GROUP6><![CDATA[Agua mineral,Refresco,Limonada,Agua tónica,Jugo de naranja,Jugo de manzana,Cola]]></GROUP6>
+<GROUPS><![CDATA[Pastelería, Lácteos, Merienda, Ropa, Frutas, Vegetales, Bebidas]]></GROUPS>
+<INSTRUCTION_TEXT><![CDATA[Only buy the products that are on the shopping list written in Spanish! Memorize them well because every time you look at the list, you lose points. Be warned! You only have 90 seconds to find all the products!
+
+Points: 
+Correct product: +5
+Incorrect product: -5 
+Look in the list: -5 
+Bonus for getting to the next round: +5 
+Bonus for getting to the next round without any mistakes: +10]]></INSTRUCTION_TEXT>
+<LOGO_URL><![CDATA[http://www.panfu.com/]]></LOGO_URL>
+<TEXT_BONUS><![CDATA[Bonus]]></TEXT_BONUS>
+<TEXT_CURROUNDPTS><![CDATA[Shop]]></TEXT_CURROUNDPTS>
+<TEXT_GAMEEND><![CDATA[YOU HAVE WON THE GAME!]]></TEXT_GAMEEND>
+<TEXT_PREVROUNDPTS><![CDATA[Previous rounds]]></TEXT_PREVROUNDPTS>
+<TEXT_ROUNDEND><![CDATA[YOU HAVE CONQUERED THIS LEVEL!]]></TEXT_ROUNDEND>
+<TEXT_ROUNDFAILED><![CDATA[Sorry, you were too slow!]]></TEXT_ROUNDFAILED>
+<TEXT_ROUNDTOTALPTS><![CDATA[Points for this round]]></TEXT_ROUNDTOTALPTS>
+<TEXT_TOTAL><![CDATA[TOTAL]]></TEXT_TOTAL>
+</snippets>

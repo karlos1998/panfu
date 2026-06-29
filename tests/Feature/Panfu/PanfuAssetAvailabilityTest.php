@@ -82,7 +82,7 @@ class PanfuAssetAvailabilityTest extends TestCase
 
     public function test_minigame_snippet_configs_are_available(): void
     {
-        foreach (['BeSmarter', 'EnglishMaster', 'MazeGame', 'bell', 'fourwins', 'rps'] as $game) {
+        foreach ($this->minigameSnippetDirectories() as $game) {
             foreach (['DE', 'EN', 'PL'] as $language) {
                 $this->assertFileExists(
                     public_path("vendor/openpanfu/swf/games/{$game}/conf/snippets_{$language}.xml"),
@@ -117,6 +117,43 @@ class PanfuAssetAvailabilityTest extends TestCase
             'MazeGame/assets/spawn.mp3',
             'MazeGame/assets/turn.mp3',
             'MazeGame/assets/walk.mp3',
+            'ChristmasWorkshop/assets/correct.mp3',
+            'ChristmasWorkshop/assets/correct2.mp3',
+            'ChristmasWorkshop/assets/correct3.mp3',
+            'ChristmasWorkshop/assets/correct4.mp3',
+            'ChristmasWorkshop/assets/helper.mp3',
+            'ChristmasWorkshop/assets/switch.mp3',
+            'ChristmasWorkshop/assets/wrong.mp3',
+            'PanfuDefence/assets/bollyShot.mp3',
+            'PanfuDefence/assets/button.mp3',
+            'PanfuDefence/assets/coin1.mp3',
+            'PanfuDefence/assets/coin2.mp3',
+            'PanfuDefence/assets/coin3.mp3',
+            'PanfuDefence/assets/coin4.mp3',
+            'PanfuDefence/assets/gameWin.mp3',
+            'PanfuDefence/assets/hint.mp3',
+            'PanfuDefence/assets/kill1.mp3',
+            'PanfuDefence/assets/kill2.mp3',
+            'PanfuDefence/assets/kill3.mp3',
+            'PanfuDefence/assets/kill4.mp3',
+            'PanfuDefence/assets/levelFail.mp3',
+            'PanfuDefence/assets/levelWin.mp3',
+            'PanfuDefence/assets/lifeLost.mp3',
+            'PanfuDefence/assets/nextWave.mp3',
+            'PanfuDefence/assets/pokopetShot.mp3',
+            'PanfuDefence/assets/upgrade.mp3',
+            'PanfuDefence/assets/woobyShot.mp3',
+            'PixelGuards/assets/playerDetected.mp3',
+            'PixelGuards/assets/reachedGoal.mp3',
+            'PixelGuards/assets/startButton.mp3',
+            'PixelGuards/assets/usedSwitch.mp3',
+            'Unlocker/assets/gameover.mp3',
+            'Unlocker/assets/lampe.mp3',
+            'Unlocker/assets/levelup.mp3',
+            'Unlocker/assets/lockcorrect.mp3',
+            'Unlocker/assets/lockwrong.mp3',
+            'Unlocker/assets/tile.mp3',
+            'labyrinth/assets/success.mp3',
         ];
 
         foreach ($assets as $asset) {
@@ -213,6 +250,43 @@ class PanfuAssetAvailabilityTest extends TestCase
             'swf/games/EnglishMaster/level03cat02h.xml',
             'swf/games/EnglishMaster/level03cat03h.xml',
             'swf/games/EnglishMaster/level03cat04h.xml',
+        ];
+    }
+
+    private function minigameSnippetDirectories(): array
+    {
+        return [
+            'BeSmarter',
+            'ChristmasWorkshop',
+            'EnglishMaster',
+            'KungFu',
+            'MazeGame',
+            'PanfuDefence',
+            'PixelGuards',
+            'ShoppingList',
+            'Unlocker',
+            'baloon',
+            'balloons',
+            'bell',
+            'cast_away',
+            'filler',
+            'football',
+            'fourwins',
+            'jumper',
+            'labyrinth',
+            'mahjong',
+            'numbers',
+            'parkowanie',
+            'pingpong',
+            'quiz',
+            'rps',
+            'sintepan',
+            'skatepark',
+            'smartrace',
+            'surfing',
+            'walizka',
+            'worldmap',
+            'zuma',
         ];
     }
 

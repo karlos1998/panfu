@@ -1,0 +1,26 @@
+<snippets date="05.05.2011 09:12:05">
+<BACK><![CDATA[Back]]></BACK>
+<COMPLETE><![CDATA[Level<br>completed]]></COMPLETE>
+<END_TEXT><![CDATA[You have completed all levels.]]></END_TEXT>
+<GAMEOVER><![CDATA[Game<br>Over]]></GAMEOVER>
+<GAME_NAME><![CDATA[Pop It]]></GAME_NAME>
+<HELP><![CDATA[Instructions]]></HELP>
+<HELP_TEXT><![CDATA[Try to make the balloons burst by using your darts: the longer you press on the left button on your mouse, the harder the shot will be. You can also use the mouse to control the direction of your shot. But be careful! If you hit any frozen balloons, all the others around you will also freeze and you won't be able to burst any more.]]></HELP_TEXT>
+<INTRO><![CDATA[Click on 'Play now' to choose a level. Read the instructions to find out how the game works.]]></INTRO>
+<LEVEL_COUNT><![CDATA[Level:]]></LEVEL_COUNT>
+<MAIN_MENU><![CDATA[Main menu]]></MAIN_MENU>
+<NEW_LEVEL><![CDATA[New Level]]></NEW_LEVEL>
+<NEXTLEVEL><![CDATA[Next Level]]></NEXTLEVEL>
+<PLAY><![CDATA[Play now]]></PLAY>
+<POINTS_TEXT><![CDATA[Points]]></POINTS_TEXT>
+<POPP_COUNT><![CDATA[Burst:]]></POPP_COUNT>
+<POPP_TEXT><![CDATA[Burst balloons]]></POPP_TEXT>
+<QUIT><![CDATA[End]]></QUIT>
+<RESET><![CDATA[Reset]]></RESET>
+<ROCK_COUNT><![CDATA[Darts:]]></ROCK_COUNT>
+<SELECT_LEVEL><![CDATA[Select level]]></SELECT_LEVEL>
+<SOUND_OFF><![CDATA[Sound off]]></SOUND_OFF>
+<SOUND_ON><![CDATA[Sound on]]></SOUND_ON>
+<STANDALONE_END><![CDATA[Chat and play]]></STANDALONE_END>
+<TARGET_COUNT><![CDATA[Target:]]></TARGET_COUNT>
+</snippets>

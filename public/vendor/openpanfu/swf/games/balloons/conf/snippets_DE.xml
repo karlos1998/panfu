@@ -1,0 +1,27 @@
+﻿<snippets date="05.05.2011 09:12:06">
+<BACK><![CDATA[Zurück]]></BACK>
+<COMPLETE><![CDATA[Level<br>geschafft]]></COMPLETE>
+<END_TEXT><![CDATA[Du hast alle Level geschafft.]]></END_TEXT>
+<GAMEOVER><![CDATA[Game<br>Over]]></GAMEOVER>
+<GAME_NAME><![CDATA[Pop It]]></GAME_NAME>
+<HELP><![CDATA[Anleitung]]></HELP>
+<HELP_TEXT><![CDATA[Versuche mit den Wurfpfeilen die Ballons zum Platzen zu bringen. Je länger Du die linke Maustaste drückst, desto stärker wird der Schuss. Du kannst mit der Maus auch die Schussrichtung bestimmen. Aber Vorsicht! Wenn Du die vereisten Ballons triffst, frieren alle anderen in ihrer Nähe ein und können nicht mehr platzen.
+]]></HELP_TEXT>
+<INTRO><![CDATA[Klicke auf jetzt spielen um einen Level auszuwählen. In der Anleitung erfährst du wie das Spiel funktioniert.]]></INTRO>
+<LEVEL_COUNT><![CDATA[Level:]]></LEVEL_COUNT>
+<MAIN_MENU><![CDATA[Hauptmenü]]></MAIN_MENU>
+<NEW_LEVEL><![CDATA[Neuer Level]]></NEW_LEVEL>
+<NEXTLEVEL><![CDATA[Nächster Level]]></NEXTLEVEL>
+<PLAY><![CDATA[Jetzt spielen]]></PLAY>
+<POINTS_TEXT><![CDATA[Punkte]]></POINTS_TEXT>
+<POPP_COUNT><![CDATA[Geplatzt:]]></POPP_COUNT>
+<POPP_TEXT><![CDATA[Geplatze Ballons]]></POPP_TEXT>
+<QUIT><![CDATA[Beenden]]></QUIT>
+<RESET><![CDATA[Neustart]]></RESET>
+<ROCK_COUNT><![CDATA[Pfeile:]]></ROCK_COUNT>
+<SELECT_LEVEL><![CDATA[Levelauswahl]]></SELECT_LEVEL>
+<SOUND_OFF><![CDATA[Sound aus]]></SOUND_OFF>
+<SOUND_ON><![CDATA[Sound an]]></SOUND_ON>
+<STANDALONE_END><![CDATA[Chatten und Spielen]]></STANDALONE_END>
+<TARGET_COUNT><![CDATA[Ziel:]]></TARGET_COUNT>
+</snippets>
