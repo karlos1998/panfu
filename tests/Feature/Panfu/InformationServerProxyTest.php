@@ -35,4 +35,44 @@ class InformationServerProxyTest extends TestCase
             && $request->body() === 'amf-payload'
             && $request->method() === 'POST');
     }
+
+    public function test_information_server_proxy_preserves_legacy_session_cookies(): void
+    {
+        config([
+            'panfu.game_client.legacy_information_server' => 'http://legacy.test/InformationServer/',
+        ]);
+
+        $requests = [];
+
+        Http::fake(function (ClientRequest $request) use (&$requests) {
+            $requests[] = $request;
+
+            return Http::response('amf-response', 200, array_filter([
+                'Content-Type' => 'application/x-amf',
+                'Set-Cookie' => count($requests) === 1 ? 'PHPSESSID=legacy-session; path=/' : null,
+            ]));
+        });
+
+        $this->withSession([]);
+
+        $this->call(
+            method: 'POST',
+            uri: '/InformationServer/gateway/amf',
+            server: ['CONTENT_TYPE' => 'application/x-amf'],
+            content: 'login-payload',
+        )->assertOk();
+
+        $this->call(
+            method: 'POST',
+            uri: '/InformationServer/gateway/amf',
+            server: ['CONTENT_TYPE' => 'application/x-amf'],
+            content: 'states-payload',
+        )->assertOk();
+
+        $this->assertCount(2, $requests);
+        $this->assertStringContainsString(
+            'PHPSESSID=legacy-session',
+            implode('; ', $requests[1]->header('Cookie')),
+        );
+    }
 }
