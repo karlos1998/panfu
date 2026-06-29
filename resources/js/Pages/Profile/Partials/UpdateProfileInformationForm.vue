@@ -12,6 +12,10 @@ defineProps<{
 
 const user = usePage().props.auth.user;
 
+if (!user) {
+    throw new Error('Profile page requires an authenticated user.');
+}
+
 const form = useForm({
     name: user.name,
     email: user.email,

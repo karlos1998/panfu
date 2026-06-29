@@ -1,22 +1,47 @@
 <script setup lang="ts">
-import ApplicationLogo from '@/Components/ApplicationLogo.vue';
+import PanfuLayout from '@/Layouts/PanfuLayout.vue';
+import type { FooterContent, MetaContent, NavigationItem } from '@/types/panfu';
 import { Link } from '@inertiajs/vue3';
+
+const meta: MetaContent = {
+    title: 'Panfu',
+    description: 'Zaloguj się lub dołącz do lokalnego świata Panfu.',
+};
+
+const navigation: NavigationItem[] = [
+    { label: 'Strona główna', href: '/' },
+    { label: 'Rejestracja', href: '/register', variant: 'primary' },
+    { label: 'Zaloguj się', href: '/login', variant: 'secondary' },
+];
+
+const footer: FooterContent = {
+    copyright: 'Panfu local preservation project',
+    links: [
+        { label: 'Strona główna', href: '/' },
+        { label: 'Gra', href: '/play' },
+    ],
+};
 </script>
 
 <template>
-    <div
-        class="flex min-h-screen flex-col items-center bg-gray-100 pt-6 sm:justify-center sm:pt-0"
+    <PanfuLayout
+        :meta="meta"
+        logo="/vendor/panfu-me/assets/panfu-logo-BkIF66dU.svg"
+        :navigation="navigation"
+        :footer="footer"
+        main-class="panfu-main--auth"
     >
-        <div>
-            <Link href="/">
-                <ApplicationLogo class="h-20 w-20 fill-current text-gray-500" />
+        <section class="panfu-auth">
+            <Link class="panfu-auth__logo" href="/">
+                <img
+                    src="/vendor/panfu-me/assets/panfu-logo-BkIF66dU.svg"
+                    alt="Panfu"
+                />
             </Link>
-        </div>
 
-        <div
-            class="mt-6 w-full overflow-hidden bg-white px-6 py-4 shadow-md sm:max-w-md sm:rounded-lg"
-        >
-            <slot />
-        </div>
-    </div>
+            <div class="panfu-auth__panel">
+                <slot />
+            </div>
+        </section>
+    </PanfuLayout>
 </template>

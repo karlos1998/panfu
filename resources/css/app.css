@@ -1,3 +1,598 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Hiruko Pro Bold";
+    src:
+        url("/vendor/panfu-me/assets/HirukoPro-Bold-Bq64kLXF.woff2") format("woff2"),
+        url("/vendor/panfu-me/assets/HirukoPro-Bold-CGijNn8c.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+}
+
+:root {
+    --panfu-blue: #55cfff;
+    --panfu-blue-dark: #1598d2;
+    --panfu-green: #5cbf32;
+    --panfu-green-dark: #328118;
+    --panfu-orange: #f29b22;
+    --panfu-ink: #24405b;
+    --panfu-paper: #fff8dd;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: var(--panfu-ink);
+    background: #9feaff;
+}
+
+.panfu-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        linear-gradient(to bottom, #86ddff 0, #b9f1ff 280px, #f7ffe7 680px),
+        #f7ffe7;
+}
+
+.panfu-navbar {
+    position: relative;
+    z-index: 10;
+    min-height: 108px;
+    background:
+        url("/vendor/panfu-me/assets/header-island-DHGB7_8-.svg") center bottom / auto 82px no-repeat,
+        linear-gradient(to bottom, #5cd4ff, #7de0ff);
+    border-bottom: 5px solid rgba(10, 113, 167, 0.22);
+}
+
+.panfu-navbar__inner {
+    width: min(1120px, calc(100% - 32px));
+    min-height: 96px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.panfu-navbar__brand {
+    display: inline-flex;
+    align-items: center;
+}
+
+.panfu-navbar__brand img {
+    width: clamp(132px, 18vw, 214px);
+    height: auto;
+    filter: drop-shadow(0 4px 0 rgba(31, 123, 58, 0.22));
+}
+
+.panfu-navbar__toggle {
+    width: 48px;
+    height: 48px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.34);
+}
+
+.panfu-navbar__toggle span {
+    width: 24px;
+    height: 3px;
+    border-radius: 999px;
+    background: #ffffff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.panfu-navbar__links,
+.panfu-footer__links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.panfu-navbar__link {
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-family: "Hiruko Pro Bold", ui-rounded, system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    color: #0b669b;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65);
+    transition:
+        transform 80ms ease,
+        filter 80ms ease;
+}
+
+.panfu-navbar__link:hover,
+.panfu-button:hover,
+.home-board__button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.04);
+}
+
+.panfu-navbar__link--primary,
+.panfu-navbar__link--secondary,
+.panfu-button {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.22);
+    box-shadow:
+        inset 0 2px 0 rgba(255, 255, 255, 0.35),
+        0 3px 0 rgba(33, 111, 23, 0.22);
+}
+
+.panfu-navbar__link--primary,
+.panfu-button--green {
+    background: linear-gradient(to bottom, #75d94d, var(--panfu-green));
+    border: 1px solid var(--panfu-green-dark);
+}
+
+.panfu-navbar__link--secondary {
+    background: linear-gradient(to bottom, #ffbe45, var(--panfu-orange));
+    border: 1px solid #b36b05;
+}
+
+.panfu-main {
+    flex: 1;
+}
+
+.panfu-main--trees {
+    background:
+        url("/vendor/panfu-me/assets/bg-trees-C3W6vnYt.png") top center repeat-x,
+        url("/vendor/panfu-me/assets/background-C_gQ2x6Z.png") top center repeat-x;
+}
+
+.panfu-home-hero {
+    width: min(1120px, calc(100% - 32px));
+    min-height: 560px;
+    margin: 0 auto;
+    padding: 52px 0 42px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 399px;
+    align-items: center;
+    gap: 40px;
+}
+
+.panfu-home-hero__media {
+    min-height: 330px;
+    border: 8px solid #fff;
+    border-radius: 8px;
+    background: #7fd449;
+    box-shadow:
+        0 12px 0 rgba(33, 112, 53, 0.16),
+        0 20px 34px rgba(25, 88, 128, 0.18);
+    overflow: hidden;
+}
+
+.panfu-home-hero__media video {
+    width: 100%;
+    height: 100%;
+    min-height: 330px;
+    display: block;
+    object-fit: cover;
+}
+
+.home-board {
+    position: relative;
+    width: 399px;
+    height: 329px;
+    padding: 16px 26px 82px;
+    color: #ffffff;
+    font-family: "Hiruko Pro Bold", ui-rounded, system-ui, sans-serif;
+    text-shadow: 0 2px 0 rgba(83, 75, 26, 0.28);
+    background: url("/vendor/panfu-me/assets/home-board-D2ETOOE4.png") 0 0 no-repeat;
+}
+
+.home-board__title {
+    margin: 4px 0 10px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.15;
+}
+
+.home-board__title strong {
+    color: #ffe66d;
+}
+
+.home-board__list {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.home-board__item {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 16px;
+    line-height: 1.12;
+}
+
+.home-board__icon {
+    width: 33px;
+    height: 33px;
+    flex: 0 0 33px;
+    background-image: url("/vendor/panfu-me/assets/home-board-D2ETOOE4.png");
+    background-repeat: no-repeat;
+}
+
+.home-board__icon--games {
+    background-position: -282px -330px;
+}
+
+.home-board__icon--friends {
+    background-position: -315px -330px;
+}
+
+.home-board__icon--pets {
+    background-position: -348px -330px;
+}
+
+.home-board__icon--style {
+    background-position: -249px -330px;
+}
+
+.home-board__button {
+    position: absolute;
+    left: 65px;
+    bottom: 10px;
+    width: 249px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6px;
+    color: inherit;
+    font-size: 21px;
+    line-height: 1;
+    text-decoration: none;
+    background: url("/vendor/panfu-me/assets/home-board-D2ETOOE4.png") 0 -330px no-repeat;
+    transition:
+        transform 80ms ease,
+        filter 80ms ease;
+}
+
+.panfu-section {
+    padding: 54px 0;
+}
+
+.panfu-section__inner {
+    width: min(1040px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.panfu-section--news {
+    background: #fff8dd;
+    border-top: 5px solid rgba(91, 182, 55, 0.28);
+    border-bottom: 5px solid rgba(91, 182, 55, 0.18);
+}
+
+.panfu-news,
+.panfu-about {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+    align-items: center;
+    gap: 44px;
+}
+
+.panfu-eyebrow {
+    margin: 0 0 8px;
+    font-family: "Hiruko Pro Bold", ui-rounded, system-ui, sans-serif;
+    font-size: 19px;
+    color: var(--panfu-green-dark);
+}
+
+.panfu-news h2,
+.panfu-about h2 {
+    margin: 0;
+    font-family: "Hiruko Pro Bold", ui-rounded, system-ui, sans-serif;
+    font-size: 34px;
+    line-height: 1.08;
+    color: #0b78b6;
+}
+
+.panfu-news p,
+.panfu-about p {
+    margin: 14px 0 0;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.panfu-button {
+    min-height: 44px;
+    margin-top: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 11px 18px;
+    font-family: "Hiruko Pro Bold", ui-rounded, system-ui, sans-serif;
+    text-decoration: none;
+}
+
+.panfu-news__image img {
+    width: 100%;
+    display: block;
+    border: 8px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 12px 26px rgba(36, 64, 91, 0.18);
+}
+
+.panfu-section--about {
+    background: linear-gradient(to bottom, #e7ffd9, #c5f5ff);
+}
+
+.panfu-about {
+    grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+}
+
+.panfu-about__list {
+    display: grid;
+    gap: 12px;
+}
+
+.panfu-about__list li {
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 14px;
+    border-radius: 8px;
+    color: #245822;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.62);
+    border: 1px solid rgba(88, 174, 55, 0.28);
+}
+
+.panfu-about__list li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    border-radius: 50%;
+    background:
+        linear-gradient(135deg, transparent 46%, #fff 47% 55%, transparent 56%) 4px 1px / 12px 14px no-repeat,
+        var(--panfu-green);
+    transform: rotate(35deg);
+}
+
+.panfu-footer {
+    color: #ffffff;
+    background: #0d93c8;
+    border-top: 5px solid rgba(255, 255, 255, 0.24);
+}
+
+.panfu-footer__inner {
+    width: min(1120px, calc(100% - 32px));
+    min-height: 74px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.panfu-footer p {
+    margin: 0;
+}
+
+.panfu-footer__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.panfu-footer__link:hover {
+    text-decoration: underline;
+}
+
+.panfu-main--play {
+    background:
+        url("/vendor/panfu-me/assets/bg-trees-C3W6vnYt.png") top center repeat-x,
+        linear-gradient(to bottom, #d9fbff, #a7e9ff 340px, #86d675);
+}
+
+.panfu-main--auth {
+    background:
+        url("/vendor/panfu-me/assets/bg-trees-C3W6vnYt.png") top center repeat-x,
+        linear-gradient(to bottom, #d9fbff, #e9ffe1 420px, #fff8dd);
+}
+
+.panfu-auth {
+    width: min(440px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 42px 0 58px;
+}
+
+.panfu-auth__logo {
+    width: 190px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.panfu-auth__logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.panfu-auth__panel {
+    padding: 24px;
+    border: 8px solid #ffffff;
+    border-radius: 8px;
+    background: var(--panfu-paper);
+    box-shadow:
+        inset 0 2px 0 rgba(255, 255, 255, 0.85),
+        0 14px 26px rgba(36, 64, 91, 0.2);
+}
+
+.panfu-play {
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 36px 0 58px;
+}
+
+.panfu-play__bar {
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 0 18px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #20b0e6, #138ec5);
+    border: 1px solid rgba(8, 92, 132, 0.45);
+    border-radius: 8px 8px 0 0;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.3);
+}
+
+.panfu-play__bar h1 {
+    margin: 0;
+    font-family: "Hiruko Pro Bold", ui-rounded, system-ui, sans-serif;
+    font-size: 23px;
+}
+
+.panfu-play__bar span {
+    font-weight: 700;
+}
+
+.panfu-play__stage {
+    aspect-ratio: 950 / 600;
+    width: 100%;
+    min-height: 360px;
+    display: grid;
+    place-items: center;
+    background: #1f95ca;
+    border: 10px solid #ffffff;
+    border-top: 0;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 16px 34px rgba(27, 80, 111, 0.26);
+    overflow: hidden;
+}
+
+.panfu-play__object,
+.panfu-play__stage ruffle-object,
+.panfu-play__stage ruffle-player {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .panfu-navbar__inner,
+    .panfu-footer__inner {
+        flex-direction: column;
+        justify-content: center;
+        padding: 14px 0;
+        text-align: center;
+    }
+
+    .panfu-navbar {
+        min-height: 146px;
+    }
+
+    .panfu-navbar__links,
+    .panfu-footer__links {
+        justify-content: center;
+    }
+
+    .panfu-home-hero,
+    .panfu-news,
+    .panfu-about {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .panfu-home-hero {
+        min-height: auto;
+        justify-items: center;
+        overflow-x: clip;
+        padding: 34px 0 28px;
+    }
+
+    .panfu-home-hero__media {
+        width: 100%;
+        order: 2;
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .panfu-navbar {
+        min-height: 94px;
+    }
+
+    .panfu-navbar__inner {
+        min-height: 88px;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .panfu-navbar__brand img {
+        width: 180px;
+    }
+
+    .panfu-navbar__toggle {
+        display: inline-flex;
+    }
+
+    .panfu-navbar__links {
+        position: absolute;
+        top: 82px;
+        right: 16px;
+        min-width: 190px;
+        display: none;
+        align-items: stretch;
+        flex-direction: column;
+        padding: 8px;
+        border: 1px solid rgba(8, 92, 132, 0.28);
+        border-radius: 8px;
+        background: rgba(185, 241, 255, 0.95);
+        box-shadow: 0 12px 24px rgba(36, 64, 91, 0.18);
+    }
+
+    .panfu-navbar__links--open {
+        display: flex;
+    }
+
+    .panfu-navbar__link {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 430px) {
+    .panfu-navbar__link {
+        font-size: 15px;
+        padding-inline: 10px;
+    }
+
+    .home-board {
+        margin-bottom: -39px;
+        transform: scale(0.88);
+        transform-origin: top center;
+    }
+
+    .panfu-news h2,
+    .panfu-about h2 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 360px) {
+    .home-board {
+        margin-bottom: -79px;
+        transform: scale(0.76);
+    }
+}

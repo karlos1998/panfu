@@ -2,6 +2,12 @@
 
 namespace App\Providers;
 
+use App\Domain\Auth\Repositories\UserRepository;
+use App\Domain\Panfu\Repositories\FlashClientRepository;
+use App\Domain\Panfu\Repositories\LandingPageRepository;
+use App\Infrastructure\Auth\Repositories\EloquentUserRepository;
+use App\Infrastructure\Panfu\Repositories\StaticFlashClientRepository;
+use App\Infrastructure\Panfu\Repositories\StaticLandingPageRepository;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
 
@@ -12,7 +18,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->bind(LandingPageRepository::class, StaticLandingPageRepository::class);
+        $this->app->bind(FlashClientRepository::class, StaticFlashClientRepository::class);
+        $this->app->bind(UserRepository::class, EloquentUserRepository::class);
     }
 
     /**

@@ -1,0 +1,1379 @@
+<config check="e4a31418a00deb0fc67ec763bee40a0e">
+  <assets path="conf/assets.xml" _REPLACE_="1"/>
+  <bollies>
+    <states>
+      <normal successor="idle" timeout="100,200"/>
+      <idle successor="normal" timeout="100"/>
+      <sleeping successor="normal" timeout="10"/>
+      <playing successor="normal" timeout="10"/>
+      <eating successor="normal" timeout="10"/>
+      <walking successor="normal"/>
+      <denying successor="normal" timeout="5"/>
+      <decrease successor="normal" timeout="600"/>
+      <rescue successor="normal" timeout="3600"/>
+      <tricking successor="normal" timeout="10"/>
+    </states>
+    <scales health="50" rest="50" energy="50"/>
+    <characters>
+      <blue_bolly id="20001" x="60" y="0" z="0" colour="0x00CCFF" normal="bollyNormal" idle="bollyFlying" game="bollyRocket" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_blue" style="normal"/>
+      <blue_bollyWood id="101696" x="60" y="0" z="0" colour="0x00CCFF" normal="bollyNormal" idle="bollyFlying" game="bollyRocket" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_blue" style="normal"/>
+      <red_bolly id="20002" x="80" y="-5" z="1" colour="0xFF0000" normal="bollyNormal" idle="bollyDreaming" game="bollyJuggle" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_red" style="normal"/>
+      <grey_bolly id="20003" x="38" y="5" z="4" colour="0x333333" normal="bollyNormal" idle="bollyRunning" game="bollyBubbles" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_grey" style="normal"/>
+      <pink_bolly id="20004" x="53" y="-5" z="3" colour="0xFF00CC" normal="bollyNormal" idle="bollyCombing" game="bollyBubbles" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_pink" style="normal"/>
+      <green_bolly id="20005" x="38" y="-5" z="2" colour="0x00FF00" normal="bollyNormal" idle="bollyRelaxing" game="bollyJuggle" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_green" style="normal"/>
+      <easter_bolly id="20006" x="80" y="-5" z="5" colour="-1" normal="bollyNormal" idle="bollyEaster" game="bollyJuggle" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_easter" style="easter" useSoundOfId="20001"/>
+      <tiger_bolly id="100266" x="80" y="-5" z="5" colour="-3" normal="bollyNormal" idle="bollyTiger" game="bollyJuggle" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_tiger" style="tiger" useSoundOfId="20001"/>
+      <gold_bolly id="100392" x="80" y="-5" z="5" colour="-4" normal="bollyNormal" idle="bollyGold" game="bollyJuggle" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_gold" style="gold" useSoundOfId="20002"/>
+      <easter09_bolly id="100524" x="80" y="-5" z="5" colour="-5" normal="bollyNormal" idle="bollyEaster09" game="bollyJuggle" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_easter09" style="easter09" useSoundOfId="20003"/>
+      <red_bolly_wood id="101697" x="80" y="-5" z="1" colour="0xFF0000" normal="bollyNormal" idle="bollyDreaming" game="bollyJuggle" denying="bollyDenying" sleeping="bollySleeping" eating="bollyFood" cardBack="bollyBackground_red" style="normal"/>
+      <woobycolorful_bolly id="100575" x="10" y="-5" z="5" colour="-100575" normal="woobyColorfulNormal" idle="woobyColorfulNormal" game="woobyColorfulBubbles" denying="woobyColorfulDenying" sleeping="woobyColorfulSleeping" eating="woobyColorfulEating" cardBack="bollyBackground_woobycolorful" style="normal" useSoundOfId="20004"/>
+      <woobyorange_bolly id="100576" x="600" y="35" z="5" colour="-100576" normal="woobyOrangeNormal" idle="woobyOrangeNormal" game="woobyOrangeBubbles" denying="woobyOrangeDenying" sleeping="woobyOrangeSleeping" eating="woobyOrangeEating" cardBack="bollyBackground_woobyorange" style="normal" useSoundOfId="20005"/>
+      <woobygreen_bolly id="100683" x="600" y="35" z="5" colour="-100646" normal="woobyGreenNormal" idle="woobyGreenNormal" game="woobyGreenBubbles" denying="woobyGreenDenying" sleeping="woobyGreenSleeping" eating="woobyGreenEating" cardBack="bollyBackground_woobygreen" style="normal" useSoundOfId="20002"/>
+      <woobyheart_bolly id="100825" x="600" y="35" z="5" colour="-100824" normal="woobyHeartNormal" idle="woobyHeartNormal" game="woobyHeartPlaying" denying="woobyHeartDenying" sleeping="woobyHeartSleeping" eating="woobyHeartEating" cardBack="bollyBackground_woobyheart" style="normal" useSoundOfId="20005"/>
+      <woobyblue_bolly id="101962" x="600" y="35" z="5" colour="-101962" normal="woobyBlueNormal" idle="woobyBlueClean" game="woobyBluePlaying" denying="woobyBlueDenying" sleeping="woobyBlueSleeping" eating="woobyBlueEating" cardBack="WoobyBlueBackground" style="normal" useSoundOfId="20005"/>
+      <woobyorangewood_bolly id="100624" x="600" y="35" z="5" colour="-100576" normal="woobyOrangeNormal" idle="woobyOrangeNormal" game="woobyOrangeBubbles" denying="woobyOrangeDenying" sleeping="woobyOrangeSleeping" eating="woobyOrangeEating" cardBack="bollyBackground_woobyorange" style="normal" useSoundOfId="20004"/>
+      <woobygreenwood_bolly id="100646" x="600" y="35" z="5" colour="-100646" normal="woobyGreenNormal" idle="woobyGreenNormal" game="woobyGreenBubbles" denying="woobyGreenDenying" sleeping="woobyGreenSleeping" eating="woobyGreenEating" cardBack="bollyBackground_woobygreen" style="normal" useSoundOfId="20005"/>
+      <woobyheartwood_bolly id="100824" x="600" y="35" z="5" colour="-100824" normal="woobyHeartNormal" idle="woobyHeartNormal" game="woobyHeartPlaying" denying="woobyHeartDenying" sleeping="woobyHeartSleeping" eating="woobyHeartEating" cardBack="bollyBackground_woobyheart" style="normal" useSoundOfId="20005"/>
+      <woobyeaster_bolly id="101862" x="600" y="35" z="5" colour="-101862" normal="woobyEasterIdle" idle="woobyEasterClean" game="woobyEasterPlaying" denying="woobyEasterDenying" sleeping="woobyEasterSleeping" eating="woobyEasterFood" cardBack="WoobyEasterBackground" style="normal" useSoundOfId="20005"/>
+    </characters>
+    <feed>
+      <bollyFood rest="-30" energy="100">
+        <min rest="30"/>
+        <max energy="100">
+          <penalty health="-60"/>
+        </max>
+      </bollyFood>
+      <chocolate rest="-30" energy="20" health="-30">
+        <min rest="30" health="30"/>
+      </chocolate>
+      <ice_cream rest="-30" energy="20" health="-30">
+        <min rest="30" health="30"/>
+      </ice_cream>
+    </feed>
+    <play rest="-30" energy="-30" health="100">
+      <min rest="30" energy="30"/>
+    </play>
+    <walk rest="-20" energy="-20">
+      <min rest="20" energy="20"/>
+    </walk>
+    <sleep rest="30">
+      <max rest="100">
+        <penalty health="-60"/>
+      </max>
+    </sleep>
+    <deny/>
+    <decrease rest="-5" energy="-5" health="-5"/>
+    <costs>
+      <food1 amount="10"/>
+    </costs>
+    <bollyMessages energy="3" rest="3" health="2"/>
+  </bollies>
+  <colors>
+    <color name="dark_gray" id="1001" value="3D3D3D"/>
+    <color name="marine_blue" id="1002" value="123D9C"/>
+    <color name="green" id="1003" value="26C709"/>
+    <color name="blue" id="1004" value="0088FF"/>
+    <color name="orange" id="1005" value="E96A00"/>
+    <color name="magenta" id="1006" value="C2056C"/>
+    <color name="red" id="1007" value="D60603"/>
+    <color name="yellow" id="1008" value="F5E400"/>
+    <color name="white" id="1009" value="FFFFFF"/>
+    <color name="purple" id="1010" value="8800FF"/>
+    <color name="strong_green" id="1011" value="349938"/>
+    <color name="dark_green" id="1012" value="2D662F"/>
+    <color name="maroon" id="1013" value="790604"/>
+    <color name="pink" id="100497" value="F06DA9"/>
+    <color name="strong_blue" id="100498" value="2F66A6"/>
+    <color name="light_brown" id="100499" value="8B6138"/>
+    <color name="black" id="100500" value="000000"/>
+    <color name="cherry_red" id="1018" value="9E0806"/>
+    <color name="dark_orange" id="1019" value="FE4100"/>
+    <color name="light_orange" id="1020" value="E5973D"/>
+    <color name="light_yellow" id="1021" value="FFFF4E"/>
+    <color name="lime_green" id="1022" value="9DDB00"/>
+    <color name="sage_green" id="1023" value="74A577"/>
+    <color name="cadet_blue" id="1024" value="007F7F"/>
+    <color name="cyan" id="1025" value="00CCCC"/>
+    <color name="strong_purple" id="1026" value="522AC1"/>
+    <color name="lavender" id="1027" value="D4A4FF"/>
+    <color name="light_pink" id="1028" value="EF9EC4"/>
+    <color name="mulberry" id="1029" value="6D033D"/>
+    <color name="dark_brown" id="1030" value="3D2A19"/>
+    <color name="brown" id="1031" value="5B3F25"/>
+    <color name="light_gray" id="1032" value="BFBFBF"/>
+    <color name="gray" id="1033" value="8C8C8C"/>
+  </colors>
+  <features base="features/$$type$$/" path="$$type$$.swf">
+    <feature type="achievements" id="achievements" preload="1"/>
+    <feature type="assistant" id="assistant" preload="1"/>
+    <feature type="buddylist" id="buddylist" preload="1"/>
+    <feature type="contentSelector" id="contentSelector" preload="1"/>
+    <feature type="flyingComponent" id="flyingComponent" preload="1"/>
+    <feature type="highscores" id="highscores" preload="1"/>
+    <feature type="jukebox" id="jukebox" preload="1"/>
+    <feature type="messageBoard" id="messageBoard" preload="1"/>
+    <feature type="movieplayer" id="movieplayer" preload="1"/>
+    <!--<feature type="movieTheater" id="movieTheater" preload="1"/>-->
+    <feature type="oracle" id="oracle" preload="1"/>
+    <feature type="popup" id="popup" preload="1"/>
+    <feature type="profile" id="profile" preload="1"/>
+    <feature type="profileHighscore" id="profileHighscore" preload="1"/>
+    <feature type="questLogBook" id="questLogBook" preload="1"/>
+    <feature type="randomwalker" id="randomwalker" preload="1"/>
+    <feature type="tabComponent" id="tabComponent" preload="1"/>
+    <feature type="whatsHot" id="whatsHot" preload="1"/>
+  </features>
+  <fonts>
+    <paths>
+      <font path="fonts/verdana.swf"/>
+      <font path="fonts/verdanaBold.swf"/>
+      <font path="fonts/hiruko.swf"/>
+      <font path="fonts/hirukoBlack.swf"/>
+    </paths>
+    <mappings>
+      <standard_header name="VerdanaBoldFont"/>
+      <standard_body name="VerdanaFont"/>
+      <input name="VerdanaFont"/>
+      <news_body name="VerdanaFont"/>
+    </mappings>
+  </fonts>
+  <games base="swf/games/" path="swf/games/game$$id$$.swf">
+    <game id="4" key="GAME_NAME_4" type="single" partner="none" adapter="basicAdapter"/> <!-- Train Your Brain, Library -->
+    <game id="5" key="GAME_NAME_5" type="single" partner="none" adapter="basicAdapter"/> <!-- Fish'n'Fish, Jungle -->
+    <game id="6" key="GAME_NAME_6" type="single" partner="none" adapter="basicAdapter"/> <!-- Hubi, Volcano -->
+    <game id="7" key="GAME_NAME_7" type="single" partner="none" adapter="basicAdapter"/> <!-- Bolly Hop, Swimming Pool -->
+    <game id="10" key="GAME_NAME_10" type="single" partner="none" adapter="basicAdapter"/> <!-- City Jumper, Court -->
+    <game id="11" key="GAME_NAME_11" type="single" partner="none" adapter="basicAdapter"/> <!-- Cloud Number Nine, Jungle -->
+    <game id="12" key="GAME_NAME_12" type="single" partner="none" adapter="basicAdapter"/> <!-- Cast Away, Castle -->
+    <game id="13" key="GAME_NAME_13" type="single" partner="none" adapter="basicAdapter"/> <!-- Globy, Disco -->
+    <game id="15" key="GAME_NAME_15" type="single" partner="none" adapter="basicAdapter"/> <!-- Balloons, Beach -->
+    <game id="16" key="GAME_NAME_16" type="single" partner="none" adapter="basicAdapter"/> <!-- Soccer, Sportsfield -->
+    <game id="17" key="GAME_NAME_17" type="single" partner="none" adapter="basicAdapter"/> <!-- Kung Fu, Terrace -->
+    <game id="18" key="GAME_NAME_18" type="single" partner="none" adapter="basicAdapter"/> <!-- Mahjong, Terrace -->
+    <game id="19" key="GAME_NAME_19" type="single" partner="none" adapter="basicAdapter"/> <!-- Make Over, Beauty Saloon -->
+    <game id="20" key="GAME_NAME_20" type="single" partner="none" adapter="basicAdapter"/> <!-- Pop It, Old Harbour -->
+    <game id="21" key="GAME_NAME_21" type="single" partner="none" adapter="basicAdapter"/> <!-- Quick Service, Chez Bruno -->
+    <game id="23" key="GAME_NAME_23" type="single" partner="none" adapter="basicAdapter"/> <!-- Shopping List, Giftshop -->
+    <game id="24" key="GAME_NAME_24" type="single" partner="none" adapter="basicAdapter"/> <!-- Cool Cooking, Chez Bruno -->
+    <game id="25" key="GAME_NAME_25" type="multi" partner="random" adapter="remotingAdapter"/> <!-- 4Boom, Town & 4Boom cave -->
+    <game id="26" key="GAME_NAME_26" type="single" partner="none" adapter="basicAdapter"/> <!-- Crazy Numbers, Underwater School -->
+    <game id="27" key="GAME_NAME_27" type="single" partner="none" score="1" adapter="basicAdapter"/> <!-- Map Challenge, Underwater School -->
+    <game id="28" key="GAME_NAME_28" type="single" partner="none" adapter="basicAdapter"/> <!-- Sintepan, Laboratory -->
+    <game id="29" key="GAME_NAME_29" type="single" partner="none" adapter="basicAdapter"/> <!-- Super Lingua, Underwater School -->
+    <game id="31" key="GAME_NAME_31" type="single" partner="none" adapter="basicAdapter"/> <!-- Happy  Horse, Ponystable -->
+    <game id="32" key="GAME_NAME_32" type="single" partner="none" score="1" adapter="basicAdapter"/> <!-- Funny Farm, Pony yard -->
+    <game id="33" key="GAME_NAME_33" type="single" partner="none" score="1" adapter="basicAdapter"/> <!-- Smart Race, Underwater School -->
+    <game id="34" key="GAME_NAME_34" type="single" partner="none" score="1" adapter="basicAdapter"/> <!-- Rapido Snake, Old Harbour -->
+    <game id="35" key="GAME_NAME_35" type="single" partner="none" adapter="basicAdapter"/> <!-- Bolly Numbers, Animal shop -->
+    <game id="36" key="GAME_NAME_36" type="single" partner="none" adapter="basicAdapter"/> <!-- Bolly Blocks, Animal shop -->
+    <game id="37" key="GAME_NAME_37" type="single" partner="none" adapter="basicAdapter"/> <!-- Bolly Light, Animal shop -->
+    <game id="38" key="GAME_NAME_38" type="single" partner="none" adapter="basicAdapter"/> <!-- Bolly Soccer, Animal shop -->
+    <game id="40" key="GAME_NAME_40" type="single" partner="none" adapter="basicAdapter"/> <!-- Bolly Tickles, Animal shop -->
+    <game id="41" key="GAME_NAME_41" type="multi" partner="selected" adapter="remotingAdapter"/> <!-- Rock, Paper, Scissors -->
+    <game id="42" key="GAME_NAME_42" type="single" partner="none" adapter="basicAdapter"/> <!-- Panda Skate, Sportsfield -->
+    <game id="44" key="GAME_NAME_44" type="single" partner="none" score="1" adapter="basicAdapter"/> <!-- Parking, Giftshop -->
+    <game id="45" key="GAME_NAME_45" type="single" partner="none" score="1" adapter="basicAdapter"/> <!-- Table Tennis, Swimming pool -->
+    <game id="46" key="GAME_NAME_46" type="single" partner="none" score="1" adapter="basicAdapter"/> <!-- Pack & Go, Kiosk -->
+    <game id="47" key="GAME_NAME_47" type="single" partner="none" score="1" adapter="basicAdapter"/> <!-- The funniest Jumper, Lake -->
+    <game id="48" key="GAME_NAME_48" type="single" partner="none" score="1" adapter="basicAdapter"/> <!-- Surfer, Caribbean Beach -->
+    <game id="49" key="GAME_NAME_49" type="single" partner="none" score="1" adapter="basicAdapter"/> <!-- Ice Cream Shop, Icecream Parlour -->
+    <game id="50" key="GAME_NAME_50" type="single" partner="none" adapter="basicAdapter"/> <!-- Magic Maze, Jungle Cave -->
+    <game id="51" key="GAME_NAME_51" type="single" partner="none" adapter="remotingAdapter"/> <!-- Be Smarter, San Franpanfu -->
+    <game id="52" key="GAME_NAME_52" type="single" partner="none" adapter="basicAdapter"/> <!-- Pixel Guards, Engine Room -->
+    <!--game id="54" key="GAME_NAME_54" type="single" partner="none" adapter="basicAdapter"/--> <!-- Labyrinth -->
+    <game id="55" key="GAME_NAME_55" type="single" partner="none" adapter="basicAdapter"/> <!-- Panfu Defence, Bitter Forest -->
+    <game id="56" key="GAME_NAME_56" type="single" partner="none" adapter="basicAdapter"/> <!-- Christmas Workshop, North Pole -->
+  </games>
+  <gameserver>
+    <fullAtForWood value="95"/>
+    <fullAtForGold value="120"/>
+  </gameserver>
+  <helperQuiz>
+    <helperQuizPreconditions minDaysOnPanfu="30"/>
+    <helperQuizConfig randomChoice="1" quizNumberQuestions="10" quizMinCorrectAnswers="9"/>
+    <helperItem id="100020" hash="ccd8f8233da946890095fa4045d03d8f"/>
+    <helperQuizQuestions>
+      <question id="1" key="HELPER_QUIZ_1" validAnswer="2">
+        <answer id="1" questionID="1" key="HELPER_QUIZ_1_ANSWER_1"/>
+        <answer id="2" questionID="1" key="HELPER_QUIZ_1_ANSWER_2"/>
+        <answer id="3" questionID="1" key="HELPER_QUIZ_1_ANSWER_3"/>
+      </question>
+      <question id="2" key="HELPER_QUIZ_2" validAnswer="3">
+        <answer id="1" questionID="2" key="HELPER_QUIZ_2_ANSWER_1"/>
+        <answer id="2" questionID="2" key="HELPER_QUIZ_2_ANSWER_2"/>
+        <answer id="3" questionID="2" key="HELPER_QUIZ_2_ANSWER_3"/>
+      </question>
+      <question id="3" key="HELPER_QUIZ_3" validAnswer="1">
+        <answer id="1" questionID="3" key="HELPER_QUIZ_3_ANSWER_1"/>
+        <answer id="2" questionID="3" key="HELPER_QUIZ_3_ANSWER_2"/>
+        <answer id="3" questionID="3" key="HELPER_QUIZ_3_ANSWER_3"/>
+      </question>
+      <question id="4" key="HELPER_QUIZ_4" validAnswer="1">
+        <answer id="1" questionID="4" key="HELPER_QUIZ_4_ANSWER_1"/>
+        <answer id="2" questionID="4" key="HELPER_QUIZ_4_ANSWER_2"/>
+        <answer id="3" questionID="4" key="HELPER_QUIZ_4_ANSWER_3"/>
+      </question>
+      <question id="5" key="HELPER_QUIZ_5" validAnswer="2">
+        <answer id="1" questionID="5" key="HELPER_QUIZ_5_ANSWER_1"/>
+        <answer id="2" questionID="5" key="HELPER_QUIZ_5_ANSWER_2"/>
+        <answer id="3" questionID="5" key="HELPER_QUIZ_5_ANSWER_3"/>
+      </question>
+      <question id="6" key="HELPER_QUIZ_6" validAnswer="2">
+        <answer id="1" questionID="6" key="HELPER_QUIZ_6_ANSWER_1"/>
+        <answer id="2" questionID="6" key="HELPER_QUIZ_6_ANSWER_2"/>
+        <answer id="3" questionID="6" key="HELPER_QUIZ_6_ANSWER_3"/>
+      </question>
+      <question id="7" key="HELPER_QUIZ_7" validAnswer="1">
+        <answer id="1" questionID="7" key="HELPER_QUIZ_7_ANSWER_1"/>
+        <answer id="2" questionID="7" key="HELPER_QUIZ_7_ANSWER_2"/>
+        <answer id="3" questionID="7" key="HELPER_QUIZ_7_ANSWER_3"/>
+      </question>
+      <question id="8" key="HELPER_QUIZ_8" validAnswer="3">
+        <answer id="1" questionID="8" key="HELPER_QUIZ_8_ANSWER_1"/>
+        <answer id="2" questionID="8" key="HELPER_QUIZ_8_ANSWER_2"/>
+        <answer id="3" questionID="8" key="HELPER_QUIZ_8_ANSWER_3"/>
+      </question>
+      <question id="9" key="HELPER_QUIZ_9" validAnswer="3">
+        <answer id="1" questionID="9" key="HELPER_QUIZ_9_ANSWER_1"/>
+        <answer id="2" questionID="9" key="HELPER_QUIZ_9_ANSWER_2"/>
+        <answer id="3" questionID="9" key="HELPER_QUIZ_9_ANSWER_3"/>
+      </question>
+      <question id="10" key="HELPER_QUIZ_10" validAnswer="3">
+        <answer id="1" questionID="10" key="HELPER_QUIZ_10_ANSWER_1"/>
+        <answer id="2" questionID="10" key="HELPER_QUIZ_10_ANSWER_2"/>
+        <answer id="3" questionID="10" key="HELPER_QUIZ_10_ANSWER_3"/>
+      </question>
+      <question id="11" key="HELPER_QUIZ_11" validAnswer="2">
+        <answer id="1" questionID="11" key="HELPER_QUIZ_11_ANSWER_1"/>
+        <answer id="2" questionID="11" key="HELPER_QUIZ_11_ANSWER_2"/>
+        <answer id="3" questionID="11" key="HELPER_QUIZ_11_ANSWER_3"/>
+      </question>
+      <question id="12" key="HELPER_QUIZ_12" validAnswer="1">
+        <answer id="1" questionID="12" key="HELPER_QUIZ_12_ANSWER_1"/>
+        <answer id="2" questionID="12" key="HELPER_QUIZ_12_ANSWER_2"/>
+        <answer id="3" questionID="12" key="HELPER_QUIZ_12_ANSWER_3"/>
+      </question>
+      <question id="13" key="HELPER_QUIZ_13" validAnswer="3">
+        <answer id="1" questionID="13" key="HELPER_QUIZ_13_ANSWER_1"/>
+        <answer id="2" questionID="13" key="HELPER_QUIZ_13_ANSWER_2"/>
+        <answer id="3" questionID="13" key="HELPER_QUIZ_13_ANSWER_3"/>
+      </question>
+      <question id="14" key="HELPER_QUIZ_14" validAnswer="2">
+        <answer id="1" questionID="14" key="HELPER_QUIZ_14_ANSWER_1"/>
+        <answer id="2" questionID="14" key="HELPER_QUIZ_14_ANSWER_2"/>
+        <answer id="3" questionID="14" key="HELPER_QUIZ_14_ANSWER_3"/>
+      </question>
+      <question id="15" key="HELPER_QUIZ_15" validAnswer="3">
+        <answer id="1" questionID="15" key="HELPER_QUIZ_15_ANSWER_1"/>
+        <answer id="2" questionID="15" key="HELPER_QUIZ_15_ANSWER_2"/>
+        <answer id="3" questionID="15" key="HELPER_QUIZ_15_ANSWER_3"/>
+      </question>
+      <question id="16" key="HELPER_QUIZ_16" validAnswer="1">
+        <answer id="1" questionID="16" key="HELPER_QUIZ_16_ANSWER_1"/>
+        <answer id="2" questionID="16" key="HELPER_QUIZ_16_ANSWER_2"/>
+        <answer id="3" questionID="16" key="HELPER_QUIZ_16_ANSWER_3"/>
+      </question>
+      <question id="17" key="HELPER_QUIZ_17" validAnswer="2">
+        <answer id="1" questionID="17" key="HELPER_QUIZ_17_ANSWER_1"/>
+        <answer id="2" questionID="17" key="HELPER_QUIZ_17_ANSWER_2"/>
+        <answer id="3" questionID="17" key="HELPER_QUIZ_17_ANSWER_3"/>
+      </question>
+      <question id="18" key="HELPER_QUIZ_18" validAnswer="2">
+        <answer id="1" questionID="18" key="HELPER_QUIZ_18_ANSWER_1"/>
+        <answer id="2" questionID="18" key="HELPER_QUIZ_18_ANSWER_2"/>
+        <answer id="3" questionID="18" key="HELPER_QUIZ_18_ANSWER_3"/>
+      </question>
+      <question id="19" key="HELPER_QUIZ_19" validAnswer="3">
+        <answer id="1" questionID="19" key="HELPER_QUIZ_19_ANSWER_1"/>
+        <answer id="2" questionID="19" key="HELPER_QUIZ_19_ANSWER_2"/>
+        <answer id="3" questionID="19" key="HELPER_QUIZ_19_ANSWER_3"/>
+      </question>
+      <question id="20" key="HELPER_QUIZ_20" validAnswer="1">
+        <answer id="1" questionID="20" key="HELPER_QUIZ_20_ANSWER_1"/>
+        <answer id="2" questionID="20" key="HELPER_QUIZ_20_ANSWER_2"/>
+        <answer id="3" questionID="20" key="HELPER_QUIZ_20_ANSWER_3"/>
+      </question>
+      <question id="21" key="HELPER_QUIZ_21" validAnswer="1">
+        <answer id="1" questionID="21" key="HELPER_QUIZ_21_ANSWER_1"/>
+        <answer id="2" questionID="21" key="HELPER_QUIZ_21_ANSWER_2"/>
+        <answer id="3" questionID="21" key="HELPER_QUIZ_21_ANSWER_3"/>
+      </question>
+      <question id="22" key="HELPER_QUIZ_22" validAnswer="2">
+        <answer id="1" questionID="22" key="HELPER_QUIZ_22_ANSWER_1"/>
+        <answer id="2" questionID="22" key="HELPER_QUIZ_22_ANSWER_2"/>
+        <answer id="3" questionID="22" key="HELPER_QUIZ_22_ANSWER_3"/>
+      </question>
+      <question id="23" key="HELPER_QUIZ_23" validAnswer="1">
+        <answer id="1" questionID="23" key="HELPER_QUIZ_23_ANSWER_1"/>
+        <answer id="2" questionID="23" key="HELPER_QUIZ_23_ANSWER_2"/>
+        <answer id="3" questionID="23" key="HELPER_QUIZ_23_ANSWER_3"/>
+      </question>
+      <question id="24" key="HELPER_QUIZ_24" validAnswer="1">
+        <answer id="1" questionID="24" key="HELPER_QUIZ_24_ANSWER_1"/>
+        <answer id="2" questionID="24" key="HELPER_QUIZ_24_ANSWER_2"/>
+        <answer id="3" questionID="24" key="HELPER_QUIZ_24_ANSWER_3"/>
+      </question>
+      <question id="25" key="HELPER_QUIZ_25" validAnswer="1">
+        <answer id="1" questionID="25" key="HELPER_QUIZ_25_ANSWER_1"/>
+        <answer id="2" questionID="25" key="HELPER_QUIZ_25_ANSWER_2"/>
+        <answer id="3" questionID="25" key="HELPER_QUIZ_25_ANSWER_3"/>
+      </question>
+    </helperQuizQuestions>
+    <sounds>
+      <file id="hquiz_choose" fileName="checkAnswer"/>
+      <file id="hquiz_noanswer" fileName="noAnswer"/>
+      <file id="hquiz_correct" fileName="correctAnswer"/>
+      <file id="hquiz_wrong" fileName="wrongAnswer"/>
+      <file id="hquiz_failed" fileName="quizFailed"/>
+      <file id="hquiz_success" fileName="quizSuccess"/>
+    </sounds>
+  </helperQuiz>
+  <items path="tools/conf/items.xml" _REPLACE_="1">
+    <item id="wetSuit" itemID="100200" name="Diving Suit"/>
+  </items>
+  <langs>
+    <hosts>
+      <DE url="https://www.panfu.me"/>
+      <EN url="https://www.panfu.me"/>
+      <PL url="https://www.panfu.me"/>
+    </hosts>
+    <timezones>
+      <DE time="0"/>
+      <EN time="0"/>
+      <PL time="0"/>
+    </timezones>
+  </langs>
+  <pokopets>
+    <states>
+      <normal successor="idle" timeout="100,200"/>
+      <idle successor="normal" timeout="100"/>
+      <sleeping successor="normal" timeout="10"/>
+      <playing successor="normal" timeout="10"/>
+      <eating successor="normal" timeout="9"/>
+      <walking successor="normal"/>
+      <denying successor="normal" timeout="3600"/>
+      <decrease successor="normal" timeout="600"/>
+      <rescue successor="normal" timeout="3600"/>
+      <tricking successor="normal" timeout="10"/>
+    </states>
+    <characters>
+      <pokopet_turtle type="1" x="600" y="35" z="5" colour="-1000" normal="turtleIdle" idle="turtleIdle" game="turtleTrick" denying="turtlePissed" sleeping="turtleIdle" eating="turtleEating" cardBack="turtleIdle" style="normal" useSoundOfId="20005"/>
+      <pokopet_paradisebird type="2" x="600" y="35" z="5" colour="-1001" normal="birdIdle" idle="birdIdle" game="birdTrick" denying="birdPissed" sleeping="turtleIdle" eating="birdEating" cardBack="turtleIdle" style="normal" useSoundOfId="20005"/>
+      <pokopet_fox type="3" x="600" y="35" z="5" colour="-1002" normal="foxIdle" idle="foxIdle" game="foxTrick" denying="foxPissed" sleeping="turtleIdle" eating="foxEating" cardBack="turtleIdle" style="normal" useSoundOfId="20005"/>
+      <pokopet_hedgehog type="4" x="600" y="35" z="5" colour="-1003" normal="hedgehogIdle" idle="hedgehogIdle" game="hedgehogTrick" denying="hedgehogPissed" sleeping="turtleIdle" eating="hedgehogEating" cardBack="turtleIdle" style="normal" useSoundOfId="20005"/>
+      <pokopet_bluedragon type="5" x="600" y="35" z="5" colour="-1004" normal="blueDragonIdle" idle="blueDragonIdle" game="blueDragonTrick" denying="blueDragonPissed" sleeping="turtleIdle" eating="blueDragonEating" cardBack="turtleIdle" style="normal" useSoundOfId="20005"/>
+      <pokopet_bugsy type="6" x="600" y="35" z="5" colour="-1005" normal="bugsyIdle" idle="bugsyIdle" game="bugsyTrick" denying="bugsyPissed" sleeping="bugsyIdle" eating="bugsyEating" cardBack="bugsyIdle" style="normal" useSoundOfId="20005"/>
+      <pokopet_tork type="7" x="600" y="35" z="5" colour="-1006" normal="torkIdle" idle="torkIdle" game="torkTrick" denying="torkPissed" sleeping="torkIdle" eating="torkEating" cardBack="torkIdle" style="normal" useSoundOfId="20005"/>
+      <pokopet_pingoo type="8" x="600" y="35" z="5" colour="-1007" normal="pingooIdle" idle="pingooIdle" game="pingooTrick" denying="pingooPissed" sleeping="pingooIdle" eating="pingooEating" cardBack="pingooIdle" style="normal" useSoundOfId="20005"/>
+      <pokopet_marieta type="9" x="600" y="35" z="5" colour="-1008" normal="marietaIdle" idle="marietaIdle" game="marietaTrick" denying="marietaDenying" sleeping="marietaIdle" eating="marietaEating" cardBack="marietaIdle" style="normal" useSoundOfId="20005"/>
+    </characters>
+    <levelrequirements>
+      <level pokpetId="1" levelneeded="0"/>
+      <level pokpetId="2" levelneeded="0"/>
+      <level pokpetId="3" levelneeded="20"/>
+      <level pokpetId="4" levelneeded="20"/>
+      <level pokpetId="5" levelneeded="0"/>
+      <level pokpetId="6" levelneeded="1"/>
+      <level pokpetId="7" levelneeded="25"/>
+      <level pokpetId="8" levelneeded="0"/>
+      <level pokpetId="9" levelneeded="0"/>
+    </levelrequirements>
+  </pokopets>
+  <profiles>
+    <local logging="1" sounds="0" auto_login="1" start_room="-1"/>
+    <dev logging="1" sounds="0" auto_login="0" start_room="-1"/>
+    <production logging="0" sounds="1" auto_login="0" start_room="-1"/>
+  </profiles>
+  <quests base="quests/$$type$$/" path="$$type$$.swf">
+    <quest type="bigFootQuest" id="bigFootQuest" preload="1"/>
+    <!--<quest type="dolphinQuiz" id="dolphinQuiz" preload="1"/>-->
+    <quest type="horse" id="horse" preload="1"/>
+    <quest type="letsGoThere" id="letsGoThere" preload="1"/>
+    <!--<quest type="movieTheaterQuest" id="movieTheaterQuest" preload="1"/>-->
+    <quest type="mysonisapirate" id="mysonisapirate" preload="1"/>
+    <quest type="mysteriousCall" id="mysteriousCall" preload="1"/>
+    <quest type="newPetsQuest" id="newPetsQuest" preload="1"/>
+    <!--<quest type="oscarAdvices" id="oscarAdvices" preload="1"/>-->
+    <quest type="rareItemMachine" id="rareItemMachine" preload="1"/>
+    <quest type="smallTalk" id="smallTalk" preload="1"/>
+    <quest type="surfer" id="surfer" preload="1"/>
+    <quest type="swimmingQuest" id="swimmingQuest" preload="1"/>
+    <quest type="theLostLover" id="theLostLover" preload="1"/>
+    <quest type="tillDeath" id="tillDeath" preload="1"/>
+    <quest type="transitionQuest" id="transitionQuest" preload="1"/>
+    <quest type="tutorial1" id="tutorial1" preload="1"/>
+    <quest type="tutorial2" id="tutorial2" preload="1"/>
+    <quest type="unicornQuest" id="unicornQuest" preload="1"/>
+    <quest type="woobyQuest" id="woobyQuest" preload="1"/>
+  </quests>
+  <reminder/>
+  <rooms base="rooms/$$id$$/" path="rooms/$$id$$/$$id$$.swf">
+    <passingOfTime dayLength="180 minutes"/>
+    <room volume="1" num="0" id="home" key="HOME" allowed="1">
+      <spawn from="default" x="320" y="320" radx="100" rady="30" rot="6"/>
+    </room>
+    <room volume="1" num="1" id="icecreamparlor" key="ICECREAMPARLOR" allowed="1">
+      <spawn from="default" x="430" y="251" radx="50" rady="40" rot="6"/>
+      <spawn from="2" x="79" y="378" radx="65" rady="40" rot="0"/>
+    </room>
+    <room volume="1" num="2" id="library" key="LIBRARY" allowed="1">
+      <spawn from="default" x="450" y="172" radx="25" rady="50" rot="6"/>
+      <spawn from="1" x="450" y="172" radx="25" rady="50" rot="6"/>
+    </room>
+    <room volume="1" num="3" id="pool" key="POOL" allowed="1" areaForVehicle="true" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="360" y="390" radx="60" rady="40" rot="2"/>
+      <spawn from="11" x="645" y="162" radx="35" rady="35" rot="5"/>
+      <spawn from="10" x="435" y="151" radx="35" rady="20" rot="6"/>
+      <spawn from="5" x="275" y="162" radx="45" rady="13" rot="7"/>
+      <spawn from="12" x="640" y="404" radx="60" rady="20" rot="3"/>
+      <spawn from="39" x="719" y="320" radx="30" rady="25" rot="4"/>
+    </room>
+    <room volume="1" num="4" id="town" key="TOWN" allowed="1">
+      <spawn from="default" x="340" y="370" radx="76" rady="30" rot="2"/>
+      <spawn from="7" x="566" y="349" radx="40" rady="32" rot="5"/>
+      <spawn from="6" x="324" y="276" radx="50" rady="25" rot="7"/>
+      <spawn from="1" x="188" y="296" radx="45" rady="21" rot="7"/>
+      <spawn from="12" x="93" y="323" radx="50" rady="25" rot="1"/>
+      <spawn from="22" x="390" y="300" radx="40" rady="27" rot="5"/>
+      <spawn from="8" x="669" y="400" radx="50" rady="50" rot="3"/>
+    </room>
+    <room volume="1" num="5" id="kiosk" key="KIOSK" allowed="1">
+      <spawn from="default" x="455" y="234" radx="50" rady="45" rot="6"/>
+    </room>
+    <room volume="1" num="6" id="giftshop" key="GIFTSHOP" allowed="1">
+      <spawn from="default" x="500" y="237" radx="50" rady="35" rot="6"/>
+    </room>
+    <room volume="1" num="7" id="animalshop" key="ANIMALSHOP" allowed="1">
+      <spawn from="default" x="507" y="300" radx="75" rady="50" rot="4"/>
+    </room>
+    <room volume="1" num="8" id="sportsfield" key="SPORTSFIELD" allowed="1">
+      <spawn from="default" x="680" y="261" radx="50" rady="45" rot="4"/>
+      <spawn from="13" x="657" y="365" radx="40" rady="40" rot="4"/>
+      <spawn from="9" x="580" y="144" radx="50" rady="10" rot="6"/>
+      <spawn from="4" x="97" y="383" radx="50" rady="40" rot="1"/>
+      <spawn from="43" x="203" y="149" radx="40" rady="10" rot="6"/>
+    </room>
+    <room volume="1" num="9" id="gymnasium" key="SPORTSHALL" allowed="1">
+      <spawn from="default" x="391" y="230" radx="75" rady="60" rot="6"/>
+    </room>
+    <room volume="1" num="10" id="lockerroom" key="CHANGINGROOM" allowed="1">
+      <spawn from="default" x="509" y="343" radx="55" rady="50" rot="4"/>
+      <spawn from="3" x="363" y="250" radx="65" rady="30" rot="6"/>
+    </room>
+    <room volume="1" num="11" id="volcano" key="VOLCANO" allowed="1">
+      <spawn from="default" x="385" y="350" radx="65" rady="35" rot="2"/>
+      <spawn from="13" x="530" y="320" radx="70" rady="40" rot="3"/>
+      <spawn from="3" x="320" y="405" radx="70" rady="30" rot="1"/>
+    </room>
+    <room volume="1" num="12" id="jungle" key="JUNGLE" allowed="1">
+      <spawn from="default" x="580" y="350" radx="75" rady="50" rot="3"/>
+      <spawn from="3" x="108" y="221" radx="35" rady="35" rot="0"/>
+      <spawn from="19" x="190" y="310" radx="35" rady="35" rot="1"/>
+      <spawn from="21" x="332" y="390" radx="50" rady="45" rot="4"/>
+      <spawn from="35" x="290" y="140" radx="55" rady="15" rot="6"/>
+      <spawn from="39" x="632" y="266" radx="50" rady="50" rot="4"/>
+      <spawn from="49" x="250" y="230" radx="20" rady="20" rot="5"/>
+      <spawn from="68" x="555" y="250" radx="25" rady="20" rot="5"/>
+    </room>
+    <room volume="1" num="13" id="castle" key="CASTLE" allowed="1">
+      <spawn from="default" x="507" y="405" radx="40" rady="25" rot="4"/>
+      <spawn from="11" x="79" y="385" radx="50" rady="40" rot="0"/>
+      <spawn from="59" x="402" y="402" radx="50" rady="25" rot="6"/>
+      <spawn from="8" x="606" y="405" radx="50" rady="25" rot="4"/>
+    </room>
+    <room volume="1" num="14" id="court" key="COURT" allowed="1">
+      <spawn from="default" x="633" y="392"/>
+      <spawn from="18" x="371" y="382"/>
+      <spawn from="15" x="443" y="224"/>
+      <spawn from="17" x="173" y="258"/>
+    </room>
+    <room volume="1" num="15" id="foyer" key="FOYER" allowed="1">
+      <spawn from="default" x="410" y="345" radx="60" rady="55" rot="2"/>
+      <spawn from="14" x="598" y="388" radx="70" rady="40" rot="4"/>
+      <spawn from="16" x="107" y="368" radx="50" rady="50" rot="0"/>
+    </room>
+    <room volume="1" num="16" id="ballroom" key="BALLROOM" allowed="1">
+      <spawn from="default" x="385" y="280" radx="75" rady="50" rot="6"/>
+      <spawn from="15" x="615" y="398" radx="75" rady="25" rot="3"/>
+      <spawn from="17" x="385" y="280" radx="75" rady="50" rot="6"/>
+    </room>
+    <room volume="1" num="17" id="terrace" key="TERRACE" allowed="1">
+      <spawn from="default" x="400" y="321" radx="85" rady="50" rot="2"/>
+      <spawn from="16" x="581" y="279" radx="55" rady="50" rot="5"/>
+      <spawn from="20" x="286" y="396" radx="20" rady="20" rot="7"/>
+      <spawn from="60" x="80" y="200" radx="20" rady="20" rot="7"/>
+    </room>
+    <room volume="1" num="18" id="disco" key="DISCO" allowed="1">
+      <spawn from="default" x="640" y="344" radx="85" rady="70" rot="4"/>
+    </room>
+    <room volume="1" num="19" id="beach" key="BEACH" allowed="1">
+      <spawn from="default" x="392" y="160" radx="40" rady="25" rot="5"/>
+      <spawn from="12" x="290" y="210" radx="40" rady="30" rot="7"/>
+      <spawn from="3" x="95" y="317" radx="50" rady="40" rot="0"/>
+      <spawn from="27" x="394" y="210" radx="45" rady="25" rot="2"/>
+      <spawn from="54" x="108" y="285" radx="45" rady="35" rot="7"/>
+    </room>
+    <room volume="1" num="20" id="tower" key="TOWER" allowed="1">
+      <spawn from="default" x="138" y="387" radx="70" rady="45" rot="1"/>
+    </room>
+    <room volume="1" num="21" id="junglecave" key="CAVE" allowed="1">
+      <spawn from="default" x="395" y="373" radx="75" rady="55" rot="2"/>
+      <spawn from="42" x="580" y="320" radx="60" rady="40" rot="5"/>
+      <spawn from="29" x="399" y="260" radx="35" rady="50" rot="6"/>
+      <spawn from="26" x="146" y="315" radx="55" rady="40" rot="7"/>
+    </room>
+    <room volume="1" num="22" id="bigcity" key="BIGCITY" allowed="1">
+      <spawn from="default" x="535" y="385" radx="60" rady="35" rot="3"/>
+      <spawn from="30" x="515" y="301" radx="50" rady="40" rot="5"/>
+      <spawn from="23" x="226" y="319" radx="40" rady="35" rot="7"/>
+      <spawn from="31" x="365" y="237" radx="35" rady="45" rot="6"/>
+    </room>
+    <room volume="1" num="23" id="beautysalon" key="BEAUTYSALON" allowed="0">
+      <checks>
+        <check allowed="1" socialLevelMin="2" key="showBlockEntranceExplanation" levelNeeded="2"/>
+      </checks>
+      <spawn from="default" x="385" y="240" radx="55" rady="45" rot="6"/>
+    </room>
+    <room volume="1" num="24" id="harbour" key="HARBOUR" allowed="1">
+      <spawn from="default" x="109" y="333" radx="65" rady="45" rot="1"/>
+      <spawn from="37" x="510" y="139" radx="35" rady="10" rot="4"/>
+      <spawn from="38" x="510" y="139" radx="35" rady="10" rot="4"/>
+      <spawn from="41" x="335" y="177" radx="35" rady="25" rot="7"/>
+      <spawn from="65" x="450" y="140" radx="35" rady="25" rot="5"/>
+      <spawn from="66" x="450" y="140" radx="35" rady="25" rot="5"/>
+      <spawn from="67" x="450" y="140" radx="35" rady="25" rot="5"/>
+    </room>
+    <room volume="1" num="25" id="seaground" key="SEAGROUND" allowed="1">
+      <spawn from="default" x="617" y="219"/>
+    </room>
+    <room volume="1" num="26" id="laboratory" key="LABORATORY" allowed="1">
+      <spawn from="default" x="590" y="273" radx="40" rady="25" rot="4"/>
+    </room>
+    <room volume="1" num="27" id="uafoyer" key="UAFOYER" allowed="1">
+      <spawn from="default" x="337" y="238" radx="40" rady="70" rot="6"/>
+      <spawn from="28" x="139" y="347" radx="60" rady="25" rot="0"/>
+    </room>
+    <room volume="1" num="28" id="classroom" key="CLASSROOM" allowed="1">
+      <spawn from="default" x="643" y="358" radx="65" rady="50" rot="3"/>
+    </room>
+    <room volume="1" num="29" id="fourboomcave" key="FOURBOOMCAVE" allowed="1">
+      <spawn from="default" x="402" y="268" radx="60" rady="50" rot="6"/>
+    </room>
+    <room volume="1" num="30" id="chezbruno" key="CHEZBRUNO" allowed="1">
+      <spawn from="default" x="272" y="302" radx="40" rady="50" rot="6"/>
+      <spawn from="22" x="272" y="302" radx="40" rady="50" rot="6"/>
+    </room>
+    <room volume="1" num="31" id="ponyyard" key="PONYYARD" dontAllowWalkOutWalkArea="true" allowed="1">
+      <spawn from="default" x="143" y="317" radx="70" rady="50" rot="7"/>
+      <spawn from="32" x="636" y="297" radx="50" rady="45" rot="5"/>
+      <spawn from="40" x="441" y="206" radx="60" rady="15" rot="6"/>
+    </room>
+    <room volume="1" num="32" id="ponystable" key="PONYSTABLE" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="390" y="257" radx="35" rady="70" rot="6"/>
+    </room>
+    <room volume="1" num="33" id="pandahill" key="PANDAHILL" allowed="1">
+      <spawn from="default" x="410" y="400" radx="45" rady="20" rot="2"/>
+    </room>
+    <room volume="1" num="34" id="scaryforest" key="SCARYFOREST" allowed="1">
+      <spawn from="default" x="312" y="359" radx="55" rady="55" rot="2"/>
+      <spawn from="33" x="644" y="309" radx="35" rady="35" rot="6"/>
+    </room>
+    <room volume="1" num="35" id="waterfallcave" key="WATERFALL_ROOM" allowed="1">
+      <spawn from="default" x="359" y="375" radx="80" rady="40" rot="2"/>
+    </room>
+    <room volume="1" num="36" id="beachCarabic" key="CARIBBEAN_BEACH" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="256" y="372" radx="70" rady="50" rot="1"/>
+      <spawn from="55" x="150" y="282" radx="65" rady="50" rot="0"/>
+    </room>
+    <room volume="1" num="37" id="islandLS" key="MAP_PIRATE" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="110" y="365" radx="6" rady="6" rot="1"/>
+      <spawn from="38" x="600" y="200" radx="50" rady="50" rot="4"/>
+    </room>
+    <room volume="1" num="38" id="islandRS" key="ISLANDRS" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="130" y="233" radx="30" rady="45" rot="0"/>
+    </room>
+    <room volume="1" num="39" id="lake" key="LAKE" allowed="1" areaForVehicle="true" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="225" y="350" radx="35" rady="40" rot="0"/>
+      <spawn from="3" x="85" y="336" radx="35" rady="40" rot="0"/>
+      <spawn from="12" x="160" y="350" radx="40" rady="30" rot="1"/>
+    </room>
+    <room volume="1" num="40" id="ponystableextend" key="PONYSTABLEEXTEND" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="200" y="260" radx="30" rady="25" rot="0"/>
+    </room>
+    <room volume="1" num="41" id="piratebar" key="PIRATE_BAR" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="610" y="317" radx="55" rady="30" rot="4"/>
+      <spawn from="44" x="373" y="389" radx="65" rady="25" rot="6"/>
+    </room>
+    <room volume="1" num="42" id="newcave" key="NEWCAVE" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="418" y="258" radx="60" rady="40" rot="6"/>
+    </room>
+    <room volume="1" num="43" id="racetrack" key="RACETRACK" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="469" y="382" radx="70" rady="25" rot="2"/>
+    </room>
+    <room volume="1" num="44" id="barBasement" key="BAR_BASEMENT" allowed="1" dontAllowWalkOutWalkArea="true" jumping="false">
+      <spawn from="default" x="164" y="305" radx="100" rady="50" rot="0"/>
+      <spawn from="45" x="400" y="244" radx="60" rady="50" rot="6"/>
+    </room>
+    <room volume="1" num="45" id="confusingStairs" key="LABYRINTH" allowed="1" dontAllowWalkOutWalkArea="true" jumping="false">
+      <spawn from="default" x="404" y="370" radx="60" rady="34" rot="1"/>
+      <spawn from="48" x="592" y="120" radx="10" rady="10" rot="5"/>
+    </room>
+    <room volume="1" num="46" id="ancientTemple" key="ANCIENTTEMPLE" allowed="1" dontAllowWalkOutWalkArea="true" jumping="false">
+      <spawn from="default" x="593" y="303" radx="75" rady="75" rot="3"/>
+    </room>
+    <room volume="1" num="47" id="colorRoom" key="COLORROOM" allowed="1" dontAllowWalkOutWalkArea="true" jumping="false">
+      <spawn from="default" x="566" y="358" radx="90" rady="50" rot="4"/>
+      <spawn from="46" x="209" y="192" radx="25" rady="15" rot="7"/>
+    </room>
+    <room volume="1" num="48" id="tunnel" key="TUNNEL" allowed="1" dontAllowWalkOutWalkArea="true" jumping="false">
+      <spawn from="default" x="445" y="339" radx="85" rady="55" rot="3"/>
+      <spawn from="47" x="99" y="165" radx="40" rady="25" rot="7"/>
+    </room>
+    <room volume="1" num="49" id="igloo" key="Igloo" allowed="0" dontAllowWalkOutWalkArea="true">
+      <checks>
+        <check allowed="1" dayOrAfter="Nov 16 2025"/>
+      </checks>
+      <spawn from="default" x="178" y="177" radx="30" rady="30" rot="7"/>
+    </room>
+    <room volume="1" num="50" id="oldtown" key="TOWN" allowed="1">
+      <spawn from="default" x="340" y="403" radx="76" rady="60" rot="2"/>
+      <spawn from="7" x="566" y="349" radx="40" rady="32" rot="5"/>
+      <spawn from="6" x="324" y="276" radx="50" rady="25" rot="7"/>
+      <spawn from="1" x="188" y="296" radx="45" rady="21" rot="7"/>
+      <spawn from="12" x="93" y="323" radx="50" rady="25" rot="1"/>
+      <spawn from="22" x="390" y="300" radx="40" rady="27" rot="5"/>
+      <spawn from="8" x="669" y="400" radx="50" rady="50" rot="3"/>
+    </room>
+    <room volume="1" num="51" id="lockertunnel" key="TUNNEL" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="333" y="394" radx="60" rady="30" rot="1"/>
+      <spawn from="52" x="586" y="145" radx="20" rady="25" rot="5"/>
+    </room>
+    <room volume="1" num="52" id="elevator" key="ELEVATOR" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="402" y="344" radx="70" rady="50" rot="2"/>
+      <spawn from="53" x="187" y="287" radx="50" rady="40" rot="7"/>
+    </room>
+    <room volume="1" num="53" id="mountain" key="MOUNTAIN" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="567" y="153" radx="50" rady="40" rot="6"/>
+    </room>
+    <room volume="1" num="54" id="hospital" key="HOSPITAL" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="399" y="244" radx="65" rady="50" rot="6"/>
+    </room>
+    <room volume="1" num="55" id="barn" key="BARN" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="140" y="358" radx="80" rady="30" rot="0"/>
+      <spawn from="58" x="435" y="370" radx="65" rady="40" rot="6"/>
+    </room>
+    <room volume="1" num="56" id="planeoutside" key="PLANEOUTSIDE" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="343" y="350" radx="100" rady="60" rot="2"/>
+    </room>
+    <room volume="1" num="57" id="planeinside" key="PLANEINSIDE" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="701" y="262" radx="35" rady="35" rot="5"/>
+    </room>
+    <room volume="1" num="58" id="barnInside" key="BARNINSIDE" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="253" y="200" radx="40" rady="70" rot="6"/>
+    </room>
+    <room volume="1" num="59" id="courtnew" key="COURT" allowed="1">
+      <spawn from="default" x="600" y="340" radx="75" rady="50" rot="2"/>
+      <spawn from="18" x="623" y="296" radx="40" rady="30" rot="5"/>
+      <spawn from="15" x="152" y="328" radx="75" rady="50" rot="0"/>
+      <spawn from="17" x="337" y="256" radx="75" rady="40" rot="7"/>
+    </room>
+    <room volume="1" num="60" id="paulsroom" key="PAULS_ROOM" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="435" y="321"/>
+      <spawn from="17" x="641" y="278"/>
+    </room>
+    <room volume="1" num="61" id="evroncastle_entrance" key="EVRONCASTLE_ENTRANCE" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="710" y="380" radx="10" rady="10" rot="4"/>
+    </room>
+    <room volume="1" num="62" id="evroncastle_road" key="BITTERLAND_CROSSROAD" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="580" y="380" radx="10" rady="10" rot="1"/>
+    </room>
+    <room volume="1" num="63" id="evroncastle_sky" key="EVRONCASTLE_SKY" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="800" y="500"/>
+    </room>
+    <room volume="1" num="64" id="napasapa_ufo" key="NAPASAPA_UFO" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="125" y="335"/>
+    </room>
+    <room volume="1" num="65" id="movieTheater1" key="MOVIE_THEATER" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="720" y="400"/>
+    </room>
+    <room volume="1" num="66" id="movieTheater2" key="MOVIE_THEATER" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="720" y="400"/>
+    </room>
+    <room volume="1" num="67" id="movieTheater3" key="MOVIE_THEATER" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="720" y="400"/>
+    </room>
+    <room volume="1" num="68" id="skyroom" key="SKY" allowed="1" dontAllowWalkOutWalkArea="false">
+      <spawn from="default" x="266" y="370" radx="40" rady="40" rot="2"/>
+    </room>
+    <room volume="1" num="69" id="loraxroom" key="LORAX" allowed="1" dontAllowWalkOutWalkArea="false">
+      <spawn from="default" x="266" y="370" radx="40" rady="40" rot="2"/>
+    </room>
+    <room volume="1" num="70" id="waleroom" key="WHALEROOM" allowed="1" dontAllowWalkOutWalkArea="false">
+      <spawn from="default" x="340" y="300" radx="40" rady="40" rot="2"/>
+    </room>
+    <room volume="1" num="71" id="knighthall" key="KNIGHTHALL" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="250" y="320" radx="40" rady="40" rot="2"/>
+    </room>
+    <room volume="1" num="72" id="darkroom" key="DARKROOM" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="300" y="250" radx="100" rady="100" rot="2"/>
+    </room>
+    <room volume="1" num="73" id="shiproom" key="SHIPROOM" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="240" y="340" radx="50" rady="50" rot="2"/>
+    </room>
+    <room volume="1" num="74" id="schoolroom" key="SCHOOLROOM_02" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="70" y="290" radx="40" rady="40" rot="2"/>
+    </room>
+    <room volume="1" num="75" id="treehole" key="TREE" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="660" y="370" radx="40" rady="40" rot="2"/>
+      <spawn from="34" x="660" y="370" radx="40" rady="40" rot="2"/>
+    </room>
+    <room volume="1" num="76" id="robotElevator" key="ROBOT_ELEVATOR" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="402" y="285" radx="70" rady="50" rot="2"/>
+    </room>
+    <room volume="1" num="77" id="toolcabin" key="TOOL_CABIN" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="402" y="285" radx="70" rady="50" rot="2"/>
+    </room>
+    <room volume="1" num="78" id="darkForest" key="BITTERLAND_FOREST" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="290" y="310" radx="50" rady="50" rot="2"/>
+    </room>
+    <room volume="1" num="79" id="santasWorkshop" key="SANTAS_WORKSHOP" allowed="0" dontAllowWalkOutWalkArea="true">
+      <checks>
+        <check allowed="1" dayOrAfter="Dec 1 2025"/>
+      </checks>
+      <spawn from="default" x="290" y="400" radx="50" rady="50" rot="2"/>
+    </room>
+    <room volume="1" num="80" id="northPole" key="NORTHPOLE" allowed="0" dontAllowWalkOutWalkArea="true">
+      <checks>
+        <check allowed="1" dayOrAfter="Dec 1 2025"/>
+      </checks>
+      <spawn from="default" x="400" y="370" radx="50" rady="50" rot="2"/>
+    </room>
+    <room volume="1" num="99" id="bitterland" key="BITTERLAND" allowed="0"/>
+    <room volume="1" num="150" id="chillroom" key="CHILLROOM" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="291" y="234"/>
+    </room>
+    <room volume="1" num="151" id="cloudroom" key="Cloudroom" allowed="1" dontAllowWalkOutWalkArea="true">
+      <spawn from="default" x="291" y="234"/>
+    </room>
+  </rooms>
+  <secureChat>
+    <config name="SC_HELPER" horizontal="-1" vertical="1" x="520" y="60"/>
+    <config name="SC_ALL" horizontal="1" vertical="-1" x="80" y="440"/>
+  </secureChat>
+  <snippets path="conf/snippets/text_snippets_client_$$lang$$.xml" _REPLACE_="1"/>
+  <socialScore>
+    <score enabled="1"/>
+  </socialScore>
+  <sounds>
+    <sound id="naviAction" volume="1" path="audio/navi/$$action$$.mp3"/>
+    <sound id="newsOver" volume="1" path="audio/navi/newsOver.mp3"/>
+    <sound id="mapOver" volume="1" path="audio/navi/mapOver.mp3"/>
+    <sound id="envelopeOver" volume="1" path="audio/navi/envelopeOver.mp3"/>
+    <sound id="closeLevelSlide" volume="1" path="audio/navi/closeLevelSlide.mp3"/>
+    <sound id="openLevelSlide" volume="1" path="audio/navi/openLevelSlide.mp3"/>
+    <sound id="toolTip" volume="1" path="audio/toolTips/$$toolTip$$.mp3"/>
+    <sound id="mapToolTip" volume="1" path="audio/toolTips/map.mp3"/>
+    <sound id="emote" volume="1" path="audio/emotes/$$emote$$.mp3"/>
+    <sound id="helperquiz" volume="1" path="audio/helperquiz/$$fileName$$.mp3"/>
+    <sound id="pandaanimation" volume="1" path="audio/navi/$$animationname$$.mp3"/>
+    <sound id="fireworksFly" volume="1" path="audio/navi/fireworksFly.mp3"/>
+    <sound id="ratSqueaking" volume="1" path="audio/navi/ratSqueaking.mp3" loops="-1"/>
+    <sound id="spiderTransformation" volume="1" path="audio/navi/spiderTransformation.mp3" loops="-1"/>
+    <sound id="fogTransformation" volume="1" path="audio/navi/fogTransformation.mp3" loops="-1"/>
+    <sound id="slimeBombAvatarColision" volume="1" path="audio/navi/slimeBombAvatarColision.mp3" loops="-1"/>
+    <sound id="cakeAvatarCollision" volume="1" path="audio/navi/cakeAvatarCollision.mp3"/>
+    <sound id="greenHazeTransformation" volume="1" path="audio/navi/greenHazeTransformation.mp3" loops="-1"/>
+    <sound id="hitLightningTransformation" volume="1" path="audio/navi/hitLightningTransformation.mp3"/>
+    <sound id="explosionTransformation" volume="1" path="audio/navi/explosionTransformation.mp3"/>
+    <sound id="pinkSlimeTransformation" volume="1" path="audio/navi/slimeBombAvatarColision.mp3"/>
+    <sound id="blueSlimeTransformation" volume="1" path="audio/navi/slimeBombAvatarColision.mp3"/>
+    <sound id="tumbleweedTransformation" volume="1" path="audio/navi/tumbleweedTransformation.mp3" loops="2"/>
+    <sound id="chickTransformation" volume="1" path="audio/navi/chickTransformation.mp3" loops="-1"/>
+    <sound id="snailTransformation" volume="1" path="audio/navi/snailTransformation.mp3" loops="-1"/>
+    <sound id="frogTransformation" volume="1" path="audio/navi/frogTransformation.mp3" loops="-1"/>
+    <sound id="batTransformation" volume="1" path="audio/navi/batTransformation.mp3" loops="-1"/>
+    <sound id="roboterTransformation" volume="0.1" path="audio/navi/roboterTransformation.mp3" loops="-1"/>
+    <sound id="iceCubeTransformation" volume="1" path="audio/navi/iceCubeTransformation.mp3" loops="-1"/>
+    <sound id="waterbombSplashSteam" volume="1" path="audio/navi/waterbombSplashSteam.mp3"/>
+    <sound id="fart" volume="1" path="audio/navi/fart.mp3"/>
+    <sound id="burp" volume="1" path="audio/navi/burp.mp3"/>
+    <sound id="magic" volume="1" path="audio/navi/magic.mp3"/>
+    <sound id="questUpdate" volume="1" path="audio/navi/questUpdate.mp3"/>
+    <sound id="questUnlock" volume="1" path="audio/navi/questUnlock.mp3"/>
+    <sound id="questFinished" volume="1" path="audio/navi/questFinished.mp3"/>
+    <sound id="heartrocket" volume="1" path="audio/navi/heartrocket.mp3"/>
+    <sound id="hole" volume="1" path="audio/navi/hole.mp3"/>
+    <sound id="rocker" volume="0.1" path="audio/navi/rocker.mp3" loops="-1"/>
+    <sound id="monsterfart" volume="1" path="audio/navi/monsterfart.mp3"/>
+    <sound id="parachute" volume="1" path="audio/navi/parachute.mp3"/>
+    <sound id="ray" volume="1" path="audio/navi/ray.mp3"/>
+    <sound id="teleport" volume="1" path="audio/navi/teleport.mp3"/>
+    <sound id="teleport2" volume="1" path="audio/navi/teleport2.mp3"/>
+    <sound id="teleport3" volume="1" path="audio/navi/teleport3.mp3"/>
+    <sound id="guideTo" volume="1" path="audio/navi/guideTo.mp3"/>
+    <sound id="tornado" volume="1" path="audio/navi/tornado.mp3"/>
+    <sound id="rabbit" volume="1" path="audio/navi/rabbitTransformation.mp3"/>
+    <sound id="splash" volume="1" path="audio/navi/splash.mp3"/>
+    <sound id="horseWalking" volume="0.2" path="audio/navi/horseWalking.mp3" loops="-1"/>
+    <sound id="waterSplash" volume="0.3" path="audio/navi/waterSplash.mp3"/>
+    <sound id="carHorn" volume="0.1" path="audio/navi/carHorn.mp3"/>
+    <sound id="girlCarSound" volume="0.2" path="audio/navi/girlCarSound.mp3" loops="-1"/>
+    <sound id="boyCarSound" volume="0.2" path="audio/navi/boyCarSound.mp3" loops="-1"/>
+    <sound id="hummerCarSound" volume="0.2" path="audio/navi/hummerCarSound.mp3" loops="-1"/>
+    <sound id="baa" volume="0.2" path="audio/navi/baa.mp3"/>
+    <sound id="woof" volume="0.2" path="audio/navi/woof.mp3"/>
+    <sound id="miau" volume="0.2" path="audio/navi/miau.mp3"/>
+    <sound id="northPoleTraveling" volume="1" path="audio/navi/northPoleTraveling.mp3"/>
+  </sounds>
+  <socialLevel>
+    <beautySalonEntryLevel socialLevelMin="2"/>
+    <laboratoryEntryLevel socialLevelMin="3"/>
+    <smileys>
+      <group>
+        <flowerSmiley socialLevelMin="41"/>
+        <ringSmiley socialLevelMin="46"/>
+        <detectiveSmiley socialLevelMin="54"/>
+        <checkerSmiley socialLevelMin="57"/>
+      </group>
+    </smileys>
+    <chicktransformation timer="30000" assetID="defaultChickAnimation" blockAction="true" needPouf="true" poufSoundAssetID="chickPouf" sound="chickTransformation" forceEndSound="true"/>
+    <snailtransformation timer="30000" assetID="defaultSnailAnimation" blockAction="true" needPouf="true" sound="snailTransformation" forceEndSound="true"/>
+    <frogtransformation timer="30000" assetID="defaultFrogAnimation" blockAction="true" needPouf="true" sound="frogTransformation" forceEndSound="true"/>
+    <slimebombtransformation assetID="slimeAnimation" blockAction="true" blockMouvement="true" sound="slimeBombAvatarColision" timer="3000" keepBolly="true" forceEndSound="true"/>
+    <caketransformation assetID="cakeAnimation" blockAction="true" blockMouvement="true" sound="cakeAvatarCollision" timer="3000" keepBolly="true" forceEndSound="true"/>
+    <explosiontransformation assetID="explosionAnimation" blockAction="true" blockMouvement="true" timer="7500" waitBeforeStart="0" keepBolly="true" sound="hitLightningTransformation" forceEndSound="true"/>
+    <pinkSlimetransformation assetID="pinkSlimeAnimation" blockAction="true" blockMouvement="true" timer="1750" waitBeforeStart="0" keepBolly="true" sound="pinkSlimeTransformation" forceEndSound="true"/>
+    <blueSlimetransformation assetID="blueSlimeAnimation" blockAction="true" blockMouvement="true" timer="1750" waitBeforeStart="0" keepBolly="true" sound="blueSlimeTransformation" forceEndSound="true"/>
+    <hitlightningtransformation assetID="hitLightningAnimation" blockAction="true" blockMouvement="true" timer="3000" waitBeforeStart="500" keepBolly="true" sound="hitLightningTransformation" forceEndSound="true"/>
+    <stonedtransformation assetID="stonedAnimation" blockAction="true" blockMouvement="true" timer="9000" waitBeforeStart="0" keepBolly="true" sound="hitLightningTransformation" forceEndSound="true" needPouf="true"/>
+    <tumbleweedtransformation assetID="tumbleweedAnimation" blockAction="true" blockMouvement="true" timer="10000" waitBeforeStart="0" keepBolly="true" sound="tumbleweedTransformation" forceEndSound="true" needPouf="true"/>
+    <hitlightningPlayertransformation assetID="hitLightningPlayerAnimation" blockAction="true" blockMouvement="true" timer="3000" keepBolly="true" sound="hitLightningTransformation" forceEndSound="true"/>
+    <icecubetransformation assetID="icecubeAnimation" blockAction="true" blockMouvement="true" timer="5000" keepBolly="true" specialEndAnimation="endAnimation" sound="iceCubeTransformation" forceEndSound="true"/>
+    <sheriffFreeze assetID="icecubeAnimation" blockAction="true" blockMouvement="true" blockChat="true" timer="60000" keepBolly="true" specialEndAnimation="endAnimation" sound="iceCubeTransformation" forceEndSound="true"/>
+    <parachute assetID="parachute" blockAction="true" blockMouvement="true" functionToLoad="doParachute"/>
+    <swimmingSuit assetID="defaultSwimmingAnimation" blockAction="true"/>
+    <battransformation assetID="defaultBatAnimation" blockAction="true" timer="60000" sound="batTransformation" forceEndSound="true"/>
+    <horsetransformation assetID="horseAnimation" blockAction="true" functionToLoad="rideHorse" functionEnd="endRideHorse"/>
+    <unicorntransformation assetID="unicornAnimation" blockAction="true" functionToLoad="rideHorse" functionEnd="endRideHorse"/>
+    <boycartransformation assetID="boyCarAnimation" blockAction="true" sound="boyCarSound" functionToLoad="driveCar" dblCickAction="playHorn" functionEnd="endDriveCar" forceEndSound="true"/>
+    <girlcartransformation assetID="girlCarAnimation" blockAction="true" sound="girlCarSound" functionToLoad="driveCar" dblCickAction="playHorn" functionEnd="endDriveCar" forceEndSound="true"/>
+    <boysledgetransformation assetID="boySledgeAnimation" blockAction="true" sound="boyCarSound" functionToLoad="driveCar" dblCickAction="playHorn" functionEnd="endDriveCar" forceEndSound="true"/>
+    <girlsledgetransformation assetID="girlSledgeAnimation" blockAction="true" sound="girlCarSound" functionToLoad="driveCar" dblCickAction="playHorn" functionEnd="endDriveCar" forceEndSound="true"/>
+    <hummercartransformation assetID="hummerCarAnimation" blockAction="true" sound="hummerCarSound" functionToLoad="driveCar" dblCickAction="playHorn" functionEnd="endDriveCar" forceEndSound="true"/>
+    <danceMJ assetID="danceMJAnimation" needPouf="true" stopOnAction="true" keepBolly="true" functionToLoad="doDanceMJ" functionEnd="endDanceMJ"/>
+    <bollytransformation assetID="defaultBollyAnimation" blockAction="true" needPouf="true"/>
+    <penguintransformation assetID="defaultPenguinAnimation" blockAction="true" timer="60000" needPouf="true" poufSoundAssetID="penguinPouf"/>
+    <moves>
+      <group>
+        <magic assetID="avatarAnimationMagic" assetButtonIcon="actionsMagicIcon" timer="9000" blockAction="true" sound="magic" forceEndSound="true" check="996f3c7aa5c0ae7"/>
+      </group>
+      <group>
+        <greenhaze socialLevelMin="11" assetButtonIcon="actionsGreenhazeIcon" assetID="greenHazeAnimation" timer="30000" blockAction="true" sound="greenHazeTransformation" forceEndSound="true" poufSoundAssetID="greenHazePouf" check="d678c27f2332c1c"/>
+        <mousetransformation socialLevelMin="8" timer="30000" sound="ratSqueaking" forceEndSound="true" assetButtonIcon="actionsMousetransformationIcon" assetID="defaultMouseAnimation" blockAction="true" needPouf="true" timeBetweenUse="120000" check="d41a0b7c992a43f"/>
+        <spidertransformation socialLevelMin="14" timeBetweenUse="120000" timer="30000" assetButtonIcon="actionsSpidertransformationIcon" assetID="defaultSpiderAnimation" blockAction="true" needPouf="true" poufSoundAssetID="spiderPouf" sound="spiderTransformation" forceEndSound="true" check="235a328cc27961c"/>
+        <rabbittransformation socialLevelMin="34" sound="rabbit" timeBetweenUse="120000" timer="30000" assetButtonIcon="actionsRabbittransformationIcon" assetID="defaultRabbitAnimation" blockAction="true" needPouf="true" premiumOnly="true" check="c2e2b113c635000"/>
+        <invisible assetButtonIcon="actionsInvisibleIcon" functionToLoad="doInvisible" sound="greenHazeTransformation" timer="30000" timeBetweenUse="120000" socialLevelMin="37" check="edc5144c549866f"/>
+        <fogtransformation socialLevelMin="44" timer="25000" assetButtonIcon="actionsFogtransformationIcon" assetID="fogAnimation" blockAction="true" needPouf="true" poufSoundAssetID="fogPouf" forceEndSound="true" check="618fbc21246a11b"/>
+        <robotertransformation socialLevelMin="60" sound="roboterTransformation" timeBetweenUse="120000" timer="30000" assetButtonIcon="actionsRobotertransformationIcon" assetID="defaultRoboterAnimation" blockAction="true" needPouf="true" premiumOnly="true" check="a7a5b45876cc672"/>
+      </group>
+      <group>
+        <sit assetButtonIcon="actionsSitIcon" check="b73884aecd91915"/>
+        <wave assetButtonIcon="actionsWaveIcon" check="17d7c71f5d4f6c9"/>
+        <dance socialLevelMin="10" assetButtonIcon="actionsDanceIcon" assetID="danceAnimation" needPouf="true" stopOnAction="true" keepBolly="true" check="6677a12a4f9d663"/>
+        <greenFart assetButtonIcon="actionsFartIcon" functionToLoad="doFart" assetID="greenFart" socialLevelMin="25" check="95aa4323e88e112"/>
+        <greenBurp functionToLoad="doBurp" assetID="greenBurp" socialLevelMin="1" check="6cf867faec58e7c"/>
+        <tornado assetButtonIcon="actionsTornadoIcon" assetID="tornado" functionToLoad="doTornadoAnimation" blockAction="true" sound="tornado" forceEndSound="true" socialLevelMin="26" premiumOnly="true" check="355e633a4c940d5"/>
+        <monsterFart assetButtonIcon="actionsMonsterfartIcon" functionToLoad="doFartAnimation" assetID="monsterFart" sound="monsterfart" socialLevelMin="29" premiumOnly="true" blockAction="true" blockMouvement="true" timeBetweenUse="120000" check="9f8e9ee99785f1b"/>
+        <teleportation assetButtonIcon="actionsTeleportationIcon" functionToLoad="doTeleport" sound="teleport" assetID="beam" socialLevelMin="30" timeBetweenUse="120000" check="98b64c83032fcfc"/>
+        <hole socialLevelMin="35" timeBetweenUse="120000" assetButtonIcon="actionsHoleIcon" functionToLoad="doHoleAnimation" assetID="hole" blockAction="true" blockMouvement="true" sound="hole" check="f02d56656c75354"/>
+        <dance2 socialLevelMin="48" assetButtonIcon="actionsDance2Icon" assetID="dance2Animation" needPouf="true" stopOnAction="true" keepBolly="true" premiumOnly="true" check="5bb326e08ba171d"/>
+        <dance3 socialLevelMin="51" assetButtonIcon="actionsDance3Icon" assetID="dance3Animation" needPouf="true" stopOnAction="true" keepBolly="true" premiumOnly="true" sound="rocker" check="7566aff244306ac"/>
+        <bubbles functionToLoad="doBubblesAnimation" assetID="bubbles" sound="bubbles" premiumOnly="true" blockAction="true" blockMouvement="true" timeBetweenUse="5000" check="eff02acb1a515c4"/>
+        <bubblesLong functionToLoad="doBubblesLongAnimation" assetID="bubblesLong" sound="bubbles" blockAction="true" timeBetweenUse="5000" check="3177d4de49e1e7b"/>
+        <shock functionToLoad="doShock" sound="teleport" assetID="shock" socialLevelMin="1" timeBetweenUse="3000" check="43b939b918927dd"/>
+      </group>
+    </moves>
+    <throws>
+      <group>
+        <gameInvite_41_ assetButtonIcon="throwsGameInvite_41_Icon" timeBetweenUse="10000" check="2a819b21f6b5431"/>
+      </group>
+      <group>
+        <chickSpell assetButtonIcon="throwsChickSpellIcon" socialLevelMin="22" timeBetweenUse="600000" premiumOnly="true" check="384198e90807666"/>
+        <frogSpell assetButtonIcon="throwsFrogSpellIcon" socialLevelMin="1" timeBetweenUse="600000" premiumOnly="false" achievementPoints="100" check="381f1ea3b1cce91"/>
+        <snailSpell assetButtonIcon="throwsSnailSpellIcon" socialLevelMin="1" timeBetweenUse="600000" premiumOnly="false" achievementPoints="200" check="a1df1d8ac1b4250"/>
+      </group>
+      <group>
+        <icecubeSpell assetButtonIcon="throwsIcecubeSpellIcon" socialLevelMin="20" timeBetweenUse="600000" check="e4cd5d302ee4e5a"/>
+        <lightningPlayerSpell assetButtonIcon="throwsLightningPlayerSpellIcon" socialLevelMin="18" timeBetweenUse="600000" premiumOnly="true" check="aaeb50dba16495b"/>
+        <rainbowRay assetButtonIcon="throwsRainbowRayIcon" socialLevelMin="28" premiumOnly="true" check="1d4121bae5a119f"/>
+        <masterOfIce assetButtonIcon="throwsMasterOfIceIcon" socialLevelMin="38" timeBetweenUse="600000" maxUse="3" check="1e06bb05d575367"/>
+        <flowerPower assetButtonIcon="throwsFlowerPowerIcon" socialLevelMin="55" premiumOnly="true" check="d997699a5bc2112"/>
+        <tumbleweed assetButtonIcon="throwsTumbleweedIcon" socialLevelMin="60" timeBetweenUse="600000" premiumOnly="true" check="03136afc08a635d"/>
+        <flyingHeart assetButtonIcon="throwsHeartIcon" check="4724bb304108049"/>
+        <kiss assetButtonIcon="throwsKissIcon" check="7d5809a2bd4f36a"/>
+      </group>
+      <group>
+        <waterbomb assetButtonIcon="throwsWaterbombIcon" check="2bd54d03425a99b"/>
+        <sendPancake assetButtonIcon="throwsPancakeIcon" check="4710a43e0ee63a9"/>
+        <fireworks assetButtonIcon="throwsFireworksIcon" socialLevelMin="5" timeBetweenUse="600000" check="9c6639ff7f489fd"/>
+        <slimebomb assetButtonIcon="throwsSlimebombIcon" socialLevelMin="15" timeBetweenUse="600000" check="648db949d9218ec"/>
+        <heartFireworks assetButtonIcon="throwsHeartFireworksIcon" socialLevelMin="23" timeBetweenUse="600000" premiumOnly="true" check="c394878a309209e"/>
+        <masterOfSlime assetButtonIcon="throwsMasterOfSlimeIcon" socialLevelMin="33" timeBetweenUse="600000" maxUse="3" premiumOnly="true" check="29bb83fe8391353"/>
+        <cake assetButtonIcon="throwsCakeIcon" socialLevelMin="44" timeBetweenUse="600000" check="3e9a4617f15e209"/>
+        <flyingPillow assetButtonIcon="throwsPillowIcon" socialLevelMin="50" check="ae1daf9b6f0ebb7"/>
+      </group>
+    </throws>
+  </socialLevel>
+  <specialWalks>
+    <specialWalk value="1" dateStart="16 Nov 2025" dateEnd="5 Feb 2026" availableRooms="3,4,8,11,12,13,17,19,22,24,31,33,34,36,37,38,39,43,49,53,55,56,59,68,80"/>
+    <specialWalk value="5" alwaysAvailable="true"/>
+    <specialWalk value="6" alwaysAvailable="true"/>
+    <specialWalk value="7" alwaysAvailable="true"/>
+  </specialWalks>
+  <states>
+    <category id="0"> <!-- Till Death Quest -->
+      <state id="0" default="1"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+      <state id="3" default="0"/>
+    </category>
+    <category id="1"> <!-- Swimming Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+    </category>
+    <category id="2"> <!-- My Son is a Pirate Quest -->
+      <state id="0" default="10"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="3"> <!-- Horse Quest -->
+      <state id="0" default="10"/>
+    </category>
+    <category id="4"> <!-- Penny and Lenny -->
+      <state id="0" default="10"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="5"> <!-- Level-up Machine -->
+      <state id="0" default="10"/>
+    </category>
+    <category id="9"> <!-- Wooby Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="15"> <!-- Lost Lover Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="25"> <!-- Bigfoot Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+    </category>
+    <category id="28"> <!-- Mysterious Call -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+    </category>
+    <category id="30"> <!-- Pokopets Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+      <state id="3" default="0"/>
+      <state id="4" default="0"/>
+    </category>
+    <category id="34"> <!-- Pokopet Catalogue -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="45"> <!-- Rescuing Pokopets -->
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+      <state id="3" default="0"/>
+      <state id="4" default="0"/>
+      <state id="5" default="0"/>
+      <state id="6" default="0"/>
+      <state id="7" default="0"/>
+    </category>
+    <category id="50"> <!-- Maze Game -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="60"> <!-- Ice Skating -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="1"/>
+    </category>
+    <category id="62"> <!-- Transition -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="65"> <!-- Oscar Hints -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+    </category>
+    <category id="67"> <!-- Let's Go There -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="72"> <!-- Tutorial 1 -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="-1"/>
+      <state id="3" default="0"/>
+    </category>
+    <category id="73"> <!-- Tutorial 2 -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="-1"/>
+    </category>
+    <category id="78"> <!-- Spy Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="83"> <!-- Smalltalk (do not remove) -->
+      <state id="0" default="0"/> <!-- Chronicler -->
+      <state id="1" default="0"/> <!-- Lifeguard -->
+      <state id="2" default="0"/> <!-- Gonzo -->
+      <state id="3" default="0"/> <!-- Kamaria -->
+      <state id="4" default="0"/> <!-- Bruno -->
+      <state id="5" default="0"/> <!-- Lenny -->
+      <state id="6" default="0"/> <!-- Bookworm -->
+      <state id="7" default="0"/> <!-- Lili -->
+      <state id="8" default="0"/> <!-- Paul -->
+      <state id="9" default="0"/> <!-- William -->
+      <state id="10" default="0"/> <!-- Curley -->
+      <state id="11" default="0"/> <!-- Mummy -->
+      <state id="12" default="0"/> <!-- Troy -->
+      <state id="13" default="0"/> <!-- Pandalangelo -->
+      <state id="14" default="0"/> <!-- Fisher -->
+      <state id="15" default="0"/> <!-- Penny -->
+      <state id="16" default="0"/> <!-- Trainer -->
+      <state id="17" default="0"/> <!-- Saddler -->
+      <state id="18" default="0"/> <!-- Lake Panel -->
+      <state id="19" default="0"/> <!-- Forest Panel -->
+      <state id="20" default="0"/> <!-- Racetrack Panel -->
+      <state id="21" default="0"/> <!-- Booster Panel -->
+      <state id="22" default="0"/> <!-- Grave -->
+    </category>
+    <category id="91"> <!-- Dolphin Quiz -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+      <state id="3" default="0"/>
+      <state id="4" default="0"/>
+      <state id="5" default="0"/>
+      <state id="6" default="0"/>
+      <state id="9" default="0"/>
+      <state id="10" default="0"/>
+      <state id="11" default="0"/>
+      <state id="7" default="0"/>
+      <state id="8" default="0"/>
+    </category>
+    <category id="95"> <!-- Unicorn Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="97"> <!-- Tivola Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+      <state id="3" default="0"/>
+    </category>
+    <category id="103"> <!-- Movie Theater -->
+      <state id="0" default="10"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="105"> <!-- Advent Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+    </category>
+    <category id="119"> <!-- Knighthall Wedding -->
+      <state id="0" default="200"/>
+    </category>
+    <category id="121"> <!-- Back to School -->
+      <state id="0" default="1000"/>
+      <state id="2" default="0"/>
+    </category>
+    <category id="124"> <!-- Bad Robot Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+    </category>
+    <category id="126"> <!-- New Years Eve -->
+      <state id="0" default="0"/>
+      <state id="1" default="1"/>
+    </category>
+    <category id="127"> <!-- Birthday Quest -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+      <state id="3" default="0"/>
+    </category>
+    <category id="132"> <!-- Kiss the Frog -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+    </category>
+    <category id="140"> <!-- Bitter Curse -->
+      <state id="0" default="1000"/>
+      <state id="2" default="1"/>
+    </category>
+    <category id="143"> <!-- Christmas -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="144"> <!-- Minigame Levels -->
+      <state id="0" default="0"/>
+      <state id="1" default="15"/>
+      <state id="2" default="15"/>
+      <state id="3" default="15"/>
+      <state id="4" default="15"/>
+      <state id="5" default="15"/>
+      <state id="6" default="15"/>
+      <state id="7" default="15"/>
+      <state id="8" default="15"/>
+      <state id="9" default="15"/>
+      <state id="10" default="15"/>
+    </category>
+    <category id="1000"> <!-- User Information -->
+      <state id="10" default="0"/> <!-- Bundle Popup -->
+      <state id="15" default="0"/> <!-- Bundle Icon -->
+      <state id="20" default="10"/> <!-- Invite -->
+      <state id="30" default="10"/> <!-- Bugsy Popup -->
+      <state id="90" default="0"/> <!-- Present Reminder Popup -->
+      <state id="100" default="0"/> <!-- Ingame Poll -->
+      <state id="105" default="0"/> <!-- Ingame Poll (Quests) -->
+      <state id="106" default="0"/> <!-- Ingame Poll (Like/Dislike) -->
+      <state id="107" default="0"/> <!-- Ingame Poll (Quest aspect) -->
+      <state id="110" default="0"/> <!-- Levels Reminder -->
+      <state id="120" default="0"/> <!-- Edit Birthday -->
+      <state id="125" default="0"/> <!-- Show Birthday -->
+      <state id="130" default="0"/> <!-- My Son is a Pirate Quest finished -->
+      <state id="135" default="0"/> <!-- Chronicler Quest finished -->
+      <state id="140" default="0"/> <!-- Glow active -->
+      <state id="145" default="0"/>
+      <state id="150" default="0"/>
+      <state id="155" default="0"/>
+      <state id="160" default="0"/>
+    </category>
+    <category id="1111">
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+      <state id="3" default="0"/>
+      <state id="4" default="0"/>
+    </category>
+    <category id="2000">
+      <state id="0" default="0"/>
+    </category>
+    <!-- Achievements -->
+    <category id="10001"> <!-- First Minigame finished -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10002"> <!-- First friendship -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10003"> <!-- First message sent -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10004"> <!-- Rare Item received -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10005"> <!-- Levelbooster used -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10006"> <!-- Furniture placed -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10007"> <!-- Clothes bought -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10008"> <!-- Furniture bought -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10009"> <!-- Bolly bought -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10010"> <!-- Pokopet bought -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10011"> <!-- Gold Member -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10012"> <!-- More treehouses -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10013"> <!-- Chronicler Quest -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10014"> <!-- Surfer Quest -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10015"> <!-- Chef Wooby Quest -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10016"> <!-- Lets Go There Quest -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10017"> <!-- My Son is a Pirate Quest -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10018"> <!-- Rescue Pokopets Quest -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10019"> <!-- Ice Diamond Quest -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10020"> <!-- All Quests done -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10021"> <!-- Party Hoster -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10022"> <!-- Party Joiner -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10023"> <!-- Famous -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10024"> <!-- Knowledge -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10025"> <!-- Transformers -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10026"> <!-- Icecube -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10027"> <!-- Skills -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10028"> <!-- Sit in Piratebar -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10029"> <!-- Devils smile -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10030"> <!-- Surprise -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10031"> <!-- Shrink me -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10032"> <!-- Pokopet Rookie -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10033"> <!-- Minigame Master -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+      <state id="3" default="0"/>
+      <state id="4" default="0"/>
+      <state id="5" default="0"/>
+      <state id="6" default="0"/>
+      <state id="7" default="0"/>
+      <state id="8" default="0"/>
+      <state id="9" default="0"/>
+      <state id="10" default="0"/>
+      <state id="11" default="0"/>
+      <state id="12" default="0"/>
+    </category>
+    <category id="10034"> <!-- Zoo -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10035"> <!-- Moneymakin' -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10036"> <!-- RPS -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+      <state id="3" default="0"/>
+      <state id="4" default="0"/>
+      <state id="5" default="0"/>
+    </category>
+    <category id="10037"> <!-- Pocket full of money -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10038"> <!-- Dress-O-Mania -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+    </category>
+    <category id="10039"> <!-- Saturday Night Fever -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10040"> <!-- Wet Pony -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10041"> <!-- Be a Ninja -->
+      <state id="0" default="0"/>
+    </category>
+    <category id="10042"> <!-- Around The World -->
+      <state id="0" default="0"/>
+      <state id="1" default="0"/>
+      <state id="2" default="0"/>
+      <state id="3" default="0"/>
+      <state id="4" default="0"/>
+      <state id="5" default="0"/>
+      <state id="6" default="0"/>
+      <state id="7" default="0"/>
+      <state id="8" default="0"/>
+      <state id="9" default="0"/>
+      <state id="10" default="0"/>
+      <state id="11" default="0"/>
+      <state id="12" default="0"/>
+      <state id="13" default="0"/>
+      <state id="15" default="0"/>
+      <state id="16" default="0"/>
+      <state id="17" default="0"/>
+      <state id="18" default="0"/>
+      <state id="19" default="0"/>
+      <state id="20" default="0"/>
+      <state id="21" default="0"/>
+      <state id="22" default="0"/>
+      <state id="23" default="0"/>
+      <state id="24" default="0"/>
+      <state id="26" default="0"/>
+      <state id="27" default="0"/>
+      <state id="28" default="0"/>
+      <state id="29" default="0"/>
+      <state id="30" default="0"/>
+      <state id="31" default="0"/>
+      <state id="32" default="0"/>
+      <state id="34" default="0"/>
+      <state id="35" default="0"/>
+      <state id="36" default="0"/>
+      <state id="39" default="0"/>
+      <state id="40" default="0"/>
+      <state id="41" default="0"/>
+      <state id="42" default="0"/>
+      <state id="43" default="0"/>
+      <state id="54" default="0"/>
+      <state id="55" default="0"/>
+      <state id="56" default="0"/>
+      <state id="58" default="0"/>
+      <state id="59" default="0"/>
+      <state id="60" default="0"/>
+      <state id="71" default="0"/>
+    </category>
+  </states>
+  <systems width="772" height="480" maxSheriffFreeze="10"/>
+  <url>
+    <default>
+      <home><![CDATA[/]]></home>
+      <logout><![CDATA[/logout]]></logout>
+    </default>
+  </url>
+</config>

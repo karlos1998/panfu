@@ -1,0 +1,47 @@
+<?php
+
+namespace Tests\Feature\Panfu;
+
+use App\Models\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Inertia\Testing\AssertableInertia as Assert;
+use Tests\TestCase;
+
+class PlayPageTest extends TestCase
+{
+    use RefreshDatabase;
+
+    public function test_guests_are_redirected_to_login_before_playing(): void
+    {
+        $this->get('/play')->assertRedirect(route('login'));
+    }
+
+    public function test_authenticated_users_can_open_local_flash_client(): void
+    {
+        $user = User::factory()->create();
+
+        $response = $this->actingAs($user)->get('/play');
+
+        $response
+            ->assertOk()
+            ->assertInertia(fn (Assert $page) => $page
+                ->component('Panfu/Play')
+                ->where('client.ruffleScript', '/vendor/ruffle/ruffle.js')
+                ->where('client.swfUrl', '/vendor/openpanfu/Panfu.swf')
+                ->where('client.baseUrl', '/vendor/openpanfu/')
+                ->where('client.flashvars.infoServer', '/gateway/amf/')
+                ->where('client.flashvars.mode', 'local')
+                ->missing('client.flashvars.sessionKey')
+                ->etc());
+    }
+
+    public function test_dashboard_route_keeps_legacy_auth_redirects_working(): void
+    {
+        $user = User::factory()->create();
+
+        $this
+            ->actingAs($user)
+            ->get('/dashboard')
+            ->assertRedirect(route('play'));
+    }
+}
