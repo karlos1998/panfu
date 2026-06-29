@@ -1,0 +1,15 @@
+<snippets date="05.05.2011 09:12:18">
+<GAMEOVER><![CDATA[Koniec gry]]></GAMEOVER>
+<INSTRUCTIONS><![CDATA[Zasady gry są następujące:
+
+Przeskakuj z chmury na chmurę używając myszki do sterowania twoimi ruchami. Za każdą nową chmurę, do której dotrzesz, dostaniesz 10 punktów. Jeśli uda ci się skoczyć na ptaka, dostaniesz 2 razy więcej punktów!
+
+Baw się dobrze!]]></INSTRUCTIONS>
+<PLAYAGAIN><![CDATA[Zagraj jeszcze raz!]]></PLAYAGAIN>
+<PLAYANDCHAT><![CDATA[Graj i czatuj]]></PLAYANDCHAT>
+<POINTS><![CDATA[Punkty]]></POINTS>
+<RESULT><![CDATA[Nieźle! Wygrywasz $$score$$ punktów!]]></RESULT>
+<SCORE><![CDATA[Punktów]]></SCORE>
+<STARTGAME><![CDATA[Zacznij grać!]]></STARTGAME>
+<TITLE><![CDATA[Chmura numer dziewięć]]></TITLE>
+</snippets>

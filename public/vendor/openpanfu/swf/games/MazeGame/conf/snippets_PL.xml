@@ -1,0 +1,34 @@
+<snippets date="11.11.2010 13:55:44">
+<MAZEGAME_BUTTON_MENU><![CDATA[Menu]]></MAZEGAME_BUTTON_MENU>
+<MAZEGAME_BUTTON_OK><![CDATA[OK]]></MAZEGAME_BUTTON_OK>
+<MAZEGAME_GATENAME_01_COURAGE><![CDATA[odwagi]]></MAZEGAME_GATENAME_01_COURAGE>
+<MAZEGAME_GATENAME_02_EMPATHY><![CDATA[empatii]]></MAZEGAME_GATENAME_02_EMPATHY>
+<MAZEGAME_GATENAME_03_KNOWLEDGE><![CDATA[wiedzy]]></MAZEGAME_GATENAME_03_KNOWLEDGE>
+<MAZEGAME_GATENAME_04_STRENGTH><![CDATA[siły]]></MAZEGAME_GATENAME_04_STRENGTH>
+<MAZEGAME_GATENAME_05_WISDOM><![CDATA[mądrości]]></MAZEGAME_GATENAME_05_WISDOM>
+<MAZEGAME_POPUP_LOST_BOMB><![CDATA[Niestety bomba przetoczyła się przez bramę i eksplodowała w środku maszyny zagadek.]]></MAZEGAME_POPUP_LOST_BOMB>
+<MAZEGAME_POPUP_LOST_FIELDS><![CDATA[Niestety, wszystkie tory są zablokowane. Spróbuj jeszcze raz!]]></MAZEGAME_POPUP_LOST_FIELDS>
+<MAZEGAME_POPUP_LOST_GATES><![CDATA[Niestety, wszystkie wyjścia są zablokowane. Najlepsze wyjście, to spróbować jeszcze raz!]]></MAZEGAME_POPUP_LOST_GATES>
+<MAZEGAME_POPUP_LOST_HEADER><![CDATA[Przegrałeś!]]></MAZEGAME_POPUP_LOST_HEADER>
+<MAZEGAME_POPUP_LOST_TIME><![CDATA[Niestety czas minął. Spróbuj jeszcze raz!]]></MAZEGAME_POPUP_LOST_TIME>
+<MAZEGAME_POPUP_LOST_TURN><![CDATA[Nie ma już wolnych pól. Spróbuj jeszcze raz.]]></MAZEGAME_POPUP_LOST_TURN>
+<MAZEGAME_POPUP_WON_CATEGORY><![CDATA[Osiągnąłeś cel $$gatename$$. ]]></MAZEGAME_POPUP_WON_CATEGORY>
+<MAZEGAME_POPUP_WON_CATEGORY_COINS><![CDATA[Osiągnąłeś cel $$gatename$$. Otrzymasz teraz wygrany przedmiot oraz $$amountcoins$$ monet.]]></MAZEGAME_POPUP_WON_CATEGORY_COINS>
+<MAZEGAME_TITLESCREEN_BUTTON_LEVELS><![CDATA[Level Select]]></MAZEGAME_TITLESCREEN_BUTTON_LEVELS>
+<MAZEGAME_TITLESCREEN_BUTTON_START><![CDATA[Rozpocznij grę.]]></MAZEGAME_TITLESCREEN_BUTTON_START>
+<MAZEGAME_TITLESCREEN_BUTTON_TUTORIAL><![CDATA[Instrukcje]]></MAZEGAME_TITLESCREEN_BUTTON_TUTORIAL>
+<MAZEGAME_TUTORIAL_BUTTON_BACK><![CDATA[wstecz]]></MAZEGAME_TUTORIAL_BUTTON_BACK>
+<MAZEGAME_TUTORIAL_BUTTON_BACKSTART><![CDATA[Menu główne]]></MAZEGAME_TUTORIAL_BUTTON_BACKSTART>
+<MAZEGAME_TUTORIAL_BUTTON_NEXT><![CDATA[dalej]]></MAZEGAME_TUTORIAL_BUTTON_NEXT>
+<MAZEGAME_TUTORIAL_HEADER><![CDATA[Instrukcje Maze-Game]]></MAZEGAME_TUTORIAL_HEADER>
+<MAZEGAME_TUTORIAL_TEXT_1_1><![CDATA[Zbuduj ścieżkę biegnącą od początku labiryntu aż do jednego z wyjść.]]></MAZEGAME_TUTORIAL_TEXT_1_1>
+<MAZEGAME_TUTORIAL_TEXT_1_2><![CDATA[Przeciągnij jeden z trzech klocków budowlanych z prawej strony ekranu i umieść go na planszy. Pojawią się wtedy trzy nowe klocki.]]></MAZEGAME_TUTORIAL_TEXT_1_2>
+<MAZEGAME_TUTORIAL_TEXT_2_1><![CDATA[Klocki blokujące pojawią się w przypadkowych miejscach na planszy.]]></MAZEGAME_TUTORIAL_TEXT_2_1>
+<MAZEGAME_TUTORIAL_TEXT_2_2><![CDATA[Młotek może zniszczyć klocki na planszy.]]></MAZEGAME_TUTORIAL_TEXT_2_2>
+<MAZEGAME_TUTORIAL_TEXT_2_3><![CDATA["Puste" klocki pojawiają się w przypadkowych miejsach i blokują wolne miejsce. ]]></MAZEGAME_TUTORIAL_TEXT_2_3>
+<MAZEGAME_TUTORIAL_TEXT_3_1><![CDATA[Zbieraj po drodze złote monety, aby dostać bonus przy wyjściu! ]]></MAZEGAME_TUTORIAL_TEXT_3_1>
+<MAZEGAME_TUTORIAL_TEXT_3_2><![CDATA[Uwaga! W większości labiryntów istnieje limit czasowy, limit klocków, a czasem wyjścia znikają. Zwracaj uwagę na komunikaty!]]></MAZEGAME_TUTORIAL_TEXT_3_2>
+<MAZEGAME_TUTORIAL_TEXT_3_3><![CDATA[Inne specjalne reguły utrudniają odnalezienie wyjścia. Bądź uważny i przygotuj się na to, że w labiryncie będą dziać się dziwne rzeczy!]]></MAZEGAME_TUTORIAL_TEXT_3_3>
+<MAZEGAME_TUTORIAL_TEXT_4_1><![CDATA[Naciśnij na koło fortuny, a otrzymasz nagrodę!]]></MAZEGAME_TUTORIAL_TEXT_4_1>
+<MAZEGAME_WHEEL_POPUP_TEXT><![CDATA[Gratulacje! Wygrałeś $$itemname$$ i otrzymujesz także Magiczną Różdżkę! ]]></MAZEGAME_WHEEL_POPUP_TEXT>
+</snippets>

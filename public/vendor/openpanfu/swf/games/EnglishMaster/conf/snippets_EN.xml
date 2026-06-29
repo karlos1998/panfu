@@ -1,0 +1,41 @@
+<snippets date="17.06.2011 10:05:50">
+<ANSWER><![CDATA[Answers:]]></ANSWER>
+<BTN_BACK><![CDATA[back]]></BTN_BACK>
+<BTN_CONTINUE><![CDATA[Play on]]></BTN_CONTINUE>
+<BTN_MENU><![CDATA[Main menu]]></BTN_MENU>
+<BTN_NEXT><![CDATA[next]]></BTN_NEXT>
+<BTN_PLAYNOW><![CDATA[Play Now]]></BTN_PLAYNOW>
+<FALSE><![CDATA[false]]></FALSE>
+<GAME_OVER><![CDATA[Game over]]></GAME_OVER>
+<INSTRUCTION_TEXT><![CDATA[1) Look at all the images carefully, then listen to the Spanish word or phrase.
+2) Repeat the Spanish word or phrase out loud.
+3) Which image belongs to the spoken Spanish word or phrase? Click on the correct one.
+4) Repeat the Spanish word or phrase out loud again using the same pronunciation.
+5) Then move on to the next question.
+Click on this button to go further.]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TEXT2><![CDATA[Using the images, you will look, hear and speak - this way you will learn Spanish all by yourself.
+This game is not about being the best or gaining the most points.]]></INSTRUCTION_TEXT2>
+<INSTRUCTION_TEXT4><![CDATA[In Level 1, there is 5 points per correct answer.
+In Level 2 there is 10 points per correct answer.
+In Level 3, there is 15 points per correct answer.
+]]></INSTRUCTION_TEXT4>
+<INSTRUCTION_TEXT4_1><![CDATA[In Level 1, there is 5 points per correct answer.]]></INSTRUCTION_TEXT4_1>
+<INSTRUCTION_TEXT4_2><![CDATA[In Level 2 there is 10 points per correct answer.]]></INSTRUCTION_TEXT4_2>
+<INSTRUCTION_TEXT4_3><![CDATA[In Level 3, there is 15 points per correct answer.]]></INSTRUCTION_TEXT4_3>
+<INSTRUCTION_TEXT5><![CDATA[Crab - correct answer]]></INSTRUCTION_TEXT5>
+<INSTRUCTION_TEXT7><![CDATA[Shark - Look again]]></INSTRUCTION_TEXT7>
+<INSTRUCTION_TITLE><![CDATA[Instructions]]></INSTRUCTION_TITLE>
+<INTRO><![CDATA[You're in the Underwater Academy on your way to becoming the Spanish Super Master: 
+Click on "Play Now" and choose your level. 
+In the instructions you find out how the game works. 
+Have fun!]]></INTRO>
+<LEAVE_GAME><![CDATA[Are You sure You want to quit this round?]]></LEAVE_GAME>
+<LEVEL><![CDATA[Choose level:]]></LEVEL>
+<LOST><![CDATA[You have answered only $$percent$$ of the questions correctly. Please try again.]]></LOST>
+<NO><![CDATA[No]]></NO>
+<POINTS><![CDATA[You have won $$score$$ points.]]></POINTS>
+<TOTAL_POINTS><![CDATA[Total Points]]></TOTAL_POINTS>
+<TRUE><![CDATA[correct]]></TRUE>
+<WIN><![CDATA[Bravo! You have answered $$percent$$ of all questions correctly! Try the next level.]]></WIN>
+<YES><![CDATA[Yes]]></YES>
+</snippets>

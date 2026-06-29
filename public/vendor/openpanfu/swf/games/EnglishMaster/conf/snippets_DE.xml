@@ -1,0 +1,40 @@
+﻿<snippets date="17.06.2011 10:05:50">
+<ANSWER><![CDATA[Antworten:]]></ANSWER>
+<BTN_BACK><![CDATA[zurück]]></BTN_BACK>
+<BTN_CONTINUE><![CDATA[Weiterspielen]]></BTN_CONTINUE>
+<BTN_MENU><![CDATA[Hauptmenü]]></BTN_MENU>
+<BTN_NEXT><![CDATA[weiter]]></BTN_NEXT>
+<BTN_PLAYNOW><![CDATA[Spielen]]></BTN_PLAYNOW>
+<FALSE><![CDATA[falsch]]></FALSE>
+<GAME_OVER><![CDATA[Game over]]></GAME_OVER>
+<INSTRUCTION_TEXT><![CDATA[1) Schau dir zuerst in aller Ruhe alle Bilder an und hör dir das englische Wort oder den Satz an. 
+2) Wiederhole das Wort oder den Satz laut.
+3) Zu welchem Bild passt das Wort oder der Satz? Klick darauf.
+4) Wiederhole noch einmal laut den Satz.
+5) Dann geht es weiter zur nächsten Frage.
+Mit diesem Button kommst du weiter.]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TEXT2><![CDATA[Auf die Bilder schauen, zuhören, nachsprechen - so lernst du Englisch ganz von allein. 
+Bei diesem Spiel geht es nicht darum, der Beste zu sein oder die meisten Punkte zu holen.]]></INSTRUCTION_TEXT2>
+<INSTRUCTION_TEXT4><![CDATA[In Level 1 gibt es pro richtiger Antwort 5 Punkte.
+In Level 2 gibt es pro richtiger Antwort 10 Punkte.
+In Level 3 gibt es pro richtiger Antwort 15 Punkte.]]></INSTRUCTION_TEXT4>
+<INSTRUCTION_TEXT4_1><![CDATA[In Level 1 gibt es pro richtiger Antwort 5 Punkte.]]></INSTRUCTION_TEXT4_1>
+<INSTRUCTION_TEXT4_2><![CDATA[In Level 2 gibt es pro richtiger Antwort 10 Punkte.]]></INSTRUCTION_TEXT4_2>
+<INSTRUCTION_TEXT4_3><![CDATA[In Level 3 gibt es pro richtiger Antwort 15 Punkte.]]></INSTRUCTION_TEXT4_3>
+<INSTRUCTION_TEXT5><![CDATA[Krabbe - richtige Antwort]]></INSTRUCTION_TEXT5>
+<INSTRUCTION_TEXT7><![CDATA[Hai - noch einmal versuchen]]></INSTRUCTION_TEXT7>
+<INSTRUCTION_TITLE><![CDATA[Anleitung]]></INSTRUCTION_TITLE>
+<INTRO><![CDATA[Du bist in der Underwater Academy auf dem Weg zum English Super Master: 
+Klicke auf 'Spielen' und wähle dein Level aus. 
+In der Anleitung erfährst du, wie das Spiel funktioniert.
+Viel Spass!]]></INTRO>
+<LEAVE_GAME><![CDATA[Bist Du sicher, dass Du diese Runde beenden möchtest?]]></LEAVE_GAME>
+<LEVEL><![CDATA[Level wählen:]]></LEVEL>
+<LOST><![CDATA[Du hast nur $$percent$$ der Fragen richtig beantwortet. Versuch es nochmal.]]></LOST>
+<NO><![CDATA[Nein]]></NO>
+<POINTS><![CDATA[Du hast $$score$$ Punkte gewonnen.]]></POINTS>
+<TOTAL_POINTS><![CDATA[Gesamtpunkte]]></TOTAL_POINTS>
+<TRUE><![CDATA[richtig]]></TRUE>
+<WIN><![CDATA[Bravo! Du hast $$percent$$ aller Fragen richtig beantwortet. Versuch es mit der nächsten Stufe.]]></WIN>
+<YES><![CDATA[Ja]]></YES>
+</snippets>

@@ -1,0 +1,10 @@
+<snippets date="05.05.2011 09:11:40">
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<DRAW><![CDATA[It's a draw.]]></DRAW>
+<INSTRUCTION><![CDATA[Make a line of 4 of the same color]]></INSTRUCTION>
+<INSTRUCTIONS><![CDATA[The aim is to fill four bottles with the same color. You can fill them vertically, horizontally or diagonally but what is important is that the bottles have the same color. The winner gains 50 points and the runner up gets just 10 points. Have fun!]]></INSTRUCTIONS>
+<INSTR_TITLE><![CDATA[Instructions]]></INSTR_TITLE>
+<WAIT><![CDATA[Wait for second player...]]></WAIT>
+<WIN><![CDATA[$$name$$ is the winner of the game!]]></WIN>
+</snippets>

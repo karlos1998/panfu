@@ -1,0 +1,22 @@
+﻿<snippets date="05.05.2011 09:15:55">
+<GAME_DESCRIPTION><![CDATA[Stein Schere Papier]]></GAME_DESCRIPTION>
+<GAME_INVITATION_ANSWER_01><![CDATA[Leider kann dieser Panda nicht mit Dir spielen. Vielleicht ein anderes Mal!]]></GAME_INVITATION_ANSWER_01>
+<GAME_INVITATION_ANSWER_02><![CDATA[Der eingeladene Panda möchte nicht mit Dir spielen. Vielleicht ein anderes Mal!]]></GAME_INVITATION_ANSWER_02>
+<GAME_INVITATION_ANSWER_03><![CDATA[Der Panda, der Dich eingeladen hat, muss noch das Spiel starten. Bitte warte kurz und bleibe in diesem Raum.]]></GAME_INVITATION_ANSWER_03>
+<GAME_INVITATION_ANSWER_04><![CDATA[Der eingeladene Panda hat schon eine Einladung bekommen und spielt bereits. Probiere es später noch einmal.]]></GAME_INVITATION_ANSWER_04>
+<GAME_INVITATION_ANSWER_HEADER_01><![CDATA[Antwort]]></GAME_INVITATION_ANSWER_HEADER_01>
+<GAME_INVITATION_INFO_01><![CDATA[Möchtest Du einen Panda zu einem Spiel $$gamename$$ einladen?
+Wenn Du Ja klickst wird sich Dein Mauszeiger verändern.
+Klicke dann ganz einfach auf den Panda, mitdem Du spielen möchtest.
+Bleibe dann einfach in diesem Raum, um das Spiel zu spielen.]]></GAME_INVITATION_INFO_01>
+<GAME_INVITATION_INFO_02><![CDATA[Der Panda, der Dich eingeladen hat, muss das Spiel starten. Bitte warte kurz!]]></GAME_INVITATION_INFO_02>
+<GAME_INVITATION_INFO_03><![CDATA[Du hast schon einen Panda eingeladen. Bitte warte dessen Antwort ab, bis Du einen neuen Panda einlädst.]]></GAME_INVITATION_INFO_03>
+<GAME_INVITATION_INFO_04><![CDATA[$$username$$ läd Dich zu einem Spiel $$gamename$$ ein. 
+Möchtest Du diese Einladung annehmen und $$gamename$$ spielen?]]></GAME_INVITATION_INFO_04>
+<GAME_INVITATION_INFO_HEADER_01><![CDATA[Information]]></GAME_INVITATION_INFO_HEADER_01>
+<TEXT_DRAW><![CDATA[REMIS]]></TEXT_DRAW>
+<TEXT_LOSE><![CDATA[NIEDERLAGE]]></TEXT_LOSE>
+<TEXT_PRIZE><![CDATA[Preis]]></TEXT_PRIZE>
+<TEXT_SCORES><![CDATA[Punkte]]></TEXT_SCORES>
+<TEXT_WIN><![CDATA[GEWINN]]></TEXT_WIN>
+</snippets>

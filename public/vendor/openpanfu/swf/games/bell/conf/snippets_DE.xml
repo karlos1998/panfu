@@ -1,0 +1,15 @@
+﻿<snippets date="05.05.2011 09:12:16">
+<GAMEOVER><![CDATA[Game Over]]></GAMEOVER>
+<INSTRUCTIONS><![CDATA[So geht’s
+
+Springe mit Deinem Panda von Wolke zu Wolke, indem Du ihn durch die Mausbewegung steuerst. Für jede Wolke die Du erreichst, bekommst Du 10 Punkte. Wenn Du es schaffst, auf einen Vogel zu springen, wird Deine Punktezahl verdoppelt.
+
+Viel Spaß!]]></INSTRUCTIONS>
+<PLAYAGAIN><![CDATA[Nochmal spielen!]]></PLAYAGAIN>
+<PLAYANDCHAT><![CDATA[Spielen & chatten]]></PLAYANDCHAT>
+<POINTS><![CDATA[Punkte]]></POINTS>
+<RESULT><![CDATA[Nicht schlecht, Du hast $$score$$ Punkte gemacht!]]></RESULT>
+<SCORE><![CDATA[Punkte]]></SCORE>
+<STARTGAME><![CDATA[Spiel starten!]]></STARTGAME>
+<TITLE><![CDATA[Cloud Number Nine]]></TITLE>
+</snippets>

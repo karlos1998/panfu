@@ -1,0 +1,148 @@
+<EnglishMaster>
+<path imgPath="swf/games/EnglishMaster/assets/01level/01cat/images/" voicePath="swf/games/EnglishMaster/assets/01level/01cat/voice/" sndPath="swf/games/EnglishMaster/assets/soundeffects/" level="1" category="Animals">level01cat01e</path>
+<soundeffect corrSound="applause.mp3" wrongSound="wrong.mp3"></soundeffect>
+		<question id="1">
+			<emid>0</emid>
+			<emtext id="1">A cat</emtext>
+			<emimage id="1">01img.jpg</emimage>
+			<emsound id="1">01voice.mp3</emsound>
+		</question>
+		<question id="2">
+			<emid>1</emid>
+			<emtext id="2">A dog</emtext>
+			<emimage id="2">02img.jpg</emimage>
+			<emsound id="2">02voice.mp3</emsound>
+		</question>
+		<question id="3">
+			<emid>2</emid>
+			<emtext id="3">Fish</emtext>
+			<emimage id="3">03img.jpg</emimage>
+			<emsound id="3">03voice.mp3</emsound>
+		</question>
+		<question id="4">
+			<emid>3</emid>
+			<emtext id="4">A bunny rabbit</emtext>
+			<emimage id="4">04img.jpg</emimage>
+			<emsound id="4">04voice.mp3</emsound>
+		</question>
+		<question id="5">
+			<emid>4</emid>
+			<emtext id="5">A koala</emtext>
+			<emimage id="5">05img.jpg</emimage>
+			<emsound id="5">05voice.mp3</emsound>
+		</question>
+		<question id="6">
+			<emid>5</emid>
+			<emtext id="6">A bear</emtext>
+			<emimage id="6">06img.jpg</emimage>
+			<emsound id="6">06voice.mp3</emsound>
+		</question>
+		<question id="7">
+			<emid>6</emid>
+			<emtext id="7">A panda</emtext>
+			<emimage id="7">07img.jpg</emimage>
+			<emsound id="7">07voice.mp3</emsound>
+		</question>
+		<question id="8">
+			<emid>7</emid>
+			<emtext id="8">A giraffe</emtext>
+			<emimage id="8">08img.jpg</emimage>
+			<emsound id="8">08voice.mp3</emsound>
+		</question>
+		<question id="9">
+			<emid>8</emid>
+			<emtext id="9">A peacock</emtext>
+			<emimage id="9">09img.jpg</emimage>
+			<emsound id="9">09voice.mp3</emsound>
+		</question>
+		<question id="10">
+			<emid>9</emid>
+			<emtext id="10">A bird</emtext>
+			<emimage id="10">10img.jpg</emimage>
+			<emsound id="10">10voice.mp3</emsound>
+		</question>
+		<question id="11">
+			<emid>10</emid>
+			<emtext id="11">A tortoise</emtext>
+			<emimage id="11">11img.jpg</emimage>
+			<emsound id="11">11voice.mp3</emsound>
+		</question>
+		<question id="12">
+			<emid>11</emid>
+			<emtext id="12">A frog</emtext>
+			<emimage id="12">12img.jpg</emimage>
+			<emsound id="12">12voice.mp3</emsound>
+		</question>
+		<question id="13">
+			<emid>12</emid>
+			<emtext id="13">A zebra</emtext>
+			<emimage id="13">13img.jpg</emimage>
+			<emsound id="13">13voice.mp3</emsound>
+		</question>
+		<question id="14">
+			<emid>13</emid>
+			<emtext id="14">A horse</emtext>
+			<emimage id="14">14img.jpg</emimage>
+			<emsound id="14">14voice.mp3</emsound>
+		</question>
+		<question id="15">
+			<emid>14</emid>
+			<emtext id="15">A lion</emtext>
+			<emimage id="15">15img.jpg</emimage>
+			<emsound id="15">15voice.mp3</emsound>
+		</question>
+		<question id="16">
+			<emid>15</emid>
+			<emtext id="16">A cow</emtext>
+			<emimage id="16">16img.jpg</emimage>
+			<emsound id="16">16voice.mp3</emsound>
+		</question>
+		<question id="17">
+			<emid>16</emid>
+			<emtext id="17">A snake</emtext>
+			<emimage id="17">17img.jpg</emimage>
+			<emsound id="17">17voice.mp3</emsound>
+		</question>
+		<question id="18">
+			<emid>17</emid>
+			<emtext id="18">A spider</emtext>
+			<emimage id="18">18img.jpg</emimage>
+			<emsound id="18">18voice.mp3</emsound>
+		</question>
+		<question id="19">
+			<emid>18</emid>
+			<emtext id="19">Chickens</emtext>
+			<emimage id="19">19img.jpg</emimage>
+			<emsound id="19">19voice.mp3</emsound>
+		</question>
+		<question id="20">
+			<emid>19</emid>
+			<emtext id="20">A chameleon lizard</emtext>
+			<emimage id="20">20img.jpg</emimage>
+			<emsound id="20">20voice.mp3</emsound>
+		</question>
+				<question id="21">
+			<emid>20</emid>
+			<emtext id="21">A Asshole</emtext>
+			<emimage id="21">21img.jpg</emimage>
+			<emsound id="21">21voice.mp3</emsound>
+		</question>
+		<question id="22">
+			<emid>21</emid>
+			<emtext id="22">A Minecraft</emtext>
+			<emimage id="22">22img.jpg</emimage>
+			<emsound id="22">22voice.mp3</emsound>
+		</question>
+		<question id="23">
+			<emid>22</emid>
+			<emtext id="23">Germanlp5 is a stupit gay-.-</emtext>
+			<emimage id="23">23img.jpg</emimage>
+			<emsound id="23">23voice.mp3</emsound>
+		</question>
+		<question id="24">
+			<emid>23</emid>
+			<emtext id="24">Panfu is very shit hahahaha</emtext>
+			<emimage id="24">24img.jpg</emimage>
+			<emsound id="24">24voice.mp3</emsound>
+		</question>
+</EnglishMaster>

@@ -1,0 +1,34 @@
+<snippets date="11.11.2010 13:55:43">
+<MAZEGAME_BUTTON_MENU><![CDATA[Menü]]></MAZEGAME_BUTTON_MENU>
+<MAZEGAME_BUTTON_OK><![CDATA[OK]]></MAZEGAME_BUTTON_OK>
+<MAZEGAME_GATENAME_01_COURAGE><![CDATA[des Mutes]]></MAZEGAME_GATENAME_01_COURAGE>
+<MAZEGAME_GATENAME_02_EMPATHY><![CDATA[der Empathie]]></MAZEGAME_GATENAME_02_EMPATHY>
+<MAZEGAME_GATENAME_03_KNOWLEDGE><![CDATA[des Wissens]]></MAZEGAME_GATENAME_03_KNOWLEDGE>
+<MAZEGAME_GATENAME_04_STRENGTH><![CDATA[der Stärke]]></MAZEGAME_GATENAME_04_STRENGTH>
+<MAZEGAME_GATENAME_05_WISDOM><![CDATA[der Weisheit]]></MAZEGAME_GATENAME_05_WISDOM>
+<MAZEGAME_POPUP_LOST_BOMB><![CDATA[Leider ist die Bombe durch das Tor gerollt und in der Rätselmaschine explodiert.]]></MAZEGAME_POPUP_LOST_BOMB>
+<MAZEGAME_POPUP_LOST_FIELDS><![CDATA[Leider sind alle Felder blockiert. Versuche es gleich noch einmal!]]></MAZEGAME_POPUP_LOST_FIELDS>
+<MAZEGAME_POPUP_LOST_GATES><![CDATA[Leider wurden alle Ausgänge versperrt. Am besten Du versuchst es gleich nochmal!]]></MAZEGAME_POPUP_LOST_GATES>
+<MAZEGAME_POPUP_LOST_HEADER><![CDATA[Du hast verloren! ]]></MAZEGAME_POPUP_LOST_HEADER>
+<MAZEGAME_POPUP_LOST_TIME><![CDATA[Leider ist die Zeit abgelaufen. Versuch es nochmal!]]></MAZEGAME_POPUP_LOST_TIME>
+<MAZEGAME_POPUP_LOST_TURN><![CDATA[Du hast keine Spielzüge mehr frei. Probiere es noch einmal.]]></MAZEGAME_POPUP_LOST_TURN>
+<MAZEGAME_POPUP_WON_CATEGORY><![CDATA[Du hast das Tor $$gatename$$ erreicht. ]]></MAZEGAME_POPUP_WON_CATEGORY>
+<MAZEGAME_POPUP_WON_CATEGORY_COINS><![CDATA[Du hast das Tor $$gatename$$ erreicht. Du erhälst nun ein Item und $$amountcoins$$ Münzen.]]></MAZEGAME_POPUP_WON_CATEGORY_COINS>
+<MAZEGAME_TITLESCREEN_BUTTON_LEVELS><![CDATA[Levelauswahl]]></MAZEGAME_TITLESCREEN_BUTTON_LEVELS>
+<MAZEGAME_TITLESCREEN_BUTTON_START><![CDATA[Starte das Spiel]]></MAZEGAME_TITLESCREEN_BUTTON_START>
+<MAZEGAME_TITLESCREEN_BUTTON_TUTORIAL><![CDATA[Anleitung]]></MAZEGAME_TITLESCREEN_BUTTON_TUTORIAL>
+<MAZEGAME_TUTORIAL_BUTTON_BACK><![CDATA[zurück]]></MAZEGAME_TUTORIAL_BUTTON_BACK>
+<MAZEGAME_TUTORIAL_BUTTON_BACKSTART><![CDATA[Zum Hauptmenü]]></MAZEGAME_TUTORIAL_BUTTON_BACKSTART>
+<MAZEGAME_TUTORIAL_BUTTON_NEXT><![CDATA[weiter]]></MAZEGAME_TUTORIAL_BUTTON_NEXT>
+<MAZEGAME_TUTORIAL_HEADER><![CDATA[Irrgarten Anleitung]]></MAZEGAME_TUTORIAL_HEADER>
+<MAZEGAME_TUTORIAL_TEXT_1_1><![CDATA[Baue einen Pfad vom Anfang des Irrgartens zu einem der Ausgänge.]]></MAZEGAME_TUTORIAL_TEXT_1_1>
+<MAZEGAME_TUTORIAL_TEXT_1_2><![CDATA[Ziehe einen der drei Bausteine von der rechten Seite des Bildschirms und platziere ihn auf dem Spielfeld. Drei neue Bausteine erscheinen dann.]]></MAZEGAME_TUTORIAL_TEXT_1_2>
+<MAZEGAME_TUTORIAL_TEXT_2_1><![CDATA[Blocker-Steine erscheinen zufällig auf dem Spielfeld.]]></MAZEGAME_TUTORIAL_TEXT_2_1>
+<MAZEGAME_TUTORIAL_TEXT_2_2><![CDATA[Der Hammer kann Bausteine auf dem Spielfeld auslöschen. ]]></MAZEGAME_TUTORIAL_TEXT_2_2>
+<MAZEGAME_TUTORIAL_TEXT_2_3><![CDATA["Leere" Steine erscheinen zufällig und blockieren einen freien Platz in der Stein-Liste.]]></MAZEGAME_TUTORIAL_TEXT_2_3>
+<MAZEGAME_TUTORIAL_TEXT_3_1><![CDATA[Kassiere Bonusgeld, indem Du Münzen mit dem Ausgang verbindest. ]]></MAZEGAME_TUTORIAL_TEXT_3_1>
+<MAZEGAME_TUTORIAL_TEXT_3_2><![CDATA[Vorsicht!In manchen Irrgärten gibt es Zeitlimits, Baustein-Limits, oder die Ausgänge verschwinden. Behalte die Anzeigen im Blick!]]></MAZEGAME_TUTORIAL_TEXT_3_2>
+<MAZEGAME_TUTORIAL_TEXT_3_3><![CDATA[Weitere spezielle Regeln behindern das Erreichen des Ausgangs! Pass gut auf und sei darauf gefasst, dass im Labyrinth die seltsamsten Dinge geschehen!]]></MAZEGAME_TUTORIAL_TEXT_3_3>
+<MAZEGAME_TUTORIAL_TEXT_4_1><![CDATA[Drehe am Glückrad und Du bekommst eine Belohnung! ]]></MAZEGAME_TUTORIAL_TEXT_4_1>
+<MAZEGAME_WHEEL_POPUP_TEXT><![CDATA[Gratulation! Du hast $$itemname$$ gewonnen und erhälst außerdem den Wurzelstab!]]></MAZEGAME_WHEEL_POPUP_TEXT>
+</snippets>

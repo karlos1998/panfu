@@ -1,0 +1,42 @@
+<snippets date="17.06.2011 10:05:51">
+<ANSWER><![CDATA[Odpowiedzi:]]></ANSWER>
+<BTN_BACK><![CDATA[Wróć]]></BTN_BACK>
+<BTN_CONTINUE><![CDATA[Graj dalej]]></BTN_CONTINUE>
+<BTN_MENU><![CDATA[Menu główne]]></BTN_MENU>
+<BTN_NEXT><![CDATA[Dalej]]></BTN_NEXT>
+<BTN_PLAYNOW><![CDATA[Graj teraz]]></BTN_PLAYNOW>
+<FALSE><![CDATA[Źle]]></FALSE>
+<GAME_OVER><![CDATA[Koniec gry]]></GAME_OVER>
+<INSTRUCTION_TEXT><![CDATA[1) Po pierwsze, uważnie się przyjrzyj obrazkom i wysłuchaj słowa lub zdania po angielsku.
+2) Powtórz słowo na głos.
+3) Do którego obrazka pasuje wypowiedziane słowo lub zdanie? Kliknij na obrazek, który według ciebie jest właściwy.
+4) Powtórz słowo na głos jeszcze raz.
+5) Teraz możesz przejść do następnego pytania.
+Kliknij tutaj aby przejść do następnego pytania.
+]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TEXT2><![CDATA[Oglądaj obrazki, słuchaj uważnie i powtarzaj słowa na głos - tak się nauczysz angielskiego samodzielnie.
+W tej grze nie jest najważniejsze aby wygrać lub uzyskać największą ilość punktów.]]></INSTRUCTION_TEXT2>
+<INSTRUCTION_TEXT4><![CDATA[W poziomie 1 uzyskasz za każdą poprawną odpowiedź 5 punktów.
+W poziomie 2 uzyskasz za każdą poprawną odpowiedź 10 punktów.
+W poziomie 3 uzyskasz za każdą poprawną odpowiedź 15 punktów.
+]]></INSTRUCTION_TEXT4>
+<INSTRUCTION_TEXT4_1><![CDATA[W poziomie 1 uzyskasz za każdą poprawną odpowiedź 5 punktów.]]></INSTRUCTION_TEXT4_1>
+<INSTRUCTION_TEXT4_2><![CDATA[W poziomie 2 uzyskasz za każdą poprawną odpowiedź 10 punktów.]]></INSTRUCTION_TEXT4_2>
+<INSTRUCTION_TEXT4_3><![CDATA[W poziomie 3 uzyskasz za każdą poprawną odpowiedź 15 punktów.]]></INSTRUCTION_TEXT4_3>
+<INSTRUCTION_TEXT5><![CDATA[Krab - poprawna odpowiedź]]></INSTRUCTION_TEXT5>
+<INSTRUCTION_TEXT7><![CDATA[Rekin - Spróbuj ponownie]]></INSTRUCTION_TEXT7>
+<INSTRUCTION_TITLE><![CDATA[Instrukcja ]]></INSTRUCTION_TITLE>
+<INTRO><![CDATA[Jesteś w Podwodnej Akademii, na dobrej drodze aby stać się Super Mistrzem Angielskiego:
+Kliknij na "Graj Teraz" i wybierz poziom.
+W instrukcji znajdziesz informacje dotyczące zasad gry.
+Dobrej zabawy!]]></INTRO>
+<LEAVE_GAME><![CDATA[Napewno chcesz przerwać rundę?]]></LEAVE_GAME>
+<LEVEL><![CDATA[Wybierz poziom:]]></LEVEL>
+<LOST><![CDATA[Odpowiedziałeś poprawnie tylko na $$percent$$ pytań. Spróbuj jeszcze raz!]]></LOST>
+<NO><![CDATA[Nie]]></NO>
+<POINTS><![CDATA[Zdobyłeś $$score$$ punktów.]]></POINTS>
+<TOTAL_POINTS><![CDATA[Suma punktów]]></TOTAL_POINTS>
+<TRUE><![CDATA[Dobrze]]></TRUE>
+<WIN><![CDATA[Brawo! Odpowiedziałeś poprawnie na $$percent$$ pytań! Spróbuj przejść następny poziom.]]></WIN>
+<YES><![CDATA[Tak]]></YES>
+</snippets>

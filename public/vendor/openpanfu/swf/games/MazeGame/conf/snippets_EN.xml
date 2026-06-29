@@ -1,0 +1,34 @@
+<snippets date="11.11.2010 13:55:43">
+<MAZEGAME_BUTTON_MENU><![CDATA[Menu]]></MAZEGAME_BUTTON_MENU>
+<MAZEGAME_BUTTON_OK><![CDATA[OK]]></MAZEGAME_BUTTON_OK>
+<MAZEGAME_GATENAME_01_COURAGE><![CDATA[of courage]]></MAZEGAME_GATENAME_01_COURAGE>
+<MAZEGAME_GATENAME_02_EMPATHY><![CDATA[of empathy]]></MAZEGAME_GATENAME_02_EMPATHY>
+<MAZEGAME_GATENAME_03_KNOWLEDGE><![CDATA[of knowledge]]></MAZEGAME_GATENAME_03_KNOWLEDGE>
+<MAZEGAME_GATENAME_04_STRENGTH><![CDATA[of strengh]]></MAZEGAME_GATENAME_04_STRENGTH>
+<MAZEGAME_GATENAME_05_WISDOM><![CDATA[of wisdom]]></MAZEGAME_GATENAME_05_WISDOM>
+<MAZEGAME_POPUP_LOST_BOMB><![CDATA[The bomb rolled through the gate and exploded inside the machine.]]></MAZEGAME_POPUP_LOST_BOMB>
+<MAZEGAME_POPUP_LOST_FIELDS><![CDATA[Unfortunately, all the tiles are blocked. Please try again.]]></MAZEGAME_POPUP_LOST_FIELDS>
+<MAZEGAME_POPUP_LOST_GATES><![CDATA[Unfortunately, all the exits are blocked. The best thing to do, is to try again!]]></MAZEGAME_POPUP_LOST_GATES>
+<MAZEGAME_POPUP_LOST_HEADER><![CDATA[You've lost.]]></MAZEGAME_POPUP_LOST_HEADER>
+<MAZEGAME_POPUP_LOST_TIME><![CDATA[Your time's up.]]></MAZEGAME_POPUP_LOST_TIME>
+<MAZEGAME_POPUP_LOST_TURN><![CDATA[You don't have any tiles left. Why not try again.]]></MAZEGAME_POPUP_LOST_TURN>
+<MAZEGAME_POPUP_WON_CATEGORY><![CDATA[You have reached the goal $$gatename$$. ]]></MAZEGAME_POPUP_WON_CATEGORY>
+<MAZEGAME_POPUP_WON_CATEGORY_COINS><![CDATA[You have reached the goal $$gatename$$. You will now get an item and $$amountcoins$$ coins.]]></MAZEGAME_POPUP_WON_CATEGORY_COINS>
+<MAZEGAME_TITLESCREEN_BUTTON_LEVELS><![CDATA[Level Select]]></MAZEGAME_TITLESCREEN_BUTTON_LEVELS>
+<MAZEGAME_TITLESCREEN_BUTTON_START><![CDATA[Start Game]]></MAZEGAME_TITLESCREEN_BUTTON_START>
+<MAZEGAME_TITLESCREEN_BUTTON_TUTORIAL><![CDATA[Instructions]]></MAZEGAME_TITLESCREEN_BUTTON_TUTORIAL>
+<MAZEGAME_TUTORIAL_BUTTON_BACK><![CDATA[back]]></MAZEGAME_TUTORIAL_BUTTON_BACK>
+<MAZEGAME_TUTORIAL_BUTTON_BACKSTART><![CDATA[Main Menu]]></MAZEGAME_TUTORIAL_BUTTON_BACKSTART>
+<MAZEGAME_TUTORIAL_BUTTON_NEXT><![CDATA[next]]></MAZEGAME_TUTORIAL_BUTTON_NEXT>
+<MAZEGAME_TUTORIAL_HEADER><![CDATA[Maze-Game Tutorial]]></MAZEGAME_TUTORIAL_HEADER>
+<MAZEGAME_TUTORIAL_TEXT_1_1><![CDATA[Create a path from the start of the maze to one of the exits.]]></MAZEGAME_TUTORIAL_TEXT_1_1>
+<MAZEGAME_TUTORIAL_TEXT_1_2><![CDATA[Drag one of the three path-tiles from the right side of the screen on the game-field. Three new tiles spawn then.]]></MAZEGAME_TUTORIAL_TEXT_1_2>
+<MAZEGAME_TUTORIAL_TEXT_2_1><![CDATA[Blocker-Tiles spawn randomly on the gamefield.]]></MAZEGAME_TUTORIAL_TEXT_2_1>
+<MAZEGAME_TUTORIAL_TEXT_2_2><![CDATA[Hammers can destroy tiles. Drag the hammers on a path or a blocker to destroy it.]]></MAZEGAME_TUTORIAL_TEXT_2_2>
+<MAZEGAME_TUTORIAL_TEXT_2_3><![CDATA["Empty" tiles spawn randomly and blockade a free tile-slot. ]]></MAZEGAME_TUTORIAL_TEXT_2_3>
+<MAZEGAME_TUTORIAL_TEXT_3_1><![CDATA[Pickup goldcoins to get a money bonus! Build a path to the exit through their square to collect them.]]></MAZEGAME_TUTORIAL_TEXT_3_1>
+<MAZEGAME_TUTORIAL_TEXT_3_2><![CDATA[Attention, some mazes have turn limit, time limits, or the exits disappear! Always keep an eye on the counters!]]></MAZEGAME_TUTORIAL_TEXT_3_2>
+<MAZEGAME_TUTORIAL_TEXT_3_3><![CDATA[There are more special rules that will hinder your path to the exit! Keep your eyes open and be ready for strange things happening in the maze.]]></MAZEGAME_TUTORIAL_TEXT_3_3>
+<MAZEGAME_TUTORIAL_TEXT_4_1><![CDATA[After completing the maze, you can spin the Wheel of Luck to get a reward. Push the red button to start the wheel.]]></MAZEGAME_TUTORIAL_TEXT_4_1>
+<MAZEGAME_WHEEL_POPUP_TEXT><![CDATA[Congratulations! You have won the $$itemname$$ and you have also received the Magic Staff!]]></MAZEGAME_WHEEL_POPUP_TEXT>
+</snippets>

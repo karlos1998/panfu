@@ -1,0 +1,365 @@
+<snippets date="21.12.2012 10:59:53">
+<BESMARTER_BUTTON_BACK><![CDATA[Zurück]]></BESMARTER_BUTTON_BACK>
+<BESMARTER_BUTTON_CLOSE><![CDATA[Beenden]]></BESMARTER_BUTTON_CLOSE>
+<BESMARTER_END_TIME><![CDATA[Benötigte Zeit:]]></BESMARTER_END_TIME>
+<BESMARTER_HELP><![CDATA[Die "Be Smarter" Spielmaschine spuckt jeden Tag 10 verschiedene, zufällig ausgesuchte Fragen aus. Du hast 4 unterschiedliche Antworten zur Auswahl - aber nur EINE ist richtig! Wähle eine der Antworten und klick drauf. Die angeklickte Antwort erscheint grün, wenn sie richtig ist und rot, wenn sie falsch ist. Für jede richtige Antwort bekommst du 100 Panda Münzen. 
+Achtung: Du spielst gegen die Zeit! Du hast insgesamt $$number$$ Sekunden, um ALLE Fragen zu beantworten. Jeden Monat wird der Panda mit den besten Ergebnissen zum "Schlaumeier des Monats" gekürt! 
+]]></BESMARTER_HELP>
+<BESMARTER_MODERATOR_01><![CDATA[Willkommen bei "Be Smarter"! Drücke auf den START Knopf, um das Quiz zu starten oder auf das Fragezeichen, um die Anleitung durchzulesen. ]]></BESMARTER_MODERATOR_01>
+<BESMARTER_MODERATOR_02><![CDATA[Danke! Du hast nur einen Versuch pro Tag. Komm am besten gleich morgen wieder! Und hier kommt dein Ergebnis. Du kannst es direkt mit dem Ergebnis des Schlaumeier des Monats vergleichen:]]></BESMARTER_MODERATOR_02>
+<BESMARTER_POINTS><![CDATA[Punkte: ]]></BESMARTER_POINTS>
+<BESMARTER_QUESTION_1><![CDATA[Wie heißt der erste Buchstabe des griechischen Alphabets?%a) Beta%b) Alpha%c) Gamma%d) Delta%2]]></BESMARTER_QUESTION_1>
+<BESMARTER_QUESTION_10><![CDATA[Welche Wolle gibt es wirklich?%a) Gummiwolle%b) Steinwolle%c) Luftwolle%d) Silberwolle%2]]></BESMARTER_QUESTION_10>
+<BESMARTER_QUESTION_100><![CDATA[Wie viel Prozent der Erdoberfläche bestehen aus Wasser?%a) 98 Prozent%b) 71 Prozent%c) 59 Prozent%d) 85 Prozent%2]]></BESMARTER_QUESTION_100>
+<BESMARTER_QUESTION_101><![CDATA[Welche ist die größte Insel der Erde?%a) Japan%b) Grönland%c) Madagaskar%d) Großbritannien%2]]></BESMARTER_QUESTION_101>
+<BESMARTER_QUESTION_102><![CDATA[Welche gedachte Linie teilt die Erde in eine Nord- und Südhälfte?%a) Nullmeridian%b) Mittellinie%c) Außenlinie%d) Äquator%4]]></BESMARTER_QUESTION_102>
+<BESMARTER_QUESTION_103><![CDATA[Auf welchem Kontinent liegt der Staat Brasilien?%a) Europa%b) Südamerika%c) Asien%d) Australien%2]]></BESMARTER_QUESTION_103>
+<BESMARTER_QUESTION_104><![CDATA[Auf welchem Kontinent liegt die Stadt New York?%a) Australien%b) Afrika%c) Nordamerika%d) Südamerika%3]]></BESMARTER_QUESTION_104>
+<BESMARTER_QUESTION_105><![CDATA[Auf welchem Kontinent liegt der Staat China?%a) Asien%b) Antarktika%c) Australien%d) Afrika%1]]></BESMARTER_QUESTION_105>
+<BESMARTER_QUESTION_106><![CDATA[Welche dieser Städte ist die Hauptstadt von Deutschland?%a) Hamburg%b) München%c) Köln%d) Berlin%4]]></BESMARTER_QUESTION_106>
+<BESMARTER_QUESTION_107><![CDATA[Wie heißt die Hauptstadt der USA?%a) Washington, D.C.%b) Moskau%c) New York%d) Paris%1]]></BESMARTER_QUESTION_107>
+<BESMARTER_QUESTION_108><![CDATA[Wie heißt die Hauptstadt von Frankreich?%a) Sydney%b) Paris%c) London%d) Istanbul%2]]></BESMARTER_QUESTION_108>
+<BESMARTER_QUESTION_109><![CDATA[Wie heißt die Hauptstadt von Italien?%a) Madrid%b) Helsinki%c) Rom%d) Kapstadt%3]]></BESMARTER_QUESTION_109>
+<BESMARTER_QUESTION_11><![CDATA[Wie viele Monate hat ein Jahr?%a) 365%b) 24%c) 60%d) 12%4]]></BESMARTER_QUESTION_11>
+<BESMARTER_QUESTION_110><![CDATA[Welche geometrische Form hat ein Globus?%a) Kugel%b) Würfel%c) Dreieck%d) Stern%1]]></BESMARTER_QUESTION_110>
+<BESMARTER_QUESTION_111><![CDATA[Welches dieser Länder liegt in der gemäßigten Klimazone?%a) Ägypten%b) Deutschland%c) Grönland%d) Saudi Arabien%2]]></BESMARTER_QUESTION_111>
+<BESMARTER_QUESTION_112><![CDATA[Welches dieser Länder liegt in der tropischen Klimazone?%a) Polen%b) Frankreich%c) Brasilien%d) Kanada%3]]></BESMARTER_QUESTION_112>
+<BESMARTER_QUESTION_113><![CDATA[Welcher Pol liegt in der Arktis?%a) Nordpol%b) Ostpol%c) Südpol%d) Interpol%1]]></BESMARTER_QUESTION_113>
+<BESMARTER_QUESTION_114><![CDATA[Welcher Pol liegt in der Antarktis?%a) Nordpol%b) Interpol%c) Südpol%d) Westpol%3]]></BESMARTER_QUESTION_114>
+<BESMARTER_QUESTION_115><![CDATA[Welcher Staat ist flächenmäßig der größte der Erde?%a) Australien%b) Russland%c) Brasilien%d) Kanada%2]]></BESMARTER_QUESTION_115>
+<BESMARTER_QUESTION_116><![CDATA[Wie heißt eine Sammlung von Landkarten?%a) Globus%b) Lexikon%c) Atlas%d) Duden%3]]></BESMARTER_QUESTION_116>
+<BESMARTER_QUESTION_117><![CDATA[Welcher Kontinent ist der größte der Erde?%a) Asien%b) Afrika%c) Europa%d) Australien%1]]></BESMARTER_QUESTION_117>
+<BESMARTER_QUESTION_118><![CDATA[Wie heißt der höchste Berg der Erde?%a) Kilimandscharo%b) Mont Blanc%c) Vesuv%d) Mount Everest%4]]></BESMARTER_QUESTION_118>
+<BESMARTER_QUESTION_119><![CDATA[In welchem See geht man aufgrund seines hohen Salzgehalts nicht unter?%a) Rotes Meer%b) Totes Meer%c) Nordsee%d) Barentssee%2]]></BESMARTER_QUESTION_119>
+<BESMARTER_QUESTION_12><![CDATA[Wie viele Tage hat ein Schaltjahr?%a) 365%b) 360%c) 366%d) 370%3]]></BESMARTER_QUESTION_12>
+<BESMARTER_QUESTION_120><![CDATA[Wie heißt der höchste Berg Europas?%a) Mont Blanc%b) Kilimandscharo%c) Mount Everest%d) Ätna%1]]></BESMARTER_QUESTION_120>
+<BESMARTER_QUESTION_121><![CDATA[Wie heißt der höchste Berg Afrikas?%a) Vesuv%b) Kibo%c) Mount Everest%d) Mont Blanc%2]]></BESMARTER_QUESTION_121>
+<BESMARTER_QUESTION_122><![CDATA[Welcher See ist der größte der Erde?%a) Kaspisches Meer%b) Ostsee%c) Totes Meer%d) Titicaca-See%1]]></BESMARTER_QUESTION_122>
+<BESMARTER_QUESTION_123><![CDATA[Welches Land hat ein weißes Kreuz in seiner Nationalflagge?%a) Kanada%b) Schweiz%c) Japan%d) Türkei%2]]></BESMARTER_QUESTION_123>
+<BESMARTER_QUESTION_124><![CDATA[Welches dieser Länder hat ein rotes Ahornblatt in seiner Nationalflagge?%a) Schweiz%b) Kanada%c) Türkei%d) Japan%2]]></BESMARTER_QUESTION_124>
+<BESMARTER_QUESTION_125><![CDATA[Welches Land trägt einen roten Kreis in seiner Nationalflagge?%a) Schweiz%b) Kanada%c) Japan%d) Dänemark%3]]></BESMARTER_QUESTION_125>
+<BESMARTER_QUESTION_126><![CDATA[Welches dieser Länder hat Halbmond und Stern in seiner Nationalflagge?%a) Japan%b) Schweiz%c) Kanada%d) Türkei%4]]></BESMARTER_QUESTION_126>
+<BESMARTER_QUESTION_127><![CDATA[Wer gilt als einer der bedeutendsten Künstler der Renaissance?%a) Vincent van Gogh%b) Michelangelo%c) Caspar David Friedrich%d) William Turner%2]]></BESMARTER_QUESTION_127>
+<BESMARTER_QUESTION_128><![CDATA[Welche Farbe entsteht, wenn man Blau mit Gelb mischt?%a) Grün%b) Rot%c) Orange%d) Lila%1]]></BESMARTER_QUESTION_128>
+<BESMARTER_QUESTION_129><![CDATA[Welche Farbe entsteht, wenn man rot mit blau mischt?%a) gelb%b) braun%c) lila%d) pink%3]]></BESMARTER_QUESTION_129>
+<BESMARTER_QUESTION_13><![CDATA[An welchem dieser Orte kannst du dir einen Film anschauen?%a) Theater%b) Kino%c) Oper%d) Museum%2]]></BESMARTER_QUESTION_13>
+<BESMARTER_QUESTION_130><![CDATA[Welche Farbe entsteht, wenn man gelb mit rot mischt?%a) grün%b) orange%c) blau%d) braun%2]]></BESMARTER_QUESTION_130>
+<BESMARTER_QUESTION_131><![CDATA[Welche Farbe ist eine sogenannte Primärfarbe, die nicht durch Mischen entsteht?%a) Blau%b) Grün%c) Türkis%d) Rosa%1]]></BESMARTER_QUESTION_131>
+<BESMARTER_QUESTION_132><![CDATA[Was erschafft ein Bildhauer?%a) Gemälde%b) Lied%c) Roman%d) Skulptur%4]]></BESMARTER_QUESTION_132>
+<BESMARTER_QUESTION_133><![CDATA[Für welches Gemälde ist der Künstler Leonardo da Vinci bekannt?%a) Mona Lisa%b) Monica Lisa%c) Marta Lisa%d) Erna Lisa%1]]></BESMARTER_QUESTION_133>
+<BESMARTER_QUESTION_134><![CDATA[In welcher Straße wohnen Ernie & Bert?%a) Mohnstraße%b) Kastanienstraße%c) Sesamstraße%d) Kümmelstraße%3]]></BESMARTER_QUESTION_134>
+<BESMARTER_QUESTION_135><![CDATA[Was isst das Krümelmonster am allerliebsten?%a) Pizza%b) Kekse%c) Schokolade%d) Spinat%2]]></BESMARTER_QUESTION_135>
+<BESMARTER_QUESTION_136><![CDATA[Welcher dieser Maler kommt aus den Niederlanden?%a) Picasso%b) Monet%c) Rembrandt%d) Dürer%3]]></BESMARTER_QUESTION_136>
+<BESMARTER_QUESTION_137><![CDATA[Wie viele Musiker braucht man für ein Duett?%a) 1%b) 2%c) 3%d) 4%2]]></BESMARTER_QUESTION_137>
+<BESMARTER_QUESTION_138><![CDATA[Wie wird ein Winkel von genau 90 Grad genannt?%a) Spitzer Winkel%b) Rechter Winkel%c) Stumpfer Winkel%d) Linker Winkel%2]]></BESMARTER_QUESTION_138>
+<BESMARTER_QUESTION_139><![CDATA[Wie viel Grad hat ein Kreis?%a) 180 Grad%b) 0 Grad%c) 360 Grad%d) 90 Grad%3]]></BESMARTER_QUESTION_139>
+<BESMARTER_QUESTION_14><![CDATA[Bei welchem Brettspiel gilt es den gegnerischen König matt zu setzen?%a) Schach%b) Mühle%c) Monopoly%d) Halma%1]]></BESMARTER_QUESTION_14>
+<BESMARTER_QUESTION_140><![CDATA[Welche Kommazahl entspricht dem Bruch 3/4?%a) 0,5%b) 0,75%c) 0,25%d) 1%2]]></BESMARTER_QUESTION_140>
+<BESMARTER_QUESTION_141><![CDATA[Welche Kommazahl entspricht dem Bruch 1/3?%a) 0,33%b) 0,25%c) 0,66%d) 0,5%1]]></BESMARTER_QUESTION_141>
+<BESMARTER_QUESTION_142><![CDATA[Welcher Bruch entspricht der Kommazahl 0,5?%a) 3/4%b) 1/2%c) 1/3%d) 1/5%2]]></BESMARTER_QUESTION_142>
+<BESMARTER_QUESTION_143><![CDATA[Welcher Bruch entspricht der Kommazahl 0,25?%a) 1/2%b) 3/8%c) 1/4%d) 1/6%3]]></BESMARTER_QUESTION_143>
+<BESMARTER_QUESTION_144><![CDATA[Was ergibt 10 mal 10?%a) 100%b) 1000%c) 100000%d) 10%1]]></BESMARTER_QUESTION_144>
+<BESMARTER_QUESTION_145><![CDATA[Wie viele Nullen hat eine Tausend?%a) 2%b) 4%c) 3%d) 5%3]]></BESMARTER_QUESTION_145>
+<BESMARTER_QUESTION_146><![CDATA[Wie viele Seiten hat ein Würfel?%a) 4%b) 6%c) 2%d) 8%2]]></BESMARTER_QUESTION_146>
+<BESMARTER_QUESTION_147><![CDATA[Welcher Buchstabe stand bei den alten Römern für die Zahl 1?%a) V%b) L%c) C%d) I%4]]></BESMARTER_QUESTION_147>
+<BESMARTER_QUESTION_148><![CDATA[Welcher Buchstabe stand bei den alten Römern für die Zahl 10?%a) X%b) V%c) I%d) M%1]]></BESMARTER_QUESTION_148>
+<BESMARTER_QUESTION_149><![CDATA[Welche römische Ziffer steht für die Zahl 100?%a) I%b) C%c) M%d) L%2]]></BESMARTER_QUESTION_149>
+<BESMARTER_QUESTION_15><![CDATA[Wie hoch ist der größte noch lebende Mammutbaum der Welt?%a) 50 Meter%b) 75 Meter%c) 100 Meter%d) 115 Meter%4]]></BESMARTER_QUESTION_15>
+<BESMARTER_QUESTION_150><![CDATA[Welche römische Ziffer steht für die Zahl 1000?%a) C%b) I%c) M%d) L%3]]></BESMARTER_QUESTION_150>
+<BESMARTER_QUESTION_151><![CDATA[Wenn heute der 15. Juni ist, welches Datum ist in einer Woche?%a) 22. Juni%b) 20. Juni%c) 29. Juni%d) 18. Juni%1]]></BESMARTER_QUESTION_151>
+<BESMARTER_QUESTION_152><![CDATA[Wie viel Euro-Cent entsprechen 20 Euro?%a) 100%b) 200%c) 2000%d) 1000%3]]></BESMARTER_QUESTION_152>
+<BESMARTER_QUESTION_153><![CDATA[Mit welcher Maßeinheit wird das Volumen angegeben?%a) Kilometer%b) Quadratmeter%c) Watt%d) Liter%4]]></BESMARTER_QUESTION_153>
+<BESMARTER_QUESTION_154><![CDATA[Welche geometrische Form findest du in einem großen "A"?%a) Dreieck%b) Quader%c) Kreis%d) Raute%1]]></BESMARTER_QUESTION_154>
+<BESMARTER_QUESTION_155><![CDATA[Welches dieser Gewichte wiegt am meisten?%a) 100 Gramm%b) 0,1 Kilogramm%c) 1 Kilogramm%d) 1/2 Kilogramm%3]]></BESMARTER_QUESTION_155>
+<BESMARTER_QUESTION_156><![CDATA[Welche dieser Rechnungen ergibt genau ein Ganzes?%a) 1/2 + 1/2%b) 1/4 + 1/4%c) 3/4 + 1/8%d) 1/3 + 3/4%1]]></BESMARTER_QUESTION_156>
+<BESMARTER_QUESTION_157><![CDATA[Ein Bruch besteht aus Zähler und Nenner. Wie wird der Nenner auch genannt?%a) Komma%b) Teiler%c) Summe%d) Trenner%2]]></BESMARTER_QUESTION_157>
+<BESMARTER_QUESTION_158><![CDATA[Womit misst man Gewichte?%a) Lot%b) Lineal%c) Waage%d) Pendel%3]]></BESMARTER_QUESTION_158>
+<BESMARTER_QUESTION_159><![CDATA[Wie heißt eine geometrische Form mit 6 Seiten?%a) Pentagramm%b) Dreieck%c) Rechteck%d) Hexagon%4]]></BESMARTER_QUESTION_159>
+<BESMARTER_QUESTION_16><![CDATA[Was bringt das Mineralwasser zum Sprudeln?%a) Luft%b) Stickstoff%c) Kohlensäure%d) Sauerstoff%3]]></BESMARTER_QUESTION_16>
+<BESMARTER_QUESTION_160><![CDATA[Wie heißt eine geometrische Form mit 5 Ecken?%a) Pentagon%b) Rechteck%c) Trapez%d) Kreis%1]]></BESMARTER_QUESTION_160>
+<BESMARTER_QUESTION_161><![CDATA[Welche Rechnung ergibt 1949?%a) 19 + 49%b) 1000 + 900 + 40 + 9%c) 1 + 949%d) 194 + 9%2]]></BESMARTER_QUESTION_161>
+<BESMARTER_QUESTION_162><![CDATA[Welche Rechnung ergibt 379?%a) 300 + 70 + 9%b) 300 + 7 + 9%c) 3 + 79%d) 37 + 9%1]]></BESMARTER_QUESTION_162>
+<BESMARTER_QUESTION_163><![CDATA[Welche Rechnung ergibt 648?%a) 600 + 84%b) 600 + 4 + 8%c) 640 + 4 + 4%d) 500 + 100 + 4 + 8%3]]></BESMARTER_QUESTION_163>
+<BESMARTER_QUESTION_164><![CDATA[Welche Rechnung ergibt 777?%a) 7 * 111%b) 700 + 2 + 5%c) 1000 - 23%d) 800 + 100 + 25%1]]></BESMARTER_QUESTION_164>
+<BESMARTER_QUESTION_165><![CDATA[Welche Rechnung ergibt 550?%a) 1000 - 450%b) 900 - 400%c) 650 - 150%d) 700 - 350%1]]></BESMARTER_QUESTION_165>
+<BESMARTER_QUESTION_166><![CDATA[Welche Rechnung ergibt 375?%a) 400 - 125%b) 500 - 100 - 25%c) 600 - 125%d) 500 - 25%2]]></BESMARTER_QUESTION_166>
+<BESMARTER_QUESTION_167><![CDATA[Welche Rechnung ergibt 444?%a) 1000 - 656%b) 554 - 114%c) 888 - 444%d) 500 - 44%3]]></BESMARTER_QUESTION_167>
+<BESMARTER_QUESTION_168><![CDATA[Was ergibt 0,7 mal 100?%a) 7%b) 70%c) 700%d) 7000%2]]></BESMARTER_QUESTION_168>
+<BESMARTER_QUESTION_169><![CDATA[Was ergibt 100 mal 0,5?%a) 50%b) 5%c) 0,5%d) 500%1]]></BESMARTER_QUESTION_169>
+<BESMARTER_QUESTION_17><![CDATA[Welches Gas zerstört die Ozonschicht der Erdatmosphäre?%a) Methan%b) Kohlendioxid%c) Fluorchlorkohlenwasserstoffe%d) Stickstoff%3]]></BESMARTER_QUESTION_17>
+<BESMARTER_QUESTION_170><![CDATA[Welcher dieser Brüche ist am kleinsten?%a) 1/8%b) 1/5%c) 1/3%d) 1/4%1]]></BESMARTER_QUESTION_170>
+<BESMARTER_QUESTION_171><![CDATA[Welcher dieser Brüche ist am größten?%a) 1/8%b) 1/5%c) 1/3%d) 1/4%3]]></BESMARTER_QUESTION_171>
+<BESMARTER_QUESTION_172><![CDATA[Wie viel Zentimeter entsprechen einem Dezimeter?%a) 1%b) 10%c) 100%d) 1000%2]]></BESMARTER_QUESTION_172>
+<BESMARTER_QUESTION_173><![CDATA[Wie viel Meter entsprechen einem Kilometer?%a) 10%b) 100%c) 1000%d) 1%3]]></BESMARTER_QUESTION_173>
+<BESMARTER_QUESTION_174><![CDATA[Wie viel Zentimeter entsprechen einem Meter?%a) 10%b) 1000%c) 1%d) 100%4]]></BESMARTER_QUESTION_174>
+<BESMARTER_QUESTION_175><![CDATA[Wie viel Quadratdezimeter entsprechen einem Quadratmeter?%a) 10%b) 100%c) 1000%d) 10000%2]]></BESMARTER_QUESTION_175>
+<BESMARTER_QUESTION_176><![CDATA[Welches dieser Tiere ist ein Haustier?%a) Löwe%b) Leopard%c) Katze%d) Tiger%3]]></BESMARTER_QUESTION_176>
+<BESMARTER_QUESTION_177><![CDATA[In welchem Gebiet leben Pinguine?%a) Arktis%b) Sahelzone%c) Antarktis%d) Tropen%3]]></BESMARTER_QUESTION_177>
+<BESMARTER_QUESTION_178><![CDATA[In welchem Gebiet leben Eisbären?%a) Antarktis%b) Tropen%c) Sahelzone%d) Arktis%4]]></BESMARTER_QUESTION_178>
+<BESMARTER_QUESTION_179><![CDATA[Welches dieser Tiere siehst du für gewöhnlich nicht in einem Zoo?%a) Hamster%b) Tiger%c) Elefant%d) Pinguin%1]]></BESMARTER_QUESTION_179>
+<BESMARTER_QUESTION_18><![CDATA[Welcher Stoff ist Bestandteil einer Wunderkerze?%a) Schwarzpulver%b) Eisenpulver%c) Backpulver%d) Juckpulver%2]]></BESMARTER_QUESTION_18>
+<BESMARTER_QUESTION_180><![CDATA[Welcher der genannten Vögel ist ein Zugvogel?%a) Taube%b) Storch%c) Falke%d) Elster%2]]></BESMARTER_QUESTION_180>
+<BESMARTER_QUESTION_181><![CDATA[Welchen dieser Vögel bezeichnet man als Greifvogel?%a) Kranich%b) Neuntöter%c) Adler%d) Möwe%3]]></BESMARTER_QUESTION_181>
+<BESMARTER_QUESTION_182><![CDATA[Welcher Vogel kann nicht fliegen?%a) Schwan%b) Strauß%c) Gans%d) Storch%2]]></BESMARTER_QUESTION_182>
+<BESMARTER_QUESTION_183><![CDATA[Welches Tier ernährt sich hauptsächlich von Bambus?%a) Panda%b) Koala%c) Eisbär%d) Braunbär%1]]></BESMARTER_QUESTION_183>
+<BESMARTER_QUESTION_184><![CDATA[Welcher dieser Tiere ernährt sich fast ausschließlich von Eukalyptus?%a) Panda%b) Koala%c) Grizzly%d) Ameisenbär%2]]></BESMARTER_QUESTION_184>
+<BESMARTER_QUESTION_185><![CDATA[Welches dieser Tiere ist ein Säugetier?%a) Eidechse%b) Spinne%c) Wal%d) Eule%3]]></BESMARTER_QUESTION_185>
+<BESMARTER_QUESTION_186><![CDATA[Welches dieser Tiere ist ein Reptil?%a) Ameisenigel%b) Fledermaus%c) Kolibri%d) Klapperschlange%4]]></BESMARTER_QUESTION_186>
+<BESMARTER_QUESTION_187><![CDATA[Welches dieser Tiere gehört zu den Amphibien?%a) Frosch%b) Schlange%c) Eidechse%d) Wurm%1]]></BESMARTER_QUESTION_187>
+<BESMARTER_QUESTION_188><![CDATA[Welches dieser Tiere gehört zu den Insekten?%a) Lurch%b) Schwalbe%c) Ameise%d) Schildkröte%3]]></BESMARTER_QUESTION_188>
+<BESMARTER_QUESTION_189><![CDATA[Welche dieser Energiequellen zählt zu den erneuerbaren Energien?%a) Kernkraft%b) Gas%c) Kohle%d) Windkraft%4]]></BESMARTER_QUESTION_189>
+<BESMARTER_QUESTION_19><![CDATA[Welches dieser Metalle ist ein Leichtmetall?%a) Blei%b) Magnesium%c) Titan%d) Aluminium%4]]></BESMARTER_QUESTION_19>
+<BESMARTER_QUESTION_190><![CDATA[Welcher dieser Bäume gehört zu den Nadelhölzern?%a) Tanne%b) Eiche%c) Buche%d) Birke%1]]></BESMARTER_QUESTION_190>
+<BESMARTER_QUESTION_191><![CDATA[Welcher dieser Bäume ist ein Laubbaum?%a) Fichte%b) Eiche%c) Tanne%d) Lärche%2]]></BESMARTER_QUESTION_191>
+<BESMARTER_QUESTION_192><![CDATA[Wie nennt man ein kleines Pferd?%a) Pony%b) Zwerg%c) Knirps%d) Däumling%1]]></BESMARTER_QUESTION_192>
+<BESMARTER_QUESTION_193><![CDATA[Welches dieser Tiere orientiert sich im Raum mittels Schallwellen?%a) Hund%b) Katze%c) Fledermaus%d) Gorilla%3]]></BESMARTER_QUESTION_193>
+<BESMARTER_QUESTION_194><![CDATA[Welche Tiere werden in einem Aquarium gehalten?%a) Flöhe%b) Fische%c) Eidechsen%d) Vögel%2]]></BESMARTER_QUESTION_194>
+<BESMARTER_QUESTION_195><![CDATA[Welche Tiere werden in einem Terrarium gehalten?%a) Fische%b) Löwen%c) Vögel%d) Reptilien%4]]></BESMARTER_QUESTION_195>
+<BESMARTER_QUESTION_196><![CDATA[Welches dieser Tiere hält Winterschlaf?%a) Igel%b) Pavian%c) Adler%d) Storch%1]]></BESMARTER_QUESTION_196>
+<BESMARTER_QUESTION_197><![CDATA[Welches dieser Tiere ist ein kein Waldbewohner?%a) Hirsch%b) Kamel%c) Wildschwein%d) Elch%2]]></BESMARTER_QUESTION_197>
+<BESMARTER_QUESTION_198><![CDATA[Welches Tier gibt es heute nicht mehr?%a) Dinosaurier%b) Flußpferd%c) Berggorilla%d) Meerkätzchen%1]]></BESMARTER_QUESTION_198>
+<BESMARTER_QUESTION_199><![CDATA[Welches dieser Tiere jagt nur nachts?%a) Fuchs%b) Tiger%c) Uhu%d) Leopard%3]]></BESMARTER_QUESTION_199>
+<BESMARTER_QUESTION_2><![CDATA[Welche Form hat ein Stoppschild?%a) Achteck%b) Raute%c) Dreieck%d) Kreis%1]]></BESMARTER_QUESTION_2>
+<BESMARTER_QUESTION_20><![CDATA[Welches dieser Metalle ist ein Schwermetall?%a) Blei%b) Magnesium%c) Titan%d) Aluminium%1]]></BESMARTER_QUESTION_20>
+<BESMARTER_QUESTION_200><![CDATA[Welcher Vogel legt seine Eier in fremde Nester?%a) Kuckuck%b) Eule%c) Möwe%d) Kolibri%1]]></BESMARTER_QUESTION_200>
+<BESMARTER_QUESTION_201><![CDATA[Welche Frucht wächst nicht auf Bäumen?%a) Pflaumen%b) Erdbeeren%c) Birnen%d) Bananen%2]]></BESMARTER_QUESTION_201>
+<BESMARTER_QUESTION_202><![CDATA[Welche Blume besitzt Stacheln?%a) Lilie%b) Rose%c) Nelke%d) Tulpe%2]]></BESMARTER_QUESTION_202>
+<BESMARTER_QUESTION_203><![CDATA[Auf welchem Kontinent lebt der Pandabär?%a) Europa%b) Amerika%c) Australien%d) Asien%4]]></BESMARTER_QUESTION_203>
+<BESMARTER_QUESTION_204><![CDATA[Auf welchem Kontinent lebt der Koala?%a) Afrika%b) Europa%c) Australien%d) Amerika%3]]></BESMARTER_QUESTION_204>
+<BESMARTER_QUESTION_205><![CDATA[Welche Farbe hat das Fell des Eisbären?%a) weiß%b) braun%c) grau%d) schwarz%1]]></BESMARTER_QUESTION_205>
+<BESMARTER_QUESTION_206><![CDATA[Welche dieser Früchte hat einen Stein?%a) Erdbeere%b) Kirsche%c) Kiwi%d) Banane%2]]></BESMARTER_QUESTION_206>
+<BESMARTER_QUESTION_207><![CDATA[Wie werden die Jungen eines Hundes genannt?%a) Welpen%b) Fohlen%c) Frischlinge%d) Kälber%1]]></BESMARTER_QUESTION_207>
+<BESMARTER_QUESTION_208><![CDATA[Wie werden die Jungen eines Pferdes genannt?%a) Lämmer%b) Fohlen%c) Ferkel%d) Küken%2]]></BESMARTER_QUESTION_208>
+<BESMARTER_QUESTION_209><![CDATA[Wie nennt man einen männlichen Hund?%a) Ochse%b) Hengst%c) Rüde%d) Bulle%3]]></BESMARTER_QUESTION_209>
+<BESMARTER_QUESTION_21><![CDATA[Woraus besteht ein Diamant?%a) Schwefel%b) Zucker%c) Kohlenstoff%d) Salz%3]]></BESMARTER_QUESTION_21>
+<BESMARTER_QUESTION_210><![CDATA[Wie wird das Zuhause eines Vogels genannt?%a) Nest%b) Bau%c) Stall%d) Höhle%1]]></BESMARTER_QUESTION_210>
+<BESMARTER_QUESTION_211><![CDATA[Wie viele Beine haben Spinnen?%a) 2%b) 8%c) 6%d) 4%2]]></BESMARTER_QUESTION_211>
+<BESMARTER_QUESTION_212><![CDATA[Wie heißen die beiden beliebten Blogreporter auf Panfu?%a) Max & Moritz%b) Dick & Doof%c) Max & Ella%d) Ernie & Bert%3]]></BESMARTER_QUESTION_212>
+<BESMARTER_QUESTION_213><![CDATA[Wo kannst du das Einhorn auf Panfu finden?%a) Unheimlicher Wald%b) Ponystall%c) Vulkan%d) Piratenbar%1]]></BESMARTER_QUESTION_213>
+<BESMARTER_QUESTION_214><![CDATA[Wo ist Kamaria auf Panfu zu finden?%a) Dschungel%b) Schlossturm%c) Pirateninsel%d) San Franpanfu%2]]></BESMARTER_QUESTION_214>
+<BESMARTER_QUESTION_215><![CDATA[Welchen Namen trägt der schrullige Erfinder auf Panfu?%a) Professor Bookworm%b) Pandaberg%c) Doktor Feelgood%d) Lili Panphung%1]]></BESMARTER_QUESTION_215>
+<BESMARTER_QUESTION_216><![CDATA[Wo auf Panfu lebt Professor Bookworm?%a) Bitterland%b) Baumhaus%c) Dschungelhöhle%d) Rennstrecke%3]]></BESMARTER_QUESTION_216>
+<BESMARTER_QUESTION_217><![CDATA[In welchem Gebäude befindet sich auf Panfu die Bibliothek?%a) Chez Bruno%b) Zoohandlung%c) Schloss%d) Eisdiele%4]]></BESMARTER_QUESTION_217>
+<BESMARTER_QUESTION_218><![CDATA[Wie heißt der Restaurantbesitzer auf Panfu?%a) Bonez%b) Bruno%c) Gonzo%d) Lenny%2]]></BESMARTER_QUESTION_218>
+<BESMARTER_QUESTION_219><![CDATA[Wer beschäftigt sich auf Panfu mit Magie und Zaubertränken?%a) Kamaria%b) Eloise%c) Bonez%d) Professor Bookworm%1]]></BESMARTER_QUESTION_219>
+<BESMARTER_QUESTION_22><![CDATA[Welches Narkosemittel gibt es wirklich?%a) Weingas%b) Lachgas%c) Schlafgas%d) Ruhegas%2]]></BESMARTER_QUESTION_22>
+<BESMARTER_QUESTION_220><![CDATA[Wie heißt der Kioskbesitzer auf Panfu?%a) Willi%b) Gonzo%c) Troy%d) Curley%2]]></BESMARTER_QUESTION_220>
+<BESMARTER_QUESTION_221><![CDATA[Welchen Namen trägt der Seemann im 'Alten Hafen'?%a) Horst Hering%b) Evron%c) Gonzo%d) Curley%1]]></BESMARTER_QUESTION_221>
+<BESMARTER_QUESTION_222><![CDATA[Wo kannst du auf Panfu Oskar den Delphin finden?%a) Ponyhof%b) Schwimmbad%c) Rennstrecke%d) Strand%4]]></BESMARTER_QUESTION_222>
+<BESMARTER_QUESTION_223><![CDATA[An welchem Ort hält sich William Pandabeard meistens auf?%a) Vulkan%b) Strand%c) Piratenbar%d) Schwimmbad%3]]></BESMARTER_QUESTION_223>
+<BESMARTER_QUESTION_224><![CDATA[In welchem Gebäude hält sich Eloise auf Panfu auf?%a) Schönheitssalon%b) Zoohandlung%c) Geschenkeladen%d) Pokopet-Scheune%4]]></BESMARTER_QUESTION_224>
+<BESMARTER_QUESTION_225><![CDATA[Wo findest du auf Panfu die 'Diskothek'?%a) Schloss%b) Sportplatz%c) Stadt%d) Pirateninsel%1]]></BESMARTER_QUESTION_225>
+<BESMARTER_QUESTION_226><![CDATA[Welches dieser Pokopets gibt es nicht?%a) Stella%b) Knuddel%c) Woody%d) Marieta%2]]></BESMARTER_QUESTION_226>
+<BESMARTER_QUESTION_227><![CDATA[Welcher Bösewicht herrscht über 'Bitterland'?%a) Evron%b) Bonez%c) Sauron%d) Gonzo%1]]></BESMARTER_QUESTION_227>
+<BESMARTER_QUESTION_228><![CDATA[Wer kann mit seinen Gedanken eine ganze Insel bewegen?%a) Lenny%b) Professor Bookworm%c) Kamaria%d) Paul the Kid%4]]></BESMARTER_QUESTION_228>
+<BESMARTER_QUESTION_229><![CDATA[Was isst Paul the Kid am liebsten?%a) Hot Dogs%b) Hamburger%c) Pancakes%d) Muffins%3]]></BESMARTER_QUESTION_229>
+<BESMARTER_QUESTION_23><![CDATA[Welche Farbe hat ein Rubin?%a) grün%b) blau%c) rot%d) gelb%3]]></BESMARTER_QUESTION_23>
+<BESMARTER_QUESTION_230><![CDATA[Wie heißt der Surflehrer am 'Karibischen Strand'?%a) Max%b) Lenny%c) Penny%d) Fred%2]]></BESMARTER_QUESTION_230>
+<BESMARTER_QUESTION_231><![CDATA[Welchen Namen trägt der Clown auf Panfu?%a) Gonzo%b) Paul the Kid%c) Curley%d) Kamaria%3]]></BESMARTER_QUESTION_231>
+<BESMARTER_QUESTION_232><![CDATA[Wie heißt Kamarias alte Freundin aus Afrika?%a) Eloise%b) Ella%c) Penny%d) Lili%1]]></BESMARTER_QUESTION_232>
+<BESMARTER_QUESTION_233><![CDATA[Wer hat die Pokopets in Käfige gesperrt und nach Panfu gebracht?%a) Evron%b) Bonez%c) Krucio%d) Eloise%2]]></BESMARTER_QUESTION_233>
+<BESMARTER_QUESTION_234><![CDATA[Wie nennt man die Tiere, die Bonez in Käfigen nach Panfu gebracht hat?%a) Pompoms%b) Bollys%c) Woobys%d) Pokopets%4]]></BESMARTER_QUESTION_234>
+<BESMARTER_QUESTION_235><![CDATA[Wer droht mit seiner Tinte ganz Panfu schwarz zu färben?%a) Henry%b) Fred%c) Horsey%d) Krucio%2]]></BESMARTER_QUESTION_235>
+<BESMARTER_QUESTION_236><![CDATA[Wie ist der Name von Kamarias Sohn?%a) Farid%b) Troy%c) Nasir%d) Fred%3]]></BESMARTER_QUESTION_236>
+<BESMARTER_QUESTION_237><![CDATA[Was möchte Fred, der Kraken, von Nasir zurück haben?%a) Schatz%b) Eisdiamant%c) Schatzkarte%d) Goldmünze%1]]></BESMARTER_QUESTION_237>
+<BESMARTER_QUESTION_238><![CDATA[Wo findet man auf Panfu Krabben und Kokosnüsse?%a) Piratenbar%b) Dschungel%c) Pirateninsel%d) Bitterland%3]]></BESMARTER_QUESTION_238>
+<BESMARTER_QUESTION_239><![CDATA[Wie heißt Kamarias verschollen geglaubter Geliebter?%a) Nasir%b) Farid%c) Willi%d) Doktor Feelgood%2]]></BESMARTER_QUESTION_239>
+<BESMARTER_QUESTION_24><![CDATA[Welche Farbe hat ein Smaragd?%a) grün%b) gelb%c) rot%d) blau%1]]></BESMARTER_QUESTION_24>
+<BESMARTER_QUESTION_240><![CDATA[Welches Haustier hält sich der Pirat William Pandabeard?%a) Papagei%b) Schildkröte%c) Hai%d) Maus%1]]></BESMARTER_QUESTION_240>
+<BESMARTER_QUESTION_241><![CDATA[Welches Wesen lebt unter William Pandabeards 'Piratenbar'?%a) blauer Elefant%b) weiße Maus%c) rosa Mumie%d) grüner Papagei%3]]></BESMARTER_QUESTION_241>
+<BESMARTER_QUESTION_242><![CDATA[Welchen Namen trägt William Pandabeards Papagei?%a) Wooby%b) Curley%c) Woody%d) Beardy%4]]></BESMARTER_QUESTION_242>
+<BESMARTER_QUESTION_243><![CDATA[Womit lässt sich der Magische Eisdiamant aus dem gleichnamigen Abenteuer vernichten?%a) Liebe%b) Lava%c) Tränen%d) Luft%2]]></BESMARTER_QUESTION_243>
+<BESMARTER_QUESTION_244><![CDATA[Welches dieser Dinge bewegt sich am schnellsten?%a) Licht%b) Schall%c) Wärme%d) Kälte%1]]></BESMARTER_QUESTION_244>
+<BESMARTER_QUESTION_245><![CDATA[Welcher dieser Stoffe leitet elektrischen Strom?%a) Gummi%b) Glas%c) Kupfer%d) Kunststoff%3]]></BESMARTER_QUESTION_245>
+<BESMARTER_QUESTION_246><![CDATA[Wie nennt man den Zerfall von Atomkernen?%a) Zufall%b) Hyperaktivität%c) Magnetismus%d) Radioaktivität%4]]></BESMARTER_QUESTION_246>
+<BESMARTER_QUESTION_247><![CDATA[Welcher dieser Stoffe leitet keinen elektrischen Strom?%a) Eisen%b) Gummi%c) Wasser%d) Gold%2]]></BESMARTER_QUESTION_247>
+<BESMARTER_QUESTION_248><![CDATA[Welche Kraft lässt alle Gegenstände nach unten fallen?%a) elektromagnetische Kraft%b) Schwerkraft%c) Kernkraft%d) Fliehkraft%2]]></BESMARTER_QUESTION_248>
+<BESMARTER_QUESTION_249><![CDATA[Welcher Körper wirkt anziehend auf Eisen?%a) Magnet%b) Hufeisen%c) Eisberg%d) Gummiente%1]]></BESMARTER_QUESTION_249>
+<BESMARTER_QUESTION_25><![CDATA[Woraus wird Marzipan hergestellt?%a) Mandeln%b) Haselnüssen%c) Walnüssen%d) Kastanien%1]]></BESMARTER_QUESTION_25>
+<BESMARTER_QUESTION_250><![CDATA[Mit welchen Strahlen untersucht der Arzt einen Knochenbruch?%a) Sonnenstrahlen%b) Wasserstrahlen%c) Wärmestrahlen%d) Röntgenstrahlen%4]]></BESMARTER_QUESTION_250>
+<BESMARTER_QUESTION_251><![CDATA[Wie heißt das elektrisch neutrale Teilchen im Atomkern?%a) Positron%b) Neutron%c) Elektron%d) Proton%2]]></BESMARTER_QUESTION_251>
+<BESMARTER_QUESTION_252><![CDATA[Wie heißt das positiv geladene Teilchen im Atomkern?%a) Neutron%b) Proton%c) Elektron%d) Ion%2]]></BESMARTER_QUESTION_252>
+<BESMARTER_QUESTION_253><![CDATA[Welches negativ geladene Teilchen umkreist den Atomkern?%a) Elektron%b) Proton%c) Neutron%d) Positron%1]]></BESMARTER_QUESTION_253>
+<BESMARTER_QUESTION_254><![CDATA[Mit welchem Programm werden Webseiten dargestellt?%a) Browser%b) Mauser%c) Lauser%d) Brauner%1]]></BESMARTER_QUESTION_254>
+<BESMARTER_QUESTION_255><![CDATA[Welche Art von Computerprogramme sind Windows oder Linux?%a) Kühlsystem%b) Schulsystem%c) Betriebssystem%d) Immunsystem%3]]></BESMARTER_QUESTION_255>
+<BESMARTER_QUESTION_256><![CDATA[Wie wird ein menschenähnlicher Roboter genannt?%a) Asteroid%b) Android%c) Hominid%d) Alkaloid%2]]></BESMARTER_QUESTION_256>
+<BESMARTER_QUESTION_257><![CDATA[Wie werden Computerprogramme auch genannt?%a) Hardware%b) Lightware%c) Software%d) Trendware%3]]></BESMARTER_QUESTION_257>
+<BESMARTER_QUESTION_258><![CDATA[Wie nennt man mechanische oder elektronische Komponenten eines PCs?%a) Software%b) Shareware%c) Freeware%d) Hardware%4]]></BESMARTER_QUESTION_258>
+<BESMARTER_QUESTION_259><![CDATA[Wie nennt man einen kleinen, tragbaren Computer?%a) Facebook%b) Notebook%c) E-Book%d) Lookbook%2]]></BESMARTER_QUESTION_259>
+<BESMARTER_QUESTION_26><![CDATA[Welches dieser Gase ist entzündlich?%a) Sauerstoff%b) Wasserstoff%c) Stickstoff%d) Xenon%2]]></BESMARTER_QUESTION_26>
+<BESMARTER_QUESTION_260><![CDATA[Was gehört zu einem Computer?%a) Maus%b) Hamster%c) Ratte%d) Meerschweinchen%1]]></BESMARTER_QUESTION_260>
+<BESMARTER_QUESTION_261><![CDATA[Womit gibst du Text in deinen Computer ein?%a) Drucker%b) Monitor%c) Lautsprecher%d) Tastatur%4]]></BESMARTER_QUESTION_261>
+<BESMARTER_QUESTION_262><![CDATA[Wie heißt ein kleiner, tragbarer Computer ohne Tastatur?%a) Desktop-PC%b) Laptop%c) Tablet-PC%d) Notebook%3]]></BESMARTER_QUESTION_262>
+<BESMARTER_QUESTION_263><![CDATA[Wie lautet der Begriff für die elektronische Datenverarbeitung?%a) DVD%b) VDE%c) VDI%d) EDV%4]]></BESMARTER_QUESTION_263>
+<BESMARTER_QUESTION_264><![CDATA[Welches Speichermedium hat die höchste Speicherkapazität?%a) DVD%b) CD%c) Diskette%d) Blu-Ray Disc%4]]></BESMARTER_QUESTION_264>
+<BESMARTER_QUESTION_265><![CDATA[Welche Software schützt deinen Computer im Internet gegen unerlaubte Zugriffe?%a) Firewall%b) Waterfall%c) Firewire%d) Bluetooth%1]]></BESMARTER_QUESTION_265>
+<BESMARTER_QUESTION_266><![CDATA[Wie lautet der englische Begriff für die Aktualisierung von Computerdaten?%a) Upload%b) Update%c) Upgrade%d) Refresh%2]]></BESMARTER_QUESTION_266>
+<BESMARTER_QUESTION_267><![CDATA[Welches Gerät verbindet deinen Computer mit dem Internet?%a) Modem%b) Drucker%c) Scanner%d) Monitor%1]]></BESMARTER_QUESTION_267>
+<BESMARTER_QUESTION_268><![CDATA[Mit welchem Gerät kannst du Bilder oder Dokumente in deinen PC einlesen?%a) Monitor%b) Tastatur%c) Scanner%d) Drucker%3]]></BESMARTER_QUESTION_268>
+<BESMARTER_QUESTION_269><![CDATA[Welches Gerät ermöglicht es dir im Internet zu surfen?%a) Computer%b) Joystick%c) Scanner%d) Drucker%1]]></BESMARTER_QUESTION_269>
+<BESMARTER_QUESTION_27><![CDATA[Welches dieser Metalle leitet am besten elektrischen Strom?%a) Eisen%b) Gold%c) Silber%d) Kupfer%3]]></BESMARTER_QUESTION_27>
+<BESMARTER_QUESTION_270><![CDATA[Wie viele Spieler hat eine Fußballmannschaft?%a) 9%b) 10%c) 11%d) 12%3]]></BESMARTER_QUESTION_270>
+<BESMARTER_QUESTION_271><![CDATA[Was macht eine Ballerina?%a) Singen%b) Tanzen%c) Malen%d) Turnen%2]]></BESMARTER_QUESTION_271>
+<BESMARTER_QUESTION_272><![CDATA[Wohin muss der Ball beim Basketball?%a) Korb%b) Tor%c) Eimer%d) Loch%1]]></BESMARTER_QUESTION_272>
+<BESMARTER_QUESTION_273><![CDATA[Wie oft finden die Olympischen Winterspiele statt?%a) jedes Jahr%b) alle zwei Jahre%c) alle vier Jahre%d) alle acht Jahre%3]]></BESMARTER_QUESTION_273>
+<BESMARTER_QUESTION_274><![CDATA[Welche Sportart gibt es nicht?%a) Fußball%b) Knieball%c) Handball%d) Völkerball%2]]></BESMARTER_QUESTION_274>
+<BESMARTER_QUESTION_275><![CDATA[Wie viele Mannschaften spielen beim Fußball gegeneinander?%a) 1%b) 2%c) 3%d) 4%2]]></BESMARTER_QUESTION_275>
+<BESMARTER_QUESTION_276><![CDATA[Bei welchem Sport spielen sich zwei Personen mit einem Schläger einen Ball über ein Netz zu?%a) Golf%b) Cricket%c) Polo%d) Tennis%4]]></BESMARTER_QUESTION_276>
+<BESMARTER_QUESTION_277><![CDATA[Bei welcher Sportart braucht man Schläger, Ball und Pferde?%a) Squash%b) Polo%c) Eishockey%d) Tischtennis%2]]></BESMARTER_QUESTION_277>
+<BESMARTER_QUESTION_278><![CDATA[Welches dieser Instrumente hat eine Tastatur?%a) Schlagzeug%b) Klavier%c) Flöte%d) Gitarre%2]]></BESMARTER_QUESTION_278>
+<BESMARTER_QUESTION_279><![CDATA[Was ist kein Streichinstrument?%a) Geige%b) Kontrabass%c) Saxophon%d) Bratsche%3]]></BESMARTER_QUESTION_279>
+<BESMARTER_QUESTION_28><![CDATA[Welches Material wird in Kabeln zur Datenübertragung genutzt?%a) Kohlefaser%b) Raufaser%c) Wollfaser%d) Glasfaser%4]]></BESMARTER_QUESTION_28>
+<BESMARTER_QUESTION_280><![CDATA[Bei welcher Sportart sagt man "Alle Neune!"?%a) Fußball%b) Basketball%c) Kegeln%d) Golf%3]]></BESMARTER_QUESTION_280>
+<BESMARTER_QUESTION_281><![CDATA[Für welche Sportart benötigst du zwei Schläger und einen Ball?%a) Handball%b) Rugby%c) Tauchen%d) Tischtennis%4]]></BESMARTER_QUESTION_281>
+<BESMARTER_QUESTION_282><![CDATA[Welche Sportart wird mit einem Puck gespielt?%a) Eishockey%b) Golf%c) Tennis%d) Badminton%1]]></BESMARTER_QUESTION_282>
+<BESMARTER_QUESTION_283><![CDATA[Welche Sportart wird nur im Winter betrieben?%a) Marathon%b) Biathlon%c) Triathlon%d) Badminton%2]]></BESMARTER_QUESTION_283>
+<BESMARTER_QUESTION_284><![CDATA[Welche Sportart hat 18 Bahnen mit 18 Löchern?%a) Volleyball%b) Eishockey%c) Bowling%d) Golf%4]]></BESMARTER_QUESTION_284>
+<BESMARTER_QUESTION_285><![CDATA[Welches dieser Phänomene gibt es wirklich?%a) Mondnebel%b) Sonnenwind%c) Marsregen%d) Sternenschnee%2]]></BESMARTER_QUESTION_285>
+<BESMARTER_QUESTION_286><![CDATA[Wie heißt der größte Planet unseres Sonnensystems?%a) Mars%b) Erde%c) Jupiter%d) Venus%3]]></BESMARTER_QUESTION_286>
+<BESMARTER_QUESTION_287><![CDATA[Wie wird der Polarstern noch genannt?%a) Nordstern%b) Südstern%c) Weststern%d) Oststern%1]]></BESMARTER_QUESTION_287>
+<BESMARTER_QUESTION_288><![CDATA[Bei welchem Ereignis verdeckt der Mond die Sonne?%a) Polarlicht%b) Morgenrot%c) Sonnenwende%d) Sonnenfinsternis%4]]></BESMARTER_QUESTION_288>
+<BESMARTER_QUESTION_289><![CDATA[Wie heißt ein bekanntes Sternbild am nördlichen Himmel?%a) Kleiner Tiger%b) Dicker Hund%c) Großer Bär%d) Schmale Gans%3]]></BESMARTER_QUESTION_289>
+<BESMARTER_QUESTION_29><![CDATA[Wie lautet das chemische Kürzel für Wasser?%a) H%b) SO2%c) H2O%d) CH4%3]]></BESMARTER_QUESTION_29>
+<BESMARTER_QUESTION_290><![CDATA[In welcher Galaxie liegt unser Heimatplanet die Erde?%a) Sandstraße%b) Milchstraße%c) Perlenstraße%d) Diamantenstraße%2]]></BESMARTER_QUESTION_290>
+<BESMARTER_QUESTION_291><![CDATA[Wie heißt der Planet auf dem wir leben?%a) Mars%b) Mond%c) Saturn%d) Erde%4]]></BESMARTER_QUESTION_291>
+<BESMARTER_QUESTION_292><![CDATA[In welcher Himmelsrichtung geht die Sonne auf?%a) Norden%b) Osten%c) Süden%d) Westen%2]]></BESMARTER_QUESTION_292>
+<BESMARTER_QUESTION_293><![CDATA[In welcher Himmelsrichtung geht die Sonne unter?%a) Norden%b) Osten%c) Süden%d) Westen%4]]></BESMARTER_QUESTION_293>
+<BESMARTER_QUESTION_294><![CDATA[Welcher Begriff bezeichnet die Wissenschaft der Gestirne?%a) Astronomie%b) Astrologie%c) Biologie%d) Chemie%1]]></BESMARTER_QUESTION_294>
+<BESMARTER_QUESTION_295><![CDATA[Welches Sternbild gibt es nicht?%a) Drache%b) Möwe%c) Einhorn%d) Adler%2]]></BESMARTER_QUESTION_295>
+<BESMARTER_QUESTION_296><![CDATA[Welches Tierkreiszeichen gibt es nicht?%a) Jungfrau%b) Schütze%c) Drillinge%d) Wassermann%3]]></BESMARTER_QUESTION_296>
+<BESMARTER_QUESTION_297><![CDATA[Wie nennt man einen Teil der Erde, der sich nördlich oder südlich des Äquators befindet?%a) Affäre%b) Stratosphäre%c) Atmosphäre%d) Hemisphäre%4]]></BESMARTER_QUESTION_297>
+<BESMARTER_QUESTION_298><![CDATA[Wie wird ein Raumfahrer auch genannt?%a) Aquanaut%b) Astronaut%c) Argonaut%d) Aeoronaut%2]]></BESMARTER_QUESTION_298>
+<BESMARTER_QUESTION_299><![CDATA[Was ist das Gegenteil vom Vollmond?%a) Neumond%b) Halbmond%c) Altmond%d) Viertelmond%1]]></BESMARTER_QUESTION_299>
+<BESMARTER_QUESTION_3><![CDATA[Welche dieser Zahlen entspricht einem Dutzend?%a) 6%b) 12%c) 144%d) 24%2]]></BESMARTER_QUESTION_3>
+<BESMARTER_QUESTION_30><![CDATA[Für welches chemische Element steht der Buchstabe O?%a) Sauerstoff%b) Wasserstoff%c) Stickstoff%d) Kohlenstoff%1]]></BESMARTER_QUESTION_30>
+<BESMARTER_QUESTION_300><![CDATA[Welches dieser Tiere ist kein Säugetier?%a) Ameisenbär%b) Wal%c) Gürteltier%d) Qualle%4]]></BESMARTER_QUESTION_300>
+<BESMARTER_QUESTION_301><![CDATA[Welches dieser Tiere ist ein Säugetier und legt trotzdem Eier?%a) Ente%b) Schnabeltier%c) Kolibri%d) Krokodil%2]]></BESMARTER_QUESTION_301>
+<BESMARTER_QUESTION_302><![CDATA[Welches dieser Tiere ist für gewöhnlich kein Haustier?%a) Hund%b) Hamster%c) Nilpferd%d) Wellensittich%3
+]]></BESMARTER_QUESTION_302>
+<BESMARTER_QUESTION_303><![CDATA[Wie hieß der wohl berühmteste Stummfilm-Komiker?%a) Tom Hanks%b) Charlie Chaplin%c) Arnold Schwarzenegger%d) Clint Eastwood%2]]></BESMARTER_QUESTION_303>
+<BESMARTER_QUESTION_304><![CDATA[In welchem Land leben die Hobbits?%a) Auenland%b) Isengart%c) Mordor%d) Bruchtal%1]]></BESMARTER_QUESTION_304>
+<BESMARTER_QUESTION_305><![CDATA[Wie heißt der dunkle Herrscher von Mordor?%a) Gollum%b) Sauron%c) Boromir%d) Saruman%2]]></BESMARTER_QUESTION_305>
+<BESMARTER_QUESTION_306><![CDATA[In dem Feuer welches Vulkans wurde der 'Eine Ring' geschmiedet?%a) Zauberberg%b) Flammenberg%c) Schicksalsberg%d) Riesenberg%3]]></BESMARTER_QUESTION_306>
+<BESMARTER_QUESTION_307><![CDATA[Welcher Hobbit ist dazu verdammt den 'Einen Ring' nach Mordor zu tragen?%a) Bilbo%b) Smeagol%c) Samweis%d) Frodo%4]]></BESMARTER_QUESTION_307>
+<BESMARTER_QUESTION_308><![CDATA[Wie viele Zwerge hat Schneewittchen als Freunde?%a) 2%b) 9%c) 7%d) 4%3]]></BESMARTER_QUESTION_308>
+<BESMARTER_QUESTION_309><![CDATA[Wem ist Alice im Wunderland begegnet?%a) Grinsekatze%b) Heulmaus%c) Schmunzelpferd%d) Seufzhamster%1]]></BESMARTER_QUESTION_309>
+<BESMARTER_QUESTION_31><![CDATA[Wer entdeckte das berühmte Grab des Pharaos Tutanchamun?%a) Alexander von Humboldt%b) Howard Carter%c) Heinrich Schliemann%d) Heinrich Barth%2]]></BESMARTER_QUESTION_31>
+<BESMARTER_QUESTION_310><![CDATA[Welche Märchenfigur wird nach einem hundertjährigen Schlaf wachgeküsst?%a) Rotkäppchen%b) Schneewittchen%c) Aschenputtel%d) Dornröschen%4]]></BESMARTER_QUESTION_310>
+<BESMARTER_QUESTION_311><![CDATA[Was spinnt das Rumpelstilzchen der Müllerstochter aus Stroh?%a) Wollsocken%b) Goldfäden%c) Silberlocken%d) Leinentücher%2]]></BESMARTER_QUESTION_311>
+<BESMARTER_QUESTION_312><![CDATA[Was lässt Rapunzel aus dem Turm hängen?%a) Strickleiter%b) Wollfäden%c) Haare%d) Socken%3]]></BESMARTER_QUESTION_312>
+<BESMARTER_QUESTION_313><![CDATA[Welches Wesen verspeist das Rotkäppchen und ihre Großmutter?%a) der böse Wolf%b) der dicke Bär%c) der krumme Hund%d) der gestiefelte Kater%1]]></BESMARTER_QUESTION_313>
+<BESMARTER_QUESTION_314><![CDATA[Wer hilft Aschenputtel die verschütteten Linsen aufzusammeln?%a) Mäuse%b) Tauben%c) Flöhe%d) Katzen%2]]></BESMARTER_QUESTION_314>
+<BESMARTER_QUESTION_315><![CDATA[Wer verirrt sich im Wald und findet das Knusperhäuschen der alten Hexe?%a) Rumpelstilzchen%b) Rotkäppchen%c) Hänsel & Gretel%d) Rübezahl%3]]></BESMARTER_QUESTION_315>
+<BESMARTER_QUESTION_316><![CDATA[Wer hat das traurig-schöne Märchen "Das kleine Mädchen mit den Schwefelhölzern" geschrieben?%a) J.R.R. Tolkien%b) Joan K. Rowling%c) Hans Christian Andersen%d) Edgar Allan Poe%3]]></BESMARTER_QUESTION_316>
+<BESMARTER_QUESTION_317><![CDATA[In welcher Fantasiewelt spielt 'Der Herr der Ringe'?%a) Mittwelt%b) Oz%c) Narnia%d) Mittelerde%4]]></BESMARTER_QUESTION_317>
+<BESMARTER_QUESTION_318><![CDATA[Welches Tier trägt sein Haus immer bei sich?%a) Biber%b) Schnecke%c) Wellensittich%d) Grille%2]]></BESMARTER_QUESTION_318>
+<BESMARTER_QUESTION_319><![CDATA[Welchen Namen hat Pippi Langstrumpfs Pferd im Film?%a) dünne Tante%b) großer Bruder%c) kleiner Onkel%d) dicke Mutter%3]]></BESMARTER_QUESTION_319>
+<BESMARTER_QUESTION_32><![CDATA[Welcher Forscher entdeckte die antike Stadt Troja?%a) Thomas Young%b) Christoph Kolumbus%c) Juri Gagarin%d) Heinrich Schliemann%4]]></BESMARTER_QUESTION_32>
+<BESMARTER_QUESTION_320><![CDATA[Welchen Namen hat das Haus, in dem Pippi Langstrumpf wohnt?%a) Villa Rosamund%b) Villa Kunterbunt%c) Villa Farbenfroh%d) Villa Bunterhund%2]]></BESMARTER_QUESTION_320>
+<BESMARTER_QUESTION_321><![CDATA[Wie heißt Pippi Langstrumpfs kleines Äffchen?%a) Herr Nilsson%b) Frau Anika%c) Herr Elton%d) Frau Ronja%1]]></BESMARTER_QUESTION_321>
+<BESMARTER_QUESTION_322><![CDATA[Welches Mädchen hat rote Zöpfe und ist das stärkste Mädchen der Welt?%a) Rote Zora%b) Pippi Langstrumpf%c) Ronja%d) Momo%2]]></BESMARTER_QUESTION_322>
+<BESMARTER_QUESTION_323><![CDATA[Wie nennt man eine Puppe, die an Fäden hängt?%a) Handpuppe%b) Schaufensterpuppe%c) Fingerpuppe%d) Marionette%4]]></BESMARTER_QUESTION_323>
+<BESMARTER_QUESTION_324><![CDATA[Wie verständigen sich Honigbienen untereinander?%a) Zauberei%b) Lichtzeichen%c) Tanz%d) Rauchzeichen%3]]></BESMARTER_QUESTION_324>
+<BESMARTER_QUESTION_325><![CDATA[Wie heißt die kleinste Hunderasse der Welt?%a) Chihuahua%b) Pudel%c) Mops%d) Schäferhund%1]]></BESMARTER_QUESTION_325>
+<BESMARTER_QUESTION_326><![CDATA[Welches Lebensmittel wird aus Milch hergestellt?%a) Leberwurst%b) Käse%c) Marmelade%d) Honig%2]]></BESMARTER_QUESTION_326>
+<BESMARTER_QUESTION_327><![CDATA[Welches Lebensmittel wird von Bienen hergestellt?%a) Butter%b) Eier%c) Honig%d) Sahne%3]]></BESMARTER_QUESTION_327>
+<BESMARTER_QUESTION_328><![CDATA[Wie viele Flügel haben Schmetterlinge?%a) 2%b) 4%c) 6%d) 8%2]]></BESMARTER_QUESTION_328>
+<BESMARTER_QUESTION_329><![CDATA[Auf welchem Pferd kannst du nicht reiten?%a) Schaukelpferd%b) Rennpferd%c) Seepferd%d) Wildpferd%3]]></BESMARTER_QUESTION_329>
+<BESMARTER_QUESTION_33><![CDATA[Welchem Bergsteiger gelang die Erstbesteigung des Mount Everest?%a) Reinhold Messner%b) Luis Trenker%c) Edmund Hillary%d) Heinrich Harrer%3]]></BESMARTER_QUESTION_33>
+<BESMARTER_QUESTION_330><![CDATA[Welche Geschwindigkeit kann der Gepard auf Kurzstrecken erreichen?%a) 110 km/h%b) 80 km/h%c) 50 km/h%d) 35 km/h%1]]></BESMARTER_QUESTION_330>
+<BESMARTER_QUESTION_331><![CDATA[Welches Tier kann eine Körperlänge von bis zu 33 Metern erreichen?%a) Krokodil%b) Giraffe%c) Anakonda%d) Blauwal%4]]></BESMARTER_QUESTION_331>
+<BESMARTER_QUESTION_332><![CDATA[Wie weit fliegt der Weißstorch, um sein Winterquartier zu erreichen?%a) 10 Kilometer%b) 100 Kilometer%c) 1.000 Kilometer%d) 10.000 Kilometer%4]]></BESMARTER_QUESTION_332>
+<BESMARTER_QUESTION_333><![CDATA[Welches Tier ist mit einem Körpergewicht von bis zu 180 Tonnen das schwerste Tier der Welt?%a) Tyrannosaurus%b) Nashorn%c) Blauwal%d) Mammut%3]]></BESMARTER_QUESTION_333>
+<BESMARTER_QUESTION_334><![CDATA[Welches Tier kann mit einem Satz bis zu 15 Meter weit springen?%a) Känguru%b) Schneeleopard%c) Riesenkaninchen%d) Antilope%2]]></BESMARTER_QUESTION_334>
+<BESMARTER_QUESTION_335><![CDATA[Bis in welcher Höhe kann der Sperbergeier fliegen?%a) 100 Meter%b) 1.000 Meter%c) 11.000 Meter%d) 20.000 Meter%3]]></BESMARTER_QUESTION_335>
+<BESMARTER_QUESTION_336><![CDATA[Welcher Vogel hält mit einer Flügelspannweite von über 3,50 Meter den Weltrekord?%a) Kondor%b) Albatross%c) Storch%d) Steinadler%3]]></BESMARTER_QUESTION_336>
+<BESMARTER_QUESTION_34><![CDATA[Welcher Naturwissenschaftler gilt als Begründer der Evolutionstheorie?%a) Konrad Lorenz%b) Charles Darwin%c) Gregor Mendel%d) James Watson%2]]></BESMARTER_QUESTION_34>
+<BESMARTER_QUESTION_35><![CDATA[Welcher Forscher war maßgeblich an der Erforschung Süd- und Mittelamerikas beteiligt?%a) Alexander von Humboldt%b) Heinrich Schliemann%c) Heinrich Barth%d) Francisco Pizzaro%1]]></BESMARTER_QUESTION_35>
+<BESMARTER_QUESTION_36><![CDATA[Wer gilt als Erfinder der Glühbirne?%a) Alfred Nobel%b) Graham Bell%c) James Watt%d) Thomas Edison%4]]></BESMARTER_QUESTION_36>
+<BESMARTER_QUESTION_37><![CDATA[Wer umsegelte als erster Mensch die Erde?%a) Christoph Kolumbus%b) Amerigo Vespucci%c) Ferdinand Magellan%d) James Cook%3]]></BESMARTER_QUESTION_37>
+<BESMARTER_QUESTION_38><![CDATA[Wer war der erste Mensch im Weltall?%a) Neil Armstrong%b) Juri Gagarin%c) Buzz Aldrin%d) Wernher von Braun%2]]></BESMARTER_QUESTION_38>
+<BESMARTER_QUESTION_39><![CDATA[Wer war der erste Mensch auf dem Mond?%a) Neil Armstrong%b) Christoph Kolumbus%c) Juri Gagarin%d) Buzz Aldrin%1]]></BESMARTER_QUESTION_39>
+<BESMARTER_QUESTION_4><![CDATA[Was misst man mit einem Lineal?%a) Strecke%b) Gewicht%c) Volumen%d) Dichte%1]]></BESMARTER_QUESTION_4>
+<BESMARTER_QUESTION_40><![CDATA[Welchen Kontinent entdeckte der Seefahrer Christoph Kolumbus?%a) Afrika%b) Amerika%c) Asien%d) Australien%2]]></BESMARTER_QUESTION_40>
+<BESMARTER_QUESTION_41><![CDATA[Welchen Kontinent entdeckte der Seefahrer James Cook?%a) Amerika%b) Asien%c) Australien%d) Antarktis%3]]></BESMARTER_QUESTION_41>
+<BESMARTER_QUESTION_42><![CDATA[Wer war der wohl bekannteste weibliche Pharao in Ägypten?%a) Kleopatra%b) Athene%c) Tutanchamun%d) Queen Mary%1]]></BESMARTER_QUESTION_42>
+<BESMARTER_QUESTION_43><![CDATA[Welche heute türkische Stadt trug ehemals den Namen 'Konstantinopel'?%a) Ismir%b) Istanbul%c) Ankara%d) Antalya%2]]></BESMARTER_QUESTION_43>
+<BESMARTER_QUESTION_44><![CDATA[Wie nennt man den Zeitabschnitt, in dem Menschen vorrangig in Höhlen wohnten?%a) Bronzezeit%b) Eisenzeit%c) Steinzeit%d) Kupferzeit%3]]></BESMARTER_QUESTION_44>
+<BESMARTER_QUESTION_45><![CDATA[Wie werden Menschen in der Steinzeit aufgrund ihrer Nahrungsbeschaffung genannt?%a) Räuber & Diebe%b) Sucher & Finder%c) Dichter & Denker%d) Jäger & Sammler%4]]></BESMARTER_QUESTION_45>
+<BESMARTER_QUESTION_46><![CDATA[In welchem Land fand 1789 eine bedeutende Revolution statt?%a) Deutschland%b) Spanien%c) Niederlande%d) Frankreich%4]]></BESMARTER_QUESTION_46>
+<BESMARTER_QUESTION_47><![CDATA[Welches europäische Land gilt als Wiege der Demokratie?%a) Italien%b) Frankreich%c) Griechenland%d) Schweiz%3]]></BESMARTER_QUESTION_47>
+<BESMARTER_QUESTION_48><![CDATA[Welchen Beinamen trug der französische König Ludwig XIV.?%a) Regenprinz%b) Schneekönig%c) Schattenfürst%d) Sonnenkönig%4]]></BESMARTER_QUESTION_48>
+<BESMARTER_QUESTION_49><![CDATA[Welche dieser Personen war ein berühmter französischer Feldherr und Kaiser?%a) Napoleon Bonaparte%b) Julius Cäsar%c) Heinrich VIII.%d) Otto von Bismarck%1]]></BESMARTER_QUESTION_49>
+<BESMARTER_QUESTION_5><![CDATA[Wie viele Euro-Cent entsprechen einem Euro?%a) 100%b) 10%c) 1000%d) 50%1]]></BESMARTER_QUESTION_5>
+<BESMARTER_QUESTION_50><![CDATA[Wie heißt das wichtigste Werkzeug der Steinzeit?%a) Haarkamm%b) Faustkeil%c) Mundtrommel%d) Fußhupe%2]]></BESMARTER_QUESTION_50>
+<BESMARTER_QUESTION_51><![CDATA[Wie heißt das größte, heute noch in Rom stehende Amphitheater?%a) Aquädukt%b) Petersdom%c) Kolosseum%d) Forum Romanum%3]]></BESMARTER_QUESTION_51>
+<BESMARTER_QUESTION_52><![CDATA[Wie nennt man ein antikes Bauwerk, das dem Transport von Wasser dient?%a) Viadukt%b) Aquädukt%c) Produkt%d) Duktus%2]]></BESMARTER_QUESTION_52>
+<BESMARTER_QUESTION_53><![CDATA[Für welche Statue ist die Stadt New York bekannt?%a) Meerjungfrau%b) Nofretete%c) Sphinx%d) Freiheitsstatue%4]]></BESMARTER_QUESTION_53>
+<BESMARTER_QUESTION_54><![CDATA[Welcher antiker Feldherr überschritt die Alpen mit Elefanten?%a) Hannibal%b) Napoleon%c) Augustus%d) Alexander der Große%1]]></BESMARTER_QUESTION_54>
+<BESMARTER_QUESTION_55><![CDATA[Wie nannte man den höchsten Herrscher im alten Ägypten?%a) Pharao%b) Herzog%c) Kaiser%d) Fürst%1]]></BESMARTER_QUESTION_55>
+<BESMARTER_QUESTION_56><![CDATA[Welchem Zweck dienten die Pyramiden im alten Ägypten?%a) Wohnsitz%b) Bürohaus%c) Hotel%d) Grabstätte%4]]></BESMARTER_QUESTION_56>
+<BESMARTER_QUESTION_57><![CDATA[Welche Handelsroute verband den Mittelmeerraum mit Asien?%a) Seidenstraße%b) Samtstraße%c) Milchstraße%d) Einbahnstraße%1]]></BESMARTER_QUESTION_57>
+<BESMARTER_QUESTION_58><![CDATA[Welche Farbe hat die Mütze von Papa Schlumpf?%a) weiß%b) rot%c) blau%d) grün%2]]></BESMARTER_QUESTION_58>
+<BESMARTER_QUESTION_59><![CDATA[Wie heißt die Fernsehserie in der Charlie Brown und sein Hund Snoopy mitspielen?%a) Simpsons%b) Dschungelbuch%c) Peanuts%d) SpongeBob Schwammkopf%3]]></BESMARTER_QUESTION_59>
+<BESMARTER_QUESTION_6><![CDATA[Wie viele Minuten hat eine halbe Stunde?%a) 60%b) 30%c) 50%d) 15%2]]></BESMARTER_QUESTION_6>
+<BESMARTER_QUESTION_60><![CDATA[Welche Zeichentrickfigur wohnt in Bikini Bottom?%a) Nemo%b) Bob der Baumeister%c) Biene Maja%d) SpongeBob Schwammkopf%4]]></BESMARTER_QUESTION_60>
+<BESMARTER_QUESTION_61><![CDATA[Was für ein Tier ist Nemo aus dem Zeichentrickfilm 'Findet Nemo'?%a) Clownfisch%b) Artisthai%c) Jonglierqualle%d) Trapezwal%1]]></BESMARTER_QUESTION_61>
+<BESMARTER_QUESTION_62><![CDATA[Welcher Körperteil wächst, wenn Pinocchio lügt?%a) Kopf%b) Ohr%c) Nase%d) Finger%3]]></BESMARTER_QUESTION_62>
+<BESMARTER_QUESTION_63><![CDATA[Welche Holzpuppe wäre für sein Leben gern ein Junge aus Fleisch und Blut?%a) Mogli%b) Pinocchio%c) Sindbad%d) Mickey Maus%2]]></BESMARTER_QUESTION_63>
+<BESMARTER_QUESTION_64><![CDATA[Welcher grüngekleidete Junge kann fliegen, kämpft gegen Piraten und wird nie erwachsen?%a) Peter Pan%b) Wiki%c) Sindbad%d) Kermit%1]]></BESMARTER_QUESTION_64>
+<BESMARTER_QUESTION_65><![CDATA[Wie heißt der kleine Junge aus dem 'Dschungelbuch'?%a) Balu%b) Mogli%c) Shir Khan%d) Baghira%2]]></BESMARTER_QUESTION_65>
+<BESMARTER_QUESTION_66><![CDATA[Wie heißt der herzensgute Panther aus dem 'Dschungelbuch'?%a) Shir Khan%b) Balu%c) Baghira%d) Mogli%3]]></BESMARTER_QUESTION_66>
+<BESMARTER_QUESTION_67><![CDATA[Welchen Namen trägt der arglistige Tiger aus dem 'Dschungelbuch'?%a) Shakira%b) Kaa%c) Baghira%d) Shir Khan%4]]></BESMARTER_QUESTION_67>
+<BESMARTER_QUESTION_68><![CDATA[Wie heißt der gemütliche Bär aus dem 'Dschungelbuch'?%a) Balu%b) King Louie%c) Mogli%d) Kaa%1]]></BESMARTER_QUESTION_68>
+<BESMARTER_QUESTION_69><![CDATA[Wie heißen die naseweisen Neffen von Donald Duck?%a) Tic, Tac & Toe%b) Ratz & Fatz%c) Tick, Trick & Track%d) Fix & Foxi%3]]></BESMARTER_QUESTION_69>
+<BESMARTER_QUESTION_7><![CDATA[Wie viele Minuten hat eine viertel Stunde?%a) 60%b) 30%c) 50%d) 15%4]]></BESMARTER_QUESTION_7>
+<BESMARTER_QUESTION_70><![CDATA[In welcher Stadt lebt Donald Duck?%a) Gänsestadt%b) Schwanenburg%c) Möwendorf%d) Entenhausen%4]]></BESMARTER_QUESTION_70>
+<BESMARTER_QUESTION_71><![CDATA[Welche Person verbirgt sich hinter der Comicfigur Batman?%a) Bruce Wayne%b) Peter Parker%c) Clark Kent%d) Bruce Banner%1]]></BESMARTER_QUESTION_71>
+<BESMARTER_QUESTION_72><![CDATA[Welche Person steckt hinter der Comicfigur Spiderman?%a) Bruce Wayne%b) Peter Parker%c) Bruce Banner%d) Clark Kent%2]]></BESMARTER_QUESTION_72>
+<BESMARTER_QUESTION_73><![CDATA[Welchen Beruf übt Spiderman in seinem normalen Leben aus?%a) Fotograf%b) Artist%c) Eisverkäufer%d) Tänzer%1]]></BESMARTER_QUESTION_73>
+<BESMARTER_QUESTION_74><![CDATA[Welche Person verbirgt sich hinter der Comicfigur Hulk?%a) Peter Parker%b) Bruce Lee%c) Bruce Wayne%d) Bruce Banner%4]]></BESMARTER_QUESTION_74>
+<BESMARTER_QUESTION_75><![CDATA[Welchen Beruf hatte der Hulk vor seinem 'Unfall'?%a) Elektriker%b) Wissenschaftler%c) Lehrer%d) Programmierer%2]]></BESMARTER_QUESTION_75>
+<BESMARTER_QUESTION_76><![CDATA[Welche Person steckt hinter der Comicfigur Superman?%a) Bruce Wayne%b) Peter Parker%c) Clark Kent%d) Bruce Banner%3]]></BESMARTER_QUESTION_76>
+<BESMARTER_QUESTION_77><![CDATA[Welchem Beruf geht Superman nach, wenn er keine Ganoven jagt?%a) Zeitungsreporter%b) Pilot%c) Sänger%d) Schuhverkäufer%1]]></BESMARTER_QUESTION_77>
+<BESMARTER_QUESTION_78><![CDATA[Durch welches Mittel verliert Superman seine übermenschlichen Kräfte?%a) Plutonium%b) Kryptonit%c) Stalaktit%d) Ferrit%2]]></BESMARTER_QUESTION_78>
+<BESMARTER_QUESTION_79><![CDATA[Welche Hautfarbe hat die Comicfigur Hulk?%a) lila%b) schwarz%c) pink%d) grün%4]]></BESMARTER_QUESTION_79>
+<BESMARTER_QUESTION_8><![CDATA[Wie viele Stunden hat ein Tag?%a) 20%b) 22%c) 24%d) 12%3]]></BESMARTER_QUESTION_8>
+<BESMARTER_QUESTION_80><![CDATA[Was für ein Tier ist die Comicfigur Pluto?%a) Hund%b) Katze%c) Ente%d) Maus%1]]></BESMARTER_QUESTION_80>
+<BESMARTER_QUESTION_81><![CDATA[Wie heißt der tollpatschige Vater von Bart und Lisa Simpsons?%a) Todd%b) Homer%c) Ned%d) Holger%2]]></BESMARTER_QUESTION_81>
+<BESMARTER_QUESTION_82><![CDATA[Wie heißt Lucky Lukes Pferd?%a) Rantanplan%b) Dalton%c) Jolly Jumper%d) Idefix%3]]></BESMARTER_QUESTION_82>
+<BESMARTER_QUESTION_83><![CDATA[Welche Comicfigur zieht seinen Colt schneller als sein Schatten?%a) Billy the Kid%b) Wyatt Earp%c) Joe Dalton%d) Lucky Luke%4]]></BESMARTER_QUESTION_83>
+<BESMARTER_QUESTION_84><![CDATA[Wie heißt Asterix' bester Freund?%a) Obelix%b) Miraculix%c) Idefix%d) Majestix%1]]></BESMARTER_QUESTION_84>
+<BESMARTER_QUESTION_85><![CDATA[Wie heißt Obelix' kleiner Hund?%a) Snoopy%b) Idefix%c) Struppi%d) Lassie%2]]></BESMARTER_QUESTION_85>
+<BESMARTER_QUESTION_86><![CDATA[Wie viele Dragonballs muss Son-Goku in der gleichnamigen Animeserie finden?%a) 5%b) 6%c) 7%d) 8%3]]></BESMARTER_QUESTION_86>
+<BESMARTER_QUESTION_87><![CDATA[Wie heißt der Held der Animeserie Dragonball?%a) Muten-Roshi%b) Piccolo%c) Kuririn%d) Son-Goku%4]]></BESMARTER_QUESTION_87>
+<BESMARTER_QUESTION_88><![CDATA[Welcher heilige Drache erscheint beim Zusammenlegen aller Dragonballs?%a) Shenlong%b) Bulma%c) Prinz Pilaw%d) Muten-Roshi%1]]></BESMARTER_QUESTION_88>
+<BESMARTER_QUESTION_89><![CDATA[Welche Hautfarbe haben die Schlümpfe?%a) rot%b) weiß%c) blau%d) schwarz%3]]></BESMARTER_QUESTION_89>
+<BESMARTER_QUESTION_9><![CDATA[Wie wird die Wiederverwertung von Rohstoffen genannt?%a) Recycling%b) Kompostierung%c) Entsorgung%d) Altlast%1]]></BESMARTER_QUESTION_9>
+<BESMARTER_QUESTION_90><![CDATA[Was lernt Harry Potter in dem Internat Hogwarts?%a) Zauberei%b) Räuberei%c) Wirtschaftslehre%d) Schwindelei%1]]></BESMARTER_QUESTION_90>
+<BESMARTER_QUESTION_91><![CDATA[Welche englische Schriftstellerin schrieb die Harry Potter Romane?%a) Agatha Christie%b) Aphra Ben%c) Joanne K. Rowling%d) Jane Austen%3]]></BESMARTER_QUESTION_91>
+<BESMARTER_QUESTION_92><![CDATA[Wie heißt Harry Potters größter Feind?%a) Sirius Black%b) Lord Voldemort%c) Albus Dumbledore%d) Ron Weasley%2]]></BESMARTER_QUESTION_92>
+<BESMARTER_QUESTION_93><![CDATA[Wer ist Harry Potters bester Freund?%a) Lord Voldemort%b) Rubeus Hagrid%c) Draco Malfoy%d) Ron Weasley%4]]></BESMARTER_QUESTION_93>
+<BESMARTER_QUESTION_94><![CDATA[Worin nimmt Dagobert Duck täglich ein Bad?%a) Schokolade%b) Geld%c) Eis%d) Brause%2]]></BESMARTER_QUESTION_94>
+<BESMARTER_QUESTION_95><![CDATA[Von welchem Kontinent stammt ursprünglich die Kaffeebohne?%a) Afrika%b) Südamerika%c) Asien%d) Europa%1]]></BESMARTER_QUESTION_95>
+<BESMARTER_QUESTION_96><![CDATA[In welcher europäischen Stadt steht der Eiffelturm?%a) Berlin%b) Paris%c) London%d) Madrid%2]]></BESMARTER_QUESTION_96>
+<BESMARTER_QUESTION_97><![CDATA[Welches Land hat die Währung Yen?%a) Russland%b) China%c) Japan%d) Indien%3]]></BESMARTER_QUESTION_97>
+<BESMARTER_QUESTION_98><![CDATA[Welche Währung haben die USA?%a) Dollar%b) Euro%c) Yen%d) Pfund%1]]></BESMARTER_QUESTION_98>
+<BESMARTER_QUESTION_99><![CDATA[Woraus besteht der größte Teil der Erdoberfläche?%a) Land%b) Eis%c) Wasser%d) Vulkane%3]]></BESMARTER_QUESTION_99>
+<BESMARTER_RESULTS_TITLE><![CDATA[Ergebnis]]></BESMARTER_RESULTS_TITLE>
+<BESMARTER_RESULTS_TITLE_PLAYER><![CDATA[$$name$$]]></BESMARTER_RESULTS_TITLE_PLAYER>
+<BESMARTER_RESULTS_TITLE_SMARTY><![CDATA[Aktueller Schlaumeier $$monat$$: $$name$$]]></BESMARTER_RESULTS_TITLE_SMARTY>
+<BESMARTER_RIGHT_ANSWERS><![CDATA[Richtige Antworten: ]]></BESMARTER_RIGHT_ANSWERS>
+<BESMARTER_WRONG_ANSWERS><![CDATA[Falsche Antworten: ]]></BESMARTER_WRONG_ANSWERS>
+<BSMONTH_1><![CDATA[Januar]]></BSMONTH_1>
+<BSMONTH_10><![CDATA[Oktober]]></BSMONTH_10>
+<BSMONTH_11><![CDATA[November]]></BSMONTH_11>
+<BSMONTH_12><![CDATA[Dezember]]></BSMONTH_12>
+<BSMONTH_2><![CDATA[Februar]]></BSMONTH_2>
+<BSMONTH_3><![CDATA[März]]></BSMONTH_3>
+<BSMONTH_4><![CDATA[April]]></BSMONTH_4>
+<BSMONTH_5><![CDATA[Mai]]></BSMONTH_5>
+<BSMONTH_6><![CDATA[Juni]]></BSMONTH_6>
+<BSMONTH_7><![CDATA[Juli]]></BSMONTH_7>
+<BSMONTH_8><![CDATA[August]]></BSMONTH_8>
+<BSMONTH_9><![CDATA[September]]></BSMONTH_9>
+</snippets>

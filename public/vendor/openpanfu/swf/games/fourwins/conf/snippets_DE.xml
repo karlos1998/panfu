@@ -1,0 +1,10 @@
+﻿<snippets date="05.05.2011 09:11:40">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<DRAW><![CDATA[Unentschieden!]]></DRAW>
+<INSTRUCTION><![CDATA[Macht eine Linie von 4 der selben Farbe]]></INSTRUCTION>
+<INSTRUCTIONS><![CDATA[Ziel ist es, vier Flaschen mit derselben Farbe aufzufüllen. Das kannst Du senkrecht, waagrecht oder diagonal machen, wichtig ist nur, dass vier Flaschen mit der gleichen Farbe gefüllt sind. Der Gewinner bekommt 50 Punkte, der Verlierer 10 Punkte. Viel Spaß!]]></INSTRUCTIONS>
+<INSTR_TITLE><![CDATA[Anleitung]]></INSTR_TITLE>
+<WAIT><![CDATA[Warte auf zweiten Spieler...]]></WAIT>
+<WIN><![CDATA[$$name$$ ist der Gewinner vom Spiel!]]></WIN>
+</snippets>

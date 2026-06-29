@@ -1,0 +1,24 @@
+<snippets date="05.05.2011 09:15:55">
+<GAME_DESCRIPTION><![CDATA[Rock Paper Scissors]]></GAME_DESCRIPTION>
+<GAME_INVITATION_ANSWER_01><![CDATA[Unfortunately the other panda can not play with you. Maybe another time!]]></GAME_INVITATION_ANSWER_01>
+<GAME_INVITATION_ANSWER_02><![CDATA[The panda you invited does not wish to play this game right now. Maybe another time.]]></GAME_INVITATION_ANSWER_02>
+<GAME_INVITATION_ANSWER_03><![CDATA[The panda who invited you has to start the game for you both. Please wait a little and stay in this room.]]></GAME_INVITATION_ANSWER_03>
+<GAME_INVITATION_ANSWER_04><![CDATA[The panda you invited has already accepted a game invitation from somebody else. Try and ask again later.]]></GAME_INVITATION_ANSWER_04>
+<GAME_INVITATION_ANSWER_HEADER_01><![CDATA[Answer]]></GAME_INVITATION_ANSWER_HEADER_01>
+<GAME_INVITATION_INFO_01><![CDATA[Do you want to select a panda and invite him/her for a game of $$gamename$$? 
+If you click yes, a crosshair cursor will appear. 
+Simply use it and click on your chosen panda. 
+Then please stay in this room to play the game.]]></GAME_INVITATION_INFO_01>
+<GAME_INVITATION_INFO_02><![CDATA[The panda who invited you has to start the game. Please wait a little while!]]></GAME_INVITATION_INFO_02>
+<GAME_INVITATION_INFO_03><![CDATA[You have already invited another panda. Please wait for this panda's answer first before you invite somebody else.
+]]></GAME_INVITATION_INFO_03>
+<GAME_INVITATION_INFO_04><![CDATA[$$username$$ invites you to play $$gamename$$. 
+Do you want to accept this invitation and play a round of $$gamename$$?
+]]></GAME_INVITATION_INFO_04>
+<GAME_INVITATION_INFO_HEADER_01><![CDATA[Information]]></GAME_INVITATION_INFO_HEADER_01>
+<TEXT_DRAW><![CDATA[DRAW]]></TEXT_DRAW>
+<TEXT_LOSE><![CDATA[LOSE]]></TEXT_LOSE>
+<TEXT_PRIZE><![CDATA[Prize]]></TEXT_PRIZE>
+<TEXT_SCORES><![CDATA[Points]]></TEXT_SCORES>
+<TEXT_WIN><![CDATA[WIN]]></TEXT_WIN>
+</snippets>

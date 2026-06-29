@@ -1,0 +1,22 @@
+<snippets date="05.05.2011 09:15:57">
+<GAME_DESCRIPTION><![CDATA[Papier Kamień Nożyce]]></GAME_DESCRIPTION>
+<GAME_INVITATION_ANSWER_01><![CDATA[Niestety ta Panda nie może z tobą zagrać. Może innym razem!]]></GAME_INVITATION_ANSWER_01>
+<GAME_INVITATION_ANSWER_02><![CDATA[Panda, którą zaprosiłeś nie ma w tej chwili ochoty na tę grę. Może innym razem!]]></GAME_INVITATION_ANSWER_02>
+<GAME_INVITATION_ANSWER_03><![CDATA[Panda, która Cie zaprosiła musi rozpocząć grę. Poczekaj chwilkę i nie wychodź z tego pomieszczenia. ]]></GAME_INVITATION_ANSWER_03>
+<GAME_INVITATION_ANSWER_04><![CDATA[Panda, którą zaprosiłeś już gra z inną Pandą. Spróbuj później!]]></GAME_INVITATION_ANSWER_04>
+<GAME_INVITATION_ANSWER_HEADER_01><![CDATA[Odpowiedź]]></GAME_INVITATION_ANSWER_HEADER_01>
+<GAME_INVITATION_INFO_01><![CDATA[Czy chcesz zaprosić drugą Pandę do gry w $$gamename$$?
+Jeżeli klikniesz na "tak" to twój kursor się zmieni.
+Użyj tego nowego kursora aby wybrać Pandę, z którą chciałbyś zagrać.
+Pozostań następnie w tym samym pomieszczeniu aby móc rozpocząć grę.]]></GAME_INVITATION_INFO_01>
+<GAME_INVITATION_INFO_02><![CDATA[Panda, która zaprosiła cię do gry musi rozpocząć partię. Cierpliwości!]]></GAME_INVITATION_INFO_02>
+<GAME_INVITATION_INFO_03><![CDATA[Już zaprosiłeś jedną Pandę do gry. Poczekaj na jej odpowiedź zanim zaprosisz inną Pandę.]]></GAME_INVITATION_INFO_03>
+<GAME_INVITATION_INFO_04><![CDATA[$$username$$ zaprasza cię do gry w $$gamename$$.
+Czy chcesz przyjąć zaproszenie i zagrać w $$gamename$$?]]></GAME_INVITATION_INFO_04>
+<GAME_INVITATION_INFO_HEADER_01><![CDATA[Informacje]]></GAME_INVITATION_INFO_HEADER_01>
+<TEXT_DRAW><![CDATA[REMIS]]></TEXT_DRAW>
+<TEXT_LOSE><![CDATA[PRZEGRAŁEŚ]]></TEXT_LOSE>
+<TEXT_PRIZE><![CDATA[Nagroda]]></TEXT_PRIZE>
+<TEXT_SCORES><![CDATA[Punkty]]></TEXT_SCORES>
+<TEXT_WIN><![CDATA[WYGRAŁEŚ]]></TEXT_WIN>
+</snippets>
