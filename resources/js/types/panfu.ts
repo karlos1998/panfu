@@ -62,3 +62,21 @@ export interface FlashClient {
     flashvars: Record<string, string>;
     flashvarsQuery: string;
 }
+
+export interface ShopItem {
+    id: number;
+    name: string;
+    price: number;
+    hash: string;
+    limited_time: boolean;
+}
+
+export interface ShopCategory {
+    items: ShopItem[];
+    subcategories: Record<string, ShopItem[]> | ShopItem[];
+}
+
+export interface ShopCatalogue {
+    coins: number;
+    items: Record<string, ShopCategory>;
+}

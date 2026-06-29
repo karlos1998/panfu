@@ -457,6 +457,228 @@ body {
     display: block;
 }
 
+.panfu-shop-backdrop {
+    position: fixed;
+    z-index: 50;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: rgba(22, 52, 75, 0.45);
+}
+
+.panfu-shop {
+    width: min(900px, 100%);
+    max-height: min(720px, calc(100vh - 40px));
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    overflow: hidden;
+    border: 8px solid #ffffff;
+    border-radius: 8px;
+    background: #fff9e5;
+    box-shadow: 0 20px 42px rgba(24, 61, 84, 0.35);
+}
+
+.panfu-shop__header {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 12px 18px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #28b6e6, #147ebd);
+}
+
+.panfu-shop__header h2 {
+    margin: 0;
+    font-family: "Hiruko Pro Bold", ui-rounded, system-ui, sans-serif;
+    font-size: 26px;
+}
+
+.panfu-shop__header span {
+    display: block;
+    margin-top: 2px;
+    font-weight: 800;
+}
+
+.panfu-shop__close {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #a24f00;
+    border-radius: 50%;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #ffbc42, #ef8100);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.35);
+}
+
+.panfu-shop__tabs,
+.panfu-shop__subtabs {
+    display: flex;
+    gap: 8px;
+}
+
+.panfu-shop__tabs {
+    padding: 10px 14px;
+    overflow-x: auto;
+    background: #dff8ff;
+    border-bottom: 1px solid rgba(20, 126, 189, 0.16);
+}
+
+.panfu-shop__tabs button,
+.panfu-shop__subtabs button {
+    min-height: 36px;
+    border: 1px solid rgba(23, 126, 81, 0.28);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #24405b;
+    background: #ffffff;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.panfu-shop__tabs button.is-active,
+.panfu-shop__subtabs button.is-active {
+    color: #ffffff;
+    background: linear-gradient(to bottom, #76d64f, #45a82d);
+    border-color: #2c7e1c;
+}
+
+.panfu-shop__body {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.panfu-shop__content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+}
+
+.panfu-shop__subtabs {
+    flex-direction: column;
+    padding: 12px;
+    overflow-y: auto;
+    background: #fff0b8;
+    border-right: 1px solid rgba(172, 117, 23, 0.18);
+}
+
+.panfu-shop__items {
+    min-height: 280px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+    align-content: start;
+    gap: 10px;
+    padding: 12px;
+    overflow-y: auto;
+}
+
+.panfu-shop-item {
+    min-height: 132px;
+    display: grid;
+    grid-template-rows: 48px minmax(34px, auto) auto;
+    align-items: center;
+    justify-items: center;
+    gap: 7px;
+    border: 2px solid rgba(21, 123, 178, 0.16);
+    border-radius: 8px;
+    padding: 10px;
+    color: #24405b;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 2px 0 rgba(25, 118, 63, 0.08);
+}
+
+.panfu-shop-item.is-selected {
+    border-color: #ef8100;
+    box-shadow: 0 0 0 3px rgba(239, 129, 0, 0.18);
+}
+
+.panfu-shop-item__icon {
+    min-width: 54px;
+    min-height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #29b7e8, #167fc0);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.panfu-shop-item__name {
+    max-width: 100%;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+}
+
+.panfu-shop-item__price {
+    color: #7c560d;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.panfu-shop__state {
+    min-height: 180px;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    color: #38536a;
+    font-weight: 900;
+    text-align: center;
+}
+
+.panfu-shop__footer {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 18px;
+    background: #ffffff;
+    border-top: 1px solid rgba(20, 126, 189, 0.14);
+}
+
+.panfu-shop__footer strong,
+.panfu-shop__footer span {
+    display: block;
+}
+
+.panfu-shop__footer strong {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.panfu-shop__footer span {
+    margin-top: 3px;
+    color: #7c560d;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.panfu-shop__buy {
+    min-width: 112px;
+    min-height: 42px;
+    border: 1px solid #2c7e1c;
+    border-radius: 8px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #76d64f, #45a82d);
+    font-family: "Hiruko Pro Bold", ui-rounded, system-ui, sans-serif;
+    font-size: 18px;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.35);
+}
+
+.panfu-shop__buy:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
 @media (max-width: 900px) {
     .panfu-navbar__inner,
     .panfu-footer__inner {
@@ -486,6 +708,17 @@ body {
         justify-items: center;
         overflow-x: clip;
         padding: 34px 0 28px;
+    }
+
+    .panfu-shop__content {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .panfu-shop__subtabs {
+        flex-direction: row;
+        overflow-x: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(172, 117, 23, 0.18);
     }
 
     .panfu-home-hero__media {

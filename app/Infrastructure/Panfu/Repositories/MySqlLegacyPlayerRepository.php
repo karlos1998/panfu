@@ -11,8 +11,8 @@ class MySqlLegacyPlayerRepository implements LegacyPlayerRepository
 {
     public function sync(Authenticatable $user, string $sessionKey): void
     {
-        $name = method_exists($user, 'getAttribute') ? $user->getAttribute('name') : null;
-        $email = method_exists($user, 'getAttribute') ? $user->getAttribute('email') : null;
+        $name = $this->nameFor($user);
+        $email = $this->emailFor($user);
         $now = now();
         $connection = DB::connection('legacy_openpanfu');
 
@@ -38,22 +38,55 @@ class MySqlLegacyPlayerRepository implements LegacyPlayerRepository
             ]);
         }
 
-        $connection->table('users')->updateOrInsert(
-            ['email' => $email ?: 'player-'.$user->getAuthIdentifier().'@local.panfu'],
-            [
-                'name' => $name ?: 'Panda'.$user->getAuthIdentifier(),
-                'password' => Hash::make($sessionKey),
-                'sex' => 0,
-                'coins' => 1000,
-                'goldpanda' => 1,
-                'sheriff' => 0,
-                'social_level' => 1,
-                'social_score' => 0,
-                'current_gameserver' => 1,
-                'tour_finished' => 1,
-                'ticket_id' => $sessionKey,
-                'updated_at' => $now,
-            ],
-        );
+        $existingUser = $connection->table('users')->where('email', $email)->first();
+        $identity = [
+            'name' => $name,
+            'password' => Hash::make($sessionKey),
+            'current_gameserver' => 1,
+            'tour_finished' => 1,
+            'ticket_id' => $sessionKey,
+            'updated_at' => $now,
+        ];
+
+        if ($existingUser) {
+            $connection->table('users')->where('id', $existingUser->id)->update($identity);
+
+            return;
+        }
+
+        $connection->table('users')->insert($identity + [
+            'email' => $email,
+            'sex' => 0,
+            'coins' => (int) config('panfu.shop.default_coins', 1000),
+            'goldpanda' => 1,
+            'sheriff' => 0,
+            'social_level' => 1,
+            'social_score' => 0,
+            'created_at' => $now,
+        ]);
+    }
+
+    public function coinsFor(Authenticatable $user): ?int
+    {
+        $legacyUser = DB::connection('legacy_openpanfu')
+            ->table('users')
+            ->where('email', $this->emailFor($user))
+            ->first(['coins']);
+
+        return $legacyUser ? (int) $legacyUser->coins : null;
+    }
+
+    private function nameFor(Authenticatable $user): string
+    {
+        $name = method_exists($user, 'getAttribute') ? $user->getAttribute('name') : null;
+
+        return (string) ($name ?: 'Panda'.$user->getAuthIdentifier());
+    }
+
+    private function emailFor(Authenticatable $user): string
+    {
+        $email = method_exists($user, 'getAttribute') ? $user->getAttribute('email') : null;
+
+        return (string) ($email ?: 'player-'.$user->getAuthIdentifier().'@local.panfu');
     }
 }

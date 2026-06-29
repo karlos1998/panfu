@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<catalogue type="catalogue" check="5ef7e3cee241ec9ddab2a12036bd2e7c">
+  <page id="0" comment="firstPage">
+    <img pageNr="0" x="0" y="0" filename="0.png" page="first" date="Jul 1 2008"/>
+  </page>
+  <page id="1" comment="normalPage">
+    <img pageNr="1" x="30" y="20" filename="1.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="1" x="340" y="20" filename="2.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="1" id="100813" x="36" y="28" width="247" height="129" check="6442b7e2b6de64765d7d3f2003ca6f31"/>
+    <itemButton page="1" id="100812" x="39" y="172" width="244" height="140" check="00617aa2daf24dc8cf4a0b27255ad28d"/>
+    <itemButton page="1" id="100814" x="346" y="30" width="245" height="141" check="6e3f94b2b68f029ab46218486b33b01d"/>
+    <itemButton page="1" id="100815" x="345" y="185" width="249" height="134" check="ec01b48cdee362386809bb486d56b397"/>
+  </page>
+  <page id="2" comment="normalPage">
+    <img pageNr="2" x="58" y="18" filename="3.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="2" x="363" y="19" filename="4.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="2" id="100172" x="70" y="25" width="223" height="136" check="8e2443584c69a7f797470cbef1c7f723"/>
+    <itemButton page="2" id="100173" x="64" y="178" width="235" height="144" check="853d6e76d9e695bd05914924f4f7e3dd"/>
+    <itemButton page="2" id="100174" x="371" y="26" width="104" height="146" check="1dcb6f3b6f9a85fe8ae32ecc6c02d971"/>
+    <itemButton page="2" id="100175" x="498" y="28" width="105" height="141" check="e98c3dd237e36f8aface8c5718a8ba6e"/>
+    <itemButton page="2" id="100176" x="374" y="191" width="229" height="132" check="2b3753fac9418b6d4332c0591bed583c"/>
+  </page>
+  <page id="3" comment="normalPage">
+    <img pageNr="3" x="55" y="26" filename="5.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="3" x="364" y="29" filename="6.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="3" id="13056" x="66" y="33" width="105" height="154" check="7a5ef406fc57f3b0448254a9764e2fe1"/>
+    <itemButton page="3" id="13057" x="194" y="33" width="105" height="155" check="459cced8142bf421eb3a3176105c2227"/>
+    <itemButton page="3" id="13058" x="66" y="208" width="232" height="102" check="3b8baa8ff0b5a2ebff504716ab0b1c25"/>
+    <itemButton page="3" id="13059" x="371" y="37" width="107" height="155" check="21f02be4dec81842914f0ead7b5893e9"/>
+    <itemButton page="3" id="13060" x="372" y="207" width="235" height="102" check="3688e5c77597a80ab337ae5577a1c08c"/>
+  </page>
+  <page id="4" comment="lastPage">
+    <img pageNr="4" x="7" y="-1" filename="7.png" page="last" date="Jul 1 2008"/>
+    <textfield page="4" x="65" y="70" width="225" height="300" bold="true" color="green"><![CDATA[CATALOGUES_CLOTHES_BACK_1]]></textfield>
+    <textfield page="4" x="65" y="90" width="225" height="300" bold="false"><![CDATA[CATALOGUES_CLOTHES_BACK_2]]></textfield>
+    <textfield page="4" x="65" y="200" width="225" height="300" bold="true" color="green"><![CDATA[CATALOGUES_CLOTHES_BACK_3]]></textfield>
+    <textfield page="4" x="65" y="220" width="225" height="300" bold="false"><![CDATA[CATALOGUES_CLOTHES_BACK_4]]></textfield>
+  </page>
+</catalogue>
