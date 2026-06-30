@@ -5,6 +5,8 @@ import static org.junit.Assert.assertNull;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.openpanfu.gameserver.constants.Packets;
+import org.openpanfu.gameserver.handler.CMD_FORCE_COORD;
 
 import io.netty.channel.embedded.EmbeddedChannel;
 
@@ -38,6 +40,19 @@ public class UserAvatarStateTest {
 		assertEquals("113;4;10;409;370;;0;;;0;1001|", joiningChannel.readOutbound());
 		assertEquals("113;4;11;;0;1001,104244|", joiningChannel.readOutbound());
 		assertNull(joiningChannel.readOutbound());
+	}
+
+	@Test
+	public void forceCoordUpdatesServerSidePlayerPosition() {
+		User user = user(4, "Karlos", 450, 450);
+		PanfuPacket packet = new PanfuPacket(Packets.CMD_FORCE_COORD);
+		packet.writeInt(435);
+		packet.writeInt(172);
+
+		new CMD_FORCE_COORD().handlePacket(packet, user);
+
+		assertEquals(435, user.getX());
+		assertEquals(172, user.getY());
 	}
 
 	private User user(int id, String username, int x, int y) {

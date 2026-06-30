@@ -27,6 +27,7 @@ public class Handler {
 		addPacketHandler(Packets.CMD_GET_PLAYER_IDS_BY_CLOTHES, new CMD_GET_PLAYER_IDS_BY_CLOTHES());
 		addPacketHandler(Packets.CMD_PLAYER_TO_PLAYER, new CMD_PLAYER_TO_PLAYER());
 		addPacketHandler(Packets.CMD_MOVE, new CMD_MOVE());
+		addPacketHandler(Packets.CMD_FORCE_COORD, new CMD_FORCE_COORD());
 		addPacketHandler(Packets.CMD_ROTATE, new CMD_ROTATE());
 		addPacketHandler(Packets.CMD_CHAT, new CMD_CHAT());
 		addPacketHandler(Packets.CMD_SAFE_CHAT, new CMD_SAFE_CHAT());
