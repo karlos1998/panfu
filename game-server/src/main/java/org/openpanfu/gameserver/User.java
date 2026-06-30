@@ -43,6 +43,15 @@ public class User {
 	private String lastActionPerformed = "";
 	private long lastActionPerformedTime = System.currentTimeMillis();
 	private int spamWarning = 0;
+	private boolean avatarCreated = false;
+	private String avatarAction = "";
+	private int avatarRotation = 0;
+	private String avatarTimeTravel = "";
+	private String avatarPokopetType = "";
+	private String avatarClothes = "";
+	private boolean avatarUpdated = false;
+	private String avatarUpdatePokopet = "";
+	private String avatarUpdatePlayerString = "";
 
 	public User(Channel channel, GameServer gameServer) {
 		this.timeUntilWalkComplete = System.currentTimeMillis();
@@ -247,7 +256,98 @@ public class User {
 	}
 
 	public String getPlayerString() {
-		return String.format("%d:%d:%d:0:%d:%d:0", userId, x, y, status, rot);
+		return String.format("%d:%d:%d:%s:%d:%d:0", userId, x, y, safePlayerStringValue(username), status, rot);
+	}
+
+	public PanfuPacket createSetAvatarPacket() {
+		PanfuPacket setAvatar = new PanfuPacket(Packets.RES_SET_AVATAR);
+		setAvatar.writeInt(this.userId);
+		setAvatar.writeInt(this.roomId);
+		setAvatar.writeInt(this.x);
+		setAvatar.writeInt(this.y);
+		setAvatar.writeString(safePacketValue(this.username));
+		return setAvatar;
+	}
+
+	public void storeAvatarSnapshot(int x, int y, String action, int rotation, String timeTravel, String pokopetType,
+			String clothes) {
+		this.x = x;
+		this.y = y;
+		this.avatarAction = safePacketValue(action);
+		this.avatarRotation = rotation;
+		this.avatarTimeTravel = safePacketValue(timeTravel);
+		this.avatarPokopetType = safePacketValue(pokopetType);
+		this.avatarClothes = safePacketValue(clothes);
+		this.avatarCreated = true;
+	}
+
+	public void storeAvatarUpdateSnapshot(String pokopet, String playerString) {
+		this.avatarUpdatePokopet = safePacketValue(pokopet);
+		this.avatarUpdatePlayerString = safePacketValue(playerString);
+		this.avatarUpdated = true;
+	}
+
+	public PanfuPacket createAvatarSnapshotPacket() {
+		if (!this.avatarCreated) {
+			return null;
+		}
+
+		PanfuPacket response = new PanfuPacket(Packets.RES_PLAYER_TO_PLAYER);
+		response.writeInt(this.userId);
+		response.writeInt(PlayerToPlayerCommands.ON_CREATE_AVATAR);
+		response.writeInt(this.x);
+		response.writeInt(this.y);
+		response.writeString(this.avatarAction);
+		response.writeInt(this.avatarRotation);
+		response.writeString(this.avatarTimeTravel);
+		response.writeString(this.avatarPokopetType);
+		response.writeInt(this.sheriff);
+		response.writeString(this.avatarClothes);
+		return response;
+	}
+
+	public PanfuPacket createAvatarUpdateSnapshotPacket() {
+		if (!this.avatarUpdated) {
+			return null;
+		}
+
+		PanfuPacket response = new PanfuPacket(Packets.RES_PLAYER_TO_PLAYER);
+		response.writeInt(this.userId);
+		response.writeInt(PlayerToPlayerCommands.ON_UPDATE_AVATAR);
+		response.writeString(this.avatarUpdatePokopet);
+		response.writeInt(this.sheriff);
+		response.writeString(this.avatarUpdatePlayerString);
+		return response;
+	}
+
+	public void sendAvatarBootstrapTo(User receiver) {
+		receiver.sendPacket(this.createSetAvatarPacket());
+
+		PanfuPacket createAvatar = this.createAvatarSnapshotPacket();
+		if (createAvatar != null) {
+			receiver.sendPacket(createAvatar);
+		}
+
+		PanfuPacket updateAvatar = this.createAvatarUpdateSnapshotPacket();
+		if (updateAvatar != null) {
+			receiver.sendPacket(updateAvatar);
+		}
+	}
+
+	public void sendSetAvatarForReceiver(String receiver) {
+		this.sendForReceiver(this.createSetAvatarPacket(), receiver);
+	}
+
+	private String safePacketValue(String value) {
+		if (value == null) {
+			return "";
+		}
+
+		return value.replace(";", "").replace("|", "");
+	}
+
+	private String safePlayerStringValue(String value) {
+		return safePacketValue(value).replace(":", "");
 	}
 
 	public void sendRoomExcludingMe(PanfuPacket PP) {

@@ -27,6 +27,7 @@ public class Handler {
 		addPacketHandler(Packets.CMD_GET_PLAYER_IDS_BY_CLOTHES, new CMD_GET_PLAYER_IDS_BY_CLOTHES());
 		addPacketHandler(Packets.CMD_PLAYER_TO_PLAYER, new CMD_PLAYER_TO_PLAYER());
 		addPacketHandler(Packets.CMD_MOVE, new CMD_MOVE());
+		addPacketHandler(Packets.CMD_ROTATE, new CMD_ROTATE());
 		addPacketHandler(Packets.CMD_CHAT, new CMD_CHAT());
 		addPacketHandler(Packets.CMD_SAFE_CHAT, new CMD_SAFE_CHAT());
 		addPacketHandler(Packets.CMD_EMOTE, new CMD_EMOTE());
@@ -38,6 +39,8 @@ public class Handler {
 		addPacketHandler(Packets.CMD_JOIN_GAME, new CMD_JOIN_GAME());
 		addPacketHandler(Packets.CMD_ENTER_MULTIGAME, new CMD_ENTER_MULTIGAME());
 		addPacketHandler(Packets.CMD_QUIT_GAME, new CMD_QUIT_GAME());
+		addPacketHandler(Packets.CMD_SET_PLAYER_STATUS, new CMD_SET_PLAYER_STATUS());
+		addPacketHandler(Packets.CMD_PING, new CMD_PING());
 		addPacketHandler(RoomCommands.QUERY_SHARED_ITEMS, new CMD_QUERY_SHARED_ITEMS());
 
 		// Home commands

@@ -12,6 +12,7 @@ public class CMD_UPDATE_AVATAR implements IP2PHandler {
 		String pokopet = packet.readString();
 		int unknown = packet.readInt();
 		String playerString = packet.readString();
+		sender.storeAvatarUpdateSnapshot(pokopet, playerString);
 		response.writeInt(sender.getUserId());
 		response.writeInt(PlayerToPlayerCommands.ON_UPDATE_AVATAR);
 		response.writeString(pokopet);
