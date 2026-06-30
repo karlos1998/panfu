@@ -1,11 +1,11 @@
 <?php
 /* File automatically generated, tool created by altro50. */
 
-/* com.pandaland.mvc.model.vo.HighScoreEntryVO */
+/* com.pandaland.features.highscores.vo.HighScoreEntryVO */
 
 class HighScoreEntryVO
 {
-    public $_explicitType = "com.pandaland.mvc.model.vo.HighScoreEntryVO";
+    public $_explicitType = "com.pandaland.features.highscores.vo.HighScoreEntryVO";
 
     /**
      * @type int

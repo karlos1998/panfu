@@ -945,6 +945,59 @@ class Panfu
     }
 
     /**
+     * Returns ranked highscore rows for a game.
+     *
+     * @param int $gameId
+     * @param string|null $since
+     * @param int $limit
+     * @return array<int, array<string, mixed>>
+     */
+    public static function getGameHighScoreRows($gameId, $since = null, $limit = 5)
+    {
+        $gameId = (int) $gameId;
+        $limit = max(1, min(20, (int) $limit));
+
+        if($gameId <= 0) {
+            return [];
+        }
+
+        try {
+            $pdo = Database::getPDO();
+            $where = "WHERE highscores.game_id = :game_id";
+            $params = [
+                ":game_id" => $gameId,
+            ];
+
+            if($since !== null) {
+                $where .= " AND highscores.updated_at >= :updated_since";
+                $params[":updated_since"] = date('Y-m-d H:i:s', strtotime($since));
+            }
+
+            $statement = $pdo->prepare("
+                SELECT highscores.user_id, highscores.score, users.name
+                FROM game_high_scores AS highscores
+                INNER JOIN users ON users.id = highscores.user_id
+                {$where}
+                ORDER BY highscores.score DESC, highscores.updated_at ASC, highscores.user_id ASC
+                LIMIT :limit
+            ");
+
+            foreach($params as $key => $value) {
+                $statement->bindValue($key, $value, $key === ":game_id" ? PDO::PARAM_INT : PDO::PARAM_STR);
+            }
+
+            $statement->bindValue(":limit", $limit, PDO::PARAM_INT);
+            $statement->execute();
+
+            return $statement->fetchAll();
+        } catch(Exception $exception) {
+            Console::log($exception->getMessage());
+        }
+
+        return [];
+    }
+
+    /**
      * Adds item to a users inventory.
      * @author Altro50 <altro50@msn.com>
      * @param int $itemId
