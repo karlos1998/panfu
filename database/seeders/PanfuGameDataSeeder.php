@@ -34,6 +34,35 @@ class PanfuGameDataSeeder extends Seeder
                 ['name', 'type', 'price', 'z', 'premium'],
             );
         }
+
+        $this->seedMinigameRewards($now);
+    }
+
+    private function seedMinigameRewards(\DateTimeInterface $now): void
+    {
+        $gameIds = collect(File::glob(public_path('vendor/openpanfu/swf/games/game*.swf')) ?: [])
+            ->map(function (string $path): ?int {
+                preg_match('/game(\d+)\.swf$/', $path, $matches);
+
+                return isset($matches[1]) ? (int) $matches[1] : null;
+            })
+            ->filter()
+            ->unique()
+            ->sort()
+            ->values();
+
+        foreach ($gameIds->chunk(100) as $chunk) {
+            DB::table('minigame_rewards')->insertOrIgnore(
+                $chunk->map(fn (int $gameId): array => [
+                    'game_id' => $gameId,
+                    'coin_multiplier' => '0.0500',
+                    'max_coins_per_round' => null,
+                    'enabled' => true,
+                    'created_at' => $now,
+                    'updated_at' => $now,
+                ])->all(),
+            );
+        }
     }
 
     /**
