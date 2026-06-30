@@ -1,58 +1,192 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Panfu
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Lokalna rekonstrukcja Panfu uruchamiana bez zależności od produkcyjnego `panfu.me`.
+Projekt łączy nowoczesny frontend Laravel + Inertia + Vue + TypeScript z lokalnym
+klientem Flash uruchamianym przez Ruffle, lokalnym Information Serverem i lokalnym
+gameserverem.
 
-## About Laravel
+![Strona główna Panfu](docs/screenshots/home.jpg)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Co tu działa
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Strona główna, logowanie, rejestracja i konto są budowane w Laravelu, Inertii i Vue.
+- Gra uruchamia się od razu w przeglądarce przez Ruffle, bez osobnej aplikacji desktopowej.
+- Assety Flash są trzymane lokalnie w `public/vendor/openpanfu`.
+- Backend gry używa jednej bazy MySQL projektu Laravel.
+- Gameserver Javy działa lokalnie, a `socket-proxy` udostępnia mu WebSocket dla Ruffle.
+- phpMyAdmin jest dostępny na osobnym porcie do szybkiego podejrzenia bazy.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Wybór świata](docs/screenshots/play-world.jpg)
 
-## Learning Laravel
+![Pokój w grze](docs/screenshots/game-room.jpg)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Szybki start po restarcie laptopa
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Najczęstszy scenariusz: Docker Desktop był wyłączony, a repo jest już skonfigurowane.
 
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+cd ~/Documents/Panfu
+docker compose up -d
+docker compose ps
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Potem otwórz:
 
-## Contributing
+- Aplikacja: http://127.0.0.1:8080
+- Gra: http://127.0.0.1:8080/play
+- phpMyAdmin: http://127.0.0.1:19999
+- Mailpit: http://127.0.0.1:8025
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Jeżeli `/play` przekierowuje do logowania, zaloguj się albo załóż konto przez
+`/register`. Po zalogowaniu kliknij `Graj`, wybierz `Local Panfu` i klient gry
+powinien wejść do świata.
 
-## Code of Conduct
+## Pierwsze uruchomienie od zera
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Wymagane lokalnie:
 
-## Security Vulnerabilities
+- Docker Desktop
+- Composer, jeżeli nie ma jeszcze katalogu `vendor`
+- Node/npm, jeżeli chcesz budować assety poza kontenerem
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Kroki:
 
-## License
+```bash
+cd ~/Documents/Panfu
+cp .env.example .env
+composer install
+npm install
+npm run build
+docker compose up -d --build
+docker compose exec -T laravel.test php artisan key:generate
+docker compose exec -T laravel.test php artisan migrate --seed
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Jeżeli `.env` już istnieje, nie nadpisuj go bez potrzeby. Po zmianach w `.env`
+wyczyść cache konfiguracji:
+
+```bash
+docker compose exec -T laravel.test php artisan optimize:clear
+```
+
+## Najważniejsze serwisy
+
+| Serwis | Do czego służy | Port lokalny |
+| --- | --- | --- |
+| `laravel.test` | Laravel, Inertia, Vue, publiczne assety Flash | `8080` |
+| `mysql` | Główna baza projektu | `3306` |
+| `phpmyadmin` | UI do MySQL | `19999` |
+| `information-server` | Lokalny endpoint AMF/InformationServer dla klienta Flash | wewnętrzny |
+| `gameserver` | Lokalny serwer gry w Javie | wewnętrzny `9595` |
+| `socket-proxy` | WebSocket -> TCP dla Ruffle | `19596` |
+| `redis` | Cache/kolejki pomocnicze | `6380` |
+| `mailpit` | Podgląd maili developerskich | `8025` |
+| `selenium` | Przeglądarkowe testy E2E, gdy będą potrzebne | wewnętrzny |
+
+Domyślne dane do bazy w `.env.example`:
+
+```text
+DB_DATABASE=panfu
+DB_USERNAME=sail
+DB_PASSWORD=password
+```
+
+## Przydatne komendy
+
+Start:
+
+```bash
+docker compose up -d
+```
+
+Stop bez kasowania danych:
+
+```bash
+docker compose stop
+```
+
+Logi gry i aplikacji:
+
+```bash
+docker compose logs -f laravel.test gameserver socket-proxy information-server
+```
+
+Migracje i seedery:
+
+```bash
+docker compose exec -T laravel.test php artisan migrate --seed
+```
+
+Pełny reset bazy:
+
+```bash
+docker compose exec -T laravel.test php artisan migrate:fresh --seed
+```
+
+Testy PHP:
+
+```bash
+docker compose exec -T laravel.test php artisan test
+```
+
+Formatowanie PHP:
+
+```bash
+docker compose exec -T laravel.test ./vendor/bin/pint
+```
+
+Build frontendu:
+
+```bash
+npm run build
+```
+
+## Struktura projektu
+
+```text
+app/Domain/Panfu                 logika domenowa gry i klienta
+app/Infrastructure/Panfu         repozytoria/gatewaye do bazy i usług lokalnych
+game-server/                     lokalny gameserver Java
+information-server/              lokalny Information Server
+public/vendor/openpanfu/         lokalne assety Flash klienta i minigier
+resources/js/                    Vue + TypeScript + Inertia
+tools/socket-proxy.mjs           most WebSocket -> TCP dla Ruffle
+tests/Feature/Panfu              testy integracji Panfu
+docs/screenshots                 screeny użyte w README
+```
+
+## Gdy coś nie działa
+
+1. Sprawdź, czy kontenery stoją:
+
+   ```bash
+   docker compose ps
+   ```
+
+2. Jeżeli gra zatrzymuje się na wyborze świata albo loadingu, zrestartuj serwer gry:
+
+   ```bash
+   docker compose restart gameserver socket-proxy
+   ```
+
+3. Jeżeli po zmianie `.env` wartości nie wchodzą w życie:
+
+   ```bash
+   docker compose exec -T laravel.test php artisan optimize:clear
+   ```
+
+4. Jeżeli w konsoli Ruffle pojawia się `HttpNotOk("Got Not Found", 404, ...)`,
+   brakuje lokalnego assetu w `public/vendor/openpanfu`. Dodaj go lokalnie i
+   dopisz test w `tests/Feature/Panfu/PanfuAssetAvailabilityTest.php`.
+
+5. Jeżeli baza wygląda pusto po świeżej instalacji, uruchom:
+
+   ```bash
+   docker compose exec -T laravel.test php artisan migrate --seed
+   ```
+
+## Ważne założenie
+
+Docelowo gra ma działać samodzielnie lokalnie. Produkcyjne `panfu.me` może służyć
+do porównywania zachowania i odzyskiwania brakujących assetów, ale lokalny runtime
+nie powinien wymagać aktywnej produkcji.
