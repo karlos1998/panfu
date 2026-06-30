@@ -10,11 +10,9 @@ public class CMD_CREATE_AVATAR implements IP2PHandler {
 		int y = packet.readInt();
 		String action = packet.readString();
 		int rotation = packet.readInt();
-		String timeTravel = packet.readString();
 		String pokopetType = packet.readString();
-		int sheriff = packet.readInt();
 		String clothes = packet.readString();
-		sender.storeAvatarSnapshot(x, y, action, rotation, timeTravel, pokopetType, clothes);
+		sender.storeAvatarSnapshot(x, y, action, rotation, pokopetType, clothes);
 		sender.sendSetAvatarForReceiver(receiver);
 		sender.sendForReceiver(sender.createAvatarSnapshotPacket(), receiver);
 	}

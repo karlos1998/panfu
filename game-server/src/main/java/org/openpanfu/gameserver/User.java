@@ -46,7 +46,6 @@ public class User {
 	private boolean avatarCreated = false;
 	private String avatarAction = "";
 	private int avatarRotation = 0;
-	private String avatarTimeTravel = "";
 	private String avatarPokopetType = "";
 	private String avatarClothes = "";
 	private boolean avatarUpdated = false;
@@ -261,21 +260,19 @@ public class User {
 
 	public PanfuPacket createSetAvatarPacket() {
 		PanfuPacket setAvatar = new PanfuPacket(Packets.RES_SET_AVATAR);
-		setAvatar.writeInt(this.userId);
 		setAvatar.writeInt(this.roomId);
+		setAvatar.writeInt(this.userId);
 		setAvatar.writeInt(this.x);
 		setAvatar.writeInt(this.y);
 		setAvatar.writeString(safePacketValue(this.username));
 		return setAvatar;
 	}
 
-	public void storeAvatarSnapshot(int x, int y, String action, int rotation, String timeTravel, String pokopetType,
-			String clothes) {
+	public void storeAvatarSnapshot(int x, int y, String action, int rotation, String pokopetType, String clothes) {
 		this.x = x;
 		this.y = y;
 		this.avatarAction = safePacketValue(action);
 		this.avatarRotation = rotation;
-		this.avatarTimeTravel = safePacketValue(timeTravel);
 		this.avatarPokopetType = safePacketValue(pokopetType);
 		this.avatarClothes = safePacketValue(clothes);
 		this.avatarCreated = true;
@@ -283,7 +280,7 @@ public class User {
 
 	public void storeAvatarUpdateSnapshot(String pokopet, String playerString) {
 		this.avatarUpdatePokopet = safePacketValue(pokopet);
-		this.avatarUpdatePlayerString = safePacketValue(playerString);
+		this.avatarUpdatePlayerString = createPlayerInfoString(playerString);
 		this.avatarUpdated = true;
 	}
 
@@ -299,10 +296,9 @@ public class User {
 		response.writeInt(this.y);
 		response.writeString(this.avatarAction);
 		response.writeInt(this.avatarRotation);
-		response.writeString(this.avatarTimeTravel);
 		response.writeString(this.avatarPokopetType);
 		response.writeInt(this.sheriff);
-		response.writeString(this.avatarClothes);
+		response.writeString(createPlayerInfoString(this.avatarClothes));
 		return response;
 	}
 
@@ -348,6 +344,18 @@ public class User {
 
 	private String safePlayerStringValue(String value) {
 		return safePacketValue(value).replace(":", "");
+	}
+
+	private String createPlayerInfoString(String clothes) {
+		String safeUsername = safePacketValue(this.username).replace(",", "");
+		String safeClothes = safePacketValue(clothes);
+		if (safeClothes.isEmpty() || safeClothes.equals("-1")) {
+			return safeUsername;
+		}
+		if (safeClothes.equals(safeUsername) || safeClothes.startsWith(safeUsername + ",")) {
+			return safeClothes;
+		}
+		return safeUsername + "," + safeClothes;
 	}
 
 	public void sendRoomExcludingMe(PanfuPacket PP) {

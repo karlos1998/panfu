@@ -27,8 +27,8 @@ public class UserAvatarStateTest {
 
 	@Test
 	public void avatarBootstrapReplaysKnownAvatarStateToJoiningPlayer() {
-		User existing = user(4, "Safari", 409, 370);
-		existing.storeAvatarSnapshot(409, 370, "", 0, "", "", "1001");
+		User existing = user(1, "Karlos", 409, 370);
+		existing.storeAvatarSnapshot(409, 370, "", 0, "", "1001");
 		existing.storeAvatarUpdateSnapshot("", "1001,104244");
 
 		EmbeddedChannel joiningChannel = new EmbeddedChannel();
@@ -36,9 +36,9 @@ public class UserAvatarStateTest {
 
 		existing.sendAvatarBootstrapTo(joining);
 
-		assertEquals("30;4;4;409;370;Safari|", joiningChannel.readOutbound());
-		assertEquals("113;4;10;409;370;;0;;;0;1001|", joiningChannel.readOutbound());
-		assertEquals("113;4;11;;0;1001,104244|", joiningChannel.readOutbound());
+		assertEquals("30;4;1;409;370;Karlos|", joiningChannel.readOutbound());
+		assertEquals("113;1;10;409;370;;0;;0;Karlos,1001|", joiningChannel.readOutbound());
+		assertEquals("113;1;11;;0;Karlos,1001,104244|", joiningChannel.readOutbound());
 		assertNull(joiningChannel.readOutbound());
 	}
 
