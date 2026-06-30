@@ -868,6 +868,83 @@ class Panfu
     }
 
     /**
+     * Game ids displayed by the player-card "My highscore" tab.
+     *
+     * @return int[]
+     */
+    public static function getSocialHighscoreGameIds()
+    {
+        return [4, 5, 6, 7, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 36, 37, 38, 40, 41, 42, 44, 45, 46, 47, 48, 49, 50, 51, 52, 55, 56];
+    }
+
+    /**
+     * Stores a player's best score for a minigame.
+     *
+     * @param int $userId
+     * @param int $gameId
+     * @param int $score
+     * @return void
+     */
+    public static function recordGameHighScore($userId, $gameId, $score)
+    {
+        $userId = (int) $userId;
+        $gameId = (int) $gameId;
+        $score = max(0, (int) $score);
+
+        if($userId <= 0 || $gameId <= 0) {
+            return;
+        }
+
+        try {
+            $pdo = Database::getPDO();
+            $statement = $pdo->prepare("
+                INSERT INTO game_high_scores (user_id, game_id, score, created_at, updated_at)
+                VALUES (:user_id, :game_id, :score, NOW(), NOW())
+                ON DUPLICATE KEY UPDATE
+                    updated_at = IF(VALUES(score) > score, VALUES(updated_at), updated_at),
+                    score = GREATEST(score, VALUES(score))
+            ");
+            $statement->bindParam(":user_id", $userId, PDO::PARAM_INT);
+            $statement->bindParam(":game_id", $gameId, PDO::PARAM_INT);
+            $statement->bindParam(":score", $score, PDO::PARAM_INT);
+            $statement->execute();
+        } catch(Exception $exception) {
+            Console::log($exception->getMessage());
+        }
+    }
+
+    /**
+     * Returns a map of game id to best score for one player.
+     *
+     * @param int $userId
+     * @return array<int, int>
+     */
+    public static function getGameHighScoresForUser($userId)
+    {
+        $scores = [];
+        $userId = (int) $userId;
+
+        if($userId <= 0) {
+            return $scores;
+        }
+
+        try {
+            $pdo = Database::getPDO();
+            $statement = $pdo->prepare("SELECT game_id, score FROM game_high_scores WHERE user_id = :user_id");
+            $statement->bindParam(":user_id", $userId, PDO::PARAM_INT);
+            $statement->execute();
+
+            foreach($statement as $row) {
+                $scores[(int) $row['game_id']] = (int) $row['score'];
+            }
+        } catch(Exception $exception) {
+            Console::log($exception->getMessage());
+        }
+
+        return $scores;
+    }
+
+    /**
      * Adds item to a users inventory.
      * @author Altro50 <altro50@msn.com>
      * @param int $itemId

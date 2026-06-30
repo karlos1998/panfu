@@ -15,6 +15,14 @@ class amfGameService
     public function finishMinigame($gameId, $score)
     {
         $response = new AmfResponse();
+
+        if(!Panfu::isLoggedIn()) {
+            $response->statusCode = 1;
+            return $response;
+        }
+
+        Panfu::recordGameHighScore($_SESSION['id'], $gameId, $score);
+
         return $response;
     }
 }
