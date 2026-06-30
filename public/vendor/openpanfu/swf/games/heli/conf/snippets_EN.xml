@@ -1,0 +1,13 @@
+<snippets date="05.05.2011 09:13:48">
+<BTN_FINISH><![CDATA[End]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYCHAT><![CDATA[Play & Chat]]></BTN_PLAYCHAT>
+<BTN_PLAYNOW><![CDATA[Play now!]]></BTN_PLAYNOW>
+<TEXT_GAME_SCORE><![CDATA[Points!]]></TEXT_GAME_SCORE>
+<TEXT_GAME_SPRIT><![CDATA[Fuel]]></TEXT_GAME_SPRIT>
+<TEXT_INSTRUCTION_TITLE><![CDATA[Instructions]]></TEXT_INSTRUCTION_TITLE>
+<TEXT_LEVEL><![CDATA[Level]]></TEXT_LEVEL>
+<TEXT_WELCOME><![CDATA[Gain points by collecting bananas, coconuts and oranges with your helicopter. You get one point for each banana, five points for each coconut and ten points for each orange.
+Use the arrow keys to steer your helicopter upwards, downwards, to the left and to the right. You can go faster if you press the space bar. But watch out! Make sure you don't crash into something or get stuck in a tree! You can fill up your helicopter at the petrol station so you can make it all the way home. Have fun!
+]]></TEXT_WELCOME>
+</snippets>

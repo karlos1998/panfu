@@ -272,6 +272,7 @@ class PanfuAssetAvailabilityTest extends TestCase
             'filler',
             'football',
             'fourwins',
+            'heli',
             'jumper',
             'labyrinth',
             'mahjong',

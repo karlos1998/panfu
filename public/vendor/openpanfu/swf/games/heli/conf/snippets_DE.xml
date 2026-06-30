@@ -1,0 +1,11 @@
+﻿<snippets date="05.05.2011 09:13:49">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Nochal Spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYCHAT><![CDATA[Spielen & chatten]]></BTN_PLAYCHAT>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<TEXT_GAME_SCORE><![CDATA[Punkte]]></TEXT_GAME_SCORE>
+<TEXT_GAME_SPRIT><![CDATA[Treibstoff]]></TEXT_GAME_SPRIT>
+<TEXT_INSTRUCTION_TITLE><![CDATA[Anleitung]]></TEXT_INSTRUCTION_TITLE>
+<TEXT_LEVEL><![CDATA[Level]]></TEXT_LEVEL>
+<TEXT_WELCOME><![CDATA[Sammle mit Deinem Helikopter Punkte, indem Du Bananen, Kokosnüsse und Orangen berührst! Für jede Banane gibt es einen Punkt, für jede Kokosnuss fünf Punkte, für jede Orange 10 Punkte. Mit Hilfe der Pfeiltasten kannst Du Deinen Helikopter nach oben, unten, links und rechts steuern. Du wirst schneller, wenn Du die Leertaste drückst. Pass aber auf, dass Du nicht abstürzt oder an einem Baum hängen bleibst! An der Tankstelle kannst Du Deinen Helikopter auftanken, damit Du sicher nach Hause kommst. Bevor du losfliegen kannst, musst du in das Spielfeld klicken!]]></TEXT_WELCOME>
+</snippets>
