@@ -9,7 +9,9 @@ class HomePageTest extends TestCase
 {
     public function test_home_page_renders_panfu_landing_page(): void
     {
-        $response = $this->get('/');
+        $response = $this
+            ->withHeaders(['Accept-Language' => 'pl-PL,pl;q=0.9'])
+            ->get('/');
 
         $response
             ->assertOk()
@@ -19,7 +21,11 @@ class HomePageTest extends TestCase
                 ->where('hero.playersOnline', 28)
                 ->has('hero.features', 4)
                 ->where('navigation.0.label', 'Strona główna')
+                ->where('navigation.2.children.0.href', '/language/de')
                 ->where('navigation.2.children.2.label', 'Polski')
+                ->where('navigation.2.children.2.active', true)
+                ->where('panfu.locale.current', 'pl')
+                ->where('panfu.locale.languageId', 'PL')
                 ->where('news.title', 'Podsumowanie roku Panfu 2025')
                 ->where('about.title', 'Czym jest Panfu.me?')
                 ->where('footer.legalLinks.2.label', 'Terms of Service')

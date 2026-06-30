@@ -7,5 +7,5 @@ interface LandingPageRepository
     /**
      * @return array<string, mixed>
      */
-    public function getHomePage(): array;
+    public function getHomePage(string $locale): array;
 }

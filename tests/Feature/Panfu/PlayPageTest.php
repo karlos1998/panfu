@@ -20,7 +20,10 @@ class PlayPageTest extends TestCase
     {
         $user = User::factory()->create();
 
-        $response = $this->actingAs($user)->get('/play');
+        $response = $this
+            ->withHeaders(['Accept-Language' => 'pl-PL,pl;q=0.9'])
+            ->actingAs($user)
+            ->get('/play');
 
         $response
             ->assertOk()
@@ -35,7 +38,9 @@ class PlayPageTest extends TestCase
                 ->where('client.informationServerUrl', '/InformationServer/')
                 ->where('client.socketProxyUrl', 'ws://localhost:19596')
                 ->where('client.flashvars.iServer', '/InformationServer/')
-                ->where('client.flashvars.langId', 'EN')
+                ->where('client.locale', 'pl')
+                ->where('client.languageId', 'PL')
+                ->where('client.flashvars.langId', 'PL')
                 ->where('client.flashvars.mode', 'dev')
                 ->where('client.flashvars.user', $user->name)
                 ->has('client.flashvars.sessionKey')

@@ -3,7 +3,6 @@ import PanfuLayout from '@/Layouts/PanfuLayout.vue';
 import type {
     FlashClient,
     MetaContent,
-    NavigationItem,
     ShopCatalogue,
     ShopCategory,
     ShopItem,
@@ -34,20 +33,6 @@ const meta: MetaContent = {
     title: 'Panfu',
     description: 'Lokalny klient Panfu.',
 };
-
-const navigation: NavigationItem[] = [
-    { label: 'Strona główna', href: '/' },
-    { label: 'Blog', href: '/#blog' },
-    {
-        label: 'Język',
-        href: '#',
-        children: [
-            { label: 'Deutsch', href: '#' },
-            { label: 'English', href: '#' },
-            { label: 'Polski', href: '#', active: true },
-        ],
-    },
-];
 
 const categoryLabels: Record<string, string> = {
     clothes: 'Ubrania',
@@ -256,6 +241,8 @@ const purchaseSelectedItem = () => {
 };
 
 const configureRuffle = () => {
+    const languageId = props.client.languageId;
+
     window.RufflePlayer = window.RufflePlayer || {};
     window.RufflePlayer.config = {
         ...(window.RufflePlayer.config || {}),
@@ -281,6 +268,18 @@ const configureRuffle = () => {
             [
                 /^http:\/\/amf\.old\.panfu\.test\/(.+)$/,
                 `${props.client.informationServerUrl}$1`,
+            ],
+            [
+                /^(.*\/vendor\/openpanfu\/.*_)(?:DE|EN|PL)(\.xml(?:[?#].*)?)$/,
+                `$1${languageId}$2`,
+            ],
+            [
+                /^(.*\/vendor\/openpanfu\/swf\/games\/[^?#]+\/conf\/snippets_)(?:DE|EN|PL)(\.xml(?:[?#].*)?)$/,
+                `$1${languageId}$2`,
+            ],
+            [
+                /^(.*\/vendor\/openpanfu\/conf\/allSnippets\/)(?:DE|EN|PL)(\.zip(?:[?#].*)?)$/,
+                `$1${languageId}$2`,
             ],
         ],
     };
@@ -327,7 +326,6 @@ onUnmounted(() => {
     <PanfuLayout
         :meta="meta"
         logo="/vendor/panfu-me/assets/panfu-logo-BkIF66dU.svg"
-        :navigation="navigation"
         main-class="panfu-main--play"
     >
         <section class="panfu-play">

@@ -47,6 +47,33 @@ export interface FooterContent {
     legalLinks: NavigationItem[];
 }
 
+export interface AccountNavigationContent {
+    label: string;
+    settings: string;
+    logout: string;
+    greeting: string;
+}
+
+export interface SupportedLanguage {
+    code: string;
+    id: string;
+    label: string;
+    active: boolean;
+    href: string;
+}
+
+export interface PanfuChrome {
+    navigation: NavigationItem[];
+    footer: FooterContent;
+    account: AccountNavigationContent;
+}
+
+export interface PanfuLocale {
+    current: string;
+    languageId: string;
+    languages: SupportedLanguage[];
+}
+
 export interface MetaContent {
     title: string;
     description: string;
@@ -60,6 +87,8 @@ export interface FlashClient {
     informationServerUrl: string;
     serverName: string;
     socketProxyUrl: string;
+    locale: string;
+    languageId: string;
     flashvars: Record<string, string>;
     flashvarsQuery: string;
 }

@@ -12,6 +12,7 @@ class FlashClientService
     public function __construct(
         private readonly FlashClientRepository $clients,
         private readonly PlayerRepository $players,
+        private readonly LocaleService $locales,
     ) {}
 
     /**
@@ -20,6 +21,9 @@ class FlashClientService
     public function getPlayPage(?Authenticatable $user): array
     {
         $client = $this->clients->getClient();
+        $client['languageId'] = $this->locales->currentLanguageId();
+        $client['locale'] = $this->locales->current();
+        $client['flashvars']['langId'] = $client['languageId'];
         $client['flashvars'] = $this->withAuthenticatedPlayer($client['flashvars'], $user);
         $client['flashvarsQuery'] = http_build_query(
             $client['flashvars'],

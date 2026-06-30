@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import InputError from '@/Components/InputError.vue';
 import PanfuLayout from '@/Layouts/PanfuLayout.vue';
-import type { FooterContent, MetaContent, NavigationItem } from '@/types/panfu';
+import type { MetaContent } from '@/types/panfu';
 import { Head, useForm } from '@inertiajs/vue3';
 import { computed } from 'vue';
 
@@ -26,36 +26,6 @@ const props = defineProps<{
 const meta: MetaContent = {
     title: 'Ustawienia konta - Panfu.me',
     description: 'Zarządzaj swoim lokalnym kontem Panfu.',
-};
-
-const navigation: NavigationItem[] = [
-    { label: 'Strona główna', href: '/' },
-    { label: 'Blog', href: '/#blog' },
-    {
-        label: 'Język',
-        href: '#',
-        children: [
-            { label: 'Deutsch', href: '#' },
-            { label: 'English', href: '#' },
-            { label: 'Polski', href: '#', active: true },
-        ],
-    },
-];
-
-const footer: FooterContent = {
-    copyright: '© 2016-2026 Panfu.me. Wszystkie prawa zastrzeżone.',
-    disclaimer: 'Panfu.me nie jest powiązane ani wspierane przez Goodbeans GmbH.',
-    links: [
-        { label: 'Preferencje plików cookie', href: '#' },
-        { label: 'Zespół Panfu', href: '#' },
-        { label: 'Oloko', href: '#' },
-        { label: 'Status', href: '#' },
-    ],
-    legalLinks: [
-        { label: 'Imprint', href: '#' },
-        { label: 'Privacy Policy', href: '#' },
-        { label: 'Terms of Service', href: '#' },
-    ],
 };
 
 const form = useForm({
@@ -106,8 +76,6 @@ const deleteAccount = () => {
     <PanfuLayout
         :meta="meta"
         logo="/vendor/panfu-me/assets/panfu-logo-BkIF66dU.svg"
-        :navigation="navigation"
-        :footer="footer"
         main-class="panfu-main--trees"
     >
         <Head title="Ustawienia konta - Panfu.me" />

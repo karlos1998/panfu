@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NavigationItem } from '@/types/panfu';
+import type { PageProps } from '@/types';
 import { Link, usePage } from '@inertiajs/vue3';
 import { computed, ref } from 'vue';
 
@@ -8,7 +9,7 @@ const props = defineProps<{
     items: NavigationItem[];
 }>();
 
-const page = usePage();
+const page = usePage<PageProps>();
 const menuOpen = ref(false);
 const openDropdown = ref<string | null>(null);
 
@@ -16,7 +17,7 @@ const visibleItems = computed(() => {
     const isAuthenticated = Boolean(page.props.auth.user);
 
     return props.items.filter((item) => {
-        if (isAuthenticated && ['Registration', 'Login', 'Rejestracja', 'Zaloguj się'].includes(item.label)) {
+        if (isAuthenticated && ['/register', '/login'].includes(item.href)) {
             return false;
         }
 
@@ -25,11 +26,15 @@ const visibleItems = computed(() => {
 });
 
 const accountItems = computed<NavigationItem[]>(() => [
-    { label: 'Ustawienia konta', href: '/account/settings' },
-    { label: 'Wyloguj się', href: '/logout', method: 'post' },
+    { label: page.props.panfu.chrome.account.settings, href: '/account/settings' },
+    { label: page.props.panfu.chrome.account.logout, href: '/logout', method: 'post' },
 ]);
 
 const accountName = computed(() => page.props.auth.user?.name ?? '');
+const accountLabel = computed(() => page.props.panfu.chrome.account.label);
+const accountGreeting = computed(() =>
+    page.props.panfu.chrome.account.greeting.replace(':name', accountName.value),
+);
 
 const isCurrent = (href: string) => {
     if (href === '#') {
@@ -135,6 +140,8 @@ const socialItems = [
                                 v-for="child in item.children"
                                 :key="child.label"
                                 :href="child.href"
+                                :method="child.method ?? 'get'"
+                                :as="child.method === 'post' ? 'button' : 'a'"
                                 :class="[
                                     'panfu-navbar__dropdown-link',
                                     child.active ? 'panfu-navbar__dropdown-link--active' : '',
@@ -171,7 +178,7 @@ const socialItems = [
                             :aria-expanded="openDropdown === 'account'"
                             @click="toggleDropdown('account')"
                         >
-                            Moje konto
+                            {{ accountLabel }}
                         </button>
 
                         <div
@@ -181,7 +188,7 @@ const socialItems = [
                             ]"
                         >
                             <span class="panfu-navbar__dropdown-header">
-                                Witaj, {{ accountName }}!
+                                {{ accountGreeting }}
                             </span>
                             <Link
                                 v-for="item in accountItems"

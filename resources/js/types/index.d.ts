@@ -1,3 +1,5 @@
+import type { PanfuChrome, PanfuLocale } from './panfu';
+
 export interface User {
     id: number;
     name: string;
@@ -16,5 +18,9 @@ export type PageProps<
 > = T & {
     auth: {
         user: User | null;
+    };
+    panfu: {
+        locale: PanfuLocale;
+        chrome: PanfuChrome;
     };
 };

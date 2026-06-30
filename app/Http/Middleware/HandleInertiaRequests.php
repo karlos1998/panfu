@@ -2,6 +2,8 @@
 
 namespace App\Http\Middleware;
 
+use App\Domain\Panfu\Services\LandingPageService;
+use App\Domain\Panfu\Services\LocaleService;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -29,10 +31,20 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
+        $locales = app(LocaleService::class);
+
         return [
             ...parent::share($request),
             'auth' => [
                 'user' => $request->user(),
+            ],
+            'panfu' => [
+                'locale' => [
+                    'current' => $locales->current(),
+                    'languageId' => $locales->currentLanguageId(),
+                    'languages' => $locales->languageLinks(),
+                ],
+                'chrome' => app(LandingPageService::class)->getChrome(),
             ],
         ];
     }

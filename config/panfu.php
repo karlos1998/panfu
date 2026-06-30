@@ -10,6 +10,25 @@ return [
         'players_online' => 28,
     ],
 
+    'localization' => [
+        'cookie' => env('PANFU_LOCALE_COOKIE', 'panfu_locale'),
+        'fallback' => env('PANFU_FALLBACK_LOCALE', 'pl'),
+        'supported' => [
+            'de' => [
+                'id' => 'DE',
+                'label' => 'Deutsch',
+            ],
+            'en' => [
+                'id' => 'EN',
+                'label' => 'English',
+            ],
+            'pl' => [
+                'id' => 'PL',
+                'label' => 'Polski',
+            ],
+        ],
+    ],
+
     'shop' => [
         'catalogue_path' => env('PANFU_SHOP_CATALOGUE_PATH', resource_path('data/panfu/shop.json')),
         'default_coins' => env('PANFU_DEFAULT_COINS', 1000),
@@ -43,7 +62,7 @@ return [
         'base_url' => env('PANFU_FLASH_BASE_URL', '/vendor/openpanfu/'),
         'information_server' => env('PANFU_INFORMATION_SERVER', '/InformationServer/'),
         'information_server_upstream' => env('PANFU_INFORMATION_SERVER_UPSTREAM', 'http://information-server/'),
-        'language_id' => env('PANFU_LANGUAGE_ID', 'EN'),
+        'language_id' => env('PANFU_LANGUAGE_ID', null),
         'mode' => env('PANFU_MODE', 'dev'),
         'server_name' => env('PANFU_SERVER_NAME', 'Local Panfu'),
     ],

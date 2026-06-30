@@ -92,6 +92,44 @@ class PanfuAssetAvailabilityTest extends TestCase
         }
     }
 
+    public function test_global_snippet_archives_are_available_for_supported_languages(): void
+    {
+        foreach (['DE', 'EN', 'PL'] as $language) {
+            $path = public_path("vendor/openpanfu/conf/allSnippets/{$language}.zip");
+
+            $this->assertFileExists($path, "Missing global snippet archive for {$language}");
+            $this->assertGreaterThan(1024, filesize($path), "{$language} snippet archive is unexpectedly small");
+        }
+    }
+
+    public function test_language_placeholder_snippet_references_are_available(): void
+    {
+        foreach ($this->configurationFilesWithSnippetPlaceholders() as $configurationFile) {
+            $configurationPath = public_path("vendor/openpanfu/{$configurationFile}");
+            $this->assertFileExists($configurationPath);
+
+            $xml = simplexml_load_file($configurationPath);
+            $this->assertNotFalse($xml);
+
+            foreach ($xml->xpath('//snippets') as $snippets) {
+                $snippetPath = (string) $snippets['path'];
+
+                if (! str_contains($snippetPath, '$$lang$$')) {
+                    continue;
+                }
+
+                foreach (['DE', 'EN', 'PL'] as $language) {
+                    $localizedPath = str_replace('$$lang$$', $language, $snippetPath);
+
+                    $this->assertFileExists(
+                        public_path("vendor/openpanfu/{$localizedPath}"),
+                        "Missing localized snippet {$localizedPath} referenced by {$configurationFile}",
+                    );
+                }
+            }
+        }
+    }
+
     public function test_minigame_support_audio_files_are_available(): void
     {
         $assets = [
@@ -288,6 +326,18 @@ class PanfuAssetAvailabilityTest extends TestCase
             'walizka',
             'worldmap',
             'zuma',
+        ];
+    }
+
+    /**
+     * @return array<int, string>
+     */
+    private function configurationFilesWithSnippetPlaceholders(): array
+    {
+        return [
+            'conf/config.xml',
+            'rooms/newcave/conf/newcave.xml',
+            'rooms/racetrack/conf/racetrack.xml',
         ];
     }
 

@@ -6,9 +6,11 @@ import type {
     MetaContent,
     NavigationItem,
 } from '@/types/panfu';
-import { Head } from '@inertiajs/vue3';
+import type { PageProps } from '@/types';
+import { Head, usePage } from '@inertiajs/vue3';
+import { computed } from 'vue';
 
-withDefaults(
+const props = withDefaults(
     defineProps<{
         meta: MetaContent;
         logo: string;
@@ -22,11 +24,17 @@ withDefaults(
         mainClass: '',
     },
 );
+
+const page = usePage<PageProps>();
+const resolvedNavigation = computed(() =>
+    props.navigation.length ? props.navigation : page.props.panfu.chrome.navigation,
+);
+const resolvedFooter = computed(() => props.footer ?? page.props.panfu.chrome.footer);
 </script>
 
 <template>
-    <Head :title="meta.title">
-        <meta head-key="description" name="description" :content="meta.description" />
+    <Head :title="props.meta.title">
+        <meta head-key="description" name="description" :content="props.meta.description" />
         <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -47,10 +55,10 @@ withDefaults(
     </Head>
 
     <div class="panfu-shell">
-        <PanfuNavbar :logo="logo" :items="navigation" />
-        <main :class="['panfu-main', mainClass]">
+        <PanfuNavbar :logo="props.logo" :items="resolvedNavigation" />
+        <main :class="['panfu-main', props.mainClass]">
             <slot />
         </main>
-        <PanfuFooter v-if="footer" :footer="footer" />
+        <PanfuFooter v-if="resolvedFooter" :footer="resolvedFooter" />
     </div>
 </template>

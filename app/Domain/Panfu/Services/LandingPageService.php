@@ -7,19 +7,19 @@ use Illuminate\Support\Facades\Route;
 
 class LandingPageService
 {
-    public function __construct(private readonly LandingPageRepository $landingPages) {}
+    public function __construct(
+        private readonly LandingPageRepository $landingPages,
+        private readonly LocaleService $locales,
+    ) {}
 
     /**
      * @return array<string, mixed>
      */
     public function getHomePage(): array
     {
-        $page = $this->landingPages->getHomePage();
+        $page = $this->landingPages->getHomePage($this->locales->current());
 
-        $page['navigation'] = array_map(
-            fn (array $item): array => $this->withHref($item),
-            $page['navigation'],
-        );
+        $page['navigation'] = $this->navigationFrom($page);
 
         $page['hero']['cta'] = $this->withHref($page['hero']['cta']);
         $page['about']['button'] = $this->withHref($page['about']['button']);
@@ -34,6 +34,30 @@ class LandingPageService
         $page['assets'] = $this->assetUrls($page['assets']);
 
         return $page;
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    public function getChrome(): array
+    {
+        $page = $this->landingPages->getHomePage($this->locales->current());
+
+        return [
+            'navigation' => $this->navigationFrom($page),
+            'footer' => [
+                ...$page['footer'],
+                'links' => array_map(
+                    fn (array $item): array => $this->withHref($item),
+                    $page['footer']['links'],
+                ),
+                'legalLinks' => array_map(
+                    fn (array $item): array => $this->withHref($item),
+                    $page['footer']['legalLinks'],
+                ),
+            ],
+            'account' => $page['account'],
+        ];
     }
 
     /**
@@ -56,6 +80,10 @@ class LandingPageService
      */
     private function withHref(array $item): array
     {
+        if (($item['key'] ?? null) === 'language') {
+            $item['children'] = $this->locales->navigationLinks();
+        }
+
         if (isset($item['route']) && Route::has($item['route'])) {
             $item['href'] = route($item['route'], absolute: false);
         }
@@ -67,8 +95,20 @@ class LandingPageService
             );
         }
 
-        unset($item['route']);
+        unset($item['key'], $item['route']);
 
         return $item;
+    }
+
+    /**
+     * @param  array<string, mixed>  $page
+     * @return array<int, array<string, mixed>>
+     */
+    private function navigationFrom(array $page): array
+    {
+        return array_map(
+            fn (array $item): array => $this->withHref($item),
+            $page['navigation'],
+        );
     }
 }

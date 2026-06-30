@@ -18,7 +18,7 @@ class StaticFlashClientRepository implements FlashClientRepository
             'socketProxyUrl' => config('panfu.game_server.socket_proxy_url'),
             'flashvars' => [
                 'iServer' => config('panfu.game_client.information_server'),
-                'langId' => config('panfu.game_client.language_id'),
+                'langId' => config('panfu.game_client.language_id') ?: 'EN',
                 'mode' => config('panfu.game_client.mode'),
             ],
         ];

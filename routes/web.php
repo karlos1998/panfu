@@ -2,12 +2,17 @@
 
 use App\Http\Controllers\Panfu\HomeController;
 use App\Http\Controllers\Panfu\InformationServerProxyController;
+use App\Http\Controllers\Panfu\LocaleController;
 use App\Http\Controllers\Panfu\PlayController;
 use App\Http\Controllers\Panfu\ShopController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
+
+Route::get('/language/{locale}', LocaleController::class)
+    ->whereIn('locale', ['de', 'en', 'pl'])
+    ->name('panfu.language');
 
 Route::get('/dashboard', function () {
     return redirect()->route('play');
