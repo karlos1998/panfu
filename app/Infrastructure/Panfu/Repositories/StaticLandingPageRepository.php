@@ -27,7 +27,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                 ],
                 'navigation' => [
                     ['key' => 'home', 'label' => 'Strona główna', 'route' => 'home', 'active' => true],
-                    ['key' => 'blog', 'label' => 'Blog', 'href' => '/#blog'],
+                    ['key' => 'blog', 'label' => 'Blog', 'route' => 'blog.index'],
                     ['key' => 'language', 'label' => 'Język', 'href' => '#'],
                     ['key' => 'register', 'label' => 'Rejestracja', 'route' => 'register'],
                     ['key' => 'login', 'label' => 'Zaloguj się', 'route' => 'login'],
@@ -51,7 +51,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                     'excerpt' => 'Witajcie, Pandy! Rok dobiega końca i ogólnie był on raczej spokojny dla Panfu. Czas minął bardzo szybko i nie udało nam się zrealizować wszystkich celów, które sobie założyliśmy. M...',
                     'button' => [
                         'label' => 'Przejdź do bloga',
-                        'href' => '#blog',
+                        'href' => '/blog',
                     ],
                 ],
                 'about' => [
@@ -98,7 +98,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                 ],
                 'navigation' => [
                     ['key' => 'home', 'label' => 'Home', 'route' => 'home', 'active' => true],
-                    ['key' => 'blog', 'label' => 'Blog', 'href' => '/#blog'],
+                    ['key' => 'blog', 'label' => 'Blog', 'route' => 'blog.index'],
                     ['key' => 'language', 'label' => 'Language', 'href' => '#'],
                     ['key' => 'register', 'label' => 'Registration', 'route' => 'register'],
                     ['key' => 'login', 'label' => 'Log in', 'route' => 'login'],
@@ -122,7 +122,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                     'excerpt' => 'Hello Pandas! The year is coming to an end and it was a rather calm one for Panfu. Time went by very quickly and we did not manage to finish every goal we had planned. M...',
                     'button' => [
                         'label' => 'Go to the blog',
-                        'href' => '#blog',
+                        'href' => '/blog',
                     ],
                 ],
                 'about' => [
@@ -169,7 +169,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                 ],
                 'navigation' => [
                     ['key' => 'home', 'label' => 'Startseite', 'route' => 'home', 'active' => true],
-                    ['key' => 'blog', 'label' => 'Blog', 'href' => '/#blog'],
+                    ['key' => 'blog', 'label' => 'Blog', 'route' => 'blog.index'],
                     ['key' => 'language', 'label' => 'Sprache', 'href' => '#'],
                     ['key' => 'register', 'label' => 'Registrieren', 'route' => 'register'],
                     ['key' => 'login', 'label' => 'Einloggen', 'route' => 'login'],
@@ -193,7 +193,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                     'excerpt' => 'Hallo Pandas! Das Jahr neigt sich dem Ende zu und es war für Panfu eher ruhig. Die Zeit verging sehr schnell und wir konnten nicht alle Ziele umsetzen, die wir uns vorgenommen hatten. M...',
                     'button' => [
                         'label' => 'Zum Blog',
-                        'href' => '#blog',
+                        'href' => '/blog',
                     ],
                 ],
                 'about' => [

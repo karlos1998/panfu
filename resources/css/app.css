@@ -2912,3 +2912,269 @@ body {
         justify-content: center;
     }
 }
+
+/* Blog */
+.panfu-shell:has(.panfu-main--blog) .panfu-navbar {
+    background-image: url("/vendor/panfu-me/assets/header-island-DHGB7_8-.svg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: auto 80px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.82);
+}
+
+.panfu-main--blog {
+    min-height: 760px;
+    color: #24282c;
+    background: #a9d21d;
+}
+
+.panfu-blog {
+    box-sizing: border-box;
+    width: min(980px, calc(100% - 24px));
+    margin: 0 auto;
+    padding: 24px 0 64px;
+    font-family: var(--bs-body-font-family, system-ui, -apple-system, "Segoe UI", sans-serif);
+}
+
+.panfu-blog-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.panfu-blog-categories a,
+.panfu-blog-adjacent a,
+.panfu-blog-pagination a,
+.panfu-blog-pagination span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 7px 12px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    background: #96c11f;
+    border-radius: 5px;
+}
+
+.panfu-blog-categories a:hover,
+.panfu-blog-categories .panfu-blog-category--active,
+.panfu-blog-adjacent a:hover,
+.panfu-blog-pagination .panfu-blog-pagination__active {
+    background: #759b10;
+}
+
+.panfu-blog-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(250px, 1fr);
+    align-items: start;
+    gap: 16px;
+}
+
+.panfu-blog-feed,
+.panfu-blog-sidebar {
+    display: grid;
+    min-width: 0;
+    gap: 16px;
+}
+
+.panfu-blog-card {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px rgba(72, 92, 5, 0.36);
+}
+
+.panfu-blog-card__header {
+    min-height: 46px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    color: #fff;
+    background: #91bf16;
+}
+
+.panfu-blog-card__header strong {
+    color: inherit;
+    font-size: 15px;
+}
+
+.panfu-blog-card__body {
+    padding: 16px;
+    color: #26292d;
+    background: #fff;
+}
+
+.panfu-blog-post__meta {
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.panfu-blog-post__meta > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.panfu-blog-post__meta a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.panfu-blog-post__title {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #2b9c17;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.panfu-blog-markdown {
+    color: #26292d;
+    font-size: 16px;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+
+.panfu-blog-markdown > :first-child { margin-top: 0; }
+.panfu-blog-markdown > :last-child { margin-bottom: 0; }
+.panfu-blog-markdown p,
+.panfu-blog-markdown ul,
+.panfu-blog-markdown ol,
+.panfu-blog-markdown blockquote { margin: 0 0 16px; }
+.panfu-blog-markdown h1,
+.panfu-blog-markdown h2,
+.panfu-blog-markdown h3,
+.panfu-blog-markdown h4,
+.panfu-blog-markdown h5 { margin: 22px 0 12px; color: #202428; font-weight: 700; }
+.panfu-blog-markdown h1 { font-size: 26px; }
+.panfu-blog-markdown h2 { font-size: 23px; }
+.panfu-blog-markdown h3 { font-size: 20px; }
+.panfu-blog-markdown h4,
+.panfu-blog-markdown h5 { font-size: 18px; }
+.panfu-blog-markdown ul,
+.panfu-blog-markdown ol { padding-left: 28px; }
+.panfu-blog-markdown a { color: #399f1c; }
+.panfu-blog-markdown img { max-width: 100%; height: auto; border-radius: 3px; }
+.panfu-blog-markdown code { padding: 2px 5px; color: #fff; background: #6d747a; border-radius: 4px; }
+.panfu-blog-markdown pre { overflow-x: auto; padding: 12px; background: #eef1f3; border-radius: 5px; }
+.panfu-blog-markdown pre code { padding: 0; color: inherit; background: transparent; }
+.panfu-blog-markdown blockquote { padding-left: 14px; color: #626970; border-left: 4px solid #91bf16; }
+
+.panfu-blog-sidebar-card .panfu-blog-card__body { padding: 16px; }
+.panfu-blog-people { display: grid; gap: 14px; }
+.panfu-blog-person { display: grid; grid-template-columns: 48px minmax(0, 1fr); align-items: center; gap: 10px; }
+.panfu-blog-person > div { min-width: 0; }
+.panfu-blog-person strong,
+.panfu-blog-person span { display: block; }
+.panfu-blog-person strong { font-size: 15px; }
+.panfu-blog-person span { margin-top: 2px; color: #5f6468; font-size: 14px; }
+.panfu-blog-person a { color: #329c18; text-decoration: none; }
+.panfu-blog-person--comment strong,
+.panfu-blog-person--comment span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.panfu-panda-avatar {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: block;
+    flex: 0 0 48px;
+    overflow: hidden;
+    background: #d7f4fb;
+    border: 2px solid rgba(255, 255, 255, 0.88);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(91, 117, 29, 0.22);
+}
+
+.panfu-panda-avatar__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 228px;
+    height: 166px;
+    max-width: none;
+    object-fit: contain;
+    object-position: left top;
+    transform: translate(-6px, 0);
+    transform-origin: left top;
+}
+
+.panfu-panda-avatar__background { width: 115px; height: 84px; transform: none; }
+.panfu-panda-avatar__base { width: 95px; height: 99px; transform: translate(-3px, 0); object-fit: fill; }
+.panfu-blog-empty { margin: 0; color: #697077; }
+.panfu-blog-empty-card { padding: 24px; color: #586067; background: #fff; border-radius: 7px; }
+.panfu-blog-adjacent { display: flex; justify-content: space-between; margin-bottom: 16px; }
+.panfu-blog-pagination { display: flex; justify-content: center; gap: 4px; }
+
+.panfu-blog-comment__header { gap: 10px; }
+.panfu-blog-comment__header > div { min-width: 0; }
+.panfu-blog-comment__header strong,
+.panfu-blog-comment__header span { display: block; }
+.panfu-blog-comment__header span { margin-top: 2px; color: rgba(255,255,255,.85); font-size: 13px; }
+.panfu-blog-comment-form { display: grid; gap: 10px; }
+.panfu-blog-comment-form textarea { min-height: 94px; resize: vertical; border: 1px solid #d8dce0; border-radius: 6px; }
+.panfu-blog-comment-form > div { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.panfu-blog-comment-form button { padding: 9px 12px; color: #fff; font-weight: 600; background: #8fbd16; border: 0; border-radius: 5px; }
+.panfu-blog-comment-form span { color: #646a70; font-size: 13px; }
+.panfu-blog-login-notice { margin: 0; padding: 10px; color: #842029; background: #f8d7da; border: 1px solid #f5c2c7; border-radius: 5px; }
+.panfu-blog-login-notice a { color: inherit; font-weight: 700; }
+.panfu-blog-form-error { margin: 0; color: #c42636; font-size: 13px; }
+
+/* Blog administration */
+.panfu-admin-primary-button,
+.panfu-admin-secondary-button,
+.panfu-admin-danger-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 0;
+    border-radius: 7px;
+}
+.panfu-admin-primary-button { color: #fff; background: #8fbd16; }
+.panfu-admin-secondary-button { color: #52730c; background: #f5f9e9; border: 1px solid #91bd25; }
+.panfu-admin-danger-button { color: #fff; background: #dc3545; }
+.panfu-admin-blog-post-row { display: grid; grid-template-columns: minmax(0, 1fr) 140px 120px; align-items: center; gap: 16px; padding: 15px 20px; color: #272d34; text-decoration: none; border-bottom: 1px solid #e2e6e9; }
+.panfu-admin-blog-post-row:hover { background: #f9fbf5; }
+.panfu-admin-blog-post-row div strong,
+.panfu-admin-blog-post-row div span { display: block; }
+.panfu-admin-blog-post-row div span { margin-top: 3px; color: #707880; font-size: 13px; }
+.panfu-admin-blog-empty { padding: 20px; color: #707880; }
+.panfu-admin-blog-comment-row { display: grid; grid-template-columns: minmax(0, 1fr) 130px auto; align-items: center; gap: 14px; padding: 14px 20px; border-bottom: 1px solid #e2e6e9; }
+.panfu-admin-blog-comment-row div strong,
+.panfu-admin-blog-comment-row div span { display: block; }
+.panfu-admin-blog-comment-row div span { margin-top: 4px; color: #59616a; }
+.panfu-admin-blog-comment-row time { color: #727a82; font-size: 13px; }
+.panfu-admin-blog-comment-row button { color: #c62f3f; background: transparent; border: 0; font-weight: 700; }
+.panfu-admin-blog-categories { display: grid; gap: 10px; margin-bottom: 16px; }
+.panfu-admin-blog-category { display: grid; grid-template-columns: 1.4fr 1fr 90px 100px 80px auto auto; align-items: center; gap: 8px; }
+.panfu-admin-blog-category input,
+.panfu-admin-blog-editor input,
+.panfu-admin-blog-editor select,
+.panfu-admin-markdown-editor { width: 100%; border: 1px solid #d8dde2; border-radius: 7px; }
+.panfu-admin-blog-category button { padding: 8px 10px; color: #47630a; font-weight: 700; background: #eff7dc; border: 1px solid #9dc532; border-radius: 6px; }
+.panfu-admin-blog-category--new { padding-top: 16px; border-top: 1px solid #e0e4e7; }
+.panfu-admin-blog-editor { display: grid; gap: 20px; }
+.panfu-admin-blog-editor__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.panfu-admin-blog-editor label { display: grid; gap: 7px; color: #272d34; font-weight: 600; }
+.panfu-admin-blog-editor small { min-height: 18px; color: #737b83; font-weight: 400; }
+.panfu-admin-markdown-editor { min-height: 520px; padding: 15px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; line-height: 1.55; resize: vertical; }
+.panfu-admin-blog-editor__actions { display: flex; justify-content: space-between; gap: 12px; }
+.panfu-admin-field-error { color: #c42636; }
+
+@media (max-width: 760px) {
+    .panfu-blog-grid { grid-template-columns: minmax(0, 1fr); }
+    .panfu-blog-post__meta { align-items: flex-start; flex-direction: column; }
+    .panfu-blog-post__meta > div { justify-content: flex-start; }
+    .panfu-admin-blog-post-row { grid-template-columns: minmax(0, 1fr); gap: 5px; }
+    .panfu-admin-blog-category { grid-template-columns: 1fr 1fr; }
+    .panfu-admin-blog-editor__grid { grid-template-columns: minmax(0, 1fr); }
+}
