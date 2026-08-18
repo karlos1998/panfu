@@ -83,9 +83,9 @@ class PokoPetPersistenceTest extends TestCase
         $this->assertFalse(property_exists($pet->properties, '_explicitType'));
         $this->assertSame(5, $pet->properties->health);
 
-        $packet = new \Amfphp_Core_Amf_Packet();
+        $packet = new \Amfphp_Core_Amf_Packet;
         $packet->messages[] = new \Amfphp_Core_Amf_Message('/1/onResult', '', $pet);
-        $payload = (new \Amfphp_Core_Amf_Serializer())->serialize($packet);
+        $payload = (new \Amfphp_Core_Amf_Serializer)->serialize($packet);
 
         $this->assertStringNotContainsString('PokoPetVO', $payload);
         $this->assertStringNotContainsString('PokoPetPropertiesVO', $payload);
