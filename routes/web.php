@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\BlogCategoryController as AdminBlogCategoryController;
+use App\Http\Controllers\Admin\BlogCommentController as AdminBlogCommentController;
+use App\Http\Controllers\Admin\BlogPostController as AdminBlogPostController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\InventoryController as AdminInventoryController;
 use App\Http\Controllers\Admin\PlayerHomeController as AdminPlayerHomeController;
@@ -8,6 +11,8 @@ use App\Http\Controllers\Admin\PublicRoomController as AdminPublicRoomController
 use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\Admin\UserRelationController as AdminUserRelationController;
 use App\Http\Controllers\Admin\UserSessionController as AdminUserSessionController;
+use App\Http\Controllers\Blog\BlogCommentController;
+use App\Http\Controllers\Blog\BlogController;
 use App\Http\Controllers\Panfu\HomeController;
 use App\Http\Controllers\Panfu\InformationServerProxyController;
 use App\Http\Controllers\Panfu\LocaleController;
@@ -17,6 +22,11 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{post}', [BlogController::class, 'show'])->name('blog.show');
+Route::post('/blog/{post}/comments', [BlogCommentController::class, 'store'])
+    ->middleware(['auth', 'throttle:10,1'])
+    ->name('blog.comments.store');
 
 Route::get('/language/{locale}', LocaleController::class)
     ->whereIn('locale', ['de', 'en', 'pl'])
@@ -68,6 +78,17 @@ Route::prefix('admin')
         Route::get('/rooms/homes/{user}', [AdminPlayerHomeController::class, 'show'])->name('rooms.homes.show');
         Route::get('/rooms/public', [AdminPublicRoomController::class, 'index'])->name('rooms.public.index');
         Route::get('/rooms/public/{room}', [AdminPublicRoomController::class, 'show'])->name('rooms.public.show');
+
+        Route::get('/blog', [AdminBlogPostController::class, 'index'])->name('blog.posts.index');
+        Route::get('/blog/posts/create', [AdminBlogPostController::class, 'create'])->name('blog.posts.create');
+        Route::post('/blog/posts', [AdminBlogPostController::class, 'store'])->name('blog.posts.store');
+        Route::get('/blog/posts/{post}/edit', [AdminBlogPostController::class, 'edit'])->name('blog.posts.edit');
+        Route::patch('/blog/posts/{post}', [AdminBlogPostController::class, 'update'])->name('blog.posts.update');
+        Route::delete('/blog/posts/{post}', [AdminBlogPostController::class, 'destroy'])->name('blog.posts.destroy');
+        Route::post('/blog/categories', [AdminBlogCategoryController::class, 'store'])->name('blog.categories.store');
+        Route::patch('/blog/categories/{category}', [AdminBlogCategoryController::class, 'update'])->name('blog.categories.update');
+        Route::delete('/blog/categories/{category}', [AdminBlogCategoryController::class, 'destroy'])->name('blog.categories.destroy');
+        Route::delete('/blog/comments/{comment}', [AdminBlogCommentController::class, 'destroy'])->name('blog.comments.destroy');
     });
 
 require __DIR__.'/auth.php';
