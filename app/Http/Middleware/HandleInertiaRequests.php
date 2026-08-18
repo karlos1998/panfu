@@ -46,6 +46,9 @@ class HandleInertiaRequests extends Middleware
                 ],
                 'chrome' => app(LandingPageService::class)->getChrome(),
             ],
+            'flash' => [
+                'success' => fn () => $request->session()->get('success'),
+            ],
         ];
     }
 }

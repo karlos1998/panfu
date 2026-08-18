@@ -8,6 +8,7 @@ use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -26,6 +27,24 @@ class User extends Authenticatable
     public function isAdmin(): bool
     {
         return $this->role === UserRole::Admin;
+    }
+
+    /** @return HasMany<Inventory, $this> */
+    public function inventoryEntries(): HasMany
+    {
+        return $this->hasMany(Inventory::class);
+    }
+
+    /** @return HasMany<PlayerState, $this> */
+    public function states(): HasMany
+    {
+        return $this->hasMany(PlayerState::class);
+    }
+
+    /** @return HasMany<UserRelation, $this> */
+    public function outgoingRelations(): HasMany
+    {
+        return $this->hasMany(UserRelation::class, 'player1');
     }
 
     /**
