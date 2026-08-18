@@ -3,6 +3,7 @@
 namespace Tests\Feature\Blog;
 
 use App\Models\BlogCategory;
+use App\Models\BlogComment;
 use App\Models\BlogPost;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -65,6 +66,23 @@ class BlogTest extends TestCase
         $this->actingAs(User::factory()->create())
             ->post("/blog/{$post->slug}/comments", ['body' => str_repeat('x', 256)])
             ->assertSessionHasErrors('body');
+    }
+
+    public function test_blog_exposes_a_shared_playercard_url_for_comment_authors(): void
+    {
+        $post = $this->createPost(now()->subMinute());
+        $user = User::factory()->create(['name' => 'AwatarowaPanda']);
+        BlogComment::query()->create([
+            'blog_post_id' => $post->id,
+            'user_id' => $user->id,
+            'author_name' => $user->name,
+            'body' => 'Komentarz z awatarem',
+            'approved_at' => now(),
+        ]);
+
+        $this->get("/blog/{$post->slug}")->assertInertia(fn (Assert $page) => $page
+            ->where('comments.0.avatar.url', '/playercard?user=AwatarowaPanda')
+        );
     }
 
     private function createPost(mixed $publishedAt): BlogPost

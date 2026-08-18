@@ -1,9 +1,4 @@
-export interface PandaAvatarData {
-    sex: 'male' | 'female';
-    base: string;
-    background: string | null;
-    layers: string[];
-}
+import type { PandaAvatarData } from '@/types/panfu';
 
 export interface BlogCategoryData { name: string; slug: string }
 

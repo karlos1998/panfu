@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import BlogSidebarCard from '@/Components/Blog/BlogSidebarCard.vue';
-import PandaAvatar from '@/Components/Blog/PandaAvatar.vue';
+import PandaAvatar from '@/Components/Panfu/PandaAvatar.vue';
 import type { LatestCommentData, TopCommenterData } from '@/types/blog';
 import { Link } from '@inertiajs/vue3';
 

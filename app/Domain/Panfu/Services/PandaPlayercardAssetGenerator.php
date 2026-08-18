@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\Blog\Services;
+namespace App\Domain\Panfu\Services;
 
 use App\Models\Inventory;
 use Illuminate\Filesystem\Filesystem;
@@ -8,7 +8,7 @@ use Imagick;
 use RuntimeException;
 use Symfony\Component\Process\Process;
 
-class PandaAvatarAssetGenerator
+class PandaPlayercardAssetGenerator
 {
     public function __construct(private readonly Filesystem $files) {}
 
@@ -19,7 +19,7 @@ class PandaAvatarAssetGenerator
             throw new RuntimeException("Nie znaleziono FFDec JAR: {$ffdecJar}");
         }
 
-        $temporary = sys_get_temp_dir().'/panfu-blog-avatars-'.bin2hex(random_bytes(6));
+        $temporary = sys_get_temp_dir().'/panfu-playercards-'.bin2hex(random_bytes(6));
         $this->files->ensureDirectoryExists($temporary);
         $this->files->ensureDirectoryExists($outputDirectory);
 

@@ -3069,7 +3069,7 @@ body {
 
 .panfu-blog-sidebar-card .panfu-blog-card__body { padding: 16px; }
 .panfu-blog-people { display: grid; gap: 14px; }
-.panfu-blog-person { display: grid; grid-template-columns: 48px minmax(0, 1fr); align-items: center; gap: 10px; }
+.panfu-blog-person { display: grid; grid-template-columns: 43px minmax(0, 1fr); align-items: center; gap: 10px; }
 .panfu-blog-person > div { min-width: 0; }
 .panfu-blog-person strong,
 .panfu-blog-person span { display: block; }
@@ -3080,33 +3080,12 @@ body {
 .panfu-blog-person--comment span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .panfu-panda-avatar {
-    position: relative;
-    width: 48px;
-    height: 48px;
     display: block;
-    flex: 0 0 48px;
-    overflow: hidden;
-    background: #d7f4fb;
-    border: 2px solid rgba(255, 255, 255, 0.88);
+    flex: 0 0 auto;
+    background-color: #fff;
+    background-repeat: no-repeat;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(91, 117, 29, 0.22);
 }
-
-.panfu-panda-avatar__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 228px;
-    height: 166px;
-    max-width: none;
-    object-fit: contain;
-    object-position: left top;
-    transform: translate(-6px, 0);
-    transform-origin: left top;
-}
-
-.panfu-panda-avatar__background { width: 115px; height: 84px; transform: none; }
-.panfu-panda-avatar__base { width: 95px; height: 99px; transform: translate(-3px, 0); object-fit: fill; }
 .panfu-blog-empty { margin: 0; color: #697077; }
 .panfu-blog-empty-card { padding: 24px; color: #586067; background: #fff; border-radius: 7px; }
 .panfu-blog-adjacent { display: flex; justify-content: space-between; margin-bottom: 16px; }

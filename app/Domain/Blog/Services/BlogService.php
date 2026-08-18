@@ -2,6 +2,7 @@
 
 namespace App\Domain\Blog\Services;
 
+use App\Domain\Panfu\Services\PandaAvatarService;
 use App\Models\BlogCategory;
 use App\Models\BlogComment;
 use App\Models\BlogPost;
@@ -57,7 +58,6 @@ class BlogService
     {
         $topUsers = User::query()
             ->withCount(['blogComments as comments_count' => fn ($query) => $query->whereNotNull('approved_at')])
-            ->with($this->inventoryRelations())
             ->whereHas('blogComments', fn ($query) => $query->whereNotNull('approved_at'))
             ->orderByDesc('comments_count')->limit(3)->get();
 
@@ -110,13 +110,8 @@ class BlogService
         return $candidate ? ['title' => $candidate->title, 'url' => route('blog.show', $candidate, absolute: false)] : null;
     }
 
-    private function inventoryRelations(): array
-    {
-        return ['inventoryEntries' => fn ($query) => $query->where('active', true)->with('item')];
-    }
-
     private function userRelations(): array
     {
-        return ['user' => fn ($query) => $query->with($this->inventoryRelations())];
+        return ['user'];
     }
 }

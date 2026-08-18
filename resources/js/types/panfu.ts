@@ -122,3 +122,7 @@ export interface ShopCatalogue {
     coins: number;
     items: Record<string, ShopCategory>;
 }
+
+export interface PandaAvatarData {
+    url: string;
+}

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PandaAvatar from '@/Components/Blog/PandaAvatar.vue';
+import PandaAvatar from '@/Components/Panfu/PandaAvatar.vue';
 import type { BlogCommentData } from '@/types/blog';
 
 defineProps<{ comment: BlogCommentData }>();
