@@ -16,7 +16,6 @@ readonly class AdminUserData
         public bool $sheriff,
         public int $socialLevel,
         public int $socialScore,
-        public ?int $currentGameServer,
         public bool $tourFinished,
         public ?string $birthday,
         public bool $emailVerified,

@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import InputError from '@/Components/InputError.vue';
-import type { GameServerOption, ManagedUser, SelectOption, UserRole } from '@/types/admin';
+import type { ManagedUser, SelectOption, UserRole } from '@/types/admin';
 import { useForm } from '@inertiajs/vue3';
 
 const props = defineProps<{
     user: ManagedUser;
     roles: SelectOption<UserRole>[];
-    gameServers: GameServerOption[];
 }>();
 
 const form = useForm({
@@ -19,7 +18,6 @@ const form = useForm({
     sheriff: props.user.sheriff,
     social_level: props.user.socialLevel,
     social_score: props.user.socialScore,
-    current_gameserver: props.user.currentGameServer,
     tour_finished: props.user.tourFinished,
     birthday: props.user.birthday ?? '',
     email_verified: props.user.emailVerified,
@@ -99,14 +97,22 @@ const submit = () => {
                     <input v-model.number="form.social_score" class="w-full rounded-xl border-slate-300 text-sm focus:border-blue-500 focus:ring-blue-500" type="number" min="0" required />
                     <InputError class="mt-1" :message="form.errors.social_score" />
                 </label>
-                <label class="block">
+                <div class="block">
                     <span class="mb-1.5 block text-sm font-medium text-slate-700">Serwer gry</span>
-                    <select v-model="form.current_gameserver" class="w-full rounded-xl border-slate-300 text-sm focus:border-blue-500 focus:ring-blue-500">
-                        <option :value="null">Poza grą</option>
-                        <option v-for="server in gameServers" :key="server.id" :value="server.id">{{ server.name ?? `Serwer #${server.id}` }}</option>
-                    </select>
-                    <InputError class="mt-1" :message="form.errors.current_gameserver" />
-                </label>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5">
+                        <div class="flex items-center gap-2 text-sm font-medium text-slate-700">
+                            <span
+                                :class="[
+                                    'h-2.5 w-2.5 rounded-full',
+                                    user.currentGameServerName ? 'bg-emerald-500' : 'bg-slate-300',
+                                ]"
+                                aria-hidden="true"
+                            />
+                            {{ user.currentGameServerName ?? 'Poza grą' }}
+                        </div>
+                        <span class="mt-0.5 block text-xs text-slate-500">Stan aktualizowany automatycznie przez grę</span>
+                    </div>
+                </div>
             </div>
             <div class="mt-5 grid gap-3 sm:grid-cols-3">
                 <label class="flex items-center gap-3 rounded-xl border border-amber-200 bg-amber-50/50 px-4 py-3">

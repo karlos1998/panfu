@@ -50,7 +50,7 @@ export interface ManagedUser {
     sheriff: boolean;
     socialLevel: number;
     socialScore: number;
-    currentGameServer: number | null;
+    currentGameServerName: string | null;
     tourFinished: boolean;
     birthday: string | null;
     lastLogin: string | null;
@@ -110,9 +110,4 @@ export interface UserOption {
     id: number;
     name: string;
     email: string;
-}
-
-export interface GameServerOption {
-    id: number;
-    name: string | null;
 }

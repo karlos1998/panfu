@@ -5,6 +5,7 @@ namespace Tests\Feature\Admin;
 use App\Enums\UserRole;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\DB;
 use Inertia\Testing\AssertableInertia as Assert;
 use Tests\TestCase;
 
@@ -54,7 +55,8 @@ class AdminUserManagementTest extends TestCase
     public function test_admin_can_open_a_complete_user_detail_view(): void
     {
         $admin = User::factory()->admin()->create();
-        $user = User::factory()->create();
+        DB::table('gameservers')->insert(['id' => 7, 'name' => 'Pandama']);
+        $user = User::factory()->create(['current_gameserver' => 7]);
 
         $this->actingAs($admin)
             ->get(route('admin.users.show', $user))
@@ -62,13 +64,14 @@ class AdminUserManagementTest extends TestCase
             ->assertInertia(fn (Assert $page) => $page
                 ->component('Admin/Users/Show')
                 ->where('managedUser.id', $user->id)
+                ->where('managedUser.currentGameServerName', 'Pandama')
                 ->hasAll(['inventory', 'states', 'relations', 'sessions', 'options.roles', 'options.items', 'options.users']));
     }
 
     public function test_admin_can_update_all_managed_account_fields(): void
     {
         $admin = User::factory()->admin()->create();
-        $user = User::factory()->create();
+        $user = User::factory()->create(['current_gameserver' => 7]);
 
         $this->actingAs($admin)
             ->patch(route('admin.users.update', $user), $this->validUserPayload([
@@ -80,6 +83,7 @@ class AdminUserManagementTest extends TestCase
                 'sheriff' => true,
                 'social_level' => 42,
                 'social_score' => 123456,
+                'current_gameserver' => 99,
                 'tour_finished' => false,
                 'email_verified' => false,
             ]))
@@ -93,6 +97,7 @@ class AdminUserManagementTest extends TestCase
         $this->assertSame(98765, $user->coins);
         $this->assertTrue($user->sheriff);
         $this->assertSame(42, $user->social_level);
+        $this->assertSame(7, $user->current_gameserver);
         $this->assertFalse($user->tour_finished);
         $this->assertNull($user->email_verified_at);
     }
@@ -125,7 +130,6 @@ class AdminUserManagementTest extends TestCase
             'sheriff' => false,
             'social_level' => 1,
             'social_score' => 0,
-            'current_gameserver' => null,
             'tour_finished' => true,
             'birthday' => null,
             'email_verified' => true,

@@ -98,7 +98,6 @@ class AdminUserService
                 'relationTypes' => collect([RelationType::Friend, RelationType::Blocked])->map(fn (RelationType $type) => ['value' => $type->value, 'label' => $type->label()]),
                 'items' => Item::query()->orderBy('type')->orderBy('name')->get(['id', 'name', 'type', 'premium']),
                 'users' => User::query()->whereKeyNot($user->id)->orderBy('name')->get(['id', 'name', 'email']),
-                'gameServers' => DB::table('gameservers')->orderBy('name')->get(['id', 'name']),
             ],
         ];
     }
@@ -171,7 +170,7 @@ class AdminUserService
             'sheriff' => $user->sheriff,
             'socialLevel' => $user->social_level,
             'socialScore' => $user->social_score ?? 0,
-            'currentGameServer' => $user->current_gameserver,
+            'currentGameServerName' => $this->currentGameServerName($user),
             'tourFinished' => $user->tour_finished,
             'birthday' => $user->birthday?->toDateString(),
             'lastLogin' => $user->last_login?->toDateString(),
@@ -179,6 +178,17 @@ class AdminUserService
             'createdAt' => $user->created_at?->toIso8601String(),
             'updatedAt' => $user->updated_at?->toIso8601String(),
         ];
+    }
+
+    private function currentGameServerName(User $user): ?string
+    {
+        $serverId = $user->current_gameserver;
+
+        if ($serverId === null || $serverId <= 0) {
+            return null;
+        }
+
+        return DB::table('gameservers')->where('id', $serverId)->value('name') ?? "Serwer #{$serverId}";
     }
 
     /** @return array<int, array<string, mixed>> */

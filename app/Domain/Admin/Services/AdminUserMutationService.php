@@ -43,7 +43,6 @@ class AdminUserMutationService
                 'sheriff' => $data->sheriff,
                 'social_level' => $data->socialLevel,
                 'social_score' => $data->socialScore,
-                'current_gameserver' => $data->currentGameServer,
                 'tour_finished' => $data->tourFinished,
                 'birthday' => $data->birthday,
                 'email_verified_at' => $data->emailVerified ? ($lockedUser->email_verified_at ?? now()) : null,

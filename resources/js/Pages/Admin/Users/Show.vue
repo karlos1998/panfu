@@ -3,7 +3,6 @@ import AdminBadge from '@/Components/Admin/AdminBadge.vue';
 import AdminCard from '@/Components/Admin/AdminCard.vue';
 import AdminLayout from '@/Layouts/AdminLayout.vue';
 import type {
-    GameServerOption,
     InventoryEntry,
     ItemOption,
     ManagedUser,
@@ -27,7 +26,6 @@ interface Options {
     relationTypes: SelectOption<number>[];
     items: ItemOption[];
     users: UserOption[];
-    gameServers: GameServerOption[];
 }
 
 const props = defineProps<{
@@ -105,7 +103,7 @@ const formatDate = (value: string | null) => value
         </div>
 
         <AdminCard v-if="activeTab === 'profile'" title="Konto pandy" description="Dane konta, uprawnienia i parametry rozgrywki">
-            <UserProfileForm :user="managedUser" :roles="options.roles" :game-servers="options.gameServers" />
+            <UserProfileForm :user="managedUser" :roles="options.roles" />
         </AdminCard>
         <AdminCard v-else-if="activeTab === 'inventory'" title="Zarządzanie przedmiotami" description="Pełny ekwipunek pandy wraz ze stanem wyposażenia">
             <InventoryPanel :user-id="managedUser.id" :inventory="inventory" :items="options.items" />
