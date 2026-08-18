@@ -44,6 +44,49 @@ LOCK TABLES `gameservers` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `pokopets`
+--
+
+DROP TABLE IF EXISTS `pokopets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `pokopets` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int unsigned NOT NULL,
+  `type` tinyint unsigned NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `selected` tinyint(1) NOT NULL DEFAULT '0',
+  `state` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'idle',
+  `x` int NOT NULL DEFAULT '0',
+  `y` int NOT NULL DEFAULT '0',
+  `health` tinyint unsigned NOT NULL DEFAULT '5',
+  `max_health` tinyint unsigned NOT NULL DEFAULT '5',
+  `speed` int unsigned NOT NULL DEFAULT '1',
+  `agility` int unsigned NOT NULL DEFAULT '1',
+  `power` int unsigned NOT NULL DEFAULT '1',
+  `experience` int unsigned NOT NULL DEFAULT '0',
+  `level` int unsigned NOT NULL DEFAULT '1',
+  `abilities` text COLLATE utf8mb4_unicode_ci NULL,
+  `last_fed` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `pokopets_user_id_type_unique` (`user_id`,`type`),
+  KEY `pokopets_user_id_index` (`user_id`),
+  KEY `pokopets_user_id_selected_index` (`user_id`,`selected`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pokopets`
+--
+
+LOCK TABLES `pokopets` WRITE;
+/*!40000 ALTER TABLE `pokopets` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pokopets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `inventories`
 --
 

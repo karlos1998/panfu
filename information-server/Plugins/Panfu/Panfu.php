@@ -281,6 +281,8 @@ class Panfu
             $playerInfo->activeInventory = Panfu::getInventory($userData['id'], true);
             $playerInfo->inactiveInventory = Panfu::getInventory($userData['id'], false);
             $playerInfo->buddies = Panfu::getBuddiesForUserId($userId);
+            $playerInfo->pokoPets = Panfu::getPokoPets($userId);
+            $playerInfo->pokoPetsWithNoHealth = Panfu::getPokoPetIdsWithNoHealth($userId);
 
             // Let's calculate the days since register.
             $now = time();
@@ -291,6 +293,327 @@ class Panfu
             Console::log("Error getting PlayerInfoVO \o/", $e);
             return null;
         }
+    }
+
+    /**
+     * Catalogue rules recovered from the Pokopets catalogue artwork and the
+     * level requirements in conf/config.xml.
+     *
+     * @return array|null
+     */
+    public static function getPokoPetDefinition($type)
+    {
+        $definitions = [
+            1 => ['name' => 'Helmet', 'price' => 4500, 'level' => 0, 'premium' => true, 'voucher' => false],
+            2 => ['name' => 'Stella', 'price' => 8000, 'level' => 0, 'premium' => true, 'voucher' => false],
+            3 => ['name' => 'Soque', 'price' => 1200, 'level' => 20, 'premium' => true, 'voucher' => false],
+            4 => ['name' => 'Cuddle', 'price' => 7500, 'level' => 20, 'premium' => true, 'voucher' => false],
+            5 => ['name' => 'Woody', 'price' => 0, 'level' => 0, 'premium' => false, 'voucher' => true],
+            6 => ['name' => 'Bugsy', 'price' => 60, 'level' => 1, 'premium' => true, 'voucher' => false],
+            7 => ['name' => 'Tork', 'price' => 5500, 'level' => 25, 'premium' => true, 'voucher' => false],
+            9 => ['name' => 'Marieta', 'price' => 60, 'level' => 0, 'premium' => false, 'voucher' => false],
+        ];
+
+        $type = (int)$type;
+        return isset($definitions[$type]) ? $definitions[$type] : null;
+    }
+
+    /**
+     * Returns every Pokopet owned by a player.
+     *
+     * The Flash client intentionally receives anonymous objects here. Although
+     * it registers PokoPetVO, it never registers the nested
+     * PokoPetPropertiesVO alias. Sending a typed PokoPetVO would therefore
+     * leave its strongly typed `properties` field null in Ruffle. The client
+     * already contains a compatibility mapper which converts anonymous pet
+     * objects (and their properties) into the correct ActionScript VOs.
+     *
+     * @return stdClass[]
+     */
+    public static function getPokoPets($userId)
+    {
+        $pdo = Database::getPDO();
+        $statement = $pdo->prepare("SELECT * FROM pokopets WHERE user_id = :userId ORDER BY selected DESC, id ASC");
+        $statement->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+        $statement->execute();
+
+        $pets = [];
+        foreach($statement->fetchAll() as $row) {
+            $pets[] = Panfu::getPokoPetVoFromRow($row);
+        }
+
+        return $pets;
+    }
+
+    /**
+     * Returns Pokopet ids which should trigger the low-health login warning.
+     *
+     * @return int[]
+     */
+    public static function getPokoPetIdsWithNoHealth($userId)
+    {
+        $pdo = Database::getPDO();
+        $statement = $pdo->prepare("SELECT id FROM pokopets WHERE user_id = :userId AND health <= 0 ORDER BY id ASC");
+        $statement->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+        $statement->execute();
+
+        return array_map('intval', $statement->fetchAll(PDO::FETCH_COLUMN));
+    }
+
+    /**
+     * Hydrates the anonymous object shape expected by the Flash client's
+     * PokoPet compatibility mapper.
+     *
+     * @return stdClass
+     */
+    public static function getPokoPetVoFromRow($row)
+    {
+        require_once AMFPHP_ROOTPATH . "/Services/Vo/DateVO.php";
+
+        $pet = new stdClass();
+        $pet->id = (int)$row['id'];
+        $pet->name = (string)$row['name'];
+        $pet->type = (string)$row['type'];
+        $pet->selected = (bool)$row['selected'];
+        $pet->x = (int)$row['x'];
+        $pet->y = (int)$row['y'];
+        $pet->state = (string)$row['state'];
+
+        $abilities = json_decode((string)($row['abilities'] ?? ''), true);
+        $pet->abilities = is_array($abilities) ? array_values(array_map('intval', $abilities)) : [];
+
+        $pet->properties = new stdClass();
+        $pet->properties->health = (int)$row['health'];
+        $pet->properties->maxHealth = (int)$row['max_health'];
+        $pet->properties->speed = (int)$row['speed'];
+        $pet->properties->agility = (int)$row['agility'];
+        $pet->properties->power = (int)$row['power'];
+        $pet->properties->experience = (int)$row['experience'];
+        $pet->properties->level = (int)$row['level'];
+
+        if(!empty($row['last_fed'])) {
+            $pet->lastFed = new DateVO();
+            $pet->lastFed->date = strtotime($row['last_fed']) * 1000;
+        }
+
+        return $pet;
+    }
+
+    /**
+     * Atomically purchases a Pokopet and returns a service-ready result.
+     *
+     * @return array{statusCode:int,message:string,pet:?stdClass}
+     */
+    public static function buyPokoPet($userId, $type, $name, $voucherReserved = false)
+    {
+        $type = (int)$type;
+        $definition = Panfu::getPokoPetDefinition($type);
+        if($definition === null) {
+            return ['statusCode' => 3, 'message' => 'Unknown Pokopet type.', 'pet' => null];
+        }
+
+        $name = trim((string)$name);
+        if($name === '') {
+            $name = $definition['name'];
+        }
+        $name = mb_substr($name, 0, 50);
+
+        $pdo = Database::getPDO();
+        try {
+            $pdo->beginTransaction();
+
+            $userStatement = $pdo->prepare("SELECT coins, goldpanda, social_level FROM users WHERE id = :userId FOR UPDATE");
+            $userStatement->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+            $userStatement->execute();
+            $user = $userStatement->fetch();
+            if(!$user) {
+                $pdo->rollBack();
+                return ['statusCode' => 1, 'message' => 'Player not found.', 'pet' => null];
+            }
+
+            $duplicate = $pdo->prepare("SELECT id FROM pokopets WHERE user_id = :userId AND type = :type LIMIT 1 FOR UPDATE");
+            $duplicate->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+            $duplicate->bindValue(':type', $type, PDO::PARAM_INT);
+            $duplicate->execute();
+            if($duplicate->fetch()) {
+                $pdo->rollBack();
+                return ['statusCode' => 10, 'message' => 'Pokopet already owned.', 'pet' => null];
+            }
+
+            if($definition['premium'] && (int)$user['goldpanda'] <= 0) {
+                $pdo->rollBack();
+                return ['statusCode' => 5, 'message' => 'A Gold Panda membership is required.', 'pet' => null];
+            }
+
+            if((int)$user['social_level'] < $definition['level']) {
+                $pdo->rollBack();
+                return ['statusCode' => 6, 'message' => 'The required Panda level has not been reached.', 'pet' => null];
+            }
+
+            if($definition['voucher']) {
+                $voucher = $pdo->prepare("SELECT id FROM inventories WHERE user_id = :userId AND item_id = 101830 LIMIT 1 FOR UPDATE");
+                $voucher->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+                $voucher->execute();
+                $voucherRow = $voucher->fetch();
+                if(!$voucherReserved || !$voucherRow) {
+                    $pdo->rollBack();
+                    return ['statusCode' => 13, 'message' => 'A valid Pokopet voucher is required.', 'pet' => null];
+                }
+
+                $removeVoucher = $pdo->prepare("DELETE FROM inventories WHERE id = :id");
+                $removeVoucher->bindValue(':id', (int)$voucherRow['id'], PDO::PARAM_INT);
+                $removeVoucher->execute();
+            } elseif((int)$user['coins'] < $definition['price']) {
+                $pdo->rollBack();
+                return ['statusCode' => 412, 'message' => 'Not enough coins.', 'pet' => null];
+            } elseif($definition['price'] > 0) {
+                $deduct = $pdo->prepare("UPDATE users SET coins = coins - :price, updated_at = :updatedAt WHERE id = :userId");
+                $deduct->bindValue(':price', $definition['price'], PDO::PARAM_INT);
+                $deduct->bindValue(':updatedAt', gmdate('Y-m-d H:i:s'));
+                $deduct->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+                $deduct->execute();
+            }
+
+            $now = gmdate('Y-m-d H:i:s');
+            $insert = $pdo->prepare(
+                "INSERT INTO pokopets (user_id, type, name, selected, state, health, max_health, speed, agility, power, experience, level, abilities, created_at, updated_at)
+                 VALUES (:userId, :type, :name, 0, 'idle', 5, 5, 1, 1, 1, 0, 1, :abilities, :createdAt, :updatedAt)"
+            );
+            $insert->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+            $insert->bindValue(':type', $type, PDO::PARAM_INT);
+            $insert->bindValue(':name', $name);
+            $insert->bindValue(':abilities', '[]');
+            $insert->bindValue(':createdAt', $now);
+            $insert->bindValue(':updatedAt', $now);
+            $insert->execute();
+            $petId = (int)$pdo->lastInsertId();
+
+            $petStatement = $pdo->prepare("SELECT * FROM pokopets WHERE id = :id");
+            $petStatement->bindValue(':id', $petId, PDO::PARAM_INT);
+            $petStatement->execute();
+            $pet = Panfu::getPokoPetVoFromRow($petStatement->fetch());
+
+            $pdo->commit();
+            return ['statusCode' => 0, 'message' => 'Pokopet added.', 'pet' => $pet];
+        } catch(Throwable $error) {
+            if($pdo->inTransaction()) {
+                $pdo->rollBack();
+            }
+            Console::log('Could not purchase Pokopet: ' . $error->getMessage());
+            return ['statusCode' => 2, 'message' => 'Could not save the Pokopet.', 'pet' => null];
+        }
+    }
+
+    /** @return stdClass|null */
+    public static function updatePokoPetState($userId, $petId, $state)
+    {
+        $allowedStates = ['normal', 'idle', 'sleeping', 'playing', 'eating', 'walking', 'denying', 'decrease', 'rescue', 'tricking'];
+        $state = (string)$state;
+        if(!in_array($state, $allowedStates, true)) {
+            return null;
+        }
+
+        $pdo = Database::getPDO();
+        $update = $pdo->prepare("UPDATE pokopets SET state = :state, updated_at = :updatedAt WHERE id = :id AND user_id = :userId");
+        $update->bindValue(':state', $state);
+        $update->bindValue(':updatedAt', gmdate('Y-m-d H:i:s'));
+        $update->bindValue(':id', (int)$petId, PDO::PARAM_INT);
+        $update->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+        $update->execute();
+
+        return Panfu::getPokoPetById($userId, $petId);
+    }
+
+    /** @return stdClass|null */
+    public static function getPokoPetById($userId, $petId)
+    {
+        $pdo = Database::getPDO();
+        $statement = $pdo->prepare("SELECT * FROM pokopets WHERE id = :id AND user_id = :userId LIMIT 1");
+        $statement->bindValue(':id', (int)$petId, PDO::PARAM_INT);
+        $statement->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+        $statement->execute();
+        $row = $statement->fetch();
+
+        return $row ? Panfu::getPokoPetVoFromRow($row) : null;
+    }
+
+    public static function switchPokoPet($userId, $petId)
+    {
+        $pdo = Database::getPDO();
+        try {
+            $pdo->beginTransaction();
+            $clear = $pdo->prepare("UPDATE pokopets SET selected = 0, state = CASE WHEN state = 'walking' THEN 'idle' ELSE state END WHERE user_id = :userId");
+            $clear->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+            $clear->execute();
+
+            if((int)$petId >= 0) {
+                $select = $pdo->prepare("UPDATE pokopets SET selected = 1, state = 'walking', updated_at = :updatedAt WHERE id = :id AND user_id = :userId");
+                $select->bindValue(':updatedAt', gmdate('Y-m-d H:i:s'));
+                $select->bindValue(':id', (int)$petId, PDO::PARAM_INT);
+                $select->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+                $select->execute();
+                if($select->rowCount() === 0) {
+                    $pdo->rollBack();
+                    return false;
+                }
+            }
+
+            $pdo->commit();
+            return true;
+        } catch(Throwable $error) {
+            if($pdo->inTransaction()) {
+                $pdo->rollBack();
+            }
+            Console::log('Could not switch Pokopet: ' . $error->getMessage());
+            return false;
+        }
+    }
+
+    public static function removePokoPet($userId, $petId)
+    {
+        $pdo = Database::getPDO();
+        $delete = $pdo->prepare("DELETE FROM pokopets WHERE id = :id AND user_id = :userId");
+        $delete->bindValue(':id', (int)$petId, PDO::PARAM_INT);
+        $delete->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+        $delete->execute();
+
+        return $delete->rowCount() > 0;
+    }
+
+    /** @return int|null */
+    public static function feedPokoPet($userId, $petId)
+    {
+        $pdo = Database::getPDO();
+        $now = gmdate('Y-m-d H:i:s');
+        $update = $pdo->prepare("UPDATE pokopets SET health = max_health, last_fed = :lastFed, state = 'eating', updated_at = :updatedAt WHERE id = :id AND user_id = :userId");
+        $update->bindValue(':lastFed', $now);
+        $update->bindValue(':updatedAt', $now);
+        $update->bindValue(':id', (int)$petId, PDO::PARAM_INT);
+        $update->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+        $update->execute();
+
+        $pet = Panfu::getPokoPetById($userId, $petId);
+        return $pet ? (int)$pet->properties->health : null;
+    }
+
+    /** @return stdClass|null */
+    public static function increaseSelectedPokoPetHealth($userId)
+    {
+        $pdo = Database::getPDO();
+        $update = $pdo->prepare("UPDATE pokopets SET health = health + 1, updated_at = :updatedAt WHERE user_id = :userId AND selected = 1 AND health < max_health");
+        $update->bindValue(':updatedAt', gmdate('Y-m-d H:i:s'));
+        $update->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+        $update->execute();
+        if($update->rowCount() === 0) {
+            return null;
+        }
+
+        $statement = $pdo->prepare("SELECT * FROM pokopets WHERE user_id = :userId AND selected = 1 LIMIT 1");
+        $statement->bindValue(':userId', (int)$userId, PDO::PARAM_INT);
+        $statement->execute();
+        $row = $statement->fetch();
+
+        return $row ? Panfu::getPokoPetVoFromRow($row) : null;
     }
 
     /**

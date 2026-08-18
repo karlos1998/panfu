@@ -62,6 +62,7 @@ class amfConnectionService
             // TODO: implement tour
             $response->valueObject->showTour = false;
             $response->valueObject->playerInfo = Panfu::getPlayerInfoForId($_SESSION['id']);
+            $response->valueObject->hungryPokoPets = Panfu::getPokoPetIdsWithNoHealth($_SESSION['id']);
         } else {
             $response->statusCode = 1;
         }
@@ -108,6 +109,7 @@ class amfConnectionService
             // TODO: implement tour
             $response->valueObject->showTour = false;
             $response->valueObject->playerInfo = Panfu::getPlayerInfoForId($_SESSION['id']);
+            $response->valueObject->hungryPokoPets = Panfu::getPokoPetIdsWithNoHealth($_SESSION['id']);
         } else {
 	        $response->statusCode = 1;
         }

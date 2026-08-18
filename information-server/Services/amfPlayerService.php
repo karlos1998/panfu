@@ -186,6 +186,13 @@ class amfPlayerService
     public function removeItems($itemArray)
     {
         foreach($itemArray as $item) {
+            // The client removes this voucher immediately before buyPet(). Keep
+            // it reserved until buyPet can consume it in the same DB transaction
+            // as the Pokopet, so a failed purchase cannot destroy the voucher.
+            if((int)$item === 101830 && Panfu::hasItem(101830)) {
+                $_SESSION['pokopet_voucher_reserved_at'] = time();
+                continue;
+            }
             Panfu::removeFromInventory($item);
         }
         $response = new AmfResponse();
@@ -261,7 +268,7 @@ class amfPlayerService
                 $response->valueObject->furnitureList = Panfu::getFurniture($playerId);
                 $response->valueObject->trackList = []; // TODO: add
                 $response->valueObject->pets = []; // TODO: add
-                $response->valueObject->pokoPets = []; // TODO: add
+                $response->valueObject->pokoPets = Panfu::getPokoPets($playerId);
                 $response->valueObject->bollies = []; // TODO: add
             } catch(Exception $e) {
                 $response->statusCode = 1;
