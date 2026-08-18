@@ -8,6 +8,7 @@ export interface User {
     coins?: number | null;
     goldpanda?: number;
     last_login?: string | null;
+    role: 'user' | 'admin';
     sex?: boolean;
     social_level?: number;
     social_score?: number | null;
