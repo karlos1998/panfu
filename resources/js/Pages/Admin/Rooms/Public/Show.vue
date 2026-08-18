@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AdminBadge from '@/Components/Admin/AdminBadge.vue';
 import AdminCard from '@/Components/Admin/AdminCard.vue';
+import AdminMetricCard from '@/Components/Admin/AdminMetricCard.vue';
 import RoomDebugStage from '@/Components/Admin/Rooms/RoomDebugStage.vue';
 import RoomsSubnav from '@/Components/Admin/Rooms/RoomsSubnav.vue';
 import RoomTechnicalDetails from '@/Components/Admin/Rooms/RoomTechnicalDetails.vue';
@@ -36,10 +37,26 @@ const size = (bytes: number | null) => bytes === null ? '—' : `${(bytes / 1024
         </AdminCard>
 
         <div class="panfu-room-metrics">
-            <article><span>Plik SWF</span><strong>{{ size(room.assetSize) }}</strong><small>{{ room.assetExists ? 'dostępny' : 'brak pliku' }}</small></article>
-            <article><span>Walkarea</span><strong>{{ room.debug.walkAreaFrames.length }}</strong><small>unikalnych wariantów · symbol {{ room.debug.walkAreaCharacterId ?? '—' }}</small></article>
-            <article><span>Spawny</span><strong>{{ room.spawns.length }}</strong><small>z głównego config.xml</small></article>
-            <article><span>Hotspoty</span><strong>{{ room.hotspots.length }}</strong><small>stref z XML pokoju</small></article>
+            <AdminMetricCard
+                label="Plik SWF"
+                :value="size(room.assetSize)"
+                :detail="room.assetExists ? 'dostępny' : 'brak pliku'"
+            />
+            <AdminMetricCard
+                label="Walkarea"
+                :value="room.debug.walkAreaFrames.length"
+                :detail="`unikalnych wariantów · symbol ${room.debug.walkAreaCharacterId ?? '—'}`"
+            />
+            <AdminMetricCard
+                label="Spawny"
+                :value="room.spawns.length"
+                detail="z głównego config.xml"
+            />
+            <AdminMetricCard
+                label="Hotspoty"
+                :value="room.hotspots.length"
+                detail="stref z XML pokoju"
+            />
         </div>
 
         <div class="mt-4 grid gap-4 lg:grid-cols-2">

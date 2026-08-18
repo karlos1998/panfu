@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HomeBoard from '@/Components/Panfu/HomeBoard.vue';
+import PanelCard from '@/Components/PanelCard.vue';
 import PanfuLayout from '@/Layouts/PanfuLayout.vue';
 import type {
     AboutContent,
@@ -47,58 +48,56 @@ const heroHref = computed(() => (page.props.auth.user ? '/play' : '/register'));
             </div>
 
             <div class="panfu-home__cards">
-                <article id="blog" class="panfu-card">
-                    <header class="panfu-card__header">
+                <PanelCard id="blog" class="panfu-home-card" tag="article" severity="brand">
+                    <template #title>
                         <span class="panfu-fa panfu-fa--newspaper" aria-hidden="true" />
                         {{ news.eyebrow }}
-                    </header>
-
-                    <div class="panfu-card__body">
-                        <Link class="panfu-card__article-link" :href="news.button.href">
-                            <h2 class="panfu-card__title">{{ news.title }}</h2>
-                            <p class="panfu-card__text">{{ news.excerpt }}</p>
-                        </Link>
-                    </div>
-
-                    <footer class="panfu-card__footer">
+                    </template>
+                    <Link class="panfu-home-card__article-link" :href="news.button.href">
+                        <h3 class="panfu-home-card__content-title">{{ news.title }}</h3>
+                        <p class="panfu-home-card__text">{{ news.excerpt }}</p>
+                    </Link>
+                    <template #footer>
                         <Link class="panfu-outline-button" :href="news.button.href">
                             {{ news.button.label }}
                         </Link>
-                    </footer>
-                </article>
+                    </template>
+                </PanelCard>
 
-                <article class="panfu-card">
-                    <header class="panfu-card__header">
+                <PanelCard class="panfu-home-card" tag="article" severity="brand">
+                    <template #title>
                         <span class="panfu-fa panfu-fa--question" aria-hidden="true" />
                         {{ about.title }}
-                    </header>
-
-                    <div class="panfu-card__body">
-                        <ul class="panfu-check-list">
-                            <li
-                                v-for="(point, index) in about.points"
-                                :key="point"
-                                :class="{ 'panfu-check-list__item--last': index === about.points.length - 1 }"
-                            >
-                                {{ point }}
-                            </li>
-                        </ul>
-                    </div>
-
-                    <footer class="panfu-card__footer">
+                    </template>
+                    <ul class="panfu-check-list">
+                        <li
+                            v-for="(point, index) in about.points"
+                            :key="point"
+                            :class="{ 'panfu-check-list__item--last': index === about.points.length - 1 }"
+                        >
+                            {{ point }}
+                        </li>
+                    </ul>
+                    <template #footer>
                         <Link class="panfu-outline-button" :href="about.button.href">
                             {{ about.button.label }}
                         </Link>
-                    </footer>
-                </article>
+                    </template>
+                </PanelCard>
 
-                <article class="panfu-card panfu-card--discord" aria-label="Discord">
+                <PanelCard
+                    class="panfu-home-card"
+                    tag="article"
+                    severity="discord"
+                    :padded="false"
+                    aria-label="Discord"
+                >
                     <iframe
                         class="panfu-discord-widget"
                         title="Discord"
                         src="https://discord.com/widget?id=423866952394473474&theme=light"
                     />
-                </article>
+                </PanelCard>
             </div>
         </section>
     </PanfuLayout>

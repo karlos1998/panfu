@@ -1,28 +1,35 @@
 <script setup lang="ts">
+import PanelCard from '@/Components/PanelCard.vue';
+import type { PanelCardSeverity } from '@/types/ui';
+
 withDefaults(
     defineProps<{
         title?: string;
         description?: string;
         padded?: boolean;
+        severity?: PanelCardSeverity;
     }>(),
-    { title: '', description: '', padded: true },
+    { title: '', description: '', padded: true, severity: 'default' },
 );
 </script>
 
 <template>
-    <section class="panfu-admin-card overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-        <header
-            v-if="title || description || $slots.actions"
-            class="panfu-admin-card__header flex flex-col gap-3 border-b border-slate-100 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
-        >
-            <div>
-                <h2 v-if="title" class="text-base font-semibold text-slate-900">{{ title }}</h2>
-                <p v-if="description" class="mt-1 text-sm text-slate-500">{{ description }}</p>
-            </div>
+    <PanelCard
+        class="panfu-admin-card shadow-sm"
+        :title="title"
+        :description="description"
+        :padded="padded"
+        :severity="severity"
+    >
+        <template v-if="$slots.title" #title>
+            <slot name="title" />
+        </template>
+        <template v-if="$slots.actions" #actions>
             <slot name="actions" />
-        </header>
-        <div class="panfu-admin-card__body" :class="padded ? 'p-5' : ''">
-            <slot />
-        </div>
-    </section>
+        </template>
+        <slot />
+        <template v-if="$slots.footer" #footer>
+            <slot name="footer" />
+        </template>
+    </PanelCard>
 </template>

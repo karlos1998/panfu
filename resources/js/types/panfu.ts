@@ -79,6 +79,18 @@ export interface MetaContent {
     description: string;
 }
 
+export interface AccountSettingsData {
+    name: string;
+    email: string;
+    gender: 'boy' | 'girl';
+    coins: number | null;
+    goldPanda: boolean;
+    socialLevel: number;
+    socialScore: number | null;
+    createdAt: string | null;
+    lastLogin: string | null;
+}
+
 export interface FlashClient {
     title: string;
     ruffleScript: string;

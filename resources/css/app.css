@@ -1170,39 +1170,112 @@ body {
     margin-top: 16px;
 }
 
-.panfu-card {
-    min-height: 100%;
+.panfu-panel-card {
+    --panfu-panel-card-border: rgba(0, 0, 0, 0.125);
+    --panfu-panel-card-header: rgba(0, 0, 0, 0.03);
+    --panfu-panel-card-padding: 16px;
+
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    color: #212529;
     background: #ffffff;
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--panfu-panel-card-border);
     border-radius: 8px;
 }
 
-.panfu-card__header {
+.panfu-panel-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
     padding: 8px 16px;
-    color: #ffffff;
+    background: var(--panfu-panel-card-header);
+    border-bottom: 1px solid var(--panfu-panel-card-border);
+}
+
+.panfu-panel-card__heading {
+    min-width: 0;
+}
+
+.panfu-panel-card__title {
+    margin: 0;
+    color: #212529;
     font-size: 14.4px;
     font-weight: 700;
     line-height: 1.5;
+}
+
+.panfu-panel-card__description {
+    margin: 4px 0 0;
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.panfu-panel-card__body {
+    flex: 1 1 auto;
+}
+
+.panfu-panel-card__body--padded {
+    padding: var(--panfu-panel-card-padding);
+}
+
+.panfu-panel-card__footer {
+    padding: 8px 16px;
+}
+
+.panfu-panel-card--brand {
+    --panfu-panel-card-border: #92bd1d;
+    --panfu-panel-card-header: #92bd1d;
+}
+
+.panfu-panel-card--brand .panfu-panel-card__title,
+.panfu-panel-card--brand .panfu-panel-card__description {
+    color: #ffffff;
+}
+
+.panfu-panel-card--info {
+    --panfu-panel-card-border: #0d6efd;
+    --panfu-panel-card-header: rgba(13, 110, 253, 0.06);
+}
+
+.panfu-panel-card--success {
+    --panfu-panel-card-border: #92bd1d;
+    --panfu-panel-card-header: rgba(146, 189, 29, 0.08);
+}
+
+.panfu-panel-card--warning {
+    --panfu-panel-card-border: #ffc107;
+    --panfu-panel-card-header: rgba(255, 193, 7, 0.08);
+}
+
+.panfu-panel-card--danger {
+    --panfu-panel-card-border: #dc3545;
+    --panfu-panel-card-header: rgba(220, 53, 69, 0.06);
+}
+
+.panfu-panel-card--discord {
+    --panfu-panel-card-border: #5865f2;
+    --panfu-panel-card-header: rgba(88, 101, 242, 0.06);
+}
+
+.panfu-home-card {
+    min-height: 100%;
+}
+
+.panfu-home-card .panfu-panel-card__title {
+    color: #ffffff;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
-    background: #92bd1d;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.panfu-card__body {
-    flex: 1 1 auto;
-    padding: 16px;
-}
-
-.panfu-card__article-link {
+.panfu-home-card__article-link {
     color: #390;
     text-decoration: none;
 }
 
-.panfu-card__title {
+.panfu-home-card__content-title {
     margin: 0 0 8px;
     color: #390;
     font-family: var(--bs-body-font-family, system-ui, -apple-system, "Segoe UI", sans-serif);
@@ -1211,17 +1284,11 @@ body {
     line-height: 1.2;
 }
 
-.panfu-card__text {
+.panfu-home-card__text {
     margin: 0;
     color: #6c757d;
     font-size: 14.4px;
     line-height: 1.5;
-}
-
-.panfu-card__footer {
-    padding: 8px 16px;
-    background: transparent;
-    border-top: 0;
 }
 
 .panfu-outline-button {
@@ -1271,8 +1338,8 @@ body {
     margin-bottom: 0;
 }
 
-.panfu-card--discord {
-    border-color: #5865f2;
+.panfu-home-card.panfu-panel-card--discord .panfu-panel-card__body {
+    display: flex;
 }
 
 .panfu-discord-widget {
@@ -1404,14 +1471,75 @@ body {
 }
 
 .panfu-admin-card {
+    --panfu-panel-card-padding: 20px;
+
     color: #212529;
     background: #ffffff;
-    border-color: rgba(0, 0, 0, 0.125);
+    border-radius: 16px;
 }
 
-.panfu-admin-card__header {
-    background: rgba(0, 0, 0, 0.03);
-    border-bottom-color: rgba(0, 0, 0, 0.125);
+.panfu-admin-card .panfu-panel-card__header {
+    align-items: center;
+    padding: 16px 20px;
+    background: var(--panfu-panel-card-header);
+    border-bottom-color: var(--panfu-panel-card-border);
+}
+
+.panfu-admin-card .panfu-panel-card__title {
+    color: #0f172a;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.panfu-admin-card .panfu-panel-card__description {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.panfu-admin-metric-card {
+    --panfu-panel-card-padding: 20px;
+
+    border-color: #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.panfu-admin-metric-card__icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 900;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.panfu-admin-metric-card__icon--blue {
+    background: #3b82f6;
+}
+
+.panfu-admin-metric-card__icon--amber {
+    background: #f59e0b;
+}
+
+.panfu-admin-metric-card__icon--emerald {
+    background: #10b981;
+}
+
+.panfu-admin-metric-card__icon--violet {
+    background: #8b5cf6;
+}
+
+.panfu-admin-metric-card__icon--slate {
+    background: #64748b;
+}
+
+.panfu-admin-card.panfu-panel-card--brand .panfu-panel-card__title,
+.panfu-admin-card.panfu-panel-card--brand .panfu-panel-card__description {
+    color: #ffffff;
 }
 
 .panfu-admin-back-link {
@@ -2148,23 +2276,19 @@ body {
     gap: 12px;
 }
 
-.panfu-room-metrics article {
-    display: grid;
-    gap: 3px;
-    padding: 14px;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+.panfu-room-metrics .panfu-admin-metric-card {
+    --panfu-panel-card-padding: 14px;
+
     border-radius: 8px;
 }
 
-.panfu-room-metrics span,
-.panfu-room-metrics small {
-    color: #6c757d;
-    font-size: 11px;
+.panfu-room-metrics .panfu-admin-metric-card .text-3xl {
+    margin-top: 3px;
+    font-size: 21px;
 }
 
-.panfu-room-metrics strong {
-    font-size: 21px;
+.panfu-room-metrics .panfu-admin-metric-card .text-xs {
+    font-size: 11px;
 }
 
 .panfu-room-coordinate-list {
@@ -2322,22 +2446,8 @@ body {
 
 }
 
-.panfu-account-card {
+.panfu-account > .panfu-panel-card {
     margin-bottom: 16px;
-    overflow: hidden;
-    color: #212529;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 8px;
-}
-
-.panfu-account-card__header {
-    padding: 8px 16px;
-    font-size: 14.4px;
-    font-weight: 700;
-    line-height: 1.5;
-    background: rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .panfu-account-form {
@@ -2396,23 +2506,11 @@ body {
     text-align: right;
 }
 
-.panfu-account-card__body {
-    padding: 16px;
-}
-
-.panfu-account-card__body p {
+.panfu-account-card-copy {
     margin: 0 0 12px;
     color: #6c757d;
     font-size: 14.4px;
     line-height: 1.5;
-}
-
-.panfu-account-card--discord {
-    border-color: #5865f2;
-}
-
-.panfu-account-card--danger {
-    border-color: #dc3545;
 }
 
 .panfu-account-button {

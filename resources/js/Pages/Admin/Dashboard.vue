@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import AdminBadge from '@/Components/Admin/AdminBadge.vue';
 import AdminCard from '@/Components/Admin/AdminCard.vue';
+import AdminMetricCard from '@/Components/Admin/AdminMetricCard.vue';
 import AdminLayout from '@/Layouts/AdminLayout.vue';
+import type { AdminMetricTone } from '@/types/ui';
 import { Link } from '@inertiajs/vue3';
 import { computed } from 'vue';
 
@@ -27,11 +29,41 @@ interface RecentUser {
 const props = defineProps<{ metrics: Metrics; recentUsers: RecentUser[] }>();
 
 const number = (value: number) => new Intl.NumberFormat('pl-PL').format(value);
-const cards = computed(() => [
-    { label: 'Wszystkie pandy', value: props.metrics.users, detail: `${props.metrics.admins} administratorów`, tone: 'bg-blue-500', icon: 'P' },
-    { label: 'Gold Panda', value: props.metrics.goldPandas, detail: 'aktywne członkostwa', tone: 'bg-amber-500', icon: 'G' },
-    { label: 'Aktywne sesje', value: props.metrics.activeSessions, detail: 'w czasie ważności sesji', tone: 'bg-emerald-500', icon: 'S' },
-    { label: 'Przedmioty pand', value: props.metrics.inventoryItems, detail: 'w ekwipunkach', tone: 'bg-violet-500', icon: 'I' },
+const cards = computed<Array<{
+    label: string;
+    value: number;
+    detail: string;
+    tone: AdminMetricTone;
+    icon: string;
+}>>(() => [
+    {
+        label: 'Wszystkie pandy',
+        value: props.metrics.users,
+        detail: `${props.metrics.admins} administratorów`,
+        tone: 'blue',
+        icon: 'P',
+    },
+    {
+        label: 'Gold Panda',
+        value: props.metrics.goldPandas,
+        detail: 'aktywne członkostwa',
+        tone: 'amber',
+        icon: 'G',
+    },
+    {
+        label: 'Aktywne sesje',
+        value: props.metrics.activeSessions,
+        detail: 'w czasie ważności sesji',
+        tone: 'emerald',
+        icon: 'S',
+    },
+    {
+        label: 'Przedmioty pand',
+        value: props.metrics.inventoryItems,
+        detail: 'w ekwipunkach',
+        tone: 'violet',
+        icon: 'I',
+    },
 ]);
 
 const formatDate = (value: string | null) => value
@@ -53,16 +85,15 @@ const formatDate = (value: string | null) => value
         </div>
 
         <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-            <article v-for="card in cards" :key="card.label" class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <div class="flex items-start justify-between gap-4">
-                    <div>
-                        <p class="text-sm font-medium text-slate-500">{{ card.label }}</p>
-                        <p class="mt-2 text-3xl font-bold tracking-tight text-slate-950">{{ number(card.value) }}</p>
-                        <p class="mt-1 text-xs text-slate-400">{{ card.detail }}</p>
-                    </div>
-                    <div class="flex h-11 w-11 items-center justify-center rounded-xl font-black text-white shadow-sm" :class="card.tone">{{ card.icon }}</div>
-                </div>
-            </article>
+            <AdminMetricCard
+                v-for="card in cards"
+                :key="card.label"
+                :label="card.label"
+                :value="number(card.value)"
+                :detail="card.detail"
+                :tone="card.tone"
+                :icon="card.icon"
+            />
         </div>
 
         <div class="mt-6 grid gap-6 xl:grid-cols-[minmax(0,1.5fr)_minmax(280px,1fr)]">
