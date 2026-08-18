@@ -41,7 +41,7 @@ const formatDate = (value: string | null) => value
 
 <template>
     <AdminLayout title="Pulpit administratora">
-        <div class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div class="panfu-admin-page-header mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
                 <p class="text-sm font-semibold uppercase tracking-widest text-blue-600">Panfu</p>
                 <h1 class="mt-1 text-3xl font-bold tracking-tight text-slate-950">Dzień dobry, Adminie</h1>

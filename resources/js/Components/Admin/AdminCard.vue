@@ -10,10 +10,10 @@ withDefaults(
 </script>
 
 <template>
-    <section class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+    <section class="panfu-admin-card overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
         <header
             v-if="title || description || $slots.actions"
-            class="flex flex-col gap-3 border-b border-slate-100 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
+            class="panfu-admin-card__header flex flex-col gap-3 border-b border-slate-100 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
         >
             <div>
                 <h2 v-if="title" class="text-base font-semibold text-slate-900">{{ title }}</h2>
@@ -21,7 +21,7 @@ withDefaults(
             </div>
             <slot name="actions" />
         </header>
-        <div :class="padded ? 'p-5' : ''">
+        <div class="panfu-admin-card__body" :class="padded ? 'p-5' : ''">
             <slot />
         </div>
     </section>

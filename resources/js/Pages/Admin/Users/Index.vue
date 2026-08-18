@@ -36,7 +36,7 @@ const clearFilters = () => {
 
 <template>
     <AdminLayout title="Użytkownicy">
-        <div class="mb-8">
+        <div class="panfu-admin-page-header mb-8">
             <p class="text-sm font-semibold uppercase tracking-widest text-blue-600">Społeczność</p>
             <h1 class="mt-1 text-3xl font-bold tracking-tight text-slate-950">Użytkownicy</h1>
             <p class="mt-2 text-sm text-slate-500">Wyszukuj pandy i przechodź do pełnego zarządzania ich kontem.</p>

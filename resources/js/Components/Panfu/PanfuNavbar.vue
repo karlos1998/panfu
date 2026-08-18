@@ -30,10 +30,6 @@ const accountItems = computed<NavigationItem[]>(() => {
         { label: page.props.panfu.chrome.account.settings, href: '/account/settings' },
     ];
 
-    if (page.props.auth.user?.role === 'admin') {
-        items.push({ label: 'Panel administratora', href: '/admin' });
-    }
-
     items.push({ label: page.props.panfu.chrome.account.logout, href: '/logout', method: 'post' });
 
     return items;
@@ -170,6 +166,19 @@ const socialItems = [
                         @click="closeMenus"
                     >
                         Graj
+                    </Link>
+
+                    <Link
+                        v-if="$page.props.auth.user?.role === 'admin'"
+                        href="/admin"
+                        :class="[
+                            'panfu-navbar__link',
+                            'panfu-navbar__link--admin',
+                            isCurrent('/admin') ? 'panfu-navbar__link--active' : '',
+                        ]"
+                        @click="closeMenus"
+                    >
+                        Admin
                     </Link>
 
                     <div
