@@ -25,10 +25,19 @@ const visibleItems = computed(() => {
     });
 });
 
-const accountItems = computed<NavigationItem[]>(() => [
-    { label: page.props.panfu.chrome.account.settings, href: '/account/settings' },
-    { label: page.props.panfu.chrome.account.logout, href: '/logout', method: 'post' },
-]);
+const accountItems = computed<NavigationItem[]>(() => {
+    const items: NavigationItem[] = [
+        { label: page.props.panfu.chrome.account.settings, href: '/account/settings' },
+    ];
+
+    if (page.props.auth.user?.role === 'admin') {
+        items.push({ label: 'Panel administratora', href: '/admin' });
+    }
+
+    items.push({ label: page.props.panfu.chrome.account.logout, href: '/logout', method: 'post' });
+
+    return items;
+});
 
 const accountName = computed(() => page.props.auth.user?.name ?? '');
 const accountLabel = computed(() => page.props.panfu.chrome.account.label);

@@ -24,4 +24,7 @@ export type PageProps<
         locale: PanfuLocale;
         chrome: PanfuChrome;
     };
+    flash: {
+        success?: string | null;
+    };
 };
