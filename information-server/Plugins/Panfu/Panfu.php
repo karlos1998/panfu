@@ -51,11 +51,14 @@ class Panfu
     /**
      * Sets and returns a session ticket for the user.
      * @author Altro50 <altro50@msn.com>
-     * @return string
+     * @return int
      */
     public static function generateSessionId()
     {
-        $sessionId = uniqid("OPS_");
+        // The Flash client and Java gameserver exchange the ticket as a signed
+        // 32-bit integer. A textual ticket (for example, "OPS_...") is coerced
+        // to 0 by the client and makes every gameserver login fail.
+        $sessionId = random_int(100000000, 2147483647);
         $pdo = Database::getPDO();
         $stmt = $pdo->prepare("UPDATE users SET ticket_id = :ticket WHERE id = :id");
         $stmt->bindParam(':ticket', $sessionId);
