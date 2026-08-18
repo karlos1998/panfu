@@ -1548,6 +1548,741 @@ body {
     color: #6c757d;
 }
 
+.panfu-admin-room-nav {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 8px;
+}
+
+.panfu-admin-room-nav__link {
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 14px;
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.panfu-admin-room-nav__link:hover {
+    color: #558000;
+    background: #f1f8df;
+}
+
+.panfu-admin-room-nav__link--active,
+.panfu-admin-room-nav__link--active:hover {
+    color: #ffffff;
+    background: #92bd1d;
+}
+
+.panfu-home-list-row,
+.panfu-public-room-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 20px;
+    color: #212529;
+    text-decoration: none;
+}
+
+.panfu-home-list-row:hover,
+.panfu-public-room-row:hover {
+    background: #f8f9fa;
+}
+
+.panfu-home-list-row__avatar,
+.panfu-home-header__avatar {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #558000;
+    font-weight: 800;
+    background: #f1f8df;
+    border: 1px solid #c9e08e;
+    border-radius: 50%;
+}
+
+.panfu-home-list-row__avatar {
+    width: 42px;
+    height: 42px;
+}
+
+.panfu-home-list-row strong,
+.panfu-public-room-row strong {
+    display: block;
+    font-size: 14px;
+}
+
+.panfu-home-list-row strong span,
+.panfu-home-header h1 span {
+    color: #adb5bd;
+    font-weight: 500;
+}
+
+.panfu-home-list-row p,
+.panfu-public-room-row p {
+    margin: 2px 0 0;
+    overflow: hidden;
+    color: #6c757d;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.panfu-home-list-row__background {
+    width: 180px;
+}
+
+.panfu-home-list-row__background span,
+.panfu-home-list-row__background small,
+.panfu-public-room-row__files span {
+    display: block;
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.panfu-home-list-row__badges,
+.panfu-public-room-row__flags {
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.panfu-home-list-row__action,
+.panfu-public-room-row__action {
+    color: #558000;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.panfu-home-header,
+.panfu-public-room-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.panfu-home-header__avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 22px;
+}
+
+.panfu-home-header h1,
+.panfu-public-room-header h1 {
+    margin: 2px 0;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.panfu-home-header p,
+.panfu-public-room-header p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.panfu-home-header__metrics,
+.panfu-public-room-header__flags {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.panfu-home-header__metrics a {
+    width: 100%;
+    color: #558000;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+    text-decoration: none;
+}
+
+.panfu-room-toolbar {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.panfu-room-toolbar label:not(.panfu-room-toggle) {
+    display: grid;
+    gap: 3px;
+    color: #6c757d;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.panfu-room-toolbar select,
+.panfu-room-toolbar input[type='search'] {
+    min-height: 32px;
+    padding: 5px 28px 5px 9px;
+    color: #212529;
+    font-size: 13px;
+    background: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 7px;
+}
+
+.panfu-room-toolbar__hint {
+    margin-left: auto;
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.panfu-room-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 32px;
+    color: #495057;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.panfu-room-toggle input {
+    width: 15px;
+    height: 15px;
+    color: #92bd1d;
+    border-color: #adb5bd;
+    border-radius: 4px;
+}
+
+.panfu-room-stage {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #dff6ff;
+    border: 1px solid #adb5bd;
+    border-radius: 8px;
+    isolation: isolate;
+}
+
+.panfu-room-stage__flash,
+.panfu-room-stage__flash ruffle-object,
+.panfu-room-stage__flash ruffle-player,
+.panfu-room-stage > ruffle-object,
+.panfu-room-stage > ruffle-player {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+.panfu-room-stage__missing {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: #842029;
+    font-size: 14px;
+    background: #f8d7da;
+}
+
+.panfu-home-marker {
+    position: absolute;
+    z-index: 5;
+    min-width: 30px;
+    height: 24px;
+    padding: 0 6px;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 800;
+    background: #0d6efd;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    transform: translate(-50%, -50%);
+}
+
+.panfu-home-marker--stored {
+    background: #6c757d;
+    border-style: dashed;
+    opacity: 0.75;
+}
+
+.panfu-home-backgrounds {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.panfu-home-backgrounds article {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    padding: 11px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.panfu-home-backgrounds article > span,
+.panfu-home-backgrounds article > small {
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.panfu-home-backgrounds article > strong {
+    overflow: hidden;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.panfu-home-backgrounds article > small {
+    grid-column: 1 / -1;
+    color: #dc3545;
+}
+
+.panfu-home-background--active {
+    background: #f1f8df !important;
+    border-color: #c9e08e !important;
+}
+
+.panfu-home-furniture__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.panfu-home-furniture-card {
+    position: relative;
+    min-width: 0;
+    display: grid;
+    gap: 6px;
+    padding: 12px;
+    color: #212529;
+    text-align: left;
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.panfu-home-furniture-card:hover,
+.panfu-home-furniture-card--active {
+    background: #f1f8df;
+    border-color: #92bd1d;
+}
+
+.panfu-home-furniture-card > strong {
+    padding-right: 42px;
+    overflow: hidden;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.panfu-home-furniture-card > span:not(.panfu-home-furniture-card__id) {
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.panfu-home-furniture-card__id {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    color: #6c757d;
+    font-family: monospace;
+    font-size: 10px;
+}
+
+.panfu-home-furniture-preview {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    align-items: center;
+    gap: 20px;
+    margin-top: 14px;
+    padding: 16px;
+    background: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+
+.panfu-home-furniture-preview__eyebrow {
+    color: #558000;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.panfu-home-furniture-preview h3 {
+    margin: 4px 0;
+    font-size: 18px;
+}
+
+.panfu-home-furniture-preview h3 small,
+.panfu-home-furniture-preview p {
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.panfu-home-furniture-preview__stage {
+    height: 150px;
+    overflow: hidden;
+    background: #e9ecef;
+    border-radius: 7px;
+}
+
+.panfu-home-furniture-preview__stage object,
+.panfu-home-furniture-preview__stage ruffle-object,
+.panfu-home-furniture-preview__stage ruffle-player {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.panfu-home-furniture-preview__stage > span {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.panfu-home-furniture-preview__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px 8px;
+    color: #6c757d;
+    font-size: 11px;
+    background: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+.panfu-public-room-list {
+    divide-y: 1px solid #f1f3f5;
+}
+
+.panfu-public-room-row {
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.panfu-public-room-row:last-child {
+    border-bottom: 0;
+}
+
+.panfu-public-room-row__number,
+.panfu-public-room-header__number {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    color: #558000;
+    font-weight: 900;
+    background: #f1f8df;
+    border: 1px solid #c9e08e;
+    border-radius: 8px;
+}
+
+.panfu-public-room-row__number {
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+}
+
+.panfu-public-room-row__files {
+    width: 90px;
+}
+
+.panfu-public-room-header__number {
+    width: 58px;
+    height: 58px;
+    font-size: 20px;
+}
+
+.panfu-room-toolbar--debug {
+    align-items: center;
+}
+
+.panfu-room-legend {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.panfu-room-legend--walk { background: rgba(34, 197, 94, 0.75); }
+.panfu-room-legend--blocked { background: rgba(239, 68, 68, 0.55); }
+.panfu-room-legend--spawn { background: #f59e0b; }
+.panfu-room-legend--marker { background: #8b5cf6; }
+
+.panfu-room-coordinates {
+    margin-left: auto;
+    padding: 5px 8px;
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 11px;
+    background: #212529;
+    border-radius: 6px;
+}
+
+.panfu-room-stage__blocked,
+.panfu-room-stage__grid,
+.panfu-room-stage__inspector,
+.panfu-room-stage__walkarea {
+    position: absolute;
+    pointer-events: none;
+}
+
+.panfu-room-stage__blocked {
+    z-index: 2;
+    inset: 0;
+    background: rgba(239, 68, 68, 0.22);
+}
+
+.panfu-room-stage__walkarea {
+    z-index: 3;
+    display: block;
+    opacity: 0.72;
+}
+
+.panfu-room-stage__grid {
+    z-index: 4;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(15, 23, 42, 0.18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.18) 1px, transparent 1px),
+        linear-gradient(rgba(15, 23, 42, 0.32) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.32) 1px, transparent 1px);
+    background-size: calc(100% / 15.44) calc(100% / 9.6), calc(100% / 15.44) calc(100% / 9.6), calc(100% / 3.86) calc(100% / 2.4), calc(100% / 3.86) calc(100% / 2.4);
+}
+
+.panfu-room-stage__inspector {
+    z-index: 5;
+    inset: 0;
+    pointer-events: auto;
+    cursor: crosshair;
+}
+
+.panfu-room-point {
+    position: absolute;
+    z-index: 6;
+    min-width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 900;
+    border: 2px solid #ffffff;
+    border-radius: 11px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+    transform: translate(-50%, -50%);
+}
+
+.panfu-room-point--spawn { background: #f59e0b; }
+.panfu-room-point--marker { background: #8b5cf6; }
+
+.panfu-room-debug-warning {
+    margin: 10px 0 0;
+    padding: 9px 11px;
+    color: #664d03;
+    font-size: 12px;
+    background: #fff3cd;
+    border: 1px solid #ffecb5;
+    border-radius: 7px;
+}
+
+.panfu-room-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.panfu-room-metrics article {
+    display: grid;
+    gap: 3px;
+    padding: 14px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 8px;
+}
+
+.panfu-room-metrics span,
+.panfu-room-metrics small {
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.panfu-room-metrics strong {
+    font-size: 21px;
+}
+
+.panfu-room-coordinate-list {
+    display: grid;
+    gap: 8px;
+}
+
+.panfu-room-coordinate-list article {
+    display: grid;
+    grid-template-columns: minmax(80px, 1fr) auto;
+    gap: 3px 10px;
+    padding: 9px 10px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 7px;
+}
+
+.panfu-room-coordinate-list strong,
+.panfu-room-coordinate-list code,
+.panfu-room-coordinate-list span {
+    font-size: 11px;
+}
+
+.panfu-room-coordinate-list span {
+    grid-column: 1 / -1;
+    color: #6c757d;
+}
+
+.panfu-room-data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.panfu-room-data-grid article {
+    min-width: 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 7px;
+}
+
+.panfu-room-data-grid strong {
+    overflow-wrap: anywhere;
+    font-size: 12px;
+}
+
+.panfu-room-data-grid code,
+.panfu-room-data-grid p {
+    display: block;
+    margin: 5px 0 0;
+    overflow-wrap: anywhere;
+    color: #6c757d;
+    font-size: 10px;
+}
+
+.panfu-room-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.panfu-room-data-table th,
+.panfu-room-data-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.panfu-room-data-table th {
+    color: #6c757d;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.panfu-room-data-table code {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 800px) {
+    .panfu-home-list-row__background,
+    .panfu-public-room-row__files {
+        display: none;
+    }
+
+    .panfu-home-furniture__grid,
+    .panfu-home-backgrounds,
+    .panfu-room-data-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .panfu-room-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .panfu-admin-nav,
+    .panfu-home-header,
+    .panfu-public-room-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .panfu-admin-nav__links {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .panfu-home-list-row,
+    .panfu-public-room-row {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .panfu-home-list-row__badges,
+    .panfu-public-room-row__flags {
+        width: auto;
+    }
+
+    .panfu-home-list-row__action,
+    .panfu-public-room-row__action {
+        margin-left: auto;
+    }
+
+    .panfu-home-header__metrics,
+    .panfu-public-room-header__flags {
+        justify-content: flex-start;
+    }
+
+    .panfu-home-header__metrics a {
+        text-align: left;
+    }
+
+    .panfu-home-furniture__grid,
+    .panfu-home-backgrounds,
+    .panfu-room-data-grid,
+    .panfu-room-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .panfu-home-furniture-preview {
+        grid-template-columns: 1fr;
+    }
+
+    .panfu-room-point {
+        min-width: 17px;
+        height: 17px;
+        padding: 0 3px;
+        font-size: 6px;
+    }
+}
+
 .panfu-account-card {
     margin-bottom: 16px;
     overflow: hidden;

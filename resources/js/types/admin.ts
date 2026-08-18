@@ -111,3 +111,142 @@ export interface UserOption {
     name: string;
     email: string;
 }
+
+export interface RoomClient {
+    ruffleScript: string;
+    stageWidth: number;
+    stageHeight: number;
+}
+
+export interface PlayerHomeSummary {
+    userId: number;
+    name: string;
+    email: string;
+    backgroundId: number;
+    backgroundName: string;
+    furnitureCount: number;
+    placedFurnitureCount: number;
+}
+
+export interface HomeBackground {
+    itemId: number;
+    name: string;
+    swfUrl: string | null;
+    active?: boolean;
+}
+
+export interface HomeFurniture {
+    inventoryId: number;
+    itemId: number;
+    name: string;
+    type: number | null;
+    premium: boolean;
+    placed: boolean;
+    x: number;
+    y: number;
+    rotation: number;
+    room: number;
+    iconUrl: string | null;
+    modelUrl: string | null;
+}
+
+export interface PlayerHomeDetails {
+    user: Pick<ManagedUser, 'id' | 'name' | 'email'>;
+    activeBackground: HomeBackground;
+    backgrounds: HomeBackground[];
+    furniture: HomeFurniture[];
+    roomNumbers: number[];
+    furnitureCount: number;
+    placedFurnitureCount: number;
+}
+
+export interface RoomSpawn {
+    from: string;
+    x: number;
+    y: number;
+    radiusX: number;
+    radiusY: number;
+    rotation: number | null;
+}
+
+export interface PublicRoomSummary {
+    id: string;
+    number: number;
+    key: string;
+    label: string;
+    allowed: boolean;
+    restrictToWalkArea: boolean;
+    vehicleArea: boolean;
+    jumping: boolean;
+    volume: number;
+    assetExists: boolean;
+    configExists: boolean;
+    assetSize: number | null;
+    roomSwfUrl: string | null;
+    spawns: RoomSpawn[];
+}
+
+export interface RoomAsset {
+    id: string;
+    path: string;
+    preload: boolean;
+    exists: boolean;
+    url: string | null;
+}
+
+export interface RoomSound {
+    id: string;
+    path: string;
+    volume: number | null;
+    loops: number | null;
+    exists: boolean;
+}
+
+export interface RoomDate {
+    id: string;
+    start: string;
+    finish: string;
+}
+
+export interface RoomElement {
+    id: string;
+    type: string | null;
+    button: boolean;
+    visible: boolean;
+    messages: string[];
+}
+
+export interface RoomHotspot {
+    element: string;
+    target: string;
+}
+
+export interface RoomDebugFrame {
+    url: string;
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+}
+
+export interface RoomDebugMarker {
+    name: string;
+    characterId: number;
+    x: number;
+    y: number;
+}
+
+export interface RoomDebugData {
+    walkAreaCharacterId: number | null;
+    walkAreaFrames: RoomDebugFrame[];
+    markers: RoomDebugMarker[];
+}
+
+export interface PublicRoomDetails extends PublicRoomSummary {
+    assets: RoomAsset[];
+    sounds: RoomSound[];
+    dates: RoomDate[];
+    elements: RoomElement[];
+    hotspots: RoomHotspot[];
+    debug: RoomDebugData;
+}

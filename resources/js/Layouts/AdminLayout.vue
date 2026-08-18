@@ -17,6 +17,7 @@ const meta = computed<MetaContent>(() => ({
 const navigation = [
     { label: 'Pulpit', href: '/admin', route: 'admin.dashboard' },
     { label: 'Użytkownicy', href: '/admin/users', route: 'admin.users.*' },
+    { label: 'Pokoje', href: '/admin/rooms/homes', route: 'admin.rooms.*' },
 ];
 </script>
 
