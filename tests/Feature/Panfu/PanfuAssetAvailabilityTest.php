@@ -10,9 +10,11 @@ class PanfuAssetAvailabilityTest extends TestCase
     {
         $catalogues = [
             'ClothesCatalogue.xml' => 'clothes',
+            'ECardCatalogue.xml' => 'ecard',
             'FurnitureCatalogue.xml' => 'furniture',
             'BollyFurnitureCatalogue.xml' => 'bollyFurniture',
             'HouseupgradeCatalogue.xml' => 'houseupgrade',
+            'PokopetsCatalogue.xml' => 'pokopets',
         ];
 
         foreach ($catalogues as $catalogue => $assetFolder) {
@@ -31,6 +33,47 @@ class PanfuAssetAvailabilityTest extends TestCase
                     "Missing catalogue page {$assetFolder}/{$filename}",
                 );
             }
+        }
+
+        $bollyCataloguePath = public_path('vendor/openpanfu/conf/catalogues/BollyCatalogue.xml');
+
+        $this->assertFileExists($bollyCataloguePath);
+        $this->assertNotFalse(simplexml_load_file($bollyCataloguePath));
+    }
+
+    public function test_pop_it_level_configs_and_images_are_available(): void
+    {
+        $configPath = public_path('vendor/openpanfu/swf/games/balloons/conf/config.xml');
+
+        $this->assertFileExists($configPath);
+
+        $config = simplexml_load_file($configPath);
+        $this->assertNotFalse($config);
+
+        $levelCount = (int) $config['levelCount'];
+        $this->assertSame(32, $levelCount);
+
+        foreach (range(1, $levelCount) as $level) {
+            $levelPath = public_path("vendor/openpanfu/swf/games/balloons/conf/level{$level}.xml");
+
+            $this->assertFileExists($levelPath);
+
+            $levelConfig = simplexml_load_file($levelPath);
+            $this->assertNotFalse($levelConfig);
+
+            $this->assertFileExists(
+                public_path('vendor/openpanfu/swf/games/balloons/img/'.(string) $levelConfig['img']),
+            );
+        }
+    }
+
+    public function test_available_pokopet_race_snippets_are_valid(): void
+    {
+        foreach (['DE', 'EN'] as $language) {
+            $path = public_path("vendor/openpanfu/assets/petrace/conf/pokopets_race_snippets_{$language}.xml");
+
+            $this->assertFileExists($path);
+            $this->assertNotFalse(simplexml_load_file($path));
         }
     }
 

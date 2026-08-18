@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<catalogue type="catalogue" check="095bccf5ee770026555b393819d10f75">
+  <page id="0" comment="firstPage">
+    <img pageNr="0" x="0" y="0" filename="0.png" page="first" date="Jul 1 2008"/>
+  </page>
+  <page id="1" comment="normalPage">
+    <img pageNr="1" x="55" y="30" filename="14.jpg" page="normal" date="Jul 12 2010"/>
+    <img pageNr="1" x="360" y="30" filename="15.jpg" page="normal" date="Jul 12 2010"/>
+    <textfield page="1" x="65" y="80" width="225" height="50" bold="true"><![CDATA[POKOPETS_PAGE_1_TOP]]></textfield>
+    <textfield page="1" x="65" y="130" width="108" height="80" bold="true"><![CDATA[POKOPETS_PAGE_1_MIDDLE]]></textfield>
+    <textfield page="1" x="65" y="230" width="108" height="80" bold="true"><![CDATA[POKOPETS_PAGE_1_BOTTOM]]></textfield>
+    <textfield page="1" x="465" y="55" width="140" height="100" bold="true"><![CDATA[POKOPETS_PAGE_2_TOP]]></textfield>
+    <textfield page="1" x="370" y="150" width="235" height="50" bold="true"><![CDATA[POKOPETS_PAGE_2_MIDDLE]]></textfield>
+    <textfield page="1" x="370" y="230" width="235" height="50" bold="true"><![CDATA[POKOPETS_PAGE_2_BOTTOM]]></textfield>
+  </page>
+  <page id="2" comment="normalPage">
+    <img pageNr="2" x="55" y="30" filename="18.jpg" page="normal" date="Jul 12 2010"/>
+    <img pageNr="2" x="360" y="30" filename="19.jpg" page="normal" date="Jul 12 2010"/>
+    <itemButton page="2" id="9" x="365" y="35" width="80" height="60" check=""/>
+    <textfield page="2" x="155" y="50" width="110" height="25" bold="true"><![CDATA[NAME_MARIETA]]></textfield>
+    <textfield page="2" x="75" y="70" width="220" height="230" bold="false"><![CDATA[MARIETA_CATALOGUE_01]]></textfield>
+  </page>
+  <page id="3" comment="normalPage">
+    <img pageNr="3" x="55" y="30" filename="2.jpg" page="normal" date="Jul 12 2010"/>
+    <img pageNr="3" x="360" y="30" filename="3.jpg" page="normal" date="Jul 12 2010"/>
+    <itemButton page="3" id="5" x="365" y="28" width="80" height="60" check=""/>
+    <textfield page="3" x="367" y="36" width="75" height="60" color="white" bold="false"><![CDATA[POKOPET_VOUCHER_HINT]]></textfield>
+    <textfield page="3" x="155" y="50" width="110" height="25" bold="true"><![CDATA[NAME_WOODY]]></textfield>
+    <textfield page="3" x="75" y="70" width="220" height="230" bold="false"><![CDATA[WOODY_CATALOGUE_01]]></textfield>
+  </page>
+  <page id="4" comment="normalPage">
+    <img pageNr="4" x="55" y="30" filename="4.jpg" page="normal" date="Jul 12 2010"/>
+    <img pageNr="4" x="360" y="30" filename="5.jpg" page="normal" date="Jul 12 2010"/>
+    <itemButton page="4" id="3" x="365" y="28" width="80" height="60" check=""/>
+    <textfield page="4" x="155" y="50" width="110" height="25" bold="true"><![CDATA[NAME_SOQUE]]></textfield>
+    <textfield page="4" x="75" y="70" width="220" height="230" bold="false"><![CDATA[SOQUE_CATALOGUE_01]]></textfield>
+  </page>
+  <page id="5" comment="normalPage">
+    <img pageNr="5" x="55" y="30" filename="6.jpg" page="normal" date="Jul 12 2010"/>
+    <img pageNr="5" x="360" y="30" filename="7.jpg" page="normal" date="Jul 12 2010"/>
+    <itemButton page="5" id="4" x="365" y="228" width="80" height="60" check=""/>
+    <textfield page="5" x="155" y="50" width="110" height="25" bold="true"><![CDATA[NAME_CUDDLE]]></textfield>
+    <textfield page="5" x="75" y="70" width="220" height="230" bold="false"><![CDATA[CUDDLES_CATALOGUE_01]]></textfield>
+  </page>
+  <page id="6" comment="normalPage">
+    <img pageNr="6" x="55" y="30" filename="8.jpg" page="normal" date="Jul 12 2010"/>
+    <img pageNr="6" x="360" y="30" filename="9.jpg" page="normal" date="Jul 12 2010"/>
+    <itemButton page="6" id="2" x="510" y="28" width="80" height="60" check=""/>
+    <textfield page="6" x="155" y="50" width="110" height="25" bold="true"><![CDATA[NAME_STELLA]]></textfield>
+    <textfield page="6" x="75" y="70" width="220" height="230" bold="false"><![CDATA[STELLA_CATALOGUE_01]]></textfield>
+  </page>
+  <page id="7" comment="normalPage">
+    <img pageNr="7" x="55" y="30" filename="10.jpg" page="normal" date="Jul 12 2010"/>
+    <img pageNr="7" x="360" y="30" filename="11.jpg" page="normal" date="Jul 12 2010"/>
+    <itemButton page="7" id="1" x="365" y="35" width="80" height="60" check=""/>
+    <textfield page="7" x="155" y="50" width="110" height="25" bold="true"><![CDATA[NAME_HELMET]]></textfield>
+    <textfield page="7" x="75" y="70" width="220" height="230" bold="false"><![CDATA[HELMET_CATALOGUE_01]]></textfield>
+  </page>
+  <page id="8" comment="normalPage">
+    <img pageNr="8" x="55" y="30" filename="12.jpg" page="normal" date="Jul 12 2010"/>
+    <img pageNr="8" x="360" y="30" filename="13.jpg" page="normal" date="Jul 12 2010"/>
+    <itemButton page="8" id="7" x="365" y="35" width="80" height="60" check=""/>
+    <textfield page="8" x="155" y="50" width="110" height="25" bold="true"><![CDATA[NAME_TORK]]></textfield>
+    <textfield page="8" x="75" y="70" width="220" height="230" bold="false"><![CDATA[TORK_CATALOGUE_01]]></textfield>
+  </page>
+  <page id="9" comment="normalPage">
+    <img pageNr="9" x="55" y="30" filename="16.jpg" page="normal" date="Jul 12 2010"/>
+    <img pageNr="9" x="360" y="30" filename="17.jpg" page="normal" date="Jul 12 2010"/>
+    <itemButton page="9" id="6" x="365" y="35" width="80" height="60" check=""/>
+    <textfield page="9" x="155" y="50" width="110" height="25" bold="true"><![CDATA[NAME_BUGSY]]></textfield>
+    <textfield page="9" x="75" y="70" width="220" height="230" bold="false"><![CDATA[BUGSY_CATALOGUE_01]]></textfield>
+  </page>
+  <page id="10" comment="lastPage">
+    <img pageNr="10" x="0" y="0" filename="1.png" page="last" date="Jul 1 2008"/>
+  </page>
+</catalogue>

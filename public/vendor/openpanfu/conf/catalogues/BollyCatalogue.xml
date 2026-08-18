@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<catalogue type="catalogue" check="0e4cce4114fa2521a9bb7f7157b58645">
+  <page id="0" comment="firstPage">
+    <img pageNr="0" x="0" y="-2" filename="0.png" page="first" date="Jul 1 2008"/>
+  </page>
+  <page id="1" comment="normalPage">
+    <img pageNr="1" x="30" y="20" filename="1.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="1" x="343" y="19" filename="2.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="1" id="20001" x="470" y="277" width="91" height="46" check="9000c648dcba3fd8c7e0c7e46ab029ae"/>
+    <textfield page="1" x="55" y="60" width="245" height="250" bold="false"><![CDATA[CATALOGUES_BOLLY_1L]]></textfield>
+    <textfield page="1" x="355" y="60" width="245" height="80" bold="false"><![CDATA[CATALOGUES_BOLLY_1R_2]]></textfield>
+  </page>
+  <page id="2" comment="normalPage">
+    <img pageNr="2" x="29" y="17" filename="3.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="2" x="345" y="13" filename="4.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="2" id="20002" x="38" y="270" width="75" height="50" check="fe5c7ea4da7b1755f166c351d96a605c"/>
+    <itemButton page="2" id="20003" x="502" y="248" width="90" height="48" check="32f374fa8bb2175386c5a28c2d11e346"/>
+    <textfield page="2" x="55" y="60" width="245" height="80" bold="false"><![CDATA[CATALOGUES_BOLLY_2L_2]]></textfield>
+    <textfield page="2" x="355" y="60" width="245" height="80" bold="false"><![CDATA[CATALOGUES_BOLLY_2R_2]]></textfield>
+  </page>
+  <page id="3" comment="normalPage">
+    <img pageNr="3" x="30" y="17" filename="5.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="3" x="346" y="16" filename="6.png" page="normal" date="Jul 12 2010"/>
+    <itemButton page="3" id="20004" x="35" y="231" width="82" height="51" check="bf7fdd51078f18645f7ae83b78445175"/>
+    <itemButton page="3" id="20005" x="352" y="281" width="88" height="52" check="06c62d2a0611ae3a93fa209a70ae5d16"/>
+    <textfield page="3" x="55" y="60" width="245" height="80" bold="false"><![CDATA[CATALOGUES_BOLLY_3L_2]]></textfield>
+    <textfield page="3" x="355" y="60" width="245" height="80" bold="false"><![CDATA[CATALOGUES_BOLLY_3R_2]]></textfield>
+  </page>
+  <page id="4" comment="normalPage">
+    <img pageNr="4" x="31" y="16" filename="7.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="4" x="345" y="20" filename="8.png" page="normal" date="Jul 12 2010"/>
+    <textfield page="4" x="375" y="60" width="245" height="250" bold="false"><![CDATA[CATALOGUES_BOLLY_4R]]></textfield>
+  </page>
+  <page id="5" comment="normalPage">
+    <img pageNr="5" x="31" y="15" filename="9.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="5" x="341" y="14" filename="10.png" page="normal" date="Jul 12 2010"/>
+    <textfield page="5" x="55" y="60" width="245" height="250" bold="false"><![CDATA[CATALOGUES_BOLLY_5L]]></textfield>
+  </page>
+  <page id="6" comment="normalPage">
+    <img pageNr="6" x="30" y="15" filename="11.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="6" x="340" y="13" filename="12.png" page="normal" date="Jul 12 2010"/>
+    <textfield page="6" x="55" y="60" width="245" height="250" bold="false"><![CDATA[CATALOGUES_BOLLY_6L]]></textfield>
+  </page>
+  <page id="7" comment="normalPage">
+    <img pageNr="7" x="25" y="15" filename="13.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="7" x="347" y="16" filename="14.png" page="normal" date="Jul 12 2010"/>
+    <textfield page="7" x="375" y="60" width="245" height="250" bold="false"><![CDATA[CATALOGUES_BOLLY_7L]]></textfield>
+  </page>
+  <page id="8" comment="normalPage">
+    <img pageNr="8" x="30" y="15" filename="15.png" page="normal" date="Jul 12 2010"/>
+    <img pageNr="8" x="341" y="16" filename="16.png" page="normal" date="Jul 12 2010"/>
+    <textfield page="8" x="55" y="60" width="245" height="250" bold="false"><![CDATA[CATALOGUES_BOLLY_8L]]></textfield>
+  </page>
+  <page id="9" comment="lastPage">
+    <img pageNr="9" x="0" y="0" filename="17.png" page="last" date="Jul 1 2008"/>
+  </page>
+</catalogue>

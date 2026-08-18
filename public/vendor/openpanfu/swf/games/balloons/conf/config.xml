@@ -1,0 +1,13 @@
+<!-- globale konfiguration
+ 
+	mode  = editor | game
+	
+	Level-Syntax:
+	
+	row = Reihen
+	c = Spalten
+	poppcount = Zielpunktzahl zum bestehen des Levels	
+
+-->
+
+<config levelCount="32" mode="game" imgpath="balloons/img/" />

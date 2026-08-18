@@ -1,0 +1,117 @@
+﻿<snippets date="22.09.2010 11:49:10">
+<ELOISE_RACE_01><![CDATA[Hallo $$name$$! Kennst Du mich noch? Ich bin Eloise! Ich hab die Pokopets nach Panfu mitgebracht. ]]></ELOISE_RACE_01>
+<ELOISE_RACE_02><![CDATA[Wie ich sehe fühlen sie sich hier richtig wohl! Schön! ]]></ELOISE_RACE_02>
+<ELOISE_RACE_03><![CDATA[Und trainieren tun sie auch schon ganz fleißig. Bisher konntest Du für Dein Pokopet den Gegner aber nicht selbst aussuchen. Das hat sich jetzt geändert! ]]></ELOISE_RACE_03>
+<ELOISE_RACE_04><![CDATA[Ab sofort kannst Du selbst bestimmen gegen welches Pokopet Du antreten möchtest! ]]></ELOISE_RACE_04>
+<ELOISE_RACE_05><![CDATA[Klicke einfach auf das Pokopet, mit dem Du's es aufnehmen willst. Wenn es der Besitzer des anderen Pokopets erlaubt, kann das Wettrennen losgehen! ]]></ELOISE_RACE_05>
+<ELOISE_RACE_06><![CDATA[Hast Du schon einen würdigen Gegner in Aussicht? Na dann, Hals und Beinbruch... ich meine: viel Glück! Und bis bald! ]]></ELOISE_RACE_06>
+<LOADINGTEXT_01><![CDATA[Bitte hab ein wenig Geduld, die Rennstrecke wird vorbereitet... ]]></LOADINGTEXT_01>
+<LOADINGTEXT_02><![CDATA[Hindernisse werden bereit gelegt... ]]></LOADINGTEXT_02>
+<LOADINGTEXT_03><![CDATA[Die Pokopets machen sich warm fürs Rennen... ]]></LOADINGTEXT_03>
+<LOADINGTEXT_04><![CDATA[Die Pokopets nehmen ihre Startposition ein.... ]]></LOADINGTEXT_04>
+<LOADINGTEXT_05><![CDATA[Die Pokopets warten auf das Start-Signal... ]]></LOADINGTEXT_05>
+<PETRACE_BUTTON_CLOSE_POPUP><![CDATA[Schließen]]></PETRACE_BUTTON_CLOSE_POPUP>
+<PETRACE_CURRENT_LEVEL><![CDATA[Aktuelles Level]]></PETRACE_CURRENT_LEVEL>
+<PETRACE_EXIT><![CDATA[Ende]]></PETRACE_EXIT>
+<PETRACE_EXPERIENCE><![CDATA[Erfahrung]]></PETRACE_EXPERIENCE>
+<PETRACE_EXPERIENCE_NEXT_LEVEL><![CDATA[Nächstes Level]]></PETRACE_EXPERIENCE_NEXT_LEVEL>
+<PETRACE_IMPROVED_PROPERTYS><![CDATA[Verbesserte Eigenschaften]]></PETRACE_IMPROVED_PROPERTYS>
+<PETRACE_NEW_LEVEL><![CDATA[Neues Level]]></PETRACE_NEW_LEVEL>
+<PETRACE_NEW_SPECIAL><![CDATA[Neue Fähigkeit]]></PETRACE_NEW_SPECIAL>
+<PETRACE_PETCARD_AGILITY><![CDATA[Wendigkeit]]></PETRACE_PETCARD_AGILITY>
+<PETRACE_PETCARD_HEALTH><![CDATA[Gesundheit]]></PETRACE_PETCARD_HEALTH>
+<PETRACE_PETCARD_POWER><![CDATA[Energie]]></PETRACE_PETCARD_POWER>
+<PETRACE_PETCARD_SPECIAL><![CDATA[Fähigkeit]]></PETRACE_PETCARD_SPECIAL>
+<PETRACE_PETCARD_SPEED><![CDATA[Tempo]]></PETRACE_PETCARD_SPEED>
+<PETRACE_PRELOADINFO_COUNTDOWN_LOADED><![CDATA[Setze Countdown]]></PETRACE_PRELOADINFO_COUNTDOWN_LOADED>
+<PETRACE_PRELOADINFO_INITIALIZE_ABILITIES><![CDATA[Lade Fähigkeiten...]]></PETRACE_PRELOADINFO_INITIALIZE_ABILITIES>
+<PETRACE_PRELOADINFO_INTERFACE_LOADED><![CDATA[Interface geladen - warte auf Daten...]]></PETRACE_PRELOADINFO_INTERFACE_LOADED>
+<PETRACE_PRELOADINFO_NEW_TRACK_DATA><![CDATA[Lade Rennstrecke...]]></PETRACE_PRELOADINFO_NEW_TRACK_DATA>
+<PETRACE_PRELOADINFO_PET_ASSETS_FAILED><![CDATA[Fehler beim Laden der Pokopets!]]></PETRACE_PRELOADINFO_PET_ASSETS_FAILED>
+<PETRACE_PRELOADINFO_PET_ASSETS_LOADED><![CDATA[Lade Pokopets...]]></PETRACE_PRELOADINFO_PET_ASSETS_LOADED>
+<PETRACE_PRELOADINFO_RACETRACK_ASSETS_LOADED><![CDATA[Rennstrecke geladen...]]></PETRACE_PRELOADINFO_RACETRACK_ASSETS_LOADED>
+<PETRACE_PRELOADINFO_SETTINGS_LOADED><![CDATA[Einstellungen geladen - warte auf Daten...]]></PETRACE_PRELOADINFO_SETTINGS_LOADED>
+<PETRACE_PRELOADINFO_SNIPPETS_LOADED><![CDATA[Lade Schriftarten...]]></PETRACE_PRELOADINFO_SNIPPETS_LOADED>
+<PETRACE_PRELOADINFO_SOCKET_CONNECTED><![CDATA[Stelle Verbindung her...]]></PETRACE_PRELOADINFO_SOCKET_CONNECTED>
+<PETRACE_PRELOADINFO_SOCKET_FAILED><![CDATA[Fehler: Keine Gameserververbindung]]></PETRACE_PRELOADINFO_SOCKET_FAILED>
+<PETRACE_REPLAY><![CDATA[Neustart]]></PETRACE_REPLAY>
+<PETRACE_TT_AGILITY><![CDATA[Wendigkeit]]></PETRACE_TT_AGILITY>
+<PETRACE_TT_CURRENT_LEVEL><![CDATA[Aktuelles Level]]></PETRACE_TT_CURRENT_LEVEL>
+<PETRACE_TT_DICES><![CDATA[zeigt wie viele Schritte die Pokopets in der Runde laufen.]]></PETRACE_TT_DICES>
+<PETRACE_TT_DICES_TITLE><![CDATA[Randomat]]></PETRACE_TT_DICES_TITLE>
+<PETRACE_TT_EXPERIENCE><![CDATA[Erfahrung]]></PETRACE_TT_EXPERIENCE>
+<PETRACE_TT_EXPERIENCE_NEXT_LEVEL><![CDATA[Nächstes Level]]></PETRACE_TT_EXPERIENCE_NEXT_LEVEL>
+<PETRACE_TT_HEALTH><![CDATA[Gesundheit]]></PETRACE_TT_HEALTH>
+<PETRACE_TT_LEVEL><![CDATA[Level]]></PETRACE_TT_LEVEL>
+<PETRACE_TT_PERCENT_TO_NEXT_LEVEL><![CDATA[Nächstes Level]]></PETRACE_TT_PERCENT_TO_NEXT_LEVEL>
+<PETRACE_TT_POSITIONVIEW><![CDATA[zeigt die Positionen der Pokopets auf der Rennstrecke]]></PETRACE_TT_POSITIONVIEW>
+<PETRACE_TT_POSITIONVIEW_TITLE><![CDATA[Positionsanzeiger]]></PETRACE_TT_POSITIONVIEW_TITLE>
+<PETRACE_TT_POWER><![CDATA[Energie]]></PETRACE_TT_POWER>
+<PETRACE_TT_SPECIALS><![CDATA[Fähigkeiten]]></PETRACE_TT_SPECIALS>
+<PETRACE_TT_SPECIAL_AINTOVERYET><![CDATA[Das Rennen ist noch nicht vorbei! Beide Pokopets werden ein ganzes Stück zurück teleportiert.]]></PETRACE_TT_SPECIAL_AINTOVERYET>
+<PETRACE_TT_SPECIAL_AINTOVERYET_TITLE><![CDATA[Ain't over yet!]]></PETRACE_TT_SPECIAL_AINTOVERYET_TITLE>
+<PETRACE_TT_SPECIAL_BARRIER><![CDATA[Platziert eine riesige Barrikade vor deinem Gegner.]]></PETRACE_TT_SPECIAL_BARRIER>
+<PETRACE_TT_SPECIAL_BARRIER_TITLE><![CDATA[Barrier]]></PETRACE_TT_SPECIAL_BARRIER_TITLE>
+<PETRACE_TT_SPECIAL_BIGJUMP><![CDATA[Mit einem gewaltigen Satz springt dein Pokopet über das nächste Hindernis.]]></PETRACE_TT_SPECIAL_BIGJUMP>
+<PETRACE_TT_SPECIAL_BIGJUMP_TITLE><![CDATA[Big Jump]]></PETRACE_TT_SPECIAL_BIGJUMP_TITLE>
+<PETRACE_TT_SPECIAL_BOOST><![CDATA[Dein Pokopet rast wie aus der Kanone geschossen! Dies kostet aber Gesundheitspunkte!]]></PETRACE_TT_SPECIAL_BOOST>
+<PETRACE_TT_SPECIAL_BOOST_TITLE><![CDATA[Boost]]></PETRACE_TT_SPECIAL_BOOST_TITLE>
+<PETRACE_TT_SPECIAL_COUNTERSPELL><![CDATA[Dank des Counterspells verpufft das nächste Special deines Gegners wirkungslos.]]></PETRACE_TT_SPECIAL_COUNTERSPELL>
+<PETRACE_TT_SPECIAL_COUNTERSPELL_TITLE><![CDATA[Counterspell]]></PETRACE_TT_SPECIAL_COUNTERSPELL_TITLE>
+<PETRACE_TT_SPECIAL_EVILSPIRITS><![CDATA[Böse Geister bremsen deinen Gegner kurz aus.]]></PETRACE_TT_SPECIAL_EVILSPIRITS>
+<PETRACE_TT_SPECIAL_EVILSPIRITS_TITLE><![CDATA[Evil Spirits]]></PETRACE_TT_SPECIAL_EVILSPIRITS_TITLE>
+<PETRACE_TT_SPECIAL_GLUEBOMB><![CDATA[Leim klebt Deinen Gegner für einige Zeit am Boden fest.]]></PETRACE_TT_SPECIAL_GLUEBOMB>
+<PETRACE_TT_SPECIAL_GLUEBOMB_TITLE><![CDATA[Glue Bomb]]></PETRACE_TT_SPECIAL_GLUEBOMB_TITLE>
+<PETRACE_TT_SPECIAL_HURRICANE><![CDATA[Ein Sturmwind weht deinen Gegner zurück.]]></PETRACE_TT_SPECIAL_HURRICANE>
+<PETRACE_TT_SPECIAL_HURRICANE_TITLE><![CDATA[Hurricane]]></PETRACE_TT_SPECIAL_HURRICANE_TITLE>
+<PETRACE_TT_SPECIAL_ICEBEAM><![CDATA[Ein Eis-Strahl friert Deinen Gegner für kurze Zeit ein.]]></PETRACE_TT_SPECIAL_ICEBEAM>
+<PETRACE_TT_SPECIAL_ICEBEAM_TITLE><![CDATA[Ice Beam]]></PETRACE_TT_SPECIAL_ICEBEAM_TITLE>
+<PETRACE_TT_SPECIAL_LIFELINE><![CDATA[Lass Dein Pokopet von Deinem Gegner mitziehen und bleibe ihm dicht auf den Fersen. ]]></PETRACE_TT_SPECIAL_LIFELINE>
+<PETRACE_TT_SPECIAL_LIFELINE_TITLE><![CDATA[Lifeline]]></PETRACE_TT_SPECIAL_LIFELINE_TITLE>
+<PETRACE_TT_SPECIAL_MAGNET><![CDATA[Ein mächtiger Magnet zieht beide Pokopets gegenseitig an und verringert ihren Abstand zueinander]]></PETRACE_TT_SPECIAL_MAGNET>
+<PETRACE_TT_SPECIAL_MAGNET_TITLE><![CDATA[Magnet]]></PETRACE_TT_SPECIAL_MAGNET_TITLE>
+<PETRACE_TT_SPECIAL_MIRROR><![CDATA[Das nächste Special das der Gegner auf Dein Pokopet wirkt wird auf ihn selbst zurückgeworfen.]]></PETRACE_TT_SPECIAL_MIRROR>
+<PETRACE_TT_SPECIAL_MIRROR_TITLE><![CDATA[Mirror]]></PETRACE_TT_SPECIAL_MIRROR_TITLE>
+<PETRACE_TT_SPECIAL_POTION><![CDATA[Durch den magischen Trank kann dein Gegner für kurze Zeit seinen Boost nicht einsetzen.]]></PETRACE_TT_SPECIAL_POTION>
+<PETRACE_TT_SPECIAL_POTION_TITLE><![CDATA[Potion]]></PETRACE_TT_SPECIAL_POTION_TITLE>
+<PETRACE_TT_SPECIAL_POWERTHIEF><![CDATA[Entzieht deinem Gegner seine Kraft und nutzt sie für dich! Der Gegner wird langsamer, dein Pokopet dafür schneller.]]></PETRACE_TT_SPECIAL_POWERTHIEF>
+<PETRACE_TT_SPECIAL_POWERTHIEF_TITLE><![CDATA[Power Thief]]></PETRACE_TT_SPECIAL_POWERTHIEF_TITLE>
+<PETRACE_TT_SPECIAL_ROADCRASH><![CDATA[Der Boden wird durch eine Erdspalte geteilt und behindert Deinen Gegener.]]></PETRACE_TT_SPECIAL_ROADCRASH>
+<PETRACE_TT_SPECIAL_ROADCRASH_TITLE><![CDATA[Road Crash]]></PETRACE_TT_SPECIAL_ROADCRASH_TITLE>
+<PETRACE_TT_SPECIAL_ROCKYROAD><![CDATA[Platziert einen kleinen Felsbroken vor deinem Gegner.]]></PETRACE_TT_SPECIAL_ROCKYROAD>
+<PETRACE_TT_SPECIAL_ROCKYROAD_TITLE><![CDATA[Rocky Road]]></PETRACE_TT_SPECIAL_ROCKYROAD_TITLE>
+<PETRACE_TT_SPECIAL_RUSHTOVICTORY><![CDATA[Ein freier Boost für dein Pokopet. Ganz umsonst!]]></PETRACE_TT_SPECIAL_RUSHTOVICTORY>
+<PETRACE_TT_SPECIAL_RUSHTOVICTORY_TITLE><![CDATA[Rush to Victory]]></PETRACE_TT_SPECIAL_RUSHTOVICTORY_TITLE>
+<PETRACE_TT_SPECIAL_SPEEDRACER><![CDATA[Ein Raketenwagen zieht dein Pokopet schnell vorwärts.]]></PETRACE_TT_SPECIAL_SPEEDRACER>
+<PETRACE_TT_SPECIAL_SPEEDRACER_TITLE><![CDATA[Speedracer]]></PETRACE_TT_SPECIAL_SPEEDRACER_TITLE>
+<PETRACE_TT_SPECIAL_SPONGE><![CDATA[Entsaugt dem Gegner seine nächste Fähigkeit und wirkt es auf Dein Pokopet.]]></PETRACE_TT_SPECIAL_SPONGE>
+<PETRACE_TT_SPECIAL_SPONGE_TITLE><![CDATA[Sponge]]></PETRACE_TT_SPECIAL_SPONGE_TITLE>
+<PETRACE_TT_SPECIAL_TELEPORT><![CDATA[Dein Pokopet teleportiert sich vorwärts Richtung Ziel.
+]]></PETRACE_TT_SPECIAL_TELEPORT>
+<PETRACE_TT_SPECIAL_TELEPORT_TITLE><![CDATA[Teleport]]></PETRACE_TT_SPECIAL_TELEPORT_TITLE>
+<PETRACE_TT_SPECIAL_THEFLY><![CDATA[Eine miese Fliege bremst deinen Gegner stark aus.]]></PETRACE_TT_SPECIAL_THEFLY>
+<PETRACE_TT_SPECIAL_THEFLY_TITLE><![CDATA[The Fly]]></PETRACE_TT_SPECIAL_THEFLY_TITLE>
+<PETRACE_TT_SPECIAL_TURN><![CDATA[Dein Gegner ist verwirrt und rennt in die falsche Richtung.]]></PETRACE_TT_SPECIAL_TURN>
+<PETRACE_TT_SPECIAL_TURN_TITLE><![CDATA[Turn]]></PETRACE_TT_SPECIAL_TURN_TITLE>
+<PETRACE_TT_SPECIAL_U_BUGSY><![CDATA[Dein Bugsy hat ungeahnte Kräfte! Es sammelt seine Energie und rennt unvergleichlich schnell!]]></PETRACE_TT_SPECIAL_U_BUGSY>
+<PETRACE_TT_SPECIAL_U_BUGSY_TITLE><![CDATA[Focus]]></PETRACE_TT_SPECIAL_U_BUGSY_TITLE>
+<PETRACE_TT_SPECIAL_U_CRYFORHELP><![CDATA[Deine Stella ist unwiderstehlich. Ihr trauriger Gesang lässt den Gegner umkehren und ihn das Ziel vergessen.]]></PETRACE_TT_SPECIAL_U_CRYFORHELP>
+<PETRACE_TT_SPECIAL_U_CRYFORHELP_TITLE><![CDATA[Cry for help]]></PETRACE_TT_SPECIAL_U_CRYFORHELP_TITLE>
+<PETRACE_TT_SPECIAL_U_GROVE><![CDATA[Dein Woody hat den grünen Daumen! Baumstämme sprießen aus dem Boden und halten den Gegner auf!]]></PETRACE_TT_SPECIAL_U_GROVE>
+<PETRACE_TT_SPECIAL_U_GROVE_TITLE><![CDATA[Grove]]></PETRACE_TT_SPECIAL_U_GROVE_TITLE>
+<PETRACE_TT_SPECIAL_U_LADYBUG><![CDATA[Deine Marieta hat den Dreh raus! Mit dem richtigen Flügelschlag reflektiert sie jeden Angriff. ]]></PETRACE_TT_SPECIAL_U_LADYBUG>
+<PETRACE_TT_SPECIAL_U_LADYBUG_TITLE><![CDATA[Reflection]]></PETRACE_TT_SPECIAL_U_LADYBUG_TITLE>
+<PETRACE_TT_SPECIAL_U_PINGOO><![CDATA[Dein Pingoo hat's drauf! Ein Schneeball genügt und der Gegner wird schockgefroren! ]]></PETRACE_TT_SPECIAL_U_PINGOO>
+<PETRACE_TT_SPECIAL_U_PINGOO_TITLE><![CDATA[Snowball]]></PETRACE_TT_SPECIAL_U_PINGOO_TITLE>
+<PETRACE_TT_SPECIAL_U_ROCKET><![CDATA[Dein Soque ist nicht zu stoppen! Es verwandelt sich in eine Rakete und fliegt rasant über jedes Hindernis!]]></PETRACE_TT_SPECIAL_U_ROCKET>
+<PETRACE_TT_SPECIAL_U_ROCKET_TITLE><![CDATA[Rocket]]></PETRACE_TT_SPECIAL_U_ROCKET_TITLE>
+<PETRACE_TT_SPECIAL_U_SHIELD><![CDATA[Dein Cuddle ist unbesiegbar! Es rollt sich zu einer stacheligen Kugel zusammen! Der Gegner kann ihm so nichts mehr anhaben!]]></PETRACE_TT_SPECIAL_U_SHIELD>
+<PETRACE_TT_SPECIAL_U_SHIELD_TITLE><![CDATA[Shield]]></PETRACE_TT_SPECIAL_U_SHIELD_TITLE>
+<PETRACE_TT_SPECIAL_U_SURFING><![CDATA[Dein Helmet ist so schnell wie ein Sturm! Auf seinem Panzer gleitet es blitzschnell und sicher vorwärts!]]></PETRACE_TT_SPECIAL_U_SURFING>
+<PETRACE_TT_SPECIAL_U_SURFING_TITLE><![CDATA[Surfing]]></PETRACE_TT_SPECIAL_U_SURFING_TITLE>
+<PETRACE_TT_SPECIAL_U_TORK><![CDATA[Dein Tork ist der Coolste! Und so verflixt schnell dass er alle Gegner weit hinter sich zurücklässt.]]></PETRACE_TT_SPECIAL_U_TORK>
+<PETRACE_TT_SPECIAL_U_TORK_TITLE><![CDATA[Sprint]]></PETRACE_TT_SPECIAL_U_TORK_TITLE>
+<PETRACE_TT_SPECIAL_WINGEDCAP><![CDATA[Für kurze Zeit läuft dein Pokopet etwas schneller.]]></PETRACE_TT_SPECIAL_WINGEDCAP>
+<PETRACE_TT_SPECIAL_WINGEDCAP_TITLE><![CDATA[Winged Cap]]></PETRACE_TT_SPECIAL_WINGEDCAP_TITLE>
+<PETRACE_TT_SPEED><![CDATA[Geschwindigkeit]]></PETRACE_TT_SPEED>
+</snippets>
