@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\InventoryController as AdminInventoryController;
+use App\Http\Controllers\Admin\PlayerHomeController as AdminPlayerHomeController;
 use App\Http\Controllers\Admin\PlayerStateController as AdminPlayerStateController;
+use App\Http\Controllers\Admin\PublicRoomController as AdminPublicRoomController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\Admin\UserRelationController as AdminUserRelationController;
 use App\Http\Controllers\Admin\UserSessionController as AdminUserSessionController;
@@ -60,6 +62,12 @@ Route::prefix('admin')
         Route::post('/users/{user}/relations', [AdminUserRelationController::class, 'store'])->name('users.relations.store');
         Route::delete('/users/{user}/relations/{relation}', [AdminUserRelationController::class, 'destroy'])->name('users.relations.destroy');
         Route::delete('/users/{user}/sessions/{session}', [AdminUserSessionController::class, 'destroy'])->name('users.sessions.destroy');
+
+        Route::redirect('/rooms', '/admin/rooms/homes')->name('rooms.index');
+        Route::get('/rooms/homes', [AdminPlayerHomeController::class, 'index'])->name('rooms.homes.index');
+        Route::get('/rooms/homes/{user}', [AdminPlayerHomeController::class, 'show'])->name('rooms.homes.show');
+        Route::get('/rooms/public', [AdminPublicRoomController::class, 'index'])->name('rooms.public.index');
+        Route::get('/rooms/public/{room}', [AdminPublicRoomController::class, 'show'])->name('rooms.public.show');
     });
 
 require __DIR__.'/auth.php';

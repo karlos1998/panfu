@@ -1,0 +1,2626 @@
+{
+    "generated": 82,
+    "missing": 0,
+    "rooms": {
+        "ancientTemple": {
+            "walkAreaCharacterId": 44,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ancientTemple/walkarea-1.svg",
+                    "x": 29.05,
+                    "y": 120.25,
+                    "width": 707.8,
+                    "height": 320.8
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ancientTemple/walkarea-2.svg",
+                    "x": 29.05,
+                    "y": 120.25,
+                    "width": 707.8,
+                    "height": 320.8
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ancientTemple/walkarea-3.svg",
+                    "x": 29.05,
+                    "y": 120.25,
+                    "width": 707.8,
+                    "height": 320.8
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ancientTemple/walkarea-4.svg",
+                    "x": 29.05,
+                    "y": 120.25,
+                    "width": 707.8,
+                    "height": 320.8
+                }
+            ],
+            "markers": []
+        },
+        "animalshop": {
+            "walkAreaCharacterId": 7,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/animalshop/walkarea-1.svg",
+                    "x": 111,
+                    "y": 184.75,
+                    "width": 665.95,
+                    "height": 295.3
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/animalshop/walkarea-2.svg",
+                    "x": 111,
+                    "y": 184.75,
+                    "width": 665.95,
+                    "height": 295.3
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/animalshop/walkarea-3.svg",
+                    "x": 111,
+                    "y": 184.75,
+                    "width": 665.95,
+                    "height": 295.3
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 75,
+                    "x": 412.3,
+                    "y": 95.3
+                }
+            ]
+        },
+        "ballroom": {
+            "walkAreaCharacterId": 47,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ballroom/walkarea-1.svg",
+                    "x": 2.35,
+                    "y": 119.75,
+                    "width": 770.2,
+                    "height": 360.25
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ballroom/walkarea-2.svg",
+                    "x": 2.35,
+                    "y": 119.75,
+                    "width": 770.2,
+                    "height": 360.25
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ballroom/walkarea-3.svg",
+                    "x": 2.35,
+                    "y": 119.75,
+                    "width": 770.2,
+                    "height": 360.25
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 42,
+                    "x": 336.95,
+                    "y": 85.5
+                }
+            ]
+        },
+        "barBasement": {
+            "walkAreaCharacterId": 8,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/barBasement/walkarea-1.svg",
+                    "x": -18,
+                    "y": 142.4,
+                    "width": 766.8,
+                    "height": 338.65
+                }
+            ],
+            "markers": []
+        },
+        "barn": {
+            "walkAreaCharacterId": 219,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/barn/walkarea-1.svg",
+                    "x": -0.15,
+                    "y": 179.3,
+                    "width": 774.05,
+                    "height": 302.7
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/barn/walkarea-2.svg",
+                    "x": -0.15,
+                    "y": 179.3,
+                    "width": 774.05,
+                    "height": 302.7
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 216,
+                    "x": 432.95,
+                    "y": 267.95
+                }
+            ]
+        },
+        "barnInside": {
+            "walkAreaCharacterId": 6,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/barnInside/walkarea-1.svg",
+                    "x": -0.95,
+                    "y": 119.5,
+                    "width": 772.95,
+                    "height": 358.4
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/barnInside/walkarea-2.svg",
+                    "x": -0.95,
+                    "y": 119.5,
+                    "width": 772.95,
+                    "height": 358.4
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/barnInside/walkarea-3.svg",
+                    "x": -0.95,
+                    "y": 119.5,
+                    "width": 772.95,
+                    "height": 358.4
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 11,
+                    "x": 389.6,
+                    "y": 118.25
+                }
+            ]
+        },
+        "beach": {
+            "walkAreaCharacterId": 305,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beach/walkarea-1.svg",
+                    "x": 2,
+                    "y": 81.85,
+                    "width": 769.5,
+                    "height": 355
+                }
+            ],
+            "markers": []
+        },
+        "beachCarabic": {
+            "walkAreaCharacterId": 209,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beachCarabic/walkarea-1.svg",
+                    "x": 0.8,
+                    "y": 166.55,
+                    "width": 682.35,
+                    "height": 315.8
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beachCarabic/walkarea-2.svg",
+                    "x": 0.8,
+                    "y": 166.55,
+                    "width": 682.35,
+                    "height": 315.8
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beachCarabic/walkarea-3.svg",
+                    "x": 0.8,
+                    "y": 166.55,
+                    "width": 682.35,
+                    "height": 315.8
+                }
+            ],
+            "markers": []
+        },
+        "beautysalon": {
+            "walkAreaCharacterId": 87,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beautysalon/walkarea-1.svg",
+                    "x": -0,
+                    "y": 155.5,
+                    "width": 771,
+                    "height": 279.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beautysalon/walkarea-2.svg",
+                    "x": -0,
+                    "y": 155.5,
+                    "width": 771,
+                    "height": 279.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beautysalon/walkarea-3.svg",
+                    "x": -0,
+                    "y": 155.5,
+                    "width": 771,
+                    "height": 279.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beautysalon/walkarea-4.svg",
+                    "x": -0,
+                    "y": 155.5,
+                    "width": 771,
+                    "height": 279.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beautysalon/walkarea-5.svg",
+                    "x": -0,
+                    "y": 155.5,
+                    "width": 771,
+                    "height": 279.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beautysalon/walkarea-6.svg",
+                    "x": -0,
+                    "y": 155.5,
+                    "width": 771,
+                    "height": 279.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beautysalon/walkarea-7.svg",
+                    "x": -0,
+                    "y": 155.5,
+                    "width": 771,
+                    "height": 279.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/beautysalon/walkarea-8.svg",
+                    "x": -0,
+                    "y": 155.5,
+                    "width": 771,
+                    "height": 279.5
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 94,
+                    "x": 330.95,
+                    "y": 60
+                },
+                {
+                    "name": "bdayDoor",
+                    "characterId": 100,
+                    "x": 36.1,
+                    "y": 168.1
+                }
+            ]
+        },
+        "bigcity": {
+            "walkAreaCharacterId": 39,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/bigcity/walkarea-1.svg",
+                    "x": -3.35,
+                    "y": 3.5,
+                    "width": 775.35,
+                    "height": 426.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/bigcity/walkarea-2.svg",
+                    "x": -3.35,
+                    "y": 3.5,
+                    "width": 775.35,
+                    "height": 426.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/bigcity/walkarea-3.svg",
+                    "x": -3.35,
+                    "y": 3.5,
+                    "width": 775.35,
+                    "height": 426.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/bigcity/walkarea-4.svg",
+                    "x": -3.35,
+                    "y": 3.5,
+                    "width": 775.35,
+                    "height": 426.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/bigcity/walkarea-5.svg",
+                    "x": -3.35,
+                    "y": 3.5,
+                    "width": 775.35,
+                    "height": 426.5
+                }
+            ],
+            "markers": [
+                {
+                    "name": "bsDoor",
+                    "characterId": 100,
+                    "x": 122.3,
+                    "y": 203
+                },
+                {
+                    "name": "chezBrunoDoor",
+                    "characterId": 105,
+                    "x": 577.45,
+                    "y": 149.85
+                }
+            ]
+        },
+        "castle": {
+            "walkAreaCharacterId": 23,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/castle/walkarea-1.svg",
+                    "x": -2,
+                    "y": 310,
+                    "width": 773,
+                    "height": 169.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/castle/walkarea-2.svg",
+                    "x": -2,
+                    "y": 310,
+                    "width": 773,
+                    "height": 169.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/castle/walkarea-3.svg",
+                    "x": -2,
+                    "y": 310,
+                    "width": 773,
+                    "height": 169.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/castle/walkarea-4.svg",
+                    "x": -2,
+                    "y": 310,
+                    "width": 773,
+                    "height": 169.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/castle/walkarea-5.svg",
+                    "x": -2,
+                    "y": 310,
+                    "width": 773,
+                    "height": 169.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/castle/walkarea-6.svg",
+                    "x": -2,
+                    "y": 310,
+                    "width": 773,
+                    "height": 169.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/castle/walkarea-7.svg",
+                    "x": -2,
+                    "y": 310,
+                    "width": 773,
+                    "height": 169.95
+                }
+            ],
+            "markers": []
+        },
+        "chezbruno": {
+            "walkAreaCharacterId": 22,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/chezbruno/walkarea-1.svg",
+                    "x": -0,
+                    "y": 125.5,
+                    "width": 762.15,
+                    "height": 354.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/chezbruno/walkarea-2.svg",
+                    "x": -0,
+                    "y": 125.5,
+                    "width": 762.15,
+                    "height": 354.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/chezbruno/walkarea-3.svg",
+                    "x": -0,
+                    "y": 125.5,
+                    "width": 762.15,
+                    "height": 354.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/chezbruno/walkarea-4.svg",
+                    "x": -0,
+                    "y": 125.5,
+                    "width": 762.15,
+                    "height": 354.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/chezbruno/walkarea-5.svg",
+                    "x": -0,
+                    "y": 125.5,
+                    "width": 762.15,
+                    "height": 354.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/chezbruno/walkarea-6.svg",
+                    "x": -0,
+                    "y": 125.5,
+                    "width": 762.15,
+                    "height": 354.95
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 64,
+                    "x": 385.8,
+                    "y": 70.35
+                }
+            ]
+        },
+        "chillroom": {
+            "walkAreaCharacterId": 27,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/chillroom/walkarea-1.svg",
+                    "x": -2.4,
+                    "y": -0,
+                    "width": 772.75,
+                    "height": 474
+                }
+            ],
+            "markers": []
+        },
+        "classroom": {
+            "walkAreaCharacterId": 89,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/classroom/walkarea-1.svg",
+                    "x": -386.95,
+                    "y": -286.45,
+                    "width": 1161.2,
+                    "height": 764.1
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/classroom/walkarea-2.svg",
+                    "x": -386.95,
+                    "y": -286.45,
+                    "width": 1161.2,
+                    "height": 764.1
+                }
+            ],
+            "markers": []
+        },
+        "cloudroom": {
+            "walkAreaCharacterId": 5,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/cloudroom/walkarea-1.svg",
+                    "x": -2.4,
+                    "y": 36.25,
+                    "width": 772.75,
+                    "height": 437.75
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 20,
+                    "x": 741.95,
+                    "y": 335.95
+                }
+            ]
+        },
+        "colorRoom": {
+            "walkAreaCharacterId": 34,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/colorRoom/walkarea-1.svg",
+                    "x": 97.95,
+                    "y": 152.9,
+                    "width": 648.4,
+                    "height": 353.2
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/colorRoom/walkarea-2.svg",
+                    "x": 97.95,
+                    "y": 152.9,
+                    "width": 648.4,
+                    "height": 353.2
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/colorRoom/walkarea-3.svg",
+                    "x": 97.95,
+                    "y": 152.9,
+                    "width": 648.4,
+                    "height": 353.2
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/colorRoom/walkarea-4.svg",
+                    "x": 97.95,
+                    "y": 152.9,
+                    "width": 648.4,
+                    "height": 353.2
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/colorRoom/walkarea-5.svg",
+                    "x": 97.95,
+                    "y": 152.9,
+                    "width": 648.4,
+                    "height": 353.2
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/colorRoom/walkarea-6.svg",
+                    "x": 97.95,
+                    "y": 152.9,
+                    "width": 648.4,
+                    "height": 353.2
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/colorRoom/walkarea-7.svg",
+                    "x": 97.95,
+                    "y": 152.9,
+                    "width": 648.4,
+                    "height": 353.2
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/colorRoom/walkarea-8.svg",
+                    "x": 97.95,
+                    "y": 152.9,
+                    "width": 648.4,
+                    "height": 353.2
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 58,
+                    "x": 168.45,
+                    "y": 165.95
+                }
+            ]
+        },
+        "confusingStairs": {
+            "walkAreaCharacterId": 34,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/confusingStairs/walkarea-1.svg",
+                    "x": -8,
+                    "y": -9.5,
+                    "width": 789.6,
+                    "height": 555.3
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/confusingStairs/walkarea-2.svg",
+                    "x": -8,
+                    "y": -9.5,
+                    "width": 789.6,
+                    "height": 555.3
+                }
+            ],
+            "markers": []
+        },
+        "court": {
+            "walkAreaCharacterId": 46,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/court/walkarea-1.svg",
+                    "x": -3.95,
+                    "y": 92.55,
+                    "width": 780.95,
+                    "height": 387.4
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door1",
+                    "characterId": 44,
+                    "x": 386.85,
+                    "y": 313.9
+                },
+                {
+                    "name": "door_to_city_runner",
+                    "characterId": 38,
+                    "x": 0,
+                    "y": 266
+                },
+                {
+                    "name": "door2",
+                    "characterId": 13,
+                    "x": 390.5,
+                    "y": 169.55
+                }
+            ]
+        },
+        "courtnew": {
+            "walkAreaCharacterId": 28,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/courtnew/walkarea-1.svg",
+                    "x": -2.85,
+                    "y": 155.7,
+                    "width": 774.35,
+                    "height": 324.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/courtnew/walkarea-2.svg",
+                    "x": -2.85,
+                    "y": 155.7,
+                    "width": 774.35,
+                    "height": 324.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/courtnew/walkarea-3.svg",
+                    "x": -2.85,
+                    "y": 155.7,
+                    "width": 774.35,
+                    "height": 324.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/courtnew/walkarea-4.svg",
+                    "x": -2.85,
+                    "y": 155.7,
+                    "width": 774.35,
+                    "height": 324.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/courtnew/walkarea-5.svg",
+                    "x": -2.85,
+                    "y": 155.7,
+                    "width": 774.35,
+                    "height": 324.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/courtnew/walkarea-6.svg",
+                    "x": -2.85,
+                    "y": 155.7,
+                    "width": 774.35,
+                    "height": 324.6
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door1",
+                    "characterId": 8,
+                    "x": 665.35,
+                    "y": -73.6
+                },
+                {
+                    "name": "door2",
+                    "characterId": 12,
+                    "x": 279.95,
+                    "y": -30.45
+                }
+            ]
+        },
+        "darkForest": {
+            "walkAreaCharacterId": 11,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/darkForest/walkarea-1.svg",
+                    "x": -2.1,
+                    "y": 218.85,
+                    "width": 775.75,
+                    "height": 235
+                }
+            ],
+            "markers": []
+        },
+        "darkroom": {
+            "walkAreaCharacterId": 10,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/darkroom/walkarea-1.svg",
+                    "x": -0.5,
+                    "y": -0.5,
+                    "width": 773,
+                    "height": 481
+                }
+            ],
+            "markers": []
+        },
+        "disco": {
+            "walkAreaCharacterId": 174,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/disco/walkarea-1.svg",
+                    "x": 3,
+                    "y": 150,
+                    "width": 764.95,
+                    "height": 290.85
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/disco/walkarea-2.svg",
+                    "x": 3,
+                    "y": 150,
+                    "width": 764.95,
+                    "height": 290.85
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/disco/walkarea-3.svg",
+                    "x": 3,
+                    "y": 150,
+                    "width": 764.95,
+                    "height": 290.85
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door_curtain",
+                    "characterId": 232,
+                    "x": 439.3,
+                    "y": 83.3
+                }
+            ]
+        },
+        "elevator": {
+            "walkAreaCharacterId": 135,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/elevator/walkarea-1.svg",
+                    "x": -0,
+                    "y": 187.05,
+                    "width": 771.9,
+                    "height": 218.95
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 8,
+                    "x": 78.5,
+                    "y": -6.55
+                },
+                {
+                    "name": "door2",
+                    "characterId": 10,
+                    "x": 423.9,
+                    "y": 441.95
+                }
+            ]
+        },
+        "evroncastle_entrance": {
+            "walkAreaCharacterId": 11,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/evroncastle_entrance/walkarea-1.svg",
+                    "x": -2.4,
+                    "y": 144.1,
+                    "width": 772.75,
+                    "height": 329.9
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/evroncastle_entrance/walkarea-2.svg",
+                    "x": -2.4,
+                    "y": 144.1,
+                    "width": 772.75,
+                    "height": 329.9
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/evroncastle_entrance/walkarea-3.svg",
+                    "x": -2.4,
+                    "y": 144.1,
+                    "width": 772.75,
+                    "height": 329.9
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/evroncastle_entrance/walkarea-4.svg",
+                    "x": -2.4,
+                    "y": 144.1,
+                    "width": 772.75,
+                    "height": 329.9
+                }
+            ],
+            "markers": []
+        },
+        "evroncastle_road": {
+            "walkAreaCharacterId": 14,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/evroncastle_road/walkarea-1.svg",
+                    "x": 35.5,
+                    "y": 179.5,
+                    "width": 722.45,
+                    "height": 300
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/evroncastle_road/walkarea-2.svg",
+                    "x": 35.5,
+                    "y": 179.5,
+                    "width": 722.45,
+                    "height": 300
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/evroncastle_road/walkarea-3.svg",
+                    "x": 35.5,
+                    "y": 179.5,
+                    "width": 722.45,
+                    "height": 300
+                }
+            ],
+            "markers": []
+        },
+        "evroncastle_sky": {
+            "walkAreaCharacterId": 7,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/evroncastle_sky/walkarea-1.svg",
+                    "x": 15,
+                    "y": 179.5,
+                    "width": 742.95,
+                    "height": 298.95
+                }
+            ],
+            "markers": []
+        },
+        "fourboomcave": {
+            "walkAreaCharacterId": 11,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/fourboomcave/walkarea-1.svg",
+                    "x": 82.4,
+                    "y": 167,
+                    "width": 599.3,
+                    "height": 316
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/fourboomcave/walkarea-2.svg",
+                    "x": 82.4,
+                    "y": 167,
+                    "width": 599.3,
+                    "height": 316
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 30,
+                    "x": 359.6,
+                    "y": 1
+                }
+            ]
+        },
+        "foyer": {
+            "walkAreaCharacterId": 72,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/foyer/walkarea-1.svg",
+                    "x": -27,
+                    "y": 214.3,
+                    "width": 839.95,
+                    "height": 295.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/foyer/walkarea-2.svg",
+                    "x": -27,
+                    "y": 214.3,
+                    "width": 839.95,
+                    "height": 295.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/foyer/walkarea-3.svg",
+                    "x": -27,
+                    "y": 214.3,
+                    "width": 839.95,
+                    "height": 295.15
+                }
+            ],
+            "markers": []
+        },
+        "giftshop": {
+            "walkAreaCharacterId": 7,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/giftshop/walkarea-1.svg",
+                    "x": 75.45,
+                    "y": 174,
+                    "width": 656.05,
+                    "height": 306.95
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door1",
+                    "characterId": 29,
+                    "x": 499.3,
+                    "y": 40.3
+                },
+                {
+                    "name": "door",
+                    "characterId": 32,
+                    "x": 631.3,
+                    "y": 215.5
+                },
+                {
+                    "name": "bdayDoor",
+                    "characterId": 225,
+                    "x": 58,
+                    "y": 157.9
+                }
+            ]
+        },
+        "gymnasium": {
+            "walkAreaCharacterId": 99,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/gymnasium/walkarea-1.svg",
+                    "x": 18,
+                    "y": 42.1,
+                    "width": 747.95,
+                    "height": 437.85
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/gymnasium/walkarea-2.svg",
+                    "x": 18,
+                    "y": 42.1,
+                    "width": 747.95,
+                    "height": 437.85
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/gymnasium/walkarea-3.svg",
+                    "x": 18,
+                    "y": 42.1,
+                    "width": 747.95,
+                    "height": 437.85
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/gymnasium/walkarea-4.svg",
+                    "x": 18,
+                    "y": 42.1,
+                    "width": 747.95,
+                    "height": 437.85
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/gymnasium/walkarea-5.svg",
+                    "x": 18,
+                    "y": 42.1,
+                    "width": 747.95,
+                    "height": 437.85
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/gymnasium/walkarea-6.svg",
+                    "x": 18,
+                    "y": 42.1,
+                    "width": 747.95,
+                    "height": 437.85
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 175,
+                    "x": 361.3,
+                    "y": 55.3
+                }
+            ]
+        },
+        "harbour": {
+            "walkAreaCharacterId": 179,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/harbour/walkarea-1.svg",
+                    "x": 1.9,
+                    "y": 82.25,
+                    "width": 750.1,
+                    "height": 398.3
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/harbour/walkarea-2.svg",
+                    "x": 1.9,
+                    "y": 82.25,
+                    "width": 750.1,
+                    "height": 398.3
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/harbour/walkarea-3.svg",
+                    "x": 1.9,
+                    "y": 82.25,
+                    "width": 750.1,
+                    "height": 398.3
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/harbour/walkarea-4.svg",
+                    "x": 1.9,
+                    "y": 82.25,
+                    "width": 750.1,
+                    "height": 398.3
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/harbour/walkarea-5.svg",
+                    "x": 1.9,
+                    "y": 82.25,
+                    "width": 750.1,
+                    "height": 398.3
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door1",
+                    "characterId": 68,
+                    "x": 275,
+                    "y": 87.75
+                },
+                {
+                    "name": "bdayDoor1",
+                    "characterId": 23,
+                    "x": 186,
+                    "y": 151.7
+                },
+                {
+                    "name": "bdayDoor2",
+                    "characterId": 18,
+                    "x": 417.4,
+                    "y": 40.15
+                }
+            ]
+        },
+        "hospital": {
+            "walkAreaCharacterId": 34,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/hospital/walkarea-1.svg",
+                    "x": -0,
+                    "y": 135.5,
+                    "width": 773.1,
+                    "height": 343.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/hospital/walkarea-2.svg",
+                    "x": -0,
+                    "y": 135.5,
+                    "width": 773.1,
+                    "height": 343.95
+                }
+            ],
+            "markers": []
+        },
+        "icecreamparlor": {
+            "walkAreaCharacterId": 11,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/icecreamparlor/walkarea-1.svg",
+                    "x": -0,
+                    "y": 186,
+                    "width": 774.4,
+                    "height": 284.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/icecreamparlor/walkarea-2.svg",
+                    "x": -0,
+                    "y": 186,
+                    "width": 774.4,
+                    "height": 284.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/icecreamparlor/walkarea-3.svg",
+                    "x": -0,
+                    "y": 186,
+                    "width": 774.4,
+                    "height": 284.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/icecreamparlor/walkarea-4.svg",
+                    "x": -0,
+                    "y": 186,
+                    "width": 774.4,
+                    "height": 284.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/icecreamparlor/walkarea-5.svg",
+                    "x": -0,
+                    "y": 186,
+                    "width": 774.4,
+                    "height": 284.95
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 130,
+                    "x": 403.6,
+                    "y": 81.4
+                },
+                {
+                    "name": "iceMachineArea",
+                    "characterId": 157,
+                    "x": 587.25,
+                    "y": 81.05
+                }
+            ]
+        },
+        "igloo": {
+            "walkAreaCharacterId": 26,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/igloo/walkarea-1.svg",
+                    "x": -1.3,
+                    "y": 128.75,
+                    "width": 773.65,
+                    "height": 351.25
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/igloo/walkarea-2.svg",
+                    "x": -1.3,
+                    "y": 128.75,
+                    "width": 773.65,
+                    "height": 351.25
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/igloo/walkarea-3.svg",
+                    "x": -1.3,
+                    "y": 128.75,
+                    "width": 773.65,
+                    "height": 351.25
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/igloo/walkarea-4.svg",
+                    "x": -1.3,
+                    "y": 128.75,
+                    "width": 773.65,
+                    "height": 351.25
+                }
+            ],
+            "markers": []
+        },
+        "islandLS": {
+            "walkAreaCharacterId": 30,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/islandLS/walkarea-1.svg",
+                    "x": 70,
+                    "y": 97.05,
+                    "width": 706.4,
+                    "height": 315.8
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/islandLS/walkarea-2.svg",
+                    "x": 70,
+                    "y": 97.05,
+                    "width": 706.4,
+                    "height": 315.8
+                }
+            ],
+            "markers": []
+        },
+        "islandRS": {
+            "walkAreaCharacterId": 76,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/islandRS/walkarea-1.svg",
+                    "x": -1,
+                    "y": 35,
+                    "width": 772.8,
+                    "height": 381.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/islandRS/walkarea-2.svg",
+                    "x": -1,
+                    "y": 35,
+                    "width": 772.8,
+                    "height": 381.5
+                }
+            ],
+            "markers": []
+        },
+        "jungle": {
+            "walkAreaCharacterId": 62,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/jungle/walkarea-1.svg",
+                    "x": 6,
+                    "y": 113.95,
+                    "width": 733.2,
+                    "height": 366
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/jungle/walkarea-2.svg",
+                    "x": 6,
+                    "y": 113.95,
+                    "width": 733.2,
+                    "height": 366
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door1",
+                    "characterId": 99,
+                    "x": 229,
+                    "y": 208
+                }
+            ]
+        },
+        "junglecave": {
+            "walkAreaCharacterId": 299,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/junglecave/walkarea-1.svg",
+                    "x": 9,
+                    "y": 13.05,
+                    "width": 775.05,
+                    "height": 467.05
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door1",
+                    "characterId": 168,
+                    "x": 110,
+                    "y": 204
+                },
+                {
+                    "name": "door2",
+                    "characterId": 153,
+                    "x": 367.3,
+                    "y": 14.85
+                },
+                {
+                    "name": "door3",
+                    "characterId": 148,
+                    "x": 666,
+                    "y": 165
+                }
+            ]
+        },
+        "kiosk": {
+            "walkAreaCharacterId": 8,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/kiosk/walkarea-1.svg",
+                    "x": 6,
+                    "y": 127,
+                    "width": 771,
+                    "height": 352.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/kiosk/walkarea-2.svg",
+                    "x": 6,
+                    "y": 127,
+                    "width": 771,
+                    "height": 352.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/kiosk/walkarea-3.svg",
+                    "x": 6,
+                    "y": 127,
+                    "width": 771,
+                    "height": 352.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/kiosk/walkarea-4.svg",
+                    "x": 6,
+                    "y": 127,
+                    "width": 771,
+                    "height": 352.95
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 57,
+                    "x": 591.7,
+                    "y": 151.8
+                },
+                {
+                    "name": "door",
+                    "characterId": 61,
+                    "x": 135.35,
+                    "y": 142.55
+                },
+                {
+                    "name": "doorOut",
+                    "characterId": 64,
+                    "x": 436.3,
+                    "y": 41.35
+                },
+                {
+                    "name": "bdayDoor",
+                    "characterId": 235,
+                    "x": 40,
+                    "y": 116.75
+                }
+            ]
+        },
+        "knighthall": {
+            "walkAreaCharacterId": 128,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/knighthall/walkarea-1.svg",
+                    "x": 12,
+                    "y": 150.55,
+                    "width": 760.85,
+                    "height": 315.3
+                }
+            ],
+            "markers": []
+        },
+        "laboratory": {
+            "walkAreaCharacterId": 213,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/laboratory/walkarea-1.svg",
+                    "x": 1,
+                    "y": 210.7,
+                    "width": 771.3,
+                    "height": 270.5
+                }
+            ],
+            "markers": [
+                {
+                    "name": "machineDoor",
+                    "characterId": 296,
+                    "x": 182.6,
+                    "y": 178.35
+                },
+                {
+                    "name": "door",
+                    "characterId": 102,
+                    "x": 596.95,
+                    "y": 134.95
+                }
+            ]
+        },
+        "lake": {
+            "walkAreaCharacterId": 72,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lake/walkarea-1.svg",
+                    "x": 0.8,
+                    "y": 223.4,
+                    "width": 773.05,
+                    "height": 258.4
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lake/walkarea-2.svg",
+                    "x": 0.8,
+                    "y": 223.4,
+                    "width": 773.05,
+                    "height": 258.4
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lake/walkarea-3.svg",
+                    "x": 0.8,
+                    "y": 223.4,
+                    "width": 773.05,
+                    "height": 258.4
+                }
+            ],
+            "markers": []
+        },
+        "library": {
+            "walkAreaCharacterId": 14,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/library/walkarea-1.svg",
+                    "x": 1,
+                    "y": 99,
+                    "width": 769.95,
+                    "height": 381
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/library/walkarea-2.svg",
+                    "x": 1,
+                    "y": 99,
+                    "width": 769.95,
+                    "height": 381
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/library/walkarea-3.svg",
+                    "x": 1,
+                    "y": 99,
+                    "width": 769.95,
+                    "height": 381
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/library/walkarea-4.svg",
+                    "x": 1,
+                    "y": 99,
+                    "width": 769.95,
+                    "height": 381
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/library/walkarea-5.svg",
+                    "x": 1,
+                    "y": 99,
+                    "width": 769.95,
+                    "height": 381
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/library/walkarea-6.svg",
+                    "x": 1,
+                    "y": 99,
+                    "width": 769.95,
+                    "height": 381
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 123,
+                    "x": 388.8,
+                    "y": 0.85
+                }
+            ]
+        },
+        "lockerroom": {
+            "walkAreaCharacterId": 29,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lockerroom/walkarea-1.svg",
+                    "x": 71.4,
+                    "y": 217,
+                    "width": 678.55,
+                    "height": 263.05
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lockerroom/walkarea-2.svg",
+                    "x": 71.4,
+                    "y": 217,
+                    "width": 678.55,
+                    "height": 263.05
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lockerroom/walkarea-3.svg",
+                    "x": 71.4,
+                    "y": 217,
+                    "width": 678.55,
+                    "height": 263.05
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lockerroom/walkarea-4.svg",
+                    "x": 71.4,
+                    "y": 217,
+                    "width": 678.55,
+                    "height": 263.05
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lockerroom/walkarea-5.svg",
+                    "x": 71.4,
+                    "y": 217,
+                    "width": 678.55,
+                    "height": 263.05
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lockerroom/walkarea-6.svg",
+                    "x": 71.4,
+                    "y": 217,
+                    "width": 678.55,
+                    "height": 263.05
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lockerroom/walkarea-7.svg",
+                    "x": 71.4,
+                    "y": 217,
+                    "width": 678.55,
+                    "height": 263.05
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 183,
+                    "x": 288.3,
+                    "y": 59
+                }
+            ]
+        },
+        "lockertunnel": {
+            "walkAreaCharacterId": 23,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/lockertunnel/walkarea-1.svg",
+                    "x": 115.85,
+                    "y": 112,
+                    "width": 505.1,
+                    "height": 366.3
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 25,
+                    "x": 575,
+                    "y": 115
+                }
+            ]
+        },
+        "loraxroom": {
+            "walkAreaCharacterId": 5,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/loraxroom/walkarea-1.svg",
+                    "x": -2.4,
+                    "y": 278.45,
+                    "width": 778.35,
+                    "height": 181.4
+                }
+            ],
+            "markers": []
+        },
+        "mountain": {
+            "walkAreaCharacterId": 25,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/mountain/walkarea-1.svg",
+                    "x": -1,
+                    "y": 73,
+                    "width": 771.95,
+                    "height": 336
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 61,
+                    "x": 564.25,
+                    "y": 97
+                }
+            ]
+        },
+        "movieTheater1": {
+            "walkAreaCharacterId": 6,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/movieTheater1/walkarea-1.svg",
+                    "x": -6.3,
+                    "y": 95.4,
+                    "width": 770.95,
+                    "height": 384.35
+                }
+            ],
+            "markers": []
+        },
+        "movieTheater2": {
+            "walkAreaCharacterId": 13,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/movieTheater2/walkarea-1.svg",
+                    "x": -6.3,
+                    "y": 31.8,
+                    "width": 770.95,
+                    "height": 447.95
+                }
+            ],
+            "markers": []
+        },
+        "movieTheater3": {
+            "walkAreaCharacterId": 13,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/movieTheater3/walkarea-1.svg",
+                    "x": -6.3,
+                    "y": 31.8,
+                    "width": 770.95,
+                    "height": 447.95
+                }
+            ],
+            "markers": []
+        },
+        "napasapa_ufo": {
+            "walkAreaCharacterId": 5,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/napasapa_ufo/walkarea-1.svg",
+                    "x": 0.85,
+                    "y": 156,
+                    "width": 757,
+                    "height": 269.85
+                }
+            ],
+            "markers": [
+                {
+                    "name": "hotarea",
+                    "characterId": 57,
+                    "x": 193.95,
+                    "y": 391.3
+                }
+            ]
+        },
+        "newcave": {
+            "walkAreaCharacterId": 37,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/newcave/walkarea-1.svg",
+                    "x": 94.2,
+                    "y": 165,
+                    "width": 587.5,
+                    "height": 318
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/newcave/walkarea-2.svg",
+                    "x": 94.2,
+                    "y": 165,
+                    "width": 587.5,
+                    "height": 318
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/newcave/walkarea-3.svg",
+                    "x": 94.2,
+                    "y": 165,
+                    "width": 587.5,
+                    "height": 318
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/newcave/walkarea-4.svg",
+                    "x": 94.2,
+                    "y": 165,
+                    "width": 587.5,
+                    "height": 318
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 75,
+                    "x": 359.6,
+                    "y": 1
+                }
+            ]
+        },
+        "northPole": {
+            "walkAreaCharacterId": 8,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/northPole/walkarea-1.svg",
+                    "x": 0.05,
+                    "y": 215,
+                    "width": 771.95,
+                    "height": 264.95
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 13,
+                    "x": 700,
+                    "y": 159
+                }
+            ]
+        },
+        "oldtown": {
+            "walkAreaCharacterId": 14,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/oldtown/walkarea-1.svg",
+                    "x": 6,
+                    "y": 180.25,
+                    "width": 771,
+                    "height": 299.75
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/oldtown/walkarea-2.svg",
+                    "x": 6,
+                    "y": 180.25,
+                    "width": 771,
+                    "height": 299.75
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door1",
+                    "characterId": 25,
+                    "x": 172.1,
+                    "y": 188.3
+                },
+                {
+                    "name": "door2",
+                    "characterId": 30,
+                    "x": 348.85,
+                    "y": 124.8
+                },
+                {
+                    "name": "door3",
+                    "characterId": 34,
+                    "x": 550.6,
+                    "y": 161.4
+                }
+            ]
+        },
+        "pandahill": {
+            "walkAreaCharacterId": 32,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pandahill/walkarea-1.svg",
+                    "x": 75.35,
+                    "y": 195,
+                    "width": 546.5,
+                    "height": 285.85
+                }
+            ],
+            "markers": []
+        },
+        "paulsroom": {
+            "walkAreaCharacterId": 15,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/paulsroom/walkarea-1.svg",
+                    "x": -0.95,
+                    "y": 49.35,
+                    "width": 757.9,
+                    "height": 430.95
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 5,
+                    "x": 562.5,
+                    "y": -9.75
+                }
+            ]
+        },
+        "piratebar": {
+            "walkAreaCharacterId": 61,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/piratebar/walkarea-1.svg",
+                    "x": 57,
+                    "y": 184.25,
+                    "width": 716.4,
+                    "height": 247.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/piratebar/walkarea-2.svg",
+                    "x": 57,
+                    "y": 184.25,
+                    "width": 716.4,
+                    "height": 247.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/piratebar/walkarea-3.svg",
+                    "x": 57,
+                    "y": 184.25,
+                    "width": 716.4,
+                    "height": 247.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/piratebar/walkarea-4.svg",
+                    "x": 57,
+                    "y": 184.25,
+                    "width": 716.4,
+                    "height": 247.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/piratebar/walkarea-5.svg",
+                    "x": 57,
+                    "y": 184.25,
+                    "width": 716.4,
+                    "height": 247.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/piratebar/walkarea-6.svg",
+                    "x": 57,
+                    "y": 184.25,
+                    "width": 716.4,
+                    "height": 247.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/piratebar/walkarea-7.svg",
+                    "x": 57,
+                    "y": 184.25,
+                    "width": 716.4,
+                    "height": 247.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/piratebar/walkarea-8.svg",
+                    "x": 57,
+                    "y": 184.25,
+                    "width": 716.4,
+                    "height": 247.6
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door2",
+                    "characterId": 195,
+                    "x": 299.95,
+                    "y": 285.45
+                },
+                {
+                    "name": "doorHarbour",
+                    "characterId": 280,
+                    "x": 705.25,
+                    "y": 307.8
+                }
+            ]
+        },
+        "planeinside": {
+            "walkAreaCharacterId": 8,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/planeinside/walkarea-1.svg",
+                    "x": -9,
+                    "y": 180,
+                    "width": 788.85,
+                    "height": 304.25
+                }
+            ],
+            "markers": []
+        },
+        "planeoutside": {
+            "walkAreaCharacterId": 15,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/planeoutside/walkarea-1.svg",
+                    "x": -6,
+                    "y": 91.1,
+                    "width": 784,
+                    "height": 392.9
+                }
+            ],
+            "markers": [
+                {
+                    "name": "planeDoor",
+                    "characterId": 23,
+                    "x": 423.5,
+                    "y": 233.95
+                },
+                {
+                    "name": "doorWithBonez",
+                    "characterId": 36,
+                    "x": 421.9,
+                    "y": 234.05
+                }
+            ]
+        },
+        "ponystable": {
+            "walkAreaCharacterId": 54,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponystable/walkarea-1.svg",
+                    "x": -1.6,
+                    "y": 166.35,
+                    "width": 773.25,
+                    "height": 314.2
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponystable/walkarea-2.svg",
+                    "x": -1.6,
+                    "y": 166.35,
+                    "width": 773.25,
+                    "height": 314.2
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponystable/walkarea-3.svg",
+                    "x": -1.6,
+                    "y": 166.35,
+                    "width": 773.25,
+                    "height": 314.2
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponystable/walkarea-4.svg",
+                    "x": -1.6,
+                    "y": 166.35,
+                    "width": 773.25,
+                    "height": 314.2
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 142,
+                    "x": 352.95,
+                    "y": 83
+                }
+            ]
+        },
+        "ponystableextend": {
+            "walkAreaCharacterId": 96,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponystableextend/walkarea-1.svg",
+                    "x": -0.5,
+                    "y": 120.8,
+                    "width": 772.85,
+                    "height": 356.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponystableextend/walkarea-2.svg",
+                    "x": -0.5,
+                    "y": 120.8,
+                    "width": 772.85,
+                    "height": 356.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponystableextend/walkarea-3.svg",
+                    "x": -0.5,
+                    "y": 120.8,
+                    "width": 772.85,
+                    "height": 356.95
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponystableextend/walkarea-4.svg",
+                    "x": -0.5,
+                    "y": 120.8,
+                    "width": 772.85,
+                    "height": 356.95
+                }
+            ],
+            "markers": []
+        },
+        "ponyyard": {
+            "walkAreaCharacterId": 108,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponyyard/walkarea-1.svg",
+                    "x": -0.5,
+                    "y": 182.3,
+                    "width": 772.85,
+                    "height": 295.45
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponyyard/walkarea-2.svg",
+                    "x": -0.5,
+                    "y": 182.3,
+                    "width": 772.85,
+                    "height": 295.45
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponyyard/walkarea-3.svg",
+                    "x": -0.5,
+                    "y": 182.3,
+                    "width": 772.85,
+                    "height": 295.45
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponyyard/walkarea-4.svg",
+                    "x": -0.5,
+                    "y": 182.3,
+                    "width": 772.85,
+                    "height": 295.45
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponyyard/walkarea-5.svg",
+                    "x": -0.5,
+                    "y": 182.3,
+                    "width": 772.85,
+                    "height": 295.45
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponyyard/walkarea-6.svg",
+                    "x": -0.5,
+                    "y": 182.3,
+                    "width": 772.85,
+                    "height": 295.45
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/ponyyard/walkarea-7.svg",
+                    "x": -0.5,
+                    "y": 182.3,
+                    "width": 772.85,
+                    "height": 295.45
+                }
+            ],
+            "markers": [
+                {
+                    "name": "doorII",
+                    "characterId": 158,
+                    "x": 639.9,
+                    "y": 148.2
+                }
+            ]
+        },
+        "pool": {
+            "walkAreaCharacterId": 114,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-1.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-2.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-3.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-4.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-5.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-6.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-7.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-8.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-9.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-10.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-11.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/pool/walkarea-12.svg",
+                    "x": -0,
+                    "y": 40.35,
+                    "width": 772,
+                    "height": 437.55
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door2",
+                    "characterId": 282,
+                    "x": 469,
+                    "y": 81.5
+                },
+                {
+                    "name": "door1",
+                    "characterId": 318,
+                    "x": 212,
+                    "y": 93.5
+                }
+            ]
+        },
+        "racetrack": {
+            "walkAreaCharacterId": 72,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/racetrack/walkarea-1.svg",
+                    "x": -2.9,
+                    "y": 31.55,
+                    "width": 775.65,
+                    "height": 449.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/racetrack/walkarea-2.svg",
+                    "x": -2.9,
+                    "y": 31.55,
+                    "width": 775.65,
+                    "height": 449.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/racetrack/walkarea-3.svg",
+                    "x": -2.9,
+                    "y": 31.55,
+                    "width": 775.65,
+                    "height": 449.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/racetrack/walkarea-4.svg",
+                    "x": -2.9,
+                    "y": 31.55,
+                    "width": 775.65,
+                    "height": 449.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/racetrack/walkarea-5.svg",
+                    "x": -2.9,
+                    "y": 31.55,
+                    "width": 775.65,
+                    "height": 449.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/racetrack/walkarea-6.svg",
+                    "x": -2.9,
+                    "y": 31.55,
+                    "width": 775.65,
+                    "height": 449.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/racetrack/walkarea-7.svg",
+                    "x": -2.9,
+                    "y": 31.55,
+                    "width": 775.65,
+                    "height": 449.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/racetrack/walkarea-8.svg",
+                    "x": -2.9,
+                    "y": 31.55,
+                    "width": 775.65,
+                    "height": 449.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/racetrack/walkarea-9.svg",
+                    "x": -2.9,
+                    "y": 31.55,
+                    "width": 775.65,
+                    "height": 449.15
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/racetrack/walkarea-10.svg",
+                    "x": -2.9,
+                    "y": 31.55,
+                    "width": 775.65,
+                    "height": 449.15
+                }
+            ],
+            "markers": []
+        },
+        "robotElevator": {
+            "walkAreaCharacterId": 31,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/robotElevator/walkarea-1.svg",
+                    "x": -0,
+                    "y": 187.05,
+                    "width": 771.9,
+                    "height": 218.95
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 8,
+                    "x": 78.5,
+                    "y": -6.55
+                }
+            ]
+        },
+        "santasWorkshop": {
+            "walkAreaCharacterId": 91,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/santasWorkshop/walkarea-1.svg",
+                    "x": -0,
+                    "y": 306.15,
+                    "width": 772.25,
+                    "height": 174.4
+                }
+            ],
+            "markers": []
+        },
+        "scaryforest": {
+            "walkAreaCharacterId": 72,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/scaryforest/walkarea-1.svg",
+                    "x": -0,
+                    "y": 184,
+                    "width": 776.85,
+                    "height": 257.95
+                }
+            ],
+            "markers": [
+                {
+                    "name": "treeDoor",
+                    "characterId": 727,
+                    "x": 202.3,
+                    "y": 321
+                }
+            ]
+        },
+        "schoolroom": {
+            "walkAreaCharacterId": 148,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/schoolroom/walkarea-1.svg",
+                    "x": -0.5,
+                    "y": 166.25,
+                    "width": 773,
+                    "height": 314.25
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/schoolroom/walkarea-2.svg",
+                    "x": -0.5,
+                    "y": 166.25,
+                    "width": 773,
+                    "height": 314.25
+                }
+            ],
+            "markers": []
+        },
+        "seaground": {
+            "walkAreaCharacterId": 193,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/seaground/walkarea-1.svg",
+                    "x": -0.5,
+                    "y": 209.9,
+                    "width": 771.95,
+                    "height": 257.6
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door",
+                    "characterId": 203,
+                    "x": 176.4,
+                    "y": 50.55
+                }
+            ]
+        },
+        "shiproom": {
+            "walkAreaCharacterId": 47,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/shiproom/walkarea-1.svg",
+                    "x": -1,
+                    "y": 209,
+                    "width": 773.1,
+                    "height": 237.85
+                }
+            ],
+            "markers": []
+        },
+        "skyroom": {
+            "walkAreaCharacterId": 5,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/skyroom/walkarea-1.svg",
+                    "x": -2.4,
+                    "y": 41.1,
+                    "width": 778.35,
+                    "height": 418.75
+                }
+            ],
+            "markers": []
+        },
+        "sportsfield": {
+            "walkAreaCharacterId": 9,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/sportsfield/walkarea-1.svg",
+                    "x": 6,
+                    "y": 25.45,
+                    "width": 772.95,
+                    "height": 454.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/sportsfield/walkarea-2.svg",
+                    "x": 6,
+                    "y": 25.45,
+                    "width": 772.95,
+                    "height": 454.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/sportsfield/walkarea-3.svg",
+                    "x": 6,
+                    "y": 25.45,
+                    "width": 772.95,
+                    "height": 454.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/sportsfield/walkarea-4.svg",
+                    "x": 6,
+                    "y": 25.45,
+                    "width": 772.95,
+                    "height": 454.5
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/sportsfield/walkarea-5.svg",
+                    "x": 6,
+                    "y": 25.45,
+                    "width": 772.95,
+                    "height": 454.5
+                }
+            ],
+            "markers": [
+                {
+                    "name": "cabinDoor",
+                    "characterId": 16,
+                    "x": 149,
+                    "y": 129
+                },
+                {
+                    "name": "door",
+                    "characterId": 110,
+                    "x": 563,
+                    "y": 100.5
+                }
+            ]
+        },
+        "terrace": {
+            "walkAreaCharacterId": 13,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/terrace/walkarea-1.svg",
+                    "x": 42.5,
+                    "y": 138.55,
+                    "width": 733.95,
+                    "height": 334.9
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/terrace/walkarea-2.svg",
+                    "x": 42.5,
+                    "y": 138.55,
+                    "width": 733.95,
+                    "height": 334.9
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/terrace/walkarea-3.svg",
+                    "x": 42.5,
+                    "y": 138.55,
+                    "width": 733.95,
+                    "height": 334.9
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/terrace/walkarea-4.svg",
+                    "x": 42.5,
+                    "y": 138.55,
+                    "width": 733.95,
+                    "height": 334.9
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/terrace/walkarea-5.svg",
+                    "x": 42.5,
+                    "y": 138.55,
+                    "width": 733.95,
+                    "height": 334.9
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/terrace/walkarea-6.svg",
+                    "x": 42.5,
+                    "y": 138.55,
+                    "width": 733.95,
+                    "height": 334.9
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/terrace/walkarea-7.svg",
+                    "x": 42.5,
+                    "y": 138.55,
+                    "width": 733.95,
+                    "height": 334.9
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door1",
+                    "characterId": 40,
+                    "x": 191.4,
+                    "y": -15.6
+                },
+                {
+                    "name": "door2",
+                    "characterId": 35,
+                    "x": 657.4,
+                    "y": -72.4
+                },
+                {
+                    "name": "door3",
+                    "characterId": 30,
+                    "x": 103.55,
+                    "y": -13.35
+                }
+            ]
+        },
+        "toolcabin": {
+            "walkAreaCharacterId": 5,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/toolcabin/walkarea-1.svg",
+                    "x": -2.4,
+                    "y": 242,
+                    "width": 772.75,
+                    "height": 232
+                }
+            ],
+            "markers": []
+        },
+        "tower": {
+            "walkAreaCharacterId": 89,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/tower/walkarea-1.svg",
+                    "x": 0.5,
+                    "y": 201.5,
+                    "width": 769.95,
+                    "height": 277
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/tower/walkarea-2.svg",
+                    "x": 0.5,
+                    "y": 201.5,
+                    "width": 769.95,
+                    "height": 277
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/tower/walkarea-3.svg",
+                    "x": 0.5,
+                    "y": 201.5,
+                    "width": 769.95,
+                    "height": 277
+                }
+            ],
+            "markers": []
+        },
+        "town": {
+            "walkAreaCharacterId": 101,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/town/walkarea-1.svg",
+                    "x": -0,
+                    "y": 72,
+                    "width": 771.95,
+                    "height": 408
+                }
+            ],
+            "markers": [
+                {
+                    "name": "door1",
+                    "characterId": 85,
+                    "x": 156,
+                    "y": 7
+                },
+                {
+                    "name": "door2",
+                    "characterId": 80,
+                    "x": 305,
+                    "y": 7
+                },
+                {
+                    "name": "door3",
+                    "characterId": 64,
+                    "x": 588,
+                    "y": 3
+                }
+            ]
+        },
+        "treehole": {
+            "walkAreaCharacterId": 13,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/treehole/walkarea-1.svg",
+                    "x": -0.5,
+                    "y": 236.5,
+                    "width": 773,
+                    "height": 244
+                }
+            ],
+            "markers": []
+        },
+        "tunnel": {
+            "walkAreaCharacterId": 36,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/tunnel/walkarea-1.svg",
+                    "x": 19,
+                    "y": 110.3,
+                    "width": 698.05,
+                    "height": 374.6
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/tunnel/walkarea-2.svg",
+                    "x": 19,
+                    "y": 110.3,
+                    "width": 698.05,
+                    "height": 374.6
+                }
+            ],
+            "markers": []
+        },
+        "uafoyer": {
+            "walkAreaCharacterId": 107,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/uafoyer/walkarea-1.svg",
+                    "x": -4.05,
+                    "y": -3.45,
+                    "width": 783.7,
+                    "height": 457.05
+                }
+            ],
+            "markers": [
+                {
+                    "name": "doorRightSide2",
+                    "characterId": 124,
+                    "x": 718.9,
+                    "y": 174.3
+                },
+                {
+                    "name": "doorRightSide",
+                    "characterId": 135,
+                    "x": 577.65,
+                    "y": 219.05
+                }
+            ]
+        },
+        "volcano": {
+            "walkAreaCharacterId": 65,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/volcano/walkarea-1.svg",
+                    "x": -33,
+                    "y": 101.45,
+                    "width": 759.75,
+                    "height": 417
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/volcano/walkarea-2.svg",
+                    "x": -33,
+                    "y": 101.45,
+                    "width": 759.75,
+                    "height": 417
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/volcano/walkarea-3.svg",
+                    "x": -33,
+                    "y": 101.45,
+                    "width": 759.75,
+                    "height": 417
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/volcano/walkarea-4.svg",
+                    "x": -33,
+                    "y": 101.45,
+                    "width": 759.75,
+                    "height": 417
+                },
+                {
+                    "url": "/vendor/panfu-admin/room-debug/volcano/walkarea-5.svg",
+                    "x": -33,
+                    "y": 101.45,
+                    "width": 759.75,
+                    "height": 417
+                }
+            ],
+            "markers": []
+        },
+        "waleroom": {
+            "walkAreaCharacterId": 7,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/waleroom/walkarea-1.svg",
+                    "x": 70,
+                    "y": 235.95,
+                    "width": 630.5,
+                    "height": 185.9
+                }
+            ],
+            "markers": []
+        },
+        "waterfallcave": {
+            "walkAreaCharacterId": 24,
+            "walkAreaFrames": [
+                {
+                    "url": "/vendor/panfu-admin/room-debug/waterfallcave/walkarea-1.svg",
+                    "x": 4,
+                    "y": 192.35,
+                    "width": 691.3,
+                    "height": 287.6
+                }
+            ],
+            "markers": []
+        }
+    }
+}
