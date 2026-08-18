@@ -57,13 +57,13 @@ const formatDate = (value: string | null) => value
 
 <template>
     <AdminLayout :title="`Panda ${managedUser.name}`">
-        <Link href="/admin/users" class="mb-5 inline-flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-blue-700">← Wróć do użytkowników</Link>
+        <Link href="/admin/users" class="panfu-admin-back-link mb-5 inline-flex items-center gap-2 text-sm font-medium">← Wróć do użytkowników</Link>
 
-        <section class="mb-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-            <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-blue-950 px-5 py-7 text-white sm:px-7">
+        <section class="panfu-admin-user-summary mb-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <div class="panfu-admin-user-summary__hero px-5 py-7 sm:px-7">
                 <div class="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
                     <div class="flex items-center gap-4">
-                        <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-2xl font-black ring-1 ring-white/15">{{ managedUser.name.charAt(0).toUpperCase() }}</div>
+                        <div class="panfu-admin-user-summary__avatar flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl text-2xl font-black">{{ managedUser.name.charAt(0).toUpperCase() }}</div>
                         <div>
                             <div class="flex flex-wrap items-center gap-2">
                                 <h1 class="text-2xl font-bold tracking-tight">{{ managedUser.name }}</h1>
@@ -71,13 +71,13 @@ const formatDate = (value: string | null) => value
                                 <AdminBadge v-if="managedUser.goldpanda" tone="amber">Gold Panda</AdminBadge>
                                 <AdminBadge v-if="managedUser.sheriff" tone="green">Szeryf</AdminBadge>
                             </div>
-                            <p class="mt-1 text-sm text-slate-300">{{ managedUser.email }} · ID {{ managedUser.id }}</p>
+                            <p class="panfu-admin-user-summary__email mt-1 text-sm">{{ managedUser.email }} · ID {{ managedUser.id }}</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 gap-5 text-center sm:text-right">
-                        <div><div class="text-xl font-bold">{{ managedUser.socialLevel }}</div><div class="text-xs text-slate-400">Poziom</div></div>
-                        <div><div class="text-xl font-bold">{{ number(managedUser.coins) }}</div><div class="text-xs text-slate-400">Monety</div></div>
-                        <div><div class="text-xl font-bold">{{ number(managedUser.socialScore) }}</div><div class="text-xs text-slate-400">Punkty</div></div>
+                    <div class="panfu-admin-user-summary__stats grid grid-cols-3 gap-5 text-center sm:text-right">
+                        <div><div class="text-xl font-bold">{{ managedUser.socialLevel }}</div><div class="text-xs">Poziom</div></div>
+                        <div><div class="text-xl font-bold">{{ number(managedUser.coins) }}</div><div class="text-xs">Monety</div></div>
+                        <div><div class="text-xl font-bold">{{ number(managedUser.socialScore) }}</div><div class="text-xs">Punkty</div></div>
                     </div>
                 </div>
             </div>
@@ -88,18 +88,18 @@ const formatDate = (value: string | null) => value
             </div>
         </section>
 
-        <div class="mb-6 overflow-x-auto border-b border-slate-200">
-            <nav class="flex min-w-max gap-6" aria-label="Sekcje użytkownika">
+        <div class="panfu-admin-tabs mb-6 overflow-x-auto">
+            <nav class="flex min-w-max gap-1" aria-label="Sekcje użytkownika">
                 <button
                     v-for="tab in tabs"
                     :key="tab.id"
-                    class="border-b-2 px-1 pb-3 pt-1 text-sm font-semibold transition"
-                    :class="activeTab === tab.id ? 'border-blue-600 text-blue-700' : 'border-transparent text-slate-500 hover:border-slate-300 hover:text-slate-800'"
+                    class="panfu-admin-tab text-sm font-semibold transition"
+                    :class="activeTab === tab.id ? 'panfu-admin-tab--active' : ''"
                     type="button"
                     @click="activeTab = tab.id"
                 >
                     {{ tab.label }}
-                    <span v-if="tab.count !== null" class="ml-1 rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-500">{{ tab.count }}</span>
+                    <span v-if="tab.count !== null" class="panfu-admin-tab__count ml-1 rounded-full px-2 py-0.5 text-xs">{{ tab.count }}</span>
                 </button>
             </nav>
         </div>

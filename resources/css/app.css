@@ -1414,6 +1414,86 @@ body {
     border-bottom-color: rgba(0, 0, 0, 0.125);
 }
 
+.panfu-admin-back-link {
+    min-height: 36px;
+    padding: 6px 12px;
+    color: #558000;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.panfu-admin-back-link:hover {
+    color: #ffffff;
+    background: #92bd1d;
+    border-color: #92bd1d;
+}
+
+.panfu-admin-user-summary {
+    color: #212529;
+    border-color: rgba(0, 0, 0, 0.125);
+}
+
+.panfu-admin-user-summary__hero {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.panfu-admin-user-summary__avatar {
+    color: #558000;
+    background: #f1f8df;
+    border: 1px solid #c9e08e;
+}
+
+.panfu-admin-user-summary__email,
+.panfu-admin-user-summary__stats .text-xs {
+    color: #6c757d;
+}
+
+.panfu-admin-user-summary__stats {
+    color: #212529;
+}
+
+.panfu-admin-tabs {
+    padding: 8px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 8px;
+}
+
+.panfu-admin-tab {
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 12px;
+    color: #6c757d;
+    background: transparent;
+    border: 0;
+    border-radius: 8px;
+}
+
+.panfu-admin-tab:hover {
+    color: #558000;
+    background: #f1f8df;
+}
+
+.panfu-admin-tab--active,
+.panfu-admin-tab--active:hover {
+    color: #ffffff;
+    background: #92bd1d;
+}
+
+.panfu-admin-tab__count {
+    color: #6c757d;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.panfu-admin-tab--active .panfu-admin-tab__count {
+    color: #558000;
+    background: #ffffff;
+}
+
 .panfu-admin .rounded-2xl,
 .panfu-admin .rounded-xl {
     border-radius: 8px;
