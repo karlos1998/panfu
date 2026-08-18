@@ -217,8 +217,27 @@ export interface RoomElement {
 }
 
 export interface RoomHotspot {
-    element: string;
+    id: string;
     target: string;
+    type: string;
+    x: number;
+    y: number;
+    radius: number;
+    angle: number | null;
+    destination: {
+        id: string;
+        number: number;
+        label: string;
+    } | null;
+}
+
+export interface RoomTransform {
+    a: number;
+    b: number;
+    c: number;
+    d: number;
+    tx: number;
+    ty: number;
 }
 
 export interface RoomDebugFrame {
@@ -227,19 +246,12 @@ export interface RoomDebugFrame {
     y: number;
     width: number;
     height: number;
-}
-
-export interface RoomDebugMarker {
-    name: string;
-    characterId: number;
-    x: number;
-    y: number;
+    transform: RoomTransform;
 }
 
 export interface RoomDebugData {
     walkAreaCharacterId: number | null;
     walkAreaFrames: RoomDebugFrame[];
-    markers: RoomDebugMarker[];
 }
 
 export interface PublicRoomDetails extends PublicRoomSummary {

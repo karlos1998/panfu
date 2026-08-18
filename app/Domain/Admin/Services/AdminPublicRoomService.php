@@ -56,7 +56,7 @@ class AdminPublicRoomService
 
         $configPath = public_path("vendor/openpanfu/rooms/{$roomId}/conf/{$roomId}.xml");
         $config = is_file($configPath) ? simplexml_load_file($configPath) : null;
-        $debug = $this->debugManifest()[$roomId] ?? ['walkAreaCharacterId' => null, 'walkAreaFrames' => [], 'markers' => []];
+        $debug = $this->debugManifest()[$roomId] ?? ['walkAreaCharacterId' => null, 'walkAreaFrames' => []];
 
         return [
             'room' => [
@@ -188,25 +188,34 @@ class AdminPublicRoomService
         })->values()->all();
     }
 
-    /** @return array<int, array<string, string>> */
+    /** @return array<int, array<string, mixed>> */
     private function hotspots(?SimpleXMLElement $config): array
     {
-        $hotspots = [];
+        return $this->nodes($config?->module->hotspots->hotspot)
+            ->map(function (SimpleXMLElement $hotspot, int $index): array {
+                $target = (string) $hotspot['target'];
+                $type = (string) ($hotspot['type'] ?: 'action');
+                $destination = $type === 'room' && is_numeric($target)
+                    ? $this->rooms()->firstWhere('number', (int) $target)
+                    : null;
 
-        foreach ($config?->module->elements->element ?? [] as $element) {
-            foreach ($element->message as $message) {
-                if ((string) $message['value'] !== 'gotoHotSpot') {
-                    continue;
-                }
-
-                $hotspots[] = [
-                    'element' => (string) ($element['id'] ?: $element['type']),
-                    'target' => (string) $message->hotSpot['value'],
+                return [
+                    'id' => (string) ($hotspot['id'] ?: "hotspot-{$index}"),
+                    'target' => $target,
+                    'type' => $type,
+                    'x' => (int) $hotspot['x'],
+                    'y' => (int) $hotspot['y'],
+                    'radius' => (int) $hotspot['rad'],
+                    'angle' => isset($hotspot['angle']) ? (float) $hotspot['angle'] : null,
+                    'destination' => $destination === null ? null : [
+                        'id' => $destination['id'],
+                        'number' => $destination['number'],
+                        'label' => $destination['label'],
+                    ],
                 ];
-            }
-        }
-
-        return $hotspots;
+            })
+            ->values()
+            ->all();
     }
 
     /** @return array<string, mixed> */

@@ -39,7 +39,7 @@ const size = (bytes: number | null) => bytes === null ? '—' : `${(bytes / 1024
             <article><span>Plik SWF</span><strong>{{ size(room.assetSize) }}</strong><small>{{ room.assetExists ? 'dostępny' : 'brak pliku' }}</small></article>
             <article><span>Walkarea</span><strong>{{ room.debug.walkAreaFrames.length }}</strong><small>unikalnych wariantów · symbol {{ room.debug.walkAreaCharacterId ?? '—' }}</small></article>
             <article><span>Spawny</span><strong>{{ room.spawns.length }}</strong><small>z głównego config.xml</small></article>
-            <article><span>Hotspoty</span><strong>{{ room.hotspots.length }}</strong><small>przejść z konfiguracji pokoju</small></article>
+            <article><span>Hotspoty</span><strong>{{ room.hotspots.length }}</strong><small>stref z XML pokoju</small></article>
         </div>
 
         <div class="mt-4 grid gap-4 lg:grid-cols-2">
@@ -49,11 +49,19 @@ const size = (bytes: number | null) => bytes === null ? '—' : `${(bytes / 1024
                 </div>
                 <p v-else class="text-sm text-slate-500">Brak zdefiniowanych spawnów.</p>
             </AdminCard>
-            <AdminCard title="Przejścia i markery" description="Hotspoty XML oraz nazwane symbole odnalezione w SWF">
+            <AdminCard title="Hotspoty i akcje" description="Dokładne środki, promienie i cele z sekcji module.hotspots XML pokoju">
                 <div class="panfu-room-coordinate-list">
-                    <article v-for="hotspot in room.hotspots" :key="`${hotspot.element}-${hotspot.target}`"><strong>{{ hotspot.element }}</strong><code>gotoHotSpot → {{ hotspot.target }}</code></article>
-                    <article v-for="marker in room.debug.markers" :key="`${marker.name}-${marker.characterId}`"><strong>{{ marker.name }}</strong><code>x {{ marker.x }} · y {{ marker.y }}</code><span>symbol SWF #{{ marker.characterId }}</span></article>
-                    <p v-if="!room.hotspots.length && !room.debug.markers.length" class="text-sm text-slate-500">Brak rozpoznanych przejść i markerów.</p>
+                    <article v-for="hotspot in room.hotspots" :key="`${hotspot.id}-${hotspot.target}-${hotspot.x}-${hotspot.y}`">
+                        <strong>{{ hotspot.id }}</strong>
+                        <code>x {{ hotspot.x }} · y {{ hotspot.y }} · r {{ hotspot.radius }}</code>
+                        <span>
+                            {{ hotspot.type }} →
+                            <Link v-if="hotspot.destination" :href="`/admin/rooms/public/${hotspot.destination.id}`">#{{ hotspot.destination.number }} {{ hotspot.destination.label }}</Link>
+                            <template v-else>{{ hotspot.target || 'akcja lokalna' }}</template>
+                            <template v-if="hotspot.angle !== null"> · kąt {{ hotspot.angle }}°</template>
+                        </span>
+                    </article>
+                    <p v-if="!room.hotspots.length" class="text-sm text-slate-500">Brak hotspotów w konfiguracji pokoju.</p>
                 </div>
             </AdminCard>
         </div>

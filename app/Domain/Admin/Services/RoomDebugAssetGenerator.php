@@ -66,7 +66,7 @@ class RoomDebugAssetGenerator
         return $assets;
     }
 
-    /** @return array{walkAreaCharacterId: int|null, walkAreaFrames: array<int, array<string, int|float|string>>, markers: array<int, array<string, int|float|string>>} */
+    /** @return array{walkAreaCharacterId: int|null, walkAreaFrames: array<int, array<string, mixed>>} */
     private function extractRoom(
         string $roomId,
         string $swfPath,
@@ -87,7 +87,7 @@ class RoomDebugAssetGenerator
         $walkArea = $xpath->query("//item[translate(@name, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'walkarea']")->item(0);
 
         if (! $walkArea instanceof DOMElement || ! $walkArea->hasAttribute('characterId')) {
-            return ['walkAreaCharacterId' => null, 'walkAreaFrames' => [], 'markers' => []];
+            return ['walkAreaCharacterId' => null, 'walkAreaFrames' => []];
         }
 
         $characterId = (int) $walkArea->getAttribute('characterId');
@@ -118,14 +118,16 @@ class RoomDebugAssetGenerator
             $frameNumber = count($frames) + 1;
             $fileName = "walkarea-{$frameNumber}.svg";
             $this->files->put($roomOutputDirectory.'/'.$fileName, $this->colorizeWalkArea($svg));
-            $frames[] = $this->frameMetadata($svg, "/vendor/panfu-admin/room-debug/{$roomId}/{$fileName}");
+            $frames[] = [
+                ...$this->frameMetadata($svg, "/vendor/panfu-admin/room-debug/{$roomId}/{$fileName}"),
+                'transform' => $this->placementMatrix($walkArea),
+            ];
             $knownHashes[$hash] = true;
         }
 
         return [
             'walkAreaCharacterId' => $characterId,
             'walkAreaFrames' => $frames,
-            'markers' => $this->markersFrom($walkArea),
         ];
     }
 
@@ -149,42 +151,23 @@ class RoomDebugAssetGenerator
         return compact('url', 'x', 'y', 'width', 'height');
     }
 
-    /** @return array<int, array<string, int|float|string>> */
-    private function markersFrom(DOMElement $walkArea): array
+    /** @return array{a: float, b: float, c: float, d: float, tx: float, ty: float} */
+    private function placementMatrix(DOMElement $placement): array
     {
-        $markers = [];
-        $parent = $walkArea->parentNode;
+        $matrix = $placement->getElementsByTagName('matrix')->item(0);
 
-        if ($parent === null) {
-            return $markers;
+        if (! $matrix instanceof DOMElement) {
+            return ['a' => 1.0, 'b' => 0.0, 'c' => 0.0, 'd' => 1.0, 'tx' => 0.0, 'ty' => 0.0];
         }
 
-        foreach ($parent->childNodes as $node) {
-            if (! $node instanceof DOMElement || ! $node->hasAttribute('name')) {
-                continue;
-            }
-
-            $name = $node->getAttribute('name');
-
-            if (! preg_match('/door|hot.?spot|collision|level|area/i', $name) || strcasecmp($name, 'walkarea') === 0) {
-                continue;
-            }
-
-            $matrix = $node->getElementsByTagName('matrix')->item(0);
-
-            if (! $matrix instanceof DOMElement) {
-                continue;
-            }
-
-            $markers[] = [
-                'name' => $name,
-                'characterId' => (int) $node->getAttribute('characterId'),
-                'x' => round(((float) $matrix->getAttribute('translateX')) / 20, 2),
-                'y' => round(((float) $matrix->getAttribute('translateY')) / 20, 2),
-            ];
-        }
-
-        return $markers;
+        return [
+            'a' => $matrix->hasAttribute('scaleX') ? (float) $matrix->getAttribute('scaleX') : 1.0,
+            'b' => $matrix->hasAttribute('rotateSkew1') ? (float) $matrix->getAttribute('rotateSkew1') : 0.0,
+            'c' => $matrix->hasAttribute('rotateSkew0') ? (float) $matrix->getAttribute('rotateSkew0') : 0.0,
+            'd' => $matrix->hasAttribute('scaleY') ? (float) $matrix->getAttribute('scaleY') : 1.0,
+            'tx' => round(((float) $matrix->getAttribute('translateX')) / 20, 4),
+            'ty' => round(((float) $matrix->getAttribute('translateY')) / 20, 4),
+        ];
     }
 
     private function colorizeWalkArea(string $svg): string
