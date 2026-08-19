@@ -14,7 +14,6 @@ use App\Http\Controllers\Admin\UserSessionController as AdminUserSessionControll
 use App\Http\Controllers\Blog\BlogCommentController;
 use App\Http\Controllers\Blog\BlogController;
 use App\Http\Controllers\Panfu\HomeController;
-use App\Http\Controllers\Panfu\InformationServerProxyController;
 use App\Http\Controllers\Panfu\LocaleController;
 use App\Http\Controllers\Panfu\PlayController;
 use App\Http\Controllers\Panfu\ShopController;
@@ -39,10 +38,6 @@ Route::get('/dashboard', function () {
 Route::get('/play', PlayController::class)->middleware(['auth', 'verified'])->name('play');
 
 Route::get('/api/shop', ShopController::class)->middleware(['auth', 'verified'])->name('panfu.shop');
-
-Route::match(['get', 'post'], '/InformationServer/{path?}', InformationServerProxyController::class)
-    ->where('path', '.*')
-    ->name('panfu.information-server');
 
 Route::middleware('auth')->group(function () {
     Route::redirect('/profile', '/account/settings')->name('profile.edit');
