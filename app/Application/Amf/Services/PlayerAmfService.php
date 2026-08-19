@@ -12,6 +12,7 @@ use App\Domain\Player\PlayerStateService;
 use App\Domain\Social\SocialService;
 use App\Infrastructure\Amf\TypedObject;
 use App\Models\User;
+use Illuminate\Support\Facades\RateLimiter;
 
 final class PlayerAmfService
 {
@@ -125,6 +126,7 @@ final class PlayerAmfService
             return $this->responses->make(1);
         }
 
+        $playerIds = array_slice(array_values(array_unique(array_map('intval', $playerIds))), 0, 100);
         $players = User::query()->whereKey($playerIds)->get()->keyBy(
             fn (User $player): int => (int) $player->getKey(),
         );
@@ -187,11 +189,20 @@ final class PlayerAmfService
     public function updateScore(int $score): TypedObject
     {
         $player = $this->player();
-        if ($player !== null) {
-            $player->forceFill(['coins' => $score])->save();
+        if ($player === null) {
+            return $this->responses->make(1);
         }
 
-        return $this->responses->make();
+        $limiterKey = 'amf-coin-update:'.$player->getKey();
+        $limit = max(1, (int) config('panfu.amf.coin_updates_per_minute', 10));
+        if (RateLimiter::tooManyAttempts($limiterKey, $limit)) {
+            return $this->responses->make(1, 'Coin balance update rejected.');
+        }
+        RateLimiter::hit($limiterKey, 60);
+
+        return $this->players->updateCoinBalance($player, $score)
+            ? $this->responses->make()
+            : $this->responses->make(1, 'Coin balance update rejected.');
     }
 
     private function player(): ?User

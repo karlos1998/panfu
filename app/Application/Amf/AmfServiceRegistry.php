@@ -15,23 +15,55 @@ use App\Application\Amf\Services\RegistrationAmfService;
 use App\Application\Amf\Services\SocialHighscoreAmfService;
 use App\Infrastructure\Amf\AmfException;
 use Illuminate\Contracts\Container\Container;
-use ReflectionMethod;
 
 final class AmfServiceRegistry
 {
-    /** @var array<string, class-string> */
+    /** @var array<string, array{class:class-string,methods:list<string>}> */
     private const SERVICES = [
-        'amfActionService' => ActionAmfService::class,
-        'amfBuddyFilterService' => BuddyFilterAmfService::class,
-        'amfBuddyListService' => BuddyListAmfService::class,
-        'amfConnectionService' => ConnectionAmfService::class,
-        'amfGameService' => GameAmfService::class,
-        'amfLanguageService' => LanguageAmfService::class,
-        'amfPetService' => PetAmfService::class,
-        'amfPlayerService' => PlayerAmfService::class,
-        'amfProfileService' => ProfileAmfService::class,
-        'amfRegistrationService' => RegistrationAmfService::class,
-        'amfSocialHighscoreService' => SocialHighscoreAmfService::class,
+        'amfActionService' => [
+            'class' => ActionAmfService::class,
+            'methods' => ['getLastDoneActionToday', 'performAction'],
+        ],
+        'amfBuddyFilterService' => [
+            'class' => BuddyFilterAmfService::class,
+            'methods' => ['listFilteredBuddies'],
+        ],
+        'amfBuddyListService' => [
+            'class' => BuddyListAmfService::class,
+            'methods' => ['getCompleteBuddyList'],
+        ],
+        'amfConnectionService' => [
+            'class' => ConnectionAmfService::class,
+            'methods' => ['doLogin', 'doLoginSession', 'doRegister', 'setEmailAddress', 'checkUserName', 'checkEmailAddress', 'ping'],
+        ],
+        'amfGameService' => [
+            'class' => GameAmfService::class,
+            'methods' => ['setHighScore', 'finishMinigame', 'getHighScoreLists'],
+        ],
+        'amfLanguageService' => [
+            'class' => LanguageAmfService::class,
+            'methods' => ['getSecureChatSnippets'],
+        ],
+        'amfPetService' => [
+            'class' => PetAmfService::class,
+            'methods' => ['buyPet', 'switchPet', 'updatePetState', 'removePet', 'feed', 'increaseHealth', 'getGameServer'],
+        ],
+        'amfPlayerService' => [
+            'class' => PlayerAmfService::class,
+            'methods' => ['getStates', 'setState', 'updateTourFinished', 'addToBuddylist', 'purchaseItem', 'updateItems', 'removeItems', 'getPlayerInfoList', 'getPlayerCard', 'lockHome', 'getPlayerHome', 'updateFurnitures', 'updateScore'],
+        ],
+        'amfProfileService' => [
+            'class' => ProfileAmfService::class,
+            'methods' => ['getProfile'],
+        ],
+        'amfRegistrationService' => [
+            'class' => RegistrationAmfService::class,
+            'methods' => ['checkUserName', 'loadUsernameSuggestions', 'checkEmailAddress', 'register'],
+        ],
+        'amfSocialHighscoreService' => [
+            'class' => SocialHighscoreAmfService::class,
+            'methods' => ['getSocialHighscore'],
+        ],
     ];
 
     public function __construct(private readonly Container $container) {}
@@ -39,25 +71,17 @@ final class AmfServiceRegistry
     /** @param list<mixed> $parameters */
     public function call(string $target, array $parameters): mixed
     {
-        $parts = preg_split('~[./]~', $target) ?: [];
-        $method = array_pop($parts);
-        $serviceName = array_pop($parts);
-        $class = is_string($serviceName) ? self::SERVICES[$serviceName] ?? null : null;
-
-        if ($class === null || ! is_string($method) || str_starts_with($method, '__')) {
+        if (! preg_match('/^(?<service>[A-Za-z][A-Za-z0-9_]*)[.\/](?<method>[A-Za-z][A-Za-z0-9_]*)$/D', $target, $matches)) {
             throw new AmfException("Unknown AMF target: {$target}");
         }
 
-        $service = $this->container->make($class);
-        if (! method_exists($service, $method)) {
+        $definition = self::SERVICES[$matches['service']] ?? null;
+        if ($definition === null || ! in_array($matches['method'], $definition['methods'], true)) {
             throw new AmfException("Unknown AMF method: {$target}");
         }
 
-        $reflection = new ReflectionMethod($service, $method);
-        if (! $reflection->isPublic()) {
-            throw new AmfException("AMF method is not public: {$target}");
-        }
+        $service = $this->container->make($definition['class']);
 
-        return $service->{$method}(...$parameters);
+        return $service->{$matches['method']}(...$parameters);
     }
 }

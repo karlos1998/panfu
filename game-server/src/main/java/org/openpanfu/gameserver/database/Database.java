@@ -37,6 +37,8 @@ public class Database {
 			config.addDataSourceProperty("tcpKeepAlive", true);
 			config.addDataSourceProperty("maxReconnects", 6);
 			config.addDataSourceProperty("useSSL", "false");
+			config.addDataSourceProperty("allowPublicKeyRetrieval",
+					Boolean.parseBoolean(properties.getProperty("database.allowPublicKeyRetrieval", "false")));
 		} catch (Exception e) {
 			Logger.error("There was an error initializing the database connection.");
 			e.printStackTrace();

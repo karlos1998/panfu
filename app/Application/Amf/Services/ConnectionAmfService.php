@@ -2,6 +2,7 @@
 
 namespace App\Application\Amf\Services;
 
+use App\Application\Amf\AmfAuthenticationThrottle;
 use App\Application\Amf\AmfResponseFactory;
 use App\Application\Amf\PlayerSession;
 use App\Application\Amf\ValueObjectFactory;
@@ -22,6 +23,7 @@ final class ConnectionAmfService
         private readonly PetService $pets,
         private readonly GameServerService $servers,
         private readonly GameServerClient $gameServer,
+        private readonly AmfAuthenticationThrottle $authenticationThrottle,
     ) {}
 
     public function doLogin(mixed $login): TypedObject
@@ -33,20 +35,36 @@ final class ConnectionAmfService
             return $this->responses->make(1);
         }
 
-        $player = $this->players->authenticate(
-            (string) $login->get('playerName', ''),
-            (string) $login->get('pw', ''),
-        );
+        $name = (string) $login->get('playerName', '');
+        if ($this->authenticationThrottle->blocked($name)) {
+            return $this->responses->make(1, 'Too many login attempts.');
+        }
 
-        return $player === null ? $this->responses->make(1) : $this->loggedIn($player);
+        $player = $this->players->authenticate($name, (string) $login->get('pw', ''));
+        if ($player === null) {
+            $this->authenticationThrottle->failed($name);
+
+            return $this->responses->make(1);
+        }
+        $this->authenticationThrottle->succeeded($name);
+
+        return $this->loggedIn($player);
     }
 
     public function doLoginSession(string|int $ticket): TypedObject
     {
-        $player = $this->players->authenticateTicket((string) $ticket);
+        $ticket = (string) $ticket;
+        if ($this->authenticationThrottle->blocked($ticket)) {
+            return $this->responses->make(1, 'Too many login attempts.');
+        }
+
+        $player = $this->players->authenticateTicket($ticket);
         if ($player === null) {
+            $this->authenticationThrottle->failed($ticket);
+
             return $this->responses->make(1);
         }
+        $this->authenticationThrottle->succeeded($ticket);
 
         $this->gameServer->send('testConnection');
 
@@ -55,6 +73,11 @@ final class ConnectionAmfService
 
     public function doRegister(mixed $data): TypedObject
     {
+        if ($this->authenticationThrottle->registrationBlocked()) {
+            return $this->responses->make(1, 'Too many registration attempts.');
+        }
+        $this->authenticationThrottle->registrationAttempted();
+
         return $data instanceof TypedObject && $this->players->register($data) !== null
             ? $this->responses->make()
             : $this->responses->make(1);

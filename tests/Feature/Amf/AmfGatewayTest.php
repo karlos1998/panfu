@@ -18,6 +18,8 @@ class AmfGatewayTest extends TestCase
 {
     use RefreshDatabase;
 
+    private const WEB_TICKET = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+
     /** @var list<array{command:string,parameters:list<int|string>}> */
     private array $gameServerCommands = [];
 
@@ -64,13 +66,13 @@ class AmfGatewayTest extends TestCase
     {
         $player = User::factory()->create([
             'name' => 'Panda',
-            'ticket_id' => 'web-session-ticket',
+            'ticket_id' => self::WEB_TICKET,
             'coins' => 1250,
             'social_level' => 4,
             'social_score' => 25,
         ]);
 
-        $login = $this->amf('amfConnectionService.doLoginSession', ['web-session-ticket']);
+        $login = $this->amf('amfConnectionService.doLoginSession', [self::WEB_TICKET]);
         $this->assertSame(0, $login->get('statusCode'));
         $result = $login->get('valueObject');
         $this->assertInstanceOf(TypedObject::class, $result);
@@ -166,16 +168,87 @@ class AmfGatewayTest extends TestCase
         $this->assertNotEmpty($chat->get('valueObject')->get('children'));
     }
 
+    public function test_every_legacy_amf_method_is_reachable_with_compatible_arguments(): void
+    {
+        $player = User::factory()->create([
+            'name' => 'ContractPanda',
+            'password' => 'contract-password',
+            'coins' => 20_000,
+            'goldpanda' => 1,
+            'social_level' => 30,
+            'social_score' => 0,
+        ]);
+        $buddy = User::factory()->create(['name' => 'ContractBuddy']);
+        $login = new TypedObject('com.pandaland.mvc.model.vo.LoginVO', [
+            'playerName' => 'ContractPanda',
+            'pw' => 'contract-password',
+        ]);
+        $this->amf('amfConnectionService.doLogin', [$login]);
+
+        $this->amf('amfActionService.getLastDoneActionToday', [$player->id, 'other', 0]);
+        $this->amf('amfActionService.performAction', [$player->id, 'other']);
+        $this->amf('amfBuddyFilterService.listFilteredBuddies');
+        $this->amf('amfBuddyListService.getCompleteBuddyList', [$player->id]);
+
+        $register = new TypedObject('com.pandaland.mvc.model.vo.RegisterVO', [
+            'name' => 'ContractNewPanda',
+            'pw' => 'contract-password',
+            'emailParents' => 'contract-parent@example.com',
+            'sex' => 'boy',
+        ]);
+        $this->amf('amfConnectionService.doRegister', [$register]);
+        $this->amf('amfConnectionService.setEmailAddress', [$player->id, 'new@example.com', true]);
+        $this->amf('amfConnectionService.checkUserName', ['ContractAvailable']);
+        $this->amf('amfConnectionService.checkEmailAddress', ['parent@example.com']);
+        $this->amf('amfConnectionService.ping');
+
+        $this->amf('amfGameService.setHighScore', [4, 100]);
+        $this->amf('amfGameService.finishMinigame', [4, 200]);
+        $this->amf('amfGameService.getHighScoreLists', [4]);
+        $this->amf('amfLanguageService.getSecureChatSnippets', ['PL', 'all']);
+
+        $pet = $this->amf('amfPetService.buyPet', [9, 'ContractPet'])->get('valueObject');
+        $this->amf('amfPetService.switchPet', [$pet->id]);
+        $this->amf('amfPetService.updatePetState', [$pet->id, 'playing']);
+        $this->amf('amfPetService.feed', [$pet->id]);
+        $player->pokoPets()->whereKey($pet->id)->update(['health' => 4]);
+        $this->amf('amfPetService.increaseHealth');
+        $this->amf('amfPetService.getGameServer');
+
+        $this->amf('amfPlayerService.getStates', [[1]]);
+        $this->amf('amfPlayerService.setState', [1, 2, 3]);
+        $this->amf('amfPlayerService.updateTourFinished', [true]);
+        $this->amf('amfPlayerService.addToBuddylist', [$buddy->id]);
+        $this->amf('amfPlayerService.purchaseItem', [100, 'unused']);
+        $this->amf('amfPlayerService.updateItems', [[], []]);
+        $this->amf('amfPlayerService.removeItems', [[]]);
+        $this->amf('amfPlayerService.getPlayerInfoList', [[$player->id, $buddy->id], false]);
+        $this->amf('amfPlayerService.getPlayerCard', [$buddy->id]);
+        $this->amf('amfPlayerService.lockHome', [false]);
+        $this->amf('amfPlayerService.getPlayerHome', [$player->id]);
+        $this->amf('amfPlayerService.updateFurnitures', [[]]);
+        $this->amf('amfPlayerService.updateScore', [$player->refresh()->coins]);
+
+        $this->amf('amfProfileService.getProfile', [$player->id, true]);
+        $this->amf('amfRegistrationService.checkUserName', ['AnotherAvailable']);
+        $this->amf('amfRegistrationService.loadUsernameSuggestions', ['Suggestion']);
+        $this->amf('amfRegistrationService.checkEmailAddress', ['parent@example.com']);
+        $this->amf('amfSocialHighscoreService.getSocialHighscore', [$player->id, $buddy->id]);
+        $this->amf('amfPetService.removePet', [$pet->id]);
+
+        $this->assertDatabaseMissing('pokopets', ['id' => $pet->id]);
+    }
+
     /** @param array<string, mixed> $attributes */
     private function loginPlayer(array $attributes = []): User
     {
         $player = User::factory()->create(array_replace([
-            'ticket_id' => 'web-session-ticket',
+            'ticket_id' => self::WEB_TICKET,
             'coins' => 1000,
             'social_level' => 1,
             'social_score' => 0,
         ], $attributes));
-        $this->amf('amfConnectionService.doLoginSession', ['web-session-ticket']);
+        $this->amf('amfConnectionService.doLoginSession', [self::WEB_TICKET]);
 
         return $player;
     }

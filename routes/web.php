@@ -41,7 +41,8 @@ Route::get('/play', PlayController::class)->middleware(['auth', 'verified'])->na
 Route::get('/api/shop', ShopController::class)->middleware(['auth', 'verified'])->name('panfu.shop');
 
 Route::post('/InformationServer/{path?}', AmfGatewayController::class)
-    ->where('path', '.*')
+    ->where('path', 'gateway/amf/?')
+    ->middleware('throttle:amf')
     ->name('amf.gateway');
 
 Route::middleware('auth')->group(function () {

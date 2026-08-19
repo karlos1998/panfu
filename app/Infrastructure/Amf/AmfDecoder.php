@@ -12,6 +12,14 @@ final class AmfDecoder
 
     private int $bodyEncoding = 0;
 
+    private int $depth = 0;
+
+    private int $maxDepth = 64;
+
+    private int $maxEntries = 10_000;
+
+    private int $maxStringBytes = 262_144;
+
     /** @var list<string> */
     private array $strings = [];
 
@@ -26,9 +34,18 @@ final class AmfDecoder
 
     public function decode(string $input): AmfEnvelope
     {
+        $maxPayloadBytes = $this->setting('max_payload_bytes', 1_048_576);
+        if (strlen($input) > $maxPayloadBytes) {
+            throw new AmfException('AMF payload exceeds the configured size limit.');
+        }
+
         $this->input = $input;
         $this->offset = 0;
         $this->bodyEncoding = 0;
+        $this->depth = 0;
+        $this->maxDepth = max(1, $this->setting('max_depth', 64));
+        $this->maxEntries = max(1, $this->setting('max_collection_entries', 10_000));
+        $this->maxStringBytes = max(1, $this->setting('max_string_bytes', 262_144));
 
         $version = $this->readUnsignedShort();
         if (! in_array($version, [0, 3], true)) {
@@ -36,6 +53,9 @@ final class AmfDecoder
         }
 
         $headerCount = $this->readUnsignedShort();
+        if ($headerCount > max(0, $this->setting('max_headers', 16))) {
+            throw new AmfException('AMF envelope contains too many headers.');
+        }
         for ($index = 0; $index < $headerCount; $index++) {
             $this->resetReferences();
             $this->readUtf();
@@ -46,6 +66,9 @@ final class AmfDecoder
 
         $messages = [];
         $messageCount = $this->readUnsignedShort();
+        if ($messageCount > max(1, $this->setting('max_messages', 32))) {
+            throw new AmfException('AMF envelope contains too many messages.');
+        }
         for ($index = 0; $index < $messageCount; $index++) {
             $this->resetReferences();
             $target = $this->readUtf();
@@ -53,6 +76,10 @@ final class AmfDecoder
             $this->readUnsignedLong();
             $data = $this->readAmf0Value($this->readByte());
             $messages[] = new AmfMessage($target, $response, $data);
+        }
+
+        if ($this->offset !== strlen($this->input)) {
+            throw new AmfException("Unexpected trailing AMF data at byte {$this->offset}");
         }
 
         return new AmfEnvelope($version === 3 || $this->bodyEncoding === 3 ? 3 : 0, $messages);
@@ -68,7 +95,7 @@ final class AmfDecoder
 
     private function readAmf0Value(int $marker): mixed
     {
-        return match ($marker) {
+        return $this->withinDepth(fn (): mixed => match ($marker) {
             0x00 => $this->readDouble(),
             0x01 => $this->readByte() !== 0,
             0x02 => $this->readUtf(),
@@ -84,7 +111,7 @@ final class AmfDecoder
             0x10 => $this->readAmf0TypedObject(),
             0x11 => $this->readEmbeddedAmf3Value(),
             default => throw new AmfException(sprintf('Unsupported AMF0 marker 0x%02X at byte %d', $marker, $this->offset - 1)),
-        };
+        });
     }
 
     private function readEmbeddedAmf3Value(): mixed
@@ -117,6 +144,7 @@ final class AmfDecoder
             if ($name === '' && $marker === 0x09) {
                 break;
             }
+            $this->guardNextEntry(count($properties));
             $properties[$name] = $this->readAmf0Value($marker);
         }
 
@@ -134,13 +162,18 @@ final class AmfDecoder
     private function readAmf0MixedArray(): array
     {
         $this->readUnsignedLong();
-        $properties = $this->readAmf0Properties();
         $result = [];
+        $this->amf0Objects[] = &$result;
 
-        foreach ($properties as $key => $value) {
-            $result[ctype_digit($key) ? (int) $key : $key] = $value;
+        while (true) {
+            $key = $this->readUtf();
+            $marker = $this->readByte();
+            if ($key === '' && $marker === 0x09) {
+                break;
+            }
+            $this->guardNextEntry(count($result));
+            $result[ctype_digit($key) ? (int) $key : $key] = $this->readAmf0Value($marker);
         }
-        $this->amf0Objects[] = $result;
 
         return $result;
     }
@@ -149,6 +182,7 @@ final class AmfDecoder
     private function readAmf0Array(): array
     {
         $length = $this->readUnsignedLong();
+        $this->guardEntryCount($length);
         $result = [];
         $this->amf0Objects[] = &$result;
 
@@ -181,23 +215,25 @@ final class AmfDecoder
 
     private function readAmf3Value(): mixed
     {
-        $marker = $this->readByte();
+        return $this->withinDepth(function (): mixed {
+            $marker = $this->readByte();
 
-        return match ($marker) {
-            0x00 => UndefinedValue::instance(),
-            0x01 => null,
-            0x02 => false,
-            0x03 => true,
-            0x04 => $this->readAmf3Integer(),
-            0x05 => $this->readDouble(),
-            0x06 => $this->readAmf3String(),
-            0x07, 0x0B, 0x0C => $this->readAmf3Blob(),
-            0x08 => $this->readAmf3Date(),
-            0x09 => $this->readAmf3Array(),
-            0x0A => $this->readAmf3Object(),
-            0x0D, 0x0E, 0x0F, 0x10 => $this->readAmf3Vector($marker),
-            default => throw new AmfException(sprintf('Unsupported AMF3 marker 0x%02X at byte %d', $marker, $this->offset - 1)),
-        };
+            return match ($marker) {
+                0x00 => UndefinedValue::instance(),
+                0x01 => null,
+                0x02 => false,
+                0x03 => true,
+                0x04 => $this->readAmf3Integer(),
+                0x05 => $this->readDouble(),
+                0x06 => $this->readAmf3String(),
+                0x07, 0x0B, 0x0C => $this->readAmf3Blob(),
+                0x08 => $this->readAmf3Date(),
+                0x09 => $this->readAmf3Array(),
+                0x0A => $this->readAmf3Object(),
+                0x0D, 0x0E, 0x0F, 0x10 => $this->readAmf3Vector($marker),
+                default => throw new AmfException(sprintf('Unsupported AMF3 marker 0x%02X at byte %d', $marker, $this->offset - 1)),
+            };
+        });
     }
 
     private function readAmf3Integer(): int
@@ -217,6 +253,7 @@ final class AmfDecoder
         }
 
         $length = $handle >> 1;
+        $this->guardStringLength($length);
         if ($length === 0) {
             return '';
         }
@@ -236,7 +273,9 @@ final class AmfDecoder
             return $this->objects[$index] ?? throw new AmfException("Invalid AMF3 object reference: {$index}");
         }
 
-        $value = $this->readBytes($handle >> 1);
+        $length = $handle >> 1;
+        $this->guardStringLength($length);
+        $value = $this->readBytes($length);
         $this->objects[] = $value;
 
         return $value;
@@ -268,10 +307,12 @@ final class AmfDecoder
         }
 
         $denseLength = $handle >> 1;
+        $this->guardEntryCount($denseLength);
         $result = [];
         $this->objects[] = &$result;
 
         while (($key = $this->readAmf3String()) !== '') {
+            $this->guardNextEntry(count($result));
             $result[$key] = $this->readAmf3Value();
         }
         for ($index = 0; $index < $denseLength; $index++) {
@@ -298,6 +339,7 @@ final class AmfDecoder
             $traitsHandle >>= 1;
             $dynamic = ($traitsHandle & 1) !== 0;
             $memberCount = $traitsHandle >> 1;
+            $this->guardEntryCount($memberCount);
             $members = [];
             for ($index = 0; $index < $memberCount; $index++) {
                 $members[] = $this->readAmf3String();
@@ -310,8 +352,10 @@ final class AmfDecoder
         }
 
         if ($traits['externalizable'] && in_array($traits['type'], ['flex.messaging.io.ArrayCollection', 'flex.messaging.io.ObjectProxy'], true)) {
+            $referenceIndex = count($this->objects);
+            $this->objects[] = null;
             $value = $this->readAmf3Value();
-            $this->objects[] = $value;
+            $this->objects[$referenceIndex] = $value;
 
             return $value;
         }
@@ -335,7 +379,9 @@ final class AmfDecoder
             $object instanceof TypedObject ? $object->set($member, $value) : $object->{$member} = $value;
         }
         if ($traits['dynamic']) {
+            $dynamicMembers = 0;
             while (($member = $this->readAmf3String()) !== '') {
+                $this->guardNextEntry($dynamicMembers++);
                 $value = $this->readAmf3Value();
                 $object instanceof TypedObject ? $object->set($member, $value) : $object->{$member} = $value;
             }
@@ -355,6 +401,7 @@ final class AmfDecoder
         }
 
         $length = $handle >> 1;
+        $this->guardEntryCount($length);
         $this->readByte();
         if ($marker === 0x10) {
             $this->readAmf3String();
@@ -364,7 +411,7 @@ final class AmfDecoder
         $this->objects[] = &$result;
         for ($index = 0; $index < $length; $index++) {
             $result[] = match ($marker) {
-                0x0D => unpack('N', $this->readBytes(4))[1],
+                0x0D => $this->readSignedLong(),
                 0x0E => unpack('N', $this->readBytes(4))[1],
                 0x0F => $this->readDouble(),
                 default => $this->readAmf3Value(),
@@ -395,12 +442,18 @@ final class AmfDecoder
 
     private function readUtf(): string
     {
-        return $this->readBytes($this->readUnsignedShort());
+        $length = $this->readUnsignedShort();
+        $this->guardStringLength($length);
+
+        return $this->readBytes($length);
     }
 
     private function readLongUtf(): string
     {
-        return $this->readBytes($this->readUnsignedLong());
+        $length = $this->readUnsignedLong();
+        $this->guardStringLength($length);
+
+        return $this->readBytes($length);
     }
 
     private function readUnsignedShort(): int
@@ -411,6 +464,13 @@ final class AmfDecoder
     private function readUnsignedLong(): int
     {
         return unpack('N', $this->readBytes(4))[1];
+    }
+
+    private function readSignedLong(): int
+    {
+        $value = $this->readUnsignedLong();
+
+        return $value >= 0x80000000 ? $value - 0x100000000 : $value;
     }
 
     private function readByte(): int
@@ -428,5 +488,51 @@ final class AmfDecoder
         $this->offset += $length;
 
         return $value;
+    }
+
+    private function guardEntryCount(int $count): void
+    {
+        if ($count > $this->maxEntries) {
+            throw new AmfException('AMF collection exceeds the configured entry limit.');
+        }
+    }
+
+    private function guardNextEntry(int $currentCount): void
+    {
+        if ($currentCount >= $this->maxEntries) {
+            throw new AmfException('AMF collection exceeds the configured entry limit.');
+        }
+    }
+
+    private function guardStringLength(int $length): void
+    {
+        if ($length > $this->maxStringBytes) {
+            throw new AmfException('AMF string exceeds the configured size limit.');
+        }
+    }
+
+    private function withinDepth(callable $reader): mixed
+    {
+        $this->depth++;
+        if ($this->depth > $this->maxDepth) {
+            $this->depth--;
+
+            throw new AmfException('AMF value exceeds the configured nesting limit.');
+        }
+
+        try {
+            return $reader();
+        } finally {
+            $this->depth--;
+        }
+    }
+
+    private function setting(string $name, int $default): int
+    {
+        if (! app()->bound('config')) {
+            return $default;
+        }
+
+        return (int) config("panfu.amf.{$name}", $default);
     }
 }

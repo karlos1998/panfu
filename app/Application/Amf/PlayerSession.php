@@ -13,6 +13,7 @@ final class PlayerSession
 
     public function login(User $player): void
     {
+        $this->session->migrate(true);
         $this->session->put(self::PLAYER_KEY, $player->getKey());
     }
 

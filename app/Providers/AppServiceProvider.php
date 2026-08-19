@@ -16,6 +16,9 @@ use App\Infrastructure\Panfu\Repositories\DatabasePlayerRepository;
 use App\Infrastructure\Panfu\Repositories\JsonShopRepository;
 use App\Infrastructure\Panfu\Repositories\StaticFlashClientRepository;
 use App\Infrastructure\Panfu\Repositories\StaticLandingPageRepository;
+use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
 
@@ -40,6 +43,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        RateLimiter::for('amf', fn (Request $request): Limit => Limit::perMinute(
+            max(1, (int) config('panfu.amf.requests_per_minute', 240)),
+        )->by($request->ip()));
+
         Vite::prefetch(concurrency: 3);
     }
 }

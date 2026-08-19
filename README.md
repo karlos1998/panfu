@@ -90,6 +90,22 @@ DB_USERNAME=sail
 DB_PASSWORD=password
 ```
 
+## Bezpieczeństwo bramy AMF
+
+- Endpoint przyjmuje wyłącznie `POST` z `Content-Type: application/x-amf` pod
+  `/InformationServer/` lub `/InformationServer/gateway/amf`.
+- Rozmiar, liczba wiadomości, liczba elementów i głębokość zagnieżdżenia AMF są
+  ograniczone. Limity można dostroić zmiennymi `PANFU_AMF_*` z `.env.example`.
+- Dostępne usługi i metody są wpisane na jawną allowlistę. Błędy nie ujawniają
+  klientowi treści wyjątków ani szczegółów implementacji.
+- Logowanie, rejestracja i cały endpoint mają osobne limity częstotliwości.
+- Porty Dockera są domyślnie publikowane tylko na `127.0.0.1`. Zmiana
+  `FORWARD_HOST` na `0.0.0.0` udostępnia je w sieci i powinna być świadomą decyzją.
+- W środowisku publicznym używaj HTTPS, mocnych wartości `APP_KEY`,
+  `DB_PASSWORD` i `PANFU_GAME_SERVER_SECRET_KEY` oraz trwałego współdzielonego
+  cache (np. Redis) dla limiterów. Ten plik Compose jest przeznaczony do pracy
+  lokalnej, a nie do bezpośredniego wystawiania w internecie.
+
 ## Przydatne komendy
 
 Start:

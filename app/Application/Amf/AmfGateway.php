@@ -5,6 +5,7 @@ namespace App\Application\Amf;
 use App\Infrastructure\Amf\AmfDecoder;
 use App\Infrastructure\Amf\AmfEncoder;
 use App\Infrastructure\Amf\AmfEnvelope;
+use App\Infrastructure\Amf\AmfException;
 use App\Infrastructure\Amf\AmfMessage;
 use stdClass;
 use Throwable;
@@ -28,10 +29,12 @@ final class AmfGateway
                 $data = $this->services->call($message->target, $parameters);
                 $responses[] = new AmfMessage($message->response.'/onResult', 'null', $data);
             } catch (Throwable $exception) {
-                report($exception);
+                if (! $exception instanceof AmfException) {
+                    report($exception);
+                }
                 $fault = new stdClass;
-                $fault->faultCode = $exception->getCode();
-                $fault->faultString = $exception->getMessage();
+                $fault->faultCode = 'Client.Request';
+                $fault->faultString = 'The AMF request could not be processed.';
                 $fault->faultDetail = '';
                 $responses[] = new AmfMessage($message->response.'/onStatus', 'null', $fault);
             }

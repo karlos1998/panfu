@@ -8,6 +8,7 @@ use App\Domain\Pets\PetService;
 use App\Domain\Social\SocialService;
 use App\Infrastructure\Amf\TypedObject;
 use App\Models\User;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Throwable;
 
@@ -32,7 +33,11 @@ final class PlayerService
 
     public function authenticateTicket(string $ticket): ?User
     {
-        if (strlen($ticket) < 5) {
+        $isWebTicket = strlen($ticket) === 64 && ctype_xdigit($ticket);
+        $isGameTicket = ctype_digit($ticket)
+            && (int) $ticket >= 100_000_000
+            && (int) $ticket <= 2_147_483_647;
+        if (! $isWebTicket && ! $isGameTicket) {
             return null;
         }
 
@@ -41,7 +46,10 @@ final class PlayerService
 
     public function issueGameTicket(User $player): int
     {
-        $ticket = random_int(100000000, 2147483647);
+        do {
+            $ticket = random_int(100_000_000, 2_147_483_647);
+        } while (User::query()->where('ticket_id', (string) $ticket)->whereKeyNot($player->getKey())->exists());
+
         $player->forceFill(['ticket_id' => (string) $ticket])->save();
 
         return $ticket;
@@ -66,7 +74,14 @@ final class PlayerService
 
         $name = (string) $data->get('name', '');
         $email = (string) $data->get('emailParents', '');
-        if (! $this->nameAvailable($name) || ! filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $password = (string) $data->get('pw', '');
+        if (
+            ! $this->nameAvailable($name)
+            || strlen($email) > 254
+            || ! filter_var($email, FILTER_VALIDATE_EMAIL)
+            || strlen($password) < 8
+            || strlen($password) > 72
+        ) {
             return null;
         }
 
@@ -74,7 +89,7 @@ final class PlayerService
             return User::query()->create([
                 'name' => $name,
                 'email' => $email,
-                'password' => (string) $data->get('pw', ''),
+                'password' => $password,
                 'sex' => in_array($data->get('sex'), ['girl', 'FEMALE'], true),
             ]);
         } catch (Throwable) {
@@ -123,8 +138,35 @@ final class PlayerService
             'buddies' => $this->social->smallFriendsFor($player),
             'pokoPets' => $this->pets->forPlayer($player),
             'pokoPetsWithNoHealth' => $this->pets->withoutHealth($player),
-            'daysOnPanfu' => (int) round($player->created_at->diffInSeconds(now()) / 86400),
+            'daysOnPanfu' => $player->created_at === null
+                ? 0
+                : (int) round($player->created_at->diffInSeconds(now()) / 86400),
         ]);
+    }
+
+    public function updateCoinBalance(User $player, int $balance): bool
+    {
+        $maximum = max(0, (int) config('panfu.player.max_coin_balance', 2_000_000_000));
+        $maximumDelta = max(0, (int) config('panfu.player.max_coin_update_delta', 10_000));
+        if ($balance < 0 || $balance > $maximum) {
+            return false;
+        }
+
+        return DB::transaction(function () use ($player, $balance, $maximumDelta): bool {
+            $lockedPlayer = User::query()->lockForUpdate()->find($player->getKey());
+            if ($lockedPlayer === null) {
+                return false;
+            }
+
+            $current = (int) ($lockedPlayer->coins ?? 0);
+            if ($balance < $current || $balance - $current > $maximumDelta) {
+                return false;
+            }
+
+            $lockedPlayer->forceFill(['coins' => $balance])->save();
+
+            return true;
+        });
     }
 
     /** @return list<string> */

@@ -24,6 +24,18 @@ final class SocialService
             $this->setRelation($player, $buddy, RelationType::Friend);
             $this->setRelation($buddy, $player, RelationType::Friend);
         });
+        $this->gameServer->send(
+            'updateBuddyStatus',
+            (int) $player->getKey(),
+            (int) $buddy->getKey(),
+            RelationType::Friend->value,
+        );
+        $this->gameServer->send(
+            'updateBuddyStatus',
+            (int) $buddy->getKey(),
+            (int) $player->getKey(),
+            RelationType::Friend->value,
+        );
     }
 
     /** @return list<TypedObject> */
@@ -58,12 +70,6 @@ final class SocialService
         UserRelation::query()->updateOrCreate(
             ['player1' => $owner->getKey(), 'player2' => $related->getKey()],
             ['relation_type' => $type],
-        );
-        $this->gameServer->send(
-            'updateBuddyStatus',
-            (int) $owner->getKey(),
-            (int) $related->getKey(),
-            $type->value,
         );
     }
 

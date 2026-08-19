@@ -36,7 +36,9 @@ final class GameAmfService
         if ($player === null) {
             return $this->responses->make(1);
         }
-        $this->minigames->recordBest($player, $gameId, $score);
+        if (! $this->minigames->recordBest($player, $gameId, $score)) {
+            return $this->responses->make(1, 'Invalid minigame score.');
+        }
 
         return $this->responses->make();
     }

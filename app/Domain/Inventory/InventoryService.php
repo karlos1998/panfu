@@ -77,6 +77,10 @@ final class InventoryService
                 ];
             }
 
+            if ((bool) $item->premium && (int) $lockedPlayer->goldpanda <= 0) {
+                return ['statusCode' => 5, 'message' => 'A Gold Panda membership is required.', 'valueObject' => null];
+            }
+
             if ((int) $lockedPlayer->coins < (int) $item->price) {
                 return ['statusCode' => 6, 'message' => 'Not enough coins.', 'valueObject' => null];
             }
@@ -126,13 +130,16 @@ final class InventoryService
                 }
 
                 $room = $this->property($data, 'room', $this->property($data, 'roomID', 0));
-                $player->inventoryEntries()->where('item_id', (int) $id)->update([
-                    'x' => (int) $this->property($data, 'x', 0),
-                    'y' => (int) $this->property($data, 'y', 0),
-                    'rot' => (int) $this->property($data, 'rot', 0),
-                    'room' => (int) $room,
-                    'active' => (bool) $this->property($data, 'active', false),
-                ]);
+                $player->inventoryEntries()
+                    ->where('item_id', (int) $id)
+                    ->whereHas('item', fn ($query) => $query->whereIn('type', self::FURNITURE_TYPES))
+                    ->update([
+                        'x' => (int) $this->property($data, 'x', 0),
+                        'y' => (int) $this->property($data, 'y', 0),
+                        'rot' => (int) $this->property($data, 'rot', 0),
+                        'room' => (int) $room,
+                        'active' => (bool) $this->property($data, 'active', false),
+                    ]);
             }
         });
     }

@@ -19,13 +19,12 @@ final class MinigameService
 
     public function __construct(private readonly ValueObjectFactory $valueObjects) {}
 
-    public function recordBest(User $player, int $gameId, int $score): void
+    public function recordBest(User $player, int $gameId, int $score): bool
     {
-        if ($gameId <= 0) {
-            return;
+        if ($gameId <= 0 || $gameId > 65_535 || $score < 0 || $score > (int) config('panfu.minigames.max_reported_score', 2_000_000_000)) {
+            return false;
         }
 
-        $score = max(0, $score);
         $entry = GameHighScore::query()->firstOrNew([
             'user_id' => $player->getKey(),
             'game_id' => $gameId,
@@ -34,6 +33,8 @@ final class MinigameService
             $entry->score = $score;
             $entry->save();
         }
+
+        return true;
     }
 
     public function highscoreLists(int $gameId): TypedObject
