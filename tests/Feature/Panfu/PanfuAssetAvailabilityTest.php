@@ -102,7 +102,21 @@ class PanfuAssetAvailabilityTest extends TestCase
 
     public function test_reported_furniture_inventory_assets_are_available(): void
     {
-        foreach ([103199, 104421] as $itemId) {
+        foreach ([
+            100,
+            101678,
+            101679,
+            101971,
+            102101,
+            102338,
+            103150,
+            103199,
+            103343,
+            103961,
+            104394,
+            104421,
+            104464,
+        ] as $itemId) {
             $this->assertFileExists(
                 public_path("vendor/openpanfu/rooms/home/assets/furniture_icons/FurnitureInventory_{$itemId}.swf"),
             );
