@@ -48,7 +48,7 @@ public class PanfuPacket {
 	}
 
 	public void setSender(User sender) {
-		sender = sender;
+		this.sender = sender;
 	}
 
 	public int readInt() {

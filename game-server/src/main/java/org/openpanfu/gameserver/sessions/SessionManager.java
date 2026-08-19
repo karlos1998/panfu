@@ -8,6 +8,7 @@
 package org.openpanfu.gameserver.sessions;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
@@ -30,11 +31,12 @@ public class SessionManager {
 	}
 
 	public User getUserById(int id) {
-		return this.sessions.values().stream().filter(s -> s.getUserId() == id).findFirst().get();
+		return this.sessions.values().stream().filter(s -> s.getUserId() == id).findFirst().orElse(null);
 	}
 
 	public User getUserByUsername(String username) {
-		return this.sessions.values().stream().filter(s -> s.getUsername().equals(username)).findFirst().get();
+		return this.sessions.values().stream().filter(s -> Objects.equals(s.getUsername(), username)).findFirst()
+				.orElse(null);
 	}
 
 	public void removeUserById(int id) {

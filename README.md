@@ -145,6 +145,20 @@ Testy PHP:
 docker compose exec -T laravel.test php artisan test
 ```
 
+Testy PHP z raportem coverage i minimalnym progiem 80%:
+
+```bash
+docker compose exec -T -e XDEBUG_MODE=coverage laravel.test composer test:coverage
+```
+
+Testy Game Servera oraz raport JaCoCo:
+
+```bash
+cd game-server
+mvn verify
+open target/site/jacoco/index.html
+```
+
 Formatowanie PHP:
 
 ```bash

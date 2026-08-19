@@ -35,4 +35,26 @@ public class MinigameRewardDAOTest {
 
 		assertEquals(10, MinigameRewardDAO.calculateCoins(400, settings));
 	}
+
+	@Test
+	public void nullMultiplierFallsBackToTheDocumentedDefault() {
+		RewardSettings settings = new RewardSettings(true, null, null);
+
+		assertEquals(20, MinigameRewardDAO.calculateCoins(400, settings));
+	}
+
+	@Test
+	public void zeroAndNegativeScoresNeverAwardCoins() {
+		RewardSettings settings = new RewardSettings(true, new BigDecimal("0.0500"), null);
+
+		assertEquals(0, MinigameRewardDAO.calculateCoins(0, settings));
+		assertEquals(0, MinigameRewardDAO.calculateCoins(-1, settings));
+	}
+
+	@Test
+	public void zeroOrNegativeMultipliersNeverAwardCoins() {
+		assertEquals(0, MinigameRewardDAO.calculateCoins(400, new RewardSettings(true, BigDecimal.ZERO, null)));
+		assertEquals(0,
+				MinigameRewardDAO.calculateCoins(400, new RewardSettings(true, new BigDecimal("-0.0500"), null)));
+	}
 }

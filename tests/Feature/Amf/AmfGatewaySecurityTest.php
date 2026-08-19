@@ -88,6 +88,26 @@ class AmfGatewaySecurityTest extends TestCase
         }
     }
 
+    public function test_one_invalid_message_does_not_abort_the_rest_of_an_amf_batch(): void
+    {
+        $payload = (new AmfEncoder)->encode(new AmfEnvelope(3, [
+            new AmfMessage('amfPlayerService.setState', '/invalid', []),
+            new AmfMessage('amfRegistrationService.checkUserName', '/valid', 'AvailablePanda'),
+        ]));
+
+        $response = $this->rawAmf($payload);
+        $response->assertOk();
+        $messages = (new AmfDecoder)->decode((string) $response->getContent())->messages;
+
+        $this->assertCount(2, $messages);
+        $this->assertSame('/invalid/onStatus', $messages[0]->target);
+        $this->assertSame('Client.Request', $messages[0]->data->faultCode);
+        $this->assertSame('The AMF request could not be processed.', $messages[0]->data->faultString);
+        $this->assertSame('/valid/onResult', $messages[1]->target);
+        $this->assertInstanceOf(TypedObject::class, $messages[1]->data);
+        $this->assertSame(0, $messages[1]->data->get('statusCode'));
+    }
+
     public function test_repeated_invalid_logins_are_throttled(): void
     {
         config([
