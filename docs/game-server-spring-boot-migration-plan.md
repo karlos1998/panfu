@@ -1,7 +1,9 @@
 # Plan migracji Game Servera do Spring Boot
 
-Status: plan techniczny, bez rozpoczętej implementacji  
-Branch: `codex/spring-boot-game-server-plan`  
+Status: plan techniczny, bez rozpoczętej implementacji
+
+Branch: `codex/spring-boot-game-server-plan`
+
 Data audytu: 2026-08-19
 
 ## 1. Cel
