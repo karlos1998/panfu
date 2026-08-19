@@ -36,6 +36,7 @@ Potem otwórz:
 - Gra: http://127.0.0.1:8080/play
 - phpMyAdmin: http://127.0.0.1:19999
 - Mailpit: http://127.0.0.1:18025
+- Telescope: http://127.0.0.1:8080/telescope
 
 Jeżeli `/play` przekierowuje do logowania, zaloguj się albo załóż konto przez
 `/register`. Po zalogowaniu kliknij `Graj`, wybierz `Local Panfu` i klient gry
@@ -154,6 +155,12 @@ Build frontendu:
 
 ```bash
 npm run build
+```
+
+Wyczyszczenie starszych wpisów Telescope (domyślnie starszych niż 48 godzin):
+
+```bash
+docker compose exec -T laravel.test php artisan telescope:prune --hours=48
 ```
 
 ## Struktura projektu
