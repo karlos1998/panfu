@@ -11,10 +11,10 @@ use App\Http\Controllers\Admin\PublicRoomController as AdminPublicRoomController
 use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\Admin\UserRelationController as AdminUserRelationController;
 use App\Http\Controllers\Admin\UserSessionController as AdminUserSessionController;
+use App\Http\Controllers\AmfGatewayController;
 use App\Http\Controllers\Blog\BlogCommentController;
 use App\Http\Controllers\Blog\BlogController;
 use App\Http\Controllers\Panfu\HomeController;
-use App\Http\Controllers\Panfu\InformationServerProxyController;
 use App\Http\Controllers\Panfu\LocaleController;
 use App\Http\Controllers\Panfu\PlayController;
 use App\Http\Controllers\Panfu\ShopController;
@@ -40,7 +40,7 @@ Route::get('/play', PlayController::class)->middleware(['auth', 'verified'])->na
 
 Route::get('/api/shop', ShopController::class)->middleware(['auth', 'verified'])->name('panfu.shop');
 
-Route::match(['get', 'post'], '/InformationServer/{path?}', InformationServerProxyController::class)
+Route::post('/InformationServer/{path?}', AmfGatewayController::class)
     ->where('path', '.*')
     ->name('panfu.information-server');
 

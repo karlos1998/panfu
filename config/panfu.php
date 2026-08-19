@@ -52,6 +52,8 @@ return [
     'game_server' => [
         'host' => env('PANFU_GAME_SERVER_HOST', '127.0.0.1'),
         'port' => env('PANFU_GAME_SERVER_PORT', 9595),
+        'internal_host' => env('PANFU_GAME_SERVER_INTERNAL_HOST', 'gameserver'),
+        'internal_port' => env('PANFU_GAME_SERVER_INTERNAL_PORT', 9595),
         'secret_key' => env('PANFU_GAME_SERVER_SECRET_KEY', 'local-development-secret'),
         'socket_proxy_url' => env('PANFU_GAME_SOCKET_PROXY_URL', 'ws://localhost:19596'),
     ],
@@ -61,7 +63,6 @@ return [
         'swf_url' => env('PANFU_SWF_URL', '/vendor/openpanfu/Panfu.swf'),
         'base_url' => env('PANFU_FLASH_BASE_URL', '/vendor/openpanfu/'),
         'information_server' => env('PANFU_INFORMATION_SERVER', '/InformationServer/'),
-        'information_server_upstream' => env('PANFU_INFORMATION_SERVER_UPSTREAM', 'http://information-server/'),
         'language_id' => env('PANFU_LANGUAGE_ID', null),
         'mode' => env('PANFU_MODE', 'dev'),
         'server_name' => env('PANFU_SERVER_NAME', 'Local Panfu'),

@@ -50,6 +50,15 @@ class AmfCodecTest extends TestCase
         $this->assertTrue($furniture->get('active'));
     }
 
+    public function test_it_uses_the_legacy_network_double_representation(): void
+    {
+        foreach ([self::NUMBERS_AMF0, self::NUMBERS_AMF3] as $payload) {
+            $arguments = (new AmfDecoder)->decode(base64_decode($payload))->messages[0]->data;
+            $this->assertSame(12.5, $arguments[0]);
+            $this->assertSame(500000000.0, $arguments[1]);
+        }
+    }
+
     /** @return iterable<string, array{string}> */
     public static function legacyPayloads(): iterable
     {
@@ -58,6 +67,8 @@ class AmfCodecTest extends TestCase
         yield 'AMF0 login' => [self::LOGIN_AMF0];
         yield 'AMF3 login' => [self::LOGIN_AMF3];
         yield 'AMF3 furniture' => [self::FURNITURE_AMF3];
+        yield 'AMF0 numbers' => [self::NUMBERS_AMF0];
+        yield 'AMF3 numbers' => [self::NUMBERS_AMF3];
     }
 
     private const PING_AMF0 = 'AAAAAAABABlhbWZDb25uZWN0aW9uU2VydmljZS5waW5nAAIvMQAAAAUKAAAAAA==';
@@ -69,4 +80,8 @@ class AmfCodecTest extends TestCase
     private const LOGIN_AMF3 = 'AAAAAAABABxhbWZDb25uZWN0aW9uU2VydmljZS5kb0xvZ2luAAIvMQAAACoRCQMBCgsBBWlkBAAVcGxheWVyTmFtZQYLUGFuZGEFcHcGDXNlY3JldAE=';
 
     private const FURNITURE_AMF3 = 'AAAAAAABACFhbWZQbGF5ZXJTZXJ2aWNlLnVwZGF0ZUZ1cm5pdHVyZXMAAi8yAAAAjBEJAwEJAwEKgUNVY29tLnBhbmRhbGFuZC5tdmMubW9kZWwudm8uRnVybml0dXJlRGF0YVZPFXBhcmFtZXRlcnMDeAN5B3JvdAd1aWQFaWQJdHlwZQ1hY3RpdmUPcHJlbWl1bQ1ib3VnaHQJcm9vbQ1yb29tSUQBBAwEIgQCBE0EZAYFMDADAgMEAwQD';
+
+    private const NUMBERS_AMF0 = 'AAAAAAABABxhbWZQbGF5ZXJTZXJ2aWNlLnVwZGF0ZVNjb3JlAAIvMQAAABcKAAAAAgBAKQAAAAAAAABBvc1lAAAAAA==';
+
+    private const NUMBERS_AMF3 = 'AAAAAAABABxhbWZQbGF5ZXJTZXJ2aWNlLnVwZGF0ZVNjb3JlAAIvMQAAABYRCQUBBUApAAAAAAAABUG9zWUAAAAA';
 }

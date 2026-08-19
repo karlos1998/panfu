@@ -23,30 +23,11 @@ services:
             - sail
         depends_on:
             - mysql
-            - information-server
             - gameserver
             - socket-proxy
             - redis
             - mailpit
             - selenium
-    information-server:
-        image: 'sail-8.5/app'
-        command: 'php -d variables_order=EGPCS -S 0.0.0.0:80 -t /var/www/html /var/www/html/index.php'
-        environment:
-            SUPERVISOR_PHP_USER: root
-            DB_HOST: mysql
-            DB_PORT: 3306
-            DB_DATABASE: '${DB_DATABASE}'
-            DB_USERNAME: '${DB_USERNAME}'
-            DB_PASSWORD: '${DB_PASSWORD}'
-            PANFU_GAME_SERVER_INTERNAL_HOST: '${PANFU_GAME_SERVER_INTERNAL_HOST:-gameserver}'
-            PANFU_GAME_SERVER_INTERNAL_PORT: '${PANFU_GAME_SERVER_INTERNAL_PORT:-9595}'
-        volumes:
-            - './information-server:/var/www/html'
-        networks:
-            - sail
-        depends_on:
-            - mysql
     gameserver:
         build:
             context: '.'
