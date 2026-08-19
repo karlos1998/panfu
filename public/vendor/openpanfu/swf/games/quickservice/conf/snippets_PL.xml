@@ -1,0 +1,44 @@
+<snippets date="05.05.2011 09:15:46">
+<BTN_BACK><![CDATA[Wróć]]></BTN_BACK>
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instrukcje]]></BTN_INSTRUCTION>
+<BTN_NEXT><![CDATA[Następny]]></BTN_NEXT>
+<BTN_PAUSE><![CDATA[Pauza]]></BTN_PAUSE>
+<BTN_PLAY><![CDATA[Graj]]></BTN_PLAY>
+<BTN_PLAYAGAIN><![CDATA[Zagraj jeszcze raz]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Graj teraz]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Graj i czatuj]]></BTN_PLAY_CHAT>
+<BTN_SHOP><![CDATA[Sklep]]></BTN_SHOP>
+<BTN_START><![CDATA[Początek]]></BTN_START>
+<DAY><![CDATA[Dzień:]]></DAY>
+<DEFEAT><![CDATA[Koniec gry!]]></DEFEAT>
+<DEFEAT_TEXT><![CDATA[Niestety nie udało ci się pomyślnie zakończyć gry. Następnym razem na pewno się uda!]]></DEFEAT_TEXT>
+<EARNED><![CDATA[Zarobki:]]></EARNED>
+<INSTRUCTION2_TEXT><![CDATA[Graj za pomocą swojej myszki, którą będziesz zawsze klikał na stoliki. Aby dobrze obsłużyć gości musisz wykonywać następujące czynności: ]]></INSTRUCTION2_TEXT>
+<INSTRUCTION3_TEXT><![CDATA[- szukaj klienta
+- wskaż stolik
+- przynieś menu
+- zapytaj o zamówienie
+- przynieś rachunek
+- weź pieniądze]]></INSTRUCTION3_TEXT>
+<INSTRUCTION_TEXT><![CDATA[Pomóż swojej Pandzie zarobić pieniądze pracując jako kelner w restauracji! Dzięki swoim oszczędnościom twoja Panda będzie mogła zwiedzić świat! Musisz uważnie dbać o klientów oraz starać się pracować szybko i sprawnie, ponieważ klienci mogą łatwo stracić cierpliwość! Jeżeli popełnisz błąd, będziesz musiał wyrzucić jedzenie! Czasem klienci mogą nawet wyjść gdy obsługa okaże się zbyt wolna! Za swoje oszczędności możesz kupić szybsze buty, relaksującą muzykę czy nawet Bolisia, który pomoże ci przy obsługiwaniu gości. ]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instrukcje]]></INSTRUCTION_TITLE>
+<LEVEL><![CDATA[Poziom:]]></LEVEL>
+<LEVEL1END><![CDATA[Przeszedłeś pierwszy poziom!]]></LEVEL1END>
+<LEVEL2END><![CDATA[Przeszedłeś drugi poziom!]]></LEVEL2END>
+<LEVEL3END><![CDATA[Przeszedłeś trzeci poziom!]]></LEVEL3END>
+<MENU_TEXT><![CDATA[Pomóż swojej Pandzie zarobić pieniądze na podróż!]]></MENU_TEXT>
+<MUSIC><![CDATA[Muzyka relaksująca]]></MUSIC>
+<PROFIT><![CDATA[Zarobki dnia:]]></PROFIT>
+<SCORE><![CDATA[Twoje punkty:]]></SCORE>
+<SHOES><![CDATA[Szybsze buty]]></SHOES>
+<SHOP><![CDATA[Sklep]]></SHOP>
+<TOTALPROFIT><![CDATA[Suma:]]></TOTALPROFIT>
+<TO_EARN><![CDATA[Cel:]]></TO_EARN>
+<VICTORY><![CDATA[Koniec gry!]]></VICTORY>
+<VICTORY_TEXT><![CDATA[Gratulacje! Panda będzie mogła spełnić swoje marzenie i pojechać w podróż!]]></VICTORY_TEXT>
+<WAITER><![CDATA[Kelner]]></WAITER>
+<WYCIECZKA1><![CDATA[Dzięki twojej pomocy, twoja Panda będzie mogła wyjechać do Egiptu!]]></WYCIECZKA1>
+<WYCIECZKA2><![CDATA[Dzięki twojej pomocy, twoja Panda będzie mogła wyjechać do Afryki!]]></WYCIECZKA2>
+<WYCIECZKA3><![CDATA[Dzięki twojej pomocy, twoja Panda będzie mogła wyjechać na Księżyc!]]></WYCIECZKA3>
+</snippets>

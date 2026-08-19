@@ -1,0 +1,22 @@
+<snippets date="05.05.2011 09:13:35">
+<BTN_FINISH><![CDATA[Quit]]></BTN_FINISH>
+<BTN_INSTR><![CDATA[Instructions]]></BTN_INSTR>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Play and chat]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Start]]></BTN_START>
+<HELLO><![CDATA[Hello, $$name$$]]></HELLO>
+<TEXT_DEFEAT><![CDATA[Game over]]></TEXT_DEFEAT>
+<TEXT_GOOD><![CDATA[Correct, very good!]]></TEXT_GOOD>
+<TEXT_INSTRUCTION><![CDATA[Watch the animations very carefully and remember the order that the pictures are shown in. You must click them in exactly the same order afterwards. <br><br>You will get more points the quicker you are! But be warned! <br><br>Sometimes the order is reversed! Good luck!]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LEVEL_POINTS><![CDATA[Points:]]></TEXT_LEVEL_POINTS>
+<TEXT_POINTS><![CDATA[Total points]]></TEXT_POINTS>
+<TEXT_POINTS_TO_GET><![CDATA[Points you can achieve:]]></TEXT_POINTS_TO_GET>
+<TEXT_PREPARE><![CDATA[Ready!]]></TEXT_PREPARE>
+<TEXT_SCORE><![CDATA[Your points:]]></TEXT_SCORE>
+<TEXT_TIMEOUT><![CDATA[Time out!]]></TEXT_TIMEOUT>
+<TEXT_TITLE><![CDATA[INSTRUCTIONS]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[GAME OVER!]]></TEXT_VICTORY>
+<TEXT_WRONG><![CDATA[Wrong!]]></TEXT_WRONG>
+<TEXT_YOUR_TURN><![CDATA[Your turn]]></TEXT_YOUR_TURN>
+</snippets>

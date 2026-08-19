@@ -1,0 +1,20 @@
+<snippets date="05.05.2011 09:13:13">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instrukcje]]></BTN_INTRODUCTION>
+<BTN_NEXTLEVEL><![CDATA[Dalej]]></BTN_NEXTLEVEL>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Graj teraz]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Graj i czatuj]]></BTN_PLAY_CHAT>
+<TEXT_FINISH_LEVEL><![CDATA[Poziom zakończony!]]></TEXT_FINISH_LEVEL>
+<TEXT_FINISH_SUCCESS><![CDATA[Koniec gry!]]></TEXT_FINISH_SUCCESS>
+<TEXT_INTRODUCTION><![CDATA[Pomóż Pandzie ozdobić pyszne muffiny!
+Gdy pojawi się ciastko przed Pandą, kliknij na tablicę z dekoracjami z cukru, orzechów i owoców.
+Udekoruj najwięcej muffinów ile tylko ci się uda!]]></TEXT_INTRODUCTION>
+<TEXT_LEVEL><![CDATA[Poziom:]]></TEXT_LEVEL>
+<TEXT_LEVEL_SCORE><![CDATA[Punkty za ten poziom:]]></TEXT_LEVEL_SCORE>
+<TEXT_SCORE><![CDATA[Punkty:]]></TEXT_SCORE>
+<TEXT_TOTAL_SCORE><![CDATA[Twoje punkty: ]]></TEXT_TOTAL_SCORE>
+<TITLE_BONUS><![CDATA[Bonus]]></TITLE_BONUS>
+<TITLE_FINISH_GAME><![CDATA[KONIEC GRY!]]></TITLE_FINISH_GAME>
+<TITLE_INTRODUCTION><![CDATA[INSTRUKCJE]]></TITLE_INTRODUCTION>
+</snippets>

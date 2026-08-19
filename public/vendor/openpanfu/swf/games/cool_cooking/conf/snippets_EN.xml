@@ -1,0 +1,20 @@
+<snippets date="05.05.2011 09:13:12">
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instructions]]></BTN_INTRODUCTION>
+<BTN_NEXTLEVEL><![CDATA[Next]]></BTN_NEXTLEVEL>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Play & Chat]]></BTN_PLAY_CHAT>
+<TEXT_FINISH_LEVEL><![CDATA[Level completed!]]></TEXT_FINISH_LEVEL>
+<TEXT_FINISH_SUCCESS><![CDATA[Game over!]]></TEXT_FINISH_SUCCESS>
+<TEXT_INTRODUCTION><![CDATA[Help the pandas decorate the delicious muffins.
+When a panda comes by, click on their plate and decorate the muffins with nuts, fruit and sugar sweets.
+Try to decorate as many muffins as fast as you can!]]></TEXT_INTRODUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LEVEL_SCORE><![CDATA[Points for this level:]]></TEXT_LEVEL_SCORE>
+<TEXT_SCORE><![CDATA[Score:]]></TEXT_SCORE>
+<TEXT_TOTAL_SCORE><![CDATA[Your points:]]></TEXT_TOTAL_SCORE>
+<TITLE_BONUS><![CDATA[Bonus]]></TITLE_BONUS>
+<TITLE_FINISH_GAME><![CDATA[GAME OVER!]]></TITLE_FINISH_GAME>
+<TITLE_INTRODUCTION><![CDATA[INSTRUCTIONS]]></TITLE_INTRODUCTION>
+</snippets>

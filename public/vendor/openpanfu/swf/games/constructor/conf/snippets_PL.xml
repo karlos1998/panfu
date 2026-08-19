@@ -1,0 +1,23 @@
+<snippets date="05.05.2011 09:17:47">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instrukcje]]></BTN_INTRODUCTION>
+<BTN_NEXTLEVEL><![CDATA[Następny poziom]]></BTN_NEXTLEVEL>
+<BTN_PAUSE><![CDATA[Pauza]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Graj teraz]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Graj & Czatuj]]></BTN_PLAY_CHAT>
+<BTN_RESUME><![CDATA[Start]]></BTN_RESUME>
+<TEXT_FINISH_FAILURE><![CDATA[Czas minął! ]]></TEXT_FINISH_FAILURE>
+<TEXT_FINISH_LEVEL><![CDATA[Poziom ukończony!]]></TEXT_FINISH_LEVEL>
+<TEXT_GET_READY><![CDATA[Uwaga! Gotowy?]]></TEXT_GET_READY>
+<TEXT_INTRODUCTION><![CDATA[Cel gry jest następujący: musisz ułożyć wszystkie części w odpowiedniej kolejności za pomocą koparki.<br><br> Pamiętaj aby przestrzegać kolejności!<br><br> Do gry używaj myszki!]]></TEXT_INTRODUCTION>
+<TEXT_LEVEL><![CDATA[Poziom:]]></TEXT_LEVEL>
+<TEXT_LEVEL_SCORE><![CDATA[Punkty:]]></TEXT_LEVEL_SCORE>
+<TEXT_SCORE><![CDATA[Punkty:]]></TEXT_SCORE>
+<TEXT_TIME><![CDATA[Czas:]]></TEXT_TIME>
+<TEXT_TOTAL_SCORE><![CDATA[Suma punktów:]]></TEXT_TOTAL_SCORE>
+<TITLE_BONUS><![CDATA[Bonus]]></TITLE_BONUS>
+<TITLE_FINISH_GAME><![CDATA[Koniec gry!]]></TITLE_FINISH_GAME>
+<TITLE_INTRODUCTION><![CDATA[INSTRUKCJE]]></TITLE_INTRODUCTION>
+<TITLE_PAUSE><![CDATA[PAUZA]]></TITLE_PAUSE>
+</snippets>

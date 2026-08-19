@@ -1,0 +1,44 @@
+﻿<snippets date="05.05.2011 09:15:45">
+<BTN_BACK><![CDATA[Zurück]]></BTN_BACK>
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Anleitung]]></BTN_INSTRUCTION>
+<BTN_NEXT><![CDATA[Nächster]]></BTN_NEXT>
+<BTN_PAUSE><![CDATA[Pause]]></BTN_PAUSE>
+<BTN_PLAY><![CDATA[Spielen]]></BTN_PLAY>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<BTN_SHOP><![CDATA[Shop]]></BTN_SHOP>
+<BTN_START><![CDATA[Start]]></BTN_START>
+<DAY><![CDATA[Tag:]]></DAY>
+<DEFEAT><![CDATA[Spiel vorbei!]]></DEFEAT>
+<DEFEAT_TEXT><![CDATA[Leider hast Du es nicht geschafft! Beim nächsten Mal klappt's bestimmt!]]></DEFEAT_TEXT>
+<EARNED><![CDATA[Einnahmen:]]></EARNED>
+<INSTRUCTION2_TEXT><![CDATA[Spiele mit Deiner Maus, indem Du immer auf die Tische klickst. Um die Gäste richtig zu bedienen, musst Du folgendes beachten:]]></INSTRUCTION2_TEXT>
+<INSTRUCTION3_TEXT><![CDATA[- suche einen Gast aus
+- zeig ihm einen Tisch
+- bringe ihm die Speisekarte
+- frage ihn, was er bestellen möchte
+- bring ihm seine Bestellung
+- nimm das Geld]]></INSTRUCTION3_TEXT>
+<INSTRUCTION_TEXT><![CDATA[Hilf Deinem Panda, Geld als Kellner in einem Restaurant zu verdienen! Für das verdiente Geld wird sich Dein Panda einen Traum erfüllen und um die Welt reisen! Behandle die Gäste zuvorkommend. Versuche schnell und geschickt zu sein, weil die Gäste leicht ungeduldig werden. Wenn Du einen Fehler machst, musst Du das Essen wegwerfen! Manchmal gehen sie sogar, wenn es ihnen zu lange dauert! Wenn Du es schaffst Geld zu sparen, kannst Du im Shop schnellere Schuhe, beruhigende Musik oder sogar einen Bolly kaufen, der Dir beim Servieren hilft.]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Anleitung]]></INSTRUCTION_TITLE>
+<LEVEL><![CDATA[Level:]]></LEVEL>
+<LEVEL1END><![CDATA[Erster Level geschafft!]]></LEVEL1END>
+<LEVEL2END><![CDATA[Zweiter Level geschafft!]]></LEVEL2END>
+<LEVEL3END><![CDATA[Dritter Level geschafft!]]></LEVEL3END>
+<MENU_TEXT><![CDATA[Hilf Deinem Panda dabei, Geld für eine Reise zu sammeln!]]></MENU_TEXT>
+<MUSIC><![CDATA[Beruhigende Musik]]></MUSIC>
+<PROFIT><![CDATA[Tageseinnahmen:]]></PROFIT>
+<SCORE><![CDATA[Deine Punkte:]]></SCORE>
+<SHOES><![CDATA[Schnellere Schuhe]]></SHOES>
+<SHOP><![CDATA[Shop]]></SHOP>
+<TOTALPROFIT><![CDATA[Gesamt:]]></TOTALPROFIT>
+<TO_EARN><![CDATA[Ziel:]]></TO_EARN>
+<VICTORY><![CDATA[Spiel vorbei!]]></VICTORY>
+<VICTORY_TEXT><![CDATA[Dank Deiner Hilfe kann der Panda jetzt endlich verreisen!]]></VICTORY_TEXT>
+<WAITER><![CDATA[Kellnerin]]></WAITER>
+<WYCIECZKA1><![CDATA[Dank Deiner Hilfe kann Dein Panda nach Ägypten reisen!]]></WYCIECZKA1>
+<WYCIECZKA2><![CDATA[Dank Deiner Hilfe kann Dein Panda nach Afrika reisen!]]></WYCIECZKA2>
+<WYCIECZKA3><![CDATA[Dank Deiner Hilfe kann Dein Panda zum Mond reisen! ]]></WYCIECZKA3>
+</snippets>

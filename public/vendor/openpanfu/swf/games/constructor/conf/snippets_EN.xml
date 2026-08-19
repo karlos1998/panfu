@@ -1,0 +1,23 @@
+<snippets date="05.05.2011 09:17:46">
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instructions]]></BTN_INTRODUCTION>
+<BTN_NEXTLEVEL><![CDATA[Next level]]></BTN_NEXTLEVEL>
+<BTN_PAUSE><![CDATA[Break]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Play & Chat]]></BTN_PLAY_CHAT>
+<BTN_RESUME><![CDATA[Start]]></BTN_RESUME>
+<TEXT_FINISH_FAILURE><![CDATA[Time is up!]]></TEXT_FINISH_FAILURE>
+<TEXT_FINISH_LEVEL><![CDATA[Level completed!]]></TEXT_FINISH_LEVEL>
+<TEXT_GET_READY><![CDATA[Get Ready!]]></TEXT_GET_READY>
+<TEXT_INTRODUCTION><![CDATA[The aim of the game is to construct the excavator from all the different parts.<br><br>Don't forget that you have to follow the correct sequence!<br><br>Use your mouse to play!]]></TEXT_INTRODUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LEVEL_SCORE><![CDATA[Points:]]></TEXT_LEVEL_SCORE>
+<TEXT_SCORE><![CDATA[Points:]]></TEXT_SCORE>
+<TEXT_TIME><![CDATA[Time:]]></TEXT_TIME>
+<TEXT_TOTAL_SCORE><![CDATA[Total points:]]></TEXT_TOTAL_SCORE>
+<TITLE_BONUS><![CDATA[Bonus]]></TITLE_BONUS>
+<TITLE_FINISH_GAME><![CDATA[Game over!]]></TITLE_FINISH_GAME>
+<TITLE_INTRODUCTION><![CDATA[INSTRUCTIONS]]></TITLE_INTRODUCTION>
+<TITLE_PAUSE><![CDATA[BREAK]]></TITLE_PAUSE>
+</snippets>

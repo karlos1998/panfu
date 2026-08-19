@@ -1,0 +1,20 @@
+<snippets date="05.05.2011 09:14:52">
+<BTN_FINISH><![CDATA[End]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYCHAT><![CDATA[Play and Chat
+]]></BTN_PLAYCHAT>
+<TEXT_BTN_SENDPOINTS><![CDATA[Send points]]></TEXT_BTN_SENDPOINTS>
+<TEXT_BTN_START><![CDATA[Start]]></TEXT_BTN_START>
+<TEXT_FINISH><![CDATA[Cool!
+You have won
+$$score$$ points!]]></TEXT_FINISH>
+<TEXT_FINISH_FAILED><![CDATA[Oh no! You've run out of time! Well, maybe next time.]]></TEXT_FINISH_FAILED>
+<TEXT_FINISH_SUCCESS><![CDATA[Round $$level$$ won!]]></TEXT_FINISH_SUCCESS>
+<TEXT_INSTRUCTION><![CDATA[As a panda you must be able to use your instincts well. How good is your memory? Click on the cards to turn them over. Beware! You only get 60 seconds per round! Have fun!]]></TEXT_INSTRUCTION>
+<TEXT_INSTRUCTION_TITLE><![CDATA[INSTRUCTIONS:]]></TEXT_INSTRUCTION_TITLE>
+<TEXT_LEVEL><![CDATA[LEVEL]]></TEXT_LEVEL>
+<TEXT_ROUNDSTARTS><![CDATA[Begin round $$level$$]]></TEXT_ROUNDSTARTS>
+<TEXT_RUN_RUN_RUN><![CDATA[Go! Go! Go!]]></TEXT_RUN_RUN_RUN>
+<TEXT_SCORE><![CDATA[SCORE]]></TEXT_SCORE>
+<TEXT_YOURSCORE><![CDATA[Your total points: $$score$$]]></TEXT_YOURSCORE>
+</snippets>

@@ -1,0 +1,24 @@
+<snippets date="05.05.2011 09:12:43">
+<BTN_END><![CDATA[End]]></BTN_END>
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_NEXT><![CDATA[Play]]></BTN_NEXT>
+<BTN_PAUSE><![CDATA[Pause]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[End]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Play again]]></BTN_START>
+<HELLO><![CDATA[Hello, $$name$$!]]></HELLO>
+<TEXT_DEFEATED><![CDATA[GAME OVER]]></TEXT_DEFEATED>
+<TEXT_END_GAME><![CDATA[GAME OVER!]]></TEXT_END_GAME>
+<TEXT_INSTRUCTION><![CDATA[Guess which Bolly is the most common! You will need a flashlight. Right click on the most common Bolly.Use your mouse to play.]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LIVES><![CDATA[Lives:]]></TEXT_LIVES>
+<TEXT_LOSE_LIFE><![CDATA[You have lost a life!]]></TEXT_LOSE_LIFE>
+<TEXT_NEXT_LEVEL><![CDATA[Next level]]></TEXT_NEXT_LEVEL>
+<TEXT_POINTS><![CDATA[Points:]]></TEXT_POINTS>
+<TEXT_PREPARE><![CDATA[Ready!]]></TEXT_PREPARE>
+<TEXT_QUESTION><![CDATA[Which Bolly is the most common?]]></TEXT_QUESTION>
+<TEXT_TIME><![CDATA[Time:]]></TEXT_TIME>
+<TEXT_TITLE><![CDATA[INSTRUCTIONS]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[Congratulations!]]></TEXT_VICTORY>
+<TEXT_YOUR_POINTS><![CDATA[Total points:]]></TEXT_YOUR_POINTS>
+</snippets>

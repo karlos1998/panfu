@@ -1,0 +1,19 @@
+<snippets date="05.05.2011 09:14:52">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYCHAT><![CDATA[Spielen & Chatten]]></BTN_PLAYCHAT>
+<TEXT_BTN_SENDPOINTS><![CDATA[Punkte senden]]></TEXT_BTN_SENDPOINTS>
+<TEXT_BTN_START><![CDATA[Start]]></TEXT_BTN_START>
+<TEXT_FINISH><![CDATA[Coole Sache das!
+Du hast gewonnen! Dein Score betraegt
+$$score$$ Punkte]]></TEXT_FINISH>
+<TEXT_FINISH_FAILED><![CDATA[Hoppla, da ist die Zeit abgelaufen! Naja, vielleicht das nächste mal!]]></TEXT_FINISH_FAILED>
+<TEXT_FINISH_SUCCESS><![CDATA[Runde $$level$$ gewonnen!]]></TEXT_FINISH_SUCCESS>
+<TEXT_INSTRUCTION><![CDATA[Als Panda musst du dir viele Dinge schnell merken können. Wie gut ist dein Gedächtnis? Klicke auf die Karten um sie umzudrehen. Doch aufgepasst! Dir stehen nur 60 Sekunden pro Runde zur Verfügung. Viel Spaß!]]></TEXT_INSTRUCTION>
+<TEXT_INSTRUCTION_TITLE><![CDATA[ANLEITUNG:]]></TEXT_INSTRUCTION_TITLE>
+<TEXT_LEVEL><![CDATA[LEVEL]]></TEXT_LEVEL>
+<TEXT_ROUNDSTARTS><![CDATA[Runde $$level$$ beginnt]]></TEXT_ROUNDSTARTS>
+<TEXT_RUN_RUN_RUN><![CDATA[Los los los]]></TEXT_RUN_RUN_RUN>
+<TEXT_SCORE><![CDATA[PUNKTE]]></TEXT_SCORE>
+<TEXT_YOURSCORE><![CDATA[Deine Punkte: $$score$$]]></TEXT_YOURSCORE>
+</snippets>

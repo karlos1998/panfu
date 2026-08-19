@@ -1,0 +1,40 @@
+<snippets date="05.05.2011 09:16:59">
+<BTN_FINISH><![CDATA[Quit]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instructions]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Main menu]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Next round]]></BTN_NEXTROUND>
+<BTN_PLAYAGAIN><![CDATA[Try again]]></BTN_PLAYAGAIN>
+<GOAL><![CDATA[GOAL]]></GOAL>
+<GOAL2><![CDATA[Goal]]></GOAL2>
+<INFO_MAIN><![CDATA[To the]]></INFO_MAIN>
+<INSTRUCTIONS><![CDATA[Your Panda wants to be the best ice cream seller on Panfu!
+
+You have to prepare delicious ice cream in cones for your customers. If you make a mistake, you have to throw the cone away, so concentrate and be careful!
+When you've made it past the goal for the round, then you'll become the greatest ice cream seller of all time!]]></INSTRUCTIONS>
+<INSTRUCTIONS2><![CDATA[Make the ice cream just how the customer wants it.
+
+Click on the cone to fill it with ice cream.
+Click on the bowl with the dough to make the ice cream cone.]]></INSTRUCTIONS2>
+<INSTRUCTIONS3><![CDATA[Click on the bowl of ice cream to make scoops.
+
+Wait until the cones are ready, and then click them to put them on the table.
+Hurry up or else they'll burn!]]></INSTRUCTIONS3>
+<INSTRUCTIONS4><![CDATA[You can put different kinds of toppings, sauces and fruit on your ice cream.
+Just click on the tube and let it all squeeze out!
+When the ice cream is ready, you can serve it to your customer.]]></INSTRUCTIONS4>
+<INSTRUCTION_HEAD><![CDATA[INSTRUCTIONS]]></INSTRUCTION_HEAD>
+<LOGO_URL><![CDATA[http://www.panfu.com]]></LOGO_URL>
+<MAIN_START><![CDATA[Start]]></MAIN_START>
+<MAIN_TITLE><![CDATA[Ice cream shop]]></MAIN_TITLE>
+<PROFIT><![CDATA[SCORE: $$score$$]]></PROFIT>
+<TEXT_CURROUNDPTS><![CDATA[Earned]]></TEXT_CURROUNDPTS>
+<TEXT_GAMEEND><![CDATA[End of game!]]></TEXT_GAMEEND>
+<TEXT_NEEDTOMAKE><![CDATA[What you have to do:]]></TEXT_NEEDTOMAKE>
+<TEXT_NEEDTOMAKE2><![CDATA[$$goal$$]]></TEXT_NEEDTOMAKE2>
+<TEXT_PREVROUNDPTS><![CDATA[Earned in previous rounds:]]></TEXT_PREVROUNDPTS>
+<TEXT_ROUND><![CDATA[Round $$roundnumber$$]]></TEXT_ROUND>
+<TEXT_ROUNDEND><![CDATA[Round completed!]]></TEXT_ROUNDEND>
+<TEXT_ROUNDFAILED><![CDATA[Round not completed!]]></TEXT_ROUNDFAILED>
+<TEXT_ROUNDTOTALPTS><![CDATA[Earned in this round:]]></TEXT_ROUNDTOTALPTS>
+<TEXT_TOTAL><![CDATA[Total:]]></TEXT_TOTAL>
+</snippets>

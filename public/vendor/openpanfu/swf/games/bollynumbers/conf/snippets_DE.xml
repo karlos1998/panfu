@@ -1,0 +1,26 @@
+﻿<snippets date="05.05.2011 09:12:32">
+<BTN_END><![CDATA[Beenden]]></BTN_END>
+<BTN_FINISH><![CDATA[Beenden
+]]></BTN_FINISH>
+<BTN_NEXT><![CDATA[Spielen]]></BTN_NEXT>
+<BTN_PAUSE><![CDATA[Pause]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Beenden]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Jetzt spielen]]></BTN_START>
+<HELLO><![CDATA[Hallo, $$name$$!]]></HELLO>
+<TEXT_DEFEATED><![CDATA[Das hat leider nicht geklappt]]></TEXT_DEFEATED>
+<TEXT_END_GAME><![CDATA[Spiel vorbei!]]></TEXT_END_GAME>
+<TEXT_INSTRUCTION><![CDATA[Ziel des Spiels ist es, die unnötigen Zahlen wegzuklicken und nur die Zahlen stehen zu lassen, die die angegebene Summe ergeben.<br><br>Um einen Bolly mit seiner Zahl zu verstecken, klick auf ihn mit der linken Maustaste.]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LIVES><![CDATA[Leben:
+]]></TEXT_LIVES>
+<TEXT_LOSE_LIFE><![CDATA[Du hast ein Leben verloren!]]></TEXT_LOSE_LIFE>
+<TEXT_NEXT_LEVEL><![CDATA[Gute Arbeit!]]></TEXT_NEXT_LEVEL>
+<TEXT_POINTS><![CDATA[Punkte:]]></TEXT_POINTS>
+<TEXT_PREPARE><![CDATA[Start!]]></TEXT_PREPARE>
+<TEXT_QUESTION><![CDATA[Erreiche die Zahl]]></TEXT_QUESTION>
+<TEXT_TIME><![CDATA[Zeit:]]></TEXT_TIME>
+<TEXT_TITLE><![CDATA[ANLEITUNG]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[Du hast gewonnen!]]></TEXT_VICTORY>
+<TEXT_YOUR_POINTS><![CDATA[Gesamtpunktzahl:]]></TEXT_YOUR_POINTS>
+</snippets>

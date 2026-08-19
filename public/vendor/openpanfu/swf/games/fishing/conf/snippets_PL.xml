@@ -1,0 +1,15 @@
+<snippets date="05.05.2011 09:13:32">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Zagraj jeszcze raz]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Graj teraz!]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Grać i czatować]]></BTN_PLAY_CHAT>
+<END_TEXT><![CDATA[Złowione ryby ]]></END_TEXT>
+<END_TEXT_POINTS><![CDATA[Score]]></END_TEXT_POINTS>
+<FISH><![CDATA[Ryba]]></FISH>
+<INSTRUCTION_TEXT><![CDATA[Przy pomocy myszki unoś i opuszczaj wędkę. Wyciągnij złowioną rybę z wody i klikając jeden raz lewym
+Myszka to Twoja wędka. Poruszaj nią w górę i w dół aby złowić ryby na przynętę. Kiedy złapiesz rybę na haczyk, przeciągnij ją do łodzi, zostanie tam umieszczona automatycznie. Istnieją różne ryby - im większa ryba, tym więcej punktów dla Ciebie! Istnieją również ryby specjalne - zbieraj je i baw się dobrze!]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instrukcja]]></INSTRUCTION_TITLE>
+<ITEM_SLOWDOWN><![CDATA[Ślimacze tempo]]></ITEM_SLOWDOWN>
+<ITEM_TIMEBONUS><![CDATA[bonus czasowy]]></ITEM_TIMEBONUS>
+<WORMS><![CDATA[Robaczek]]></WORMS>
+</snippets>

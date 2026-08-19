@@ -1,0 +1,13 @@
+﻿<snippets date="05.05.2011 09:12:24">
+<BTN_END><![CDATA[Beenden]]></BTN_END>
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten!]]></BTN_PLAY_CHAT>
+<INSTRUCTION_TEXT><![CDATA[So geht's
+Du hast 12 Pfeile zur Verfügung, um Deinem Bolly eine Leiter auf den Sprungturm im Schwimmbad zu bauen. Klicke auf die linke Maustaste und wirf die Pfeile, an denen der Bolly hinaufklettert.]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Anleitung]]></INSTRUCTION_TITLE>
+<PLAY_NOW><![CDATA[Jetzt spielen!]]></PLAY_NOW>
+<TEXT_END_BUBBLE><![CDATA[Geschafft!
+Du hast $$score$$ Punkte
+gewonnen!]]></TEXT_END_BUBBLE>
+</snippets>

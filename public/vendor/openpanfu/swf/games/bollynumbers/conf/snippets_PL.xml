@@ -1,0 +1,24 @@
+<snippets date="05.05.2011 09:12:34">
+<BTN_END><![CDATA[Zakończ]]></BTN_END>
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_NEXT><![CDATA[Graj]]></BTN_NEXT>
+<BTN_PAUSE><![CDATA[Pauza]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Zakończ]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Zagraj teraz]]></BTN_START>
+<HELLO><![CDATA[Witaj, $$name$$!]]></HELLO>
+<TEXT_DEFEATED><![CDATA[Niestety przegrałeś]]></TEXT_DEFEATED>
+<TEXT_END_GAME><![CDATA[Koniec gry!]]></TEXT_END_GAME>
+<TEXT_INSTRUCTION><![CDATA[Celem gry jest dodanie liczb, które pokazują ci Bolisie tak aby uzyskać sumę, która pokazana jest na górze ekranu. Musisz się pozbyć liczby, o którą jest za dużo. <br><br>Kliknij lewym przyciskiem myszki na Bolisia, która trzyma w ręku liczbę, której chcesz się pozbyć aby uzyskać prawidłową sumę.]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Poziom:]]></TEXT_LEVEL>
+<TEXT_LIVES><![CDATA[Życia:]]></TEXT_LIVES>
+<TEXT_LOSE_LIFE><![CDATA[Straciłeś jedno życie!]]></TEXT_LOSE_LIFE>
+<TEXT_NEXT_LEVEL><![CDATA[Brawo!]]></TEXT_NEXT_LEVEL>
+<TEXT_POINTS><![CDATA[Punkty:]]></TEXT_POINTS>
+<TEXT_PREPARE><![CDATA[Start!]]></TEXT_PREPARE>
+<TEXT_QUESTION><![CDATA[Zsumuj do liczby]]></TEXT_QUESTION>
+<TEXT_TIME><![CDATA[Czas:]]></TEXT_TIME>
+<TEXT_TITLE><![CDATA[INSTRUKCJA]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[Wygrałeś!]]></TEXT_VICTORY>
+<TEXT_YOUR_POINTS><![CDATA[Suma punktów:]]></TEXT_YOUR_POINTS>
+</snippets>

@@ -1,0 +1,39 @@
+<snippets date="05.05.2011 09:17:00">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Instrukcje]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Menu główne]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Następna runda]]></BTN_NEXTROUND>
+<BTN_PLAYAGAIN><![CDATA[Jeszcze raz]]></BTN_PLAYAGAIN>
+<GOAL><![CDATA[CEL]]></GOAL>
+<GOAL2><![CDATA[Bramka]]></GOAL2>
+<INFO_MAIN><![CDATA[Do]]></INFO_MAIN>
+<INSTRUCTIONS><![CDATA[Twoja Panda chce zostać najlepszym sprzedawcą lodów w mieście!
+
+Musisz przygotować dla klientów pyszne lody w rożkach. Jeżeli się pomylisz, twój rożek wyląduje w śmietniku. Bądź więc uważny i skoncentruj się dobrze! Gdy uda ci się zrobić tyle lodów, ile wymaga dana runda, to zostaniesz najlepszym sprzedawcą lodów na Panfu!]]></INSTRUCTIONS>
+<INSTRUCTIONS2><![CDATA[Przygotuj lody dokładnie jak sobie tego życzy klient.
+
+Kliknij na rożek, aby napełnić go kulkami lodów.
+Kliknij na miskę z ciastem, aby przyrządzić rożki. ]]></INSTRUCTIONS2>
+<INSTRUCTIONS3><![CDATA[Kliknij na pojemniki z lodami, aby zrobić kulki lodu.
+
+Zaczekaj aż rożki będą gotowe, po czym kliknij na nie, aby postawić je na stole.
+Pośpiesz się, bo inaczej się spalą!]]></INSTRUCTIONS3>
+<INSTRUCTIONS4><![CDATA[Możesz dodać do lodów różne polewy, owoce i inne dodatki.
+Wystarczy kliknąć na odpowiednie naczynie!
+Gdy lody są już gotowe, możesz je podać klientowi i życzyć smacznego!]]></INSTRUCTIONS4>
+<INSTRUCTION_HEAD><![CDATA[INSTRUKCJE]]></INSTRUCTION_HEAD>
+<LOGO_URL><![CDATA[http://www.panfu.com]]></LOGO_URL>
+<MAIN_START><![CDATA[Start]]></MAIN_START>
+<MAIN_TITLE><![CDATA[Lodziarnia ]]></MAIN_TITLE>
+<PROFIT><![CDATA[PUNKTY: $$score$$]]></PROFIT>
+<TEXT_CURROUNDPTS><![CDATA[Wygrane]]></TEXT_CURROUNDPTS>
+<TEXT_GAMEEND><![CDATA[Koniec gry!]]></TEXT_GAMEEND>
+<TEXT_NEEDTOMAKE><![CDATA[Musisz zrobić:]]></TEXT_NEEDTOMAKE>
+<TEXT_NEEDTOMAKE2><![CDATA[$$goal$$]]></TEXT_NEEDTOMAKE2>
+<TEXT_PREVROUNDPTS><![CDATA[Wygrane w innych rundach:]]></TEXT_PREVROUNDPTS>
+<TEXT_ROUND><![CDATA[Runda $$roundnumber$$]]></TEXT_ROUND>
+<TEXT_ROUNDEND><![CDATA[Runda zaliczona!]]></TEXT_ROUNDEND>
+<TEXT_ROUNDFAILED><![CDATA[Nie udało się dokończyć rundy!]]></TEXT_ROUNDFAILED>
+<TEXT_ROUNDTOTALPTS><![CDATA[Wygrana w tej rundzie:]]></TEXT_ROUNDTOTALPTS>
+<TEXT_TOTAL><![CDATA[Suma:]]></TEXT_TOTAL>
+</snippets>

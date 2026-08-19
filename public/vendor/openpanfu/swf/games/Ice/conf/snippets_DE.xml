@@ -1,0 +1,39 @@
+﻿<snippets date="05.05.2011 09:16:59">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INSTRUCTION><![CDATA[Anleitung]]></BTN_INSTRUCTION>
+<BTN_MENU><![CDATA[Hauptmenü]]></BTN_MENU>
+<BTN_NEXTROUND><![CDATA[Nächste Runde]]></BTN_NEXTROUND>
+<BTN_PLAYAGAIN><![CDATA[Neuer Versuch]]></BTN_PLAYAGAIN>
+<GOAL><![CDATA[ZIEL]]></GOAL>
+<GOAL2><![CDATA[Ziel]]></GOAL2>
+<INFO_MAIN><![CDATA[Zur]]></INFO_MAIN>
+<INSTRUCTIONS><![CDATA[Dein Panda will der beste Eisverkäufer von Panfu werden!
+
+Du musst köstliches Eis in Waffeln für Deine Kunden vorbereiten. Wenn Du einen Fehler machst, dann musst Du die Waffel wegwerfen, also konzentriere Dich und pass auf! Wenn Du es schaffst, das Rundenziel zu erriechen, bist Du der beste Eisverkäufer!]]></INSTRUCTIONS>
+<INSTRUCTIONS2><![CDATA[Bereite das Eis genauso zu, wie Dein Kunde es mag.
+
+Klick auf die Waffel, um sie mit Eis zu befüllen.
+Klicke auf die Schale mit dem Teig, um ihn in das Waffeleisen zu füllen.]]></INSTRUCTIONS2>
+<INSTRUCTIONS3><![CDATA[Klick auf die Eisbecher, um Eiskugeln zu Machen.
+
+Warte bis die Waffeln fertig sind, dann klicke sie an, um sie auf den Tisch zu stellen.
+Beeil Dich, sonst verbrennen sie!]]></INSTRUCTIONS3>
+<INSTRUCTIONS4><![CDATA[Du kannst verschiedene Arten von Sahne, Soßen und Früchte auf Dein Eis tun. 
+Klick einfach auf die richtige Tube und schon geht´s!
+Wenn das Eis oder die Waffel fertig ist, kannst Du sie Deinem Gast geben.]]></INSTRUCTIONS4>
+<INSTRUCTION_HEAD><![CDATA[ANLEITUNG]]></INSTRUCTION_HEAD>
+<LOGO_URL><![CDATA[http://www.panfu.com]]></LOGO_URL>
+<MAIN_START><![CDATA[Start]]></MAIN_START>
+<MAIN_TITLE><![CDATA[Ice cream shop]]></MAIN_TITLE>
+<PROFIT><![CDATA[EINNAHMEN: $$score$$]]></PROFIT>
+<TEXT_CURROUNDPTS><![CDATA[Verdient]]></TEXT_CURROUNDPTS>
+<TEXT_GAMEEND><![CDATA[Spiel vorbei!]]></TEXT_GAMEEND>
+<TEXT_NEEDTOMAKE><![CDATA[Das musst Du schaffen:]]></TEXT_NEEDTOMAKE>
+<TEXT_NEEDTOMAKE2><![CDATA[$$goal$$]]></TEXT_NEEDTOMAKE2>
+<TEXT_PREVROUNDPTS><![CDATA[In anderen Runden verdient:]]></TEXT_PREVROUNDPTS>
+<TEXT_ROUND><![CDATA[Runde $$roundnumber$$]]></TEXT_ROUND>
+<TEXT_ROUNDEND><![CDATA[Runde geschafft!]]></TEXT_ROUNDEND>
+<TEXT_ROUNDFAILED><![CDATA[Runde nicht geschafft!]]></TEXT_ROUNDFAILED>
+<TEXT_ROUNDTOTALPTS><![CDATA[In dieser Runde verdient:]]></TEXT_ROUNDTOTALPTS>
+<TEXT_TOTAL><![CDATA[Gesamt:]]></TEXT_TOTAL>
+</snippets>

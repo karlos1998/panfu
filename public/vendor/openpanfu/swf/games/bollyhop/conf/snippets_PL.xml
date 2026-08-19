@@ -1,0 +1,13 @@
+<snippets date="05.05.2011 09:12:26">
+<BTN_END><![CDATA[Zakończ ]]></BTN_END>
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Zagraj jeszcze raz]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Graj i czatuj!]]></BTN_PLAY_CHAT>
+<INSTRUCTION_TEXT><![CDATA[Bolly Hop działa następująco:
+Masz do dyspozycji 12 strzałek które pomogą twojemu Bolisiowi zbudować drabinę aby dojść na górę wieży basenu! Kliknij lewym przyciskiem myszki, żeby wystrzelić strzałkę w kierunku wieży.]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instrukcja]]></INSTRUCTION_TITLE>
+<PLAY_NOW><![CDATA[Graj teraz!]]></PLAY_NOW>
+<TEXT_END_BUBBLE><![CDATA[Gratulacje!
+Posiadasz teraz
+$$score$$ punktów!]]></TEXT_END_BUBBLE>
+</snippets>

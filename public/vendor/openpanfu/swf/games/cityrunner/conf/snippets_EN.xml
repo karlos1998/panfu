@@ -1,0 +1,12 @@
+<snippets date="05.05.2011 09:13:09">
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instructions]]></BTN_INTRODUCTION>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Start playing]]></BTN_PLAYNOW>
+<GOT_POINTS><![CDATA[You have acquired $$score$$ points!]]></GOT_POINTS>
+<PLAY_CHAT><![CDATA[Play & Chat]]></PLAY_CHAT>
+<TEXT_CRASHED><![CDATA[Crash!]]></TEXT_CRASHED>
+<TEXT_FINISH_SUCCESS><![CDATA[Congratulations! Success!]]></TEXT_FINISH_SUCCESS>
+<TEXT_WELCOME><![CDATA[How it works:
+Collect fruits and Panda coins with your Bolly. You jump over obstacles by doing a left mouse click. The more things you collect, the more Panda coins you win!]]></TEXT_WELCOME>
+</snippets>

@@ -1,0 +1,18 @@
+<snippets date="05.05.2011 09:14:54">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAYCHAT><![CDATA[Graj i czatuj]]></BTN_PLAYCHAT>
+<TEXT_BTN_SENDPOINTS><![CDATA[Wyślij punkty]]></TEXT_BTN_SENDPOINTS>
+<TEXT_BTN_START><![CDATA[Start]]></TEXT_BTN_START>
+<TEXT_FINISH><![CDATA[Super!
+Wygrałeś $$score$$ punktów]]></TEXT_FINISH>
+<TEXT_FINISH_FAILED><![CDATA[Ojej! czas minął! Może następnym razem!]]></TEXT_FINISH_FAILED>
+<TEXT_FINISH_SUCCESS><![CDATA[Przechodzisz do poziomu $$level$$!]]></TEXT_FINISH_SUCCESS>
+<TEXT_INSTRUCTION><![CDATA[Jako Panda masz z pewnością zdolność szybkiego zapamiętywania. Jak dobra jest twoja pamięć? Kliknij na karty aby je odwrócić i znaleźć identyczne pary. Ale uwaga! Masz tylko 60 sekund by je wszystkie odnaleźć! Baw się dobrze! ]]></TEXT_INSTRUCTION>
+<TEXT_INSTRUCTION_TITLE><![CDATA[INSTRUKCJA:]]></TEXT_INSTRUCTION_TITLE>
+<TEXT_LEVEL><![CDATA[POZIOM]]></TEXT_LEVEL>
+<TEXT_ROUNDSTARTS><![CDATA[$$level$$ poziom się zaczyna]]></TEXT_ROUNDSTARTS>
+<TEXT_RUN_RUN_RUN><![CDATA[Dawaj! Dawaj! Dawaj!]]></TEXT_RUN_RUN_RUN>
+<TEXT_SCORE><![CDATA[PUNKTY]]></TEXT_SCORE>
+<TEXT_YOURSCORE><![CDATA[Twoje punkty: [TOTAL POINTS]]]></TEXT_YOURSCORE>
+</snippets>

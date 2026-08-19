@@ -1,0 +1,12 @@
+﻿<snippets date="05.05.2011 09:13:09">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Anleitung]]></BTN_INTRODUCTION>
+<BTN_PLAYAGAIN><![CDATA[Spiel neu starten]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Spiel starten]]></BTN_PLAYNOW>
+<GOT_POINTS><![CDATA[Du hast $$score$$ Punkte gesammelt!]]></GOT_POINTS>
+<PLAY_CHAT><![CDATA[Spielen & Chatten]]></PLAY_CHAT>
+<TEXT_CRASHED><![CDATA[Abgestürzt!]]></TEXT_CRASHED>
+<TEXT_FINISH_SUCCESS><![CDATA[Glückwunsch! Geschafft!]]></TEXT_FINISH_SUCCESS>
+<TEXT_WELCOME><![CDATA[So geht's:
+Sammle mit Deinem Bolly Früchte und Münzen ein, die auf der Straße liegen. Hindernisse musst Du überspringen, indem Du auf die linke Maustaste klickst. Je mehr Dinge Du einsammelst, umso mehr Münzen kannst Du gewinnen.]]></TEXT_WELCOME>
+</snippets>

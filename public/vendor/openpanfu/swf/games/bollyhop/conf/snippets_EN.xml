@@ -1,0 +1,13 @@
+<snippets date="05.05.2011 09:12:24">
+<BTN_END><![CDATA[Quit]]></BTN_END>
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Play & chat!]]></BTN_PLAY_CHAT>
+<INSTRUCTION_TEXT><![CDATA[How It Works 
+You have 12 arrows to help your Bolly climb the ladder to the top of the tower and jump into the pool. Click the left mouse button to throw the arrows so the Bolly can climb higher.]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instructions]]></INSTRUCTION_TITLE>
+<PLAY_NOW><![CDATA[Play now!]]></PLAY_NOW>
+<TEXT_END_BUBBLE><![CDATA[Fantastic!
+You have won $$score$$
+points!]]></TEXT_END_BUBBLE>
+</snippets>

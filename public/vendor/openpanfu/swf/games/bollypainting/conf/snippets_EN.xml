@@ -1,0 +1,26 @@
+<snippets date="03.06.2010 23:58:38">
+<BTN_FINISH><![CDATA[End]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instructions]]></BTN_INTRODUCTION>
+<BTN_NEXT_LEVEL><![CDATA[Next Level]]></BTN_NEXT_LEVEL>
+<BTN_PAUSE><![CDATA[Pause]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play again]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[End]]></BTN_PLAY_CHAT>
+<BTN_RESET><![CDATA[Start over]]></BTN_RESET>
+<BTN_RESUME><![CDATA[Continue playing]]></BTN_RESUME>
+<TEXT_COLOR><![CDATA[Choose a colour]]></TEXT_COLOR>
+<TEXT_FINISH_FAILURE><![CDATA[Time is up!]]></TEXT_FINISH_FAILURE>
+<TEXT_FINISH_LEVEL><![CDATA[Congratulations!<br/>Level completed!]]></TEXT_FINISH_LEVEL>
+<TEXT_GETREADY><![CDATA[Attention!<br>Start]]></TEXT_GETREADY>
+<TEXT_INTRODUCTION><![CDATA[Paint the picture in the correct colours!<br>The color and the area you must paint has the same number. <br> <br> The faster you are, the more points you get!]]></TEXT_INTRODUCTION>
+<TEXT_LEVEL><![CDATA[Level:
+]]></TEXT_LEVEL>
+<TEXT_TOTAL_SCORE><![CDATA[Total points:]]></TEXT_TOTAL_SCORE>
+<TITLE_BONUS><![CDATA[Bonus]]></TITLE_BONUS>
+<TITLE_FINISH_GAME><![CDATA[GAME OVER!]]></TITLE_FINISH_GAME>
+<TITLE_FINISH_LEVEL><![CDATA[GAME COMPLETED!]]></TITLE_FINISH_LEVEL>
+<TITLE_INTRODUCTION><![CDATA[INSTRUCTIONS]]></TITLE_INTRODUCTION>
+<TITLE_PAUSE><![CDATA[PAUSE]]></TITLE_PAUSE>
+<TITLE_POINT><![CDATA[Points:]]></TITLE_POINT>
+<TITLE_TIME><![CDATA[Time:]]></TITLE_TIME>
+</snippets>

@@ -1,0 +1,23 @@
+<snippets date="05.05.2011 09:12:42">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instrukcje]]></BTN_INTRODUCTION>
+<BTN_PAUSE><![CDATA[Pauza]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Zagraj teraz]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Zakończ]]></BTN_PLAY_CHAT>
+<RESET><![CDATA[Od początku]]></RESET>
+<RESUME><![CDATA[Graj dalej]]></RESUME>
+<TEXT_FINISH_FAILURE><![CDATA[Koniec czasu!]]></TEXT_FINISH_FAILURE>
+<TEXT_FINISH_LEVEL><![CDATA[Gratulacje!<br>Poziom ukończony!]]></TEXT_FINISH_LEVEL>
+<TEXT_GETREADY><![CDATA[Uwaga!<br>Start]]></TEXT_GETREADY>
+<TEXT_INTRODUCTION><![CDATA[Celem gry jest utrzymanie piłki w górze jak najdłużej jak tylko to możliwe.<br>Jeżeli piłka spadnie na ziemie stracisz swoje punkty.<br><br>Aby grać w tę grę musisz używać swojej myszki.]]></TEXT_INTRODUCTION>
+<TEXT_LEVEL><![CDATA[Poziom:]]></TEXT_LEVEL>
+<TEXT_TOTAL_SCORE><![CDATA[Suma punktów:]]></TEXT_TOTAL_SCORE>
+<TITLE_FINISH_GAME><![CDATA[KONIEC GRY!]]></TITLE_FINISH_GAME>
+<TITLE_FINISH_LEVEL><![CDATA[POZIOM UKOŃCZONY!]]></TITLE_FINISH_LEVEL>
+<TITLE_INTRODUCTION><![CDATA[INSTRUKCJA]]></TITLE_INTRODUCTION>
+<TITLE_MAX_POINT><![CDATA[Najlepszy wynik:]]></TITLE_MAX_POINT>
+<TITLE_PAUSE><![CDATA[PAUZA]]></TITLE_PAUSE>
+<TITLE_POINT><![CDATA[Punkty:]]></TITLE_POINT>
+<TITLE_TIME><![CDATA[Czas:]]></TITLE_TIME>
+</snippets>

@@ -1,0 +1,21 @@
+﻿<snippets date="05.05.2011 09:13:12">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Anleitung]]></BTN_INTRODUCTION>
+<BTN_NEXTLEVEL><![CDATA[Weiter]]></BTN_NEXTLEVEL>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<TEXT_FINISH_LEVEL><![CDATA[Der Level ist geschafft!]]></TEXT_FINISH_LEVEL>
+<TEXT_FINISH_SUCCESS><![CDATA[Spiel vorbei!]]></TEXT_FINISH_SUCCESS>
+<TEXT_INTRODUCTION><![CDATA[Hilf den Pandas, die köstlichen Muffins zu dekorieren!
+Wenn ein Muffin an den Pandas vorbeikommt, klicke auf einen Teller mit Zuckerdekorationen, Nüssen und Früchten.
+Versuche, so viele unterschiedliche Muffins zu dekorieren, wie möglich!
+]]></TEXT_INTRODUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LEVEL_SCORE><![CDATA[Punkte in diesem Level:]]></TEXT_LEVEL_SCORE>
+<TEXT_SCORE><![CDATA[Punkte:]]></TEXT_SCORE>
+<TEXT_TOTAL_SCORE><![CDATA[Deine Punkte:]]></TEXT_TOTAL_SCORE>
+<TITLE_BONUS><![CDATA[Bonus]]></TITLE_BONUS>
+<TITLE_FINISH_GAME><![CDATA[SPIEL VORBEI!]]></TITLE_FINISH_GAME>
+<TITLE_INTRODUCTION><![CDATA[ANLEITUNG]]></TITLE_INTRODUCTION>
+</snippets>

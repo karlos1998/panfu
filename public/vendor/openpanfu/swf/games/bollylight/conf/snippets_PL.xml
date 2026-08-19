@@ -1,0 +1,24 @@
+<snippets date="05.05.2011 09:12:44">
+<BTN_END><![CDATA[Zakończ]]></BTN_END>
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_NEXT><![CDATA[Graj]]></BTN_NEXT>
+<BTN_PAUSE><![CDATA[Pauza]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Zakończ]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Zagraj teraz]]></BTN_START>
+<HELLO><![CDATA[Witaj, $$name$$!]]></HELLO>
+<TEXT_DEFEATED><![CDATA[KONIEC GRY!]]></TEXT_DEFEATED>
+<TEXT_END_GAME><![CDATA[KONIEC GRY!]]></TEXT_END_GAME>
+<TEXT_INSTRUCTION><![CDATA[Musisz zgadnąć, których Bolisi jest najwięcej w pokoju! Aby to sprawdzić musisz użyć latarki. Kliknij w prawym okienku na Bolisia, który najczęściej występuje w danym pokoju. Aby grać używaj swojej myszki.]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Poziom:]]></TEXT_LEVEL>
+<TEXT_LIVES><![CDATA[Życia:]]></TEXT_LIVES>
+<TEXT_LOSE_LIFE><![CDATA[Straciłeś jedno życie!]]></TEXT_LOSE_LIFE>
+<TEXT_NEXT_LEVEL><![CDATA[Następny poziom]]></TEXT_NEXT_LEVEL>
+<TEXT_POINTS><![CDATA[Punkty:]]></TEXT_POINTS>
+<TEXT_PREPARE><![CDATA[Gotowy!]]></TEXT_PREPARE>
+<TEXT_QUESTION><![CDATA[Których Bolisi jest najwięcej?]]></TEXT_QUESTION>
+<TEXT_TIME><![CDATA[Czas:]]></TEXT_TIME>
+<TEXT_TITLE><![CDATA[INSTRUKCJA]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[Gratulacje!]]></TEXT_VICTORY>
+<TEXT_YOUR_POINTS><![CDATA[Suma punktów:]]></TEXT_YOUR_POINTS>
+</snippets>

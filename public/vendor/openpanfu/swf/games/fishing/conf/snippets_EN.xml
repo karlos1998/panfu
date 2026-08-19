@@ -1,0 +1,16 @@
+<snippets date="05.05.2011 09:13:30">
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now!]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Play & chat]]></BTN_PLAY_CHAT>
+<END_TEXT><![CDATA[Fish caught]]></END_TEXT>
+<END_TEXT_POINTS><![CDATA[Score]]></END_TEXT_POINTS>
+<FISH><![CDATA[Fish]]></FISH>
+<INSTRUCTION_TEXT><![CDATA[The mouse is your fishing bait. Move it up and down to catch the fish that are swimming sometimes lower sometimes higher. When you've caught a fish in your bait pull it into the boat, and it will automatically be added to your count. There are different kinds of fish, the bigger the fish the more points you get! There are also special types of fish - collect all types and have fun!
+
+]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Instructions]]></INSTRUCTION_TITLE>
+<ITEM_SLOWDOWN><![CDATA[Snail Pace]]></ITEM_SLOWDOWN>
+<ITEM_TIMEBONUS><![CDATA[Time Bonus]]></ITEM_TIMEBONUS>
+<WORMS><![CDATA[Worms]]></WORMS>
+</snippets>

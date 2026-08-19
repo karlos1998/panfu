@@ -1,0 +1,23 @@
+<snippets date="05.05.2011 09:17:46">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Anleitung]]></BTN_INTRODUCTION>
+<BTN_NEXTLEVEL><![CDATA[Nächster Level]]></BTN_NEXTLEVEL>
+<BTN_PAUSE><![CDATA[Pause]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<BTN_RESUME><![CDATA[Start]]></BTN_RESUME>
+<TEXT_FINISH_FAILURE><![CDATA[Zeit ist um!]]></TEXT_FINISH_FAILURE>
+<TEXT_FINISH_LEVEL><![CDATA[Level geschafft!]]></TEXT_FINISH_LEVEL>
+<TEXT_GET_READY><![CDATA[Fertig!]]></TEXT_GET_READY>
+<TEXT_INTRODUCTION><![CDATA[Ziel ist es, alle Teile des Baggers zusammenzubauen.<br><br>Vergiss nicht, dass Du die richtige Reihenfolge einhalten musst!<br><br>Benutze Deine Maus, um zu spielen!]]></TEXT_INTRODUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_LEVEL_SCORE><![CDATA[Punkte:]]></TEXT_LEVEL_SCORE>
+<TEXT_SCORE><![CDATA[Punkte:]]></TEXT_SCORE>
+<TEXT_TIME><![CDATA[Zeit:]]></TEXT_TIME>
+<TEXT_TOTAL_SCORE><![CDATA[Gesamtpunktzahl:]]></TEXT_TOTAL_SCORE>
+<TITLE_BONUS><![CDATA[bonus]]></TITLE_BONUS>
+<TITLE_FINISH_GAME><![CDATA[Spiel vorbei!]]></TITLE_FINISH_GAME>
+<TITLE_INTRODUCTION><![CDATA[ANLEITUNG]]></TITLE_INTRODUCTION>
+<TITLE_PAUSE><![CDATA[PAUSE]]></TITLE_PAUSE>
+</snippets>

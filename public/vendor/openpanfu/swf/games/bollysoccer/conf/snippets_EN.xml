@@ -1,0 +1,23 @@
+<snippets date="05.05.2011 09:12:40">
+<BTN_FINISH><![CDATA[Finish]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instructions]]></BTN_INTRODUCTION>
+<BTN_PAUSE><![CDATA[Pause]]></BTN_PAUSE>
+<BTN_PLAYAGAIN><![CDATA[Play again]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Play now]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[End]]></BTN_PLAY_CHAT>
+<RESET><![CDATA[Restart]]></RESET>
+<RESUME><![CDATA[Play on]]></RESUME>
+<TEXT_FINISH_FAILURE><![CDATA[Time is up!]]></TEXT_FINISH_FAILURE>
+<TEXT_FINISH_LEVEL><![CDATA[Congratulations!<br>Level completed!]]></TEXT_FINISH_LEVEL>
+<TEXT_GETREADY><![CDATA[Attention!<br>Start]]></TEXT_GETREADY>
+<TEXT_INTRODUCTION><![CDATA[The aim of the game is to keep the ball in the air as long as possible.<br>If your ball falls on the ground you will lose your points.<br><br>You must use your mouse to play this game.]]></TEXT_INTRODUCTION>
+<TEXT_LEVEL><![CDATA[Level:]]></TEXT_LEVEL>
+<TEXT_TOTAL_SCORE><![CDATA[Total points:]]></TEXT_TOTAL_SCORE>
+<TITLE_FINISH_GAME><![CDATA[GAME OVER!]]></TITLE_FINISH_GAME>
+<TITLE_FINISH_LEVEL><![CDATA[LEVEL COMPLETED!]]></TITLE_FINISH_LEVEL>
+<TITLE_INTRODUCTION><![CDATA[INSTRUCTIONS]]></TITLE_INTRODUCTION>
+<TITLE_MAX_POINT><![CDATA[Highest point score:]]></TITLE_MAX_POINT>
+<TITLE_PAUSE><![CDATA[PAUSE]]></TITLE_PAUSE>
+<TITLE_POINT><![CDATA[Points:]]></TITLE_POINT>
+<TITLE_TIME><![CDATA[Time:]]></TITLE_TIME>
+</snippets>

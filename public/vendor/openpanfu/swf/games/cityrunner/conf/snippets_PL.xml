@@ -1,0 +1,11 @@
+<snippets date="05.05.2011 09:13:11">
+<BTN_FINISH><![CDATA[Zakończ ]]></BTN_FINISH>
+<BTN_INTRODUCTION><![CDATA[Instrukcja]]></BTN_INTRODUCTION>
+<BTN_PLAYAGAIN><![CDATA[Zagraj jeszcze raz]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Początek gry]]></BTN_PLAYNOW>
+<GOT_POINTS><![CDATA[Wygrałeś $$score$$ punktów!]]></GOT_POINTS>
+<PLAY_CHAT><![CDATA[Graj i Czatuj]]></PLAY_CHAT>
+<TEXT_CRASHED><![CDATA[Pudło!]]></TEXT_CRASHED>
+<TEXT_FINISH_SUCCESS><![CDATA[Gratulacje! Udało ci się!]]></TEXT_FINISH_SUCCESS>
+<TEXT_WELCOME><![CDATA[Zbieraj ze swoim Bolisiem owoce i Panda-monety znajdujące się na drodze. Za pomocą lewego przycisku myszki przeskakuj przez różne przeszkody. Im więcej zbierzesz przedmiotów tym więcej wygrasz Panda-monet!]]></TEXT_WELCOME>
+</snippets>

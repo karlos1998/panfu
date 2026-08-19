@@ -1,0 +1,14 @@
+<snippets date="05.05.2011 09:13:30">
+<BTN_FINISH><![CDATA[Beenden]]></BTN_FINISH>
+<BTN_PLAYAGAIN><![CDATA[Nochmal spielen]]></BTN_PLAYAGAIN>
+<BTN_PLAYNOW><![CDATA[Jetzt spielen]]></BTN_PLAYNOW>
+<BTN_PLAY_CHAT><![CDATA[Spielen & Chatten]]></BTN_PLAY_CHAT>
+<END_TEXT><![CDATA[Gefangene Fische]]></END_TEXT>
+<END_TEXT_POINTS><![CDATA[Score]]></END_TEXT_POINTS>
+<FISH><![CDATA[Fisch]]></FISH>
+<INSTRUCTION_TEXT><![CDATA[Die Maus ist deine Angel. Bewege sie nach Oben und nach Unten, um mit dem Köder die Fische zu fangen. Hast du einen Fisch an der Angel, zieh ihn in das Boot, um ihn automatisch abzulegen. Es gibt unterschiedliche Fische – je größer der Fisch, desto mehr Punkte für dich! Es gibt auch besondere Fische – sammle sie ein und der Spaß ist dein!]]></INSTRUCTION_TEXT>
+<INSTRUCTION_TITLE><![CDATA[Anleitung]]></INSTRUCTION_TITLE>
+<ITEM_SLOWDOWN><![CDATA[Schnecken Tempo]]></ITEM_SLOWDOWN>
+<ITEM_TIMEBONUS><![CDATA[Zeit Bonus]]></ITEM_TIMEBONUS>
+<WORMS><![CDATA[Würmer]]></WORMS>
+</snippets>

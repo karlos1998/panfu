@@ -1,0 +1,23 @@
+<snippets date="05.05.2011 09:13:37">
+<BTN_FINISH><![CDATA[Zakończ]]></BTN_FINISH>
+<BTN_INSTR><![CDATA[Instrukcje]]></BTN_INSTR>
+<BTN_PLAYAGAIN><![CDATA[Zagraj ponownie]]></BTN_PLAYAGAIN>
+<BTN_PLAY_CHAT><![CDATA[Graj & Czatuj]]></BTN_PLAY_CHAT>
+<BTN_START><![CDATA[Start]]></BTN_START>
+<HELLO><![CDATA[Witaj, $$name$$!!!]]></HELLO>
+<TEXT_DEFEAT><![CDATA[KONIEC GRY !]]></TEXT_DEFEAT>
+<TEXT_GOOD><![CDATA[Zgadza się, bardzo dobrze!]]></TEXT_GOOD>
+<TEXT_INSTRUCTION><![CDATA[Obejrzyj animacje i zapamiętaj dobrze kolejność w jakiej obrazki się pojawiają. Będziesz musiał je potem odtworzyć w tej samej kolejności.<br><br> Im będziesz szybszy, tym więcej punktów zdobędziesz!
+Uwaga!<br><br> Czasem będziesz musiał ułożyć obrazki w odwrotnej kolejności! Miłej zabawy!]]></TEXT_INSTRUCTION>
+<TEXT_LEVEL><![CDATA[Poziom:]]></TEXT_LEVEL>
+<TEXT_LEVEL_POINTS><![CDATA[Punkty:]]></TEXT_LEVEL_POINTS>
+<TEXT_POINTS><![CDATA[Suma punktów]]></TEXT_POINTS>
+<TEXT_POINTS_TO_GET><![CDATA[Punkty do zdobycia:]]></TEXT_POINTS_TO_GET>
+<TEXT_PREPARE><![CDATA[Gotowy!]]></TEXT_PREPARE>
+<TEXT_SCORE><![CDATA[Twoje punkty:]]></TEXT_SCORE>
+<TEXT_TIMEOUT><![CDATA[Czas minął!]]></TEXT_TIMEOUT>
+<TEXT_TITLE><![CDATA[INSTRUKCJE]]></TEXT_TITLE>
+<TEXT_VICTORY><![CDATA[KONIEC GRY!]]></TEXT_VICTORY>
+<TEXT_WRONG><![CDATA[Zła odpowiedź!]]></TEXT_WRONG>
+<TEXT_YOUR_TURN><![CDATA[Teraz twoja kolej]]></TEXT_YOUR_TURN>
+</snippets>
