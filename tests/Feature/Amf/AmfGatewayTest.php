@@ -75,7 +75,9 @@ class AmfGatewayTest extends TestCase
         $result = $login->get('valueObject');
         $this->assertInstanceOf(TypedObject::class, $result);
         $this->assertSame('com.pandaland.mvc.model.vo.LoginResultVO', $result->type);
-        $this->assertIsNumeric($result->get('ticketId'));
+        $ticket = $result->get('ticketId');
+        $this->assertIsNumeric($ticket);
+        $this->assertSame((string) (int) $ticket, $player->refresh()->ticket_id);
         $this->assertSame('Panda', $result->get('playerInfo')->get('name'));
         $this->assertSame(1250, $result->get('playerInfo')->get('coins'));
         $this->assertCount(1, $result->get('gameServers'));

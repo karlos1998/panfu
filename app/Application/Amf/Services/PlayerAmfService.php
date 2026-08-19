@@ -54,7 +54,7 @@ final class PlayerAmfService
         if ($player === null) {
             return $this->responses->make(1);
         }
-        $player->update(['tour_finished' => (bool) $status]);
+        $player->forceFill(['tour_finished' => (bool) $status])->save();
 
         return $this->responses->make(message: 'Tour updated!');
     }
@@ -125,8 +125,14 @@ final class PlayerAmfService
             return $this->responses->make(1);
         }
 
-        $list = User::query()->whereKey($playerIds)->get()
+        $players = User::query()->whereKey($playerIds)->get()->keyBy(
+            fn (User $player): int => (int) $player->getKey(),
+        );
+        $list = collect($playerIds)
+            ->map(fn (int $playerId): ?User => $players->get($playerId))
+            ->filter()
             ->map(fn (User $player): TypedObject => $this->players->info($player))
+            ->values()
             ->all();
 
         return $this->responses->make(valueObject: $this->valueObjects->make('List', ['list' => $list]));
@@ -182,7 +188,7 @@ final class PlayerAmfService
     {
         $player = $this->player();
         if ($player !== null) {
-            $player->update(['coins' => $score]);
+            $player->forceFill(['coins' => $score])->save();
         }
 
         return $this->responses->make();

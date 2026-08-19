@@ -42,7 +42,7 @@ final class PlayerService
     public function issueGameTicket(User $player): int
     {
         $ticket = random_int(100000000, 2147483647);
-        $player->update(['ticket_id' => (string) $ticket]);
+        $player->forceFill(['ticket_id' => (string) $ticket])->save();
 
         return $ticket;
     }

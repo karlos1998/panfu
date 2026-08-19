@@ -42,7 +42,7 @@ Route::get('/api/shop', ShopController::class)->middleware(['auth', 'verified'])
 
 Route::post('/InformationServer/{path?}', AmfGatewayController::class)
     ->where('path', '.*')
-    ->name('panfu.information-server');
+    ->name('amf.gateway');
 
 Route::middleware('auth')->group(function () {
     Route::redirect('/profile', '/account/settings')->name('profile.edit');

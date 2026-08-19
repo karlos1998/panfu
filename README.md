@@ -2,7 +2,7 @@
 
 Lokalna rekonstrukcja Panfu uruchamiana bez zależności od produkcyjnego `panfu.me`.
 Projekt łączy nowoczesny frontend Laravel + Inertia + Vue + TypeScript z lokalnym
-klientem Flash uruchamianym przez Ruffle, lokalnym Information Serverem i lokalnym
+klientem Flash uruchamianym przez Ruffle, natywną bramą AMF Laravela i lokalnym
 gameserverem.
 
 ![Strona główna Panfu](docs/screenshots/home.jpg)
@@ -35,7 +35,7 @@ Potem otwórz:
 - Aplikacja: http://127.0.0.1:8080
 - Gra: http://127.0.0.1:8080/play
 - phpMyAdmin: http://127.0.0.1:19999
-- Mailpit: http://127.0.0.1:8025
+- Mailpit: http://127.0.0.1:18025
 
 Jeżeli `/play` przekierowuje do logowania, zaloguj się albo załóż konto przez
 `/register`. Po zalogowaniu kliknij `Graj`, wybierz `Local Panfu` i klient gry
@@ -73,14 +73,13 @@ docker compose exec -T laravel.test php artisan optimize:clear
 
 | Serwis | Do czego służy | Port lokalny |
 | --- | --- | --- |
-| `laravel.test` | Laravel, Inertia, Vue, publiczne assety Flash | `8080` |
+| `laravel.test` | Laravel, Inertia, Vue, endpoint AMF i publiczne assety Flash | `8080` |
 | `mysql` | Główna baza projektu | `3306` |
 | `phpmyadmin` | UI do MySQL | `19999` |
-| `information-server` | Lokalny endpoint AMF/InformationServer dla klienta Flash | wewnętrzny |
 | `gameserver` | Lokalny serwer gry w Javie | wewnętrzny `9595` |
 | `socket-proxy` | WebSocket -> TCP dla Ruffle | `19596` |
 | `redis` | Cache/kolejki pomocnicze | `6380` |
-| `mailpit` | Podgląd maili developerskich | `8025` |
+| `mailpit` | Podgląd maili developerskich | `18025` |
 | `selenium` | Przeglądarkowe testy E2E, gdy będą potrzebne | wewnętrzny |
 
 Domyślne dane do bazy w `.env.example`:
@@ -108,7 +107,7 @@ docker compose stop
 Logi gry i aplikacji:
 
 ```bash
-docker compose logs -f laravel.test gameserver socket-proxy information-server
+docker compose logs -f laravel.test gameserver socket-proxy
 ```
 
 Migracje i seedery:
@@ -144,10 +143,11 @@ npm run build
 ## Struktura projektu
 
 ```text
-app/Domain/Panfu                 logika domenowa gry i klienta
-app/Infrastructure/Panfu         repozytoria/gatewaye do bazy i usług lokalnych
+app/Application/Amf              zgodna z klientem Flash warstwa usług AMF
+app/Domain                       logika domenowa gry podzielona funkcjonalnie
+app/Infrastructure/Amf           kodek protokołu AMF0/AMF3
+app/Infrastructure/GameServer    komunikacja Laravela z gameserverem
 game-server/                     lokalny gameserver Java
-information-server/              lokalny Information Server
 public/vendor/openpanfu/         lokalne assety Flash klienta i minigier
 resources/js/                    Vue + TypeScript + Inertia
 tools/socket-proxy.mjs           most WebSocket -> TCP dla Ruffle

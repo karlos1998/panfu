@@ -128,10 +128,8 @@ final class PetService
     public function select(User $player, int $petId): bool
     {
         return DB::transaction(function () use ($player, $petId): bool {
-            $player->pokoPets()->update([
-                'selected' => false,
-                'state' => DB::raw("CASE WHEN state = 'walking' THEN 'idle' ELSE state END"),
-            ]);
+            $player->pokoPets()->where('state', 'walking')->update(['state' => 'idle']);
+            $player->pokoPets()->update(['selected' => false]);
             if ($petId < 0) {
                 return true;
             }

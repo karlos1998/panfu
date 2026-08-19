@@ -65,7 +65,7 @@ public class GameServerDAO {
 	}
 
 	/**
-	 * Sets up the keys for the GameServer, allowing the Information Server to
+	 * Sets up the keys for the GameServer, allowing the Laravel AMF gateway to
 	 * communicate with the GameServer securely.
 	 * 
 	 * @param gameserver GameServer object
