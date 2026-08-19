@@ -93,7 +93,7 @@ DB_PASSWORD=password
 ## Bezpieczeństwo bramy AMF
 
 - Endpoint przyjmuje wyłącznie `POST` z `Content-Type: application/x-amf` pod
-  `/InformationServer/` lub `/InformationServer/gateway/amf`.
+  `/InformationServer/`.
 - Rozmiar, liczba wiadomości, liczba elementów i głębokość zagnieżdżenia AMF są
   ograniczone. Limity można dostroić zmiennymi `PANFU_AMF_*` z `.env.example`.
 - Dostępne usługi i metody są wpisane na jawną allowlistę. Błędy nie ujawniają

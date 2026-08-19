@@ -262,7 +262,7 @@ class AmfGatewayTest extends TestCase
 
         $response = $this->call(
             method: 'POST',
-            uri: '/InformationServer/gateway/amf',
+            uri: '/InformationServer/',
             server: ['CONTENT_TYPE' => 'application/x-amf'],
             content: $payload,
         );

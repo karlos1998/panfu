@@ -11,7 +11,6 @@ use App\Http\Controllers\Admin\PublicRoomController as AdminPublicRoomController
 use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\Admin\UserRelationController as AdminUserRelationController;
 use App\Http\Controllers\Admin\UserSessionController as AdminUserSessionController;
-use App\Http\Controllers\AmfGatewayController;
 use App\Http\Controllers\Blog\BlogCommentController;
 use App\Http\Controllers\Blog\BlogController;
 use App\Http\Controllers\Panfu\HomeController;
@@ -39,11 +38,6 @@ Route::get('/dashboard', function () {
 Route::get('/play', PlayController::class)->middleware(['auth', 'verified'])->name('play');
 
 Route::get('/api/shop', ShopController::class)->middleware(['auth', 'verified'])->name('panfu.shop');
-
-Route::post('/InformationServer/{path?}', AmfGatewayController::class)
-    ->where('path', 'gateway/amf/?')
-    ->middleware('throttle:amf')
-    ->name('amf.gateway');
 
 Route::middleware('auth')->group(function () {
     Route::redirect('/profile', '/account/settings')->name('profile.edit');

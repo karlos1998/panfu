@@ -47,7 +47,7 @@ class AmfGatewaySecurityTest extends TestCase
         $this->rawAmf(str_repeat('x', 9))->assertStatus(413);
     }
 
-    public function test_only_the_compatibility_gateway_paths_are_routable(): void
+    public function test_only_the_root_gateway_path_is_routable(): void
     {
         $payload = $this->payload('amfConnectionService.ping');
 
@@ -57,7 +57,7 @@ class AmfGatewaySecurityTest extends TestCase
             uri: '/InformationServer/gateway/amf',
             server: ['CONTENT_TYPE' => 'application/x-amf'],
             content: $payload,
-        )->assertOk();
+        )->assertNotFound();
         $this->call(
             method: 'POST',
             uri: '/InformationServer/unexpected/path',
