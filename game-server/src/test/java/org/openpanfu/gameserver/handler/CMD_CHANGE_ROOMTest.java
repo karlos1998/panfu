@@ -27,8 +27,8 @@ public class CMD_CHANGE_ROOMTest {
 		new CMD_CHANGE_ROOM().handlePacket(packet, user);
 
 		assertEquals(100870, user.getSubRoom());
-		assertEquals(100, user.getX());
-		assertEquals(100, user.getY());
+		assertEquals(135, user.getX());
+		assertEquals(331, user.getY());
 		assertEquals("12;100870|", channel.readOutbound());
 		assertNull(channel.readOutbound());
 	}
@@ -42,7 +42,32 @@ public class CMD_CHANGE_ROOMTest {
 		new CMD_CHANGE_ROOM().handlePacket(changeRoomPacket(42, 0, 100, 100), user);
 
 		assertEquals(0, user.getSubRoom());
+		assertEquals(635, user.getX());
+		assertEquals(334, user.getY());
 		assertEquals("12;0|", channel.readOutbound());
+	}
+
+	@Test
+	public void usesDoorSpawnPointsForEveryMultiRoomTreehouseTransition() {
+		assertTransitionSpawn(0, 100870, 135, 331);
+		assertTransitionSpawn(0, 100871, 635, 322);
+		assertTransitionSpawn(100870, 0, 120, 347);
+		assertTransitionSpawn(100871, 0, 635, 334);
+		assertTransitionSpawn(0, 100938, 610, 271);
+		assertTransitionSpawn(0, 100939, 105, 311);
+		assertTransitionSpawn(100938, 0, 120, 290);
+		assertTransitionSpawn(100939, 0, 620, 316);
+	}
+
+	@Test
+	public void preservesClientSpawnForAnUnknownSubroom() {
+		EmbeddedChannel channel = new EmbeddedChannel();
+		User user = homeUser(channel, 7, 42);
+
+		new CMD_CHANGE_ROOM().handlePacket(changeRoomPacket(42, 123456, 240, 315), user);
+
+		assertEquals(240, user.getX());
+		assertEquals(315, user.getY());
 	}
 
 	@Test
@@ -72,5 +97,16 @@ public class CMD_CHANGE_ROOMTest {
 		packet.writeInt(y);
 		packet.writeInt(0);
 		return packet;
+	}
+
+	private void assertTransitionSpawn(int previousSubRoom, int destinationSubRoom, int expectedX, int expectedY) {
+		EmbeddedChannel channel = new EmbeddedChannel();
+		User user = homeUser(channel, 7, 42);
+		user.setSubRoom(previousSubRoom);
+
+		new CMD_CHANGE_ROOM().handlePacket(changeRoomPacket(42, destinationSubRoom, 100, 100), user);
+
+		assertEquals(expectedX, user.getX());
+		assertEquals(expectedY, user.getY());
 	}
 }

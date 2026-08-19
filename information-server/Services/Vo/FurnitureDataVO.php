@@ -17,6 +17,12 @@ class FurnitureDataVO
     public $active;
     public $premium;
     public $bought;
+    public $room;
     public $roomID;
+
+    public function resolvedRoomID()
+    {
+        return isset($this->room) ? (int)$this->room : (int)$this->roomID;
+    }
 
 }

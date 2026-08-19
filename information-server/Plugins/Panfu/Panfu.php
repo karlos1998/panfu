@@ -639,7 +639,9 @@ class Panfu
         $response->x = isset($inventoryEntry['x']) ? (int)$inventoryEntry['x'] : 0;
         $response->y = isset($inventoryEntry['y']) ? (int)$inventoryEntry['y'] : 0;
         $response->rot = isset($inventoryEntry['rot']) ? (int)$inventoryEntry['rot'] : 0;
-        $response->roomID = isset($inventoryEntry['room']) ? (int)$inventoryEntry['room'] : 0;
+        $response->room = isset($inventoryEntry['room']) ? (int)$inventoryEntry['room'] : 0;
+        // Keep the old property for compatibility with older Flash clients.
+        $response->roomID = $response->room;
         return $response;
     }
 

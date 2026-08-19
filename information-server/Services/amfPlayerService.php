@@ -294,11 +294,16 @@ class amfPlayerService
             try {
                 $pdo = Database::getPDO();
                 foreach($furnitureList as $FurnitureDataVO) {
+                    $roomId = method_exists($FurnitureDataVO, 'resolvedRoomID')
+                        ? $FurnitureDataVO->resolvedRoomID()
+                        : (isset($FurnitureDataVO->room)
+                            ? (int)$FurnitureDataVO->room
+                            : (int)($FurnitureDataVO->roomID ?? 0));
                     $update = $pdo->prepare("UPDATE inventories SET x = :x, y = :y, rot = :rot, room = :room, active = :active WHERE user_id = :playerId AND item_id = :itemId");
                     $update->bindParam(":x", $FurnitureDataVO->x, PDO::PARAM_INT);
                     $update->bindParam(":y", $FurnitureDataVO->y, PDO::PARAM_INT);
                     $update->bindParam(":rot", $FurnitureDataVO->rot, PDO::PARAM_INT);
-                    $update->bindParam(":room", $FurnitureDataVO->roomID, PDO::PARAM_INT);
+                    $update->bindValue(":room", $roomId, PDO::PARAM_INT);
                     $update->bindParam(":active", $FurnitureDataVO->active, PDO::PARAM_INT);
                     $update->bindParam(":playerId", $_SESSION['id'], PDO::PARAM_INT);
                     $update->bindParam(":itemId", $FurnitureDataVO->id, PDO::PARAM_INT);
