@@ -2,6 +2,11 @@
 
 namespace Tests\Feature\Panfu;
 
+use App\Domain\Pets\PetService;
+use App\Infrastructure\Amf\AmfEncoder;
+use App\Infrastructure\Amf\AmfEnvelope;
+use App\Infrastructure\Amf\AmfMessage;
+use App\Models\PokoPet;
 use App\Models\User;
 use Illuminate\Database\QueryException;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -55,18 +60,16 @@ class PokoPetPersistenceTest extends TestCase
 
     public function test_pokopet_properties_are_sent_through_the_flash_compatibility_mapper(): void
     {
-        require_once base_path('information-server/ClassLoader.php');
-        require_once base_path('information-server/Plugins/Panfu/Panfu.php');
-
-        $pet = \Panfu::getPokoPetVoFromRow([
-            'id' => 17,
+        $player = User::factory()->create();
+        $model = PokoPet::query()->create([
+            'user_id' => $player->id,
             'name' => 'Marieta',
             'type' => 9,
             'selected' => 1,
             'x' => 310,
             'y' => 290,
             'state' => 'idle',
-            'abilities' => '[]',
+            'abilities' => [],
             'health' => 5,
             'max_health' => 5,
             'speed' => 1,
@@ -76,6 +79,7 @@ class PokoPetPersistenceTest extends TestCase
             'level' => 1,
             'last_fed' => null,
         ]);
+        $pet = app(PetService::class)->toValueObject($model);
 
         $this->assertInstanceOf(\stdClass::class, $pet);
         $this->assertInstanceOf(\stdClass::class, $pet->properties);
@@ -83,9 +87,9 @@ class PokoPetPersistenceTest extends TestCase
         $this->assertFalse(property_exists($pet->properties, '_explicitType'));
         $this->assertSame(5, $pet->properties->health);
 
-        $packet = new \Amfphp_Core_Amf_Packet;
-        $packet->messages[] = new \Amfphp_Core_Amf_Message('/1/onResult', '', $pet);
-        $payload = (new \Amfphp_Core_Amf_Serializer)->serialize($packet);
+        $payload = (new AmfEncoder)->encode(new AmfEnvelope(messages: [
+            new AmfMessage('/1/onResult', '', $pet),
+        ]));
 
         $this->assertStringNotContainsString('PokoPetVO', $payload);
         $this->assertStringNotContainsString('PokoPetPropertiesVO', $payload);

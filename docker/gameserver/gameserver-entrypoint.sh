@@ -8,6 +8,7 @@ database.port       = ${DB_PORT:-3306}
 database.database   = ${DB_DATABASE:-openpanfu}
 database.user       = ${DB_USERNAME:-openPanfu}
 database.pass       = ${DB_PASSWORD:-password}
+database.allowPublicKeyRetrieval = ${DB_ALLOW_PUBLIC_KEY_RETRIEVAL:-false}
 
 gameserver.ansilogging = 1
 

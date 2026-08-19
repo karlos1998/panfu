@@ -266,10 +266,6 @@ const configureRuffle = () => {
         urlRewriteRules: [
             [/^http:\/\/amf\.old\.panfu\.test\/?$/, props.client.informationServerUrl],
             [
-                /^http:\/\/amf\.old\.panfu\.test\/(.+)$/,
-                `${props.client.informationServerUrl}$1`,
-            ],
-            [
                 /^(.*\/vendor\/openpanfu\/.*_)(?:DE|EN|PL)(\.xml(?:[?#].*)?)$/,
                 `$1${languageId}$2`,
             ],
