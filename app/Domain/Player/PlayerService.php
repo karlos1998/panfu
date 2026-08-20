@@ -147,19 +147,27 @@ final class PlayerService
     public function updateCoinBalance(User $player, int $balance): bool
     {
         $maximum = max(0, (int) config('panfu.player.max_coin_balance', 2_000_000_000));
+        $maximumDelta = max(0, (int) config('panfu.player.max_coin_update_delta', 10_000));
         if ($balance < 0 || $balance > $maximum) {
             return false;
         }
 
-        return DB::transaction(function () use ($player, $balance): bool {
+        return DB::transaction(function () use ($player, $balance, $maximumDelta): bool {
             $lockedPlayer = User::query()->lockForUpdate()->find($player->getKey());
             if ($lockedPlayer === null) {
                 return false;
             }
 
-            // Legacy Flash reports its local balance after a minigame. The game server is now
-            // the only authority allowed to award coins, so AMF may confirm but never mutate it.
-            return (int) ($lockedPlayer->coins ?? 0) === $balance;
+            // Legacy minigames calculate their own reward and report the resulting absolute
+            // balance. Keep this compatibility path until every SWF has a server-side policy.
+            $current = (int) ($lockedPlayer->coins ?? 0);
+            if ($balance < $current || $balance - $current > $maximumDelta) {
+                return false;
+            }
+
+            $lockedPlayer->forceFill(['coins' => $balance])->save();
+
+            return true;
         });
     }
 

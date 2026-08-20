@@ -207,7 +207,7 @@ class AmfGatewaySecurityTest extends TestCase
         $this->assertFalse($entry->active);
     }
 
-    public function test_premium_purchases_and_untrusted_scores_are_validated_server_side(): void
+    public function test_premium_purchases_and_legacy_balance_updates_are_bounded(): void
     {
         $player = $this->loginPlayer(['coins' => 1000, 'goldpanda' => 0]);
         $premium = Item::query()->create([
@@ -225,9 +225,8 @@ class AmfGatewaySecurityTest extends TestCase
 
         $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [999])->get('statusCode'));
         $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [11_001])->get('statusCode'));
-        $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [2000])->get('statusCode'));
-        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1000])->get('statusCode'));
-        $this->assertSame(1000, $player->refresh()->coins);
+        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [2000])->get('statusCode'));
+        $this->assertSame(2000, $player->refresh()->coins);
 
         $this->assertSame(1, $this->amf('amfGameService.finishMinigame', [4, -1])->get('statusCode'));
         $this->assertSame(1, $this->amf('amfGameService.finishMinigame', [4, 2_000_000_001])->get('statusCode'));
@@ -239,10 +238,22 @@ class AmfGatewaySecurityTest extends TestCase
         config(['panfu.amf.coin_updates_per_minute' => 2]);
         $player = $this->loginPlayer(['coins' => 1000]);
 
-        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1000])->get('statusCode'));
-        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1000])->get('statusCode'));
-        $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [1000])->get('statusCode'));
-        $this->assertSame(1000, $player->refresh()->coins);
+        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1100])->get('statusCode'));
+        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1200])->get('statusCode'));
+        $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [1300])->get('statusCode'));
+        $this->assertSame(1200, $player->refresh()->coins);
+    }
+
+    public function test_legacy_minigame_clients_can_persist_their_game_specific_coin_rewards(): void
+    {
+        $player = $this->loginPlayer(['coins' => 1000]);
+
+        // Observed production payouts: Cloud Number Nine +5, Parking +20, Cool Cooking +9.
+        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1005])->get('statusCode'));
+        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1025])->get('statusCode'));
+        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1034])->get('statusCode'));
+
+        $this->assertSame(1034, $player->refresh()->coins);
     }
 
     public function test_registration_rejects_weak_passwords(): void
