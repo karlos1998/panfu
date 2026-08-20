@@ -3,6 +3,7 @@
 namespace App\Domain\Panfu\Services;
 
 use App\Domain\Panfu\Repositories\LandingPageRepository;
+use App\Domain\Servers\GameServerService;
 use Illuminate\Support\Facades\Route;
 
 class LandingPageService
@@ -10,6 +11,7 @@ class LandingPageService
     public function __construct(
         private readonly LandingPageRepository $landingPages,
         private readonly LocaleService $locales,
+        private readonly GameServerService $gameServers,
     ) {}
 
     /**
@@ -20,6 +22,7 @@ class LandingPageService
         $page = $this->landingPages->getHomePage($this->locales->current());
 
         $page['navigation'] = $this->navigationFrom($page);
+        $page['hero']['playersOnline'] = $this->gameServers->onlinePlayerCount();
 
         $page['hero']['cta'] = $this->withHref($page['hero']['cta']);
         $page['about']['button'] = $this->withHref($page['about']['button']);

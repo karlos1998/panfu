@@ -2,13 +2,20 @@
 
 namespace Tests\Feature\Panfu;
 
+use App\Models\GameServer;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Inertia\Testing\AssertableInertia as Assert;
 use Tests\TestCase;
 
 class HomePageTest extends TestCase
 {
+    use RefreshDatabase;
+
     public function test_home_page_renders_panfu_landing_page(): void
     {
+        GameServer::query()->create(['name' => 'Pandama', 'player_count' => 12]);
+        GameServer::query()->create(['name' => 'Bollywood', 'player_count' => 7]);
+
         $response = $this
             ->withHeaders(['Accept-Language' => 'pl-PL,pl;q=0.9'])
             ->get('/');
@@ -18,7 +25,7 @@ class HomePageTest extends TestCase
             ->assertInertia(fn (Assert $page) => $page
                 ->component('Panfu/Home')
                 ->where('meta.title', 'Odkryj wirtualny świat pand - Panfu.me')
-                ->where('hero.playersOnline', 28)
+                ->where('hero.playersOnline', 19)
                 ->has('hero.features', 4)
                 ->where('navigation.0.label', 'Strona główna')
                 ->where('navigation.2.children.0.href', '/language/de')

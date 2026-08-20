@@ -33,7 +33,6 @@ class StaticLandingPageRepository implements LandingPageRepository
                     ['key' => 'login', 'label' => 'Zaloguj się', 'route' => 'login'],
                 ],
                 'hero' => [
-                    'playersOnline' => (int) config('panfu.homepage.players_online'),
                     'features' => [
                         ['icon' => 'games', 'text' => 'Odkrywaj i wypróbuj świetne gry'],
                         ['icon' => 'friends', 'text' => 'Spotykaj się z przyjaciółmi i rozmawiaj bezpiecznie'],
@@ -104,7 +103,6 @@ class StaticLandingPageRepository implements LandingPageRepository
                     ['key' => 'login', 'label' => 'Log in', 'route' => 'login'],
                 ],
                 'hero' => [
-                    'playersOnline' => (int) config('panfu.homepage.players_online'),
                     'features' => [
                         ['icon' => 'games', 'text' => 'Discover and try great games'],
                         ['icon' => 'friends', 'text' => 'Meet friends and chat safely'],
@@ -175,7 +173,6 @@ class StaticLandingPageRepository implements LandingPageRepository
                     ['key' => 'login', 'label' => 'Einloggen', 'route' => 'login'],
                 ],
                 'hero' => [
-                    'playersOnline' => (int) config('panfu.homepage.players_online'),
                     'features' => [
                         ['icon' => 'games', 'text' => 'Entdecke tolle Spiele und probiere sie aus'],
                         ['icon' => 'friends', 'text' => 'Triff Freunde und chatte sicher'],

@@ -6,10 +6,6 @@ return [
         'favicons_path' => 'vendor/panfu-me/favicons',
     ],
 
-    'homepage' => [
-        'players_online' => 28,
-    ],
-
     'localization' => [
         'cookie' => env('PANFU_LOCALE_COOKIE', 'panfu_locale'),
         'fallback' => env('PANFU_FALLBACK_LOCALE', 'pl'),

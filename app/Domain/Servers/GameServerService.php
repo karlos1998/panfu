@@ -32,6 +32,11 @@ final class GameServerService
         return GameServer::query()->orderBy('id')->first();
     }
 
+    public function onlinePlayerCount(): int
+    {
+        return (int) GameServer::query()->sum('player_count');
+    }
+
     private function toValueObject(GameServer $server): TypedObject
     {
         return $this->valueObjects->make('GameServer', [
