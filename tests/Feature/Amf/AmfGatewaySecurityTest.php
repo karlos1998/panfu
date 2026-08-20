@@ -225,8 +225,9 @@ class AmfGatewaySecurityTest extends TestCase
 
         $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [999])->get('statusCode'));
         $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [11_001])->get('statusCode'));
-        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [2000])->get('statusCode'));
-        $this->assertSame(2000, $player->refresh()->coins);
+        $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [2000])->get('statusCode'));
+        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1000])->get('statusCode'));
+        $this->assertSame(1000, $player->refresh()->coins);
 
         $this->assertSame(1, $this->amf('amfGameService.finishMinigame', [4, -1])->get('statusCode'));
         $this->assertSame(1, $this->amf('amfGameService.finishMinigame', [4, 2_000_000_001])->get('statusCode'));
@@ -238,10 +239,10 @@ class AmfGatewaySecurityTest extends TestCase
         config(['panfu.amf.coin_updates_per_minute' => 2]);
         $player = $this->loginPlayer(['coins' => 1000]);
 
-        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1100])->get('statusCode'));
-        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1200])->get('statusCode'));
-        $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [1300])->get('statusCode'));
-        $this->assertSame(1200, $player->refresh()->coins);
+        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1000])->get('statusCode'));
+        $this->assertSame(0, $this->amf('amfPlayerService.updateScore', [1000])->get('statusCode'));
+        $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [1000])->get('statusCode'));
+        $this->assertSame(1000, $player->refresh()->coins);
     }
 
     public function test_registration_rejects_weak_passwords(): void

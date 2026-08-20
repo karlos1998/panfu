@@ -5,7 +5,7 @@
     "name": "Panfu Local",
     "port": 9595,
     "goldpanda": 1,
-    "secret_key": "local-development-secret",
+    "secret_key": null,
     "player_count": 0
   }
 ]

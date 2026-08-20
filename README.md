@@ -13,7 +13,7 @@ gameserverem.
 - Gra uruchamia się od razu w przeglądarce przez Ruffle, bez osobnej aplikacji desktopowej.
 - Assety Flash są trzymane lokalnie w `public/vendor/openpanfu`.
 - Backend gry używa jednej bazy MySQL projektu Laravel.
-- Gameserver Javy działa lokalnie, a `socket-proxy` udostępnia mu WebSocket dla Ruffle.
+- Gameserver Spring Boot udostępnia Ruffle natywny WebSocket bez pośredniego serwera Node.
 - phpMyAdmin jest dostępny na osobnym porcie do szybkiego podejrzenia bazy.
 
 ![Wybór świata](docs/screenshots/play-world.jpg)
@@ -26,6 +26,7 @@ Najczęstszy scenariusz: Docker Desktop był wyłączony, a repo jest już skonf
 
 ```bash
 cd ~/Documents/Panfu
+git submodule update --init --recursive
 docker compose up -d
 docker compose ps
 ```
@@ -54,6 +55,7 @@ Kroki:
 
 ```bash
 cd ~/Documents/Panfu
+git submodule update --init --recursive
 cp .env.example .env
 composer install
 npm install
@@ -77,8 +79,7 @@ docker compose exec -T laravel.test php artisan optimize:clear
 | `laravel.test` | Laravel, Inertia, Vue, endpoint AMF i publiczne assety Flash | `8080` |
 | `mysql` | Główna baza projektu | `3306` |
 | `phpmyadmin` | UI do MySQL | `19999` |
-| `gameserver` | Lokalny serwer gry w Javie | wewnętrzny `9595` |
-| `socket-proxy` | WebSocket -> TCP dla Ruffle | `19596` |
+| `gameserver` | Spring Boot: WebSocket Ruffle, sesje i logika gry | `19596` |
 | `redis` | Cache/kolejki pomocnicze | `6380` |
 | `mailpit` | Podgląd maili developerskich | `18025` |
 | `selenium` | Przeglądarkowe testy E2E, gdy będą potrzebne | wewnętrzny |
@@ -103,7 +104,7 @@ DB_PASSWORD=password
 - Porty Dockera są domyślnie publikowane tylko na `127.0.0.1`. Zmiana
   `FORWARD_HOST` na `0.0.0.0` udostępnia je w sieci i powinna być świadomą decyzją.
 - W środowisku publicznym używaj HTTPS, mocnych wartości `APP_KEY`,
-  `DB_PASSWORD` i `PANFU_GAME_SERVER_SECRET_KEY` oraz trwałego współdzielonego
+  `DB_PASSWORD` i `PANFU_GAME_SERVER_INTERNAL_SECRET` oraz trwałego współdzielonego
   cache (np. Redis) dla limiterów. Ten plik Compose jest przeznaczony do pracy
   lokalnej, a nie do bezpośredniego wystawiania w internecie.
 
@@ -124,7 +125,7 @@ docker compose stop
 Logi gry i aplikacji:
 
 ```bash
-docker compose logs -f laravel.test gameserver socket-proxy
+docker compose logs -f laravel.test gameserver
 ```
 
 Migracje i seedery:
@@ -155,8 +156,8 @@ Testy Game Servera oraz raport JaCoCo:
 
 ```bash
 cd game-server
-mvn verify
-open target/site/jacoco/index.html
+./gradlew clean check
+open build/reports/jacoco/test/html/index.html
 ```
 
 Formatowanie PHP:
@@ -184,10 +185,9 @@ app/Application/Amf              zgodna z klientem Flash warstwa usług AMF
 app/Domain                       logika domenowa gry podzielona funkcjonalnie
 app/Infrastructure/Amf           kodek protokołu AMF0/AMF3
 app/Infrastructure/GameServer    komunikacja Laravela z gameserverem
-game-server/                     lokalny gameserver Java
+game-server/                     submodule osobnego repo Spring Boot Game Servera
 public/vendor/openpanfu/         lokalne assety Flash klienta i minigier
 resources/js/                    Vue + TypeScript + Inertia
-tools/socket-proxy.mjs           most WebSocket -> TCP dla Ruffle
 tests/Feature/Panfu              testy integracji Panfu
 docs/screenshots                 screeny użyte w README
 ```
@@ -203,7 +203,7 @@ docs/screenshots                 screeny użyte w README
 2. Jeżeli gra zatrzymuje się na wyborze świata albo loadingu, zrestartuj serwer gry:
 
    ```bash
-   docker compose restart gameserver socket-proxy
+   docker compose restart gameserver
    ```
 
 3. Jeżeli po zmianie `.env` wartości nie wchodzą w życie:

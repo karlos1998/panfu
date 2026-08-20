@@ -147,25 +147,19 @@ final class PlayerService
     public function updateCoinBalance(User $player, int $balance): bool
     {
         $maximum = max(0, (int) config('panfu.player.max_coin_balance', 2_000_000_000));
-        $maximumDelta = max(0, (int) config('panfu.player.max_coin_update_delta', 10_000));
         if ($balance < 0 || $balance > $maximum) {
             return false;
         }
 
-        return DB::transaction(function () use ($player, $balance, $maximumDelta): bool {
+        return DB::transaction(function () use ($player, $balance): bool {
             $lockedPlayer = User::query()->lockForUpdate()->find($player->getKey());
             if ($lockedPlayer === null) {
                 return false;
             }
 
-            $current = (int) ($lockedPlayer->coins ?? 0);
-            if ($balance < $current || $balance - $current > $maximumDelta) {
-                return false;
-            }
-
-            $lockedPlayer->forceFill(['coins' => $balance])->save();
-
-            return true;
+            // Legacy Flash reports its local balance after a minigame. The game server is now
+            // the only authority allowed to award coins, so AMF may confirm but never mutate it.
+            return (int) ($lockedPlayer->coins ?? 0) === $balance;
         });
     }
 
