@@ -147,25 +147,19 @@ final class PlayerService
     public function updateCoinBalance(User $player, int $balance): bool
     {
         $maximum = max(0, (int) config('panfu.player.max_coin_balance', 2_000_000_000));
-        $maximumDelta = max(0, (int) config('panfu.player.max_coin_update_delta', 10_000));
         if ($balance < 0 || $balance > $maximum) {
             return false;
         }
 
-        return DB::transaction(function () use ($player, $balance, $maximumDelta): bool {
+        return DB::transaction(function () use ($player, $balance): bool {
             $lockedPlayer = User::query()->lockForUpdate()->find($player->getKey());
             if ($lockedPlayer === null) {
                 return false;
             }
 
-            $current = (int) ($lockedPlayer->coins ?? 0);
-            if ($balance < $current || $balance - $current > $maximumDelta) {
-                return false;
-            }
-
-            $lockedPlayer->forceFill(['coins' => $balance])->save();
-
-            return true;
+            // Minigame rewards are awarded by the game server from its correlated round.
+            // AMF may only confirm the current balance; it must never mint client-supplied coins.
+            return (int) ($lockedPlayer->coins ?? 0) === $balance;
         });
     }
 

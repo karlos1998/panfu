@@ -43,7 +43,6 @@ return [
 
     'player' => [
         'max_coin_balance' => env('PANFU_MAX_COIN_BALANCE', 2_000_000_000),
-        'max_coin_update_delta' => env('PANFU_MAX_COIN_UPDATE_DELTA', 10_000),
         'starter_inventory' => [
             ['item_id' => 1001, 'active' => true],
             ['item_id' => 100, 'active' => true],
@@ -72,10 +71,9 @@ return [
     'game_server' => [
         'host' => env('PANFU_GAME_SERVER_HOST', '127.0.0.1'),
         'port' => env('PANFU_GAME_SERVER_PORT', 9595),
-        'internal_host' => env('PANFU_GAME_SERVER_INTERNAL_HOST', 'gameserver'),
-        'internal_port' => env('PANFU_GAME_SERVER_INTERNAL_PORT', 9595),
-        'secret_key' => env('PANFU_GAME_SERVER_SECRET_KEY', 'local-development-secret'),
-        'socket_proxy_url' => env('PANFU_GAME_SOCKET_PROXY_URL', 'ws://localhost:19596'),
+        'internal_url' => env('PANFU_GAME_SERVER_INTERNAL_URL', 'http://gameserver:9596'),
+        'internal_secret' => env('PANFU_GAME_SERVER_INTERNAL_SECRET', 'local-development-secret-change-me'),
+        'websocket_url' => env('PANFU_GAME_WEBSOCKET_URL', 'ws://localhost:19596/game'),
     ],
 
     'game_client' => [

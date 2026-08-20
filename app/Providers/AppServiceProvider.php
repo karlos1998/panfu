@@ -11,7 +11,7 @@ use App\Domain\Panfu\Repositories\ShopRepository;
 use App\Domain\Servers\GameServerClient;
 use App\Infrastructure\Account\Repositories\EloquentAccountRepository;
 use App\Infrastructure\Auth\Repositories\EloquentUserRepository;
-use App\Infrastructure\GameServer\TcpGameServerClient;
+use App\Infrastructure\GameServer\HttpGameServerClient;
 use App\Infrastructure\Panfu\Repositories\DatabasePlayerRepository;
 use App\Infrastructure\Panfu\Repositories\JsonShopRepository;
 use App\Infrastructure\Panfu\Repositories\StaticFlashClientRepository;
@@ -40,7 +40,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(ShopRepository::class, JsonShopRepository::class);
         $this->app->bind(UserRepository::class, EloquentUserRepository::class);
         $this->app->bind(AccountRepository::class, EloquentAccountRepository::class);
-        $this->app->bind(GameServerClient::class, TcpGameServerClient::class);
+        $this->app->bind(GameServerClient::class, HttpGameServerClient::class);
     }
 
     /**

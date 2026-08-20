@@ -70,7 +70,7 @@ class DatabasePlayerRepository implements PlayerRepository
                 'url' => config('panfu.game_server.host', '127.0.0.1'),
                 'port' => (int) config('panfu.game_server.port', 9595),
                 'goldpanda' => true,
-                'secret_key' => config('panfu.game_server.secret_key', 'local-development-secret'),
+                'secret_key' => null,
                 'created_at' => $now,
                 'updated_at' => $now,
             ],
