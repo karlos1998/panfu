@@ -66,6 +66,7 @@ const formatDate = (value: string | null) => value
                             <div class="flex flex-wrap items-center gap-2">
                                 <h1 class="text-2xl font-bold tracking-tight">{{ managedUser.name }}</h1>
                                 <AdminBadge v-if="managedUser.role === 'admin'" tone="blue">Administrator</AdminBadge>
+                                <AdminBadge v-else-if="managedUser.role === 'moderator'" tone="green">Moderator</AdminBadge>
                                 <AdminBadge v-if="managedUser.goldpanda" tone="amber">Gold Panda</AdminBadge>
                                 <AdminBadge v-if="managedUser.sheriff" tone="green">Szeryf</AdminBadge>
                             </div>

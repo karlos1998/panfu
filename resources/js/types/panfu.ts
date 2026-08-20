@@ -126,3 +126,24 @@ export interface ShopCatalogue {
 export interface PandaAvatarData {
     url: string;
 }
+
+export interface TeamMemberData {
+    id: number;
+    name: string;
+    roleLabel: string;
+    online: boolean;
+    avatar: PandaAvatarData;
+}
+
+export interface TeamGroupData {
+    key: 'administrators' | 'moderators' | 'sheriffs';
+    title: string;
+    description: string;
+    emptyMessage: string;
+    members: TeamMemberData[];
+}
+
+export interface TeamInfoCardData {
+    title: string;
+    paragraphs: string[];
+}

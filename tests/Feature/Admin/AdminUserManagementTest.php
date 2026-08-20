@@ -102,6 +102,23 @@ class AdminUserManagementTest extends TestCase
         $this->assertNull($user->email_verified_at);
     }
 
+    public function test_admin_can_assign_the_moderator_role(): void
+    {
+        $admin = User::factory()->admin()->create();
+        $user = User::factory()->create();
+
+        $this->actingAs($admin)
+            ->patch(route('admin.users.update', $user), $this->validUserPayload([
+                'name' => $user->name,
+                'email' => $user->email,
+                'role' => UserRole::Moderator->value,
+            ]))
+            ->assertRedirect()
+            ->assertSessionHas('success');
+
+        $this->assertSame(UserRole::Moderator, $user->refresh()->role);
+    }
+
     public function test_admin_cannot_demote_themselves_or_the_last_admin(): void
     {
         $admin = User::factory()->admin()->create();

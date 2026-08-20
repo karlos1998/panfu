@@ -3,6 +3,7 @@ import AdminBadge from '@/Components/Admin/AdminBadge.vue';
 import AdminCard from '@/Components/Admin/AdminCard.vue';
 import AdminMetricCard from '@/Components/Admin/AdminMetricCard.vue';
 import AdminLayout from '@/Layouts/AdminLayout.vue';
+import type { UserRole } from '@/types/admin';
 import type { AdminMetricTone } from '@/types/ui';
 import { Link } from '@inertiajs/vue3';
 import { computed } from 'vue';
@@ -22,7 +23,7 @@ interface RecentUser {
     id: number;
     name: string;
     email: string;
-    role: 'user' | 'admin';
+    role: UserRole;
     createdAt: string | null;
 }
 
@@ -106,6 +107,7 @@ const formatDate = (value: string | null) => value
                             <p class="truncate text-xs text-slate-500">{{ user.email }}</p>
                         </div>
                         <AdminBadge v-if="user.role === 'admin'" tone="blue">Admin</AdminBadge>
+                        <AdminBadge v-else-if="user.role === 'moderator'" tone="green">Moderator</AdminBadge>
                         <time class="hidden text-xs text-slate-400 sm:block">{{ formatDate(user.createdAt) }}</time>
                     </Link>
                 </div>

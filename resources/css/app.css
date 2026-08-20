@@ -861,6 +861,22 @@ body {
     content: "\f059";
 }
 
+.panfu-fa--tools::before {
+    content: "\f7d9";
+}
+
+.panfu-fa--moderator::before {
+    content: "\f505";
+}
+
+.panfu-fa--star::before {
+    content: "\f005";
+}
+
+.panfu-fa--info::before {
+    content: "\f05a";
+}
+
 body {
     background: #a9d21d;
 }
@@ -2913,8 +2929,9 @@ body {
     }
 }
 
-/* Blog */
-.panfu-shell:has(.panfu-main--blog) .panfu-navbar {
+/* Blog and team */
+.panfu-shell:has(.panfu-main--blog) .panfu-navbar,
+.panfu-shell:has(.panfu-main--team) .panfu-navbar {
     background-image: url("/vendor/panfu-me/assets/header-island-DHGB7_8-.svg");
     background-position: left bottom;
     background-repeat: no-repeat;
@@ -2926,6 +2943,170 @@ body {
     min-height: 760px;
     color: #24282c;
     background: #a9d21d;
+}
+
+/* Team */
+.panfu-main--team {
+    min-height: 760px;
+    color: #24282c;
+    background: #a9d21d;
+}
+
+.panfu-team {
+    box-sizing: border-box;
+    width: min(980px, calc(100% - 24px));
+    margin: 0 auto;
+    padding: 24px 0 64px;
+    font-family: var(--bs-body-font-family, system-ui, -apple-system, "Segoe UI", sans-serif);
+}
+
+.panfu-team__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(250px, 1fr);
+    align-items: start;
+    gap: 24px;
+}
+
+.panfu-team__groups,
+.panfu-team__sidebar {
+    display: grid;
+    min-width: 0;
+    gap: 16px;
+}
+
+.panfu-team-card .panfu-panel-card__header {
+    min-height: 45px;
+    box-sizing: border-box;
+}
+
+.panfu-team-card .panfu-panel-card__title {
+    color: #ffffff;
+    font-size: 14.4px;
+    text-transform: uppercase;
+}
+
+.panfu-team-card .panfu-panel-card__title .panfu-fa {
+    margin-right: 4px;
+}
+
+.panfu-team-card__description {
+    color: #ffffff;
+    font-size: 14.4px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.panfu-team-members {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.panfu-team-member {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    color: #34383c;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+}
+
+.panfu-team-member--offline {
+    opacity: 0.5;
+}
+
+.panfu-team-member__copy {
+    min-width: 0;
+}
+
+.panfu-team-member__copy strong,
+.panfu-team-member__copy > span {
+    display: block;
+    overflow: hidden;
+    font-size: 14.4px;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.panfu-team-member__copy strong {
+    font-weight: 700;
+}
+
+.panfu-team-member__status {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 3px;
+    border-radius: 50%;
+}
+
+.panfu-team-member__status--online {
+    background: #55b936;
+}
+
+.panfu-team-member__status--offline {
+    background: #ced4da;
+}
+
+.panfu-team-empty {
+    margin: 0;
+    color: #6c757d;
+    font-size: 14.4px;
+    line-height: 1.5;
+}
+
+.panfu-team-info {
+    position: relative;
+}
+
+.panfu-team-info p {
+    margin: 0 0 16px;
+    color: #6c757d;
+    font-size: 14.4px;
+    line-height: 1.5;
+}
+
+.panfu-team-info p:last-child {
+    margin-bottom: 0;
+}
+
+.panfu-team-info__star {
+    width: 56px;
+    height: 57px;
+    float: right;
+    margin: 0 0 4px 12px;
+}
+
+@media (max-width: 991.98px) {
+    .panfu-team__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .panfu-team-members {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575.98px) {
+    .panfu-team-card .panfu-panel-card__header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .panfu-team-card__description {
+        text-align: left;
+    }
+
+    .panfu-team-members {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
 
 .panfu-blog {

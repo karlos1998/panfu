@@ -28,6 +28,8 @@ class HomePageTest extends TestCase
                 ->where('panfu.locale.languageId', 'PL')
                 ->where('news.title', 'Podsumowanie roku Panfu 2025')
                 ->where('about.title', 'Czym jest Panfu.me?')
+                ->where('about.button.href', '/team')
+                ->where('footer.links.1.href', '/team')
                 ->where('footer.legalLinks.2.label', 'Terms of Service')
                 ->where('assets.logo', asset('vendor/panfu-me/assets/panfu-logo-BkIF66dU.svg'))
                 ->etc());

@@ -66,7 +66,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                     ],
                     'button' => [
                         'label' => 'Dowiedz się więcej',
-                        'href' => '#',
+                        'route' => 'team',
                     ],
                 ],
                 'footer' => [
@@ -74,7 +74,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                     'disclaimer' => 'Panfu.me nie jest powiązane ani wspierane przez Goodbeans GmbH.',
                     'links' => [
                         ['label' => 'Preferencje plików cookie', 'href' => '#'],
-                        ['label' => 'Zespół Panfu', 'href' => '#'],
+                        ['label' => 'Zespół Panfu', 'route' => 'team'],
                         ['label' => 'Oloko', 'href' => '#'],
                         ['label' => 'Status', 'href' => '#'],
                     ],
@@ -137,7 +137,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                     ],
                     'button' => [
                         'label' => 'Learn more',
-                        'href' => '#',
+                        'route' => 'team',
                     ],
                 ],
                 'footer' => [
@@ -145,7 +145,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                     'disclaimer' => 'Panfu.me is not affiliated with or endorsed by Goodbeans GmbH.',
                     'links' => [
                         ['label' => 'Cookie preferences', 'href' => '#'],
-                        ['label' => 'Panfu team', 'href' => '#'],
+                        ['label' => 'Panfu team', 'route' => 'team'],
                         ['label' => 'Oloko', 'href' => '#'],
                         ['label' => 'Status', 'href' => '#'],
                     ],
@@ -208,7 +208,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                     ],
                     'button' => [
                         'label' => 'Mehr erfahren',
-                        'href' => '#',
+                        'route' => 'team',
                     ],
                 ],
                 'footer' => [
@@ -216,7 +216,7 @@ class StaticLandingPageRepository implements LandingPageRepository
                     'disclaimer' => 'Panfu.me ist weder mit Goodbeans GmbH verbunden noch wird es von Goodbeans GmbH unterstützt.',
                     'links' => [
                         ['label' => 'Cookie-Einstellungen', 'href' => '#'],
-                        ['label' => 'Panfu-Team', 'href' => '#'],
+                        ['label' => 'Panfu-Team', 'route' => 'team'],
                         ['label' => 'Oloko', 'href' => '#'],
                         ['label' => 'Status', 'href' => '#'],
                     ],

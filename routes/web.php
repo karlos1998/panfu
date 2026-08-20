@@ -18,10 +18,12 @@ use App\Http\Controllers\Panfu\LocaleController;
 use App\Http\Controllers\Panfu\PlayController;
 use App\Http\Controllers\Panfu\PlayercardController;
 use App\Http\Controllers\Panfu\ShopController;
+use App\Http\Controllers\Panfu\TeamController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
+Route::get('/team', TeamController::class)->name('team');
 Route::get('/playercard', PlayercardController::class)->name('panfu.playercard');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{post}', [BlogController::class, 'show'])->name('blog.show');
