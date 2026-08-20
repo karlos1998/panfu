@@ -43,7 +43,6 @@ return [
 
     'player' => [
         'max_coin_balance' => env('PANFU_MAX_COIN_BALANCE', 2_000_000_000),
-        'max_coin_update_delta' => env('PANFU_MAX_COIN_UPDATE_DELTA', 10_000),
         'starter_inventory' => [
             ['item_id' => 1001, 'active' => true],
             ['item_id' => 100, 'active' => true],

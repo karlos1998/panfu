@@ -40,6 +40,11 @@ class PanfuGameDataSeeder extends Seeder
 
     private function seedMinigameRewards(\DateTimeInterface $now): void
     {
+        $coinMultipliers = [
+            11 => '0.0500', // Cloud Number Nine
+            24 => '0.1000', // Cool Cooking
+            44 => '0.2500', // Parking
+        ];
         $gameIds = collect(File::glob(public_path('vendor/openpanfu/swf/games/game*.swf')) ?: [])
             ->map(function (string $path): ?int {
                 preg_match('/game(\d+)\.swf$/', $path, $matches);
@@ -55,7 +60,7 @@ class PanfuGameDataSeeder extends Seeder
             DB::table('minigame_rewards')->insertOrIgnore(
                 $chunk->map(fn (int $gameId): array => [
                     'game_id' => $gameId,
-                    'coin_multiplier' => '0.0500',
+                    'coin_multiplier' => $coinMultipliers[$gameId] ?? '0.0500',
                     'max_coins_per_round' => null,
                     'enabled' => true,
                     'created_at' => $now,
