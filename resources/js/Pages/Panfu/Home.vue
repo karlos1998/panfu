@@ -40,6 +40,7 @@ const heroHref = computed(() => (page.props.auth.user ? '/play' : '/register'));
             <div class="panfu-home__hero-row">
                 <Link class="panfu-home__video-link" :href="heroHref" aria-label="Panfu">
                     <video width="540" height="333" autoplay muted loop playsinline>
+                        <source :src="assets.heroVideoSafari" type='video/quicktime; codecs="hvc1"' />
                         <source :src="assets.heroVideo" type="video/webm" />
                     </video>
                 </Link>

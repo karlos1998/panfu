@@ -10,6 +10,7 @@ export interface NavigationItem {
 export interface PanfuAssets {
     logo: string;
     heroVideo: string;
+    heroVideoSafari: string;
     grasslands: string;
     homeBoard: string;
     headerIsland: string;

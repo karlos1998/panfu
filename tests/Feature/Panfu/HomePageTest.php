@@ -32,6 +32,7 @@ class HomePageTest extends TestCase
                 ->where('footer.links.1.href', '/team')
                 ->where('footer.legalLinks.2.label', 'Terms of Service')
                 ->where('assets.logo', asset('vendor/panfu-me/assets/panfu-logo-BkIF66dU.svg'))
+                ->where('assets.heroVideoSafari', asset('vendor/panfu-me/assets/home-C5LnHByY-hevc.mov'))
                 ->etc());
     }
 }

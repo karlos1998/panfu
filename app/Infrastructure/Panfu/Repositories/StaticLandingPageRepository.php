@@ -244,6 +244,7 @@ class StaticLandingPageRepository implements LandingPageRepository
         return [
             'logo' => 'panfu-logo-BkIF66dU.svg',
             'heroVideo' => 'home-C5LnHByY.webm',
+            'heroVideoSafari' => 'home-C5LnHByY-hevc.mov',
             'grasslands' => 'grasslands-1200x630-URVD6tIa.png',
             'homeBoard' => 'home-board-D2ETOOE4.png',
             'headerIsland' => 'header-island-DHGB7_8-.svg',
