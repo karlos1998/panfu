@@ -1,5 +1,15 @@
 <?php
 
+$socketProxyUrl = (string) env('PANFU_GAME_WEBSOCKET_URL', 'ws://localhost:19596/game');
+$socketProxies = json_decode((string) env('PANFU_GAME_SOCKET_PROXIES', ''), true);
+
+if (! is_array($socketProxies) || $socketProxies === []) {
+    $socketProxies = [
+        ['host' => '127.0.0.1', 'port' => 9595, 'proxyUrl' => $socketProxyUrl],
+        ['host' => 'localhost', 'port' => 9595, 'proxyUrl' => $socketProxyUrl],
+    ];
+}
+
 return [
     'assets' => [
         'base_path' => 'vendor/panfu-me/assets',
@@ -69,7 +79,8 @@ return [
         'port' => env('PANFU_GAME_SERVER_PORT', 9595),
         'internal_url' => env('PANFU_GAME_SERVER_INTERNAL_URL', 'http://gameserver:9596'),
         'internal_secret' => env('PANFU_GAME_SERVER_INTERNAL_SECRET', 'local-development-secret-change-me'),
-        'websocket_url' => env('PANFU_GAME_WEBSOCKET_URL', 'ws://localhost:19596/game'),
+        'websocket_url' => $socketProxyUrl,
+        'socket_proxies' => $socketProxies,
     ],
 
     'game_client' => [

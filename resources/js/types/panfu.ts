@@ -100,6 +100,11 @@ export interface FlashClient {
     informationServerUrl: string;
     serverName: string;
     socketProxyUrl: string;
+    socketProxies: Array<{
+        host: string;
+        port: number;
+        proxyUrl: string;
+    }>;
     locale: string;
     languageId: string;
     flashvars: Record<string, string>;

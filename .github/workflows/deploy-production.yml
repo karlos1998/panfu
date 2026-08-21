@@ -1,0 +1,131 @@
+name: Build and Deploy Panfu
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: panfu-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download environment from Envly
+        env:
+          ENVLY_API_URL: https://envly.xyz/api/env/panfu
+          ENVLY_TOKEN: ${{ secrets.ENVLY_TOKEN }}
+        run: |
+          curl --fail --silent --show-error --location \
+            --retry 3 \
+            --header "Authorization: Bearer ${ENVLY_TOKEN}" \
+            "${ENVLY_API_URL}" > .env
+          test -s .env
+
+      - name: Build production images
+        run: |
+          docker build --tag panfu-app:${{ github.sha }} .
+          docker build --tag panfu-game-server:${{ github.sha }} ./game-server
+
+      - name: Validate production Compose
+        env:
+          TAG: ${{ github.sha }}
+        run: docker compose --env-file .env --file compose.production.yaml config --quiet
+
+      - name: Package deployment
+        run: |
+          docker save \
+            panfu-app:${{ github.sha }} \
+            panfu-game-server:${{ github.sha }} \
+            | gzip > panfu-production-images.tar.gz
+          echo "${{ github.sha }}" > TAG
+          tar -czf panfu-production-config.tar.gz \
+            compose.production.yaml \
+            docker/production/nginx.conf \
+            .env \
+            TAG
+
+      - name: Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SERVER_SSH_KNOWN_HOSTS }}
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "${SSH_PRIVATE_KEY}" > ~/.ssh/id_deploy
+          printf '%s\n' "${SSH_KNOWN_HOSTS}" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/id_deploy ~/.ssh/known_hosts
+
+      - name: Upload deployment
+        env:
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+        run: |
+          ssh -i ~/.ssh/id_deploy "${SERVER_USER}@${SERVER_HOST}" \
+            'install -d -m 750 /tmp/panfu-production'
+          scp -i ~/.ssh/id_deploy \
+            panfu-production-images.tar.gz \
+            panfu-production-config.tar.gz \
+            "${SERVER_USER}@${SERVER_HOST}:/tmp/panfu-production/"
+
+      - name: Deploy services
+        env:
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+        run: |
+          ssh -i ~/.ssh/id_deploy "${SERVER_USER}@${SERVER_HOST}" 'bash -se' <<'DEPLOY'
+          TARGET="panfu"
+          SOURCE="/tmp/panfu-production"
+          DESTINATION="/opt/apps/${TARGET}"
+
+          install -d -m 750 "${DESTINATION}"
+          tar -xzf "${SOURCE}/panfu-production-config.tar.gz" -C "${DESTINATION}"
+          install -m 640 "${SOURCE}/panfu-production-images.tar.gz" \
+            "${DESTINATION}/panfu-production-images.tar.gz"
+          chmod 600 "${DESTINATION}/.env"
+
+          cd "${DESTINATION}"
+          export TAG="$(cat TAG)"
+
+          VIRTUAL_HOST="$(sed -n 's/^VIRTUAL_HOST=//p' .env | tail -1)"
+          test -n "${VIRTUAL_HOST}"
+          CONFLICTS="$(docker ps --format '{{.Names}}' | while read -r container; do
+            project="$(docker inspect -f '{{ index .Config.Labels "com.docker.compose.project" }}' "${container}" 2>/dev/null || true)"
+            host="$(docker inspect -f '{{range .Config.Env}}{{println .}}{{end}}' "${container}" 2>/dev/null \
+              | sed -n 's/^VIRTUAL_HOST=//p')"
+            if [ "${project}" != "panfu" ] && [ "${host}" = "${VIRTUAL_HOST}" ]; then
+              printf '%s\n' "${container}"
+            fi
+          done)"
+          if [ -n "${CONFLICTS}" ]; then
+            echo "Refusing to take over ${VIRTUAL_HOST}; used by: ${CONFLICTS}" >&2
+            exit 1
+          fi
+
+          docker network inspect nginx-proxy >/dev/null 2>&1 \
+            || docker network create nginx-proxy
+          docker load < panfu-production-images.tar.gz
+
+          docker compose --env-file .env --file compose.production.yaml \
+            up -d --wait --wait-timeout 240 mysql redis
+          docker compose --env-file .env --file compose.production.yaml \
+            run --rm app php artisan migrate --force --no-interaction
+          docker compose --env-file .env --file compose.production.yaml \
+            run --rm app php artisan db:seed --force --no-interaction
+          docker compose --env-file .env --file compose.production.yaml \
+            up -d --wait --wait-timeout 300 app worker scheduler gameserver-main gateway
+
+          docker compose --env-file .env --file compose.production.yaml \
+            exec -T gateway wget -qO- http://127.0.0.1/healthz >/dev/null
+          docker image prune -f --filter "until=168h" || true
+          DEPLOY
