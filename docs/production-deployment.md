@@ -20,7 +20,7 @@ port 80. The gateway keeps Laravel at `/` and exposes the first Spring Boot
 engine at `/engine/main/`. For example, Ruffle connects to:
 
 ```text
-wss://plemionka.letscode.it/engine/main/game
+wss://panfu.letscode.it/engine/main/game
 ```
 
 To add an engine later:
@@ -31,7 +31,7 @@ To add an engine later:
    `docker/production/nginx.conf`.
 3. Add the engine to the `gameservers` data shown to the Flash client.
 4. Extend `PANFU_GAME_SOCKET_PROXIES` in Envly with the engine's public route,
-   for example `wss://plemionka.letscode.it/engine/secondary/game`.
+   for example `wss://panfu.letscode.it/engine/secondary/game`.
 
 No additional public port or subdomain is required. Cloudflare terminates HTTPS
 and forwards WebSocket traffic to the existing port 80 origin.
