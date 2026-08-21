@@ -39,6 +39,24 @@ export interface AdminUserSummary {
     createdAt: string | null;
 }
 
+export interface AdminMinigame {
+    id: number;
+    name: string;
+    type: 'single' | 'multi' | null;
+    adapter: string | null;
+    enabled: boolean;
+    coinMultiplier: string;
+    maxCoinsPerRound: number | null;
+    rooms: Array<{
+        id: string;
+        number: number;
+        label: string;
+        allowed: boolean;
+    }>;
+    thumbnailUrl: string | null;
+    swfUrl: string | null;
+}
+
 export interface ManagedUser {
     id: number;
     name: string;

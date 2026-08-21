@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\BlogCommentController as AdminBlogCommentControll
 use App\Http\Controllers\Admin\BlogPostController as AdminBlogPostController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\InventoryController as AdminInventoryController;
+use App\Http\Controllers\Admin\MinigameController as AdminMinigameController;
 use App\Http\Controllers\Admin\PlayerHomeController as AdminPlayerHomeController;
 use App\Http\Controllers\Admin\PlayerStateController as AdminPlayerStateController;
 use App\Http\Controllers\Admin\PublicRoomController as AdminPublicRoomController;
@@ -59,6 +60,8 @@ Route::prefix('admin')
         Route::get('/users', [AdminUserController::class, 'index'])->name('users.index');
         Route::get('/users/{user}', [AdminUserController::class, 'show'])->name('users.show');
         Route::patch('/users/{user}', [AdminUserController::class, 'update'])->name('users.update');
+
+        Route::get('/minigames', AdminMinigameController::class)->name('minigames.index');
 
         Route::post('/users/{user}/inventory', [AdminInventoryController::class, 'store'])->name('users.inventory.store');
         Route::patch('/users/{user}/inventory/{inventory}', [AdminInventoryController::class, 'update'])->name('users.inventory.update');
