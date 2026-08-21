@@ -125,9 +125,13 @@ jobs:
           docker compose --env-file .env --file compose.production.yaml \
             run --rm -T app php artisan db:seed --force --no-interaction </dev/null
           docker compose --env-file .env --file compose.production.yaml \
-            up -d --wait --wait-timeout 300 app worker scheduler gameserver-main gateway
+            up -d --wait --wait-timeout 300 app worker scheduler gameserver-main
+          docker compose --env-file .env --file compose.production.yaml \
+            up -d --wait --wait-timeout 120 --force-recreate gateway
 
           docker compose --env-file .env --file compose.production.yaml \
-            exec -T gateway wget -qO- http://127.0.0.1/healthz >/dev/null
+            exec -T gateway wget -qO- http://127.0.0.1/up >/dev/null
+          docker compose --env-file .env --file compose.production.yaml \
+            exec -T gateway wget -qO- http://127.0.0.1/engine/main/actuator/health >/dev/null
           docker image prune -f --filter "until=168h" || true
           DEPLOY
