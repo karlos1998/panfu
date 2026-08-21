@@ -121,9 +121,9 @@ jobs:
           docker compose --env-file .env --file compose.production.yaml \
             up -d --wait --wait-timeout 240 mysql redis
           docker compose --env-file .env --file compose.production.yaml \
-            run --rm app php artisan migrate --force --no-interaction
+            run --rm -T app php artisan migrate --force --no-interaction </dev/null
           docker compose --env-file .env --file compose.production.yaml \
-            run --rm app php artisan db:seed --force --no-interaction
+            run --rm -T app php artisan db:seed --force --no-interaction </dev/null
           docker compose --env-file .env --file compose.production.yaml \
             up -d --wait --wait-timeout 300 app worker scheduler gameserver-main gateway
 
