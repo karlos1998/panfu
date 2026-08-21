@@ -42,6 +42,7 @@ class PanfuGameDataSeeder extends Seeder
     {
         $coinMultipliers = [
             11 => '0.0500', // Cloud Number Nine
+            12 => '0.3333', // Cast Away
             24 => '0.1000', // Cool Cooking
             44 => '0.2500', // Parking
         ];
