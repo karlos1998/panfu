@@ -257,10 +257,7 @@ const configureRuffle = () => {
         publicPath: '/vendor/ruffle/',
         showSwfDownload: false,
         splashScreen: false,
-        socketProxy: [
-            { host: '127.0.0.1', port: 9595, proxyUrl: props.client.socketProxyUrl },
-            { host: 'localhost', port: 9595, proxyUrl: props.client.socketProxyUrl },
-        ],
+        socketProxy: props.client.socketProxies,
         unmuteOverlay: 'hidden',
         upgradeToHttps: false,
         urlRewriteRules: [
