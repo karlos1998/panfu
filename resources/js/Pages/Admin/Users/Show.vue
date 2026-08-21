@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import AdminBadge from '@/Components/Admin/AdminBadge.vue';
 import AdminCard from '@/Components/Admin/AdminCard.vue';
+import AdminPagination from '@/Components/Admin/AdminPagination.vue';
+import ChatMessagesTable from '@/Components/Admin/ChatMessagesTable.vue';
 import AdminLayout from '@/Layouts/AdminLayout.vue';
 import type {
     InventoryEntry,
+    AdminChatMessage,
     ItemOption,
     ManagedUser,
+    Paginated,
     PlayerState,
     SelectOption,
     UserOption,
@@ -13,7 +17,7 @@ import type {
     UserRole,
     UserSession,
 } from '@/types/admin';
-import { Link } from '@inertiajs/vue3';
+import { Link, usePage } from '@inertiajs/vue3';
 import { computed, ref } from 'vue';
 import InventoryPanel from './Partials/InventoryPanel.vue';
 import RelationsPanel from './Partials/RelationsPanel.vue';
@@ -34,17 +38,19 @@ const props = defineProps<{
     states: PlayerState[];
     relations: UserRelation[];
     sessions: UserSession[];
+    chatMessages: Paginated<AdminChatMessage>;
     options: Options;
 }>();
 
-type Tab = 'profile' | 'inventory' | 'states' | 'relations' | 'sessions';
-const activeTab = ref<Tab>('profile');
+type Tab = 'profile' | 'inventory' | 'states' | 'relations' | 'sessions' | 'chat';
+const activeTab = ref<Tab>(usePage().url.includes('chat_page=') ? 'chat' : 'profile');
 const tabs = computed(() => [
     { id: 'profile' as Tab, label: 'Konto', count: null },
     { id: 'inventory' as Tab, label: 'Przedmioty', count: props.inventory.length },
     { id: 'states' as Tab, label: 'Osiągnięcia', count: props.states.length },
     { id: 'relations' as Tab, label: 'Relacje', count: props.relations.length },
     { id: 'sessions' as Tab, label: 'Sesje', count: props.sessions.length },
+    { id: 'chat' as Tab, label: 'Czat', count: props.chatMessages.total },
 ]);
 
 const number = (value: number) => new Intl.NumberFormat('pl-PL').format(value);
@@ -115,8 +121,12 @@ const formatDate = (value: string | null) => value
         <AdminCard v-else-if="activeTab === 'relations'" title="Znajomi i blokady" description="Relacje tej pandy z pozostałymi użytkownikami">
             <RelationsPanel :user-id="managedUser.id" :relations="relations" :users="options.users" :relation-types="options.relationTypes" />
         </AdminCard>
-        <AdminCard v-else title="Sesje logowania" description="Aktywność urządzeń i możliwość zdalnego wylogowania">
+        <AdminCard v-else-if="activeTab === 'sessions'" title="Sesje logowania" description="Aktywność urządzeń i możliwość zdalnego wylogowania">
             <SessionsPanel :user-id="managedUser.id" :sessions="sessions" />
+        </AdminCard>
+        <AdminCard v-else :padded="false" title="Historia czatu" description="Wiadomości wysłane przez tę pandę, od najnowszych">
+            <ChatMessagesTable :messages="chatMessages.data" :show-player="false" />
+            <AdminPagination :pagination="chatMessages" />
         </AdminCard>
     </AdminLayout>
 </template>

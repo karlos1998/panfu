@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\BlogCategoryController as AdminBlogCategoryController;
 use App\Http\Controllers\Admin\BlogCommentController as AdminBlogCommentController;
 use App\Http\Controllers\Admin\BlogPostController as AdminBlogPostController;
+use App\Http\Controllers\Admin\ChatMessageController as AdminChatMessageController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\InventoryController as AdminInventoryController;
 use App\Http\Controllers\Admin\MinigameController as AdminMinigameController;
@@ -62,6 +63,7 @@ Route::prefix('admin')
         Route::patch('/users/{user}', [AdminUserController::class, 'update'])->name('users.update');
 
         Route::get('/minigames', AdminMinigameController::class)->name('minigames.index');
+        Route::get('/chat', AdminChatMessageController::class)->name('chat.index');
 
         Route::post('/users/{user}/inventory', [AdminInventoryController::class, 'store'])->name('users.inventory.store');
         Route::patch('/users/{user}/inventory/{inventory}', [AdminInventoryController::class, 'update'])->name('users.inventory.update');

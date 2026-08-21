@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\DB;
 
 class AdminUserService
 {
+    public function __construct(private readonly AdminChatService $chat) {}
+
     /**
      * @param  array{search: string, role: string, status: string, sort: string}  $filters
      * @return array<string, mixed>
@@ -93,6 +95,7 @@ class AdminUserService
             'states' => $states,
             'relations' => $relations,
             'sessions' => $this->sessionsFor($user, $currentSessionId),
+            'chatMessages' => $this->chat->messagesForUser($user),
             'options' => [
                 'roles' => collect(UserRole::cases())->map(fn (UserRole $role) => ['value' => $role->value, 'label' => $role->label()]),
                 'relationTypes' => collect([RelationType::Friend, RelationType::Blocked])->map(fn (RelationType $type) => ['value' => $type->value, 'label' => $type->label()]),

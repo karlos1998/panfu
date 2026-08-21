@@ -47,6 +47,12 @@ class User extends Authenticatable
         return $this->hasMany(GameHighScore::class);
     }
 
+    /** @return HasMany<ChatMessage, $this> */
+    public function chatMessages(): HasMany
+    {
+        return $this->hasMany(ChatMessage::class);
+    }
+
     /** @return HasMany<BlogPost, $this> */
     public function blogPosts(): HasMany
     {

@@ -77,6 +77,22 @@ class AdminPublicRoomService
         ];
     }
 
+    /** @return array<int, array{value: string, id: string, number: int, label: string, allowed: bool}> */
+    public function roomOptions(): array
+    {
+        return $this->rooms()
+            ->map(fn (array $room): array => [
+                'value' => "public:{$room['number']}",
+                'id' => $room['id'],
+                'number' => $room['number'],
+                'label' => $room['label'],
+                'allowed' => $room['allowed'],
+            ])
+            ->sortBy('number')
+            ->values()
+            ->all();
+    }
+
     /** @return Collection<int, array<string, mixed>> */
     private function rooms(): Collection
     {

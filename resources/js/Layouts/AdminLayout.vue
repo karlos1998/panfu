@@ -18,6 +18,7 @@ const navigation = [
     { label: 'Pulpit', href: '/admin', route: 'admin.dashboard' },
     { label: 'Użytkownicy', href: '/admin/users', route: 'admin.users.*' },
     { label: 'Minigry', href: '/admin/minigames', route: 'admin.minigames.*' },
+    { label: 'Czat', href: '/admin/chat', route: 'admin.chat.*' },
     { label: 'Pokoje', href: '/admin/rooms/homes', route: 'admin.rooms.*' },
     { label: 'Blog', href: '/admin/blog', route: 'admin.blog.*' },
 ];

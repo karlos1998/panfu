@@ -65,7 +65,7 @@ class AdminUserManagementTest extends TestCase
                 ->component('Admin/Users/Show')
                 ->where('managedUser.id', $user->id)
                 ->where('managedUser.currentGameServerName', 'Pandama')
-                ->hasAll(['inventory', 'states', 'relations', 'sessions', 'options.roles', 'options.items', 'options.users']));
+                ->hasAll(['inventory', 'states', 'relations', 'sessions', 'chatMessages', 'options.roles', 'options.items', 'options.users']));
     }
 
     public function test_admin_can_update_all_managed_account_fields(): void

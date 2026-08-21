@@ -57,6 +57,20 @@ export interface AdminMinigame {
     swfUrl: string | null;
 }
 
+export interface AdminChatMessage {
+    id: number;
+    userId: number | null;
+    playerName: string;
+    message: string;
+    room: {
+        type: 'public' | 'home';
+        id: number;
+        label: string;
+        adminUrl: string | null;
+    };
+    createdAt: string | null;
+}
+
 export interface ManagedUser {
     id: number;
     name: string;
