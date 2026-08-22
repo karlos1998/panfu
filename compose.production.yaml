@@ -139,6 +139,22 @@ services:
       - internal
     logging: *logging
 
+  phpmyadmin:
+    image: phpmyadmin:5.2
+    restart: unless-stopped
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      UPLOAD_LIMIT: 256M
+    ports:
+      - "0.0.0.0:${PHPMYADMIN_PUBLIC_PORT:-58473}:80"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - internal
+    logging: *logging
+
   redis:
     image: redis:7-alpine
     restart: unless-stopped

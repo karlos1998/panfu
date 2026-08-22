@@ -125,7 +125,7 @@ jobs:
           docker compose --env-file .env --file compose.production.yaml \
             run --rm -T app php artisan db:seed --force --no-interaction </dev/null
           docker compose --env-file .env --file compose.production.yaml \
-            up -d --wait --wait-timeout 300 app worker scheduler gameserver-main
+            up -d --wait --wait-timeout 300 app worker scheduler gameserver-main phpmyadmin
           docker compose --env-file .env --file compose.production.yaml \
             up -d --wait --wait-timeout 120 --force-recreate gateway
 
