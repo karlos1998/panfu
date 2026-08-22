@@ -19,6 +19,8 @@ class PlayPageTest extends TestCase
     public function test_authenticated_users_can_open_local_flash_client(): void
     {
         $user = User::factory()->create();
+        $ruffleVersion = substr(hash_file('sha256', public_path('vendor/ruffle/ruffle.js')), 0, 12);
+        $swfVersion = substr(hash_file('sha256', public_path('vendor/openpanfu/Panfu.swf')), 0, 12);
 
         $response = $this
             ->withHeaders(['Accept-Language' => 'pl-PL,pl;q=0.9'])
@@ -32,8 +34,8 @@ class PlayPageTest extends TestCase
             ->assertDontSee("Your browser doesn't support Flash Player")
             ->assertInertia(fn (Assert $page) => $page
                 ->component('Panfu/Play')
-                ->where('client.ruffleScript', '/vendor/ruffle/ruffle.js')
-                ->where('client.swfUrl', '/vendor/openpanfu/Panfu.swf')
+                ->where('client.ruffleScript', "/vendor/ruffle/ruffle.js?v={$ruffleVersion}")
+                ->where('client.swfUrl', "/vendor/openpanfu/Panfu.swf?v={$swfVersion}")
                 ->where('client.baseUrl', '/vendor/openpanfu/')
                 ->where('client.informationServerUrl', '/InformationServer/')
                 ->where('client.socketProxyUrl', 'ws://localhost:19596/game')
