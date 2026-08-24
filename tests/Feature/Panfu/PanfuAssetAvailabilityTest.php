@@ -88,6 +88,18 @@ class PanfuAssetAvailabilityTest extends TestCase
         $this->assertCount(5, $configuration->xpath('//items/item[@check]') ?: []);
     }
 
+    public function test_profile_highscore_disables_the_unsupported_page_flip_animation(): void
+    {
+        $moviePath = public_path('vendor/openpanfu/features/profileHighscore/profileHighscore.swf');
+        $movieBody = $this->readSwfBody($moviePath);
+
+        // pushfalse + BookComponent constructor with four arguments. The original
+        // three-argument call enables BitmapData.draw(), which the Canvas Ruffle
+        // renderer cannot execute and leaves the displayed page unchanged.
+        $this->assertStringContainsString(hex2bin('6675274a1b04681a'), $movieBody);
+        $this->assertStringNotContainsString(hex2bin('66754a1b03681a'), $movieBody);
+    }
+
     public function test_catalogue_xmls_and_pages_are_available(): void
     {
         $catalogues = [
