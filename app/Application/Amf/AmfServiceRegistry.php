@@ -31,7 +31,7 @@ final class AmfServiceRegistry
         ],
         'amfBeSmarterService' => [
             'class' => BeSmarterAmfService::class,
-            'methods' => ['loadBestResult'],
+            'methods' => ['loadBestResult', 'loadLeadingPlayer', 'putScore'],
         ],
         'amfBollyService' => [
             'class' => BollyAmfService::class,

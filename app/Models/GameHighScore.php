@@ -14,6 +14,9 @@ class GameHighScore extends Model
         return [
             'game_id' => 'integer',
             'score' => 'integer',
+            'correct_answers' => 'integer',
+            'false_answers' => 'integer',
+            'completion_time' => 'integer',
         ];
     }
 

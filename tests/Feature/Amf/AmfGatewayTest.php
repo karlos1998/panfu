@@ -371,6 +371,29 @@ class AmfGatewayTest extends TestCase
         $this->assertSame($player->name, $result->get('valueObject')->playerName);
     }
 
+    public function test_be_smarter_result_details_and_monthly_leader_are_persisted(): void
+    {
+        $player = $this->loginPlayer(['name' => 'Smarty']);
+
+        $result = $this->amf('amfBeSmarterService.putScore', [800, 8, 2, 54_000, str_repeat('a', 32)]);
+        $this->assertSame(0, $result->get('statusCode'));
+        $this->assertSame(8, $result->get('valueObject')->correctAnswers);
+        $this->assertSame(2, $result->get('valueObject')->falseAnswers);
+        $this->assertSame(54_000, $result->get('valueObject')->time);
+
+        $profile = $this->amf('amfBeSmarterService.loadBestResult', [$player->id])->get('valueObject');
+        $this->assertSame(800, $profile->points);
+        $this->assertSame(8, $profile->correctAnswers);
+
+        $leader = $this->amf('amfBeSmarterService.loadLeadingPlayer')->get('valueObject');
+        $this->assertSame('Smarty', $leader->playerName);
+        $this->assertSame(54_000, $leader->time);
+
+        $invalid = $this->amf('amfBeSmarterService.putScore', [1000, 1, 0, 1, str_repeat('b', 32)]);
+        $this->assertSame(1, $invalid->get('statusCode'));
+        $this->assertSame(800, $player->gameHighScores()->where('game_id', 51)->value('score'));
+    }
+
     public function test_social_profile_and_account_settings_are_persisted(): void
     {
         $player = $this->loginPlayer(['email' => 'old@example.com']);
