@@ -76,9 +76,16 @@ class PanfuAssetAvailabilityTest extends TestCase
     public function test_rare_item_machine_uses_a_recurring_reward_rotation(): void
     {
         $moviePath = public_path('vendor/openpanfu/quests/rareItemMachine/rareItemMachine.swf');
+        $movieBody = $this->readSwfBody($moviePath);
 
         $this->assertFileExists($moviePath);
-        $this->assertStringContainsString('getTodayItem', $this->readSwfBody($moviePath));
+        foreach (range(1, 5) as $day) {
+            $this->assertStringContainsString("Jan {$day} 2099", $movieBody);
+        }
+
+        // The panel asset is optional. Testing it before invoking getAsset keeps an
+        // absent panel from blocking the actual machine in the room asset queue.
+        $this->assertStringContainsString(hex2bin('d1668901702c0113'), $movieBody);
 
         $configuration = simplexml_load_file(
             public_path('vendor/openpanfu/quests/rareItemMachine/conf/rareItemMachine.xml'),
@@ -86,6 +93,13 @@ class PanfuAssetAvailabilityTest extends TestCase
         $this->assertNotFalse($configuration);
         $this->assertCount(5, $configuration->xpath('//rareItems/rareItem') ?: []);
         $this->assertCount(5, $configuration->xpath('//items/item[@check]') ?: []);
+
+        foreach ($configuration->xpath('//rareItems/rareItem') ?: [] as $rareItem) {
+            $this->assertGreaterThan(
+                now()->timestamp,
+                strtotime((string) $rareItem['itemDay']),
+            );
+        }
     }
 
     public function test_profile_highscore_disables_the_unsupported_page_flip_animation(): void

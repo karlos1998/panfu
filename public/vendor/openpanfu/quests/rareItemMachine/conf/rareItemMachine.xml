@@ -11,11 +11,11 @@
     <rareItemMachines>
       <rareItemMachine idAsset="rareItemMachine" room="21" x="295" y="281" panelX="260" panelY="281">
         <rareItems>
-          <rareItem item="itemDayJun3" itemDay="Jun 3 2026"/>
-          <rareItem item="itemDayJun12" itemDay="Jun 12 2026"/>
-          <rareItem item="itemDayJun20" itemDay="Jun 20 2026"/>
-          <rareItem item="itemDayJun22" itemDay="Jun 22 2026"/>
-          <rareItem item="itemDayJul1" itemDay="Jul 1 2026"/>
+          <rareItem item="itemDayJun3" itemDay="Jan 1 2099"/>
+          <rareItem item="itemDayJun12" itemDay="Jan 2 2099"/>
+          <rareItem item="itemDayJun20" itemDay="Jan 3 2099"/>
+          <rareItem item="itemDayJun22" itemDay="Jan 4 2099"/>
+          <rareItem item="itemDayJul1" itemDay="Jan 5 2099"/>
         </rareItems>
       </rareItemMachine>
     </rareItemMachines>
