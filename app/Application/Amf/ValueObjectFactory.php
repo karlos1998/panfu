@@ -94,6 +94,14 @@ final class ValueObjectFactory
             'type' => 'com.pandaland.mvc.model.vo.BuddyFilterVO',
             'defaults' => ['buddy1' => -1, 'buddy2' => -1, 'level' => 1],
         ],
+        'Bolly' => [
+            'type' => 'com.pandaland.mvc.model.vo.BollyVO',
+            'defaults' => [
+                'id' => 0, 'name' => '', 'type' => '', 'price' => 0, 'state' => 'normal',
+                'activity' => 'bollyNormal', 'health' => 100, 'rest' => 100, 'energy' => 100,
+                'x' => 0, 'y' => 0, 'z' => 0, 'colour' => 0, 'style' => 'normal',
+            ],
+        ],
         'Date' => [
             'type' => 'com.pandaland.mvc.model.vo.DateVO',
             'defaults' => ['date' => null],

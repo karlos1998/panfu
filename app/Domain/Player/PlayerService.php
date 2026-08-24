@@ -4,6 +4,7 @@ namespace App\Domain\Player;
 
 use App\Application\Amf\ValueObjectFactory;
 use App\Domain\Inventory\InventoryService;
+use App\Domain\Pets\BollyService;
 use App\Domain\Pets\PetService;
 use App\Domain\Social\SocialService;
 use App\Infrastructure\Amf\TypedObject;
@@ -22,6 +23,7 @@ final class PlayerService
         private readonly InventoryService $inventory,
         private readonly SocialService $social,
         private readonly PetService $pets,
+        private readonly BollyService $bollies,
     ) {}
 
     public function authenticate(string $name, string $password): ?User
@@ -144,6 +146,7 @@ final class PlayerService
             'buddies' => $this->social->smallFriendsFor($player),
             'pokoPets' => $this->pets->forPlayer($player),
             'pokoPetsWithNoHealth' => $this->pets->withoutHealth($player),
+            'bollies' => $this->bollies->forPlayer($player),
             'state' => (string) ($player->player_state ?? ''),
             'musicCollection' => [],
             'lastLogin' => $player->last_login?->getTimestampMs(),

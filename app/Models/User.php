@@ -42,6 +42,12 @@ class User extends Authenticatable
         return $this->hasMany(PokoPet::class);
     }
 
+    /** @return HasMany<Bolly, $this> */
+    public function bollies(): HasMany
+    {
+        return $this->hasMany(Bolly::class);
+    }
+
     /** @return HasMany<GameHighScore, $this> */
     public function gameHighScores(): HasMany
     {

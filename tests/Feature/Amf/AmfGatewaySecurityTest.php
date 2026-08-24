@@ -218,10 +218,20 @@ class AmfGatewaySecurityTest extends TestCase
             'z' => 0,
             'premium' => true,
         ]);
+        Item::query()->create([
+            'id' => 20001,
+            'name' => 'Blue Bolly',
+            'type' => 0,
+            'price' => 2500,
+            'z' => 0,
+            'premium' => true,
+        ]);
 
         $purchase = $this->amf('amfPlayerService.purchaseItem', [$premium->id, 'ignored']);
         $this->assertSame(5, $purchase->get('statusCode'));
         $this->assertSame(1000, $player->refresh()->coins);
+        $this->assertSame(5, $this->amf('amfBollyService.purchaseBolly', [20001])->get('statusCode'));
+        $this->assertDatabaseMissing('bollies', ['user_id' => $player->id]);
 
         $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [999])->get('statusCode'));
         $this->assertSame(1, $this->amf('amfPlayerService.updateScore', [11_001])->get('statusCode'));

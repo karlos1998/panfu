@@ -6,6 +6,7 @@ use App\Application\Amf\AmfResponseFactory;
 use App\Application\Amf\PlayerSession;
 use App\Application\Amf\ValueObjectFactory;
 use App\Domain\Inventory\InventoryService;
+use App\Domain\Pets\BollyService;
 use App\Domain\Pets\PetService;
 use App\Domain\Player\PlayerService;
 use App\Domain\Player\PlayerStateService;
@@ -26,6 +27,7 @@ final class PlayerAmfService
         private readonly InventoryService $inventory,
         private readonly SocialService $social,
         private readonly PetService $pets,
+        private readonly BollyService $bollies,
     ) {}
 
     /** @param list<int> $categories */
@@ -221,7 +223,7 @@ final class PlayerAmfService
             'trackList' => [],
             'pets' => [],
             'pokoPets' => $this->pets->forPlayer($owner),
-            'bollies' => [],
+            'bollies' => $this->bollies->forPlayer($owner),
         ]));
     }
 

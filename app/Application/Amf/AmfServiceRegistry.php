@@ -4,6 +4,7 @@ namespace App\Application\Amf;
 
 use App\Application\Amf\Services\ActionAmfService;
 use App\Application\Amf\Services\BeSmarterAmfService;
+use App\Application\Amf\Services\BollyAmfService;
 use App\Application\Amf\Services\BuddyFilterAmfService;
 use App\Application\Amf\Services\BuddyListAmfService;
 use App\Application\Amf\Services\ConnectionAmfService;
@@ -31,6 +32,10 @@ final class AmfServiceRegistry
         'amfBeSmarterService' => [
             'class' => BeSmarterAmfService::class,
             'methods' => ['loadBestResult'],
+        ],
+        'amfBollyService' => [
+            'class' => BollyAmfService::class,
+            'methods' => ['purchaseBolly', 'removeBolly', 'updateBolly'],
         ],
         'amfBuddyFilterService' => [
             'class' => BuddyFilterAmfService::class,

@@ -52,12 +52,12 @@ class AmfGatewayTest extends TestCase
             'goldpanda' => true,
             'secret_key' => 'test-secret',
         ]);
-        foreach ([100, 1001, 103199] as $itemId) {
+        foreach ([100, 1001, 20001, 103199] as $itemId) {
             Item::query()->create([
                 'id' => $itemId,
-                'name' => "ITEM_{$itemId}",
+                'name' => $itemId === 20001 ? 'Blue Bolly' : "ITEM_{$itemId}",
                 'type' => $itemId === 1001 ? 1 : 0,
-                'price' => 0,
+                'price' => $itemId === 20001 ? 2500 : 0,
                 'z' => 0,
                 'premium' => false,
             ]);
@@ -190,6 +190,8 @@ class AmfGatewayTest extends TestCase
         $this->amf('amfActionService.getLastDoneActionToday', [$player->id, 'other', 0]);
         $this->amf('amfActionService.performAction', [$player->id, 'other']);
         $this->amf('amfBeSmarterService.loadBestResult', [$player->id]);
+        $bolly = $this->amf('amfBollyService.purchaseBolly', [20001])->get('valueObject');
+        $this->amf('amfBollyService.updateBolly', [$bolly]);
         $this->amf('amfBuddyFilterService.listFilteredBuddies');
         $this->amf('amfBuddyListService.getCompleteBuddyList', [$player->id]);
 
@@ -258,6 +260,7 @@ class AmfGatewayTest extends TestCase
         $this->amf('amfRegistrationService.checkEmailAddress', ['parent@example.com']);
         $this->amf('amfSocialHighscoreService.getSocialHighscore', [$player->id, $buddy->id]);
         $this->amf('amfPetService.removePet', [$pet->id]);
+        $this->amf('amfBollyService.removeBolly', [20001]);
 
         $this->assertDatabaseMissing('pokopets', ['id' => $pet->id]);
         $this->assertDatabaseHas('pinboard_messages', ['id' => $messageId, 'receiver_id' => $buddy->id]);
@@ -380,6 +383,35 @@ class AmfGatewayTest extends TestCase
         $this->assertSame(0, $this->amf('amfPinboardService.viewPinboard')->get('statusCode'));
         $this->assertSame(0, $this->amf('amfPinboardService.deleteMessage', [$message->get('messageId')])->get('statusCode'));
         $this->assertSame(0, $this->amf('amfPinboardService.loadPinboard', [$receiver->id])->get('valueObject')->get('undeletedMessagesCount'));
+    }
+
+    public function test_bolly_purchase_update_player_info_home_and_removal_flow(): void
+    {
+        $player = $this->loginPlayer(['coins' => 5000, 'goldpanda' => 1]);
+
+        $purchase = $this->amf('amfBollyService.purchaseBolly', [20001]);
+        $this->assertSame(0, $purchase->get('statusCode'));
+        $bolly = $purchase->get('valueObject');
+        $this->assertSame(20001, $bolly->get('id'));
+        $this->assertSame('Blue Bolly', $bolly->get('name'));
+        $this->assertSame(2500, $bolly->get('price'));
+        $this->assertSame(2500, $player->refresh()->coins);
+        $this->assertSame(10, $this->amf('amfBollyService.purchaseBolly', [20001])->get('statusCode'));
+
+        $bolly->set('state', 'walking');
+        $bolly->set('activity', 'bollyFlying');
+        $bolly->set('energy', 72);
+        $updated = $this->amf('amfBollyService.updateBolly', [$bolly])->get('valueObject');
+        $this->assertSame('walking', $updated->get('state'));
+        $this->assertSame(72, $updated->get('energy'));
+
+        $card = $this->amf('amfPlayerService.getPlayerCard', [$player->id])->get('valueObject');
+        $this->assertSame(20001, $card->get('bollies')[0]->get('id'));
+        $home = $this->amf('amfPlayerService.getPlayerHome', [$player->id])->get('valueObject');
+        $this->assertSame('walking', $home->get('bollies')[0]->get('state'));
+
+        $this->assertSame(0, $this->amf('amfBollyService.removeBolly', [20001])->get('statusCode'));
+        $this->assertDatabaseMissing('bollies', ['user_id' => $player->id, 'definition_id' => 20001]);
     }
 
     /** @param array<string, mixed> $attributes */
