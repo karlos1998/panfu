@@ -75,6 +75,24 @@ class PanfuAssetAvailabilityTest extends TestCase
             $this->assertFileExists($path);
             $this->assertNotFalse(simplexml_load_file($path));
         }
+
+        $clientLocalizedPath = public_path(
+            'vendor/openpanfu/assets/petrace/conf/snippets/pokopets_race_snippets_PL.xml',
+        );
+
+        $this->assertFileExists($clientLocalizedPath);
+        $this->assertNotFalse(simplexml_load_file($clientLocalizedPath));
+    }
+
+    public function test_pokopet_race_runtime_files_are_available(): void
+    {
+        $moviePath = public_path('vendor/openpanfu/assets/petrace/PetraceMain.swf');
+        $settingsPath = public_path('vendor/openpanfu/assets/petrace/settings.xml');
+
+        $this->assertFileExists($moviePath);
+        $this->assertGreaterThan(1024, filesize($moviePath));
+        $this->assertFileExists($settingsPath);
+        $this->assertNotFalse(simplexml_load_file($settingsPath));
     }
 
     public function test_flying_component_audio_files_are_available(): void
