@@ -394,6 +394,20 @@ class AmfGatewayTest extends TestCase
         $this->assertSame(800, $player->gameHighScores()->where('game_id', 51)->value('score'));
     }
 
+    public function test_world_event_container_is_shared_and_capped(): void
+    {
+        $this->loginPlayer();
+
+        $empty = $this->amf('amfWorldEventService.loadContainer', [17])->get('valueObject');
+        $this->assertSame(0, $empty->value);
+        $this->assertSame(1000, $empty->maxValue);
+
+        $updated = $this->amf('amfWorldEventService.increaseContainerValue', [17])->get('valueObject');
+        $this->assertSame(1, $updated->value);
+        $this->assertSame(1000, $updated->maxValue);
+        $this->assertDatabaseHas('world_event_containers', ['id' => 17, 'value' => 1]);
+    }
+
     public function test_social_profile_and_account_settings_are_persisted(): void
     {
         $player = $this->loginPlayer(['email' => 'old@example.com']);

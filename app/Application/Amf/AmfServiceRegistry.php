@@ -18,6 +18,7 @@ use App\Application\Amf\Services\RegistrationAmfService;
 use App\Application\Amf\Services\SocialHighscoreAmfService;
 use App\Application\Amf\Services\StickerAmfService;
 use App\Application\Amf\Services\TivolaAmfService;
+use App\Application\Amf\Services\WorldEventAmfService;
 use App\Infrastructure\Amf\AmfException;
 use Illuminate\Contracts\Container\Container;
 
@@ -88,6 +89,10 @@ final class AmfServiceRegistry
         'amfTivolaService' => [
             'class' => TivolaAmfService::class,
             'methods' => ['loadScore', 'updateScore'],
+        ],
+        'amfWorldEventService' => [
+            'class' => WorldEventAmfService::class,
+            'methods' => ['loadContainer', 'increaseContainerValue'],
         ],
     ];
 
