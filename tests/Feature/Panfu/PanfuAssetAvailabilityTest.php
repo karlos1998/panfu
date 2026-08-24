@@ -73,6 +73,21 @@ class PanfuAssetAvailabilityTest extends TestCase
         $this->assertTrue($items->has(103931));
     }
 
+    public function test_rare_item_machine_uses_a_recurring_reward_rotation(): void
+    {
+        $moviePath = public_path('vendor/openpanfu/quests/rareItemMachine/rareItemMachine.swf');
+
+        $this->assertFileExists($moviePath);
+        $this->assertStringContainsString('getTodayItem', $this->readSwfBody($moviePath));
+
+        $configuration = simplexml_load_file(
+            public_path('vendor/openpanfu/quests/rareItemMachine/conf/rareItemMachine.xml'),
+        );
+        $this->assertNotFalse($configuration);
+        $this->assertCount(5, $configuration->xpath('//rareItems/rareItem') ?: []);
+        $this->assertCount(5, $configuration->xpath('//items/item[@check]') ?: []);
+    }
+
     public function test_catalogue_xmls_and_pages_are_available(): void
     {
         $catalogues = [
