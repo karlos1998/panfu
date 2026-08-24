@@ -11,6 +11,7 @@ use App\Domain\Player\PlayerService;
 use App\Domain\Player\PlayerStateService;
 use App\Domain\Social\SocialService;
 use App\Infrastructure\Amf\TypedObject;
+use App\Models\PlayerReport;
 use App\Models\User;
 use Illuminate\Support\Facades\RateLimiter;
 
@@ -71,6 +72,19 @@ final class PlayerAmfService
         return $this->responses->make();
     }
 
+    public function removeFromBuddyList(int $buddyId): TypedObject
+    {
+        $player = $this->player();
+        $buddy = User::query()->find($buddyId);
+        if ($player === null || $buddy === null) {
+            return $this->responses->make(1);
+        }
+
+        $this->social->removeFriends($player, $buddy);
+
+        return $this->responses->make();
+    }
+
     public function purchaseItem(int $itemId, string $itemHash = ''): TypedObject
     {
         $player = $this->player();
@@ -119,6 +133,11 @@ final class PlayerAmfService
         ]));
     }
 
+    public function removeItem(int $itemId): TypedObject
+    {
+        return $this->removeItems([$itemId]);
+    }
+
     /** @param list<int> $playerIds */
     public function getPlayerInfoList(array $playerIds, bool $detailed = false): TypedObject
     {
@@ -140,6 +159,30 @@ final class PlayerAmfService
         return $this->responses->make(valueObject: $this->valueObjects->make('List', ['list' => $list]));
     }
 
+    /** @param list<int> $playerIds */
+    public function getSmallPlayerInfoList(array $playerIds): TypedObject
+    {
+        $player = $this->player();
+        if ($player === null) {
+            return $this->responses->make(1);
+        }
+
+        $ids = array_slice(array_values(array_unique(array_map('intval', $playerIds))), 0, 100);
+        $players = User::query()->whereKey($ids)->get()->keyBy('id');
+        $list = collect($ids)
+            ->map(fn (int $id): ?User => $players->get($id))
+            ->filter()
+            ->map(fn (User $entry): TypedObject => $this->valueObjects->make('SmallPlayerInfo', [
+                'playerId' => (int) $entry->getKey(),
+                'playerName' => (string) $entry->name,
+                'currentGameServer' => (int) ($entry->current_gameserver ?? 0),
+            ]))
+            ->values()
+            ->all();
+
+        return $this->responses->make(valueObject: $this->valueObjects->make('List', ['list' => $list]));
+    }
+
     public function getPlayerCard(int $playerId): TypedObject
     {
         $player = $this->player();
@@ -152,7 +195,13 @@ final class PlayerAmfService
 
     public function lockHome(bool $locked): TypedObject
     {
-        return $this->responses->make();
+        $player = $this->player();
+        if ($player === null) {
+            return $this->responses->make(1);
+        }
+        $player->forceFill(['home_locked' => $locked])->save();
+
+        return $this->responses->make(valueObject: $locked);
     }
 
     public function getPlayerHome(int $playerId): TypedObject
@@ -167,6 +216,7 @@ final class PlayerAmfService
 
         return $this->responses->make(valueObject: $this->valueObjects->make('HomeData', [
             'playerID' => $playerId,
+            'locked' => (bool) $owner->home_locked,
             'furnitureList' => $this->inventory->furnitureFor($owner),
             'trackList' => [],
             'pets' => [],
@@ -203,6 +253,47 @@ final class PlayerAmfService
         return $this->players->updateCoinBalance($player, $score)
             ? $this->responses->make()
             : $this->responses->make(1, 'Coin balance update rejected.');
+    }
+
+    public function reportPlayer(int $reportedId, string $reason): TypedObject
+    {
+        $reporter = $this->player();
+        $reported = User::query()->find($reportedId);
+        $reason = trim(strip_tags($reason));
+        if ($reporter === null || $reported === null || $reporter->is($reported) || $reason === '') {
+            return $this->responses->make(1);
+        }
+
+        PlayerReport::query()->create([
+            'reporter_id' => $reporter->getKey(),
+            'reported_id' => $reported->getKey(),
+            'reason' => mb_substr($reason, 0, 255),
+        ]);
+
+        return $this->responses->make(message: (string) $reported->getKey());
+    }
+
+    public function updateHelperStatus(bool $enabled): TypedObject
+    {
+        $player = $this->player();
+        if ($player === null) {
+            return $this->responses->make(1);
+        }
+        $player->forceFill(['helper_status' => $enabled])->save();
+
+        return $this->responses->make(valueObject: $enabled);
+    }
+
+    public function updatePlayerState(int $playerId, string $state): TypedObject
+    {
+        $player = $this->player();
+        $state = trim($state);
+        if ($player === null || (int) $player->getKey() !== $playerId || strlen($state) > 80) {
+            return $this->responses->make(1);
+        }
+        $player->forceFill(['player_state' => $state])->save();
+
+        return $this->responses->make();
     }
 
     private function player(): ?User

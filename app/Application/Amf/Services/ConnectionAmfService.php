@@ -12,6 +12,8 @@ use App\Domain\Servers\GameServerClient;
 use App\Domain\Servers\GameServerService;
 use App\Infrastructure\Amf\TypedObject;
 use App\Models\User;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Validator;
 
 final class ConnectionAmfService
 {
@@ -83,8 +85,29 @@ final class ConnectionAmfService
             : $this->responses->make(1);
     }
 
-    public function setEmailAddress(mixed ...$arguments): TypedObject
+    public function doLogout(): TypedObject
     {
+        $player = $this->session->player();
+        if ($player !== null) {
+            $player->forceFill(['current_gameserver' => 0])->save();
+        }
+        $this->session->logout();
+
+        return $this->responses->make();
+    }
+
+    public function setEmailAddress(int $playerId, string $email, bool $confirmed = true): TypedObject
+    {
+        $player = $this->session->player();
+        if ($player === null || (int) $player->getKey() !== $playerId || ! $this->validEmail($email, $playerId)) {
+            return $this->responses->make(1);
+        }
+
+        $player->forceFill([
+            'email' => strtolower($email),
+            'email_verified_at' => $confirmed ? now() : null,
+        ])->save();
+
         return $this->responses->make();
     }
 
@@ -97,7 +120,29 @@ final class ConnectionAmfService
 
     public function checkEmailAddress(string $email): TypedObject
     {
-        return $this->responses->make();
+        return $this->validEmail($email)
+            ? $this->responses->make()
+            : $this->responses->make(1, valueObject: $this->valueObjects->make('Feedback'));
+    }
+
+    public function setBirthday(TypedObject $birthday): TypedObject
+    {
+        $player = $this->session->player();
+        $timestamp = $birthday->get('date');
+        if ($player === null || ! is_numeric($timestamp)) {
+            return $this->responses->make(1);
+        }
+
+        $date = Carbon::createFromTimestampMs((int) $timestamp)->startOfDay();
+        if ($date->isFuture() || $date->age < 3 || $date->age > 120) {
+            return $this->responses->make(1);
+        }
+
+        $player->forceFill(['birthday' => $date->toDateString()])->save();
+
+        return $this->responses->make(valueObject: $this->valueObjects->make('Date', [
+            'date' => $date->getTimestampMs(),
+        ]));
     }
 
     public function ping(): TypedObject
@@ -123,5 +168,20 @@ final class ConnectionAmfService
         ]);
 
         return $this->responses->make(valueObject: $result);
+    }
+
+    private function validEmail(string $email, ?int $ignorePlayerId = null): bool
+    {
+        $validator = Validator::make(['email' => strtolower($email)], [
+            'email' => ['required', 'email:rfc', 'max:255'],
+        ]);
+        if ($validator->fails()) {
+            return false;
+        }
+
+        return ! User::query()
+            ->whereRaw('LOWER(email) = ?', [strtolower($email)])
+            ->when($ignorePlayerId !== null, fn ($query) => $query->whereKeyNot($ignorePlayerId))
+            ->exists();
     }
 }

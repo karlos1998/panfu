@@ -28,4 +28,29 @@ final class BuddyListAmfService
             'list' => $this->social->friendsFor($player),
         ]));
     }
+
+    /** @param list<int> $buddyIds */
+    public function getBuddyList(array $buddyIds): TypedObject
+    {
+        $player = $this->session->player();
+
+        return $this->responses->make(
+            $player === null ? 1 : 0,
+            valueObject: $this->valueObjects->make('List', [
+                'list' => $player === null ? [] : $this->social->buddiesByIds($player, $buddyIds),
+            ]),
+        );
+    }
+
+    public function changeBestFriend(int $oldBuddyId = 0, int $newBuddyId = 0): TypedObject
+    {
+        $player = $this->session->player();
+        if ($player === null) {
+            return $this->responses->make(1);
+        }
+
+        return $this->social->changeBestFriend($player, $oldBuddyId, $newBuddyId)
+            ? $this->responses->make()
+            : $this->responses->make(1, 'The selected panda is not a buddy.');
+    }
 }

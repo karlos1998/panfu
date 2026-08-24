@@ -10,6 +10,8 @@ use App\Infrastructure\Amf\AmfMessage;
 use App\Infrastructure\Amf\TypedObject;
 use App\Models\GameServer;
 use App\Models\Item;
+use App\Models\PlayerProfile;
+use App\Models\PlayerReport;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -187,6 +189,7 @@ class AmfGatewayTest extends TestCase
 
         $this->amf('amfActionService.getLastDoneActionToday', [$player->id, 'other', 0]);
         $this->amf('amfActionService.performAction', [$player->id, 'other']);
+        $this->amf('amfBeSmarterService.loadBestResult', [$player->id]);
         $this->amf('amfBuddyFilterService.listFilteredBuddies');
         $this->amf('amfBuddyListService.getCompleteBuddyList', [$player->id]);
 
@@ -237,6 +240,77 @@ class AmfGatewayTest extends TestCase
         $this->amf('amfPetService.removePet', [$pet->id]);
 
         $this->assertDatabaseMissing('pokopets', ['id' => $pet->id]);
+    }
+
+    public function test_profile_highscore_be_smarter_request_returns_without_stalling(): void
+    {
+        $player = $this->loginPlayer();
+
+        $empty = $this->amf('amfBeSmarterService.loadBestResult', [$player->id]);
+        $this->assertSame(0, $empty->get('statusCode'));
+        $this->assertNull($empty->get('valueObject'));
+
+        $this->amf('amfGameService.setHighScore', [51, 1234]);
+        $result = $this->amf('amfBeSmarterService.loadBestResult', [$player->id]);
+
+        $this->assertSame(1234, $result->get('valueObject')->points);
+        $this->assertSame($player->name, $result->get('valueObject')->playerName);
+    }
+
+    public function test_social_profile_and_account_settings_are_persisted(): void
+    {
+        $player = $this->loginPlayer(['email' => 'old@example.com']);
+        $buddy = User::factory()->create(['name' => 'BestBuddy']);
+        $blocked = User::factory()->create(['name' => 'BlockedPanda']);
+
+        $this->assertSame(0, $this->amf('amfPlayerService.addToBuddylist', [$buddy->id])->get('statusCode'));
+        $this->assertSame(0, $this->amf('amfBuddyListService.changeBestFriend', [0, $buddy->id])->get('statusCode'));
+        $buddies = $this->amf('amfBuddyListService.getBuddyList', [[$buddy->id]])->get('valueObject')->get('list');
+        $this->assertTrue($buddies[0]->get('bestfriend'));
+
+        $filter = $this->amf('amfBuddyFilterService.addFilteredBuddy', [$player->id, $blocked->id, 1]);
+        $this->assertSame($blocked->id, $filter->get('valueObject')->get('buddy2'));
+        $filters = $this->amf('amfBuddyFilterService.listFilteredBuddies')->get('valueObject')->get('list');
+        $this->assertCount(1, $filters);
+        $this->assertSame(0, $this->amf('amfBuddyFilterService.removeFilteredBuddy', [$player->id, $blocked->id])->get('statusCode'));
+        $this->assertCount(0, $this->amf('amfBuddyFilterService.listFilteredBuddies')->get('valueObject')->get('list'));
+
+        $this->assertSame(0, $this->amf('amfPlayerService.lockHome', [true])->get('statusCode'));
+        $this->assertTrue($this->amf('amfPlayerService.getPlayerHome', [$player->id])->get('valueObject')->get('locked'));
+        $this->assertSame(0, $this->amf('amfPlayerService.updateHelperStatus', [true])->get('statusCode'));
+        $this->assertSame(0, $this->amf('amfPlayerService.updatePlayerState', [$player->id, 'Ready to play'])->get('statusCode'));
+
+        PlayerProfile::query()->create(['user_id' => $player->id, 'motto' => 'Hello Panfu']);
+        $profile = $this->amf('amfProfileService.getProfile', [$player->id, true])->get('valueObject');
+        $this->assertSame('BestBuddy', $profile->get('bestFriend'));
+        $this->assertSame('Hello Panfu', $profile->get('motto'));
+
+        $this->assertSame(0, $this->amf('amfConnectionService.setEmailAddress', [$player->id, 'new@example.com', true])->get('statusCode'));
+        $birthday = new TypedObject('com.pandaland.mvc.model.vo.DateVO', [
+            'date' => now()->subYears(12)->startOfDay()->getTimestampMs(),
+        ]);
+        $this->assertSame(0, $this->amf('amfConnectionService.setBirthday', [$birthday])->get('statusCode'));
+        $this->assertSame('new@example.com', $player->refresh()->email);
+        $this->assertTrue($player->email_verified_at !== null);
+        $this->assertTrue($player->home_locked);
+        $this->assertTrue($player->helper_status);
+        $this->assertSame('Ready to play', $player->player_state);
+        $this->assertSame($buddy->id, $player->best_friend_id);
+        $this->assertNotNull($player->birthday);
+
+        $this->assertSame(0, $this->amf('amfPlayerService.reportPlayer', [$blocked->id, 'spam'])->get('statusCode'));
+        $this->assertDatabaseHas(PlayerReport::class, [
+            'reporter_id' => $player->id,
+            'reported_id' => $blocked->id,
+            'reason' => 'spam',
+        ]);
+
+        $this->assertSame(0, $this->amf('amfPlayerService.removeFromBuddyList', [$buddy->id])->get('statusCode'));
+        $this->assertNull($player->refresh()->best_friend_id);
+        $this->assertCount(0, $this->amf('amfBuddyListService.getCompleteBuddyList', [$player->id])->get('valueObject')->get('list'));
+
+        $this->assertSame(0, $this->amf('amfConnectionService.doLogout')->get('statusCode'));
+        $this->assertSame(1, $this->amf('amfConnectionService.ping')->get('statusCode'));
     }
 
     /** @param array<string, mixed> $attributes */

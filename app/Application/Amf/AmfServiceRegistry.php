@@ -3,6 +3,7 @@
 namespace App\Application\Amf;
 
 use App\Application\Amf\Services\ActionAmfService;
+use App\Application\Amf\Services\BeSmarterAmfService;
 use App\Application\Amf\Services\BuddyFilterAmfService;
 use App\Application\Amf\Services\BuddyListAmfService;
 use App\Application\Amf\Services\ConnectionAmfService;
@@ -24,17 +25,21 @@ final class AmfServiceRegistry
             'class' => ActionAmfService::class,
             'methods' => ['getLastDoneActionToday', 'performAction'],
         ],
+        'amfBeSmarterService' => [
+            'class' => BeSmarterAmfService::class,
+            'methods' => ['loadBestResult'],
+        ],
         'amfBuddyFilterService' => [
             'class' => BuddyFilterAmfService::class,
-            'methods' => ['listFilteredBuddies'],
+            'methods' => ['listFilteredBuddies', 'addFilteredBuddy', 'removeFilteredBuddy'],
         ],
         'amfBuddyListService' => [
             'class' => BuddyListAmfService::class,
-            'methods' => ['getCompleteBuddyList'],
+            'methods' => ['getBuddyList', 'getCompleteBuddyList', 'changeBestFriend'],
         ],
         'amfConnectionService' => [
             'class' => ConnectionAmfService::class,
-            'methods' => ['doLogin', 'doLoginSession', 'doRegister', 'setEmailAddress', 'checkUserName', 'checkEmailAddress', 'ping'],
+            'methods' => ['doLogin', 'doLoginSession', 'doLogout', 'doRegister', 'setEmailAddress', 'setBirthday', 'checkUserName', 'checkEmailAddress', 'ping'],
         ],
         'amfGameService' => [
             'class' => GameAmfService::class,
@@ -50,7 +55,7 @@ final class AmfServiceRegistry
         ],
         'amfPlayerService' => [
             'class' => PlayerAmfService::class,
-            'methods' => ['getStates', 'setState', 'updateTourFinished', 'addToBuddylist', 'purchaseItem', 'updateItems', 'removeItems', 'getPlayerInfoList', 'getPlayerCard', 'lockHome', 'getPlayerHome', 'updateFurnitures', 'updateScore'],
+            'methods' => ['getStates', 'setState', 'updateTourFinished', 'addToBuddylist', 'removeFromBuddyList', 'purchaseItem', 'updateItems', 'removeItem', 'removeItems', 'getPlayerInfoList', 'getSmallPlayerInfoList', 'getPlayerCard', 'lockHome', 'getPlayerHome', 'updateFurnitures', 'updateScore', 'reportPlayer', 'updateHelperStatus', 'updatePlayerState'],
         ],
         'amfProfileService' => [
             'class' => ProfileAmfService::class,

@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -77,6 +78,12 @@ class User extends Authenticatable
         return $this->hasMany(UserRelation::class, 'player1');
     }
 
+    /** @return HasOne<PlayerProfile, $this> */
+    public function gameProfile(): HasOne
+    {
+        return $this->hasOne(PlayerProfile::class);
+    }
+
     /**
      * Get the attributes that should be cast.
      *
@@ -92,6 +99,9 @@ class User extends Authenticatable
             'coins' => 'integer',
             'current_gameserver' => 'integer',
             'goldpanda' => 'integer',
+            'best_friend_id' => 'integer',
+            'home_locked' => 'boolean',
+            'helper_status' => 'boolean',
             'last_login' => 'date',
             'sex' => 'boolean',
             'sheriff' => 'boolean',

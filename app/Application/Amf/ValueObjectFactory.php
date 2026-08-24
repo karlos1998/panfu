@@ -90,6 +90,10 @@ final class ValueObjectFactory
                 'currentGameServer' => 0, 'socialLevel' => 0,
             ],
         ],
+        'BuddyFilter' => [
+            'type' => 'com.pandaland.mvc.model.vo.BuddyFilterVO',
+            'defaults' => ['buddy1' => -1, 'buddy2' => -1, 'level' => 1],
+        ],
         'Date' => [
             'type' => 'com.pandaland.mvc.model.vo.DateVO',
             'defaults' => ['date' => null],

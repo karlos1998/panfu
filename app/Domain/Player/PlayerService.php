@@ -120,6 +120,10 @@ final class PlayerService
 
     public function info(User $player): TypedObject
     {
+        $birthday = $player->birthday === null
+            ? null
+            : $this->valueObjects->make('Date', ['date' => $player->birthday->startOfDay()->getTimestampMs()]);
+
         return $this->valueObjects->make('PlayerInfo', [
             'id' => (int) $player->getKey(),
             'name' => (string) $player->name,
@@ -127,8 +131,10 @@ final class PlayerService
             'isSheriff' => (int) ($player->sheriff ?? 0),
             'isPremium' => (int) $player->goldpanda > 0,
             'sex' => $player->sex ? 'girl' : 'boy',
-            'helperStatus' => false,
-            'isTourFinished' => true,
+            'age' => $player->birthday?->age ?? 0,
+            'birthday' => $birthday,
+            'helperStatus' => (bool) ($player->helper_status ?? false),
+            'isTourFinished' => (bool) ($player->tour_finished ?? true),
             'membershipStatus' => (int) ($player->goldpanda ?? 0),
             'currentGameServer' => (int) ($player->current_gameserver ?? 0),
             'socialLevel' => (int) ($player->social_level ?? 0),
@@ -138,6 +144,10 @@ final class PlayerService
             'buddies' => $this->social->smallFriendsFor($player),
             'pokoPets' => $this->pets->forPlayer($player),
             'pokoPetsWithNoHealth' => $this->pets->withoutHealth($player),
+            'state' => (string) ($player->player_state ?? ''),
+            'musicCollection' => [],
+            'lastLogin' => $player->last_login?->getTimestampMs(),
+            'signupDate' => $player->created_at?->getTimestampMs(),
             'daysOnPanfu' => $player->created_at === null
                 ? 0
                 : (int) round($player->created_at->diffInSeconds(now()) / 86400),
