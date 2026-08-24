@@ -58,9 +58,9 @@ final class InventoryService
     }
 
     /** @return array{statusCode:int,message:string,valueObject:?TypedObject} */
-    public function purchase(User $player, int $itemId): array
+    public function purchase(User $player, int $itemId, bool $questReward = false): array
     {
-        return DB::transaction(function () use ($player, $itemId): array {
+        return DB::transaction(function () use ($player, $itemId, $questReward): array {
             $lockedPlayer = User::query()->lockForUpdate()->find($player->getKey());
             $item = Item::query()->find($itemId);
 
@@ -77,7 +77,7 @@ final class InventoryService
                 ];
             }
 
-            if ((bool) $item->premium && (int) $lockedPlayer->goldpanda <= 0) {
+            if (! $questReward && (bool) $item->premium && (int) $lockedPlayer->goldpanda <= 0) {
                 return ['statusCode' => 5, 'message' => 'A Gold Panda membership is required.', 'valueObject' => null];
             }
 

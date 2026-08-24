@@ -6,6 +6,73 @@ use Tests\TestCase;
 
 class PanfuAssetAvailabilityTest extends TestCase
 {
+    public function test_every_enabled_quest_has_its_runtime_files_and_localized_text(): void
+    {
+        $mainConfig = simplexml_load_file(public_path('vendor/openpanfu/conf/config.xml'));
+        $this->assertNotFalse($mainConfig);
+
+        $quests = $mainConfig->xpath('//quests/quest') ?: [];
+        $this->assertCount(17, $quests);
+
+        foreach ($quests as $quest) {
+            $type = (string) $quest['type'];
+            $directory = public_path("vendor/openpanfu/quests/{$type}");
+            $moviePath = "{$directory}/{$type}.swf";
+            $configurationPath = "{$directory}/conf/{$type}.xml";
+
+            $this->assertFileExists($moviePath, "Missing {$type} quest movie");
+            $this->assertGreaterThan(1024, filesize($moviePath), "{$type} quest movie is unexpectedly small");
+            $this->assertFileExists($configurationPath, "Missing {$type} quest configuration");
+
+            $configuration = simplexml_load_file($configurationPath);
+            $this->assertNotFalse($configuration, "Invalid {$type} quest configuration");
+
+            foreach ($configuration->xpath('//assets/asset') ?: [] as $asset) {
+                $this->assertFileExists(
+                    "{$directory}/".(string) $asset['path'],
+                    "Missing {$type} quest asset ".(string) $asset['path'],
+                );
+            }
+
+            foreach ($configuration->xpath('//snippets') ?: [] as $snippets) {
+                $localizedPath = str_replace('$$lang$$', 'PL', (string) $snippets['path']);
+                $this->assertFileExists(
+                    public_path("vendor/openpanfu/{$localizedPath}"),
+                    "Missing Polish text for {$type}",
+                );
+            }
+        }
+    }
+
+    public function test_every_configured_quest_item_exists_in_the_game_data(): void
+    {
+        $items = collect(json_decode(
+            (string) file_get_contents(resource_path('data/panfu/game-items.json')),
+            true,
+            flags: JSON_THROW_ON_ERROR,
+        ))->keyBy('id');
+
+        foreach (glob(public_path('vendor/openpanfu/quests/*/conf/*.xml')) ?: [] as $configurationPath) {
+            $configuration = simplexml_load_file($configurationPath);
+            $this->assertNotFalse($configuration);
+
+            foreach ($configuration->xpath('//items/item') ?: [] as $questItem) {
+                $itemId = (int) $questItem['itemID'];
+                if ($itemId === 0) {
+                    continue;
+                }
+
+                $this->assertTrue(
+                    $items->has($itemId),
+                    "Quest item {$itemId} from {$configurationPath} is missing from game-items.json",
+                );
+            }
+        }
+
+        // Till Death awards this mirror directly from its SWF rather than declaring it in XML.
+        $this->assertTrue($items->has(103931));
+    }
+
     public function test_catalogue_xmls_and_pages_are_available(): void
     {
         $catalogues = [

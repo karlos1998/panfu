@@ -10,6 +10,7 @@ use App\Domain\Pets\BollyService;
 use App\Domain\Pets\PetService;
 use App\Domain\Player\PlayerService;
 use App\Domain\Player\PlayerStateService;
+use App\Domain\Quests\QuestRewardCatalog;
 use App\Domain\Social\SocialService;
 use App\Infrastructure\Amf\TypedObject;
 use App\Models\PlayerReport;
@@ -28,6 +29,7 @@ final class PlayerAmfService
         private readonly SocialService $social,
         private readonly PetService $pets,
         private readonly BollyService $bollies,
+        private readonly QuestRewardCatalog $questRewards,
     ) {}
 
     /** @param list<int> $categories */
@@ -94,7 +96,11 @@ final class PlayerAmfService
             return $this->responses->make(1, 'Not logged in');
         }
 
-        $result = $this->inventory->purchase($player, $itemId);
+        $result = $this->inventory->purchase(
+            $player,
+            $itemId,
+            $this->questRewards->isReward($itemId, $itemHash),
+        );
 
         return $this->responses->make($result['statusCode'], $result['message'], $result['valueObject']);
     }

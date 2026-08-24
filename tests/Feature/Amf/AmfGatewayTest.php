@@ -128,6 +128,72 @@ class AmfGatewayTest extends TestCase
         $this->assertNotEmpty($reward->get('valueObject')->get('list'));
     }
 
+    public function test_all_legacy_quest_state_flows_persist_from_beginning_to_end(): void
+    {
+        $this->loginPlayer();
+
+        $flows = [
+            'Till Death' => [[0, 0, 1], [0, 0, 20], [0, 0, 32]],
+            'Swimming' => [[1, 0, 1], [1, 1, 1], [1, 2, 1]],
+            'My Son Is A Pirate' => [[2, 0, 10], [2, 0, 100], [2, 0, 240]],
+            'Horse' => [[3, 0, 10], [3, 0, 40], [3, 0, 60]],
+            'Surfer' => [[4, 0, 10], [4, 0, 50], [4, 0, 85]],
+            'Wooby' => [[9, 0, 0], [9, 0, 50], [9, 0, 99]],
+            'The Lost Lover' => [[15, 0, 0], [15, 0, 50], [15, 0, 95]],
+            'Big Foot' => [[25, 0, 0], [25, 0, 20], [25, 0, 35]],
+            'Mysterious Call' => [[28, 0, 0], [28, 0, 50], [28, 0, 100]],
+            'New Pets' => [[30, 0, 0], [30, 0, 50], [30, 0, 100]],
+            'Transition' => [[62, 0, 0], [62, 0, 40], [62, 0, 100]],
+            "Let's Go There" => [[67, 0, 0], [67, 0, 2500], [67, 0, 4999]],
+            'Tutorial 1' => [[72, 0, 0], [72, 0, 100], [72, 0, 165]],
+            'Tutorial 2' => [[73, 0, 0], [73, 0, 500], [73, 0, 1000]],
+            'Small Talk' => [[83, 0, 0], [83, 0, 1]],
+            'Unicorn' => [[95, 0, 0], [95, 0, 100], [95, 0, 200]],
+        ];
+
+        foreach ($flows as $quest => $states) {
+            foreach ($states as [$category, $name, $value]) {
+                $response = $this->amf('amfPlayerService.setState', [$category, $name, $value]);
+                $this->assertSame(0, $response->get('statusCode'), "{$quest} state update failed");
+            }
+
+            [$category, $name, $value] = $states[array_key_last($states)];
+            $storedStates = $this->amf('amfPlayerService.getStates', [[$category]])
+                ->get('valueObject')->get('list');
+            $stored = collect($storedStates)->first(
+                fn (TypedObject $state): bool => $state->get('nameId') === $name,
+            );
+
+            $this->assertInstanceOf(TypedObject::class, $stored, "{$quest} final state was not returned");
+            $this->assertSame($value, $stored->get('stateValue'), "{$quest} final state was not persisted");
+        }
+    }
+
+    public function test_rare_item_machine_can_grant_its_premium_daily_reward_to_a_regular_player(): void
+    {
+        $player = $this->loginPlayer(['goldpanda' => 0]);
+        Item::query()->create([
+            'id' => 103952,
+            'name' => 'CARROUSEL',
+            'type' => 13,
+            'price' => 0,
+            'z' => 0,
+            'premium' => true,
+        ]);
+
+        $blocked = $this->amf('amfPlayerService.purchaseItem', [103952, 'invalid-quest-check']);
+        $this->assertSame(5, $blocked->get('statusCode'));
+        $this->assertDatabaseMissing('inventories', ['user_id' => $player->id, 'item_id' => 103952]);
+
+        $reward = $this->amf('amfPlayerService.purchaseItem', [
+            103952,
+            'fcf6afdaf438a831a278970cce46a7fc',
+        ]);
+
+        $this->assertSame(0, $reward->get('statusCode'));
+        $this->assertDatabaseHas('inventories', ['user_id' => $player->id, 'item_id' => 103952]);
+    }
+
     public function test_social_minigame_and_pokopet_flows_work_through_amf(): void
     {
         $player = $this->loginPlayer(['coins' => 1000, 'goldpanda' => 1]);
