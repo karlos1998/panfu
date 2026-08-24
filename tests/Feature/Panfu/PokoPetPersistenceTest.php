@@ -108,4 +108,15 @@ class PokoPetPersistenceTest extends TestCase
         $this->assertSame([501], $result['pet']->abilities);
         $this->assertSame([501], $player->pokoPets()->firstOrFail()->abilities);
     }
+
+    public function test_pingoo_can_be_granted_by_the_legacy_quest_flow(): void
+    {
+        $player = User::factory()->create();
+
+        $result = app(PetService::class)->buy($player, 8, 'Pingoo', false);
+
+        $this->assertSame(0, $result['statusCode']);
+        $this->assertSame('8', $result['pet']->type);
+        $this->assertSame([501], $result['pet']->abilities);
+    }
 }

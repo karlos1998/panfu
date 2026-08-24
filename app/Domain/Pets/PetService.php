@@ -20,6 +20,7 @@ final class PetService
         5 => ['name' => 'Woody', 'price' => 0, 'level' => 0, 'premium' => false, 'voucher' => true],
         6 => ['name' => 'Bugsy', 'price' => 60, 'level' => 1, 'premium' => true, 'voucher' => false],
         7 => ['name' => 'Tork', 'price' => 5500, 'level' => 25, 'premium' => true, 'voucher' => false],
+        8 => ['name' => 'Pingoo', 'price' => 0, 'level' => 0, 'premium' => false, 'voucher' => false],
         9 => ['name' => 'Marieta', 'price' => 60, 'level' => 0, 'premium' => false, 'voucher' => false],
     ];
 

@@ -85,7 +85,7 @@ class PanfuAssetAvailabilityTest extends TestCase
         $this->assertNotFalse($localized);
         $this->assertSame('Nowy poziom', (string) $localized->PETRACE_NEW_LEVEL);
         $this->assertSame('Nowa umiejętność', (string) $localized->PETRACE_NEW_SPECIAL);
-        $this->assertSame('Następny poziom', (string) $localized->PETRACE_EXPERIENCE_NEXT_LEVEL);
+        $this->assertSame('Próg XP', (string) $localized->PETRACE_EXPERIENCE_NEXT_LEVEL);
     }
 
     public function test_pokopet_race_runtime_files_are_available(): void
