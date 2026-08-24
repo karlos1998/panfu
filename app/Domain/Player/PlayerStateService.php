@@ -21,6 +21,22 @@ final class PlayerStateService
             ->all();
     }
 
+    /** @return list<TypedObject> */
+    public function getProfileRange(User $player, int $firstCategory, int $lastCategory, int $name): array
+    {
+        [$firstCategory, $lastCategory] = $firstCategory <= $lastCategory
+            ? [$firstCategory, $lastCategory]
+            : [$lastCategory, $firstCategory];
+
+        return $player->states()
+            ->whereBetween('category', [$firstCategory, $lastCategory])
+            ->where('name', $name)
+            ->orderBy('category')
+            ->get()
+            ->map(fn (PlayerState $state): TypedObject => $this->toValueObject($state))
+            ->all();
+    }
+
     public function set(User $player, int $category, int $name, int $value): TypedObject
     {
         $timestamp = time();

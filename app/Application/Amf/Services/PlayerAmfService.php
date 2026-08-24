@@ -13,6 +13,7 @@ use App\Domain\Player\PlayerStateService;
 use App\Domain\Quests\QuestRewardCatalog;
 use App\Domain\Social\SocialService;
 use App\Infrastructure\Amf\TypedObject;
+use App\Models\Item;
 use App\Models\PlayerReport;
 use App\Models\User;
 use Illuminate\Support\Facades\RateLimiter;
@@ -42,6 +43,22 @@ final class PlayerAmfService
 
         return $this->responses->make(valueObject: $this->valueObjects->make('List', [
             'list' => $this->states->get($player, $categories),
+        ]));
+    }
+
+    public function getProfileStates(int $playerId, int $firstCategory, int $lastCategory, int $name = 0): TypedObject
+    {
+        if ($this->player() === null) {
+            return $this->responses->make(1);
+        }
+
+        $profilePlayer = User::query()->find($playerId);
+        if ($profilePlayer === null) {
+            return $this->responses->make(1, 'Player not found.');
+        }
+
+        return $this->responses->make(valueObject: $this->valueObjects->make('List', [
+            'list' => $this->states->getProfileRange($profilePlayer, $firstCategory, $lastCategory, $name),
         ]));
     }
 
@@ -103,6 +120,30 @@ final class PlayerAmfService
         );
 
         return $this->responses->make($result['statusCode'], $result['message'], $result['valueObject']);
+    }
+
+    public function collectItem(int $itemId, bool $active = false, bool $questReward = false): TypedObject
+    {
+        $player = $this->player();
+        $item = Item::query()->find($itemId);
+        if ($player === null || $item === null || ! $questReward || $itemId !== 103019) {
+            return $this->responses->make(1, 'Invalid quest reward.');
+        }
+
+        $entry = $this->inventory->add($player, $itemId, $active);
+
+        return $entry === null
+            ? $this->responses->make(1, 'Unable to collect item.')
+            : $this->responses->make(valueObject: $this->inventory->itemValueObject($item, $entry));
+    }
+
+    public function activateItem(int|string $itemId, bool $active): TypedObject
+    {
+        // The legacy jukebox uses this endpoint as an authenticated permission
+        // acknowledgement before broadcasting its selected track over the socket.
+        return $this->player() === null
+            ? $this->responses->make(1)
+            : $this->responses->make(valueObject: $active);
     }
 
     /** @param list<mixed> $activeInventory @param list<mixed> $inactiveInventory */

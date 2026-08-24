@@ -67,7 +67,7 @@ final class AmfServiceRegistry
         ],
         'amfPlayerService' => [
             'class' => PlayerAmfService::class,
-            'methods' => ['getStates', 'setState', 'updateTourFinished', 'addToBuddylist', 'removeFromBuddyList', 'purchaseItem', 'updateItems', 'removeItem', 'removeItems', 'getPlayerInfoList', 'getSmallPlayerInfoList', 'getPlayerCard', 'lockHome', 'getPlayerHome', 'updateFurnitures', 'updateScore', 'reportPlayer', 'updateHelperStatus', 'updatePlayerState'],
+            'methods' => ['getStates', 'getProfileStates', 'setState', 'updateTourFinished', 'addToBuddylist', 'removeFromBuddyList', 'purchaseItem', 'collectItem', 'activateItem', 'updateItems', 'removeItem', 'removeItems', 'getPlayerInfoList', 'getSmallPlayerInfoList', 'getPlayerCard', 'lockHome', 'getPlayerHome', 'updateFurnitures', 'updateScore', 'reportPlayer', 'updateHelperStatus', 'updatePlayerState'],
         ],
         'amfProfileService' => [
             'class' => ProfileAmfService::class,

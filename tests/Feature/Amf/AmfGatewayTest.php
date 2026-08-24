@@ -52,7 +52,7 @@ class AmfGatewayTest extends TestCase
             'goldpanda' => true,
             'secret_key' => 'test-secret',
         ]);
-        foreach ([100, 1001, 20001, 103199] as $itemId) {
+        foreach ([100, 1001, 20001, 103019, 103199] as $itemId) {
             Item::query()->create([
                 'id' => $itemId,
                 'name' => $itemId === 20001 ? 'Blue Bolly' : "ITEM_{$itemId}",
@@ -167,6 +167,30 @@ class AmfGatewayTest extends TestCase
             $this->assertInstanceOf(TypedObject::class, $stored, "{$quest} final state was not returned");
             $this->assertSame($value, $stored->get('stateValue'), "{$quest} final state was not persisted");
         }
+    }
+
+    public function test_profile_achievements_jukebox_and_transition_reward_keep_the_legacy_contract(): void
+    {
+        $this->loginPlayer();
+        $profilePlayer = User::factory()->create();
+        $profilePlayer->states()->create(['category' => 10001, 'name' => 0, 'value' => 3, 'last_changed' => time()]);
+        $profilePlayer->states()->create(['category' => 10002, 'name' => 1, 'value' => 99, 'last_changed' => time()]);
+
+        $states = $this->amf('amfPlayerService.getProfileStates', [$profilePlayer->id, 10001, 10042, 0])
+            ->get('valueObject')->get('list');
+        $this->assertCount(1, $states);
+        $this->assertSame(10001, $states[0]->get('cathegoryId'));
+        $this->assertSame(3, $states[0]->get('stateValue'));
+
+        $this->assertSame(0, $this->amf('amfPlayerService.activateItem', [0, true])->get('statusCode'));
+
+        $reward = $this->amf('amfPlayerService.collectItem', [103019, false, true]);
+        $this->assertSame(0, $reward->get('statusCode'));
+        $this->assertSame(103019, $reward->get('valueObject')->get('id'));
+        $this->assertDatabaseHas('inventories', ['item_id' => 103019]);
+
+        $blocked = $this->amf('amfPlayerService.collectItem', [100, false, true]);
+        $this->assertSame(1, $blocked->get('statusCode'));
     }
 
     public function test_rare_item_machine_can_grant_its_premium_daily_reward_to_a_regular_player(): void
