@@ -280,7 +280,10 @@ class AmfGatewayTest extends TestCase
 
         $this->amf('amfActionService.getLastDoneActionToday', [$player->id, 'other', 0]);
         $this->amf('amfActionService.performAction', [$player->id, 'other']);
+        $this->amf('amfActivateGoldPackageService.activateGoldPackage', ['not-a-valid-code']);
         $this->amf('amfBeSmarterService.loadBestResult', [$player->id]);
+        $this->amf('amfBeSmarterService.putScore', [100, 1, 0, 1000, str_repeat('a', 32)]);
+        $this->amf('amfBeSmarterService.loadLeadingPlayer');
         $bolly = $this->amf('amfBollyService.purchaseBolly', [20001])->get('valueObject');
         $this->amf('amfBollyService.updateBolly', [$bolly]);
         $this->amf('amfBuddyFilterService.listFilteredBuddies');
@@ -301,7 +304,10 @@ class AmfGatewayTest extends TestCase
         $this->amf('amfGameService.setHighScore', [4, 100]);
         $this->amf('amfGameService.finishMinigame', [4, 200]);
         $this->amf('amfGameService.getHighScoreLists', [4]);
+        $this->amf('amfHappyHourService.createHappyHourVoucherForVariant', [0]);
         $this->amf('amfLanguageService.getSecureChatSnippets', ['PL', 'all']);
+        $this->amf('amfMoPayService.getMembershipCode', ['PL']);
+        $this->amf('amfMoPayService.getSubscriptionCode');
 
         $pet = $this->amf('amfPetService.buyPet', [9, 'ContractPet'])->get('valueObject');
         $this->amf('amfPetService.switchPet', [$pet->id]);
@@ -332,10 +338,13 @@ class AmfGatewayTest extends TestCase
         $this->amf('amfTivolaService.updateScore', ['math', 100]);
 
         $this->amf('amfPlayerService.getStates', [[1]]);
+        $this->amf('amfPlayerService.getProfileStates', [$player->id, 10001, 10042, 0]);
         $this->amf('amfPlayerService.setState', [1, 2, 3]);
         $this->amf('amfPlayerService.updateTourFinished', [true]);
         $this->amf('amfPlayerService.addToBuddylist', [$buddy->id]);
         $this->amf('amfPlayerService.purchaseItem', [100, 'unused']);
+        $this->amf('amfPlayerService.collectItem', [103019, false, true]);
+        $this->amf('amfPlayerService.activateItem', [0, true]);
         $this->amf('amfPlayerService.updateItems', [[], []]);
         $this->amf('amfPlayerService.removeItems', [[]]);
         $this->amf('amfPlayerService.getPlayerInfoList', [[$player->id, $buddy->id], false]);
@@ -350,6 +359,9 @@ class AmfGatewayTest extends TestCase
         $this->amf('amfRegistrationService.loadUsernameSuggestions', ['Suggestion']);
         $this->amf('amfRegistrationService.checkEmailAddress', ['parent@example.com']);
         $this->amf('amfSocialHighscoreService.getSocialHighscore', [$player->id, $buddy->id]);
+        $this->amf('amfSponsorPayService.getRewardProgress');
+        $this->amf('amfWorldEventService.loadContainer', [1]);
+        $this->amf('amfWorldEventService.increaseContainerValue', [1]);
         $this->amf('amfPetService.removePet', [$pet->id]);
         $this->amf('amfBollyService.removeBolly', [20001]);
 
@@ -425,6 +437,19 @@ class AmfGatewayTest extends TestCase
 
         $again = $this->amf('amfActivateGoldPackageService.activateGoldPackage', ['PANFUGOLD2026']);
         $this->assertSame(1, $again->get('statusCode'));
+    }
+
+    public function test_retired_payment_popups_fail_gracefully_without_granting_rewards(): void
+    {
+        $this->loginPlayer();
+
+        $this->assertSame(1, $this->amf('amfHappyHourService.createHappyHourVoucherForVariant', [0])->get('statusCode'));
+        $this->assertSame(1, $this->amf('amfMoPayService.getMembershipCode', ['PL'])->get('statusCode'));
+        $this->assertSame(1, $this->amf('amfMoPayService.getSubscriptionCode')->get('statusCode'));
+
+        $progress = $this->amf('amfSponsorPayService.getRewardProgress');
+        $this->assertSame(0, $progress->get('statusCode'));
+        $this->assertSame(0, $progress->get('valueObject'));
     }
 
     public function test_social_profile_and_account_settings_are_persisted(): void

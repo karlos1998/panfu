@@ -11,6 +11,7 @@ use App\Application\Amf\Services\BuddyListAmfService;
 use App\Application\Amf\Services\ConnectionAmfService;
 use App\Application\Amf\Services\GameAmfService;
 use App\Application\Amf\Services\LanguageAmfService;
+use App\Application\Amf\Services\LegacyMonetizationAmfService;
 use App\Application\Amf\Services\PetAmfService;
 use App\Application\Amf\Services\PinboardAmfService;
 use App\Application\Amf\Services\PlayerAmfService;
@@ -59,9 +60,17 @@ final class AmfServiceRegistry
             'class' => GameAmfService::class,
             'methods' => ['setHighScore', 'finishMinigame', 'getHighScoreLists'],
         ],
+        'amfHappyHourService' => [
+            'class' => LegacyMonetizationAmfService::class,
+            'methods' => ['createHappyHourVoucherForVariant'],
+        ],
         'amfLanguageService' => [
             'class' => LanguageAmfService::class,
             'methods' => ['getSecureChatSnippets'],
+        ],
+        'amfMoPayService' => [
+            'class' => LegacyMonetizationAmfService::class,
+            'methods' => ['getMembershipCode', 'getSubscriptionCode'],
         ],
         'amfPetService' => [
             'class' => PetAmfService::class,
@@ -86,6 +95,10 @@ final class AmfServiceRegistry
         'amfSocialHighscoreService' => [
             'class' => SocialHighscoreAmfService::class,
             'methods' => ['getSocialHighscore'],
+        ],
+        'amfSponsorPayService' => [
+            'class' => LegacyMonetizationAmfService::class,
+            'methods' => ['getRewardProgress'],
         ],
         'amfStickerService' => [
             'class' => StickerAmfService::class,
