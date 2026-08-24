@@ -10,10 +10,13 @@ use App\Application\Amf\Services\ConnectionAmfService;
 use App\Application\Amf\Services\GameAmfService;
 use App\Application\Amf\Services\LanguageAmfService;
 use App\Application\Amf\Services\PetAmfService;
+use App\Application\Amf\Services\PinboardAmfService;
 use App\Application\Amf\Services\PlayerAmfService;
 use App\Application\Amf\Services\ProfileAmfService;
 use App\Application\Amf\Services\RegistrationAmfService;
 use App\Application\Amf\Services\SocialHighscoreAmfService;
+use App\Application\Amf\Services\StickerAmfService;
+use App\Application\Amf\Services\TivolaAmfService;
 use App\Infrastructure\Amf\AmfException;
 use Illuminate\Contracts\Container\Container;
 
@@ -53,6 +56,10 @@ final class AmfServiceRegistry
             'class' => PetAmfService::class,
             'methods' => ['buyPet', 'switchPet', 'updatePetState', 'removePet', 'feed', 'increaseHealth', 'getGameServer'],
         ],
+        'amfPinboardService' => [
+            'class' => PinboardAmfService::class,
+            'methods' => ['addMessage', 'deleteMessage', 'loadPinboard', 'loadPinboardPaginated', 'viewPinboard', 'loadPinboardedBuddies'],
+        ],
         'amfPlayerService' => [
             'class' => PlayerAmfService::class,
             'methods' => ['getStates', 'setState', 'updateTourFinished', 'addToBuddylist', 'removeFromBuddyList', 'purchaseItem', 'updateItems', 'removeItem', 'removeItems', 'getPlayerInfoList', 'getSmallPlayerInfoList', 'getPlayerCard', 'lockHome', 'getPlayerHome', 'updateFurnitures', 'updateScore', 'reportPlayer', 'updateHelperStatus', 'updatePlayerState'],
@@ -68,6 +75,14 @@ final class AmfServiceRegistry
         'amfSocialHighscoreService' => [
             'class' => SocialHighscoreAmfService::class,
             'methods' => ['getSocialHighscore'],
+        ],
+        'amfStickerService' => [
+            'class' => StickerAmfService::class,
+            'methods' => ['loadStickerDefinitions', 'loadStickers', 'addNewSticker', 'addNpcSticker'],
+        ],
+        'amfTivolaService' => [
+            'class' => TivolaAmfService::class,
+            'methods' => ['loadScore', 'updateScore'],
         ],
     ];
 

@@ -11,6 +11,7 @@ use App\Domain\Player\PlayerService;
 use App\Domain\Servers\GameServerClient;
 use App\Domain\Servers\GameServerService;
 use App\Infrastructure\Amf\TypedObject;
+use App\Models\PinboardMessage;
 use App\Models\User;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Validator;
@@ -156,6 +157,7 @@ final class ConnectionAmfService
         $this->players->ensureStarterInventory($player);
         $player->refresh();
 
+        $messages = PinboardMessage::query()->where('receiver_id', $player->getKey())->where('deleted', false);
         $result = $this->valueObjects->make('LoginResult', [
             'partnerTracking' => $this->valueObjects->make('PartnerTracking'),
             'membershipStatus' => 0,
@@ -165,6 +167,8 @@ final class ConnectionAmfService
             'showTour' => false,
             'playerInfo' => $this->players->info($player->refresh()),
             'hungryPokoPets' => $this->pets->withoutHealth($player),
+            'unreadMessagesCount' => (clone $messages)->where('read', false)->count(),
+            'undeletedMessagesCount' => $messages->count(),
         ]);
 
         return $this->responses->make(valueObject: $result);

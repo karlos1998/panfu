@@ -218,6 +218,26 @@ class AmfGatewayTest extends TestCase
         $this->amf('amfPetService.increaseHealth');
         $this->amf('amfPetService.getGameServer');
 
+        $message = new TypedObject('com.pandaland.informationserver.features.pinboard.vo.NewMessageVO', [
+            'typeId' => 1,
+            'content' => 'Hello',
+            'parentMessageId' => -1,
+            'receivers' => [$buddy->id],
+        ]);
+        $messageId = $this->amf('amfPinboardService.addMessage', [$message])
+            ->get('valueObject')->get('createdMessageVO')->get('messageId');
+        $this->amf('amfPinboardService.loadPinboard', [$buddy->id]);
+        $this->amf('amfPinboardService.loadPinboardPaginated', [$buddy->id, 0, 10]);
+        $this->amf('amfPinboardService.loadPinboardedBuddies', [1]);
+        $this->amf('amfStickerService.loadStickerDefinitions');
+        $this->amf('amfStickerService.loadStickers', [$player->id]);
+        $npcSticker = new TypedObject('com.pandaland.informationserver.features.stickers.vo.NewStickerVO', [
+            'receiverId' => $player->id, 'definitionId' => 1, 'content' => '1|1',
+        ]);
+        $this->amf('amfStickerService.addNpcSticker', [$npcSticker]);
+        $this->amf('amfTivolaService.loadScore');
+        $this->amf('amfTivolaService.updateScore', ['math', 100]);
+
         $this->amf('amfPlayerService.getStates', [[1]]);
         $this->amf('amfPlayerService.setState', [1, 2, 3]);
         $this->amf('amfPlayerService.updateTourFinished', [true]);
@@ -240,6 +260,7 @@ class AmfGatewayTest extends TestCase
         $this->amf('amfPetService.removePet', [$pet->id]);
 
         $this->assertDatabaseMissing('pokopets', ['id' => $pet->id]);
+        $this->assertDatabaseHas('pinboard_messages', ['id' => $messageId, 'receiver_id' => $buddy->id]);
     }
 
     public function test_profile_highscore_be_smarter_request_returns_without_stalling(): void
@@ -311,6 +332,54 @@ class AmfGatewayTest extends TestCase
 
         $this->assertSame(0, $this->amf('amfConnectionService.doLogout')->get('statusCode'));
         $this->assertSame(1, $this->amf('amfConnectionService.ping')->get('statusCode'));
+    }
+
+    public function test_pinboard_stickers_and_tivola_are_complete_persistent_flows(): void
+    {
+        $player = $this->loginPlayer(['coins' => 100]);
+        $receiver = User::factory()->create(['name' => 'Receiver']);
+
+        $newMessage = new TypedObject('com.pandaland.informationserver.features.pinboard.vo.NewMessageVO', [
+            'typeId' => 2,
+            'content' => 'Party at my treehouse',
+            'parentMessageId' => -1,
+            'receivers' => [$receiver->id],
+        ]);
+        $added = $this->amf('amfPinboardService.addMessage', [$newMessage])->get('valueObject');
+        $message = $added->get('createdMessageVO');
+        $this->assertSame($player->name, $message->get('sender')->get('senderName'));
+        $this->assertSame([$receiver->id], $added->get('receivers'));
+        $this->assertSame('newPinboardMessage', $this->gameServerCommands[1]['command']);
+
+        $pinboard = $this->amf('amfPinboardService.loadPinboardPaginated', [$receiver->id, 0, 10])->get('valueObject');
+        $this->assertSame(1, $pinboard->get('undeletedMessagesCount'));
+        $this->assertSame('Party at my treehouse', $pinboard->get('messages')[0]->get('content'));
+        $this->assertSame([$receiver->id], $this->amf('amfPinboardService.loadPinboardedBuddies', [2])->get('valueObject'));
+
+        $definitions = $this->amf('amfStickerService.loadStickerDefinitions')->get('valueObject');
+        $this->assertCount(31, $definitions);
+        $sticker = new TypedObject('com.pandaland.informationserver.features.stickers.vo.NewStickerVO', [
+            'receiverId' => $receiver->id, 'definitionId' => 3, 'content' => $player->id.'|3',
+        ]);
+        $this->assertSame(0, $this->amf('amfStickerService.addNewSticker', [$sticker])->get('statusCode'));
+        $this->assertSame(90, $player->refresh()->coins);
+        $stickers = $this->amf('amfStickerService.loadStickers', [$receiver->id])->get('valueObject');
+        $this->assertSame(3, $stickers[0]->get('definitionId'));
+        $this->assertSame(1, $stickers[0]->get('amount'));
+
+        $this->assertSame(0, $this->amf('amfTivolaService.updateScore', ['math', 450])->get('statusCode'));
+        $this->amf('amfTivolaService.updateScore', ['math', 200]);
+        $score = $this->amf('amfTivolaService.loadScore')->get('valueObject');
+        $this->assertSame(450, $score->get('math'));
+        $this->assertSame(0, $score->get('english'));
+
+        $receiver->forceFill(['ticket_id' => str_repeat('b', 64)])->save();
+        $this->withSession([]);
+        $login = $this->amf('amfConnectionService.doLoginSession', [str_repeat('b', 64)])->get('valueObject');
+        $this->assertSame(1, $login->get('unreadMessagesCount'));
+        $this->assertSame(0, $this->amf('amfPinboardService.viewPinboard')->get('statusCode'));
+        $this->assertSame(0, $this->amf('amfPinboardService.deleteMessage', [$message->get('messageId')])->get('statusCode'));
+        $this->assertSame(0, $this->amf('amfPinboardService.loadPinboard', [$receiver->id])->get('valueObject')->get('undeletedMessagesCount'));
     }
 
     /** @param array<string, mixed> $attributes */

@@ -25,6 +25,12 @@ final class HttpGameServerClient implements GameServerClient
                             'status' => (int) $parameters[2],
                         ]),
                     ),
+                'newPinboardMessage' => isset($parameters[0])
+                    && $this->request(
+                        'POST',
+                        '/internal/v1/players/'.(int) $parameters[0].'/pinboard-message',
+                        '{}',
+                    ),
                 default => false,
             };
         } catch (Throwable $exception) {

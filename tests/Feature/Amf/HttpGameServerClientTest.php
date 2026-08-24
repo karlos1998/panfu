@@ -64,13 +64,17 @@ class HttpGameServerClientTest extends TestCase
 
         $this->assertTrue($client->send('testConnection'));
         $this->assertTrue($client->send('kickUser', 7));
+        $this->assertTrue($client->send('newPinboardMessage', 7));
         $this->assertFalse($client->send('unsupportedCommand'));
 
-        Http::assertSentCount(2);
+        Http::assertSentCount(3);
         Http::assertSent(fn (Request $request): bool => $request->method() === 'GET'
             && $request->url() === 'http://gameserver:9596/internal/v1/health/connection');
         Http::assertSent(fn (Request $request): bool => $request->method() === 'POST'
             && $request->url() === 'http://gameserver:9596/internal/v1/players/7/kick'
+            && $request->body() === '{}');
+        Http::assertSent(fn (Request $request): bool => $request->method() === 'POST'
+            && $request->url() === 'http://gameserver:9596/internal/v1/players/7/pinboard-message'
             && $request->body() === '{}');
     }
 }

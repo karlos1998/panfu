@@ -84,6 +84,18 @@ class User extends Authenticatable
         return $this->hasOne(PlayerProfile::class);
     }
 
+    /** @return HasMany<PinboardMessage, $this> */
+    public function receivedPinboardMessages(): HasMany
+    {
+        return $this->hasMany(PinboardMessage::class, 'receiver_id');
+    }
+
+    /** @return HasMany<PlayerSticker, $this> */
+    public function stickers(): HasMany
+    {
+        return $this->hasMany(PlayerSticker::class);
+    }
+
     /**
      * Get the attributes that should be cast.
      *

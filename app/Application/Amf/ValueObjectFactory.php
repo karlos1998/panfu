@@ -156,5 +156,44 @@ final class ValueObjectFactory
             'type' => 'com.pandaland.mvc.model.vo.SocialHighscoreVO',
             'defaults' => ['gameID' => 0, 'playerID' => -1, 'otherPlayerID' => -1, 'playerScore' => 0, 'otherPlayerScore' => 0],
         ],
+        'Sender' => [
+            'type' => 'com.pandaland.informationserver.features.pinboard.vo.SenderVO',
+            'defaults' => ['senderId' => 0, 'senderName' => ''],
+        ],
+        'Message' => [
+            'type' => 'com.pandaland.informationserver.features.pinboard.vo.MessageVO',
+            'defaults' => [
+                'sender' => null, 'messageId' => 0, 'read' => false, 'createdAt' => null,
+                'replied' => false, 'typeId' => 0, 'content' => '', 'parentMessageId' => -1,
+            ],
+        ],
+        'AddedMessage' => [
+            'type' => 'com.pandaland.informationserver.features.pinboard.vo.AddedMessageVO',
+            'defaults' => ['createdMessageVO' => null, 'receivers' => []],
+        ],
+        'Pinboard' => [
+            'type' => 'com.pandaland.informationserver.features.pinboard.vo.PinboardVO',
+            'defaults' => ['undeletedMessagesCount' => 0, 'messages' => [], 'offset' => 0, 'limit' => 0],
+        ],
+        'Sticker' => [
+            'type' => 'com.pandaland.informationserver.features.stickers.vo.StickerVO',
+            'defaults' => ['definitionId' => 0, 'amount' => 0],
+        ],
+        'StickerRestrictions' => [
+            'type' => 'com.pandaland.informationserver.features.stickers.vo.StickerRestrictionsVO',
+            'defaults' => ['minLevel' => 0, 'coins' => 0, 'premium' => false],
+        ],
+        'StickerDefinition' => [
+            'type' => 'com.pandaland.informationserver.features.stickers.vo.StickerDefinitionVO',
+            'defaults' => ['id' => 0, 'points' => 0, 'restrictions' => null],
+        ],
+        'NewSticker' => [
+            'type' => 'com.pandaland.informationserver.features.stickers.vo.NewStickerVO',
+            'defaults' => ['receiverId' => 0, 'definitionId' => 0, 'content' => ''],
+        ],
+        'TivolaScore' => [
+            'type' => 'com.pandaland.informationserver.features.tivola.TivolaScoreVO',
+            'defaults' => ['math' => 0, 'english' => 0, 'german' => 0, 'concentration' => 0, 'slot' => 0],
+        ],
     ];
 }
