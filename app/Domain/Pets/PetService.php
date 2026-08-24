@@ -100,7 +100,7 @@ final class PetService
                     'power' => 1,
                     'experience' => 0,
                     'level' => 1,
-                    'abilities' => [],
+                    'abilities' => [501],
                 ]);
 
                 return ['statusCode' => 0, 'message' => 'Pokopet added.', 'pet' => $this->toValueObject($pet)];

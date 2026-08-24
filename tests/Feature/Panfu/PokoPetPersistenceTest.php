@@ -94,4 +94,18 @@ class PokoPetPersistenceTest extends TestCase
         $this->assertStringNotContainsString('PokoPetVO', $payload);
         $this->assertStringNotContainsString('PokoPetPropertiesVO', $payload);
     }
+
+    public function test_new_pokopets_start_with_the_boost_race_ability(): void
+    {
+        $player = User::factory()->create([
+            'coins' => 100,
+            'social_level' => 1,
+        ]);
+
+        $result = app(PetService::class)->buy($player, 9, 'Biedronka', false);
+
+        $this->assertSame(0, $result['statusCode']);
+        $this->assertSame([501], $result['pet']->abilities);
+        $this->assertSame([501], $player->pokoPets()->firstOrFail()->abilities);
+    }
 }
