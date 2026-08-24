@@ -3,6 +3,7 @@
 namespace App\Application\Amf;
 
 use App\Application\Amf\Services\ActionAmfService;
+use App\Application\Amf\Services\ActivateGoldPackageAmfService;
 use App\Application\Amf\Services\BeSmarterAmfService;
 use App\Application\Amf\Services\BollyAmfService;
 use App\Application\Amf\Services\BuddyFilterAmfService;
@@ -26,6 +27,10 @@ final class AmfServiceRegistry
 {
     /** @var array<string, array{class:class-string,methods:list<string>}> */
     private const SERVICES = [
+        'amfActivateGoldPackageService' => [
+            'class' => ActivateGoldPackageAmfService::class,
+            'methods' => ['activateGoldPackage'],
+        ],
         'amfActionService' => [
             'class' => ActionAmfService::class,
             'methods' => ['getLastDoneActionToday', 'performAction'],

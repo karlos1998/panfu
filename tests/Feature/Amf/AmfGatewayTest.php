@@ -9,6 +9,7 @@ use App\Infrastructure\Amf\AmfEnvelope;
 use App\Infrastructure\Amf\AmfMessage;
 use App\Infrastructure\Amf\TypedObject;
 use App\Models\GameServer;
+use App\Models\GoldPackageCode;
 use App\Models\Item;
 use App\Models\PlayerProfile;
 use App\Models\PlayerReport;
@@ -406,6 +407,24 @@ class AmfGatewayTest extends TestCase
         $this->assertSame(1, $updated->value);
         $this->assertSame(1000, $updated->maxValue);
         $this->assertDatabaseHas('world_event_containers', ['id' => 17, 'value' => 1]);
+    }
+
+    public function test_gold_package_activation_requires_an_unused_server_issued_code(): void
+    {
+        $player = $this->loginPlayer(['goldpanda' => 0]);
+        GoldPackageCode::query()->create(['code_hash' => hash('sha256', 'PANFUGOLD2026')]);
+
+        $invalid = $this->amf('amfActivateGoldPackageService.activateGoldPackage', ['wrong-code']);
+        $this->assertSame(1, $invalid->get('statusCode'));
+        $this->assertSame(0, $player->refresh()->goldpanda);
+
+        $activated = $this->amf('amfActivateGoldPackageService.activateGoldPackage', ['panfu-gold-2026']);
+        $this->assertSame(0, $activated->get('statusCode'));
+        $this->assertSame(1, $player->refresh()->goldpanda);
+        $this->assertDatabaseHas('gold_package_codes', ['redeemed_by' => $player->id]);
+
+        $again = $this->amf('amfActivateGoldPackageService.activateGoldPackage', ['PANFUGOLD2026']);
+        $this->assertSame(1, $again->get('statusCode'));
     }
 
     public function test_social_profile_and_account_settings_are_persisted(): void
